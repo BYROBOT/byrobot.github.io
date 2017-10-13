@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Document main page."
+description: "Main page."
+categories: [library_update]
+tags: [main]
+redirect_from:
+  - /2017/10/11/
+---
 
 # Drone Protocols (Korean)
 
