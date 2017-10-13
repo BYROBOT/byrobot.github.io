@@ -36,10 +36,6 @@ author:
       url: https://www.facebook.com/byrobot.co.kr/
     - name: github
       url:  https://github.com/dronefighters
-home:
-  section1:
-  section2:
-  section3:
 blog:
   cc_license: https://creativecommons.org/licenses/by-sa/4.0/
   cc_license_image: /assets/images/theme/cc-by-sa.png
@@ -53,8 +49,5 @@ addthis_public_id: # AddThis sharing plugin. See http://www.addthis.com/
 
 paths:
   home: /
-  documents: /documents/
+  documents: /
   forum: /forum/
-  blog: /blog/
-  categories: /blog/categories/
-  tags: /blog/tags/
