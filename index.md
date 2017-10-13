@@ -15,7 +15,8 @@
             <td>
                 <div align="center">
                     <img src="/assets/images/products/petrone.jpg" alt="petrone" height="240" width="240"><br>
-                    PETRONE
+                    PETRONE<br>
+                    PETRONE 2.0
                 </div>
             </td>
             <td>
