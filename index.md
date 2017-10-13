@@ -18,10 +18,8 @@
     - [Protocol](/documents/kr/products/petrone/protocol/)
     
     - [Python Library](/documents/kr/products/petrone/library/python/petrone/)
-
 <br>
-
-- Application API
+- API
 
     - [PetroneAPI_kotlin](https://github.com/petrone/PetroneAPI_kotlin)
 
