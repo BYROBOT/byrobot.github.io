@@ -6,19 +6,15 @@
 
     - [Protocol](/documents/kr/products/dronefighter2017/protocol/)
 
-<br>
+
 
 # PETRONE
 
 - Documents
 
     - [Protocol](/documents/kr/products/petrone/protocol/)
-
-- Python Library
     
-    - [Document](/documents/kr/products/petrone/library/python/petrone/)
-
-    - [PyPI](https://pypi.python.org/pypi/petrone)
+    - [Python Library](/documents/kr/products/petrone/library/python/petrone/)
 
 - Application API
 
@@ -28,7 +24,7 @@
 
     - [PetroneAPI_swift_Sample](https://github.com/petrone/PetroneAPI_swift_Sample)
 
-<br>
+
 
 # PETRONE V2
 
@@ -36,11 +32,7 @@
 
     - [Protocol](/documents/kr/products/petrone_v2/protocol/)
 
-- Python Library
-
-    - [Document](/documents/kr/products/petrone_v2/library/python/petrone_v2/)
-
-    - [PyPI](https://pypi.python.org/pypi/petrone_v2)
+    - [Python Library](/documents/kr/products/petrone_v2/library/python/petrone_v2/)
 
 
 ---
