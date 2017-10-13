@@ -26,6 +26,12 @@
             </td>
         </tr>
         <tr>
+            <td><div align="center">Latest Version</div></td>
+            <td><div align="center">Drone Education: 20170118<br>Controller Education: 20170124</div></td>
+            <td><div align="center">Drone Main: v47<br>Drone Sub: v18<br>Link: v18</div></td>
+            <td><div align="center">Drone 1.0.R.54<br>Controller 1.0.R.54</div></td>
+        </tr>
+        <tr>
             <td rowspan="2"><div align="center">Documents</div></td>
             <td><div align="center"><a href="/documents/kr/products/dronefighter2017/protocol/">Protocol</a></div></td>
             <td><div align="center"><a href="/documents/kr/products/petrone/protocol/">Protocol</a></div></td>
