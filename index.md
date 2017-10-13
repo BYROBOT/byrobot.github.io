@@ -6,9 +6,24 @@
     <table>
         <tr>
             <td><div align="center"></div></td>
-            <td><div align="center">DRONE FIGHTER</div></td>
-            <td><div align="center">PETRONE</div></td>
-            <td><div align="center">PETRONE V2</div></td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controlle" height="300" width="300"><br>
+                    DRONE FIGHTER
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/petrone.jpg" alt="petrone" height="300" width="300"><br>
+                    PETRONE
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2_and_controller" height="300" width="300"><br>
+                    PETRONE V2
+                </div>
+            </td>
         </tr>
         <tr>
             <td rowspan="2"><div align="center">Documents</div></td>
