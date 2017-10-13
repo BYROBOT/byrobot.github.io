@@ -1,42 +1,35 @@
-* Kramdown table of contents
-{:toc .toc}
 
----
-
-# 1. DRONE FIGHTER
-
-- Documents
-
-    - [Protocol](/documents/kr/products/dronefighter2017/protocol/)
-
-<br>
-
-# 2. PETRONE
-
-- Documents
-
-    - [Protocol](/documents/kr/products/petrone/protocol/)
-    
-    - [Python Library](/documents/kr/products/petrone/library/python/petrone/)
-<br>
-- API
-
-    - [PetroneAPI_kotlin](https://github.com/petrone/PetroneAPI_kotlin)
-
-    - [PetroneAPI_swift](https://github.com/petrone/PetroneAPI_swift)
-
-    - [PetroneAPI_swift_Sample](https://github.com/petrone/PetroneAPI_swift_Sample)
-
-<br>
-
-# 3. PETRONE V2
-
-- Documents
-
-    - [Protocol](/documents/kr/products/petrone_v2/protocol/)
-
-    - [Python Library](/documents/kr/products/petrone_v2/library/python/petrone_v2/)
-
+<table>
+    <tr>
+        <td><div align="center"></div></td>
+        <td><div align="center">DRONE FIGHTER</div></td>
+        <td><div align="center">PETRONE</div></td>
+        <td><div align="center">PETRONE V2</div></td>
+    </tr>
+    <tr>
+        <td rowspan="2"><div align="center">Documents</div></td>
+        <td><div align="center"><a href="/documents/kr/products/dronefighter2017/protocol/">Protocol</a></div></td>
+        <td><div align="center"><a href="/documents/kr/products/petrone/protocol/">Protocol</a></div></td>
+        <td><div align="center"><a href="/documents/kr/products/petrone_v2/protocol/">Protocol</a></div></td>
+    </tr>
+        <tr>
+            <td><div align="center">-</div></td>
+            <td><div align="center"><a href="/documents/kr/products/petrone/library/python/petrone/">Python Library</a></div></td>
+            <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">Python Library</a></div></td>
+        </tr>
+    <tr>
+        <td><div align="center">API</div></td>
+        <td><div align="center">-</div></td>
+        <td>
+            <div align="center">
+                <a href="https://github.com/petrone/PetroneAPI_kotlin" target="_blank">PetroneAPI_kotlin</a><br>
+                <a href="https://github.com/petrone/PetroneAPI_swift" target="_blank">PetroneAPI_swift</a><br>
+                <a href="https://github.com/petrone/PetroneAPI_swift_Sample" target="_blank">PetroneAPI_swift_Sample</a>
+            </div>
+        </td>
+        <td><div align="center">-</div></td>
+    </tr>
+</table>
 
 ---
 
