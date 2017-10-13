@@ -3,7 +3,7 @@ src="javascript:void(0)"
 scrolling="no"
 frameborder="0"
 width="100%"
-height="800">
+height="1200">
 </iframe>
 <script type="text/javascript">
 document.getElementById('forum_embed').src =
