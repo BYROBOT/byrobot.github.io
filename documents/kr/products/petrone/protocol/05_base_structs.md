@@ -21,8 +21,8 @@ namespace Protocol
     };
 }
 ```
-- commandType : [Protocol::CommandType::Type](definitions.md#CommandType)
-- option : [System::ModeVehicle::Type](definitions.md#ModeVehicle), [System::Coordinate::Type](definitions.md#Coordinate), [System::Trim::Type](definitions.md#Trim),  [System::FlightEvent::Type](definitions.md#FlightEvent), [Protocol::DataType::Type](datatype.md#DataType)
+- commandType : [Protocol::CommandType::Type](04_definitions.md#CommandType)
+- option : [System::ModeVehicle::Type](04_definitions.md#ModeVehicle), [System::Coordinate::Type](04_definitions.md#Coordinate), [System::Trim::Type](04_definitions.md#Trim),  [System::FlightEvent::Type](04_definitions.md#FlightEvent), [Protocol::DataType::Type](03_datatype.md#DataType)
 
 <br>
 <br>
@@ -40,8 +40,8 @@ namespace Protocol
     };
 }
 ```
-- mode : [Light::Mode::Type](definitions.md#LightMode)
-- color : [Light::Colors::Type](definitions.md#LightColors)
+- mode : [Light::Mode::Type](04_definitions.md#LightMode)
+- color : [Light::Colors::Type](04_definitions.md#LightColors)
 
 <br>
 <br>
@@ -76,7 +76,7 @@ namespace Protocol
     };
 }
 ```
-- mode : [Light::Mode::Type](definitions.md#LightMode)
+- mode : [Light::Mode::Type](04_definitions.md#LightMode)
 - color : [Light::Color](#LightColor)
 
 <br>
@@ -96,8 +96,8 @@ namespace Protocol
     };
 }
 ```
-- event : [Light::Mode::Type](definitions.md#LightMode)
-- color : [Light::Colors::Type](definitions.md#LightColors)
+- event : [Light::Mode::Type](04_definitions.md#LightMode)
+- color : [Light::Colors::Type](04_definitions.md#LightColors)
 
 <br>
 <br>
@@ -116,7 +116,7 @@ namespace Protocol
     };
 }
 ```
-- event : [Light::Mode::Type](definitions.md#LightMode)
+- event : [Light::Mode::Type](04_definitions.md#LightMode)
 - color : [Light::Color](#LightColor)
 
 <br>

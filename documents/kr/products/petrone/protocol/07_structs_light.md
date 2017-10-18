@@ -20,7 +20,7 @@ namespace Protocol
     };
 }
 ```
-- lightMode : [Protocol::LightModeBase](base_structs.md#LightModeBase)
+- lightMode : [Protocol::LightModeBase](05_base_structs.md#LightModeBase)
 
 <br>
 <br>
@@ -37,7 +37,7 @@ namespace Protocol
     };
 }
 ```
-- lightMode1, lightMode2 : [Protocol::LightModeBase](base_structs.md#LightModeBase)
+- lightMode1, lightMode2 : [Protocol::LightModeBase](05_base_structs.md#LightModeBase)
 
 <br>
 <br>
@@ -54,8 +54,8 @@ namespace Protocol
     };
 }
 ```
-- lightMode : [Protocol::LightModeBase](base_structs.md#LightModeBase)
-- command : [Protocol::CommandBase](base_structs.md#CommandBase)
+- lightMode : [Protocol::LightModeBase](05_base_structs.md#LightModeBase)
+- command : [Protocol::CommandBase](05_base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -73,8 +73,8 @@ namespace Protocol
     };
 }
 ```
-- lightMode : [Protocol::LightModeBase](base_structs.md#LightModeBase)
-- command : [Protocol::CommandBase](base_structs.md#CommandBase)
+- lightMode : [Protocol::LightModeBase](05_base_structs.md#LightModeBase)
+- command : [Protocol::CommandBase](05_base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -90,7 +90,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeColor : [Protocol::LightModeColorBase](base_structs.md#LightModeColorBase)
+- lightModeColor : [Protocol::LightModeColorBase](05_base_structs.md#LightModeColorBase)
 
 <br>
 <br>
@@ -107,7 +107,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](base_structs.md#LightModeColorBase)
+- lightModeColor1, lightModeColor2 : [Protocol::LightModeColorBase](05_base_structs.md#LightModeColorBase)
 
 <br>
 <br>
@@ -123,7 +123,7 @@ namespace Protocol
     };
 }
 ```
-- lightEvent : [Protocol::LightEventBase](base_structs.md#LightEventBase)
+- lightEvent : [Protocol::LightEventBase](05_base_structs.md#LightEventBase)
 
 <br>
 <br>
@@ -140,7 +140,7 @@ namespace Protocol
     };
 }
 ```
-- lightEvent1, lightEvent2 : [Protocol::LightEventBase](base_structs.md#LightEventBase)
+- lightEvent1, lightEvent2 : [Protocol::LightEventBase](05_base_structs.md#LightEventBase)
 
 <br>
 <br>
@@ -157,8 +157,8 @@ namespace Protocol
     };
 }
 ```
-- lightEvent : [Protocol::LightEventBase](base_structs.md#LightEventBase)
-- command : [Protocol::CommandBase](base_structs.md#CommandBase)
+- lightEvent : [Protocol::LightEventBase](05_base_structs.md#LightEventBase)
+- command : [Protocol::CommandBase](05_base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -176,8 +176,8 @@ namespace Protocol
     };
 }
 ```
-- lightEvent : [Protocol::LightEventBase](base_structs.md#LightEventBase)
-- command : [Protocol::CommandBase](base_structs.md#CommandBase)
+- lightEvent : [Protocol::LightEventBase](05_base_structs.md#LightEventBase)
+- command : [Protocol::CommandBase](05_base_structs.md#CommandBase)
 
 <br>
 <br>
@@ -193,7 +193,7 @@ namespace Protocol
     };
 }
 ```
-- lightEventColor : [Protocol::LightEventColorBase](base_structs.md#LightEventColorBase)
+- lightEventColor : [Protocol::LightEventColorBase](05_base_structs.md#LightEventColorBase)
 
 <br>
 <br>
@@ -210,7 +210,7 @@ namespace Protocol
     };
 }
 ```
-- lightEventColor1, lightEventColor2 : [Protocol::LightEventColorBase](base_structs.md#LightEventColorBase)
+- lightEventColor1, lightEventColor2 : [Protocol::LightEventColorBase](05_base_structs.md#LightEventColorBase)
 
 <br>
 <br>
@@ -226,7 +226,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeDefaultColor : [Protocol::LightModeColorBase](base_structs.md#LightModeColorBase)
+- lightModeDefaultColor : [Protocol::LightModeColorBase](05_base_structs.md#LightModeColorBase)
 
 <br>
 <br>
@@ -243,7 +243,7 @@ namespace Protocol
     };
 }
 ```
-- lightModeDefaultColor1, lightModeDefaultColor2 : [Protocol::LightModeColorBase](base_structs.md#LightModeColorBase)
+- lightModeDefaultColor1, lightModeDefaultColor2 : [Protocol::LightModeColorBase](05_base_structs.md#LightModeColorBase)
 
 
 

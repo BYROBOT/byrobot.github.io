@@ -21,8 +21,8 @@ namespace Protocol
     };
 }
 ```
-- modeLink : [System::ModeLink::Type](definitions.md#ModeLink)
-- modeLinkBroadcast : [System::ModeLinkBroadcast::Type](definitions.md#ModeLinkBroadcast)
+- modeLink : [System::ModeLink::Type](03_definitions.md#ModeLink)
+- modeLinkBroadcast : [System::ModeLinkBroadcast::Type](03_definitions.md#ModeLinkBroadcast)
 
 
 <br>
@@ -40,7 +40,7 @@ namespace Protocol
     };
 }
 ```
-- eventLink : [System::EventLink::Type](definitions.md#EventLink)
+- eventLink : [System::EventLink::Type](03_definitions.md#EventLink)
 
 
 <br>
@@ -61,7 +61,7 @@ namespace Protocol
 }
 ```
 
-- eventLink : [System::EventLink::Type](definitions.md#EventLink)
+- eventLink : [System::EventLink::Type](03_definitions.md#EventLink)
 
 
 <br>
