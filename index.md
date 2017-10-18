@@ -57,9 +57,15 @@
             </td>
             <td><div align="center">-</div></td>
         </tr>
+        <tr>
+            <td><div align="center">Update log</div></td>
+            <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">firmware</a></div></td>
+            <td><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">firmware</a></div></td>
+            <td><div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">firmware</a></div></td>
+        </tr>
     </table>
 </div>
 
 ---
 
-Modified : 2017.10.13
+Modified : 2017.10.18
