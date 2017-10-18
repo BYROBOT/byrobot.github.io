@@ -39,7 +39,7 @@ namespace Protocol
  
 ```
 
- - [Protocol::DataType::Type](../datatype.md#DataType)
+ - [Protocol::DataType::Type](../03_datatype.md#DataType)
 
 
 <br>

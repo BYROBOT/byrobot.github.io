@@ -233,7 +233,7 @@ namespace Protocol
 }
 ```
 - mode : [Protocol::Light::Mode](#Protocol_Light_Mode)
-- command : [Protocol::Command](structs.md#Protocol_Command)
+- command : [Protocol::Command](05_structs.md#Protocol_Command)
 
 
 <br>
@@ -257,7 +257,7 @@ namespace Protocol
 }
 ```
 - mode : [Protocol::Light::Mode](#Protocol_Light_Mode)
-- command : [Protocol::Command](structs.md#Protocol_Command)
+- command : [Protocol::Command](05_structs.md#Protocol_Command)
 
 
 <br>
@@ -305,7 +305,7 @@ namespace Protocol
 }
 ```
 - event : [Protocol::Light::Event](#Protocol_Light_Event)
-- command : [Protocol::Command](structs.md#Protocol_Command)
+- command : [Protocol::Command](05_structs.md#Protocol_Command)
 
 
 <br>
@@ -329,7 +329,7 @@ namespace Protocol
 }
 ```
 - event : [Protocol::Light::Event](#Protocol_Light_Event)
-- command : [Protocol::Command](structs.md#Protocol_Command)
+- command : [Protocol::Command](05_structs.md#Protocol_Command)
 
 
 <br>

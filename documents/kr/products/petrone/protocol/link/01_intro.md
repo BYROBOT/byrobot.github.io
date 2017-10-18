@@ -74,7 +74,7 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 
 # 3. 사용 시 주의사항
 
-- LINK 모듈을 제어할 때에는 [Command](../structs.md#Command)를 주로 사용합니다.
+- LINK 모듈을 제어할 때에는 [Command](../06_structs.md#Command)를 주로 사용합니다.
 
 - LINK 모듈에 데이터를 전송하는 경우 몇 가지 명령을 제외하고 대부분 Ack 데이터가 반송됩니다.
 

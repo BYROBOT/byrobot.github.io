@@ -33,7 +33,7 @@ namespace Protocol
 }
 ```
 
- - [Protocol::CommandType::Type](../definitions.md#CommandType)
+ - [Protocol::CommandType::Type](../04_definitions.md#CommandType)
 
  
 <br>

@@ -40,7 +40,7 @@ namespace Protocol
     };
 }
 ```
-- dataType : [Protocol::DataType::Type](datatype.md#Protocol_DataType)
+- dataType : [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)
 - 명확하게 데이터를 요청한 경우에는 해당 데이터를 응답을 보내고, 그 이외에는 모두 Protocol::Ack를 응답으로 전송.
 - 수신 받은 데이터의 crc16을 다시 응답으로 보냄. 데이터를 전송한 장치에서 해당 데이터가 정상적으로 전달되었는지를 확인하는 용도로 사용.
 
@@ -60,7 +60,7 @@ namespace Protocol
     };
 }
 ```
-- dataType : [Protocol::DataType::Type](datatype.md#Protocol_DataType)
+- dataType : [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)
 
 
 <br>
@@ -133,8 +133,8 @@ namespace Protocol
     };
 }
 ```
-- commandType : [Protocol::CommandType::Type](definitions.md#Protocol_CommandType)
-- option : [Mode::Vehicle::Type](definitions.md#Mode_Vehicle), [Coordinate::Type](definitions.md#Coordinate), [System::Trim::Type](definitions.md#Trim),  [System::FlightEvent::Type](definitions.md#FlightEvent), [Protocol::DataType::Type](datatype.md#Protocol_DataType), [UserInterface::Preset::Type](definitions.md#UserInterface_Preset)
+- commandType : [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)
+- option : [Mode::Vehicle::Type](04_definitions.md#Mode_Vehicle), [Coordinate::Type](04_definitions.md#Coordinate), [System::Trim::Type](04_definitions.md#Trim),  [System::FlightEvent::Type](04_definitions.md#FlightEvent), [Protocol::DataType::Type](03_datatype.md#Protocol_DataType), [UserInterface::Preset::Type](04_definitions.md#UserInterface_Preset)
 
 
 <br>
@@ -178,12 +178,12 @@ namespace Protocol
     };
 }
 ```
-- modeVehicle : [Mode::Vehicle::Type](definitions.md#Mode_Vehicle)
-- modeSystem : [Mode::System::Type](definitions.md#Mode_System)
-- modeFlight : [Mode::Flight::Type](definitions.md#Mode_Flight)
-- modeDrive : [Mode::Drive::Type](definitions.md#Mode_Drive)
-- sensorOrientation : [SensorOrientation::Type](definitions.md#SensorOrientation)
-- coordinate : [Coordinate::Type](definitions.md#Coordinate)
+- modeVehicle : [Mode::Vehicle::Type](04_definitions.md#Mode_Vehicle)
+- modeSystem : [Mode::System::Type](04_definitions.md#Mode_System)
+- modeFlight : [Mode::Flight::Type](04_definitions.md#Mode_Flight)
+- modeDrive : [Mode::Drive::Type](04_definitions.md#Mode_Drive)
+- sensorOrientation : [SensorOrientation::Type](04_definitions.md#SensorOrientation)
+- coordinate : [Coordinate::Type](04_definitions.md#Coordinate)
 
 
 <br>
@@ -412,7 +412,7 @@ namespace Protocol
 }
 ```
 - 데이터 영역에 Protocol::Motor 배열 4개를 사용하여 전송. 차례대로 0, 1, 2, 3 번 모터에 적용함. 순서는 좌측 앞 모터부터 시계 방향. 드론파이터는 모터 역회전이 안되는 관계로 Motor::Direction::None 또는 Motor::Direction::Forward 사용. Motor::Direction::None 사용 시 해당 값은 모터 제어에 적용하지 않음.
-- direction : [Motor::Direction::Type](definitions.md#Motor_Direction)
+- direction : [Motor::Direction::Type](04_definitions.md#Motor_Direction)
 - value : 0 ~ 4096
 
 
@@ -433,8 +433,8 @@ namespace Protocol
 }
 ```
 - 지정한 번호의 모터를 작동시킬 때 사용. 드론파이터는 모터 역회전이 안되는 관계로 Motor::Direction::None 또는 Motor::Direction::Forward 사용. Motor::Direction::None 사용 시 해당 값은 모터 제어에 적용하지 않음.
-- target : [Motor::Part::Type](definitions.md#Motor_Part)
-- direction : [Motor::Direction::Type](definitions.md#Motor_Direction)
+- target : [Motor::Part::Type](04_definitions.md#Motor_Part)
+- direction : [Motor::Direction::Type](04_definitions.md#Motor_Direction)
 - value : 0 ~ 4096
 
 
@@ -459,9 +459,9 @@ namespace Protocol
 ```
 - x : 조이스틱 가로축, -100 ~ 100
 - y : 조이스틱 세로축, -100 ~ 100
-- direction : [Joystick::Direction::Type](definitions.md#Joystick_Direction)
-- event : [Joystick::Event::Type](definitions.md#Joystick_Event)
-- command : [Joystick::Command::Type](definitions.md#Joystick_Command)
+- direction : [Joystick::Direction::Type](04_definitions.md#Joystick_Direction)
+- event : [Joystick::Event::Type](04_definitions.md#Joystick_Event)
+- command : [Joystick::Command::Type](04_definitions.md#Joystick_Command)
 
 
 <br>
@@ -501,8 +501,8 @@ namespace Protocol
     };
 }
 ```
-- mode : [Buzzer::Mode::Type](definitions.md#Buzzer_Mode)
-- value : mode에서 ScaleInstantally 또는 ScaleContinually를 선택한 경우 [Buzzer::Scale::Type](definitions.md#Buzzer_Scale), HzInstantally 또는 HzContinually를 선택한 경우 0 ~ 8000(Hz)
+- mode : [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)
+- value : mode에서 ScaleInstantally 또는 ScaleContinually를 선택한 경우 [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale), HzInstantally 또는 HzContinually를 선택한 경우 0 ~ 8000(Hz)
 - time : 0 ~ 65535(ms)
 
 
@@ -524,7 +524,7 @@ namespace Protocol
     };
 }
 ```
-- mode : [Vibrator::Mode::Type](definitions.md#Vibrator_Mode)
+- mode : [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode)
 - on : 0 ~ 65535(ms)
 - off : 0 ~ 65535(ms)
 - total : 0 ~ 65535(ms)
@@ -546,8 +546,8 @@ namespace Protocol
     };
 }
 ```
-- command : [UserInterface::Commands](definitions.md#UserInterface_Commands)
-- function : [UserInterface::Functions](definitions.md#UserInterface_Functions)
+- command : [UserInterface::Commands](04_definitions.md#UserInterface_Commands)
+- function : [UserInterface::Functions](04_definitions.md#UserInterface_Functions)
 
 
 <br>

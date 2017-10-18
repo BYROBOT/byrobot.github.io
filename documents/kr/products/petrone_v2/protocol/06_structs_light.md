@@ -470,7 +470,7 @@ namespace Protocol
 |:-----------:|:------------------------------------------------:|:------:|:--------:|:---------------|
 | mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -      | 3 Byte   | LED 동작 모드  |
 | color       | [Light::Color](#Light_Color)                     | -      | 3 Byte   | LED RGB 색상   |
-| command     | [Protocol::Command](structs.md#Protocol_Command) | -      | 2 Byte   | 명령           |
+| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -      | 2 Byte   | 명령           |
 
 
 <br>
@@ -501,7 +501,7 @@ namespace Protocol
 |:---------:|:------------------------------------------------:|:-----------------------:|:--------:|:-------------------|
 | mode      | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -                       | 3 Byte   | LED 동작 모드      |
 | color     | [Light::Color](#Light_Color)                     | -                       | 3 Byte   | LED RGB 색상       |
-| command   | [Protocol::Command](structs.md#Protocol_Command) | -                       | 2 Byte   | 명령               |
+| command   | [Protocol::Command](05_structs.md#Protocol_Command) | -                       | 2 Byte   | 명령               |
 | irData    | uint32_t                                         | 0x00000000 ~ 0xFFFFFFFF | 4 Byte   | 적외선 전송 데이터 |
 
 
@@ -560,7 +560,7 @@ namespace Protocol
 |:-----------:|:------------------------------------------------:|:------:|:--------:|:--------------------|
 | mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -      | 3 Byte   | LED 동작 모드       |
 | colors      | [Light::Colors::Type](#Light_Colors)             | -      | 1 Byte   | LED 팔레트 인덱스   |
-| command     | [Protocol::Command](structs.md#Protocol_Command) | -      | 2 Byte   | 명령                |
+| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -      | 2 Byte   | 명령                |
 
 
 <br>
@@ -591,7 +591,7 @@ namespace Protocol
 |:-----------:|:------------------------------------------------:|:-----------------------:|:--------:|:--------------------|
 | mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -                       | 3 Byte   | LED 동작 모드       |
 | colors      | [Light::Colors::Type](#Light_Colors)             | -                       | 1 Byte   | LED 팔레트 인덱스   |
-| command     | [Protocol::Command](structs.md#Protocol_Command) | -                       | 2 Byte   | 명령                |
+| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -                       | 2 Byte   | 명령                |
 | irData      | uint32_t                                         | 0x00000000 ~ 0xFFFFFFFF | 4 Byte   | 적외선 전송 데이터  |
 
 
@@ -681,7 +681,7 @@ namespace Protocol
 |:-----------:|:------------------------------------------------:|:----:|:--------:|:--------------|
 | event       | [Protocol::Light::Event](#Protocol_Light_Event)  | -    | 4 Byte   | LED 이벤트    |
 | color       | [Light::Color](#Light_Color)                     | -    | 3 Byte   | LED RGB 색상  |
-| command     | [Protocol::Command](structs.md#Protocol_Command) | -    | 2 Byte   | 명령          |
+| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -    | 2 Byte   | 명령          |
 
 
 <br>
@@ -712,7 +712,7 @@ namespace Protocol
 |:-----------:|:------------------------------------------------:|:------------------------:|:--------:|:-------------------|
 | event       | [Protocol::Light::Event](#Protocol_Light_Event)  | -                        | 4 Byte   | LED 이벤트         |
 | color       | [Light::Color](#Light_Color)                     | -                        | 3 Byte   | LED RGB 색상       |
-| command     | [Protocol::Command](structs.md#Protocol_Command) | -                        | 2 Byte   | 명령               |
+| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -                        | 2 Byte   | 명령               |
 | irData      | uint32_t                                         | 0x00000000 ~ 0xFFFFFFFF  | 4 Byte   | 적외선 전송 데이터 |
 
 
@@ -771,7 +771,7 @@ namespace Protocol
 |:---------:|:-------------------------------------------------:|:-----:|:--------:|:------------------|
 | event     | [Protocol::Light::Event](#Protocol_Light_Event)   | -     | 4 Byte   | LED 이벤트        |
 | colors    | [Light::Colors::Type](#Light_Colors)              | -     | 1 Byte   | LED 팔레트 인덱스 |
-| command   | [Protocol::Command](structs.md#Protocol_Command)  | -     | 2 Byte   | 명령              |
+| command   | [Protocol::Command](05_structs.md#Protocol_Command)  | -     | 2 Byte   | 명령              |
 
 
 <br>
@@ -802,7 +802,7 @@ namespace Protocol
 |:---------:|:-------------------------------------------------:|:-----------------------:|:--------:|:-------------------|
 | event     | [Protocol::Light::Event](#Protocol_Light_Event)   | -                       | 4 Byte   | LED 이벤트         |
 | colors    | [Light::Colors::Type](#Light_Colors)              | -                       | 1 Byte   | LED 팔레트 인덱스  |
-| command   | [Protocol::Command](structs.md#Protocol_Command)  | -                       | 2 Byte   | 명령               |
+| command   | [Protocol::Command](05_structs.md#Protocol_Command)  | -                       | 2 Byte   | 명령               |
 | irData    | uint32_t                                          | 0x00000000 ~ 0xFFFFFFFF | 4 Byte   | 적외선 전송 데이터 |
 
 
