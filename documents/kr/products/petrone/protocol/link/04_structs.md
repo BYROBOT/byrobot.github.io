@@ -138,8 +138,8 @@ PETRONE과 페어링이 필요한 경우에 먼저 LinkPasscode를 사용하여 
 ### PETRONE Link
 
 1. [Intro](01_intro.md)
-2. [DataType](03_datatype.md)
-3. [Definitions](04_definitions.md)
+2. [DataType](02_datatype.md)
+3. [Definitions](03_definitions.md)
 4. ***Structs***
 5. [Examples](05_examples.md)
 

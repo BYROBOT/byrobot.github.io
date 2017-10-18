@@ -199,9 +199,9 @@ namespace System
 ### PETRONE Link
 
 1. [Intro](01_intro.md)
-2. [DataType](03_datatype.md)
+2. [DataType](02_datatype.md)
 3. ***Definitions***
-4. [Structs](06_structs.md)
+4. [Structs](04_structs.md)
 5. [Examples](05_examples.md)
 
 <br>
