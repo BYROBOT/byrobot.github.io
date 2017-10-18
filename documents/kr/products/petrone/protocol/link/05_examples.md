@@ -1,5 +1,5 @@
 ***PETRONE / LINK / Protocol / Structs***<br>
-Modified : 2017.07.11
+Modified : 2017.10.18
 
 ---
 
@@ -556,22 +556,22 @@ PETRONE과 연결된 경우, 아래의 명령을 보내면 프로펠러 쪽 LED�
 
 ### PETRONE
 
-1. [Intro](../intro.md)
-2. [Typedef](../typedef.md)
-3. [DataType](../datatype.md)
-4. [Definitions](../definitions.md)
-5. [Base Structs](../base_structs.md)
-6. [Structs](../structs.md)
-7. [Structs - Light](../structs_light.md)
-8. [Firmware Update](../firmware_update.md)
+1. [Intro](../01_intro.md)
+2. [Typedef](../02_typedef.md)
+3. [DataType](../03_datatype.md)
+4. [Definitions](../04_definitions.md)
+5. [Base Structs](../05_base_structs.md)
+6. [Structs](../06_structs.md)
+7. [Structs - Light](../07_structs_light.md)
+8. [Firmware Update](../08_firmware_update.md)
 
 
 ### PETRONE Link
 
-1. [Intro](intro.md)
-2. [DataType](datatype.md)
-3. [Definitions](definitions.md)
-4. [Structs](structs.md)
+1. [Intro](01_intro.md)
+2. [DataType](03_datatype.md)
+3. [Definitions](04_definitions.md)
+4. [Structs](06_structs.md)
 5. ***Examples***
 
 <br>
@@ -579,6 +579,4 @@ PETRONE과 연결된 경우, 아래의 명령을 보내면 프로펠러 쪽 LED�
 [Index](../index.md)
 
 <br>
-
-[Home](../../../../../README.md)
 
