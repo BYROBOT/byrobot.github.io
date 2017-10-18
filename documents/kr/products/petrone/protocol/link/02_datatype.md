@@ -62,8 +62,8 @@ namespace Protocol
 
 1. [Intro](01_intro.md)
 2. ***DataType***
-3. [Definitions](04_definitions.md)
-4. [Structs](06_structs.md)
+3. [Definitions](03_definitions.md)
+4. [Structs](04_structs.md)
 5. [Examples](05_examples.md)
 
 <br>
