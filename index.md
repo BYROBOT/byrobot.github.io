@@ -55,7 +55,11 @@
                     <a href="https://github.com/petrone/PetroneAPI_swift_Sample" target="_blank">PetroneAPI_swift_Sample</a>
                 </div>
             </td>
-            <td><div align="center">-</div></td>
+            <td>
+                <div align="center">
+                    <a href="https://github.com/petrone-v2/window_console_example_for_petrone_v2" target="_blank">Consol Example(Windows)</a>
+                </div>
+            </td>
         </tr>
         <tr>
             <td><div align="center">Update log</div></td>
