@@ -70,6 +70,16 @@
     </table>
 </div>
 
+
 ---
 
-Modified : 2017.10.18
+
+<div align="center"><a href="http://www.byrobot.co.kr">Homepage</a></div>
+<br>
+<div align="center"><a href="https://www.youtube.com/user/BYROBOTCO">YouTube</a></div>
+<br>
+<div align="center"><a href="https://www.facebook.com/DroneFighter165">Facebook</a></div>
+
+---
+
+Modified : 2017.10.24
