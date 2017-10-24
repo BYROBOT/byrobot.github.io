@@ -26,6 +26,18 @@ $size: 48;
         }
     }
 
+    .ico-byrobot {
+        @include get-ico-image(byrobot);
+
+        background-color: #111111;
+    }
+
+    .ico-youtube {
+        @include get-ico-image(youtube);
+
+        background-color: #FE0000;
+    }
+
     .ico-facebook {
         @include get-ico-image(facebook);
 
