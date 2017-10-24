@@ -70,14 +70,10 @@
     </table>
 </div>
 
-
----
-
+<br>
 
 <div align="center"><a href="http://www.byrobot.co.kr">Homepage</a></div>
-<br>
 <div align="center"><a href="https://www.youtube.com/user/BYROBOTCO">YouTube</a></div>
-<br>
 <div align="center"><a href="https://www.facebook.com/DroneFighter165">Facebook</a></div>
 
 ---
