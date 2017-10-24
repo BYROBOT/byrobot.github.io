@@ -36,10 +36,10 @@ author:
       url: http://www.byrobot.co.kr
     - name: facebook
       url: https://www.facebook.com/DroneFighter165
-    - name: github
-      url:  https://github.com/dronefighters
     - name: youtube
       url:  https://www.youtube.com/user/BYROBOTCO
+    - name: github
+      url:  https://github.com/byrobot
 blog:
   cc_license: https://creativecommons.org/licenses/by-sa/4.0/
   cc_license_image: /assets/images/theme/cc-by-sa.png
