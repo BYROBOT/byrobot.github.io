@@ -33,9 +33,11 @@ author:
   email:
   social_links:
     - name: facebook
-      url: https://www.facebook.com/byrobot.co.kr/
+      url: https://www.facebook.com/DroneFighter165
     - name: github
       url:  https://github.com/dronefighters
+    - name: youtube
+      url:  https://www.youtube.com/user/BYROBOTCO
 blog:
   cc_license: https://creativecommons.org/licenses/by-sa/4.0/
   cc_license_image: /assets/images/theme/cc-by-sa.png
