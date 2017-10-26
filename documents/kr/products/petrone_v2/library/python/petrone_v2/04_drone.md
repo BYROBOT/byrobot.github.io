@@ -1462,6 +1462,8 @@ def sendVibratorReserve(self, on, off, total):
 16. [Examples - Input](examples_12_input.md)
 17. [Examples - Error](examples_13_error.md)
 
+[Tutorial for Mac](./tutorial_for_mac/)
+
 <br>
 
 [Index](index.md)
