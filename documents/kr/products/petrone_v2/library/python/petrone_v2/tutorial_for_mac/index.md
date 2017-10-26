@@ -1,10 +1,10 @@
 **[*petrone_v2* for python](../index.md)** / **Tutorial for Mac**
 
-Modified : 2017.10.26
+Modified : 2017.10.27
 
 ---
 
-<h3>맥에서 <b>파이썬</b>과 <b>Visual Studio Code</b>, <b>petrone_v2 라이브러리</b>를 설치하고 예제 프로그램을 실행하는 과정을 자세히 알려드립니다.</h3>
+<h3>맥에서 <b>파이썬</b>과 <b>Visual Studio Code</b>, <b>petrone_v2 라이브러리</b>를 설치하고, 예제 프로그램을 실행하는 과정을 자세히 알려드립니다.</h3>
 
 ---
 
@@ -22,21 +22,22 @@ https://www.python.org 사이트를 방문합니다.
 화면의 **Downloads**라는 글자를 클릭하세요.
 <br>
 
+
 <div align="center">
     <img src="1_install_python_2.png" alt="install_python_2">
 </div>
 
-두 종류의 파이썬이 노란색 버튼으로 나타납니다.
-여기에서 <b>Download Python 3.6.3</b>를 클릭하세요.
+두 종류의 파이썬이 노란색 버튼으로 나타납니다. 여기에서 <b>Download Python 3.6.3</b>를 클릭하세요.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_3.png" alt="install_python_3">
 </div>
 
-잠시 후 다운로드 폴더에 <b>python-3.6.3-macosx10.6.pkg</b> 파일을 받은 것을 확인하실 수 있습니다.
-이 파일을 실행하면 설치를 시작합니다.
+잠시 후 다운로드 폴더에 <b>python-3.6.3-macosx10.6.pkg</b> 파일을 받은 것을 확인하실 수 있습니다. 이 파일을 실행하면 설치를 시작합니다.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_4.png" alt="install_python_4">
@@ -45,12 +46,14 @@ https://www.python.org 사이트를 방문합니다.
 <b>계속</b> 버튼을 누르면 다음으로 넘어갑니다
 <br>
 
+
 <div align="center">
     <img src="1_install_python_5.png" alt="install_python_5">
 </div>
 
 <b>계속</b> 버튼을 누르면 다음으로 넘어갑니다.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_6.png" alt="install_python_6">
@@ -59,12 +62,14 @@ https://www.python.org 사이트를 방문합니다.
 <b>계속</b> 버튼을 누르면 다음으로 넘어갑니다.
 <br>
 
+
 <div align="center">
     <img src="1_install_python_7.png" alt="install_python_7">
 </div>
 
 <b>동의</b> 버튼을 누르면 다음으로 넘어갑니다.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_8.png" alt="install_python_8">
@@ -73,21 +78,22 @@ https://www.python.org 사이트를 방문합니다.
 설치할 디스크를 묻는 화면입니다.
 <br>
 
+
 <div align="center">
     <img src="1_install_python_9.png" alt="install_python_9">
 </div>
 
-설치할 디스크를 지정하면 다음 단계로 넘어갈 수 있습니다.
-<b>계속</b> 버튼을 누르면 다음으로 넘어갑니다.
+설치할 디스크를 지정하면 다음 단계로 넘어갈 수 있습니다. <b>계속</b> 버튼을 누르면 다음으로 넘어갑니다.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_10.png" alt="install_python_10">
 </div>
 
-설치 용량을 알려주는 화면입니다.
-<b>설치</b> 버튼을 누르면 다음으로 넘어갑니다.
+설치 용량을 알려주는 화면입니다. <b>설치</b> 버튼을 누르면 다음으로 넘어갑니다.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_11.png" alt="install_python_11">
@@ -96,21 +102,22 @@ https://www.python.org 사이트를 방문합니다.
 설치 중인 화면입니다.
 <br>
 
+
 <div align="center">
     <img src="1_install_python_12.png" alt="install_python_12">
 </div>
 
-설치가 완료된 화면입니다.
-<b>닫기</b> 버튼을 누르면 다음으로 넘어갑니다.
+설치가 완료된 화면입니다. <b>닫기</b> 버튼을 누르면 다음으로 넘어갑니다.
 <br>
+
 
 <div align="center">
     <img src="1_install_python_13.png" alt="install_python_13">
 </div>
 
-설치에 사용한 파일을 휴지통에 버릴 것인지를 묻는 화면입니다.
-<b>휴지통으로 이동</b>을 선택하시면 파이썬 설치가 완료됩니다.
+설치에 사용한 파일을 휴지통에 버릴 것인지를 묻는 화면입니다. <b>휴지통으로 이동</b>을 선택하시면 파이썬 설치가 완료됩니다.
 <br>
+
 
 
 <br>
@@ -127,21 +134,22 @@ https://code.visualstudio.com 사이트를 방문합니다.
 <b>Download for Mac</b> 버튼을 누르시면 Visual Studio Code를 다운받으실 수 있습니다.
 <br>
 
+
 <div align="center">
     <img src="2_install_visualstudio_2.png" alt="install_visualstudio_2">
 </div>
 
-다운로드가 시작되면 위와 같은 화면으로 바뀝니다.
-화면이 전환되고도 다운로드를 시작하지 않는다면, 화면 중앙의 <b>direct download link</b> 버튼을 누르시기 바랍니다.
+다운로드가 시작되면 위와 같은 화면으로 바뀝니다. 화면이 전환되고도 다운로드를 시작하지 않는다면, 화면 중앙의 <b>direct download link</b> 버튼을 누르시기 바랍니다.
 <br>
+
 
 <div align="center">
     <img src="2_install_visualstudio_3.png" alt="install_visualstudio_3">
 </div>
 
-처음 프로그램을 실행하면 위와 같은 창이 나타납니다.
-여기에서 <b>열기</b>를 누르시면 프로그램이 실행됩니다.
+처음 프로그램을 실행하면 위와 같은 창이 나타납니다. 여기에서 <b>열기</b>를 누르시면 프로그램이 실행됩니다.
 <br>
+
 
 <div align="center">
     <img src="2_install_visualstudio_4.png" alt="install_visualstudio_4">
@@ -149,6 +157,7 @@ https://code.visualstudio.com 사이트를 방문합니다.
 
 <b>Visual Studio Code</b>가 실행된 화면입니다.
 <br>
+
 
 
 <br>
@@ -166,23 +175,26 @@ petrone_v2는 Python 3.6을 기반으로 작성하였습니다.
 화면 상단의 메뉴에서 <b>Code</b> -> <b>기본 설정</b> -> <b>설정</b>을 선택합니다.
 <br>
 
+
 <div align="center">
     <img src="3_change_setting_2.png" alt="change_setting_2">
 </div>
 
 위의 그림과 같이 화면 우측에 다음의 설정을 추가합니다.
+
 ```python
-"Python.pythonPath": "python3"
+"python.pythonPath": "python3"
 ```
+
 <br>
 
 <div align="center">
     <img src="3_change_setting_3.png" alt="change_setting_3">
 </div>
 
-파일을 닫으면 설정 파일을 저장할 것인지를 묻습니다.
-여기에서 <b>저장</b> 버튼을 누르시면 됩니다.
+파일을 닫으면 설정 파일을 저장할 것인지를 묻습니다. 여기에서 <b>저장</b> 버튼을 누르시면 됩니다.
 <br>
+
 
 <div align="center">
     <img src="3_change_setting_4.png" alt="change_setting_4">
@@ -203,8 +215,7 @@ Visual Studio Code에서 파이썬 프로그램 작성을 도와주는 몇 가�
     <img src="4_install_extensions.png" alt="install_extensions">
 </div>
 
-화면 좌측에서 다섯번째 아이콘을 클릭하시면 확장프로그램 창이 열립니다.
-여기에서는 indent-rainbow, MagicPython, Python, Python for VSCode를 설치하였습니다.
+화면 좌측에서 다섯번째 아이콘을 클릭하시면 확장프로그램 창이 열립니다. 여기에서는 <b>indent-rainbow</b>, <b>MagicPython</b>, <b>Python</b>, <b>Python for VSCode</b>를 설치하였습니다. 상단의 <b>마켓플레이스에서 확장 검색</b>에 각각의 이름을 넣고 검색해서 설치하시면 됩니다.
 
 
 <br>
@@ -237,7 +248,7 @@ PETRONE V2의 파이썬 라이브러리를 설치할 차례입니다.
 터미널에서 아래의 명령을 실행하시면 라이브러리가 설치됩니다.
 
 ```
-> python3 install petrone_v2
+> pip3 install petrone_v2
 ```
 
 <div align="center">
@@ -307,14 +318,14 @@ if __name__ == '__main__':
 예제 코드를 붙여 넣은 화면입니다.
 <br>
 
+
 <div align="center">
     <img src="7_run_example_3.png" alt="run_example_3">
 </div>
 
-파일을 저장해야 실행할 수 있습니다.
-
-메뉴에서 <b>파일</b> -> <b>저장</b>을 선택합니다.
+파일을 저장해야 실행할 수 있습니다. 메뉴에서 <b>파일</b> -> <b>저장</b>을 선택합니다.
 <br>
+
 
 <div align="center">
     <img src="7_run_example_4.png" alt="run_example_4">
@@ -323,6 +334,7 @@ if __name__ == '__main__':
 여기에서는 <b>사용자/byrobot/Works</b> 폴더에 <b>test_sendrequest.py</b> 라는 이름으로 저장하였습니다.
 <br>
 
+
 <div align="center">
     <img src="7_run_example_5.png" alt="run_example_5">
 </div>
@@ -330,22 +342,20 @@ if __name__ == '__main__':
 파일을 저장하자 코드 문법이 강조되었습니다.
 <br>
 
+
 <div align="center">
     <img src="7_run_example_6.png" alt="run_example_6">
 </div>
 
-화면의 빈 공간에 오른클릭을 하면 위와 같은 메뉴를 볼 수 있습니다.
-
-예제를 실행하려면 여기에서 <b>Run Python File in Terminal</b>를 선택하면 됩니다.
+화면의 빈 공간에 오른클릭을 하면 위와 같은 메뉴를 볼 수 있습니다. 예제를 실행하려면 여기에서 <b>Run Python File in Terminal</b>를 선택하면 됩니다.
 <br>
+
 
 <div align="center">
     <img src="7_run_example_7.png" alt="run_example_7">
 </div>
 
-PETRONE V2 조종기가 맥에 연결되어 있다면 위와 비슷한 결과를 확인할 수 있습니다.
-
-만약 조종기가 연결되지 않았거나 연결에 문제가 있다면 아무런 결과도 표시하지 않습니다.
+PETRONE V2 조종기가 맥에 연결되어 있다면 위와 비슷한 결과를 확인할 수 있습니다. 만약 조종기가 연결되지 않았거나 연결에 문제가 있다면 아무런 결과도 표시하지 않습니다.
 <br>
 
 
