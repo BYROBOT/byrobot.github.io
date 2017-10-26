@@ -1,6 +1,6 @@
 **[*petrone_v2* for python](index.md)** / **Examples** / **Display**
 
-Modified : 2017.09.20
+Modified : 2017.10.27
 
 ---
 
@@ -489,7 +489,7 @@ if __name__ == '__main__':
 16. [Examples - Input](examples_12_input.md)
 17. [Examples - Error](examples_13_error.md)
 
-[Tutorial for Mac](./tutorial_for_mac/)
+[Tutorial for Mac](../tutorial_for_mac/)
 
 <br>
 
