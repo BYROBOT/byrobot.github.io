@@ -15,7 +15,7 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 
 
 <div align="center">
-    <img src="entry_img/Petrone V2_function(bottom range).png" alt="Petrone V2_function(bottom range)">
+    <img src="petrone_v2_function_bottom_range.png" alt="petrone_v2_function_bottom_range">
 </div>
 
 
@@ -26,8 +26,8 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 
 <h3><i>petrone_v2</i> for entry</H3>
 
- 1. [Examples - Bottom range(Korean)](examples_01_bottom range(Korean).md)
- 2. [Examples - Bottom range(English)](examples_01_bottom range(English).md)
+ 1. **Examples - Bottom range(Korean)**
+ 2. [Examples - Bottom range(English)](./examples_01_bottom_range_english/)
 
 <br>
 
