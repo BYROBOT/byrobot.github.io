@@ -280,7 +280,9 @@ petrone_v2 라이브러리를 사용하기 위한 모든 준비가 끝났습니�
     <img src="7_run_example_1.png" alt="run_example_1">
 </div>
 
-여기에서 화면 좌측 상단의 <b>새 파일</b>을 선택하시면 빈 파일이 열립니다. 아래의 코드를 복사해서 붙여 넣으시면 됩니다.
+여기에서 화면 좌측 상단의 <b>새 파일</b>을 선택하시면 빈 파일이 열립니다. 빈 파일에 아래의 코드를 복사해서 붙여 넣으시면 됩니다.
+<br>
+<br>
 
 ```python
 from time import sleep
@@ -317,6 +319,8 @@ if __name__ == '__main__':
 예제는 아래의 소스에서 포트 이름을 지운 것입니다.
 
 [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](https://byrobot.github.io/documents/kr/products/petrone_v2/library/python/petrone_v2/examples_02_information/#Class_Information)
+
+<br>
 
 <div align="center">
     <img src="7_run_example_2.png" alt="run_example_2">
@@ -375,7 +379,7 @@ PETRONE V2 조종기가 맥에 연결되어 있다면 위와 비슷한 결과를
 <br>
 
 
-여기까지 파이썬 설치부터 petrone_v2 라이브러리를 사용한 예제 실행까지 진행하였습니다. 실행 중에 문제가 발생할 경우 포럼에 글을 남겨주시기 바랍니다.
+여기까지 파이썬 설치와 petrone_v2 라이브러리를 사용한 예제 실행을 진행하였습니다. 실행 중에 문제가 발생할 경우 포럼에 글을 남겨주시기 바랍니다.
 
 
 <br>
