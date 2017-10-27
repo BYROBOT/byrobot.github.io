@@ -1,4 +1,4 @@
-**[*petrone_v2* for entry](index.md)** / **Examples** / **Bottom range(Korean)**
+**[*petrone_v2* for entry](./index.md)** / **Examples** / **Bottom range(Korean)**
 
 Modified : 2017.10.27
 
@@ -13,9 +13,11 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 
 원하는 높이 값을 입력받아야 하므로 함수를 사용했습니다.
 
+<br>
 
-<div align="center">
-    <img src="petrone_v2_function_bottom_range.png" alt="petrone_v2_function_bottom_range">
+
+<div align="left">
+    <img src="petrone_v2_function_bottom_range_korean.png" alt="petrone_v2_function_bottom_range_korean">
 </div>
 
 
@@ -31,4 +33,4 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 
 <br>
 
-[Index](index.md)
+[Index](./index.md)
