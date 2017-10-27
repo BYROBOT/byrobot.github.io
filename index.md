@@ -48,7 +48,7 @@
             <tr>
                 <td><div align="center">-</div></td>
                 <td><div align="center">-</div></td>
-                <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/tutorial_for_mac/">Python Tutorial</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/tutorial_for_mac/">Python Tutorial for Mac</a></div></td>
             </tr>
         <tr>
             <td><div align="center">API</div></td>
