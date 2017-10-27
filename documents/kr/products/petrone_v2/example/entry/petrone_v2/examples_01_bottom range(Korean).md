@@ -13,7 +13,10 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 
 원하는 높이 값을 입력받아야 하므로 함수를 사용했습니다.
 
-'''image'''
+
+<div align="center">
+    <img src="entry_img/Petrone V2_function(bottom range).png" alt="Petrone V2_function(bottom range)">
+</div>
 
 
 <br>
