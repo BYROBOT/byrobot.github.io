@@ -1,4 +1,4 @@
-**[*petrone_v2* for entry](./index.md)** / **Examples** / **Bottom range(Korean)**
+**[*petrone_v2* for entry](../index.md)** / **Examples** / **Bottom range(Korean)**
 
 Modified : 2017.10.27
 
@@ -33,4 +33,4 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 
 <br>
 
-[Index](./index.md)
+[Index](../index.md)
