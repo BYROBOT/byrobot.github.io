@@ -29,7 +29,7 @@ Petrone V2의 **Range sensor**를 이용하여 원하는 **높이**만큼 드론
 <h3><i>petrone_v2</i> for entry</H3>
 
  1. **Examples - Bottom range(Korean)**
- 2. [Examples - Bottom range(English)](./examples_01_bottom_range_english/)
+ 2. [Examples - Bottom range(English)](../examples_01_bottom_range_english/)
 
 <br>
 
