@@ -1,9 +1,68 @@
 **[*petrone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2017.09.29
+Modified : 2017.10.31
 
 ---
 
+<br>
+
+
+## <a name="UpdateInformation_petrone_link">PETRONE LINK 모듈의 펌웨어 정보 요청</a>
+
+페트론 링크 모듈의 펌웨어 정보를 요청합니다.
+
+```py
+from time import sleep
+
+from petrone.drone import *
+from petrone.protocol import *
+from petrone.system import *
+
+
+def eventUpdateInformation(data):
+    print("eventUpdateInformation() / {0} / {1} / {2} / Ver:{3} / 20{4:02}.{5}.{6}".format(data.modeUpdate, data.deviceType, data.imageType, data.version, data.year, data.month, data.day))
+
+
+if __name__ == '__main__':
+    
+    # Drone의 객체 생성
+    drone = Drone(True, True, True, True, True)
+
+    # 이벤트 핸들링 함수 등록
+    drone.setEventHandler(DataType.UpdateInformation, eventUpdateInformation)
+
+    # 장치에 연결
+    drone.open()
+    
+    # 장치에 연결된 경우 정보 요청
+    if drone.isOpen():
+
+        # 펌웨어 정보 요청
+        print("Request information of PETRONE LINK firmware.")
+        drone.sendUpdateLookupTarget(DeviceType.Link)
+        sleep(2)
+
+    drone.close()
+```
+
+<br>
+
+실행 결과는 다음과 같습니다.
+
+```py
+[     0.120] Connected.(COM44)
+Request information of PETRONE LINK firmware.
+0A 55 90 04 03 00 00 00 7E DC
+FF
+FF
+0A 55 91 0B 00 03 00 00 00 07 11 00 10 0A 15 F9 C1
+[     0.130] Success / Receiver / Section.End / Receive complete / DataType.UpdateInformation / [receive: 0xC1F9]
+eventUpdateInformation() / ModeUpdate.None_ / DeviceType.Link / ImageType.ImageSingle / Ver:17 / 2016.10.21
+[     2.133] Closing serial port.
+```
+
+
+<br>
 <br>
 
 
