@@ -72,14 +72,19 @@
             </td>
         </tr>
         <tr>
-            <td><div align="center">Firmware</div></td>
-            <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
-            <td><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">Update log</a></div></td>
-            <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2" target="_blank">Download</a><br><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div></td>
+            <td><div rowspan="2" align="center">Firmware</div></td>
+            <td><div align="center">-</div></td>
+            <td><div align="center">-</div></td>
+            <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2" target="_blank">Download</a></div></td>
         </tr>
+            <tr>
+                <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">Update log</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div></td>
+            </tr>
     </table>
 </div>
 
 ---
 
-Modified : 2017.10.24
+Modified : 2017.11.16
