@@ -22,7 +22,7 @@ Modified : 2017.11.16
 > - Information 항목에서 바이어스와 트림 값 표시 문자열 정렬 수정
 > - Information 항목에서 IMU 데이터 출력 표시 수정
 
-**[[Download](https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2)]**
+**[[Download](https://drive.google.com/open?id=1Si3eQtOHbyjd-c8gS4izCRb0vt2TNivi)]**
 
 <br>
 
