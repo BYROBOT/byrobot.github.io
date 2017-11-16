@@ -1,6 +1,6 @@
 **PETRONE V2 update log**
 
-Modified : 2017.10.18
+Modified : 2017.11.16
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2017.10.18
 
 
 <br>
+
+
+# 2017.11.13
+
+- **Drone: 1.0.R.56**
+- **Controller: 1.1.R.4**
+
+  **[Download](https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2)**
+
+> - RF 통신 안정화
+> - 조종기 라이브러리 업데이트
+> - 버튼을 누르고 있는 상태일 때, PC에 조이스틱 조작값을 전송하지 않던 문제 수정
+> - Information 항목에서 바이어스와 트림 값 표시 문자열 정렬 수정
+> - Information 항목에서 IMU 데이터 출력 표시 수정
+
+<br>
+
+---
 
 
 # 2017.10.10
