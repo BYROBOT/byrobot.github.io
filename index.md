@@ -35,6 +35,17 @@
         </tr>
         -->
         <tr>
+            <td rowspan="2"><div align="center">Firmware</div></td>
+            <td><div align="center">Education<br>Drone: 20170420<br>Controller: 20170420</div></td>
+            <td><div align="center">Drone Main: 48<br>Drone Sub: 18<br>Link: 17</div></td>
+            <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2" target="_blank">Download</a></div></td>
+        </tr>
+            <tr>
+                <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">Update log</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div></td>
+            </tr>
+        <tr>
             <td rowspan="4"><div align="center">Documents</div></td>
             <td><div align="center"><a href="/documents/kr/products/dronefighter2017/protocol/">Protocol</a></div></td>
             <td><div align="center"><a href="/documents/kr/products/petrone/protocol/">Protocol</a></div></td>
@@ -71,17 +82,6 @@
                 </div>
             </td>
         </tr>
-        <tr>
-            <td rowspan="2"><div align="center">Firmware</div></td>
-            <td><div align="center">-</div></td>
-            <td><div align="center">Drone: 48</div></td>
-            <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2" target="_blank">Download</a></div></td>
-        </tr>
-            <tr>
-                <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
-                <td><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">Update log</a></div></td>
-                <td><div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div></td>
-            </tr>
     </table>
 </div>
 
