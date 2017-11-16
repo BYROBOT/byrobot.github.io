@@ -72,9 +72,9 @@
             </td>
         </tr>
         <tr>
-            <td><div rowspan="2" align="center">Firmware</div></td>
+            <td rowspan="2"><div align="center">Firmware</div></td>
             <td><div align="center">-</div></td>
-            <td><div align="center">-</div></td>
+            <td><div align="center">Drone: 48</div></td>
             <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2" target="_blank">Download</a></div></td>
         </tr>
             <tr>
