@@ -13,10 +13,10 @@ Modified : 2017.11.16
 
 # 2017.11.13
 
+**[[Download](https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2)]**
+
 - **Drone: 1.0.R.56**
 - **Controller: 1.1.R.4**
-
-  **[Download](https://drive.google.com/open?id=1S6kd0Vxxc3ofJE-v8FtOAHRFVchMZ7w2)**
 
 > - RF 통신 안정화
 > - 조종기 라이브러리 업데이트
