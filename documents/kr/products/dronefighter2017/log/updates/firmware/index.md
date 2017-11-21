@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2017.10.18
+Modified : 2017.11.21
 
 ---
 
@@ -14,6 +14,8 @@ Modified : 2017.10.18
 # 2017.4.20
 
 > - 조이스틱 deadzone 수정
+
+**[[Download](https://drive.google.com/open?id=1KItchl29rXjVD_lj2C0v-HrOiixLl3Om)]**
 
 <br>
 
