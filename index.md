@@ -38,7 +38,7 @@
             <td rowspan="2"><div align="center">Firmware</div></td>
             <td><div align="center">General<br>Drone: 4.0<br>Controller: 4.0<br>Education<br>Drone: 20170420<br>Controller: 20170420<br><a href="https://drive.google.com/open?id=1KItchl29rXjVD_lj2C0v-HrOiixLl3Om" target="_blank">Download</a></div></td>
             <td><div align="center">Drone Main: 48<br>Drone Sub: 18<br>Link: 17</div></td>
-            <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1Si3eQtOHbyjd-c8gS4izCRb0vt2TNivi" target="_blank">Download</a></div></td>
+            <td><div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4<br><a href="https://drive.google.com/open?id=1Si3eQtOHbyjd-c8gS4izCRb0vt2TNivi" target="_blank">Download</a><br><a href="/documents/kr/products/petrone_v2/manual/update/byrobot_how_to_update_petrone_v2.pdf" target="_blank">Manual</a></div></td>
         </tr>
             <tr>
                 <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
@@ -87,4 +87,4 @@
 
 ---
 
-Modified : 2017.11.27
+Modified : 2017.12.15
