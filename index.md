@@ -53,10 +53,10 @@
                     <div align="center"><a href="https://drive.google.com/open?id=1KItchl29rXjVD_lj2C0v-HrOiixLl3Om" target="_blank">Download</a></div>
                 </td>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=1FsUJRpLupsQ8QPP3XkWX6MSQNG_t6oQ7" target="_blank">Download(Link)</a></div>
+                    <div align="center"><a href="https://drive.google.com/open?id=1Atm7k09vcMom3e2-5f0re5DXvKGcWCcr" target="_blank">Download(Link)</a></div>
                 </td>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=1Si3eQtOHbyjd-c8gS4izCRb0vt2TNivi" target="_blank">Download</a><br>
+                    <div align="center"><a href="https://drive.google.com/open?id=1OssjNdWTTbhLqQtBwkj7ujgBFfZAJ2uP" target="_blank">Download</a><br>
                     <a href="/documents/kr/products/petrone_v2/manual/update/byrobot_how_to_update_petrone_v2.pdf" target="_blank">Manual</a></div>
                 </td>
             </tr>
@@ -107,4 +107,4 @@
 
 ---
 
-Modified : 2017.12.15
+Modified : 2017.12.21
