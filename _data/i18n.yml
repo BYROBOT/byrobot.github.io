@@ -25,6 +25,8 @@ en: &en
   show_comments: 'Show Comments'
   show_license: 'Show License'
   documents: 'Documents'
+  repository: 'Repository'
+  download: 'Download'
   forum: 'Forum'
   tags: 'Tags'
   view: 'View'
