@@ -1,4 +1,4 @@
-### BYROBOT official documents repository.
+### Repository
 
 ---
 
@@ -27,7 +27,7 @@
             </td>
         </tr>
         <tr>
-            <td><div align="center">API</div></td>
+            <td><div align="center">Repository</div></td>
             <td><div align="center">-</div></td>
             <td>
                 <div align="center">
