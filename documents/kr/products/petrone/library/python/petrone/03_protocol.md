@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Protocol**
 
-Modified : 2017.09.29
+Modified : 2018.1.9
 
 ---
 
@@ -1181,10 +1181,10 @@ class Motor(ISerializable):
 
 | 변수 이름  | 형식                        | 범위  | 크기     | 설명           |
 |:----------:|:---------------------------:|:-----:|:--------:|:---------------|
-| motor[0]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 왼쪽 앞 모터   |
-| motor[1]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 오른쪽 앞 모터 |
-| motor[2]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 오른쪽 뒤 모터 |
-| motor[3]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 왼쪽 뒤 모터   |
+| motor[0]   | [MotorBlock](#MotorBlock)   | -     | 4 Byte   | 왼쪽 앞 모터   |
+| motor[1]   | [MotorBlock](#MotorBlock)   | -     | 4 Byte   | 오른쪽 앞 모터 |
+| motor[2]   | [MotorBlock](#MotorBlock)   | -     | 4 Byte   | 오른쪽 뒤 모터 |
+| motor[3]   | [MotorBlock](#MotorBlock)   | -     | 4 Byte   | 왼쪽 뒤 모터   |
 
 
 <br>
