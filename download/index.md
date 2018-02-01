@@ -50,9 +50,9 @@
                     <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/Petrone_20180102_release_0.zip" target="_blank">Download2(Link)</a></div>
                 </td>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=1OssjNdWTTbhLqQtBwkj7ujgBFfZAJ2uP" target="_blank">Download</a><br>
-                    <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20171113_release_5.zip" target="_blank">Download2</a><br>
-                    <a href="/documents/kr/products/petrone_v2/manual/update/byrobot_how_to_update_petrone_v2.pdf" target="_blank">Manual</a></div>
+                    <div align="center"><a href="https://drive.google.com/open?id=1OssjNdWTTbhLqQtBwkj7ujgBFfZAJ2uP" target="_blank">Download</a></div>
+                    <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20171113_release_5.zip" target="_blank">Download2</a></div>
+                    <div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/byrobot_how_to_update_petrone_v2.pdf" target="_blank">Manual</a></div>
                 </td>
             </tr>
             <tr>
