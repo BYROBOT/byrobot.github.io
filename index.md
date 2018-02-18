@@ -27,22 +27,25 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="4"><div align="center">Documents</div></td>
-            <td><div align="center"><a href="/documents/kr/products/dronefighter2017/protocol/">Protocol</a></div></td>
-            <td><div align="center"><a href="/documents/kr/products/petrone/protocol/">Protocol</a></div></td>
-            <td><div align="center"><a href="/documents/kr/products/petrone_v2/protocol/">Protocol</a></div></td>
+            <td><div align="center">Protocol</div></td>
+            <td><div align="center"><a href="/documents/en/products/dronefighter2017/protocol/">English</a><br/><a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a></div></td>
+            <td><div align="center"><a href="/documents/en/products/petrone/protocol/">English</a><br/><a href="/documents/kr/products/petrone/protocol/">한국어</a></div></td>
+            <td><div align="center"><a href="/documents/kr/products/petrone_v2/protocol/">한국어</a></div></td>
         </tr>
             <tr>
+            <td><div align="center">Python Library</div></td>
                 <td><div align="center">-</div></td>
-                <td><div align="center"><a href="/documents/kr/products/petrone/library/python/petrone/">Python Library</a></div></td>
-                <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">Python Library</a></div></td>
+                <td><div align="center"><a href="/documents/en/products/petrone/library/python/petrone/">English</a><br/<a href="/documents/kr/products/petrone/library/python/petrone/">한국어</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">한국어</a></div></td>
             </tr>
             <tr>
+            <td><div align="center">Python Tutorial</div></td>
                 <td><div align="center">-</div></td>
                 <td><div align="center">-</div></td>
                 <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/tutorial_for_mac/">Python Tutorial for Mac</a></div></td>
             </tr>
             <tr>
+            <td><div align="center">Entry Examples</div></td>
                 <td><div align="center">-</div></td>
                 <td><div align="center">-</div></td>
                 <td><div align="center"><a href="/documents/kr/products/petrone_v2/entry/examples/">Entry Examples</a></div></td>
@@ -52,4 +55,4 @@
 
 ---
 
-Modified : 2017.12.28
+Modified : 2018.02.14

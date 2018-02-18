@@ -1033,8 +1033,8 @@ class Pressure(ISerializable):
 
 | 변수 이름   | 형식     | 범위 | 크기     | 설명                            |
 |:-----------:|:--------:|:----:|:--------:|:--------------------------------|
-| d1          | UInt32   | -    | 4 Byte   | 온도(℃)                        |
-| d2          | UInt32   | -    | 4 Byte   | 온도(℃)                        |
+| d1          | UInt32   | -    | 4 Byte   | Raw data 1                      |
+| d2          | UInt32   | -    | 4 Byte   | Raw data 2                      |
 | temperature | UInt32   | -    | 4 Byte   | 온도(℃)                        |
 | pressure    | UInt32   | -    | 4 Byte   | 압력을 해발고도로 변환한 값(m)  |
 

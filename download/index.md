@@ -42,8 +42,8 @@
         </tr>
             <tr>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=1KItchl29rXjVD_lj2C0v-HrOiixLl3Om" target="_blank">Download</a></div>
-                    <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/DroneFighter_20180201_release_0.zip" target="_blank">Download2</a></div>
+                    <div align="center"><a href="https://drive.google.com/open?id=10scE45_Jh7YIukK39ZGD_IDVX1tWocKy" target="_blank">Download</a></div>
+                    <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/DroneFighter_1802.zip" target="_blank">Download2</a></div>
                 </td>
                 <td>
                     <div align="center"><a href="https://drive.google.com/open?id=11soOox-oEXHSnVXokrq4jMBBfaH-32eN" target="_blank">Download(Link)</a></div>
@@ -65,4 +65,4 @@
 
 ---
 
-Modified : 2018.2.1
+Modified : 2018.2.14
