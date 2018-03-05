@@ -107,8 +107,6 @@ if __name__ == '__main__':
 16. **Examples - Input**
 17. [Examples - Error](examples_13_error.md)
 
-[Tutorial for Mac](../tutorial_for_mac/)
-
 <br>
 
 [Index](index.md)

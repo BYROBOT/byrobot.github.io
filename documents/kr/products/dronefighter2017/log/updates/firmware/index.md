@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2017.11.21
+Modified : 2018.3.5
 
 ---
 
@@ -11,11 +11,25 @@ Modified : 2017.11.21
 <br>
 
 
+# 2018.3.5
+
+- General Drone: 4.0
+- General Controller: 4.0
+- Education Drone: 1703
+- **Education Controller: 1802**
+
+> - PC 시뮬레이터에 연결된 상태에서 정지 명령을 내렸을 때 해당 명령이 PC에 전달되게 함
+
+**[[Download](https://drive.google.com/open?id=1FwcLSoccRBye-ArkFEYBAMokUnBTReZr)]**
+
+<br>
+
+---
+
+
 # 2017.4.20
 
 > - 조이스틱 deadzone 수정
-
-**[[Download](https://drive.google.com/open?id=1KItchl29rXjVD_lj2C0v-HrOiixLl3Om)]**
 
 <br>
 

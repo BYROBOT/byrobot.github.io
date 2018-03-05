@@ -19,10 +19,8 @@
 16. [Examples - Input](examples_12_input.md)
 17. [Examples - Error](examples_13_error.md)
 
-[Tutorial for Mac](./tutorial_for_mac/)
-
-
+[Install Python 3 on macOS](/documents/kr/manual/install_python_3_on_mac_os/)
 
 ---
 
-Modified : 2017.10.30
+Modified : 2018.3.5

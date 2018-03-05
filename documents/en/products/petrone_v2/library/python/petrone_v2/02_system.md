@@ -1,6 +1,6 @@
 **[*petrone_v2* for python](index.md)** / **System**
 
-Modified : 2017.10.27
+Modified : 2018.3.5
 
 ---
 
@@ -446,8 +446,6 @@ class Trim(Enum):
 15. [Examples - Display](examples_11_display.md)
 16. [Examples - Input](examples_12_input.md)
 17. [Examples - Error](examples_13_error.md)
-
-[Tutorial for Mac](../tutorial_for_mac/)
 
 <br>
 

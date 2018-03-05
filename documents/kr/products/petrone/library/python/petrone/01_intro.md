@@ -7,8 +7,19 @@ Modified : 2017.09.29
 * Kramdown table of contents
 {:toc .toc}
 
+<br>
+
+
+# 시작하기 전에
+
+아직 Python을 설치하지 않으셨다면 다음 문서를 먼저 확인하시기 바랍니다.
+
+[Install Python 3 on macOS](/documents/kr/manual/install_python_3_on_mac_os/)
+
 
 <br>
+<br>
+
 
 # 1. *petrone* for python 소개
 

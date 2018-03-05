@@ -31,29 +31,33 @@
                 <div align="center">Firmware</div>
             </td>
             <td>
-                <div align="center">General: 4.0<br>Education: 20170420</div>
+                <div align="center">General Drone: 4.0<br>General Controller: 4.0<br>Education Drone: 1703<br>Education Controller: 1802</div>
             </td>
             <td>
                 <div align="center">Drone Main: 48<br>Drone Sub: 18<br>Link: 17</div>
             </td>
             <td>
-                <div align="center">Drone: 1.0.R.56<br>Controller: 1.1.R.4</div>
+                <div align="center">Drone: 1.2.R.6<br>Controller: 1.2.R.5</div>
             </td>
         </tr>
             <tr>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=10scE45_Jh7YIukK39ZGD_IDVX1tWocKy" target="_blank">Download</a></div>
+                    <div align="center"><a href="https://drive.google.com/open?id=1FwcLSoccRBye-ArkFEYBAMokUnBTReZr" target="_blank">Download</a></div>
                     <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/DroneFighter_1802.zip" target="_blank">Download2</a></div>
                 </td>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=11soOox-oEXHSnVXokrq4jMBBfaH-32eN" target="_blank">Download(Link)</a></div>
+                    <div align="center"><a href="https://drive.google.com/open?id=1GkjdZaI1P0CaDn6RZDYJ9-ZNmt5Onkp-" target="_blank">Download(Link)</a></div>
                     <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/Petrone_20180102_release_0.zip" target="_blank">Download2(Link)</a></div>
                 </td>
                 <td>
-                    <div align="center"><a href="https://drive.google.com/open?id=1OssjNdWTTbhLqQtBwkj7ujgBFfZAJ2uP" target="_blank">Download</a></div>
+                    <div align="center"><a href="https://drive.google.com/open?id=11mVJrmcicMcEyZ6gthRDoKhaI1QS4odd" target="_blank">Download</a></div>
                     <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20171113_release_5.zip" target="_blank">Download2</a></div>
-                    <div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/byrobot_how_to_update_petrone_v2.pdf" target="_blank">Manual</a></div>
                 </td>
+            </tr>
+            <tr>
+                <td><div align="center"><a href="/documents/kr/products/dronefighter2017/manual/update/">Manual</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone/manual/update/">Manual</a></div></td>
+                <td><div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/">Manual</a></div></td>
             </tr>
             <tr>
                 <td><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
@@ -65,4 +69,4 @@
 
 ---
 
-Modified : 2018.2.14
+Modified : 2018.3.5

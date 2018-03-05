@@ -39,12 +39,6 @@
                 <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">한국어</a></div></td>
             </tr>
             <tr>
-            <td><div align="center">Python Tutorial</div></td>
-                <td><div align="center">-</div></td>
-                <td><div align="center">-</div></td>
-                <td><div align="center"><a href="/documents/en/products/petrone_v2/library/python/petrone_v2/tutorial_for_mac/">English</a><br/><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/tutorial_for_mac/">한국어</a></div></td>
-            </tr>
-            <tr>
             <td><div align="center">Entry Examples</div></td>
                 <td><div align="center">-</div></td>
                 <td><div align="center">-</div></td>
@@ -55,4 +49,4 @@
 
 ---
 
-Modified : 2018.02.14
+Modified : 2018.3.5

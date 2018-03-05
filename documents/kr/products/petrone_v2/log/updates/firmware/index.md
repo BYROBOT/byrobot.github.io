@@ -1,6 +1,6 @@
 **PETRONE V2 update log**
 
-Modified : 2017.11.16
+Modified : 2018.3.5
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2017.11.16
 
 
 <br>
+
+
+# 2018.3.5
+
+- **Drone: 1.2.R.6**
+- **Controller: 1.2.R.5**
+
+> - RF 통신 안정화
+> - 드론 후방 LED를 외부에서 제어하지 못하도록 막고, 항상 연결 상태 확인 용도로만 사용하게 함
+> - 비행 안정화
+> - 페어링과 관련된 오류 수정
+
+**[[Download](https://drive.google.com/open?id=11mVJrmcicMcEyZ6gthRDoKhaI1QS4odd)]**
+
+<br>
+
+---
 
 
 # 2017.11.13
@@ -21,8 +38,6 @@ Modified : 2017.11.16
 > - 버튼을 누르고 있는 상태일 때, PC에 조이스틱 조작값을 전송하지 않던 문제 수정
 > - Information 항목에서 바이어스와 트림 값 표시 문자열 정렬 수정
 > - Information 항목에서 IMU 데이터 출력 표시 수정
-
-**[[Download](https://drive.google.com/open?id=1Si3eQtOHbyjd-c8gS4izCRb0vt2TNivi)]**
 
 <br>
 

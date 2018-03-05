@@ -7,6 +7,8 @@
  4. [Drone](04_drone.md)
  5. [Examples - Information](examples_01_information.md)
 
+[Install Python 3 on macOS](/documents/kr/manual/install_python_3_on_mac_os/)
+
 
 ---
 
