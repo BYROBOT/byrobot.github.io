@@ -40,14 +40,14 @@ Modified : 2018.3.5
 <br>
 
 <div align="center">
-    <img src="1_controller_2_bootloader.jpg" alt="controller bootloader">
+    <img src="1_controller_3_info.jpg" alt="controller bootloader information">
     <p>부트로더 요약 정보 표시 화면</p>
 </div>
 <br>
 
 <div align="center">
     <img src="1_controller_4_ready.jpg" alt="controller update ready">
-    <p>업데이트 준비 화면</p>
+    <p>조종기 펌웨어 업데이트 대기 화면</p>
 </div>
 <br>
 
@@ -69,7 +69,7 @@ Modified : 2018.3.5
 
 <div align="center">
     <img src="1_controller_7_firmware_updater.jpg" alt="run firmware update program">
-    <p>조종기 펌웨어 업데이트 대기 상태</p>
+    <p>조종기 펌웨어 업데이트 프로그램 실행 화면</p>
 </div>
 <br>
 
@@ -200,5 +200,5 @@ Modified : 2018.3.5
 <br>
 
 
-Petrone V2 조종기와 드론의 펌웨어 업데이트를 완료하였습니다.
+여기까지 Petrone V2 조종기와 드론의 펌웨어 업데이트를 완료하였습니다.
 
