@@ -4,7 +4,7 @@ Modified : 2018.3.5
 
 ---
 
-<h3>Petrone V2 펌웨어 업데이트 방법을 알려드립니다.</h3>
+<h3>Petrone V2 펌웨어 업데이트</h3>
 
 ---
 
@@ -151,7 +151,7 @@ Modified : 2018.3.5
 
 <div align="center">
     <img src="2_drone_4_firmware_combobox.jpg" alt="firmware combobox">
-    <p>드론 펌웨어 선택 콤보박스</p>
+    <p>펌웨어 선택 콤보박스</p>
 </div>
 <br>
 
