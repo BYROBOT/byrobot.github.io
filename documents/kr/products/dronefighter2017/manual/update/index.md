@@ -71,7 +71,7 @@ Modified : 2018.3.6
 <b>(6) 업데이트 대상 장치가 아닌 경우에 해당 장치를 클릭하여 해제합니다.</b>
 
 <div align="center">
-    <img src="1_controller_7_selectport.jpg" alt="unselect port">
+    <img src="1_controller_7_unselectport.jpg" alt="unselect port">
     <p>포트 선택 해제</p>
 </div>
 <br>
