@@ -34,10 +34,16 @@ Modified : 2018.3.5
 
 # 2. 설치
 
-아래의 명령을 실행하시면 *petrone_v2*가 설치됩니다. 윈도우, macOS 모두 동일합니다.
+아래의 명령을 실행하시면 *petrone_v2*가 설치됩니다.
 
 ```
 > pip install petrone_v2
+```
+
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 install petrone_v2
 ```
 
 <div align="center">
@@ -53,6 +59,12 @@ Modified : 2018.3.5
 > pip --no-cache-dir install petrone_v2
 ```
 
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 --no-cache-dir install petrone_v2
+```
+
 
 <br>
 <br>
@@ -64,6 +76,12 @@ Modified : 2018.3.5
 
 ```
 > pip uninstall petrone_v2
+```
+
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 uninstall petrone_v2
 ```
 
 
@@ -164,12 +182,12 @@ if __name__ == '__main__':
 <br>
 
 
-#6. macOS에서 Visual Studio Code를 사용하여 예제 실행하기
+# 6. macOS에서 Visual Studio Code를 사용하여 예제 실행하기
 
 아래는 Visual Studio Code 처음 실행 화면입니다.
 
 <div align="center">
-    <img src="../01_instro_run_example_1.png" alt="run_example_1">
+    <img src="../01_intro_2_run_example_1.png" alt="run_example_1">
 </div>
 
 여기에서 화면 좌측 상단의 <b>새 파일</b>을 선택하시면 빈 파일이 열립니다. 빈 파일에 아래의 코드를 복사해서 붙여 넣으시면 됩니다.
