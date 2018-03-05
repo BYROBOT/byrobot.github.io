@@ -4,7 +4,14 @@ Modified : 2018.3.5
 
 ---
 
-<h3>macOS에 <b>Python 3</b>와 <b>Visual Studio Code</b>를 설치하는 과정을 설명해드립니다.
+* Kramdown table of contents
+{:toc .toc}
+
+<br>
+
+---
+
+<h3>macOS에 <b>Python 3</b>와 <b>Visual Studio Code</b>를 설치하는 과정을 설명해드립니다.</h3>
 
 ---
 

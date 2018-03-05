@@ -41,7 +41,7 @@ Modified : 2018.3.5
 ```
 
 <div align="center">
-    <img src="01_intro_1_install_petrone_v2.png" alt="install_petrone_v2">
+    <img src="../01_intro_1_install_petrone_v2.png" alt="install_petrone_v2">
 </div>
 
 
@@ -169,7 +169,7 @@ if __name__ == '__main__':
 아래는 Visual Studio Code 처음 실행 화면입니다.
 
 <div align="center">
-    <img src="01_instro_run_example_1.png" alt="run_example_1">
+    <img src="../01_instro_run_example_1.png" alt="run_example_1">
 </div>
 
 여기에서 화면 좌측 상단의 <b>새 파일</b>을 선택하시면 빈 파일이 열립니다. 빈 파일에 아래의 코드를 복사해서 붙여 넣으시면 됩니다.
@@ -215,7 +215,7 @@ if __name__ == '__main__':
 <br>
 
 <div align="center">
-    <img src="01_intro_2_run_example_2.png" alt="run_example_2">
+    <img src="../01_intro_2_run_example_2.png" alt="run_example_2">
 </div>
 
 예제 코드를 붙여 넣은 화면입니다.
@@ -224,7 +224,7 @@ if __name__ == '__main__':
 
 
 <div align="center">
-    <img src="01_intro_2_run_example_3.png" alt="run_example_3">
+    <img src="../01_intro_2_run_example_3.png" alt="run_example_3">
 </div>
 
 파일을 저장해야 실행할 수 있습니다. 메뉴에서 <b>파일</b> -> <b>저장</b>을 선택합니다.
@@ -233,7 +233,7 @@ if __name__ == '__main__':
 
 
 <div align="center">
-    <img src="01_intro_2_run_example_4.png" alt="run_example_4">
+    <img src="../01_intro_2_run_example_4.png" alt="run_example_4">
 </div>
 
 여기에서는 <b>사용자/byrobot/Works</b> 폴더에 <b>test_sendrequest.py</b> 라는 이름으로 저장하였습니다.
@@ -242,7 +242,7 @@ if __name__ == '__main__':
 
 
 <div align="center">
-    <img src="01_intro_2_run_example_5.png" alt="run_example_5">
+    <img src="../01_intro_2_run_example_5.png" alt="run_example_5">
 </div>
 
 파일을 저장하자 코드 문법이 강조되었습니다.
@@ -251,7 +251,7 @@ if __name__ == '__main__':
 
 
 <div align="center">
-    <img src="01_intro_2_run_example_6.png" alt="run_example_6">
+    <img src="../01_intro_2_run_example_6.png" alt="run_example_6">
 </div>
 
 화면의 빈 공간에 오른클릭을 하면 위와 같은 메뉴를 볼 수 있습니다. 예제를 실행하려면 여기에서 <b>Run Python File in Terminal</b>를 선택하면 됩니다.
@@ -260,7 +260,7 @@ if __name__ == '__main__':
 
 
 <div align="center">
-    <img src="01_intro_2_run_example_7.png" alt="run_example_7">
+    <img src="../01_intro_2_run_example_7.png" alt="run_example_7">
 </div>
 
 PETRONE V2 조종기가 맥에 연결되어 있다면 위와 비슷한 결과를 확인할 수 있습니다. 만약 조종기가 연결되지 않았거나 연결에 문제가 있다면 아무런 결과도 표시하지 않습니다.
