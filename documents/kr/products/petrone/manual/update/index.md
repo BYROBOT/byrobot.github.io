@@ -1,19 +1,21 @@
-**Petrone Link firmware Update**
+**Petrone firmware Update**
 
 Modified : 2018.3.5
 
 ---
 
-<h3>Petrone Link 펌웨어 업데이트 방법을 알려드립니다.</h3>
+<h3>Petrone 펌웨어 업데이트 방법을 알려드립니다.</h3>
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 # 1. 펌웨어 다운로드
 
-[Download](/download/) 페이지에서 최신 Petrone Link 펌웨어를 다운로드 받습니다.
+[Download](/download/) 페이지에서 최신 Petrone 펌웨어를 다운로드 받습니다.
 
 
 <br>
@@ -40,5 +42,5 @@ ABCD
 <br>
 
 
-Petrone Link 펌웨어 업데이트를 완료하였습니다.
+Petrone 펌웨어 업데이트를 완료하였습니다.
 

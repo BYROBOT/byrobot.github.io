@@ -8,12 +8,14 @@ Modified : 2018.3.5
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 # 1. 펌웨어 다운로드
 
-[Download](/download/) 페이지에서 최신 드론파이터 펌웨어를 다운로드 받습니다.
+[Download](/download/) 페이지에서 최신 Drone Fighter 펌웨어를 다운로드 받습니다.
 
 
 <br>
@@ -40,5 +42,5 @@ ABCD
 <br>
 
 
-드론파이터 드론과 조종기 펌웨어 업데이트를 완료하였습니다.
+Drone Fighter 드론과 조종기 펌웨어 업데이트를 완료하였습니다.
 

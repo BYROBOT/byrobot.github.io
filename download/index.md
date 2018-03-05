@@ -27,7 +27,7 @@
             </td>
         </tr>
         <tr>
-            <td rowspan="3">
+            <td rowspan="4">
                 <div align="center">Firmware</div>
             </td>
             <td>
