@@ -69,7 +69,7 @@ Modified : 2018.3.5
 
 <div align="center">
     <img src="1_controller_7_firmware_updater.jpg" alt="run firmware update program">
-    <p>조종기 펌웨어 업데이트 프로그램 실행 화면</p>
+    <p>펌웨어 업데이트 프로그램 실행 화면</p>
 </div>
 <br>
 
