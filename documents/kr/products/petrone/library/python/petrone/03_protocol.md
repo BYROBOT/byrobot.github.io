@@ -971,7 +971,7 @@ class IrMessage(ISerializable):
 
 | 변수 이름   | 형식                                 | 범위                     | 크기     | 설명                              |
 |:-----------:|:------------------------------------:|:------------------------:|:--------:|:----------------------------------|
-| direction   | [Direction](02_system.md#Direction)  | -                        | 1 Byte   | 적외선 데이터를 받은 센서의 위치  |
+| direction   | [Direction](02_system.md#System_Direction)  | -                        | 1 Byte   | 적외선 데이터를 받은 센서의 위치  |
 | irData      | UInt32                               | 0x00000000 ~ 0xFFFFFFFF  | 4 Byte   | 데이터                            |
 
 
@@ -1249,8 +1249,8 @@ class UpdateInformation(ISerializable):
 | 변수 이름     | 형식                                  | 범위 | 크기     | 설명                |
 |:-------------:|:-------------------------------------:|:----:|:--------:|:--------------------|
 | modeUpdate    | [ModeUpdate](02_system.md#ModeUpdate) | -    | 1 Byte   | 업데이트 진행 상황  |
-| deviceType    | [DeviceType](02_system.md#DeviceType) | -    | 4 Byte   | 장치 타입           |
-| imageType     | [ImageType](02_system.md#ImageType)   | -    | 1 Byte   | 이미지 타입         |
+| deviceType    | [DeviceType](02_system.md#System_DeviceType) | -    | 4 Byte   | 장치 타입           |
+| imageType     | [ImageType](02_system.md#System_ImageType)   | -    | 1 Byte   | 이미지 타입         |
 | version       | UInt16                                | -    | 2 Byte   | 펌웨어의 버젼       |
 | year          | UInt8                                 | -    | 1 Byte   | 펌웨어 빌드 년      |
 | month         | UInt8                                 | -    | 1 Byte   | 펌웨어 빌드 월      |

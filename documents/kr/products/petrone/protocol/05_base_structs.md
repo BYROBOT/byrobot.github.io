@@ -86,7 +86,7 @@ namespace Protocol
 }
 ```
 - mode : [Light::Mode::Type](04_definitions.md#Light_Mode)
-- color : [Light::Color](#Light_Color)
+- color : [Light::Color](#Protocol_LightColor)
 
 <br>
 <br>

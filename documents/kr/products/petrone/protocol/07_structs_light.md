@@ -233,7 +233,7 @@ namespace Protocol
 <br>
 
 <a name="Protocol_LightModeDefaultColor"></a>
-## Protocol::LightModeDefaultColor2
+## Protocol::LightModeDefaultColor
 LED 시작 모드를 설정합니다. RGB 값을 직접 지정합니다. 여기서 지정한 값은 드론의 내부 메모리에 저장합니다.
 ```cpp
 namespace Protocol
