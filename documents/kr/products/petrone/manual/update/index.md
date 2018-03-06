@@ -59,6 +59,7 @@ Petrone은 앱에서 펌웨어 업데이트를 진행하므로 여기에서는 *
     <img src="0_link_5_resetbutton.jpg" alt="link reset button">
     <p>Petrone Link 보드의 리셋 버튼</p>
 </div>
+<br>
 
 <b>(4) Petrone Link 보드의 전원이 켜지면서 부트로더 펌웨어 업데이트 모드를 시작합니다.</b>
 
