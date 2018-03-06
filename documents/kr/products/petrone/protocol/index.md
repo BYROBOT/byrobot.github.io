@@ -1,5 +1,5 @@
 
-<h3> PETRONE</h3>
+# PETRONE
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -11,7 +11,7 @@
 8. [Firmware Update](08_firmware_update.md)
 
 
-<h3> PETRONE Link</h3>
+# PETRONE Link
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)
