@@ -1,6 +1,6 @@
 **[PETRONE_V2](index.md)** / **Protocol** / **Structs** / **Light**
 
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
@@ -8,6 +8,8 @@ Modified : 2017.10.18
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 <br>
@@ -16,7 +18,8 @@ Modified : 2017.10.18
 
 <br>
 
-## <a name="Light_Drone_Mode">Light::Drone::Mode::Type</a>
+<a name="Light_Drone_Mode"></a>
+## Light::Drone::Mode::Type
 
 드론 LED 동작 모드
 
@@ -57,7 +60,8 @@ namespace Light
 <br>
 
 
-## <a name="Light_Drone_Flags">Light::Drone::Flags::Type</a>
+<a name="Light_Drone_Flags"></a>
+## Light::Drone::Flags::Type
 
 드론 LED Flag
 
@@ -90,7 +94,8 @@ namespace Light
 <br>
 
 
-## <a name="Light_Controller_Mode">Light::Controller::Mode::Type</a>
+<a name="Light_Controller_Mode"></a>
+## Light::Controller::Mode::Type
 
 조종기 LED 동작 모드
 
@@ -125,7 +130,8 @@ namespace Light
 <br>
 
 
-## <a name="Light_Controller_Flags">Light::Controller::Flags::Type</a>
+<a name="Light_Controller_Flags"></a>
+## Light::Controller::Flags::Type
 
 드론 LED Flag
 
@@ -154,7 +160,8 @@ namespace Light
 <br>
 
 
-## <a name="Light_Colors">Light::Colors::Type</a>
+<a name="Light_Colors"></a>
+## Light::Colors::Type
 
 LED 팔레트 인덱스
 
@@ -328,7 +335,8 @@ namespace Light
 <br>
 
 
-## <a name="Light_Color">Light::Color</a>
+<a name="Light_Color"></a>
+## Light::Color
 
 RGB LED 색상 설정
 
@@ -357,7 +365,8 @@ namespace Light
 <br>
 
 
-## <a name="Protocol_Light_Manual">Protocol::Light::Manual</a>
+<a name="Protocol_Light_Manual"></a>
+## Protocol::Light::Manual
 
 LED 수동 제어
 
@@ -388,7 +397,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_Mode">Protocol::Light::Mode</a>
+<a name="Protocol_Light_Mode"></a>
+## Protocol::Light::Mode
 
 LED 모드 변경
 
@@ -417,7 +427,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_ModeColor">Protocol::Light::ModeColor</a>
+<a name="Protocol_Light_ModeColor"></a>
+## Protocol::Light::ModeColor
 
 LED 모드 변경(RGB)
 
@@ -447,7 +458,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_ModeColorCommand">Protocol::Light::ModeColorCommand</a>
+<a name="Protocol_Light_ModeColorCommand"></a>
+## Protocol::Light::ModeColorCommand
 
 LED 모드 변경(RGB) + Command
 
@@ -477,7 +489,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_ModeColorCommandIr">Protocol::Light::ModeColorCommandIr</a>
+<a name="Protocol_Light_ModeColorCommandIr"></a>
+## Protocol::Light::ModeColorCommandIr
 
 LED 모드 변경(RGB) + Command + IR
 
@@ -509,7 +522,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_ModeColors">Protocol::Light::ModeColors</a>
+<a name="Protocol_Light_ModeColors"></a>
+## Protocol::Light::ModeColors
 
 LED 모드 변경(Palette)
 
@@ -537,7 +551,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_ModeColorsCommand">Protocol::Light::ModeColorsCommand</a>
+<a name="Protocol_Light_ModeColorsCommand"></a>
+## Protocol::Light::ModeColorsCommand
 
 LED 모드 변경(Palette) + Command
 
@@ -567,7 +582,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_ModeColorsCommandIr">Protocol::Light::ModeColorsCommandIr</a>
+<a name="Protocol_Light_ModeColorsCommandIr"></a>
+## Protocol::Light::ModeColorsCommandIr
 
 LED 모드 변경(Palette) + Command + IR
 
@@ -599,7 +615,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_Event">Protocol::Light::Event</a>
+<a name="Protocol_Light_Event"></a>
+## Protocol::Light::Event
 
 LED 이벤트
 
@@ -630,7 +647,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_EventColor">Protocol::Light::EventColor</a>
+<a name="Protocol_Light_EventColor"></a>
+## Protocol::Light::EventColor
 
 LED 이벤트(RGB)
 
@@ -658,7 +676,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_EventColorCommand">Protocol::Light::EventColorCommand</a>
+<a name="Protocol_Light_EventColorCommand"></a>
+## Protocol::Light::EventColorCommand
 
 LED 이벤트(RGB) + Command
 
@@ -688,7 +707,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_EventColorCommandIr">Protocol::Light::EventColorCommandIr</a>
+<a name="Protocol_Light_EventColorCommandIr"></a>
+## Protocol::Light::EventColorCommandIr
 
 LED 이벤트(RGB) + Command + IR
 
@@ -720,7 +740,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_EventColors">Protocol::Light::EventColors</a>
+<a name="Protocol_Light_EventColors"></a>
+## Protocol::Light::EventColors
 
 LED 이벤트(Palette)
 
@@ -748,7 +769,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_EventColorsCommand">Protocol::Light::EventColorsCommand</a>
+<a name="Protocol_Light_EventColorsCommand"></a>
+## Protocol::Light::EventColorsCommand
 
 LED 이벤트(Palette) + Command
 
@@ -778,7 +800,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Light_EventColorsCommandIr">Protocol::Light::EventColorsCommandIr</a>
+<a name="Protocol_Light_EventColorsCommandIr"></a>
+## Protocol::Light::EventColorsCommandIr
 
 LED 이벤트(Palette) + Command + IR
 

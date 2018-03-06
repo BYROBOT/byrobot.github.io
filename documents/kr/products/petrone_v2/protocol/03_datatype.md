@@ -1,6 +1,6 @@
 **[PETRONE_V2](index.md)** / **Protocol** / **DataType**
 
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
@@ -10,7 +10,8 @@ Modified : 2017.10.18
 
 <br>
 
-## <a name="Protocol_DataType">Protocol::DataType::Type</a>
+<a name="Protocol_DataType"></a>
+## Protocol::DataType::Type
 데이터 타입
 
 ```cpp

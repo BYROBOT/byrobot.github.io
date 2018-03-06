@@ -1,12 +1,15 @@
 **[PETRONE_V2](index.md)** / **Protocol** / **Structs** / **Display**
 
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
 #### Display 제어와 관련된 정의 및 구조체들을 소개합니다.
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 
 <br>
@@ -20,7 +23,8 @@ Modified : 2017.10.18
 <br>
 
 
-## <a name="Display_Pixel">Display::Pixel::Type</a>
+<a name="Display_Pixel"></a>
+## Display::Pixel::Type
 
 픽셀 색상
 
@@ -43,7 +47,8 @@ namespace Display
 <br>
 
 
-## <a name="Display_Font">Display::Font::Type</a>
+<a name="Display_Font"></a>
+## Display::Font::Type
 
 폰트
 
@@ -66,7 +71,8 @@ namespace Display
 <br>
 
 
-## <a name="Display_Align">Display::Align::Type</a>
+<a name="Display_Align"></a>
+## Display::Align::Type
 
 문자열 정렬
 
@@ -89,7 +95,8 @@ namespace Display
 <br>
 
 
-## <a name="Display_Line">Display::Line::Type</a>
+<a name="Display_Line"></a>
+## Display::Line::Type
 
 선
 
@@ -120,7 +127,8 @@ namespace Display
 <br>
 
 
-## <a name="Protocol_Display_ClearAll">Protocol::Display::ClearAll</a>
+<a name="Protocol_Display_ClearAll"></a>
+## Protocol::Display::ClearAll
 
 화면 전체 지우기
 
@@ -146,7 +154,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_Clear">Protocol::Display::Clear</a>
+<a name="Protocol_Display_Clear"></a>
+## Protocol::Display::Clear
 
 선택 영역 지우기
 
@@ -180,7 +189,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_Invert">Protocol::Display::Invert</a>
+<a name="Protocol_Display_Invert"></a>
+## Protocol::Display::Invert
 
 선택 영역 반전
 
@@ -212,7 +222,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_DrawPoint">Protocol::Display::DrawPoint</a>
+<a name="Protocol_Display_DrawPoint"></a>
+## Protocol::Display::DrawPoint
 
 점 찍기
 
@@ -242,7 +253,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_DrawLine">Protocol::Display::DrawLine</a>
+<a name="Protocol_Display_DrawLine"></a>
+## Protocol::Display::DrawLine
 
 선 그리기
 
@@ -278,7 +290,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_DrawRect">Protocol::Display::DrawRect</a>
+<a name="Protocol_Display_DrawRect"></a>
+## Protocol::Display::DrawRect
 
 네모 상자 그리기
 
@@ -316,7 +329,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_DrawCircle">Protocol::Display::DrawCircle</a>
+<a name="Protocol_Display_DrawCircle"></a>
+## Protocol::Display::DrawCircle
 
 원 그리기
 
@@ -350,7 +364,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_DrawString">Protocol::Display::DrawString</a>
+<a name="Protocol_Display_DrawString"></a>
+## Protocol::Display::DrawString
 
 문자열 그리기
 
@@ -387,7 +402,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Display_DrawStringAlign">Protocol::Display::DrawStringAlign</a>
+<a name="Protocol_Display_DrawStringAlign"></a>
+## Protocol::Display::DrawStringAlign
 
 문자열 정렬하여 그리기
 
