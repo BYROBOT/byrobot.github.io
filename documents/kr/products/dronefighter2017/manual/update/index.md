@@ -157,7 +157,7 @@ Modified : 2018.3.6
 
 <div align="center">
     <img src="1_drone_4_2_usbconnected.jpg" alt="connect usb port">
-    <p>USB 포트를 연결</p>
+    <p>USB 커넥터를 연결</p>
 </div>
 <br>
 
