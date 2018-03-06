@@ -1,4 +1,5 @@
-***PETRONE / BLE / Protocol / Typedef***<br>
+**[PETRONE](index.md)** / **BLE** / **Protocol** / **Typedef**
+
 Modified : 2018.3.6
 
 ---
@@ -28,7 +29,7 @@ typedef uint8_t   u8;
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](01_intro.md)
 2. ***Typedef***
@@ -40,7 +41,7 @@ typedef uint8_t   u8;
 8. [Firmware Update](08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)

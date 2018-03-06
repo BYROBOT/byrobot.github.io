@@ -1,4 +1,5 @@
-***PETRONE / BLE / Protocol / BaseStructs***<br>
+**[PETRONE](index.md)** / **BLE** / **Protocol** / **BaseStructs**
+
 Modified : 2018.3.6
 
 ---
@@ -13,7 +14,8 @@ Modified : 2018.3.6
 
 <br>
 
-## <a name="CommandBase">Protocol::CommandBase</a>
+<a name="Protocol_CommandBase"></a>
+## Protocol::CommandBase
 PETRONE의 설정을 변경하거나 데이터를 요청할 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -25,13 +27,14 @@ namespace Protocol
     };
 }
 ```
-- commandType : [Protocol::CommandType::Type](04_definitions.md#CommandType)
-- option : [System::ModeVehicle::Type](04_definitions.md#ModeVehicle), [System::Coordinate::Type](04_definitions.md#Coordinate), [System::Trim::Type](04_definitions.md#Trim),  [System::FlightEvent::Type](04_definitions.md#FlightEvent), [Protocol::DataType::Type](03_datatype.md#DataType)
+- commandType : [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)
+- option : [System::ModeVehicle::Type](04_definitions.md#System_ModeVehicle), [System::Coordinate::Type](04_definitions.md#System_Coordinate), [System::Trim::Type](04_definitions.md#System_Trim),  [System::FlightEvent::Type](04_definitions.md#System_FlightEvent), [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)
 
 <br>
 <br>
 
-## <a name="LightModeBase">Protocol::LightModeBase</a>
+<a name="Protocol_LightModeBase"></a>
+## Protocol::LightModeBase
 LED 모드를 변경할 때 사용하는 구조체입니다.
 ```cpp
 namespace Protocol
@@ -44,13 +47,14 @@ namespace Protocol
     };
 }
 ```
-- mode : [Light::Mode::Type](04_definitions.md#LightMode)
-- color : [Light::Colors::Type](04_definitions.md#LightColors)
+- mode : [Light::Mode::Type](04_definitions.md#Light_Mode)
+- color : [Light::Colors::Type](04_definitions.md#Light_Colors)
 
 <br>
 <br>
 
-## <a name="LightColor">Light::Color</a>
+<a name="Protocol_LightColor"></a>
+## Light::Color
 RGB LED의 색상을 직접 지정할 때 사용하는 구조체입니다.
 ```cpp
 namespace Light
@@ -67,7 +71,8 @@ namespace Light
 <br>
 <br>
 
-## <a name="LightModeColorBase">Protocol::LightModeColorBase</a>
+<a name="Protocol_LightModeColorBase"></a>
+## Protocol::LightModeColorBase
 LED 모드를 변경할 때 사용하는 구조체입니다. RGB 색상을 직접 지정할 수 있습니다.
 ```cpp
 namespace Protocol
@@ -80,13 +85,14 @@ namespace Protocol
     };
 }
 ```
-- mode : [Light::Mode::Type](04_definitions.md#LightMode)
-- color : [Light::Color](#LightColor)
+- mode : [Light::Mode::Type](04_definitions.md#Light_Mode)
+- color : [Light::Color](#Light_Color)
 
 <br>
 <br>
 
-## <a name="LightEventBase">Protocol::LightEventBase</a>
+<a name="Protocol_LightEventBase"></a>
+## Protocol::LightEventBase
 LED 이벤트를 실행할 때 사용하는 구조체입니다. 지정한 횟수만큼 반복 실행 후 기존 실행하던 모드로 복귀합니다.
 ```cpp
 namespace Protocol
@@ -100,13 +106,14 @@ namespace Protocol
     };
 }
 ```
-- event : [Light::Mode::Type](04_definitions.md#LightMode)
-- color : [Light::Colors::Type](04_definitions.md#LightColors)
+- event : [Light::Mode::Type](04_definitions.md#Light_Mode)
+- color : [Light::Colors::Type](04_definitions.md#Light_Colors)
 
 <br>
 <br>
 
-## <a name="LightEventColorBase">Protocol::LightEventColorBase</a>
+<a name="Protocol_LightEventColorBase"></a>
+## Protocol::LightEventColorBase
 LED 이벤트를 실행할 때 사용하는 구조체입니다. 지정한 횟수만큼 반복 실행 후 기존 실행하던 모드로 복귀합니다. RGB 색상을 직접 지정할 수 있습니다.
 ```cpp
 namespace Protocol
@@ -120,13 +127,14 @@ namespace Protocol
     };
 }
 ```
-- event : [Light::Mode::Type](04_definitions.md#LightMode)
-- color : [Light::Color](#LightColor)
+- event : [Light::Mode::Type](04_definitions.md#Light_Mode)
+- color : [Light::Color](#Protocol_LightColor)
 
 <br>
 <br>
 
-## <a name="MotorBase">Protocol::MotorBase</a>
+<a name="Protocol_MotorBase"></a>
+## Protocol::MotorBase
 모터를 작동하거나 현재 모터에 적용된 입력값을 확인하는데 사용하는 구조체입니다.
 ```cpp
 namespace Protocol
@@ -144,7 +152,7 @@ namespace Protocol
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -156,7 +164,7 @@ namespace Protocol
 8. [Firmware Update](08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)

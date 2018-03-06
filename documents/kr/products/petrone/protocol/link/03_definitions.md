@@ -1,5 +1,6 @@
-***PETRONE / LINK / Protocol / Definitions***<br>
-Modified : 2017.10.18
+**[PETRONE](index.md)** / **LINK** / **Protocol** / **Definitions**
+
+Modified : 2018.3.6
 
 ---
 
@@ -7,9 +8,13 @@ Modified : 2017.10.18
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
+
 <br>
 
-## <a name="CommandType">Protocol::CommandType::Type</a>
+<a name="Protocol_CommandType"></a>
+## Protocol::CommandType::Type
 기존 PETRONE의 명령 타입에 LINK용 명령들을 추가하여 사용합니다.
 
 ```cpp
@@ -33,14 +38,15 @@ namespace Protocol
 }
 ```
 
- - [Protocol::CommandType::Type](../04_definitions.md#CommandType)
+ - [Protocol::CommandType::Type](../04_definitions.md#Protocol_CommandType)
 
- 
+
 <br>
 <br>
 
 
-## <a name="ModeLink">System::ModeLink::Type</a>
+<a name="System_ModeLink"></a>
+## System::ModeLink::Type
 LINK의 동작 모드입니다
 
 
@@ -58,7 +64,7 @@ namespace System
             Connecting,     // 장치 연결 중
             Connected,      // 장치 연결 완료(정상 연결 됨)
             Disconnecting,  // 장치 연결 해제 중
-                 
+
             ReadyToReset,   // 리셋 대기(1초 뒤 리셋)
             
             EndOfType
@@ -72,7 +78,8 @@ namespace System
 <br>
 
 
-## <a name="ModeLinkBroadcast">System::ModeLinkBroadcast::Type</a>
+<a name="System_ModeLinkBroadcast"></a>
+## System::ModeLinkBroadcast::Type
 LINK Broadcast 모드입니다.<br>
 LINK에서는 LINK와 연결된 아두이노 장치의 업데이트를 지원하고 있습니다. 이 때 데이터 이동 경로를 구분하기 위해 ModeLinkBroadcast라는 상태를 추가하였습니다.
 
@@ -109,7 +116,8 @@ namespace System
 <br>
 
 
-## <a name="EventLink">System::EventLink::Type</a>
+<a name="System_EventLink"></a>
+## System::EventLink::Type
 LINK 모듈 내부에서 BLE 장치와 관련된 이벤트를 전달할 때 사용하는 열거체입니다.
 
 
@@ -145,7 +153,7 @@ namespace System
             BondingSuccess,                     // Bonding 성공
             
             LookupAttribute,                    // 장치 서비스 및 속성 검색(GATT Event 실행)
-                 
+
             RssiPollingStart,                   // RSSI 풀링 시작
             RssiPollingStop,                    // RSSI 풀링 중지
 
@@ -172,7 +180,7 @@ namespace System
             SetNotify,                          // Notify 활성화
             
             Write,                              // 데이터 쓰기 이벤트
-                 
+            
             EndOfType
         };
     }
@@ -184,7 +192,7 @@ namespace System
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](../01_intro.md)
 2. [Typedef](../02_typedef.md)
@@ -196,7 +204,7 @@ namespace System
 8. [Firmware Update](../08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](01_intro.md)
 2. [DataType](02_datatype.md)

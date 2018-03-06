@@ -1,4 +1,5 @@
-***PETRONE / BLE / Protocol / FirmwareUpdate***<br>
+**[PETRONE](index.md)** / **BLE** / **Protocol** / **FirmwareUpdate**
+
 Modified : 2018.3.6
 
 ---
@@ -23,7 +24,9 @@ Modified : 2018.3.6
 ## 펌웨어 파일 헤더 구조
 
 펌웨어 파일의 처음 16바이트는 아래와 같이 구성되어 있습니다. 이 부분을 읽어서 펌웨어 파일에 대한 정보를 확인할 수 있습니다.<br>
-### <a name="UpdaterHeader">Updater::Header</a>
+
+<a name="UpdaterHeader"></a>
+<h3>Updater::Header </h3>
 ```cpp
 namespace Updater
 {
@@ -43,8 +46,8 @@ namespace Updater
     };
 }
 ```
-- imageType : [System::ImageType::Type](04_definitions.md#ImageType)
-- deviceType : [System::DeviceType::Type](04_definitions.md#DeviceType)
+- imageType : [System::ImageType::Type](04_definitions.md#System_ImageType)
+- deviceType : [System::DeviceType::Type](04_definitions.md#System_DeviceType)
 
 <br>
 <br>
@@ -168,7 +171,7 @@ namespace Updater
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -180,7 +183,7 @@ namespace Updater
 8. **Firmware Update**
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)

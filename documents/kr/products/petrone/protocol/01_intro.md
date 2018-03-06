@@ -1,4 +1,5 @@
-***PETRONE / BLE / Protocol / Intro***<br>
+**[PETRONE](index.md)** / **BLE** / **Protocol** / **Intro**
+
 Modified : 2018.3.6
 
 ---
@@ -59,7 +60,7 @@ Modified : 2018.3.6
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. ***Intro***
 2. [Typedef](02_typedef.md)
@@ -71,7 +72,7 @@ Modified : 2018.3.6
 8. [Firmware Update](08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)

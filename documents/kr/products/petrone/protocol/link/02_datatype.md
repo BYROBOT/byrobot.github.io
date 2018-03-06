@@ -1,5 +1,6 @@
-***PETRONE / LINK / Protocol / DateType***<br>
-Modified : 2017.10.18
+**[PETRONE](index.md)** / **LINK** / **Protocol** / **DateType**
+
+Modified : 2018.3.6
 
 ---
 
@@ -16,7 +17,8 @@ PETRONE LINK는 PETRONE의 통신 프로토콜을 확장하여 사용하고 있�
 기본적으로 PETRONE을 제어하는 데 사용하는 COMMAND 명령을 통해 LINK를 제어합니다. LINK를 제어하는 명령들은 PETRONE에는 전달되지 않으며, 그 외의 데이터는 LINK가 양쪽의 통신을 중계합니다.
 <br>
 
-## <a name="DataType">Protocol::DataType::Type</a>
+<a name="Protocol_DataType"></a>
+## Protocol::DataType::Type
 기존 PETRONE의 데이터 타입에 LINK용 데이터 타입을 추가하여 사용합니다.
 
 ```cpp
@@ -39,14 +41,14 @@ namespace Protocol
  
 ```
 
- - [Protocol::DataType::Type](../03_datatype.md#DataType)
+ - [Protocol::DataType::Type](../03_datatype.md#Protocol_DataType)
 
 
 <br>
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](../01_intro.md)
 2. [Typedef](../02_typedef.md)
@@ -58,7 +60,7 @@ namespace Protocol
 8. [Firmware Update](../08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](01_intro.md)
 2. ***DataType***

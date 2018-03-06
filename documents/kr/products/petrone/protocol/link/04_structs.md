@@ -1,5 +1,6 @@
-***PETRONE / LINK / Protocol / Structs***<br>
-Modified : 2017.10.18
+**[PETRONE](index.md)** / **LINK** / **Protocol** / **Structs**
+
+Modified : 2018.3.6
 
 ---
 
@@ -7,9 +8,14 @@ Modified : 2017.10.18
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
+
+
 <br>
 
-## <a name="LinkState ">Protocol::LinkState </a>
+<a name="Protocol_LinkState"></a>
+## Protocol::LinkState
 PETRONE LINK 모듈의 동작 모드
 ```cpp
 namespace Protocol
@@ -21,15 +27,16 @@ namespace Protocol
     };
 }
 ```
-- modeLink : [System::ModeLink::Type](03_definitions.md#ModeLink)
-- modeLinkBroadcast : [System::ModeLinkBroadcast::Type](03_definitions.md#ModeLinkBroadcast)
+- modeLink : [System::ModeLink::Type](03_definitions.md#System_ModeLink)
+- modeLinkBroadcast : [System::ModeLinkBroadcast::Type](03_definitions.md#System_ModeLinkBroadcast)
 
 
 <br>
 <br>
 
 
-## <a name="LinkEvent">Protocol::LinkEvent</a>
+<a name="Protocol_LinkEvent"></a>
+## Protocol::LinkEvent
 PETRONE LINK 모듈에서 발생한 이벤트
 ```cpp
 namespace Protocol
@@ -40,14 +47,15 @@ namespace Protocol
     };
 }
 ```
-- eventLink : [System::EventLink::Type](03_definitions.md#EventLink)
+- eventLink : [System::EventLink::Type](03_definitions.md#System_EventLink)
 
 
 <br>
 <br>
 
 
-## <a name="LinkEventAddress">Protocol::LinkEventAddress</a>
+<a name="Protocol_LinkEventAddress"></a>
+## Protocol::LinkEventAddress
 PETRONE LINK 모듈에서 발생한 이벤트 및 관련 장치의 주소 포함
 ```cpp
 namespace Protocol
@@ -61,14 +69,15 @@ namespace Protocol
 }
 ```
 
-- eventLink : [System::EventLink::Type](03_definitions.md#EventLink)
+- eventLink : [System::EventLink::Type](03_definitions.md#System_EventLink)
 
 
 <br>
 <br>
 
 
-## <a name="LinkRssi">Protocol::LinkRssi</a>
+<a name="Protocol_LinkRssi"></a>
+## Protocol::LinkRssi
 링크와 연결된 장치의 RSSI
 ```cpp
 namespace Protocol
@@ -85,7 +94,8 @@ namespace Protocol
 <br>
 
 
-## <a name="LinkDiscoveredDevice">Protocol::LinkDiscoveredDevice</a>
+<a name="Protocol_LinkDiscoveredDevice"></a>
+## Protocol::LinkDiscoveredDevice
 SCAN 명령을 내리면 LINK 모듈이 검색된 장치 정보를 LinkDiscoveredDevice에 담아서 전송합니다.
 ```cpp
 namespace Protocol
@@ -105,7 +115,8 @@ namespace Protocol
 <br>
 
 
-## <a name="LinkPasscode">Protocol::LinkPasscode</a>
+<a name="Protocol_LinkPasscode"></a>
+## Protocol::LinkPasscode
 장치 비밀번호 설정
 ```cpp
 namespace Protocol
@@ -123,7 +134,7 @@ PETRONE과 페어링이 필요한 경우에 먼저 LinkPasscode를 사용하여 
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](../01_intro.md)
 2. [Typedef](../02_typedef.md)
@@ -135,7 +146,7 @@ PETRONE과 페어링이 필요한 경우에 먼저 LinkPasscode를 사용하여 
 8. [Firmware Update](../08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](01_intro.md)
 2. [DataType](02_datatype.md)

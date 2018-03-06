@@ -1,7 +1,11 @@
-***PETRONE / LINK / Protocol / Intro***<br>
-Modified : 2017.10.18
+**[PETRONE](index.md)** / **LINK** / **Protocol** / **Intro**
+
+Modified : 2018.3.6
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
@@ -74,7 +78,7 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 
 # 3. 사용 시 주의사항
 
-- LINK 모듈을 제어할 때에는 [Command](../06_structs.md#Command)를 주로 사용합니다.
+- LINK 모듈을 제어할 때에는 [Command](../06_structs.md#Protocol_Command)를 주로 사용합니다.
 
 - LINK 모듈에 데이터를 전송하는 경우 몇 가지 명령을 제외하고 대부분 Ack 데이터가 반송됩니다.
 
@@ -112,7 +116,7 @@ LINK 모듈은 시리얼 통신용으로 Silicon Labs사의 CP2104를 사용하�
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](../01_intro.md)
 2. [Typedef](../02_typedef.md)
@@ -124,7 +128,7 @@ LINK 모듈은 시리얼 통신용으로 Silicon Labs사의 CP2104를 사용하�
 8. [Firmware Update](../08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. ***Intro***
 2. [DataType](02_datatype.md)

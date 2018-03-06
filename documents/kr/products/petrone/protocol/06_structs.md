@@ -1,5 +1,6 @@
-***PETRONE / BLE / Protocol / Structs***<br>
-Modified : 2017.10.18
+**[PETRONE](index.md)** / **BLE** / **Protocol** / **Structs**
+
+Modified : 2018.3.6
 
 ---
 
@@ -13,7 +14,7 @@ Modified : 2017.10.18
 
 <br>
 
-<a name="Protocol_Ping" />
+<a name="Protocol_Ack"></a>
 ## Protocol::Ack
 PETRONE이 데이터를 수신 받았을 때 응답으로 보내는 데이터입니다. PETRONE의 현재 내부 시간과 수신 받은 데이터의 타입을 담아서 반환합니다. Ack와 Control을 제외한 대부분의 명령에 대해 응답으로 전송합니다.
 ```cpp
@@ -26,14 +27,14 @@ namespace Protocol
     };
 }
 ```
-- dataType : [Protocol::DataType::Type](03_datatype.md#DataType)
+- dataType : [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)
 
 
 <br>
 <br>
 
 
-<a name="Protocol_Request" />
+<a name="Protocol_Request"></a>
 ## Protocol::Request
 PETRONE에 데이터를 요청할 때 사용합니다.
 ```cpp
@@ -45,14 +46,15 @@ namespace Protocol
     };
 }
 ```
-- dataType : [Protocol::DataType::Type](03_datatype.md#DataType)
+- dataType : [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Control">Protocol::Control</a>
+<a name="Protocol_Control"></a>
+## Protocol::Control
 PETRONE을 조종할 때 사용하는 입력값입니다.
 ```cpp
 namespace Protocol
@@ -82,7 +84,8 @@ Control 입력 값의 범위는 다음과 같습니다. Drive 모드에서는 **
 <br>
 
 
-## <a name="Protocol_Command">Protocol::Command</a>
+<a name="Protocol_Command"></a>
+## Protocol::Command
 명령 하나를 전달합니다.
 ```cpp
 namespace Protocol
@@ -93,14 +96,15 @@ namespace Protocol
     };
 }
 ```
-- command : [Protocol::CommandBase](05_base_structs.md#CommandBase)
+- command : [Protocol::CommandBase](05_base_structs.md#Protocol_CommandBase)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Command2">Protocol::Command2</a>
+<a name="Protocol_Command2"></a>
+## Protocol::Command2
 명령 두 개를 전달합니다.
 ```cpp
 namespace Protocol
@@ -112,14 +116,15 @@ namespace Protocol
     };
 }
 ```
-- command1, command2 : [Protocol::CommandBase](05_base_structs.md#CommandBase)
+- command1, command2 : [Protocol::CommandBase](05_base_structs.md#Protocol_CommandBase)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Command3">Protocol::Command3</a>
+<a name="Protocol_Command3"></a>
+## Protocol::Command3
 명령 세 개를 전달합니다.
 ```cpp
 namespace Protocol
@@ -132,14 +137,15 @@ namespace Protocol
     };
 }
 ```
-- command1, command2, command3 : [Protocol::CommandBase](05_base_structs.md#CommandBase)
+- command1, command2, command3 : [Protocol::CommandBase](05_base_structs.md#Protocol_CommandBase)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Address">Protocol::Address</a>
+<a name="Protocol_Address"></a>
+## Protocol::Address
 BLE 주소를 반환합니다.
 ```cpp
 namespace Protocol
@@ -155,7 +161,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_State">Protocol::State</a>
+<a name="Protocol_State"></a>
+## Protocol::State
 PETRONE의 현재 상태값을 반환합니다.
 ```cpp
 namespace Protocol
@@ -174,19 +181,20 @@ namespace Protocol
     };
 }
 ```
-- modeVehicle : [System::ModeVehicle::Type](04_definitions.md#ModeVehicle)
-- modeSystem : [System::ModeSystem::Type](04_definitions.md#ModeSystem)
-- modeFlight : [System::ModeFlight::Type](04_definitions.md#ModeFlight)
-- modeDrive : [System::ModeDrive::Type](04_definitions.md#ModeDrive)
-- sensorOrientation : [System::SensorOrientation::Type](04_definitions.md#SensorOrientation)
-- coordinate : [System::Coordinate::Type](04_definitions.md#Coordinate)
+- modeVehicle : [System::ModeVehicle::Type](04_definitions.md#System_ModeVehicle)
+- modeSystem : [System::ModeSystem::Type](04_definitions.md#System_ModeSystem)
+- modeFlight : [System::ModeFlight::Type](04_definitions.md#System_ModeFlight)
+- modeDrive : [System::ModeDrive::Type](04_definitions.md#System_ModeDrive)
+- sensorOrientation : [System::SensorOrientation::Type](04_definitions.md#System_SensorOrientation)
+- coordinate : [System::Coordinate::Type](04_definitions.md#System_Coordinate)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Attitude">Protocol::Attitude</a>
+<a name="Protocol_Attitude"></a>
+## Protocol::Attitude
 자세값을 반환합니다.
 ```cpp
 namespace Protocol
@@ -222,7 +230,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_GyroBias">Protocol::GyroBias</a>
+<a name="Protocol_GyroBias"></a>
+## Protocol::GyroBias
 자이로 바이어스 값을 반환합니다.
 ```cpp
 namespace Protocol
@@ -240,7 +249,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_TrimFlight">Protocol::TrimFlight</a>
+<a name="Protocol_TrimFlight"></a>
+## Protocol::TrimFlight
 비행 Trim을 조정할 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -259,7 +269,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_TrimDrive">Protocol::TrimDrive</a>
+<a name="Protocol_TrimDrive"></a>
+## Protocol::TrimDrive
 자동차 Trim을 조정할 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -275,7 +286,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_TrimAll">Protocol::TrimAll</a>
+<a name="Protocol_TrimAll"></a>
+## Protocol::TrimAll
 비행 및 자동차 Trim을 한 번에 조정할 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -287,15 +299,16 @@ namespace Protocol
     };
 }
 ```
-- flight : [Protocol::TrimFlight](#TrimFlight)
-- drive : [Protocol::TrimDrive](#TrimDrive)
+- flight : [Protocol::TrimFlight](#Protocol_TrimFlight)
+- drive : [Protocol::TrimDrive](#Protocol_TrimDrive)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_CountFlight">Protocol::CountFlight</a>
+<a name="Protocol_CountFlight"></a>
+## Protocol::CountFlight
 비행과 관련된 저장값을 읽을 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -315,7 +328,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_CountDrive">Protocol::CountDrive</a>
+<a name="Protocol_CountDrive"></a>
+## Protocol::CountDrive
 주행과 관련된 저장값을 읽을 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -335,7 +349,8 @@ countAccident 변수는 주행 중 충돌을 카운트 하기 위해 만든 변�
 <br>
 
 
-## <a name="Protocol_IrMessage">Protocol::IrMessage</a>
+<a name="Protocol_IrMessage"></a>
+## Protocol::IrMessage
 IR 데이터를 전송하는데 사용하거나, PETRONE이 IR 데이터를 수신 받았을 때 외부 장치로 전송하는 데이터입니다.
 ```cpp
 namespace Protocol
@@ -347,14 +362,15 @@ namespace Protocol
     };
 }
 ```
-- direction : [System::Direction::Type](04_definitions.md#Direction)
+- direction : [System::Direction::Type](04_definitions.md#System_Direction)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_ImuRawAndAngle">Protocol::ImuRawAndAngle</a>
+<a name="Protocol_ImuRawAndAngle"></a>
+## Protocol::ImuRawAndAngle
 자이로 센서에서 출력한 값과 내부에서 계산한 드론의 자세 값을 반환합니다.
 ```cpp
 namespace Protocol
@@ -379,7 +395,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Pressure">Protocol::Pressure</a>
+<a name="Protocol_Pressure"></a>
+## Protocol::Pressure
 압력 센서의 출력값을 반환합니다. d1과 d2는 MS5607에서만 출력하는 값으로 DPS310이 사용된 기체에서는 0으로 출력됩니다.
 ```cpp
 namespace Protocol
@@ -400,7 +417,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_ImageFlow">Protocol::ImageFlow</a>
+<a name="Protocol_ImageFlow"></a>
+## Protocol::ImageFlow
 자세 제어에 사용하는 영상 데이터 처리 값입니다.
 ```cpp
 namespace Protocol
@@ -419,7 +437,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Button">Protocol::Button</a>
+<a name="Protocol_Button"></a>
+## Protocol::Button
 버튼 입력 값입니다.
 ```cpp
 namespace Protocol
@@ -436,7 +455,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_Motor">Protocol::Motor</a>
+<a name="Protocol_Motor"></a>
+## Protocol::Motor
 모터를 동작시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
 ```cpp
 namespace Protocol
@@ -447,14 +467,15 @@ namespace Protocol
     };
 }
 ```
-- motor : [Protocol::MotorBase::Type](05_base_structs.md#MotorBase)
+- motor : [Protocol::MotorBase::Type](05_base_structs.md#Protocol_MotorBase)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Range">Protocol::Range</a>
+<a name="Protocol_Range"></a>
+## Protocol::Range
 거리 센서에서 입력받은 거리 값을 반환합니다. 앞으로 거리센서 모듈이 추가될 예정이어서 6방향에 대한 값을 모두 담는 구조체를 사용합니다.
 ```cpp
 namespace Protocol
@@ -477,7 +498,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_UpdateLookupTarget">Protocol::UpdateLookupTarget</a>
+<a name="Protocol_UpdateLookupTarget"></a>
+## Protocol::UpdateLookupTarget
 펌웨어 정보 요청.<br>
 페트론은 제어 MCU와 통신 MCU로 구성되어 있습니다. Protocol::UpdateLookupTarget은 원하는 장치의 Protocol::UpdateInformation을 요청할 때 사용합니다.
 ```cpp
@@ -489,14 +511,15 @@ namespace Protocol
     };
 }
 ```
-- deviceType : [System::DeviceType::Type](04_definitions.md#DeviceType)
+- deviceType : [System::DeviceType::Type](04_definitions.md#System_DeviceType)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_UpdateInformation">Protocol::UpdateInformation</a>
+<a name="Protocol_UpdateInformation"></a>
+## Protocol::UpdateInformation
 펌웨어 정보.<br>
 PC 또는 App 등에서 Protocol::UpdateLookupTarget을 전송한 경우 deviceType이 일치하는 장치가 Protocol::UpdateInformation을 응답으로 전송합니다.
 ```cpp
@@ -516,16 +539,17 @@ namespace Protocol
     };
 }
 ```
-- modeUpdate : [System::ModeUpdate::Type](04_definitions.md#ModeUpdate)
-- deviceType : [System::DeviceType::Type](04_definitions.md#DeviceType)
-- imageType : [System::ImageType::Type](04_definitions.md#ImageType)
+- modeUpdate : [System::ModeUpdate::Type](04_definitions.md#System_ModeUpdate)
+- deviceType : [System::DeviceType::Type](04_definitions.md#System_DeviceType)
+- imageType : [System::ImageType::Type](04_definitions.md#System_ImageType)
 
 
 <br>
 <br>
 
 
-## <a name="Protocol_Update">Protocol::Update</a>
+<a name="Protocol_Update"></a>
+## Protocol::Update
 펌웨어 업데이트.<br>
 펌웨어 업데이트 시에는 파일에서 16바이트씩 데이터를 잘라서 전송합니다. Protocol::Update를 전송하는 동안에 다른 응답은 없습니다. 만약 전송 실패가 발생한 경우 드론이 Protocol::UpdateLocationCorrect를 보냅니다. 해당 패킷을 받으면 지정한 블럭 위치부터 다시 전송을 시작하면 됩니다.
 ```cpp
@@ -545,7 +569,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Protocol_UpdateLocationCorrect">Protocol::UpdateLocationCorrect</a>
+<a name="Protocol_UpdateLocationCorrect"></a>
+## Protocol::UpdateLocationCorrect
 펌웨어 업데이트 위치 정정.<br>
 펌웨어 업데이트 중 전송에 실패하는 블럭이 발생하는 경우 indexBlockNext부터 다시 전송하라는 요청을 보냅니다.
 ```cpp
@@ -564,7 +589,7 @@ namespace Protocol
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -576,7 +601,7 @@ namespace Protocol
 8. [Firmware Update](08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)

@@ -1,4 +1,5 @@
-***PETRONE / BLE / Protocol / Definitions***<br>
+**[PETRONE](index.md)** / **BLE** / **Protocol** / **Definitions**
+
 Modified : 2018.3.6
 
 ---
@@ -13,7 +14,8 @@ Modified : 2018.3.6
 
 <br>
 
-## <a name="CommandType">Protocol::CommandType::Type</a>
+<a name="Protocol_CommandType"></a>
+## Protocol::CommandType::Type
 CommandBase 구조체에서 commandType 변수에 사용합니다.
 
 ```cpp
@@ -51,7 +53,8 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="DeviceType">System::DeviceType::Type</a>
+<a name="System_DeviceType"></a>
+## System::DeviceType::Type
 장치 타입.<br>
 펌웨어 정보를 요청할 때 사용합니다.
 
@@ -77,7 +80,8 @@ namespace System
 <br>
 <br>
 
-## <a name="ModeUpdate">System::ModeUpdate::Type</a>
+<a name="System_ModeUpdate"></a>
+## System::ModeUpdate::Type
 펌웨어 업데이트 동작 상태.
 
 ```cpp
@@ -104,7 +108,8 @@ namespace System
 <br>
 <br>
 
-## <a name="ImageType">System::ImageType::Type</a>
+<a name="System_ImageType"></a>
+## System::ImageType::Type
 펌웨어 이미지 타입.
 
 ```cpp
@@ -143,7 +148,8 @@ namespace System
 <br>
 <br>
 
-## <a name="ModeVehicle">System::ModeVehicle::Type</a>
+<a name="System_ModeVehicle"></a>
+## System::ModeVehicle::Type
 페트론 동작 모드를 선택합니다.
 
 ```cpp
@@ -172,7 +178,8 @@ namespace System
 <br>
 <br>
 
-## <a name="ModeSystem">System::ModeSystem::Type</a>
+<a name="System_ModeSystem"></a>
+## System::ModeSystem::Type
 시스템 동작 상태를 나타냅니다.
 
 ```cpp
@@ -206,7 +213,8 @@ namespace System
 <br>
 <br>
 
-## <a name="ModeFlight">System::ModeFlight::Type</a>
+<a name="System_ModeFlight"></a>
+## System::ModeFlight::Type
 비행 제어기 동작 상태를 나타냅니다.
 
 ```cpp
@@ -240,7 +248,8 @@ namespace System
 <br>
 <br>
 
-## <a name="ModeDrive">System::ModeDrive::Type</a>
+<a name="System_ModeDrive"></a>
+## System::ModeDrive::Type
 자동차 제어기 동작 상태를 나타냅니다.
 
 ```cpp
@@ -271,7 +280,8 @@ namespace System
 <br>
 <br>
 
-## <a name="SensorOrientation">System::SensorOrientation::Type</a>
+<a name="System_SensorOrientation"></a>
+## System::SensorOrientation::Type
 센서 방향을 나타냅니다.
 ```cpp
 namespace System
@@ -295,7 +305,8 @@ namespace System
 <br>
 <br>
 
-## <a name="Direction">System::Direction::Type</a>
+<a name="System_Direction"></a>
+## System::Direction::Type
 방향을 나타냅니다.
 ```cpp
 namespace System
@@ -320,7 +331,8 @@ namespace System
 <br>
 <br>
 
-## <a name="Coordinate">System::Coordinate::Type</a>
+<a name="System_Coordinate"></a>
+## System::Coordinate::Type
 페트론 조종기 방향 기준을 선택합니다. World는 앱솔루트 모드입니다. 드론 외부 세계를 중심으로 좌표를 판단합니다. Local은 일반모드입니다. 드론을 중심으로 좌표를 판단합니다.
 
 ```cpp
@@ -344,7 +356,8 @@ namespace System
 <br>
 <br>
 
-## <a name="Trim">System::Trim::Type</a>
+<a name="System_Trim"></a>
+## System::Trim::Type
 페트론이 한쪽 방향으로 흐를 때 반대 방향을 입력하여 호버링을 할 수 있게 조정합니다. 한 번 전송할 때마다 일정하게 값이 변합니다.
 
 ```cpp
@@ -374,7 +387,8 @@ namespace System
 <br>
 <br>
 
-## <a name="FlightEvent">System::FlightEvent::Type</a>
+<a name="System_FlightEvent"></a>
+## System::FlightEvent::Type
 페트론 비행 이벤트를 실행합니다.
 
 ```cpp
@@ -409,7 +423,8 @@ namespace System
 <br>
 <br>
 
-## <a name="LightMode">Light::Mode::Type</a>
+<a name="Light_Mode"></a>
+## Light::Mode::Type
 LED 모드 또는 이벤트 명령 시 동작 모드를 지정할 때 사용합니다.
 
 ```cpp
@@ -446,7 +461,8 @@ namespace Light
 <br>
 <br>
 
-## <a name="LightColors">Light::Colors::Type</a>
+<a name="Light_Colors"></a>
+## Light::Colors::Type
 LED 색상을 지정할 때 사용합니다.
 
 ```cpp
@@ -609,7 +625,7 @@ namespace Light
 
 ---
 
-### PETRONE
+<h3> PETRONE</h3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -621,7 +637,7 @@ namespace Light
 8. [Firmware Update](08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)
