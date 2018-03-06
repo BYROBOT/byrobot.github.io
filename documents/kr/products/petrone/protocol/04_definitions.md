@@ -1,11 +1,15 @@
 ***PETRONE / BLE / Protocol / Definitions***<br>
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
 #### Petrone에서 사용하고 있는 기본 정의들을 소개합니다.
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
+
 
 <br>
 

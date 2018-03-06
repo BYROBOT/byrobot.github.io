@@ -1,11 +1,15 @@
 ***PETRONE / BLE / Protocol / BaseStructs***<br>
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
 #### 데이터 전송 시 그대로 전달되지는 않으나 다른 구조체의 일부분으로 포함되는 구조체들을 소개합니다.
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
+
 
 <br>
 

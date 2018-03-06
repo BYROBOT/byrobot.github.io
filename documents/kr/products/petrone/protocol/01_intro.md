@@ -1,7 +1,11 @@
 ***PETRONE / BLE / Protocol / Intro***<br>
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
+
 
 <br>
 

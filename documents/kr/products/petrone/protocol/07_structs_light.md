@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / Structs / Light***<br>
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
@@ -7,9 +7,13 @@ Modified : 2017.10.18
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
+
+
 <br>
 
-## <a name="LightMode">Protocol::LightMode</a>
+## <a name="Protocol_LightMode">Protocol::LightMode</a>
 LED 모드 변경 하나를 전달합니다.
 ```cpp
 namespace Protocol
@@ -25,7 +29,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightMode2">Protocol::LightMode2</a>
+## <a name="Protocol_LightMode2">Protocol::LightMode2</a>
 LED 모드 변경 두 개를 전달합니다.
 ```cpp
 namespace Protocol
@@ -42,7 +46,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightModeCommand">Protocol::LightModeCommand</a>
+## <a name="Protocol_LightModeCommand">Protocol::LightModeCommand</a>
 LED 모드 변경 하나와 명령 하나를 전달합니다.
 ```cpp
 namespace Protocol
@@ -60,7 +64,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightModeCommandIr">Protocol::LightModeCommandIr</a>
+## <a name="Protocol_LightModeCommandIr">Protocol::LightModeCommandIr</a>
 LED 모드 변경 하나와 명령 하나, 그리고 IR 메세지를 전달합니다.
 ```cpp
 namespace Protocol
@@ -79,7 +83,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightModeColor">Protocol::LightModeColor</a>
+## <a name="Protocol_LightModeColor">Protocol::LightModeColor</a>
 LED 모드 변경 하나를 전달합니다. RGB 값을 직접 지정합니다.
 ```cpp
 namespace Protocol
@@ -95,7 +99,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightModeColor2">Protocol::LightModeColor2</a>
+## <a name="Protocol_LightModeColor2">Protocol::LightModeColor2</a>
 LED 모드 변경 두 개를 전달합니다. RGB 값을 직접 지정합니다.
 ```cpp
 namespace Protocol
@@ -112,7 +116,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightEvent">Protocol::LightEvent</a>
+## <a name="Protocol_LightEvent">Protocol::LightEvent</a>
 LED 이벤트 실행 하나를 전달합니다.
 ```cpp
 namespace Protocol
@@ -128,7 +132,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightEvent2">Protocol::LightEvent2</a>
+## <a name="Protocol_LightEvent2">Protocol::LightEvent2</a>
 LED 이벤트 실행 두 개를 전달합니다.
 ```cpp
 namespace Protocol
@@ -145,7 +149,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightEventCommand">Protocol::LightEventCommand</a>
+## <a name="Protocol_LightEventCommand">Protocol::LightEventCommand</a>
 LED 이벤트 실행 하나와 명령 하나를 전달합니다.
 ```cpp
 namespace Protocol
@@ -163,7 +167,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightEventCommandIr">Protocol::LightEventCommandIr</a>
+## <a name="Protocol_LightEventCommandIr">Protocol::LightEventCommandIr</a>
 LED 이벤트 실행 하나와 명령 하나, 그리고 IR 메세지를 전달합니다.
 ```cpp
 namespace Protocol
@@ -182,7 +186,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightEventColor">Protocol::LightEventColor</a>
+## <a name="Protocol_LightEventColor">Protocol::LightEventColor</a>
 LED 이벤트 실행 하나를 전달합니다. RGB 값을 직접 지정합니다.
 ```cpp
 namespace Protocol
@@ -198,7 +202,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightEventColor2">Protocol::LightEventColor2</a>
+## <a name="Protocol_LightEventColor2">Protocol::LightEventColor2</a>
 LED 이벤트 실행 두 개를 전달합니다. RGB 값을 직접 지정합니다.
 ```cpp
 namespace Protocol
@@ -215,7 +219,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightModeDefaultColor">Protocol::LightModeDefaultColor</a>
+## <a name="Protocol_LightModeDefaultColor">Protocol::LightModeDefaultColor2</a>
 LED 시작 모드를 설정합니다. RGB 값을 직접 지정합니다. 여기서 지정한 값은 드론의 내부 메모리에 저장합니다.
 ```cpp
 namespace Protocol
@@ -231,7 +235,7 @@ namespace Protocol
 <br>
 <br>
 
-## <a name="LightModeDefaultColor2">Protocol::LightModeDefaultColor2</a>
+## <a name="Protocol_LightModeDefaultColor2">Protocol::LightModeDefaultColor2</a>
 LED 시작 모드 두 개를 설정합니다. RGB 값을 직접 지정합니다. 여기서 지정한 값은 드론의 내부 메모리에 저장합니다.
 ```cpp
 namespace Protocol

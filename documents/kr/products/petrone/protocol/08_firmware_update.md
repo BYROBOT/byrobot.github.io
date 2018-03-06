@@ -1,11 +1,15 @@
 ***PETRONE / BLE / Protocol / FirmwareUpdate***<br>
-Modified : 2017.10.18
+Modified : 2018.3.6
 
 ---
 
 #### 페트론 펌웨어 업데이트 방법을 소개합니다.
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
+
 
 <br>
 
