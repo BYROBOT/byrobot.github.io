@@ -8,13 +8,9 @@ Modified : 2018.3.6
 
 ---
 
-* Kramdown table of contents
-{:toc .toc}
-
-
 <br>
 
-## <a name="DataType">Protocol::DataType::Type</a>
+## <a name="Protocol_DataType">Protocol::DataType::Type</a>
 데이터 타입
 
 ```cpp
@@ -151,7 +147,7 @@ namespace Protocol
 
 ---
 
-### PETRONE
+<h3> PETRONE </h3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -163,7 +159,7 @@ namespace Protocol
 8. [Firmware Update](08_firmware_update.md)
 
 
-### PETRONE Link
+<h3> PETRONE Link</h3>
 
 1. [Intro](link/01_intro.md)
 2. [DataType](link/02_datatype.md)

@@ -13,7 +13,8 @@ Modified : 2017.10.18
 
 <br>
 
-## <a name="Protocol_Ping">Protocol::Ack</a>
+<a name="Protocol_Ping" />
+## Protocol::Ack
 PETRONE이 데이터를 수신 받았을 때 응답으로 보내는 데이터입니다. PETRONE의 현재 내부 시간과 수신 받은 데이터의 타입을 담아서 반환합니다. Ack와 Control을 제외한 대부분의 명령에 대해 응답으로 전송합니다.
 ```cpp
 namespace Protocol
@@ -32,7 +33,8 @@ namespace Protocol
 <br>
 
 
-## <a name="Request">Protocol::Request</a>
+<a name="Protocol_Request" />
+## Protocol::Request
 PETRONE에 데이터를 요청할 때 사용합니다.
 ```cpp
 namespace Protocol
