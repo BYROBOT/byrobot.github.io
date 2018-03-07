@@ -4,10 +4,15 @@ Modified : 2017.10.31
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
+
+
 <br>
 
 
-## <a name="UpdateInformation_petrone_link">PETRONE LINK 모듈의 펌웨어 정보 요청</a>
+<a name="UpdateInformation_petrone_link"></a>
+## PETRONE LINK 모듈의 펌웨어 정보 요청
 
 페트론 링크 모듈의 펌웨어 정보를 요청합니다.
 
@@ -66,7 +71,8 @@ eventUpdateInformation() / ModeUpdate.None_ / DeviceType.Link / ImageType.ImageS
 <br>
 
 
-## <a name="UpdateInformation_short">드론의 펌웨어 정보 요청(짧은 코드)</a>
+<a name="UpdateInformation_short"></a>
+## 드론의 펌웨어 정보 요청(짧은 코드)
 
 마지막으로 검색된 시리얼 포트에 연결하여 가장 신호 세기가 강한 드론에 자동으로 연결 후 펌웨어 정보를 요청합니다.
 
@@ -166,7 +172,8 @@ Disconnect device.
 
 
 
-## <a name="UpdateInformation_long">드론의 펌웨어 정보 요청(긴 코드)</a>
+<a name="UpdateInformation_long"></a>
+## 드론의 펌웨어 정보 요청(긴 코드)
 
 마지막으로 검색된 시리얼 포트에 연결하여 가장 신호 세기가 강한 드론에 연결 후 펌웨어 정보를 요청합니다.
 
@@ -506,6 +513,7 @@ eventLinkEvent() / EventLink.Disconnected / 22
  3. [Protocol](03_protocol.md)
  4. [Drone](04_drone.md)
  5. **Examples - Information**
+ 6. [Examples - Imu](examples_02_imu.md)
 
 <br>
 

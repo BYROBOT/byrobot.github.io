@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Protocol**
 
-Modified : 2018.1.9
+Modified : 2018.3.7
 
 ---
 
@@ -8,10 +8,14 @@ Modified : 2018.1.9
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
+
 
 <br>
 
-## <a name="DataType">DataType</a>
+<a name="DataType"></a>
+## DataType
 
 데이터 타입
 
@@ -101,7 +105,8 @@ class DataType(Enum):
 <br>
 
 
-## <a name="CommandType">CommandType</a>
+<a name="CommandType"></a>
+## CommandType
 
 명령 타입
 
@@ -163,7 +168,8 @@ class CommandType(Enum):
 <br>
 
 
-## <a name="Header">Header</a>
+<a name="Header"></a>
+## Header
 
 헤더
 
@@ -187,7 +193,8 @@ class Header(ISerializable):
 <br>
 
 
-## <a name="Ping">Ping</a>
+<a name="Ping"></a>
+## Ping
 
 Ping
 
@@ -211,7 +218,8 @@ class Ping(ISerializable):
 <br>
 
 
-## <a name="Ack">Ack</a>
+<a name="Ack"></a>
+## Ack
 
 응답
 
@@ -237,7 +245,8 @@ class Ack(ISerializable):
 <br>
 
 
-## <a name="Request">Request</a>
+<a name="Request"></a>
+## Request
 
 요청
 
@@ -259,7 +268,8 @@ class Request(ISerializable):
 <br>
 
 
-## <a name="Control">Control</a>
+<a name="Control"></a>
+## Control
 
 조종
 
@@ -287,7 +297,8 @@ class Control(ISerializable):
 <br>
 
 
-## <a name="Command">Command</a>
+<a name="Command"></a>
+## Command
 
 명령
 
@@ -318,7 +329,8 @@ class Command(ISerializable):
 <br>
 
 
-## <a name="LightModeDrone">LightModeDrone</a>
+<a name="LightModeDrone"></a>
+## LightModeDrone
 
 드론 LED 동작 모드
 
@@ -351,7 +363,8 @@ class LightModeDrone(Enum):
 <br>
 
 
-## <a name="Color">Color</a>
+<a name="Color"></a>
+## Color
 
 RGB LED 색상 설정
 
@@ -377,7 +390,8 @@ class Color(ISerializable):
 <br>
 
 
-## <a name="Colors">Colors</a>
+<a name="Colors"></a>
+## Colors
 
 색상 팔레트 인덱스
 
@@ -537,7 +551,8 @@ class Colors(Enum):
 <br>
 
 
-## <a name="LightMode">LightMode</a>
+<a name="LightMode"></a>
+## LightMode
 
 LED 모드
 
@@ -563,7 +578,8 @@ class LightMode(ISerializable):
 <br>
 
 
-## <a name="LightModeCommand">LightModeCommand</a>
+<a name="LightModeCommand"></a>
+## LightModeCommand
 
 LED 모드 변경(Palette) + Command
 
@@ -587,7 +603,8 @@ class LightModeCommand(ISerializable):
 <br>
 
 
-## <a name="LightModeCommandIr">LightModeCommandIr</a>
+<a name="LightModeCommandIr"></a>
+## LightModeCommandIr
 
 LED 모드 변경(Palette) + Command + IR
 
@@ -613,7 +630,8 @@ class LightModeCommandIr(ISerializable):
 <br>
 
 
-## <a name="LightModeColor">LightModeColor</a>
+<a name="LightModeColor"></a>
+## LightModeColor
 
 LED 모드 변경(RGB)
 
@@ -639,7 +657,8 @@ class LightModeColor(ISerializable):
 <br>
 
 
-## <a name="LightEvent">LightEvent</a>
+<a name="LightEvent"></a>
+## LightEvent
 
 LED 이벤트 변경(Palette)
 
@@ -667,7 +686,8 @@ class LightEvent(ISerializable):
 <br>
 
 
-## <a name="LightEventCommand">LightEventCommand</a>
+<a name="LightEventCommand"></a>
+## LightEventCommand
 
 LED 이벤트 변경(Palette) + Command
 
@@ -692,7 +712,8 @@ class LightEventCommand(ISerializable):
 <br>
 
 
-## <a name="LightEventCommandIr">LightEventCommandIr</a>
+<a name="LightEventCommandIr"></a>
+## LightEventCommandIr
 
 LED 모드 변경(Palette) + Command + IR
 
@@ -719,7 +740,8 @@ class LightEventCommandIr(ISerializable):
 <br>
 
 
-## <a name="LightEventColor">LightEventColor</a>
+<a name="LightEventColor"></a>
+## LightEventColor
 
 LED 이벤트 변경(RGB)
 
@@ -745,7 +767,8 @@ class LightEventColor(ISerializable):
 <br>
 
 
-## <a name="Address">Address</a>
+<a name="Address"></a>
+## Address
 
 장치 주소
 
@@ -767,7 +790,8 @@ class Address(ISerializable):
 <br>
 
 
-## <a name="State">State</a>
+<a name="State"></a>
+## State
 
 드론 상태
 
@@ -801,7 +825,8 @@ class State(ISerializable):
 <br>
 
 
-## <a name="Attitude">Attitude</a>
+<a name="Attitude"></a>
+## Attitude
 
 자세
 
@@ -825,7 +850,8 @@ class Attitude(ISerializable):
 <br>
 
 
-## <a name="GyroBias">GyroBias</a>
+<a name="GyroBias"></a>
+## GyroBias
 
 자이로 바이어스
 
@@ -847,7 +873,8 @@ class GyroBias(Attitude):
 <br>
 
 
-## <a name="TrimFlight">TrimFlight</a>
+<a name="TrimFlight"></a>
+## TrimFlight
 
 비행 트림 설정
 
@@ -875,7 +902,8 @@ class TrimFlight(ISerializable):
 <br>
 
 
-## <a name="TrimDrive">TrimDrive</a>
+<a name="TrimDrive"></a>
+## TrimDrive
 
 주행 트림 설정
 
@@ -897,7 +925,8 @@ class TrimDrive(ISerializable):
 <br>
 
 
-## <a name="CountFlight">CountFlight</a>
+<a name="CountFlight"></a>
+## CountFlight
 
 비행 카운터
 
@@ -926,7 +955,8 @@ class CountFlight(ISerializable):
 <br>
 
 
-## <a name="CountDrive">CountDrive</a>
+<a name="CountDrive"></a>
+## CountDrive
 
 주행 카운터
 
@@ -953,7 +983,8 @@ class CountDrive(ISerializable):
 <br>
 
 
-## <a name="IrMessage">IrMessage</a>
+<a name="IrMessage"></a>
+## IrMessage
 
 적외선 데이터 송수신
 
@@ -979,7 +1010,8 @@ class IrMessage(ISerializable):
 <br>
 
 
-## <a name="Imu">Imu</a>
+<a name="Imu"></a>
+## Imu
 
 IMU 센서 데이터와 드론의 자세
 
@@ -1017,7 +1049,8 @@ class Imu(ISerializable):
 <br>
 
 
-## <a name="Pressure">Pressure</a>
+<a name="Pressure"></a>
+## Pressure
 
 압력 센서
 
@@ -1043,7 +1076,8 @@ class Pressure(ISerializable):
 <br>
 
 
-## <a name="ImageFlow">ImageFlow</a>
+<a name="ImageFlow"></a>
+## ImageFlow
 
 옵티컬 플로우로 계산한 상대 위치 값
 
@@ -1065,7 +1099,8 @@ class ImageFlow(ISerializable):
 <br>
 
 
-## <a name="ButtonFlagDrone">ButtonFlagDrone</a>
+<a name="ButtonFlagDrone"></a>
+## ButtonFlagDrone
 
 드론 버튼 플래그
 
@@ -1082,7 +1117,8 @@ class ButtonFlagDrone(Enum):
 <br>
 
 
-## <a name="Button">Button</a>
+<a name="Button"></a>
+## Button
 
 버튼 입력
 
@@ -1102,7 +1138,8 @@ class Button(ISerializable):
 <br>
 
 
-## <a name="Battery">Battery</a>
+<a name="Battery"></a>
+## Battery
 
 배터리
 
@@ -1136,7 +1173,8 @@ class Battery(ISerializable):
 <br>
 
 
-## <a name="MotorBlock">MotorBlock</a>
+<a name="MotorBlock"></a>
+## MotorBlock
 
 모터 블럭
 
@@ -1162,7 +1200,8 @@ class MotorBlock(ISerializable):
 <br>
 
 
-## <a name="Motor">Motor</a>
+<a name="Motor"></a>
+## Motor
 
 모터 전체 제어
 
@@ -1191,7 +1230,8 @@ class Motor(ISerializable):
 <br>
 
 
-## <a name="Range">Range</a>
+<a name="Range"></a>
+## Range
 
 거리 센서
 
@@ -1225,7 +1265,8 @@ class Range(ISerializable):
 <br>
 
 
-## <a name="UpdateInformation">UpdateInformation</a>
+<a name="UpdateInformation"></a>
+## UpdateInformation
 
 펌웨어 정보
 
@@ -1261,7 +1302,8 @@ class UpdateInformation(ISerializable):
 <br>
 
 
-## <a name="LinkRssi">LinkRssi</a>
+<a name="LinkRssi"></a>
+## LinkRssi
 
 RSSI
 
@@ -1287,7 +1329,8 @@ class LinkRssi(ISerializable):
 <br>
 
 
-## <a name="Message">Message</a>
+<a name="Message"></a>
+## Message
 
 요청
 
@@ -1316,6 +1359,7 @@ class Message():
  3. **Protocol**
  4. [Drone](04_drone.md)
  5. [Examples - Information](examples_01_information.md)
+ 6. [Examples - Imu](examples_02_imu.md)
  
 <br>
 
