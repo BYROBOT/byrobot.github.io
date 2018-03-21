@@ -1,6 +1,6 @@
 **PETRONE V2 update log**
 
-Modified : 2018.3.5
+Modified : 2018.3.21
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2018.3.5
 
 
 <br>
+
+
+# 2018.3.21
+
+- **Drone: 1.2.R.7**
+- **Controller: 1.2.R.5**
+
+> - 배터리 잔량 계산 수정
+
+**[[Download](https://drive.google.com/open?id=1b-3QqCsetS9jizZfFV4j9zTL_psntaVW)]**
+**[[Download2](https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180321_release_1.zip)]**
+
+<br>
+
+---
+
 
 
 # 2018.3.5
@@ -20,8 +36,6 @@ Modified : 2018.3.5
 > - 드론 후방 LED를 외부에서 제어하지 못하도록 막고, 항상 연결 상태 확인 용도로만 사용하게 함
 > - 비행 안정화
 > - 페어링과 관련된 오류 수정
-
-**[[Download](https://drive.google.com/open?id=11mVJrmcicMcEyZ6gthRDoKhaI1QS4odd)]**
 
 <br>
 

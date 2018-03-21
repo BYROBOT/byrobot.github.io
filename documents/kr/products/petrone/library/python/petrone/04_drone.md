@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Drone**
 
-Modified : 2017.09.29
+Modified : 2018.3.7
 
 ---
 
@@ -849,6 +849,7 @@ def sendLightEventColorsCommandIr(self, lightEvent, interval, repeat, colors, co
  3. [Protocol](03_protocol.md)
  4. **Drone**
  5. [Examples - Information](examples_01_information.md)
+ 6. [Examples - Imu](examples_02_imu.md)
 
 <br>
 
