@@ -14,11 +14,12 @@ Modified : 2018.3.21
 # 2018.3.21
 
 - **Drone: 1.2.R.7**
-- **Controller: 1.2.R.5**
+- Controller: 1.2.R.5
 
 > - 배터리 잔량 계산 수정
 
 **[[Download](https://drive.google.com/open?id=1b-3QqCsetS9jizZfFV4j9zTL_psntaVW)]**
+
 **[[Download2](https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180321_release_1.zip)]**
 
 <br>
