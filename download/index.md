@@ -37,7 +37,7 @@
                 <div align="center">Drone Main: 48<br>Drone Sub: 18<br>Link: 17</div>
             </td>
             <td>
-                <div align="center">Drone: 1.2.R.6<br>Controller: 1.2.R.5</div>
+                <div align="center">Drone: 1.2.R.7<br>Controller: 1.2.R.5</div>
             </td>
         </tr>
             <tr>
