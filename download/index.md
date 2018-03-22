@@ -70,14 +70,29 @@
 
     <table>
         <tr>
-            <td colspan="2">
+            <td colspan="3">
                 <div align="center">
-                    <img src="/assets/images/products/byscratch.png" alt="ByScratch"><br>
                     ByScratch
                 </div>
             </td>
         </tr>
         <tr>
+            <td>
+                <div align="center">
+                </div>
+            </td>
+            <td colspan="2">
+                <div align="center">
+                    <img src="/assets/images/products/byscratch.png" alt="ByScratch">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div align="center">
+                    Target
+                </div>
+            </td>
             <td>
                 <div align="center">
                     <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="120" width="120"><br>
@@ -92,9 +107,16 @@
             </td>
         </tr>
         <tr>
+            <td>
+                <div align="center">
+                    Download
+                </div>
+            </td>
             <td colspan="2">
-                <div align="center">[<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_v2.4.exe" target="_blank">Windows</a>]</div>
-                <div align="center">[<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_V2.4.dmg" target="_blank">MacOS</a>]</div>
+                <div align="center">
+                    <a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_v2.4.exe" target="_blank">Windows</a>,&nbsp;
+                    <a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_V2.4.dmg" target="_blank">MacOS</a>
+                </div>
             </td>
         </tr>
     </table>
@@ -102,4 +124,4 @@
 
 ---
 
-Modified : 2018.3.21
+Modified : 2018.3.23
