@@ -2,38 +2,38 @@
 
 ---
 
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="#Firmware">Firmware</a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="#ByScratch">ByScratch</a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="#Entry">Entry</a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="#DroneFighterSimulator">Drone Fighter Simulator</a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="#RacingPetrone">Racing Petrone</a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
 <div align="center">
+
+    <table>
+        <tr>
+            <td>
+                <div align="center">
+                    <a href="#Firmware">Firmware</a>
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <a href="#ByScratch">ByScratch</a>
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <a href="#Entry">Entry</a>
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <a href="#DroneFighterSimulator">Drone Fighter Simulator</a>
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <a href="#RacingPetrone">Racing Petrone</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+
 
     <hr>
     <a name="Firmware"></a>
