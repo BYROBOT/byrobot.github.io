@@ -2,13 +2,42 @@
 
 ---
 
-* Kramdown table of contents
-{:toc .toc}
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <a href="#Firmware">Firmware</a>
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <a href="#ByScratch">ByScratch</a>
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <a href="#Entry">Entry</a>
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <a href="#DroneFighterSimulator">Drone Fighter Simulator</a>
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <a href="#RacingPetrone">Racing Petrone</a>
+            </div>
+        </td>
+    </tr>
+</table>
 
----
-## Firmware
 
 <div align="center">
+
+    <hr>
+    <a name="Firmware"></a>
+
     <table>
         <tr>
             <td><div align="center"></div></td>
@@ -72,9 +101,8 @@
             </tr>
     </table>
 
-
----
-## ByScratch
+    <hr>
+    <a name="ByScratch"></a>
 
     <table>
         <tr>
@@ -136,10 +164,10 @@
             </td>
         </tr>
     </table>
-    
 
----
-## Entry
+
+    <hr>
+    <a name="Entry"></a>
 
     <table>
         <tr>
@@ -193,8 +221,8 @@
     </table>
     
 
----
-## Drone Fighter Simulator
+    <hr>
+    <a name="DroneFighterSimulator"></a>
 
     <table>
         <tr>
@@ -238,9 +266,8 @@
         </tr>
     </table>
     
-
----
-## Racing Petrone
+    <hr>
+    <a name="RacingPetrone"></a>
 
     <table>
         <tr>
