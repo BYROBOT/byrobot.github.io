@@ -33,8 +33,7 @@
             </td>
         </tr>
     </table>
-
-    <br>
+    
     <hr>
     <a name="Firmware"></a>
 
