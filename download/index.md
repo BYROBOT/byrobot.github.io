@@ -187,8 +187,8 @@
             </td>
             <td colspan="2">
                 <div align="center">
-                    <a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_v2.4.exe" target="_blank">Windows</a>,&nbsp;
-                    <a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_V2.4.dmg" target="_blank">MacOS</a>
+                    <a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_v2.5.exe" target="_blank">Windows</a>,&nbsp;
+                    <a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/ByScratch_V2.5.dmg" target="_blank">MacOS</a>
                 </div>
             </td>
         </tr>
