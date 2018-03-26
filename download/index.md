@@ -175,7 +175,7 @@
             </td>
             <td colspan="2">
                 <div align="center">
-                    V2.4
+                    V2.5
                 </div>
             </td>
         </tr>
