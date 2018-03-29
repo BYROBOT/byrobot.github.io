@@ -1,6 +1,6 @@
 **Petrone V2 firmware Update**
 
-Modified : 2018.3.5
+Modified : 2018.3.29
 
 ---
 
@@ -25,11 +25,14 @@ Modified : 2018.3.5
 
 <b>(1) 조종기에 USB 커넥터를 연결합니다.</b>
 
+<br>
+
 <b>(2) 조종기 우측 상단의 빨간색 버튼을 누른 채로, 하단 중앙의 스위치를 <i>ON</i>에서 <i>USB</i>로 밀어서 전원을 켭니다.</b>
 
 <div align="center">
     <img src="1_controller_1_off.jpg" alt="controller off">
 </div>
+<br>
 
 <b>(3) 조종기의 전원이 켜지면서 부트로더의 펌웨어 업데이트 모드를 시작합니다.</b>
 
@@ -122,6 +125,7 @@ Modified : 2018.3.5
 # 3. 드론 펌웨어 업데이트
 
 <b>(1) 조종기에 USB 커넥터를 연결합니다.</b>
+<br>
 
 <b>(2) 조종기 하단 중앙의 스위치를 <i>ON</i>에서 <i>USB</i>로 밀어서 전원을 켭니다.</b>
 
@@ -189,7 +193,7 @@ Modified : 2018.3.5
 </div>
 <br>
 
-<b>(8) 업데이트가 완료되면 드론은 자동으로 재시작합니다. 드론 재시작 후에 조종기는 드론 업데이트 모드에서 조종 모드로 변경됩니다.</b>
+<b>(8) 업데이트가 완료된 후 조종기 또는 드론의 전원을 껐다 켜면 드론이 새로운 펌웨어로 디시 시작합니다.</b>
 
 <div align="center">
     <img src="2_drone_10_firmware_update_complete.jpg" alt="update complete">

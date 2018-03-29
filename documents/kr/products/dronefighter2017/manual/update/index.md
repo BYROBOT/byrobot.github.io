@@ -1,6 +1,6 @@
 **Drone Fighter firmware Update**
 
-Modified : 2018.3.6
+Modified : 2018.3.29
 
 ---
 
@@ -38,6 +38,7 @@ Modified : 2018.3.6
 <br>
 
 <b>(2) 조종기에 USB 커넥터를 연결합니다.</b>
+<br>
 
 <b>(3) 조종기 우측 상단의 빨간색 버튼을 누른 채로, 하단 중앙의 스위치를 <i>ON</i>에서 <i>USB</i>로 밀어서 전원을 켭니다.</b>
 
@@ -45,6 +46,7 @@ Modified : 2018.3.6
     <img src="1_controller_3_off.jpg" alt="controller off">
     <p>조종기에 USB 커넥터를 연결한 상태</p>
 </div>
+<br>
 
 <b>(4) 조종기의 전원이 켜지면서 부트로더의 펌웨어 업데이트 모드를 시작합니다.</b>
 
@@ -144,6 +146,7 @@ Modified : 2018.3.6
     <img src="1_drone_3_resetbutton.jpg" alt="reset button">
     <p>드론 리셋 버튼</p>
 </div>
+<br>
 
 <b>(3) 드론의 전원이 켜지면서 부트로더의 펌웨어 업데이트 모드를 시작합니다.</b>
 
