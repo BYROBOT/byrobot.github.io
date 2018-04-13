@@ -1,6 +1,6 @@
 **PETRONE update log**
 
-Modified : 2018.3.5
+Modified : 2018.4.13
 
 ---
 
@@ -18,8 +18,6 @@ Modified : 2018.3.5
 - Link : 17
 
 > - 펌웨어 업데이트 프로그램 수정
-
-**[[Download](https://drive.google.com/open?id=1GkjdZaI1P0CaDn6RZDYJ9-ZNmt5Onkp-)]**
 
 <br>
 

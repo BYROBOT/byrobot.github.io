@@ -1,6 +1,6 @@
 **PETRONE V2 update log**
 
-Modified : 2018.3.21
+Modified : 2018.4.13
 
 ---
 
@@ -11,16 +11,25 @@ Modified : 2018.3.21
 <br>
 
 
+# 2018.4.13
+
+- **Drone: 1.2.R.8**
+- Controller: 1.2.R.5
+
+> - yaw 계산과 관련된 문제 수정
+
+<br>
+
+---
+
+
+
 # 2018.3.21
 
 - **Drone: 1.2.R.7**
 - Controller: 1.2.R.5
 
 > - 배터리 잔량 계산 수정
-
-**[[Download](https://drive.google.com/open?id=1b-3QqCsetS9jizZfFV4j9zTL_psntaVW)]**
-
-**[[Download2](https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180321_release_1.zip)]**
 
 <br>
 

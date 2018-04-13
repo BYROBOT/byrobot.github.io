@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2018.3.5
+Modified : 2018.4.13
 
 ---
 
@@ -19,8 +19,6 @@ Modified : 2018.3.5
 - **Education Controller: 1802**
 
 > - PC 시뮬레이터에 연결된 상태에서 정지 명령을 내렸을 때 해당 명령이 PC에 전달되게 함
-
-**[[Download](https://drive.google.com/open?id=1FwcLSoccRBye-ArkFEYBAMokUnBTReZr)]**
 
 <br>
 

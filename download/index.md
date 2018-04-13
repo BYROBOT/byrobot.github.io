@@ -1,8 +1,8 @@
 ### Download
 
+<div align="center">
 ---
 
-<div align="center">
 
     <table>
         <tr>
@@ -34,8 +34,8 @@
         </tr>
     </table>
 
-    <hr>
     <a name="Firmware"></a>
+    <hr>
 
     <table>
         <tr>
@@ -107,8 +107,8 @@
                 <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneLink_20180305_release_0.zip" target="_blank">Windows(2)</a></div>
             </td>
             <td>
-                <div align="center"><a href="https://drive.google.com/open?id=1b-3QqCsetS9jizZfFV4j9zTL_psntaVW" target="_blank">Windows</a></div>
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180321_release_1.zip" target="_blank">Windows(2)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1AzCg4ask1jCFnYPz-n8FT1dv362BmfKL" target="_blank">Windows</a></div>
+                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180413_release_0_1.2.R_3.zip" target="_blank">Windows(2)</a></div>
             </td>
         </tr>
         <tr>
@@ -130,8 +130,8 @@
     </table>
 
     <br>
-    <hr>
     <a name="ByScratch"></a>
+    <hr>
 
     <table>
         <tr>
@@ -195,8 +195,8 @@
     </table>
 
     <br>
-    <hr>
     <a name="Entry"></a>
+    <hr>
 
     <table>
         <tr>
@@ -251,8 +251,8 @@
     
 
     <br>
-    <hr>
     <a name="DroneFighterSimulator"></a>
+    <hr>
 
     <table>
         <tr>
@@ -297,8 +297,8 @@
     </table>
     
     <br>
-    <hr>
     <a name="RacingPetrone"></a>
+    <hr>
 
     <table>
         <tr>
@@ -366,4 +366,4 @@
 
 ---
 
-Modified : 2018.3.23
+Modified : 2018.4.13
