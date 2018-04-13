@@ -1,8 +1,8 @@
 ### Download
 
 <div align="center">
----
 
+---
 
     <table>
         <tr>
@@ -130,7 +130,6 @@
         </tr>
     </table>
 
-    <br>
     <a name="ByScratch"></a>
     <hr>
     <br>
@@ -196,7 +195,6 @@
         </tr>
     </table>
 
-    <br>
     <a name="Entry"></a>
     <hr>
     <br>
@@ -251,9 +249,7 @@
             </td>
         </tr>
     </table>
-    
 
-    <br>
     <a name="DroneFighterSimulator"></a>
     <hr>
     <br>
@@ -300,7 +296,6 @@
         </tr>
     </table>
     
-    <br>
     <a name="RacingPetrone"></a>
     <hr>
     <br>
