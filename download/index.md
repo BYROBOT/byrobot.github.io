@@ -1,8 +1,8 @@
 ### Download
 
-<div align="center">
-
 ---
+
+<div align="center">
 
     <table>
         <tr>
