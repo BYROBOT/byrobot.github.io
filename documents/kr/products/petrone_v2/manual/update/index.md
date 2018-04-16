@@ -1,6 +1,6 @@
 **Petrone V2 firmware Update**
 
-Modified : 2018.3.29
+Modified : 2018.4.16
 
 ---
 
@@ -193,7 +193,7 @@ Modified : 2018.3.29
 </div>
 <br>
 
-<b>(8) 업데이트가 완료된 후 조종기 또는 드론의 전원을 껐다 켜면 드론이 새로운 펌웨어로 디시 시작합니다.</b>
+<b>(8) 업데이트가 완료된 후 조종기 또는 드론의 전원을 껐다 켜면 드론이 새로운 펌웨어로 다시 시작합니다.</b>
 
 <div align="center">
     <img src="2_drone_10_firmware_update_complete.jpg" alt="update complete">
