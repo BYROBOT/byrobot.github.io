@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2018.4.13
+Modified : 2018.4.23
 
 ---
 
@@ -9,6 +9,20 @@ Modified : 2018.4.13
 
 
 <br>
+
+
+# 2018.4.23
+
+- **General Drone: 4.1**
+- **General Controller: 4.1**
+- Education Drone: 1703
+- Education Controller: 1802
+
+> - 교육용 버젼에서 일반 버젼으로 변경했을 때 팀 선택 및 LED 점등에 문제가 발생하는 것을 수정
+
+<br>
+
+---
 
 
 # 2018.3.5
