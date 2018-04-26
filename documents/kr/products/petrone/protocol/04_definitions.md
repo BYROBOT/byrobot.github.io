@@ -1,6 +1,6 @@
 **[PETRONE](index.md)** / **BLE** / **Protocol** / **Definitions**
 
-Modified : 2018.3.6
+Modified : 2018.4.26
 
 ---
 
@@ -40,6 +40,7 @@ namespace Protocol
             ResetHeading = 0x50,    // 방향 초기화
             ClearGyroBiasAndTrim,   // 자이로 바이어스와 트림 설정 초기화
             ClearTrim,              // 트림 초기화
+            TestFlight,             // 테스트 비행(자이로 바이어스, 트림 초기화 됨)
             
             // 요청
             Request = 0x90,         // 지정한 타입의 데이터 요청

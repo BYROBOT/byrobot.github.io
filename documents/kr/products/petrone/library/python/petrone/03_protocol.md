@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Protocol**
 
-Modified : 2018.3.7
+Modified : 2018.4.26
 
 ---
 
@@ -130,6 +130,7 @@ class CommandType(Enum):
     ResetHeading                = 0x50      # 헤딩 리셋
     ClearGyroBias               = 0x51      # 자이로 바이어스 리셋(트림도 같이 초기화 됨)
     ClearTrim                   = 0x52      # 트림 초기화
+    TestFlight                  = 0x53      # 테스트 비행(자이로 바이어스, 트림 초기화 됨)
 
     # 통신[Wireless Lan]
     ResetWirelessLan            = 0x70		# 무선랜 설정 리셋
