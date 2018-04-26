@@ -133,9 +133,9 @@ class CommandType(Enum):
     TestFlight                  = 0x53      # 테스트 비행(자이로 바이어스, 트림 초기화 됨)
 
     # 통신[Wireless Lan]
-    ResetWirelessLan            = 0x70		# 무선랜 설정 리셋
-    WirelessLanConnected        = 0x70      # 무선랜 연결
-    WirelessLanDisconnected     = 0x70      # 무선랜 연결 해제
+    ResetWirelessLan            = 0x70      # 무선랜 설정 리셋
+    WirelessLanConnected        = 0x71      # 무선랜 연결
+    WirelessLanDisconnected     = 0x72      # 무선랜 연결 해제
 
     # 통신[Bluetooth]
     PairingActivate             = 0x80      # 페어링 활성화
