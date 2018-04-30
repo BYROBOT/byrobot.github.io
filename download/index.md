@@ -326,7 +326,7 @@
             <td>
                 <div align="center">
                     <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="120" width="120"><br>
-                    DRONE FIGHTER
+                    DRONE FIGHTER EDU
                 </div>
             </td>
             <td>
@@ -368,4 +368,4 @@
 
 ---
 
-Modified : 2018.4.23
+Modified : 2018.4.30
