@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2018.4.23
+Modified : 2018.5.4
 
 ---
 
@@ -9,6 +9,20 @@ Modified : 2018.4.23
 
 
 <br>
+
+
+# 2018.5.4
+
+- **General Drone: 4.2**
+- **General Controller: 4.2**
+- Education Drone: 1703
+- Education Controller: 1802
+
+> - 교육용 버젼에서 일반 버젼으로 변경했을 때 드론과 조종기의 주소와 설정이 0으로 모두 초기화되는 현상 수정
+
+<br>
+
+---
 
 
 # 2018.4.23
