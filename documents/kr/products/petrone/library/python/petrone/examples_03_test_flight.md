@@ -23,21 +23,13 @@ from petrone.drone import *
 from petrone.protocol import *
 from petrone.system import *
 
-
-def eventUpdateInformation(data):
-    print("eventUpdateInformation() / {0} / {1} / {2} / Ver:{3} / 20{4:02}.{5}.{6}".format(data.modeUpdate, data.deviceType, data.imageType, data.version, data.year, data.month, data.day))
-
-
 if __name__ == '__main__':
     
     # Drone의 객체 생성
     drone = Drone(True, True, True, True, True)
 
-    # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.UpdateInformation, eventUpdateInformation)
-
     # 장치에 연결
-    drone.connect(flagSystemReset=True)
+    drone.connect()
     sleep(2)
     
     # 장치에 연결된 경우
