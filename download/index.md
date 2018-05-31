@@ -91,7 +91,7 @@
                 <div align="center">General Drone: 4.2<br>General Controller: 4.2<br>Education Drone: 1703<br>Education Controller: 1802</div>
             </td>
             <td>
-                <div align="center">Drone Main: 48<br>Drone Sub: 18<br>Link: 17</div>
+                <div align="center">Drone Main: 50<br>Drone Sub: 18<br>Link: 17</div>
             </td>
             <td>
                 <div align="center">Drone: 1.2.R.8<br>Controller: 1.2.R.5</div>
@@ -368,4 +368,4 @@
 
 ---
 
-Modified : 2018.5.4
+Modified : 2018.5.31

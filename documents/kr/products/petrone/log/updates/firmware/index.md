@@ -1,6 +1,6 @@
 **PETRONE update log**
 
-Modified : 2018.4.13
+Modified : 2018.5.31
 
 ---
 
@@ -9,6 +9,20 @@ Modified : 2018.4.13
 
 
 <br>
+
+
+# 2018.5.31
+
+- **Drone Main : 50**
+- Drone Sub : 18
+- Link : 17
+
+> - 비행 모드 전환 시 항상 조종 입력 초기화
+> - 테스트 비행 명령 추가
+
+<br>
+
+---
 
 
 # 2018.3.5
