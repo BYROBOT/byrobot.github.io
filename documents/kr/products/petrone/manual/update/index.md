@@ -1,6 +1,6 @@
-**Drone Fighter firmware Update**
+**PETRONE firmware Update**
 
-Modified : 2018.3.6
+Modified : 2018.6.12
 
 ---
 
