@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.6.4
+Modified : 2018.7.5
 
 ---
 
@@ -30,7 +30,7 @@ namespace Protocol
             Reserved_1                  = 0x06,     // 예약
             SystemInformation           = 0x07,     // 시스템 정보
             Monitor                     = 0x08,     // 디버깅용 값 배열 전송
-            SystemCounter               = 0x09,     // 시스템 카운터
+            SystemCount                 = 0x09,     // 시스템 카운트
             Information                 = 0x0A,     // 펌웨어 및 장치 정보
             UpdateLocation              = 0x0B,     // 펌웨어 업데이트 위치 정정
             Update                      = 0x0C,     // 펌웨어 업데이트
@@ -62,19 +62,18 @@ namespace Protocol
 
             LightModeDefaultColor       = 0x2D,     // LED 초기 모드 3색
 
-            // 상태, 설정
-            State                       = 0x40,     // 드론의 상태
-            Attitude,                               // 드론의 자세
+            // 상태, 센서
+            State                       = 0x40,     // 상태
+            Attitude,                               // 자세
+            Altitude,                               // 고도
+            Motion,                                 // Motion 센서 데이터(IMU)
+            Flow,                                   // 위치
+
+            // 설정
+            Count                       = 0x50,     // 카운트
             Bias,                                   // 엑셀, 자이로 바이어스 값
             Trim,                                   // 트림
-            Count,                                  // 카운트
-
-            // Sensor raw data
-            Imu                         = 0x50,     // IMU Raw
-            Pressure,                               // 압력 센서 데이터
-            Battery,                                // 배터리
-            Range,                                  // 거리 센서
-            Flow,                                   // Flow
+            Weight,                                 // 무게
 
             // Devices
             Motor                       = 0x60,     // 모터 제어 및 현재 제어값 확인
@@ -101,16 +100,6 @@ namespace Protocol
             InformationAssembledForController       = 0xA0,     // 자주 갱신되는 데이터 모음(조종기)
             InformationAssembledForEntry            = 0xA1,     // 자주 갱신되는 데이터 모음(드론)
 
-            // Navigation
-            NavigationTarget                        = 0xD0,     // 네비게이션 목표점
-            NavigationLocation                      = 0xD1,     // 네비게이션 가상 위치
-            NavigationMonitor                       = 0xD2,
-            NavigationHeading                       = 0xD3,
-            NavigationCounter                       = 0xD4,
-
-            GpsRtkNavigationState                   = 0xDA,     // RTK RAW 데이터 전송
-            GpsRtkExtendedRawMeasurementData        = 0xDB,     // RTK RAW 데이터 전송
-
             EndOfType
         };
     }
@@ -128,7 +117,7 @@ namespace Protocol
 | None                                  | 0x00 | -    | 없음                                           | &nbsp; |
 | Ping                                  | 0x01 | A    | 통신 확인                                      | [Protocol::Ping](05_structs.md#Protocol_Ping) |
 | Ack                                   | 0x02 | A    | 데이터 수신에 대한 응답                        | [Protocol::Ack](05_structs.md#Protocol_Ack) |
-| Error                                 | 0x03 | -    | 오류(reserve, 비트 플래그는 추후에 지정)       | [Protocol::Error](05_structs.md#Protocol_Error) |
+| Error                                 | 0x03 | -    | 오류                                           | [Protocol::Error](05_structs.md#Protocol_Error) |
 | Request                               | 0x04 | A    | 지정한 타입의 데이터 요청                      | [Protocol::Request](05_structs.md#Protocol_Request) |
 | Message                               | 0x05 | -    | 문자열 데이터                                  | &nbsp; |
 | Reserved_1                            | 0x06 | -    | 예약                                           | &nbsp; |
@@ -146,14 +135,14 @@ namespace Protocol
 | Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
 | Rssi                                  | 0x13 | A    | RSSI                                           | [Protocol::Rssi](05_structs.md#Protocol_Rssi) |
 | LightManual                           | 0x20 | A    | LED 수동 제어                                  | [Protocol::Light::Manual](06_structs_light.md#Protocol_Light_Manual) |
-| LightMode                             | 0x21 | -    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode) |
-| LightModeCommand                      | 0x22 | -    | LED 모드, 커맨드                               | [Protocol::Light::ModeCommand](06_structs_light.md#Protocol_Light_ModeCommand) |
+| LightMode                             | 0x21 | D    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode) |
+| LightModeCommand                      | 0x22 | D    | LED 모드, 커맨드                               | [Protocol::Light::ModeCommand](06_structs_light.md#Protocol_Light_ModeCommand) |
 | LightModeColor                        | 0x23 | A    | LED 모드 3색                                   | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor) |
 | LightModeColorCommand                 | 0x24 | A    | LED 모드 3색, 커맨드                           | [Protocol::Light::ModeColorCommand](06_structs_light.md#Protocol_Light_ModeColorCommand) |
 | LightModeColors                       | 0x25 | A    | LED 모드 팔레트                                | [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | LightModeColorsCommand                | 0x26 | A    | LED 모드 팔레트, 커맨드                        | [Protocol::Light::ModeColorsCommand](06_structs_light.md#Protocol_Light_ModeColorsCommand) |
-| LightEvent                            | 0x27 | -    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) |
-| LightEventCommand                     | 0x28 | -    | LED 이벤트, 커맨드                             | [Protocol::Light::EventCommand](06_structs_light.md#Protocol_Light_EventCommand) |
+| LightEvent                            | 0x27 | D    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) |
+| LightEventCommand                     | 0x28 | D    | LED 이벤트, 커맨드                             | [Protocol::Light::EventCommand](06_structs_light.md#Protocol_Light_EventCommand) |
 | LightEventColor                       | 0x29 | A    | LED 이벤트 3색                                 | [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor) |
 | LightEventColorCommand                | 0x2A | A    | LED 이벤트 3색, 커맨드                         | [Protocol::Light::EventColorCommand](06_structs_light.md#Protocol_Light_EventColorCommand) |
 | LightEventColors                      | 0x2B | A    | LED 이벤트 팔레트                              | [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |
@@ -161,14 +150,13 @@ namespace Protocol
 | LightModeDefaultColor                 | 0x2D | D    | LED 초기 모드 3색                              | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor) |
 | State                                 | 0x40 | D    | 드론의 상태                                    | [Protocol::State](05_structs.md#Protocol_State) |
 | Attitude                              | 0x41 | D    | 드론의 자세(Angle)                             | [Protocol::Attitude](05_structs.md#Protocol_Attitude) |
-| Bias                                  | 0x42 | D    | Accel, Gyro 바이어스 값                        | [Protocol::Bias](05_structs.md#Protocol_Bias) |
-| Trim                                  | 0x43 | D    | Trim                                           | [Protocol::Trim](05_structs.md#Protocol_Trim) |
-| Count                                 | 0x44 | D    | 카운트                                         | [Protocol::CountDrive](05_structs.md#Protocol_Count) |
-| Imu                                   | 0x50 | D    | IMU(Accel, Gyro, Angle)                        | [Protocol::Imu](05_structs.md#Protocol_Imu) |
-| Pressure                              | 0x51 | D    | 압력 센서 데이터                               | [Protocol::Pressure](05_structs.md#Protocol_Pressure) |
-| Battery                               | 0x52 | D    | 배터리                                         | [Protocol::Battery](05_structs.md#Protocol_Battery) |
-| Range                                 | 0x53 | D    | 거리 센서                                      | [Protocol::Range](05_structs.md#Protocol_Range) |
-| Flow                                  | 0x54 | D    | Flow                                           | [Protocol::ImageFlow](05_structs.md#Protocol_Flow) |
+| Altitude                              | 0x42 | D    | 드론의 고도                                    | [Protocol::Altitude](05_structs.md#Protocol_Altitude) |
+| Motion                                | 0x43 | D    | Motion 센서(Accel, Gyro, Angle)                | [Protocol::Motion](05_structs.md#Protocol_Motion) |
+| Flow                                  | 0x44 | D    | Flow 센서로 계산한 위치                        | [Protocol::Flow](05_structs.md#Protocol_Flow) |
+| Count                                 | 0x50 | D    | 카운트                                         | [Protocol::Count](05_structs.md#Protocol_Count) |
+| Bias                                  | 0x51 | D    | Accel, Gyro 바이어스 값                        | [Protocol::Bias](05_structs.md#Protocol_Bias) |
+| Trim                                  | 0x52 | D    | Trim                                           | [Protocol::Trim](05_structs.md#Protocol_Trim) |
+| Weight                                | 0x53 | D    | 무게                                           | [Protocol::Weight](05_structs.md#Protocol_Weight) |
 | Motor                                 | 0x60 | D    | 모터 제어 및 현재 제어값 확인                  | [Protocol::Motor](05_structs.md#Protocol_Motor) |
 | MotorSingle                           | 0x61 | D    | 한 개의 모터 제어                              | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
 | Buzzer                                | 0x62 | C    | 버저 제어                                      | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer) |

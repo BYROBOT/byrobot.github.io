@@ -1,10 +1,10 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.6.4
+Modified : 2018.7.5
 
 ---
 
-#### Petrone V2에서 사용하고 있는 기본 정의들을 소개합니다.
+#### E-DRONE 에서 사용하고 있는 기본 정의들을 소개합니다.
 
 ---
 
@@ -31,7 +31,7 @@ namespace Protocol
 
             Stop                        = 0x01,     // 정지
             
-            ModeVehicle                 = 0x02,     // Vehicle 동작 모드 전환
+            ModeControlFlight           = 0x02,     // 비행 제어 모드 설정
             Headless                    = 0x03,     // 헤드리스 모드 설정
             Trim                        = 0x04,     // 트림 변경
             
@@ -40,25 +40,34 @@ namespace Protocol
 
             FlightEvent                 = 0x07,     // 비행 이벤트 실행
 
-            // 관리자
-            ClearCounter                = 0xA0,     // 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
-            SetTestComplete             = 0xA1,     // 테스트 완료 처리
-
-            // Navigation
-            NavigationTargetClear       = 0xE0,     // 네비게이션 목표점 초기화
-            NavigationStart             = 0xE1,     // 네비게이션 시작(처음부터)
-            NavigationPause             = 0xE2,     // 네비게이션 일시 정지
-            NavigationRestart           = 0xE3,     // 네비게이션 다시 시작(일시 정지 후 다시 시작할 때 사용)
-            NavigationStop              = 0xE4,     // 네비게이션 중단
-            NavigationNext              = 0xE5,     // 네비게이션 목표점을 다음으로 변경
-            NavigationReturnToHome      = 0xE6,     // 시작 위치로 귀환
-            
-            GpsRtkBase                  = 0xEA,
-            GpsRtkRover                 = 0xEB,
-
             EndOfType
         };
     }
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="ModelNumber"></a>
+## ModelNumber::Type
+
+모델 번호
+
+E-DRONE(Drone4)부터 DeviceType을 공통으로 사용하기로 하면서, 펌웨어 업데이트 시 DeviceType 이외에 장치를 구분할 번호가 필요하게 되어 추가함.
+
+```cpp
+namespace ModelNumber
+{
+    enum Type
+    {
+        //                          PPPPDDII, PPPP(Project Number), DD(Device Type), II(Project Sub Index)
+        Drone_4_Drone_P3        = 0x00041003,       // Drone_4_Drone_P3
+        Drone_4_Controller_P1   = 0x00042001,       // Drone_4_Controller_P1
+        Drone_4_Link_P0         = 0x00043000,       // Drone_4_Link_P0
+    };
 }
 ```
 
@@ -122,10 +131,10 @@ namespace ErrorFlagsForSensor
     {
         None                        = 0x00000000,
 
-        Imu_NoAnswer                = 0x00000001,   // IMU 응답 없음
-        Imu_WrongValue              = 0x00000002,
-        Imu_NotCalibrated           = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
-        Imu_Calibrating             = 0x00000008,   // Gyro Bias 보정 중
+        Motion_NoAnswer             = 0x00000001,   // Motion 센서 응답 없음
+        Motion_WrongValue           = 0x00000002,
+        Motion_NotCalibrated        = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
+        Motion_Calibrating          = 0x00000008,   // Gyro Bias 보정 중
 
         Pressure_NoAnswer           = 0x00000010,   // 압력센서 응답 없음
         Pressure_WrongValue         = 0x00000020,
@@ -170,32 +179,30 @@ namespace ErrorFlagsForState
 <br>
 
 
-<a name="Mode_Vehicle"></a>
-## Mode::Vehicle::Type
+<a name="Mode_Control_Flight"></a>
+## Mode::Control::Flight::Type
 
-Vehicle 동작 모드
+비행 제어 모드
 
 ```cpp
 namespace Mode
 {
-    namespace Vehicle
+    namespace Control
     {
-        enum Type
+        namespace Flight
         {
-            None = 0,
+            enum Type
+            {
+                None = 0,
             
-            Flight          = 0x10,     // 비행(가드 포함)
-            FlightNoGuard   = 0x11,     // 비행(가드 없음)
-            FlightFPV       = 0x12,     // 비행(FPV)
-            
-            FlightAttitude  = 0x13,     // 자세
-            FlightPosition  = 0x14,     // 위치
-            FlightFunction  = 0x15,     // 기능
-            
-            Test            = 0xF0,     // 테스트
-            
-            EndOfType
-        };
+                Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
+                Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+                Function    = 0x12, // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+                Rate        = 0x13, // Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음e
+                
+                EndOfType
+            };
+        }
     }
 }
 ```
@@ -358,8 +365,35 @@ namespace Direction
         Top,
         Bottom,
         
+        Center,
+        
         EndOfType
     };
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Mode_Movement"></a>
+## Mode::Movement::Type
+
+이동 상태
+
+```cpp
+namespace Mode
+{
+    namespace Movement
+    {
+        enum Type
+        {
+            None        = 0x00,
+            Hovering    = 0x01,     // 호버링
+            Moving      = 0x02      // 이동 중
+        };
+    }
 }
 ```
 
@@ -375,9 +409,9 @@ namespace Direction
 
 조종 시 방향의 기준을 선택합니다.
 
-Headless는 드론이 어느 방향을 바라보더라도 이륙할 때의 방향 또는 사용자가 지정한 방향을 기준으로 움직입니다.
+Headless는 드론이 어느 방향을 바라보더라도 <b><i>이륙할 때의 방향</i></b> 또는 <b><i>사용자가 지정한 방향</i></b>을 기준으로 움직입니다.
 
-Normal은 드론이 현재 향하는 방향을 기준으로 움직입니다.
+Normal은 <b><i>드론이 현재 향하는 방향</i></b>을 기준으로 움직입니다.
 
 조종기 상에서는 Headless를 'Headless ON', Normal을 'Headless OFF'로 표현하고 있습니다. 기본 설정은 Normal입니다.
 

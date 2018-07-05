@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.6.4
+Modified : 2018.7.5
 
 ---
 
@@ -172,7 +172,7 @@ namespace Protocol
     {
         u8      modeUpdate;     // 현재 업데이트 모드
 
-        u32     deviceID;       // 장치 ID
+        u32     modelNumber;    // 모델 번호
         u32     imageVersion;   // 현재 펌웨어의 버젼
 
         u16     year;           // 빌드 년
@@ -185,7 +185,7 @@ namespace Protocol
 | 변수 이름     | 형식                                                                | 범위 | 크기     | 설명                |
 |:-------------:|:-------------------------------------------------------------------:|:----:|:--------:|:--------------------|
 | modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | -    | 1 Byte   | 업데이트 진행 상황  |
-| deviceID      | [Protocol::DeviceID::Type](04_definitions.md#Protocol_DeviceID)     | -    | 1 Byte   | 장치의 ID           |
+| modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)                  | -    | 4 Byte   | 모델 번호           |
 | version       | [Protocol::Version](#Protocol_Version)                              | -    | 4 Byte   | 펌웨어의 버젼       |
 | year          | uint16_t                                                            | -    | 2 Byte   | 펌웨어 빌드 년      |
 | month         | uint8_t                                                             | -    | 1 Byte   | 펌웨어 빌드 월      |
@@ -263,8 +263,8 @@ namespace Control
 <br>
 
 
-<a name="Control_Quad8AndDataRequest"></a>
-## Control::Quad8AndDataRequest
+<a name="Control_Quad8AndRequestData"></a>
+## Control::Quad8AndRequestData
 
 드론 조종 및 데이터 요청
 
@@ -273,7 +273,7 @@ namespace Control
 ```cpp
 namespace Control
 {
-    struct Quad8AndDataRequest
+    struct Quad8AndRequestData
     {
         s8      roll;       // roll
         s8      pitch;      // pitch
@@ -317,10 +317,9 @@ namespace Protocol
 | 변수 이름   | 형식                                                                    | 범위    | 크기     | 설명         |
 |:-----------:|:-----------------------------------------------------------------------:|:-------:|:--------:|:-------------|
 | commandType | [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)   | -       | 1 Byte   | 명령 타입    |
-| option      | [Mode::Vehicle::Type](04_definitions.md#Mode_Vehicle)                   | -       | 1 Byte   | 옵션         |
+| option      | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)    | -       | 1 Byte   | 옵션         |
 |             | [System::FlightEvent::Type](04_definitions.md#FlightEvent)              | -       |          |              |
-|             | [System::DriveEvent::Type](04_definitions.md#DriveEvent)                | -       |          |              |
-|             | [Coordinate::Type](04_definitions.md#Coordinate)                        | -       |          |              |
+|             | [Headless::Type](04_definitions.md#Headless)                            | -       |          |              |
 |             | [System::Trim::Type](04_definitions.md#Trim)                            | -       |          |              |
 |             | uint8_t                                                                 | -       |          |              |
 
@@ -332,7 +331,7 @@ namespace Protocol
 <a name="Protocol_Address"></a>
 ## Protocol::Address
 
-장치 주소
+장치 주소(고유번호)
 
 ```cpp
 namespace Protocol
@@ -363,28 +362,27 @@ namespace Protocol
 {
     struct State
     {
-        u8      modeVehicle;        // 동작 모드
-        
         u8      modeSystem;         // 시스템 모드
         u8      modeFlight;         // 비행 모드
-        u8      modeDrive;          // 주행 모드
-        
+
+        u8      modeControlFlight;  // 비행 제어 모드
+        u8      modeMovement;       // 이동 상태
+        u8      headless;           // 헤드리스 모드
         u8      sensorOrientation;  // 센서 방향
-        u8      coordinate;         // 방위
         u8      battery;            // 배터리량(0 ~ 100%)
     };
 }
 ```
 
-| 변수 이름         | 형식                                                           | 범위     | 크기     | 설명                   |
-|:-----------------:|:--------------------------------------------------------------:|:--------:|:--------:|:-----------------------|
-| modeVehicle       | [Mode::Vehicle::Type](04_definitions.md#Mode_Vehicle)          | -        | 1 Byte   | Vehicle 동작 모드      |
-| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)            | -        | 1 Byte   | System 동작 모드       |
-| modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)            | -        | 1 Byte   | 비행 제어기 동작 모드  |
-| modeDrive         | [Mode::Drive::Type](04_definitions.md#Mode_Drive)              | -        | 1 Byte   | 주행 제어기 동작 모드  |
-| sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation) | -        | 1 Byte   | 센서 방향              |
-| coordinate        | [Coordinate::Type](04_definitions.md#Coordinate)               | -        | 1 Byte   | Coordinate 설정 상태   |
-| battery           | uint8_t                                                        | 0 ~ 100  | 1 Byte   | 드론 배터리 잔량       |
+| 변수 이름         | 형식                                                                  | 범위     | 크기     | 설명                   |
+|:-----------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:-----------------------|
+| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)                   | -        | 1 Byte   | System 동작 모드       |
+| modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)                   | -        | 1 Byte   | 비행 제어기 동작 모드  |
+| modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | -        | 1 Byte   | 비행 제어 모드         |
+| modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | -        | 1 Byte   | 이동 상태              |
+| headless          | [Headless::Type](04_definitions.md#Headless)                          | -        | 1 Byte   | Headless 설정 상태     |
+| sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | -        | 1 Byte   | 센서 방향              |
+| battery           | uint8_t                                                               | 0 ~ 100  | 1 Byte   | 드론 배터리 잔량       |
 
 
 <br>
@@ -422,6 +420,36 @@ namespace Protocol
 | roll     | int16_t  |  -90 ~  90  | 좌우 기울기 각도    |
 | pitch    | int16_t  |  -90 ~  90  | 전후 기울기 각도    |
 | yaw      | int16_t  | -180 ~ 180  | 좌우 회전 시 각도   |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Altitude"></a>
+## Protocol::Altitude
+
+고도
+
+```cpp
+namespace Protocol
+{
+    struct Altitude
+    {
+        f32   temperature;
+        f32   pressure;
+        f32   altitude;
+        f32   rangeHeight;
+    };
+}
+```
+
+| 변수 이름     | 형식     | 범위              | 크기     | 설명                |
+|:-------------:|:--------:|:-----------------:|:--------:|:--------------------|
+| temperature   | float    | -32,768 ~ 32,767  | 4 Byte   | 온도                |
+| pressure      | float    | -32,768 ~ 32,767  | 4 Byte   | 압력                |
+| altitude      | float    | -32,768 ~ 32,767  | 4 Byte   | 고도                |
+| rangeHeight   | float    | -32,768 ~ 32,767  | 4 Byte   | 거리 센서의 높이    |
 
 
 <br>

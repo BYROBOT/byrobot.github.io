@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Typedef**
 
-Modified : 2018.6.4
+Modified : 2018.7.5
 
 ---
 
