@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Display**
 
-Modified : 2018.3.6
+Modified : 2018.7.5
 
 ---
 
@@ -36,7 +36,8 @@ namespace Display
         enum Type
         {
             Black,
-            White
+            White,
+            Inverse
         };
     }
 }
@@ -139,7 +140,7 @@ namespace Protocol
     {
         struct ClearAll
         {
-            u8      pixel;    
+            u8      pixel;
         };
     }
 }

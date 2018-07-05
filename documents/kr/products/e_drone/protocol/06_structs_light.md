@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Light**
 
-Modified : 2018.3.6
+Modified : 2018.7.5
 
 ---
 
@@ -33,20 +33,48 @@ namespace Light
             enum Type
             {
                 None,
+            
+                FrontNone = 0x10,
+                FrontManual,            // 수동 제어
+                FrontHold,              // 지정한 색상을 계속 켬
+                FrontFlicker,           // 깜빡임
+                FrontFlickerDouble,     // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                FrontDimming,           // 밝기 제어하여 천천히 깜빡임
                 
-                EyeNone = 0x10,
-                EyeManual,              // 수동 제어
-                EyeHold,                // 지정한 색상을 계속 켬
-                EyeFlicker,             // 깜빡임         
-                EyeFlickerDouble,       // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)            
-                EyeDimming,             // 밝기 제어하여 천천히 깜빡임
+                RearNone = 0x20,
+                RearManual,             // 수동 제어
+                RearHold,               // 지정한 색상을 계속 켬
+                RearFlicker,            // 깜빡임
+                RearFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                RearDimming,            // 밝기 제어하여 천천히 깜빡임
                 
-                ArmNone = 0x40,         
-                ArmManual,              // 수동 제어
-                ArmHold,                // 지정한 색상을 계속 켬
-                ArmFlicker,             // 깜빡임         
-                ArmFlickerDouble,       // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)            
-                ArmDimming,             // 밝기 제어하여 천천히 깜빡임
+                BodyNone = 0x30,
+                BodyManual,             // 수동 제어
+                BodyHold,               // 지정한 색상을 계속 켬
+                BodyFlicker,            // 깜빡임
+                BodyFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                BodyDimming,            // 밝기 제어하여 천천히 깜빡임
+                
+                ANone = 0x40,
+                AManual,                // 수동 제어
+                AHold,                  // 지정한 색상을 계속 켬
+                AFlicker,               // 깜빡임
+                AFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                ADimming,               // 밝기 제어하여 천천히 깜빡임
+                
+                BNone = 0x50,
+                BManual,                // 수동 제어
+                BHold,                  // 지정한 색상을 계속 켬
+                BFlicker,               // 깜빡임
+                BFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                BDimming,               // 밝기 제어하여 천천히 깜빡임
+                
+                CNone = 0x60,
+                CManual,                // 수동 제어
+                CHold,                  // 지정한 색상을 계속 켬
+                CFlicker,               // 깜빡임
+                CFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                CDimming,               // 밝기 제어하여 천천히 깜빡임
                 
                 EndOfType
             };
@@ -74,15 +102,20 @@ namespace Light
         {
             enum Type
             {
-                None        = 0x00,
+                None        = 0x0000,
                 
-                EyeRed      = 0x80,
-                EyeGreen    = 0x40,
-                EyeBlue     = 0x20,
-
-                ArmRed      = 0x10,
-                ArmGreen    = 0x08,
-                ArmBlue     = 0x04
+                Front       = 0x8000,
+                Rear        = 0x4000,
+                
+                BodyRed     = 0x2000,
+                BodyGreen   = 0x1000,
+                BodyBlue    = 0x0800,
+                
+                A           = 0x0400,
+                B           = 0x0200,
+                CRed        = 0x0100,
+                CGreen      = 0x0080,
+                CBlue       = 0x0040,
             };
         }
     }
@@ -110,13 +143,13 @@ namespace Light
             {
                 None,
                 
-                // Team
-                TeamNone = 0x10,
-                TeamManual,         // 수동 조작
-                TeamHold,
-                TeamFlicker,
-                TeamFlickerDouble,
-                TeamDimming,
+                // Body
+                BodyNone = 0x10,
+                BodyManual,         // 수동 제어
+                BodyHold,           // 지정한 색상을 계속 켬
+                BodyFlicker,        // 깜빡임
+                BodyFlickerDouble,  // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                BodyDimming,        // 밝기 제어하여 천천히 깜빡임
                 
                 EndOfType
             };
@@ -146,9 +179,9 @@ namespace Light
             {
                 None        = 0x00,
                 
-                Red         = 0x80,
-                Green       = 0x40,
-                Blue        = 0x20
+                BodyRed     = 0x80,
+                BodyGreen   = 0x40,
+                BodyBlue    = 0x20,
             };
         }
     }
@@ -489,39 +522,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Light_ModeColorCommandIr"></a>
-## Protocol::Light::ModeColorCommandIr
-
-LED 모드 변경(RGB) + Command + IR
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct ModeColorCommandIr
-        {
-            Protocol::Light::Mode   mode;
-            Light::Color            color;
-            Protocol::Command       command;
-            u32                     irData;
-        };
-    }
-}
-```
-
-| 변수 이름 | 형식                                             | 범위                    | 크기     | 설명               |
-|:---------:|:------------------------------------------------:|:-----------------------:|:--------:|:-------------------|
-| mode      | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -                       | 3 Byte   | LED 동작 모드      |
-| color     | [Light::Color](#Light_Color)                     | -                       | 3 Byte   | LED RGB 색상       |
-| command   | [Protocol::Command](05_structs.md#Protocol_Command) | -                       | 2 Byte   | 명령               |
-| irData    | uint32_t                                         | 0x00000000 ~ 0xFFFFFFFF | 4 Byte   | 적외선 전송 데이터 |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Light_ModeColors"></a>
 ## Protocol::Light::ModeColors
 
@@ -576,39 +576,6 @@ namespace Protocol
 | mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -      | 3 Byte   | LED 동작 모드       |
 | colors      | [Light::Colors::Type](#Light_Colors)             | -      | 1 Byte   | LED 팔레트 인덱스   |
 | command     | [Protocol::Command](05_structs.md#Protocol_Command) | -      | 2 Byte   | 명령                |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Light_ModeColorsCommandIr"></a>
-## Protocol::Light::ModeColorsCommandIr
-
-LED 모드 변경(Palette) + Command + IR
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct ModeColorsCommandIr
-        {
-            Protocol::Light::Mode   mode;
-            u8                      colors;
-            Protocol::Command       command;
-            u32                     irData;
-        };
-    }
-}
-```
-
-| 변수 이름   | 형식                                             | 범위                    | 크기     | 설명                |
-|:-----------:|:------------------------------------------------:|:-----------------------:|:--------:|:--------------------|
-| mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)    | -                       | 3 Byte   | LED 동작 모드       |
-| colors      | [Light::Colors::Type](#Light_Colors)             | -                       | 1 Byte   | LED 팔레트 인덱스   |
-| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -                       | 2 Byte   | 명령                |
-| irData      | uint32_t                                         | 0x00000000 ~ 0xFFFFFFFF | 4 Byte   | 적외선 전송 데이터  |
 
 
 <br>
@@ -707,39 +674,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Light_EventColorCommandIr"></a>
-## Protocol::Light::EventColorCommandIr
-
-LED 이벤트(RGB) + Command + IR
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct EventColorCommandIr
-        {
-            Protocol::Light::Event  event;
-            Light::Color            color;
-            Protocol::Command       command;
-            u32                     irData;
-        };
-    }
-}
-```
-
-| 변수 이름   | 형식                                             | 범위                     | 크기     | 설명               |
-|:-----------:|:------------------------------------------------:|:------------------------:|:--------:|:-------------------|
-| event       | [Protocol::Light::Event](#Protocol_Light_Event)  | -                        | 4 Byte   | LED 이벤트         |
-| color       | [Light::Color](#Light_Color)                     | -                        | 3 Byte   | LED RGB 색상       |
-| command     | [Protocol::Command](05_structs.md#Protocol_Command) | -                        | 2 Byte   | 명령               |
-| irData      | uint32_t                                         | 0x00000000 ~ 0xFFFFFFFF  | 4 Byte   | 적외선 전송 데이터 |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Light_EventColors"></a>
 ## Protocol::Light::EventColors
 
@@ -794,39 +728,6 @@ namespace Protocol
 | event     | [Protocol::Light::Event](#Protocol_Light_Event)   | -     | 4 Byte   | LED 이벤트        |
 | colors    | [Light::Colors::Type](#Light_Colors)              | -     | 1 Byte   | LED 팔레트 인덱스 |
 | command   | [Protocol::Command](05_structs.md#Protocol_Command)  | -     | 2 Byte   | 명령              |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Light_EventColorsCommandIr"></a>
-## Protocol::Light::EventColorsCommandIr
-
-LED 이벤트(Palette) + Command + IR
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct EventColorsCommandIr
-        {
-            Protocol::Light::Event  event;
-            u8                      colors;
-            Protocol::Command       command;
-            u32                     irData;
-        };
-    }
-}
-```
-
-| 변수 이름 | 형식                                              | 범위                    | 크기     | 설명               |
-|:---------:|:-------------------------------------------------:|:-----------------------:|:--------:|:-------------------|
-| event     | [Protocol::Light::Event](#Protocol_Light_Event)   | -                       | 4 Byte   | LED 이벤트         |
-| colors    | [Light::Colors::Type](#Light_Colors)              | -                       | 1 Byte   | LED 팔레트 인덱스  |
-| command   | [Protocol::Command](05_structs.md#Protocol_Command)  | -                       | 2 Byte   | 명령               |
-| irData    | uint32_t                                          | 0x00000000 ~ 0xFFFFFFFF | 4 Byte   | 적외선 전송 데이터 |
 
 
 <br>

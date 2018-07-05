@@ -446,81 +446,60 @@ namespace Protocol
 
 | 변수 이름     | 형식     | 범위              | 크기     | 설명                |
 |:-------------:|:--------:|:-----------------:|:--------:|:--------------------|
-| temperature   | float    | -32,768 ~ 32,767  | 4 Byte   | 온도                |
-| pressure      | float    | -32,768 ~ 32,767  | 4 Byte   | 압력                |
-| altitude      | float    | -32,768 ~ 32,767  | 4 Byte   | 고도                |
-| rangeHeight   | float    | -32,768 ~ 32,767  | 4 Byte   | 거리 센서의 높이    |
+| temperature   | float    | -                 | 4 Byte   | 온도                |
+| pressure      | float    | -                 | 4 Byte   | 압력                |
+| altitude      | float    | -                 | 4 Byte   | 고도                |
+| rangeHeight   | float    | -                 | 4 Byte   | 거리 센서의 높이    |
 
 
 <br>
 <br>
 
 
-<a name="Protocol_AccelBias"></a>
-## Protocol::AccelBias
+<a name="Protocol_Bias"></a>
+## Protocol::Bias
 
-엑셀 바이어스
+바이어스
 
 ```cpp
 namespace Protocol
 {
-    struct AccelBias
+    struct Bias
     {
-        s16     x;         // X
-        s16     y;         // Y
-        s16     z;         // Z
+        s16     accelX;         // X
+        s16     accelY;         // Y
+        s16     accelZ;         // Z
+        
+        s16     gyroRoll;       // Roll
+        s16     gyroPitch;      // Pitch
+        s16     gyroYaw;        // Yaw
     };
 }
 ```
 
-| 변수 이름  | 형식       | 범위              | 크기     | 설명       |
-|:----------:|:----------:|:-----------------:|:--------:|:-----------|
-| x          | int16_t    | -32,768 ~ 32,767  | 2 Byte   | X          |
-| y          | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Y          |
-| z          | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Z          |
+| 변수 이름  | 형식       | 범위              | 크기     | 설명        |
+|:----------:|:----------:|:-----------------:|:--------:|:------------|
+| accelX     | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Accel X     |
+| accelY     | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Accel Y     |
+| accelZ     | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Accel Z     |
+| gyroRoll   | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Gyro Roll   |
+| gyroPitch  | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Gyro Pitch  |
+| gyroYaw    | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Gyro Yaw    |
 
 
 <br>
 <br>
 
 
-<a name="Protocol_GyroBias"></a>
-## Protocol::GyroBias
+<a name="Protocol_Trim"></a>
+## Protocol::Trim
 
-자이로 바이어스
+Trim
 
 ```cpp
 namespace Protocol
 {
-    struct GyroBias
-    {
-        s16     roll;         // Roll
-        s16     pitch;        // Pitch
-        s16     yaw;          // Yaw
-    };
-}
-```
-
-| 변수 이름  | 형식       | 범위              | 크기     | 설명       |
-|:----------:|:----------:|:-----------------:|:--------:|:-----------|
-| roll       | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Roll       |
-| pitch      | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Pitch      |
-| yaw        | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Yaw        |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_TrimFlight"></a>
-## Protocol::TrimFlight
-
-비행 Trim
-
-```cpp
-namespace Protocol
-{
-    struct TrimFlight
+    struct Trim
     {
         s16     roll;         // Roll
         s16     pitch;        // Pitch
@@ -542,69 +521,41 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_TrimDrive"></a>
-## Protocol::TrimDrive
+<a name="Protocol_Weight"></a>
+## Protocol::Weight
 
-자동차 Trim
+무게
 
 ```cpp
 namespace Protocol
 {
-    struct TrimDrive
+    struct Weight
     {
-        s16     wheel;         // Wheel
-        s16     accel;         // Accel
+        f32     weight;         // Weight
     };
 }
 ```
 
 | 변수 이름 | 형식     | 범위         | 크기     | 설명    |
 |:---------:|:--------:|:------------:|:--------:|:--------|
-| wheel     | int16_t  | -200 ~ 200   | 2 Byte   | Wheel   |
-| accel     | int16_t  | -200 ~ 200   | 2 Byte   | Accel   |
+| weight    | float    | -            | 4 Byte   | 무게   |
 
 
 <br>
 <br>
 
 
-<a name="Protocol_TrimAll"></a>
-## Protocol::TrimAll
+<a name="Protocol_Count"></a>
+## Protocol::Count
 
-비행 및 자동차 Trim
+카운트
+
+비행 시간 및 관련 카운트 값을 읽을 때 사용합니다.
 
 ```cpp
 namespace Protocol
 {
-    struct TrimAll
-    {
-        TrimFlight  flight;
-        TrimDrive   drive;
-    };
-}
-```
-
-| 변수 이름 | 형식                                          | 범위         | 크기     | 설명       |
-|:---------:|:---------------------------------------------:|:------------:|:--------:|:-----------|
-| flight    | [Protocol::TrimFlight](#Protocol_TrimFlight)  | -200 ~ 200   | 2 Byte   | 비행 Trim  |
-| drive     | [Protocol::TrimDrive](#Protocol_TrimDrive)    | -200 ~ 200   | 2 Byte   | 주행 Trim  |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_CountFlight"></a>
-## Protocol::CountFlight
-
-비행 카운터
-
-비행과 관련된 저장값을 읽을 때 사용합니다.
-
-```cpp
-namespace Protocol
-{
-    struct CountFlight
+    struct Count
     {
         u64     timeFlight;             // 비행 시간
         
@@ -627,83 +578,24 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_CountDrive"></a>
-## Protocol::CountDrive
+<a name="Protocol_Motion"></a>
+## Protocol::Motion
 
-주행 카운터
-
-주행과 관련된 저장값을 읽을 때 사용합니다.
-
-countAccident 변수는 주행 중 충돌을 카운트 하기 위해 만든 변수이나 실제 주행 시 노면이 고르지 못할 때의 충격에 의해서도 카운트가 증가하는 문제가 있습니다. 현재로는 크게 의미가 없는 값으로 생각하시면 됩니다.
+Motion 센서 데이터와 드론의 자세
 
 ```cpp
 namespace Protocol
 {
-    struct CountDrive
-    {
-        u64     timeDrive;              // 주행 시간
-        
-        u16     countAccident;          // 충돌 횟수
-    };
-}
-```
-
-| 변수 이름     | 형식       | 범위          | 크기     | 설명           |
-|:-------------:|:----------:|:-------------:|:--------:|:---------------|
-| timeDrive     | uint64_t   | -             | 8 Byte   | 주행 시간(ms)  |
-| countAccident | uint16_t   | 0 ~ 65,535    | 2 Byte   | 충돌 횟수      |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_IrMessage"></a>
-## Protocol::IrMessage
-
-IR 데이터 송수신
-
-IR 데이터를 전송하는데 사용하거나, IR 데이터를 수신 받았을 때 외부 장치로 전송하는 데이터입니다.
-
-드론 전면과 후면에 적외선 수신 센서가 각각 하나씩 설치되어 있으며, 각 방향으로 들어오는 데이터를 구분하는데 direction을 사용합니다.
-
-```cpp
-namespace Protocol
-{
-    struct IrMessage
-    {
-        u8      direction;               // 수신 받은 방향
-        u32     irData;                  // IR 메세지
-    };
-}
-```
-
-| 변수 이름 | 형식                                                   | 범위                    | 크기   | 설명             |
-|:---------:|:------------------------------------------------------:|:-----------------------:|:------:|:-----------------|
-| direction | [System::Direction::Type](04_definitions.md#Direction) | -                       | 1 Byte | 적외선 수신 방향 |
-| irData    | uint32_t                                               | 0x00000000 ~ 0xFFFFFFFF | 4 Byte | 데이터           |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Imu"></a>
-## Protocol::Imu
-
-IMU 센서 데이터와 드론의 자세
-
-```cpp
-namespace Protocol
-{
-    struct Imu
+    struct Motion
     {
         s16     accX;
         s16     accY;
         s16     accZ;
+        
         s16     gyroRoll;
         s16     gyroPitch;
         s16     gyroYaw;
+
         s16     angleRoll;
         s16     anglePitch;
         s16     angleYaw;
@@ -728,132 +620,28 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Battery"></a>
-## Protocol::Battery
+<a name="Protocol_Flow"></a>
+## Protocol::Flow
 
-배터리
+Flow
 
-```cpp
-namespace Protocol
-{
-    struct Battery
-    {
-        f32     gradient;
-        f32     yIntercept;
-        f32     adjustGradient;
-        f32     adjustYIntercept;
-        u8      flagBatteryCalibration;
-
-        s16     batteryRaw;
-        f32     batteryPercent;
-
-        f32     voltage;
-    };
-}
-```
-
-| 변수 이름               | 형식     | 범위         | 크기     | 설명                                |
-|:-----------------------:|:--------:|:------------:|:--------:|:------------------------------------|
-| gradient                | float    | -            | 4 Byte   | 기울기                              |
-| yIntercept              | float    | -            | 4 Byte   | Y 절편                              |
-| adjustGradient          | float    | -            | 4 Byte   | 기울기 조정값                       |
-| adjustYIntercept        | float    | -            | 4 Byte   | Y 절편 조정값                       |
-| flagBatteryCalibration  | uint8_t  | 0 / 1        | 1 Byte   | 배터리 캘리브레이션 완료 여부       |
-| batteryRaw              | uint16_t | 0 ~ 4096     | 2 Byte   | 배터리 ADC Raw 값                   |
-| batteryPercent          | float    | 0 ~ 100.0    | 4 Byte   | 배터리 % 값                         |
-| voltage                 | float    | 0 ~ 4.5      | 4 Byte   | 배터리 출력값을 Voltage로 변환한 값 |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Pressure"></a>
-## Protocol::Pressure
-
-압력 센서
+플로우 센서와 높이 값으로 계산한 상대 위치 값
 
 ```cpp
 namespace Protocol
 {
-    struct Pressure
+    struct Flow
     {
-        f32     temperature;
-        f32     pressure;
-    };
-}
-```
-
-| 변수 이름   | 형식     | 범위 | 크기     | 설명                            |
-|:-----------:|:--------:|:----:|:--------:|:--------------------------------|
-| temperature | float    | -    | 4 Byte   | 온도(℃)                        |
-| pressure    | float    | -    | 4 Byte   | 압력을 해발고도로 변환한 값(m)  |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_ImageFlow"></a>
-## Protocol::ImageFlow
-
-ImageFlow
-
-옵티컬 플로우로 계산한 상대 위치 값
-
-```cpp
-namespace Protocol
-{
-    struct ImageFlow
-    {
-        f32     positionX;
-        f32     positionY;
+        f32     x;
+        f32     y;
     };
 }
 ```
 
 | 변수 이름  | 형식      | 범위  | 크기     | 설명    |
 |:----------:|:---------:|:-----:|:--------:|:--------|
-| positionX  | float     | -     | 4 Byte   | X축(m)  |
-| positionY  | float     | -     | 4 Byte   | Y축(m)  |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Range"></a>
-## Protocol::Range
-
-거리 센서
-
-추가 센서 모듈을 장착하지 않으면 bottom 값만 출력됩니다.
-
-거리 센서의 최대 정상 측정 가능 범위는 0.04m ~ 2.0m 입니다.
-
-```cpp
-namespace Protocol
-{
-    struct Range
-    {
-        f32     left;
-        f32     front;
-        f32     right;
-        f32     rear;
-        f32     top;
-        f32     bottom;
-    };
-}
-```
-
-| 변수 이름 | 형식       | 범위    | 크기     | 설명     |
-|:---------:|:----------:|:-------:|:--------:|:---------|
-| left      | Float32    | -       | 4 Byte   | 좌측(m)  |
-| front     | Float32    | -       | 4 Byte   | 정면(m)  |
-| right     | Float32    | -       | 4 Byte   | 우측(m)  |
-| rear      | Float32    | -       | 4 Byte   | 후면(m)  |
-| top       | Float32    | -       | 4 Byte   | 위(m)    |
-| bottom    | Float32    | -       | 4 Byte   | 아래(m)  |
+| x          | float     | -     | 4 Byte   | X축(m)  |
+| y          | float     | -     | 4 Byte   | Y축(m)  |
 
 
 <br>
@@ -1068,15 +856,15 @@ namespace Protocol
 
 장치의 페어링 정보를 확인하거나 변경할 때 사용합니다.
 
-주소에 0x0000은 사용하지 않음, 0xFFFF는 Broadcasting.
-
 ```cpp
 namespace Protocol
 {
     struct Pairing
     {
-        u16     addressLocal;
-        u16     addressRemote;
+        u16     address0;
+        u16     address1;
+        u16     address2;
+        u8      scramble;
         u8      channel;
     };
 }
@@ -1084,9 +872,11 @@ namespace Protocol
 
 | 변수 이름       | 형식      | 범위             | 크기     | 설명               |
 |:---------------:|:---------:|:----------------:|:--------:|:-------------------|
-| addressLocal    | uint16_t  | 0x0001 ~ 0xFFFE  | 2 Byte   | 장치의 주소        |
-| addressRemote   | uint16_t  | 0x0001 ~ 0xFFFE  | 2 Byte   | 상대 장치의 주소   |
-| channel         | uint18_t  | 0 ~ 230          | 1 Byte   | 채널               |
+| address0        | uint16_t  | 0x0000 ~ 0xFFFF  | 2 Byte   | 주소 0             |
+| address1        | uint16_t  | 0x0000 ~ 0xFFFF  | 2 Byte   | 주소 1             |
+| address2        | uint16_t  | 0x0000 ~ 0xFFFF  | 2 Byte   | 주소 2             |
+| scramble        | uint8_t   | 0x00 ~ 0x7F      | 1 Byte   | 스크램블           |
+| channel         | uint8_t   | 0 ~ 81           | 1 Byte   | 채널               |
 
 
 <br>
@@ -1128,21 +918,29 @@ namespace Protocol
 
 자주 갱신되는 데이터 모음(조종기)
 
-조종기에 표시되는 데이터의 갱신 속도 향상을 위해 조종기에서 Control 명령을 드론에 RF로 전송하는 경우, 드론에서 Ack 대신 이 데이터를 응답으로 전송합니다.
+조종기에 표시되는 데이터의 갱신 속도를 높일 목적으로 여러 데이터를 하나로 합친 구조체
 
 ```cpp
 namespace Protocol
 {
     struct InformationAssembledForController
     {
-        s16     angleRoll;
-        s16     anglePitch;
-        s16     angleYaw;
+        s16     angleRoll;              // 자세 Roll
+        s16     anglePitch;             // 자세 Pitch
+        s16     angleYaw;               // 자세 Yaw
 
-        float   pressureTemperature;
-        float   pressureAltitude;
+        u16     rpm;                    // RPM
 
-        float   rangeGround;
+        s16     positionX;              // meter x 10
+        s16     positionY;              // meter x 10
+        s16     positionZ;              // meter x 10
+
+        s16     speedX;                 // meter x 10
+        s16     speedY;                 // meter x 10
+
+        u8      rangeHeight;            // meter x 100
+
+        s8      rssi;                   // RSSI
     };
 }
 ```
@@ -1162,14 +960,6 @@ namespace Protocol
 {
     struct InformationAssembledForEntry
     {
-        s16     accelX;
-        s16     accelY;
-        s16     accelZ;
-
-        s16     gyroRoll;
-        s16     gyroPitch;
-        s16     gyroYaw;
-
         s16     angleRoll;
         s16     anglePitch;
         s16     angleYaw;
@@ -1177,10 +967,10 @@ namespace Protocol
         float   pressureTemperature;
         float   pressureAltitude;
 
-        float   imageFlowPositionX;
-        float   imageFlowPositionY;
+        float   positionX;
+        float   positionY;
 
-        float   rangeGround;
+        float   rangeHeight;
     };
 }
 ```
