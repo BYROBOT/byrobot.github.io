@@ -1,6 +1,6 @@
-**[*petrone_v2* for python](index.md)** / **Examples** / **Input**
+**[*e_drone* for python](index.md)** / **Examples** / **Input**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
@@ -12,8 +12,8 @@ Modified : 2018.3.5
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventButton(button):
@@ -51,8 +51,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventJoystick(joystick):
@@ -87,7 +87,7 @@ if __name__ == '__main__':
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)

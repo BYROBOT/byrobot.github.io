@@ -1,6 +1,6 @@
-**[*petrone_v2* for python](index.md)** / **Examples** / **Light**
+**[*e_drone* for python](index.md)** / **Examples** / **Light**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
@@ -13,8 +13,8 @@ Modified : 2018.3.5
 import random
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -27,31 +27,31 @@ if __name__ == '__main__':
     sleep(1);
     
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Red.value, 10)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyRed.value, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Red.value, 100)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyRed.value, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Red.value, 0)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyRed.value, 0)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Green.value, 10)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyGreen.value, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Green.value, 100)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyGreen.value, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Green.value, 0)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyGreen.value, 0)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Blue.value, 10)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyBlue.value, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Blue.value, 100)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyBlue.value, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Controller, LightFlagsController.Blue.value, 0)
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyBlue.value, 0)
     sleep(1);
     
     drone.sendLightManual(DeviceType.Controller, 0b11000000, 10)
@@ -96,8 +96,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -110,59 +110,59 @@ if __name__ == '__main__':
     sleep(1);
 
 
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeRed.value | LightFlagsDrone.ArmRed.value, 10)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeRed.value | LightFlagsDrone.BodyRed.value, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeRed.value | LightFlagsDrone.ArmRed.value, 100)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeRed.value | LightFlagsDrone.BodyRed.value, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeRed.value | LightFlagsDrone.ArmRed.value, 0)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeRed.value | LightFlagsDrone.BodyRed.value, 0)
     sleep(1);
 
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeGreen.value | LightFlagsDrone.ArmGreen.value, 10)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeGreen.value | LightFlagsDrone.BodyGreen.value, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeGreen.value | LightFlagsDrone.ArmGreen.value, 100)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeGreen.value | LightFlagsDrone.BodyGreen.value, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeGreen.value | LightFlagsDrone.ArmGreen.value, 0)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeGreen.value | LightFlagsDrone.BodyGreen.value, 0)
     sleep(1);
 
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeBlue.value | LightFlagsDrone.ArmBlue.value, 10)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeBlue.value | LightFlagsDrone.BodyBlue.value, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeBlue.value | LightFlagsDrone.ArmBlue.value, 100)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeBlue.value | LightFlagsDrone.BodyBlue.value, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeBlue.value | LightFlagsDrone.ArmBlue.value, 0)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.EyeBlue.value | LightFlagsDrone.BodyBlue.value, 0)
     sleep(1);
 
 
-    drone.sendLightManual(DeviceType.Drone, 0x82, 10)
+    drone.sendLightManual(DeviceType.Drone, 0x2000, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, 0x82, 100)
+    drone.sendLightManual(DeviceType.Drone, 0x2000, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, 0x82, 0)
+    drone.sendLightManual(DeviceType.Drone, 0x1000, 0)
     sleep(1);
 
-    drone.sendLightManual(DeviceType.Drone, 0x42, 10)
+    drone.sendLightManual(DeviceType.Drone, 0x1000, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, 0x42, 100)
+    drone.sendLightManual(DeviceType.Drone, 0x1000, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, 0x42, 0)
+    drone.sendLightManual(DeviceType.Drone, 0x0800, 0)
     sleep(1);
 
-    drone.sendLightManual(DeviceType.Drone, 0x22, 10)
+    drone.sendLightManual(DeviceType.Drone, 0x0800, 10)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, 0x22, 100)
+    drone.sendLightManual(DeviceType.Drone, 0x0800, 100)
     sleep(1);
     
-    drone.sendLightManual(DeviceType.Drone, 0x22, 0)
+    drone.sendLightManual(DeviceType.Drone, 0x3800, 0)
     sleep(1);
 
 
@@ -181,8 +181,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -191,51 +191,39 @@ if __name__ == '__main__':
     drone.open("COM22")
 
 
-    drone.sendLightModeColor(LightModeController.TeamHold, 200, 0, 0, 0)
+    drone.sendLightModeColor(LightModeController.BodyHold, 200, 0, 0, 0)
     sleep(2); 
     
 
     #sendLightModeColor*
-    drone.sendLightModeColor(LightModeController.TeamDimming, 3, 200, 20, 20)
+    drone.sendLightModeColor(LightModeController.BodyDimming, 3, 200, 20, 20)
     sleep(1);
     
-    drone.sendLightModeColorCommand(LightModeController.TeamHold, 200, 20, 200, 20, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightModeColorCommandIr(LightModeController.TeamFlicker, 200, 20, 20, 200, CommandType.None_, 0, 0x01020304)
+    drone.sendLightModeColorCommand(LightModeController.BodyHold, 200, 20, 200, 20, CommandType.None_, 0)
     sleep(1);
 
 
     #sendLightModeColors*
-    drone.sendLightModeColors(LightModeController.TeamDimming, 3, Colors.Red)
+    drone.sendLightModeColors(LightModeController.BodyDimming, 3, Colors.Red)
     sleep(1);
     
-    drone.sendLightModeColorsCommand(LightModeController.TeamHold, 120, Colors.Green, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightModeColorsCommandIr(LightModeController.TeamFlicker, 200, Colors.Blue, CommandType.None_, 0, 0x01020304)
+    drone.sendLightModeColorsCommand(LightModeController.BodyHold, 120, Colors.Green, CommandType.None_, 0)
     sleep(1);
 
 
     # sendLightEventColor*
-    drone.sendLightEventColor(LightModeController.TeamDimming, 3, 5, 200, 20, 20)
+    drone.sendLightEventColor(LightModeController.BodyDimming, 3, 5, 200, 20, 20)
     sleep(1);
     
-    drone.sendLightEventColorCommand(LightModeController.TeamHold, 120, 20, 20, 200, 20, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightEventColorCommandIr(LightModeController.TeamFlicker, 200, 5, 20, 20, 200, CommandType.None_, 0, 0x01020304)
+    drone.sendLightEventColorCommand(LightModeController.BodyHold, 120, 20, 20, 200, 20, CommandType.None_, 0)
     sleep(1);
 
 
     # sendLightEventColors*
-    drone.sendLightEventColors(LightModeController.TeamDimming, 3, 3, Colors.Red)
+    drone.sendLightEventColors(LightModeController.BodyDimming, 3, 3, Colors.Red)
     sleep(1);
     
-    drone.sendLightEventColorsCommand(LightModeController.TeamHold, 200, 20, Colors.Green, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightEventColorsCommandIr(LightModeController.TeamFlicker, 200, 3, Colors.Blue, CommandType.None_, 0, 0x01020304)
+    drone.sendLightEventColorsCommand(LightModeController.BodyHold, 200, 20, Colors.Green, CommandType.None_, 0)
     sleep(1);
 
 
@@ -244,16 +232,12 @@ if __name__ == '__main__':
 
 - [sendLightModeColor()](04_drone.md#sendLightModeColor)
 - [sendLightModeColorCommand()](04_drone.md#sendLightModeColorCommand)
-- [sendLightModeColorCommandIr()](04_drone.md#sendLightModeColorCommandIr)
 - [sendLightModeColors()](04_drone.md#sendLightModeColors)
 - [sendLightModeColorsCommand()](04_drone.md#sendLightModeColorsCommand)
-- [sendLightModeColorsCommandIr()](04_drone.md#sendLightModeColorsCommandIr)
 - [sendLightEventColor()](04_drone.md#sendLightEventColor)
 - [sendLightEventColorCommand()](04_drone.md#sendLightEventColorCommand)
-- [sendLightEventColorCommandIr()](04_drone.md#sendLightEventColorCommandIr)
 - [sendLightEventColors()](04_drone.md#sendLightEventColors)
 - [sendLightEventColorsCommand()](04_drone.md#sendLightEventColorsCommand)
-- [sendLightEventColorsCommandIr()](04_drone.md#sendLightEventColorsCommandIr)
 
 
 <br>
@@ -266,8 +250,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -276,51 +260,39 @@ if __name__ == '__main__':
     drone.open("COM22")
 
 
-    drone.sendLightModeColor(LightModeDrone.ArmHold, 200, 0, 0, 0)
+    drone.sendLightModeColor(LightModeDrone.BodyHold, 200, 0, 0, 0)
     sleep(1);
 
 
     # sendLightModeColor*
-    drone.sendLightModeColor(LightModeDrone.ArmDimming, 3, 200, 20, 20)
+    drone.sendLightModeColor(LightModeDrone.BodyDimming, 3, 200, 20, 20)
     sleep(1);
     
-    drone.sendLightModeColorCommand(LightModeDrone.ArmHold, 200, 20, 200, 20, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightModeColorCommandIr(LightModeDrone.ArmFlicker, 200, 20, 20, 200, CommandType.None_, 0, 0x01020304)
+    drone.sendLightModeColorCommand(LightModeDrone.BodyHold, 200, 20, 200, 20, CommandType.None_, 0)
     sleep(1);
 
 
     # sendLightModeColors*
-    drone.sendLightModeColors(LightModeDrone.ArmDimming, 3, Colors.Red)
+    drone.sendLightModeColors(LightModeDrone.BodyDimming, 3, Colors.Red)
     sleep(1);
     
-    drone.sendLightModeColorsCommand(LightModeDrone.ArmHold, 120, Colors.Green, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightModeColorsCommandIr(LightModeDrone.ArmFlicker, 200, Colors.Blue, CommandType.None_, 0, 0x01020304)
+    drone.sendLightModeColorsCommand(LightModeDrone.BodyHold, 120, Colors.Green, CommandType.None_, 0)
     sleep(1);
 
 
     # sendLightEventColor*
-    drone.sendLightEventColor(LightModeDrone.ArmDimming, 3, 5, 200, 20, 20)
+    drone.sendLightEventColor(LightModeDrone.BodyDimming, 3, 5, 200, 20, 20)
     sleep(1);
     
-    drone.sendLightEventColorCommand(LightModeDrone.ArmHold, 120, 20, 20, 200, 20, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightEventColorCommandIr(LightModeDrone.ArmFlicker, 200, 5, 20, 20, 200, CommandType.None_, 0, 0x01020304)
+    drone.sendLightEventColorCommand(LightModeDrone.BodyHold, 120, 20, 20, 200, 20, CommandType.None_, 0)
     sleep(1);
 
 
     # sendLightEventColors*
-    drone.sendLightEventColors(LightModeDrone.ArmDimming, 3, 3, Colors.Red)
+    drone.sendLightEventColors(LightModeDrone.BodyDimming, 3, 3, Colors.Red)
     sleep(1);
     
-    drone.sendLightEventColorsCommand(LightModeDrone.ArmHold, 200, 20, Colors.Green, CommandType.None_, 0)
-    sleep(1);
-    
-    drone.sendLightEventColorsCommandIr(LightModeDrone.ArmFlicker, 200, 5, Colors.Blue, CommandType.None_, 0, 0x01020304)
+    drone.sendLightEventColorsCommand(LightModeDrone.BodyHold, 200, 20, Colors.Green, CommandType.None_, 0)
     sleep(1);
 
 
@@ -329,16 +301,12 @@ if __name__ == '__main__':
 
 - [sendLightModeColor()](04_drone.md#sendLightModeColor)
 - [sendLightModeColorCommand()](04_drone.md#sendLightModeColorCommand)
-- [sendLightModeColorCommandIr()](04_drone.md#sendLightModeColorCommandIr)
 - [sendLightModeColors()](04_drone.md#sendLightModeColors)
 - [sendLightModeColorsCommand()](04_drone.md#sendLightModeColorsCommand)
-- [sendLightModeColorsCommandIr()](04_drone.md#sendLightModeColorsCommandIr)
 - [sendLightEventColor()](04_drone.md#sendLightEventColor)
 - [sendLightEventColorCommand()](04_drone.md#sendLightEventColorCommand)
-- [sendLightEventColorCommandIr()](04_drone.md#sendLightEventColorCommandIr)
 - [sendLightEventColors()](04_drone.md#sendLightEventColors)
 - [sendLightEventColorsCommand()](04_drone.md#sendLightEventColorsCommand)
-- [sendLightEventColorsCommandIr()](04_drone.md#sendLightEventColorsCommandIr)
 
 
 <br>
@@ -351,8 +319,8 @@ if __name__ == '__main__':
 import random
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -366,7 +334,7 @@ if __name__ == '__main__':
         g    = int(random.randint(0, 255))
         b    = int(random.randint(0, 255))
 
-        dataArray = drone.sendLightModeColor(LightModeController.TeamDimming, 1, r, g, b)
+        dataArray = drone.sendLightModeColor(LightModeController.BodyDimming, 1, r, g, b)
         print("{0} / {1}".format(i, dataArray))
 
         sleep(0.6)
@@ -387,8 +355,8 @@ if __name__ == '__main__':
 import random
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -405,7 +373,7 @@ if __name__ == '__main__':
 
     data = LightModeColor()
 
-    data.mode.mode      = LightModeController.TeamDimming.value
+    data.mode.mode      = LightModeController.BodyDimming.value
     data.mode.interval  = 1
 
     for i in range(0, 10, 1):
@@ -435,8 +403,8 @@ if __name__ == '__main__':
 import random
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -448,7 +416,7 @@ if __name__ == '__main__':
         
         colors = Colors(random.randint(0, Colors.EndOfType.value))
 
-        dataArray = drone.sendLightModeColors(LightModeController.TeamDimming, 1, colors)
+        dataArray = drone.sendLightModeColors(LightModeController.BodyDimming, 1, colors)
         print("{0} / {1}".format(i, dataArray))
 
         sleep(0.6)
@@ -469,8 +437,8 @@ if __name__ == '__main__':
 import random
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -487,7 +455,7 @@ if __name__ == '__main__':
 
     data = LightModeColors()
 
-    data.mode.mode      = LightModeController.TeamDimming.value
+    data.mode.mode      = LightModeController.BodyDimming.value
     data.mode.interval  = 1
 
     for i in range(0, 10, 1):
@@ -511,7 +479,7 @@ if __name__ == '__main__':
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)

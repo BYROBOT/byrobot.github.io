@@ -1,6 +1,6 @@
-**[*petrone_v2* for python](index.md)** / **Examples** / **Motor**
+**[*e_drone* for python](index.md)** / **Examples** / **Motor**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
@@ -16,8 +16,8 @@ Modified : 2018.3.5
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventAck(ack):
@@ -62,8 +62,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventAck(ack):
@@ -81,19 +81,19 @@ if __name__ == '__main__':
     sleep(0.01)
 
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
+    drone.sendMotorSingle(0, Rotation.Clockwise, 1000)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
+    drone.sendMotorSingle(0, Rotation.Clockwise, 2000)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 3000)
+    drone.sendMotorSingle(0, Rotation.Clockwise, 3000)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
+    drone.sendMotorSingle(0, Rotation.Clockwise, 2000)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
+    drone.sendMotorSingle(0, Rotation.Clockwise, 1000)
     sleep(2)
 
     drone.sendStop()
@@ -111,7 +111,7 @@ if __name__ == '__main__':
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)

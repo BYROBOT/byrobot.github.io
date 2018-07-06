@@ -1,6 +1,6 @@
-**[*petrone_v2* for python](index.md)** / **Examples** / **Pairing**
+**[*e_drone* for python](index.md)** / **Examples** / **Pairing**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
@@ -12,8 +12,8 @@ Modified : 2018.3.5
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 if __name__ == '__main__':
@@ -36,9 +36,11 @@ if __name__ == '__main__':
         
         if    dataType == DataType.Pairing:
             pairing = drone.getData(DataType.Pairing)
-            print("{0} / {1} / {2}".format(
-                pairing.addressLocal, 
-                pairing.addressRemote, 
+            print("{0} / {1} / {2} / {3} / {4}".format(
+                pairing.address0,
+                pairing.address1,
+                pairing.address2,
+                pairing.scramble,
                 pairing.channel))
             break;
 
@@ -63,15 +65,17 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventPairing(pairing):
     print("eventPairing()")
-    print("{0} / {1} / {2}".format(
-        pairing.addressLocal, 
-        pairing.addressRemote, 
+    print("{0} / {1} / {2} / {3} / {4}".format(
+        pairing.address0,
+        pairing.address1,
+        pairing.address2,
+        pairing.scramble,
         pairing.channel))
 
 
@@ -84,7 +88,7 @@ if __name__ == '__main__':
     drone.setEventHandler(DataType.Pairing, eventPairing)
 
     # 페어링 설정
-    drone.sendPairing(DeviceType.Controller, 0x0005, 0x0004, 0x03)
+    drone.sendPairing(DeviceType.Controller, 0x0000, 0x0001, 0x0002, 0x03, 0x04)
     sleep(0.01)
 
     # 페어링데이터 요청
@@ -104,7 +108,7 @@ if __name__ == '__main__':
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)

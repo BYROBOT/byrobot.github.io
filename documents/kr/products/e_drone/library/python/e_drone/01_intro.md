@@ -1,6 +1,6 @@
-**[*petrone_v2* for python](index.md)** / **Intro**
+**[*e_drone* for python](index.md)** / **Intro**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
@@ -21,11 +21,11 @@ Modified : 2018.3.5
 <br>
 
 
-# 1. *petrone_v2* for python 소개
+# 1. *e_drone* for python 소개
 
-***petrone_v2* for python**은 python에서 ***E-DRONE***를 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
+***e_drone* for python**은 python에서 ***E-DRONE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
 
-[https://pypi.python.org/pypi/petrone_v2](https://pypi.python.org/pypi/petrone_v2)
+[https://pypi.python.org/pypi/e_drone](https://pypi.python.org/pypi/e_drone)
 
 
 <br>
@@ -34,20 +34,20 @@ Modified : 2018.3.5
 
 # 2. 설치
 
-아래의 명령을 실행하시면 *petrone_v2*가 설치됩니다.
+아래의 명령을 실행하시면 *e_drone*이 설치됩니다.
 
 ```
-> pip install petrone_v2
+> pip install e_drone
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> pip3 install petrone_v2
+> pip3 install e_drone
 ```
 
 <div align="center">
-    <img src="../01_intro_1_install_petrone_v2.png" alt="install_petrone_v2">
+    <img src="../01_intro_1_install_e_drone.png" alt="install_e_drone">
 </div>
 
 
@@ -56,13 +56,13 @@ Modified : 2018.3.5
 최신 버젼이 설치되지 않는다면 아래의 명령을 사용하시기 바랍니다.
 
 ```
-> pip --no-cache-dir install petrone_v2
+> pip --no-cache-dir install e_drone
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> pip3 --no-cache-dir install petrone_v2
+> pip3 --no-cache-dir install e_drone
 ```
 
 
@@ -72,16 +72,16 @@ Modified : 2018.3.5
 
 # 3. 삭제
 
-아래의 명령을 실행하시면 *petrone_v2*가 삭제됩니다.
+아래의 명령을 실행하시면 *e_drone*이 삭제됩니다.
 
 ```
-> pip uninstall petrone_v2
+> pip uninstall e_drone
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> pip3 uninstall petrone_v2
+> pip3 uninstall e_drone
 ```
 
 
@@ -94,7 +94,7 @@ Modified : 2018.3.5
 
 Drone 클래스 내부에서 pyserial을 사용하여 시리얼 포트에 연결합니다. 시리얼 포트에 연결하려면 장치 이름을 알고 있어야 합니다. 이 때 필요한 것이 컴퓨터에 연결된 시리얼 통신 장치들을 검색할 수 있는 명령입니다. 이 명령은 **pyserial**에서 제공하고 있습니다.
 
-(**pyserial**은 *petrone_v2*를 설치한 경우 함께 설치됩니다.)
+(**pyserial**은 *e_drone*을 설치한 경우 함께 설치됩니다.)
 
 <br>
 
@@ -143,8 +143,8 @@ for node in nodes:
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 if __name__ == '__main__':
 
@@ -164,8 +164,8 @@ open() 함수 사용 시 인자를 넣지 않으면, 내부에서 시리얼 포�
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 if __name__ == '__main__':
 
@@ -197,17 +197,16 @@ if __name__ == '__main__':
 ```python
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventInformation(information):
     print("eventInformation()")
     print("{0} / 0x{0:08X}".format(information.version.v))
-    print("{0}.{1}.{2}.{3}".format(
+    print("{0}.{1}.{2}".format(
         information.version.major,
         information.version.minor,
-        information.version.stage.name,
         information.version.build))
 
 
@@ -228,7 +227,7 @@ if __name__ == '__main__':
 
 예제는 아래의 소스에서 포트 이름을 지운 것입니다.
 
-[조종기의 펌웨어 정보 요청(이벤트 함수 등록)](https://byrobot.github.io/documents/kr/products/petrone_v2/library/python/petrone_v2/examples_02_information/#Class_Information)
+[조종기의 펌웨어 정보 요청(이벤트 함수 등록)](https://byrobot.github.io/documents/kr/products/e_drone/library/python/e_drone/examples_02_information/#Class_Information)
 
 <br>
 
@@ -288,7 +287,7 @@ E-DRONE 조종기가 맥에 연결되어 있다면 위와 비슷한 결과를 �
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. **Intro**
  2. [System](02_system.md)

@@ -1,5 +1,5 @@
 
-# *petrone_v2* for python
+# *e_drone* for python
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)
@@ -23,4 +23,4 @@
 
 ---
 
-Modified : 2018.3.5
+Modified : 2018.7.6

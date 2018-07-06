@@ -1,6 +1,6 @@
-**[*petrone_v2* for python](index.md)** / **System**
+**[*e_drone* for python](index.md)** / **System**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
@@ -20,22 +20,25 @@ Modified : 2018.3.5
 ```py
 class DeviceType(Enum):
     
-    None_               = 0x00
+    None_       = 0x00
 
-    Drone               = 0x30      # 드론
-    Controller          = 0x31      # 조종기
-    Link                = 0x32      # 링크 모듈
-    Tester              = 0x33      # 테스터
-    Monitor             = 0x34      # 모니터
-    Updater             = 0x35      # 펌웨어 업데이트 도구
-    Encrypter           = 0x36      # 암호화 도구
-    Scratch             = 0x37      # 스크래치
-    Entry               = 0x38      # 네이버 엔트리
-    ByScratch           = 0x39      # 바이스크래치
+    Drone       = 0x10      # 드론(Server)
 
-    EndOfType           = 0x40
+    Controller  = 0x20      # 조종기(Client)
 
-    Broadcasting        = 0xFF
+    Link        = 0x30      # 링크 모듈(Client)
+    LinkServer  = 0x31      # 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+
+    ByScratch   = 0x80      # 바이스크래치
+    Scratch     = 0x81      # 스크래치
+    Entry       = 0x82      # 네이버 엔트리
+
+    Tester      = 0xA0      # 테스터
+    Monitor     = 0xA1      # 모니터
+    Updater     = 0xA2      # 펌웨어 업데이트 도구
+    Encrypter   = 0xA3      # 암호화 도구
+
+    Broadcasting = 0xFF
 ```
 
 
@@ -43,25 +46,21 @@ class DeviceType(Enum):
 <br>
 
 
-## <a name="ModeVehicle">ModeVehicle</a>
+## <a name="ModeControlFlight">ModeControlFlight</a>
 
-Vehicle 동작 모드
+비행 제어 모드
 
 ```py
-class ModeVehicle(Enum):
+class ModeControlFlight(Enum):
     
     None_               = 0x00
 
-    FlightGuard         = 0x10
-    FlightNoGuard       = 0x11
-    FlightFPV           = 0x12
-
-    Drive               = 0x20
-    DriveFPV            = 0x21
-
-    Test                = 0x30
-
-    EndOfType           = 0x31
+    Attitude            = 0x10      # 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
+    Position            = 0x11      # 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+    Function            = 0x12      # 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+    Rate                = 0x13      # Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음e
+    
+    EndOfType           = 0x14
 ```
 
 
@@ -123,34 +122,6 @@ class ModeFlight(Enum):
 <br>
 
 
-## <a name="ModeDrive">ModeDrive</a>
-
-주행 제어기 동작 모드
-
-```py
-class ModeDrive(Enum):
-    
-    None_               = 0x00
-
-    Ready               = 0x10
-    Start               = 0x11
-    Drive               = 0x12
-
-    Stop                = 0x20
-
-    Accident            = 0x30
-    Error               = 0x31
-
-    Test                = 0x40
-
-    EndOfType           = 0x41
-```
-
-
-<br>
-<br>
-
-
 ## <a name="ModeUpdate">ModeUpdate</a>
 
 업데이트 동작 모드
@@ -186,23 +157,22 @@ class ErrorFlagsForSensor(Enum):
 
     None_                       = 0x00000000
 
-    Imu_NoAnswer                = 0x00000001    # IMU 응답 없음
-    Imu_WrongValue              = 0x00000002
-    Imu_NotCalibrated           = 0x00000004    # Gyro Bias 보정이 완료되지 않음
-    Imu_Calibrating             = 0x00000008    # Gyro Bias 보정 중
+    Motion_NoAnswer             = 0x00000001    # Motion 센서 응답 없음
+    Motion_WrongValue           = 0x00000002
+    Motion_NotCalibrated        = 0x00000004    # Bias 보정이 완료되지 않음
+    Motion_Calibrating          = 0x00000008    # Bias 보정 중
 
-    Pressure_NoAnswer           = 0x00000010    # 압력센서 응답 없음
+    Pressure_NoAnswer           = 0x00000010    # 압력 센서 응답 없음
     Pressure_WrongValue         = 0x00000020
 
-    RangeGround_NoAnswer        = 0x00000100    # 바닥 거리센서 응답 없음
-    RangeGround_WrongValue      = 0x00000200
+    Range_NoAnswer              = 0x00000100    # 바닥 거리 센서 응답 없음
+    Range_WrongValue            = 0x00000200
 
-    Camera_NoAnswer             = 0x00001000    # 카메라 응답 없음
-    OpticalFlow_WrongValue      = 0x00002000
+    Flow_NoAnswer               = 0x00001000    # Flow 센서 응답 없음
+    Flow_WrongValue             = 0x00002000
 
     Battery_NoAnswer            = 0x00010000    # 배터리 응답 없음
     Battery_WrongValue          = 0x00020000
-    Battery_NotCalibrated       = 0x00040000    # 배터리 입력값 보정이 완료되지 않음
 ```
 
 
@@ -227,24 +197,6 @@ class ErrorFlagsForState(Enum):
 <br>
 
 
-## <a name="DevelopmentStage">DevelopmentStage</a>
-
-개발 단계
-
-```py
-class DevelopmentStage(Enum):
-    
-    Alpha               = 0x00
-    Beta                = 0x01 
-    ReleaseCandidate    = 0x02
-    Release             = 0x03
-```
-
-
-<br>
-<br>
-
-
 ## <a name="FlightEvent">FlightEvent</a>
 
 비행 이벤트
@@ -260,34 +212,14 @@ class FlightEvent(Enum):
 
     Reverse             = 0x13
 
-    Shot                = 0x18
-    UnderAttack         = 0x19
+    FlipFront           = 0x14
+    FlipRear            = 0x15
+    FlipLeft            = 0x16
+    FlipRight           = 0x17
 
-    ResetHeading        = 0x1A
+    ResetHeading        = 0xA0
 
-    EndOfType           = 0x1B
-```
-
-
-<br>
-<br>
-
-
-## <a name="DriveEvent">DriveEvent</a>
-
-주행 이벤트
-
-```py
-class DriveEvent(Enum):
-    
-    None_               = 0x00
-
-    Stop                = 0x10
-    
-    Shot                = 0x11
-    UnderAttack         = 0x12
-
-    EndOfType           = 0x13
+    EndOfType           = 0xA1
 ```
 
 
@@ -312,7 +244,9 @@ class Direction(Enum):
     Top                 = 0x05
     Bottom              = 0x06
 
-    EndOfType           = 0x07
+    Center              = 0x07
+
+    EndOfType           = 0x08
 ```
 
 
@@ -326,13 +260,11 @@ class Direction(Enum):
 
 모터를 작동시킬 때 회전 방향을 지정하는데 사용합니다.
 
-PETRONE V2에는 총 4개의 모터가 있으며, 왼쪽 앞 모터부터 각각 0, 1, 2, 3번으로 번호가 부여되어 있습니다.
+E-DRONE에는 총 4개의 모터가 있으며, 왼쪽 앞 모터부터 각각 0, 1, 2, 3번으로 번호가 부여되어 있습니다.
 
 드론 비행 시에 0번과 2번 모터는 시계방향(Clockwise), 1번과 3번 모터는 반시계방향(Counterclockwise)으로 회전합니다.
 
-0번과 1번 모터는 드론이 뒤집어졌을 때, 다시 원래 상태로 복원하기 위해 시계방향과 반시계방향 모두 동작합니다.
-
-2번 모터는 시계 방향, 3번 모터는 반시계 방향으로만 동작합니다.
+E-DRONE은 회전 방향이 각각 기본 방향으로 고정되어 있어서 정해진 방향이 아니면 동작하지 않습니다.
 
 ```py
 class Rotation(Enum):
@@ -348,6 +280,7 @@ class Rotation(Enum):
 
 <br>
 <br>
+
 
 ## <a name="SensorOrientation">SensorOrientation</a>
 
@@ -405,18 +338,18 @@ class Headless(Enum):
 ```py
 class Trim(Enum):
     
-    None_               = 0x00  # 없음
+    None_               = 0x00      # 없음
 
-    RollIncrease        = 0x01  # Roll 증가
-    RollDecrease        = 0x02  # Roll 감소
-    PitchIncrease       = 0x03  # Pitch 증가
-    PitchDecrease       = 0x04  # Pitch 감소
-    YawIncrease         = 0x05  # Yaw 증가
-    YawDecrease         = 0x06  # Yaw 감소
-    ThrottleIncrease    = 0x07  # Throttle 증가
-    ThrottleDecrease    = 0x08  # Throttle 감소
+    RollIncrease        = 0x01      # Roll 증가
+    RollDecrease        = 0x02      # Roll 감소
+    PitchIncrease       = 0x03      # Pitch 증가
+    PitchDecrease       = 0x04      # Pitch 감소
+    YawIncrease         = 0x05      # Yaw 증가
+    YawDecrease         = 0x06      # Yaw 감소
+    ThrottleIncrease    = 0x07      # Throttle 증가
+    ThrottleDecrease    = 0x08      # Throttle 감소
 
-    Reset               = 0x09  # 전체 트림 리셋
+    Reset               = 0x09      # 전체 트림 리셋
 
     EndOfType           = 0x0A
 ```
@@ -427,7 +360,7 @@ class Trim(Enum):
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. **System**

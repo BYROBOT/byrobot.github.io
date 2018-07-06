@@ -1,23 +1,23 @@
-**[*petrone_v2* for python](index.md)** / **Examples** / **Setup**
+**[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
 <br>
 
 
-## <a name="ModeVehicle">드론 모드를 변경 후 확인</a>
+## <a name="ModeControlFlight">드론 비행 제어 모드를 변경 후 확인</a>
 
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventState(state):
-    print("{0}".format(state.modeVehicle))
+    print("{0}".format(state.modeControlFlight))
 
 
 if __name__ == '__main__':
@@ -30,8 +30,8 @@ if __name__ == '__main__':
     drone.setEventHandler(DataType.State, eventState)
 
 
-    # 드론을 자동차 모드로 변경
-    drone.sendModeVehicle(ModeVehicle.Drive)
+    # 비행 제어 모드를 ModeControlFlight.Position 으로 변경
+    drone.sendModeControlFlight(ModeControlFlight.Position)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -39,8 +39,8 @@ if __name__ == '__main__':
     sleep(0.1)
 
 
-    # 드론을 비행 모드로 변경
-    drone.sendModeVehicle(ModeVehicle.FlightGuard)
+    # 비행 제어 모드를 ModeControlFlight.Attitude 으로 변경
+    drone.sendModeControlFlight(ModeControlFlight.Attitude)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 ```
 
 - [State](03_protocol.md#State)
-- [sendModeVehicle()](04_drone.md#sendModeVehicle)
+- [sendModeControlFlight()](04_drone.md#sendModeControlFlight)
 - [sendRequest()](04_drone.md#sendRequest)
 
 
@@ -65,8 +65,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventState(state):
@@ -118,8 +118,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventTrimFlight(trimFlight):
@@ -193,8 +193,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventTrimFlight(trimFlight):
@@ -238,63 +238,10 @@ if __name__ == '__main__':
 
 
 <br>
-<br>
-
-
-## <a name="TrimDrive">드론 TrimDrive 설정 변경 후 확인</a>
-
-```py
-from time import sleep
-
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
-
-
-def eventTrimDrive(trimDrive):
-    print("{0}, {1}".format(trimDrive.wheel, trimDrive.accel))
-
-
-if __name__ == '__main__':
-
-    drone = Drone()
-    drone.open("COM22")
-
-
-    # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.TrimDrive, eventTrimDrive)
-
-
-    # 드론 자동차 트림 설정 변경
-    drone.sendTrimDrive(10, 20)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimDrive)
-    sleep(0.1)
-
-
-    # 드론 자동차 트림 설정 변경
-    drone.sendTrimDrive(0, 0)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimDrive)
-    sleep(0.1)
-
-
-    drone.close()
-```
-
-- [TrimDrive](03_protocol.md#TrimDrive)
-- [sendTrimDrive()](04_drone.md#sendTrimDrive)
-- [sendRequest()](04_drone.md#sendRequest)
-
-
-<br>
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)

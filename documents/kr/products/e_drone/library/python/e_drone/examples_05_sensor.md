@@ -1,25 +1,27 @@
-**[*petrone_v2* for python](index.md)** / **Examples** / **Sensor**
+**[*e_drone* for python](index.md)** / **Examples** / **Sensor**
 
-Modified : 2018.3.5
+Modified : 2018.7.6
 
 ---
 
 <br>
 
 
-## <a name="Pressure">압력 센서 데이터 확인</a>
+## <a name="Altitude">고도 데이터 확인</a>
 
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
-def eventPressure(pressure):
-    print("eventPressure()")
-    print("-    Pressure: {0:.3f}".format(pressure.pressure))
-    print("- Temperature: {0:.3f}".format(pressure.temperature))
+def eventAltitude(altitude):
+    print("eventAltitude()")
+    print("-  Temperature: {0:.3f}".format(altitude.temperature))
+    print("-     Pressure: {0:.3f}".format(altitude.pressure))
+    print("-     Altitude: {0:.3f}".format(altitude.altitude))
+    print("- Range Height: {0:.3f}".format(altitude.rangeHeight))
 
 if __name__ == '__main__':
 
@@ -27,16 +29,16 @@ if __name__ == '__main__':
     drone.open("COM22")
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Pressure, eventPressure)
+    drone.setEventHandler(DataType.Altitude, eventAltitude)
 
-    # Pressure 정보 요청
-    drone.sendRequest(DeviceType.Drone, DataType.Pressure)
+    # Altitude 정보 요청
+    drone.sendRequest(DeviceType.Drone, DataType.Altitude)
     sleep(0.1)
 
     drone.close()
 ```
 
-- [Pressure](03_protocol.md#Pressure)
+- [Altitude](03_protocol.md#Altitude)
 - [sendRequest()](04_drone.md#sendRequest)
 
 
@@ -44,18 +46,20 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Range">거리 센서 데이터 확인</a>
+## <a name="Motion">Motion 센서 데이터 확인</a>
 
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
-def eventRange(range):
-    print("eventRange()")
-    print("- Bottom: {0:0.3f}m".format(range.bottom))
+def eventMotion(motion):
+    print("eventMotion()")
+    print("- Accel: {0:5}, {1:5}, {2:5}".format(motion.accelX, motion.accelY, motion.accelZ))
+    print("-  Gyro: {0:5}, {1:5}, {2:5}".format(motion.gyroRoll, motion.gyroPitch, motion.gyroYaw))
+    print("- Angle: {0:5}, {1:5}, {2:5}".format(motion.angleRoll, motion.anglePitch, motion.angleYaw))
 
 
 if __name__ == '__main__':
@@ -64,54 +68,16 @@ if __name__ == '__main__':
     drone.open("COM22")
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Range, eventRange)
+    drone.setEventHandler(DataType.Motion, eventMotion)
 
     # Range 정보 요청
-    drone.sendRequest(DeviceType.Drone, DataType.Range)
+    drone.sendRequest(DeviceType.Drone, DataType.Motion)
     sleep(0.1)
 
     drone.close()
 ```
 
-- [Range](03_protocol.md#Range)
-- [sendRequest()](04_drone.md#sendRequest)
-
-
-<br>
-<br>
-
-
-## <a name="Imu">IMU 센서 데이터 확인</a>
-
-```py
-from time import sleep
-
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
-
-
-def eventImu(imu):
-    print("eventImu()")
-    print("- Accel: {0:5}, {1:5}, {2:5}".format(imu.accelX, imu.accelY, imu.accelZ))
-    print("-  Gyro: {0:5}, {1:5}, {2:5}".format(imu.gyroRoll, imu.gyroPitch, imu.gyroYaw))
-
-
-if __name__ == '__main__':
-
-    drone = Drone()
-    drone.open("COM22")
-
-    # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Imu, eventImu)
-
-    # Range 정보 요청
-    drone.sendRequest(DeviceType.Drone, DataType.Imu)
-    sleep(0.1)
-
-    drone.close()
-```
-
-- [Imu](03_protocol.md#Imu)
+- [Motion](03_protocol.md#Motion)
 - [sendRequest()](04_drone.md#sendRequest)
 
 
@@ -124,8 +90,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
+from e_drone.drone import *
+from e_drone.protocol import *
 
 
 def eventAttitude(attitude):
@@ -152,47 +118,10 @@ if __name__ == '__main__':
 
 
 <br>
-<br>
-
-
-## <a name="IrMessage">적외선 데이터 송수신 확인</a>
-
-```py
-from time import sleep
-
-from petrone_v2.drone import *
-from petrone_v2.protocol import *
-
-
-def eventIrMessage(irMessage):
-    print("eventIrMessage()")
-    print("{0} / 0x{1:8X} / {1}".format(irMessage.direction, irMessage.irData))
-
-
-if __name__ == '__main__':
-
-    drone = Drone()
-    drone.open("COM22")
-
-    # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.IrMessage, eventIrMessage)
-
-    # 적외선 데이터 전송
-    drone.sendIrMessage(0x12345678)
-    sleep(0.2)
-
-    drone.close()
-```
-
-- [IrMessage](03_protocol.md#IrMessage)
-- [sendRequest()](04_drone.md#sendRequest)
-
-
-<br>
 
 ---
 
-<h3><i>petrone_v2</i> for python</H3>
+<h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)
