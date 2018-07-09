@@ -18,8 +18,6 @@ Modified : 2018.7.9
 
 > - PC에서 드론에 데이터 요청 시 응답으로 돌아오는 데이터의 CRC 값이 0으로 초기화 되어 있는 문제 수정
 
-[Download](https://drive.google.com/open?id=1ZU744M9qYvSrnpxtxdNur5XaixerKM_Z)
-
 <br>
 
 ---

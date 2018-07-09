@@ -7,14 +7,10 @@
         <tr>
             <td><div align="center"></div></td>
             <td>
-                <div align="center">E-Drone</div>
-            </td>
-        </tr>
-        <tr>
-            <td><div align="center"></div></td>
-            <td>
                 <div align="center">
-                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="e_drone_and_controller" height="240" width="240">
+                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="e_drone_and_controller" height="480" width="480">
+                    <br>
+                    <div align="center">E-Drone</div>
                 </div>
             </td>
         </tr>
@@ -41,7 +37,6 @@
     </table>
 </div>
 
-[Download]()
 ---
 
 Modified : 2018.7.9
