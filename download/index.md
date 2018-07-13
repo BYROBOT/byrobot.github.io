@@ -10,31 +10,53 @@
         <tr>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" width="160" height="160" alt="ByScratch"><br>
+                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" width="160" height="160" alt="ByScratch">
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/byscratch.png" width="30%" height="30%" alt="ByScratch">
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/entry.png" width="30%" height="30%" alt="Entry">
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/dfxsimulator.gif" width="30%" height="30%" alt="DroneFighter Simulator">
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <img src="/assets/images/products/racingpetrone.jpg" width="30%" height="30%" alt="Racing Petrone">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div align="center">
                     <a href="#Firmware">Firmware</a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/byscratch.png" width="30%" height="30%" alt="ByScratch"><br>
                     <a href="#ByScratch">ByScratch</a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/entry.png" width="30%" height="30%" alt="Entry"><br>
                     <a href="#Entry">Entry</a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/dfxsimulator.gif" width="30%" height="30%" alt="DroneFighter Simulator"><br>
                     <a href="#DroneFighterSimulator">Drone Fighter Simulator</a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/racingpetrone.jpg" width="30%" height="30%" alt="Racing Petrone"><br>
                     <a href="#RacingPetrone">Racing Petrone</a>
                 </div>
             </td>
