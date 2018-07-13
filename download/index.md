@@ -10,26 +10,31 @@
         <tr>
             <td>
                 <div align="center">
+                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" width="160" height="160" alt="ByScratch"><br>
                     <a href="#Firmware">Firmware</a>
                 </div>
             </td>
             <td>
                 <div align="center">
+                    <img src="/assets/images/products/byscratch.png" width="30%" height="30%" alt="ByScratch"><br>
                     <a href="#ByScratch">ByScratch</a>
                 </div>
             </td>
             <td>
                 <div align="center">
+                    <img src="/assets/images/products/entry.png" width="30%" height="30%" alt="Entry"><br>
                     <a href="#Entry">Entry</a>
                 </div>
             </td>
             <td>
                 <div align="center">
+                    <img src="/assets/images/products/dfxsimulator.gif" width="30%" height="30%" alt="DroneFighter Simulator"><br>
                     <a href="#DroneFighterSimulator">Drone Fighter Simulator</a>
                 </div>
             </td>
             <td>
                 <div align="center">
+                    <img src="/assets/images/products/racingpetrone.jpg" width="30%" height="30%" alt="Racing Petrone"><br>
                     <a href="#RacingPetrone">Racing Petrone</a>
                 </div>
             </td>
@@ -94,7 +99,7 @@
                 <div align="center">Drone Main: 50<br>Drone Sub: 18<br>Link: 17</div>
             </td>
             <td>
-                <div align="center">Drone: 1.2.R.8<br>Controller: 1.2.R.5</div>
+                <div align="center">Drone: 1.3.R.1<br>Controller: 1.3.R.1</div>
             </td>
         </tr>
         <tr>
@@ -110,8 +115,8 @@
                 <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneLink_20180305_release_0.zip" target="_blank">Windows(2)</a></div>
             </td>
             <td>
-                <div align="center"><a href="https://drive.google.com/open?id=1AzCg4ask1jCFnYPz-n8FT1dv362BmfKL" target="_blank">Windows</a></div>
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180413_release_0_1.2.R_3.zip" target="_blank">Windows(2)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1YRWiMC7EbaeQJ-1lJEFF4QbIBDaQ-2SI" target="_blank">Windows</a></div>
+                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180713_release_0_1.3.R.1_release_0.zip" target="_blank">Windows(2)</a></div>
             </td>
         </tr>
         <tr>
@@ -368,4 +373,4 @@
 
 ---
 
-Modified : 2018.5.31
+Modified : 2018.7.13
