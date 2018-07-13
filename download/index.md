@@ -10,27 +10,27 @@
         <tr>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="ByScratch">
+                    <a href="#Firmware"><img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="ByScratch"></a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/byscratch.png" alt="ByScratch">
+                    <a href="#ByScratch"><img src="/assets/images/products/byscratch.png" alt="ByScratch"></a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/entry.png" alt="Entry">
+                    <a href="#Entry"><img src="/assets/images/products/entry.png" alt="Entry"></a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/dfxsimulator.gif" alt="DroneFighter Simulator">
+                    <a href="#DroneFighterSimulator"><img src="/assets/images/products/dfxsimulator.gif" alt="DroneFighter Simulator"></a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/racingpetrone.jpg" alt="Racing Petrone">
+                    <a href="#RacingPetrone"><img src="/assets/images/products/racingpetrone.jpg" alt="Racing Petrone"></a>
                 </div>
             </td>
         </tr>
