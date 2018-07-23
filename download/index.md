@@ -121,7 +121,7 @@
                 <div align="center">Drone Main: 50<br>Drone Sub: 18<br>Link: 17</div>
             </td>
             <td>
-                <div align="center">Drone: 1.3.R.1<br>Controller: 1.3.R.2</div>
+                <div align="center">Drone: 1.3.R.2<br>Controller: 1.3.R.2</div>
             </td>
         </tr>
         <tr>
@@ -137,8 +137,8 @@
                 <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneLink_20180305_release_0.zip" target="_blank">Windows(2)</a></div>
             </td>
             <td>
-                <div align="center"><a href="https://drive.google.com/open?id=1kucNFhNyE-uBzk4iUJTwPcIp310MZddo" target="_blank">Windows</a></div>
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180717_release_1.3_2.zip" target="_blank">Windows(2)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1wVFreiSFHyedjRDVR3x3wTi1GA88khEc" target="_blank">Windows</a></div>
+                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180723_release_1.3_3.zip" target="_blank">Windows(2)</a></div>
             </td>
         </tr>
         <tr>
@@ -395,4 +395,4 @@
 
 ---
 
-Modified : 2018.7.17
+Modified : 2018.7.23
