@@ -1,6 +1,6 @@
 **[*petrone_v2* for python](index.md)** / **Examples** / **Control**
 
-Modified : 2018.3.5
+Modified : 2018.7.24
 
 ---
 
@@ -19,11 +19,11 @@ from petrone_v2.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     print("TakeOff")
     drone.sendTakeOff()
-    for i in range(2, 0, -1):
+    for i in range(3, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
@@ -34,8 +34,10 @@ if __name__ == '__main__':
         sleep(0.01)
 
     print("Landing")
-    dataArray = drone.sendLanding()
-    sleep(0.01)
+    drone.sendLanding()
+    for i in range(5, 0, -1):
+        print("{0}".format(i))
+        sleep(1)
 
     drone.close()
 ```
