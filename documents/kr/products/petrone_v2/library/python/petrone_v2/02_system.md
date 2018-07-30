@@ -1,6 +1,6 @@
 **[*petrone_v2* for python](index.md)** / **System**
 
-Modified : 2018.3.5
+Modified : 2018.7.30
 
 ---
 
@@ -101,12 +101,13 @@ class ModeFlight(Enum):
     
     None_               = 0x00
 
-    Ready               = 0x10
-    TakeOff             = 0x11
-    Flight              = 0x12
-    Landing             = 0x13
-    Flip                = 0x14
-    Reverse             = 0x15
+    Start               = 0x10
+    Ready               = 0x11
+    TakeOff             = 0x12
+    Flight              = 0x13
+    Landing             = 0x14
+    Flip                = 0x15
+    Reverse             = 0x16
 
     Stop                = 0x20
 

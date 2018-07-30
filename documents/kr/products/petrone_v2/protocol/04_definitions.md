@@ -1,6 +1,6 @@
 **[PETRONE_V2](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.3.6
+Modified : 2018.7.30
 
 ---
 
@@ -235,6 +235,7 @@ namespace Mode
             
             Ready = 0x10,       // 준비
             
+            Start,              // 이륙 준비
             TakeOff,            // 이륙 (Flight로 자동전환)
             Flight,             // 비행
             Landing,            // 착륙
