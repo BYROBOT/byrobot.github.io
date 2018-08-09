@@ -126,6 +126,23 @@
         </tr>
         <tr>
             <td>
+                <div align="center">Driver</div>
+            </td>
+            <td>
+                <div align="center"><a href="https://drive.google.com/open?id=19bmT3b8a3nEqCXzXk88lMeO7gHxyGZuY" target="_blank">Win7, Win8</a></div>
+                <div align="center">Win 10은 자동 인식</div>
+            </td>
+            <td>
+                <div align="center"><a href="https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip" target="_blank">Petrone Link(CP210x)</a></div>
+            </td>
+            <td>
+                <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 32bit</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 64bit</a></div>
+                <div align="center">Win 10은 자동 인식</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <div align="center">Download</div>
             </td>
             <td>
@@ -395,4 +412,4 @@
 
 ---
 
-Modified : 2018.7.23
+Modified : 2018.8.9

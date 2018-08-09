@@ -1,5 +1,5 @@
 
-# *e_drone* for python
+# *e_drone* for rust
 
  1. [Intro](01_intro.md)
  2. [System](02_system.md)
@@ -19,8 +19,6 @@
 16. [Examples - Input](examples_12_input.md)
 17. [Examples - Error](examples_13_error.md)
 
-[Install Python 3 on macOS](/documents/kr/manual/install_python_3_on_mac_os/)
-
 ---
 
-Modified : 2018.7.6
+Modified : 2018.8.9
