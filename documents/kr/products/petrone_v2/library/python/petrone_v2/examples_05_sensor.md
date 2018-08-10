@@ -1,6 +1,6 @@
 **[*petrone_v2* for python](index.md)** / **Examples** / **Sensor**
 
-Modified : 2018.3.5
+Modified : 2018.8.10
 
 ---
 
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Imu, eventImu)
 
-    # Range 정보 요청
+    # IMU 정보 요청
     drone.sendRequest(DeviceType.Drone, DataType.Imu)
     sleep(0.1)
 
@@ -140,7 +140,7 @@ if __name__ == '__main__':
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Attitude, eventAttitude)
 
-    # Range 정보 요청
+    # 자세 정보 요청
     drone.sendRequest(DeviceType.Drone, DataType.Attitude)
     sleep(0.1)
 
