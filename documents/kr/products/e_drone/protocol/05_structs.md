@@ -353,7 +353,7 @@ namespace Protocol
 | 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
 |:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
 | command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
 
 
 <br>
@@ -383,8 +383,8 @@ namespace Protocol
 | 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
 |:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
 | command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
-| color       | [Light::Color](06_structs_light#Light_Color)                          | -       | 3 Byte   | LED RGB 색상 |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
+| color       | [Light::Color](06_structs_light.md#Light_Color)                          | -       | 3 Byte   | LED RGB 색상 |
 
 
 <br>
@@ -414,8 +414,8 @@ namespace Protocol
 | 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명              |
 |:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:------------------|
 | command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령              |
-| event       | [Protocol::Light::Event](06_structs_light#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트        |
-| colors      | [Light::Colors::Type](06_structs_light#Light_Colors)                  | -       | 1 Byte   | LED 팔레트 인덱스 |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트        |
+| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)                  | -       | 1 Byte   | LED 팔레트 인덱스 |
 
 
 <br>
