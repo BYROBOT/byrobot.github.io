@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.7.5
+Modified : 2018.9.5
 
 ---
 
@@ -63,9 +63,12 @@ namespace ModelNumber
 {
     enum Type
     {
-        //                          PPPPDDII, PPPP(Project Number), DD(Device Type), II(Project Sub Index)
-        Drone_4_Drone_P3        = 0x00041003,       // Drone_4_Drone_P3
+        //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Project Sub Index)
+        Drone_4_Drone_P4        = 0x00041004,       // Drone_4_Drone_P4
+
         Drone_4_Controller_P1   = 0x00042001,       // Drone_4_Controller_P1
+        Drone_4_Controller_P2   = 0x00042002,       // Drone_4_Controller_P2
+
         Drone_4_Link_P0         = 0x00043000,       // Drone_4_Link_P0
     };
 }
@@ -144,10 +147,6 @@ namespace ErrorFlagsForSensor
 
         Flow_NoAnswer               = 0x00001000,   // Flow 센서 응답 없음
         Flow_WrongValue             = 0x00002000,
-
-        Battery_NoAnswer            = 0x00010000,   // 배터리 응답 없음
-        Battery_WrongValue          = 0x00020000,
-        Battery_NotCalibrated       = 0x00040000,   // 배터리 입력값 보정이 완료되지 않음
     };
 }
 ```
@@ -167,9 +166,11 @@ namespace ErrorFlagsForState
 {
     enum Type
     {
-        None                        = 0x00000000,
+        None                            = 0x00000000,
 
-        NotTested                   = 0x00000001,   // 테스트하지 않음
+        NotRegistered                   = 0x00000001,   // 장치 등록이 안됨
+        FlashReadLock_UnLocked          = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
+        BootloaderWriteLock_UnLocked    = 0x00000003,   // 부트로더 영역 쓰기 Lock이 안 걸림
     };
 }
 ```
@@ -198,7 +199,6 @@ namespace Mode
                 Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
                 Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
                 Function    = 0x12, // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-                Rate        = 0x13, // Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음e
                 
                 EndOfType
             };
@@ -260,6 +260,7 @@ namespace Mode
             
             Ready = 0x10,       // 준비
             
+            Start,              // 이륙 준비
             TakeOff,            // 이륙 (Flight로 자동전환)
             Flight,             // 비행
             Landing,            // 착륙
@@ -307,6 +308,7 @@ namespace Mode
 
             NotAvailable,       // 업데이트 불가능 상태(Debug 모드 등)
             RunApplication,     // 어플리케이션 동작 중
+            NotRegistered,      // 등록되지 않은 장치
 
             EndOfType
         };
@@ -477,7 +479,9 @@ namespace Trim
 
 E-DRONE에는 총 4개의 모터가 있으며, 왼쪽 앞 모터부터 각각 0, 1, 2, 3번으로 번호가 부여되어 있습니다.
 
-드론 비행 시에 0번과 2번 모터는 시계방향(Clockwise), 1번과 3번 모터는 반시계방향(Counterclockwise)으로 회전합니다.
+드론 비행 시에 0번과 2번 모터는 시계 방향(Clockwise), 1번과 3번 모터는 반시계 방향(Counterclockwise)으로 회전합니다.
+
+E-DRONE의 모터는 정해진 한 방향으로만 회전합니다.
 
 ```cpp
 namespace Rotation
@@ -551,8 +555,10 @@ namespace FlightEvent
         FlipRear,               // 회전
         FlipLeft,               // 회전
         FlipRight,              // 회전
+
+        Return,                 // 시작 위치로 돌아가기
         
-        ResetHeading = 0xA0,    // 헤딩 리셋(앱솔루트 모드 일 때 현재 heading을 0도로 변경)
+        ResetHeading = 0xA0,    // 헤딩 리셋(Headless 모드 일 때 현재 heading을 0도로 변경)
         
         EndOfType
     };
