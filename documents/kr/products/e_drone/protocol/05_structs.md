@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.7.5
+Modified : 2018.9.5
 
 ---
 
@@ -170,10 +170,10 @@ namespace Protocol
 {
     struct Information
     {
-        u8      modeUpdate;     // 현재 업데이트 모드
+        u8      modeUpdate;     // 업데이트 모드
 
         u32     modelNumber;    // 모델 번호
-        u32     imageVersion;   // 현재 펌웨어의 버젼
+        u32     version;        // 현재 펌웨어의 버젼
 
         u16     year;           // 빌드 년
         u8      month;          // 빌드 월
@@ -184,7 +184,7 @@ namespace Protocol
 
 | 변수 이름     | 형식                                                                | 범위 | 크기     | 설명                |
 |:-------------:|:-------------------------------------------------------------------:|:----:|:--------:|:--------------------|
-| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | -    | 1 Byte   | 업데이트 진행 상황  |
+| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | -    | 1 Byte   | 업데이트 모드       |
 | modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)                  | -    | 4 Byte   | 모델 번호           |
 | version       | [Protocol::Version](#Protocol_Version)                              | -    | 4 Byte   | 펌웨어의 버젼       |
 | year          | uint16_t                                                            | -    | 2 Byte   | 펌웨어 빌드 년      |
@@ -298,19 +298,22 @@ namespace Control
 <br>
 
 
-<a name="Protocol_Command"></a>
-## Protocol::Command
+<a name="Protocol_Command_Command"></a>
+## Protocol::Command::Command
 
 설정 변경
 
 ```cpp
 namespace Protocol
 {
-    struct Command
+    namespace Command
     {
-        u8      commandType;   // 명령 타입
-        u8      option;        // 명령에 대한 옵션
-    };
+        struct Command
+        {
+            u8      commandType;   // 명령 타입
+            u8      option;        // 명령에 대한 옵션
+        };
+    }
 }
 ```
 
@@ -322,6 +325,97 @@ namespace Protocol
 |             | [Headless::Type](04_definitions.md#Headless)                            | -       |          |              |
 |             | [System::Trim::Type](04_definitions.md#Trim)                            | -       |          |              |
 |             | uint8_t                                                                 | -       |          |              |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Command_LightEvent"></a>
+## Protocol::Command::LightEvent
+
+설정 변경 + LED 이벤트
+
+```cpp
+namespace Protocol
+{
+    namespace Command
+    {
+        struct LightEvent
+        {
+            Protocol::Command::Command      command;
+            Protocol::Light::Event          event;
+        };
+    }
+}
+```
+
+| 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
+|:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
+| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
+| event       | [Protocol::Light::Event](06_structs_light#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Command_LightEventColor"></a>
+## Protocol::Command::LightEventColor
+
+설정 변경 + LED 이벤트(RGB)
+
+```cpp
+namespace Protocol
+{
+    namespace Command
+    {
+        struct LightEventColor
+        {
+            Protocol::Command::Command      command;
+            Protocol::Light::Event          event;
+            Light::Color                    color;
+        };
+    }
+}
+```
+
+| 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
+|:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
+| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
+| event       | [Protocol::Light::Event](06_structs_light#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
+| color       | [Light::Color](06_structs_light#Light_Color)                          | -       | 3 Byte   | LED RGB 색상 |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Command_LightEventColors"></a>
+## Protocol::Command::LightEventColors
+
+설정 변경 + LED 이벤트(Palette)
+
+```cpp
+namespace Protocol
+{
+    namespace Command
+    {
+        struct LightEventColors
+        {
+            Protocol::Command::Command      command;
+            Protocol::Light::Event          event;
+            u8                              colors;
+        };
+    }
+}
+```
+
+| 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명              |
+|:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:------------------|
+| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령              |
+| event       | [Protocol::Light::Event](06_structs_light#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트        |
+| colors      | [Light::Colors::Type](06_structs_light#Light_Colors)                  | -       | 1 Byte   | LED 팔레트 인덱스 |
 
 
 <br>
@@ -538,7 +632,7 @@ namespace Protocol
 
 | 변수 이름 | 형식     | 범위         | 크기     | 설명    |
 |:---------:|:--------:|:------------:|:--------:|:--------|
-| weight    | float    | -            | 4 Byte   | 무게   |
+| weight    | float    | 100 ~ 150    | 4 Byte   | 무게   |
 
 
 <br>
@@ -668,10 +762,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                       | 범위      | 크기     | 설명      |
-|:----------:|:------------------------------------------:|:---------:|:--------:|:----------|
+| 변수 이름  | 형식                                          | 범위      | 크기     | 설명      |
+|:----------:|:---------------------------------------------:|:---------:|:--------:|:----------|
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)  | -         | 1 Byte   | 회전 방향 |
-| value      | uint16_t                                   | 0 ~ 4096  | 2 Byte   | 회전 속도 |
+| value      | uint16_t                                      | 0 ~ 4096  | 2 Byte   | 회전 속도 |
 
 
 <br>
@@ -925,8 +1019,8 @@ namespace Protocol
 {
     struct InformationAssembledForController
     {
-        s16     angleRoll;              // 자세 Roll
-        s16     anglePitch;             // 자세 Pitch
+        s8      angleRoll;              // 자세 Roll
+        s8      anglePitch;             // 자세 Pitch
         s16     angleYaw;               // 자세 Yaw
 
         u16     rpm;                    // RPM
@@ -935,8 +1029,8 @@ namespace Protocol
         s16     positionY;              // meter x 10
         s16     positionZ;              // meter x 10
 
-        s16     speedX;                 // meter x 10
-        s16     speedY;                 // meter x 10
+        s8      speedX;                 // meter x 10
+        s8      speedY;                 // meter x 10
 
         u8      rangeHeight;            // meter x 100
 

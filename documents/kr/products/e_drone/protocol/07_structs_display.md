@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Display**
 
-Modified : 2018.7.5
+Modified : 2018.9.5
 
 ---
 
@@ -408,9 +408,9 @@ namespace Protocol
 
 문자열 정렬하여 그리기
 
-화면에 문자열 쓰기. 문자열은 xStart와 xEnd 사이에서 align으로 지정한 위치에 놓인다.
+화면에 문자열 쓰기. 문자열은 xStart와 xEnd 사이에서 align으로 지정한 위치에 놓입니다.
 
-화면에 표시할 문자열은 DrawStringAlign 구조체 뒤에 이어서 ASCII 문자열을 붙여서 전송.
+화면에 표시할 문자열은 DrawStringAlign 구조체 뒤에 이어서 ASCII 문자열을 붙여서 전송합니다.
 
 헤더의 length는 (Protocol::Display::DrawStringAlign 길이 + 화면에 표시할 문자열의 길이) 값을 넣어야 합니다.
 
@@ -441,6 +441,63 @@ namespace Protocol
 | font       | [Display::Font::Type](#Display_Font)     | -             | 1 Byte        | 폰트           |
 | pixel      | [Display::Pixel::Type](#Display_Pixel)   | -             | 1 Byte        | 색상           |
 | message    | ASCII String                             | -             | 30 Byte 이하  | 표시할 문자열  |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Display_DrawImage"></a>
+## Protocol::Display::DrawImage
+
+이미지 그리기
+
+LCD에 기본 문자열 이외의 모양이나 그림을 넣을 때 사용합니다.
+
+세로 8픽셀이 한 바이트이며, 최하위 비트부터 위에서 아래로 그려집니다.
+
+화면에 표시할 이미지 데이터는 DrawImage 구조체 뒤에 이어붙이면 됩니다.
+
+헤더의 length는 (Protocol::Display::DrawImage 길이 + imageArray의 길이) 값을 넣어야 합니다.
+
+
+아래는 직각 삼각형을 배열에 담은 예제입니다.
+
+```
+    // ********
+    //  *******
+    //   ******
+    //    *****
+    //     ****
+    //      ***
+    //       **
+    //        *
+    const u8 triangle[] = { 0x01, 0x03, 0x07, 0x0F, 0x1F, 0x3F, 0x7F, 0xFF };
+```
+
+```cpp
+namespace Protocol
+{
+    namespace Display
+    {
+        struct DrawImage
+        {
+            s16     x;
+            s16     y;
+            s16     width;
+            s16     height;
+        };
+    }
+}
+```
+
+| 변수 이름  | 형식                                     | 범위          | 크기           | 설명           |
+|:----------:|:----------------------------------------:|:-------------:|:--------------:|:---------------|
+| x          | int16_t                                  | -2000 ~ 2000  | 2 Byte         | X축 시작 위치  |
+| y          | int16_t                                  | -2000 ~ 2000  | 2 Byte         | Y축 시작 위치  |
+| width      | int16_t                                  | -2000 ~ 2000  | 2 Byte         | 너비           |
+| height     | int16_t                                  | -2000 ~ 2000  | 2 Byte         | 높이           |
+| imageArray | uint8_t Array                            | -             | 128 Byte 이하  | 이미지 배열    |
 
 
 <br>
