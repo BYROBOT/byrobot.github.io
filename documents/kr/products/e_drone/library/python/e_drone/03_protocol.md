@@ -2075,7 +2075,7 @@ class MotorBlock(ISerializable):
 | 변수 이름  | 형식                               | 범위      | 크기     | 설명           |
 |:----------:|:----------------------------------:|:---------:|:--------:|:---------------|
 | rotation   | [Rotation](02_system.md#Rotation)  | -         | 1 Byte   | 모터 회전 방향 |
-| value      | UInt16                             | 0 ~ 4096  | 2 Byte   | 모터 회전 속도 |
+| value      | UInt16                             | 0 ~ 4095  | 2 Byte   | 모터 회전 속도 |
 
 
 <br>
@@ -2128,7 +2128,7 @@ class MotorSingle(ISerializable):
 |:----------:|:----------------------------------:|:---------:|:--------:|:----------------|
 | target     | UInt8                              | 0 ~ 3     | 1 Byte   | 동작 대상 모터  |
 | rotation   | [Rotation](02_system.md#Rotation)  | -         | 1 Byte   | 모터 회전 방향  |
-| value      | UInt16                             | 0 ~ 4096  | 2 Byte   | 모터 회전 속도  |
+| value      | UInt16                             | 0 ~ 4095  | 2 Byte   | 모터 회전 속도  |
 
 
 <br>

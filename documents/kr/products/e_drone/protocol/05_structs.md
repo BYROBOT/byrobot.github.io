@@ -765,7 +765,7 @@ namespace Protocol
 | 변수 이름  | 형식                                          | 범위      | 크기     | 설명      |
 |:----------:|:---------------------------------------------:|:---------:|:--------:|:----------|
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)  | -         | 1 Byte   | 회전 방향 |
-| value      | uint16_t                                      | 0 ~ 4096  | 2 Byte   | 회전 속도 |
+| value      | uint16_t                                      | 0 ~ 4095  | 2 Byte   | 회전 속도 |
 
 
 <br>
@@ -795,7 +795,7 @@ namespace Protocol
 |:----------:|:--------------------------------------------------:|:---------:|:--------:|:----------------|
 | target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 0 ~ 3     | 1 Byte   | 동작 대상 모터  |
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)       | -         | 1 Byte   | 회전 방향       |
-| value      | uint16_t                                           | 0 ~ 4096  | 2 Byte   | 회전 속도       |
+| value      | uint16_t                                           | 0 ~ 4095  | 2 Byte   | 회전 속도       |
 
 
 <br>

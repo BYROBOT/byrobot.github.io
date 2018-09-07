@@ -413,7 +413,7 @@ namespace Protocol
 ```
 - 데이터 영역에 Protocol::Motor 배열 4개를 사용하여 전송. 차례대로 0, 1, 2, 3 번 모터에 적용함. 순서는 좌측 앞 모터부터 시계 방향. 드론파이터는 모터 역회전이 안되는 관계로 Motor::Direction::None 또는 Motor::Direction::Forward 사용. Motor::Direction::None 사용 시 해당 값은 모터 제어에 적용하지 않음.
 - direction : [Motor::Direction::Type](04_definitions.md#Motor_Direction)
-- value : 0 ~ 4096
+- value : 0 ~ 4095
 
 
 <br>
@@ -435,7 +435,7 @@ namespace Protocol
 - 지정한 번호의 모터를 작동시킬 때 사용. 드론파이터는 모터 역회전이 안되는 관계로 Motor::Direction::None 또는 Motor::Direction::Forward 사용. Motor::Direction::None 사용 시 해당 값은 모터 제어에 적용하지 않음.
 - target : [Motor::Part::Type](04_definitions.md#Motor_Part)
 - direction : [Motor::Direction::Type](04_definitions.md#Motor_Direction)
-- value : 0 ~ 4096
+- value : 0 ~ 4095
 
 
 <br>

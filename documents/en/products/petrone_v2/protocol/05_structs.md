@@ -727,7 +727,7 @@ namespace Protocol
 | adjustGradient          | float    | -            | 4 Byte   | adjust Gradient                       |
 | adjustYIntercept        | float    | -            | 4 Byte   | adjust Y Intercept     |
 | flagBatteryCalibration  | uint8_t  | 0 / 1        | 1 Byte   | flag of Battery calibration complete |
-| batteryRaw              | uint16_t | 0 ~ 4096     | 2 Byte   | battery ADC Raw value  |
+| batteryRaw              | uint16_t | 0 ~ 4095     | 2 Byte   | battery ADC Raw value  |
 | batteryPercent          | float    | 0 ~ 100.0    | 4 Byte   | battery % value |
 | voltage                 | float    | 0 ~ 4.5      | 4 Byte   | battery power to voltage conversion value |
 
@@ -844,7 +844,7 @@ namespace Protocol
 | Variable Name | Type  | Range      | Size    | Description |
 |:----------:|:------------------------------------------:|:---------:|:--------:|:----------|
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)  | -         | 1 Byte   | rotate direction |
-| value      | uint16_t                                   | 0 ~ 4096  | 2 Byte   | rotate speed |
+| value      | uint16_t                                   | 0 ~ 4095  | 2 Byte   | rotate speed |
 
 
 <br>
@@ -873,7 +873,7 @@ namespace Protocol
 |:----------:|:--------------------------------------------------:|:---------:|:--------:|:----------------|
 | target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 0 ~ 3     | 1 Byte   | target motor part |
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)       | -         | 1 Byte   | rotate direction |
-| value      | uint16_t                                           | 0 ~ 4096  | 2 Byte   | rotate speed |
+| value      | uint16_t                                           | 0 ~ 4095  | 2 Byte   | rotate speed |
 
 
 <br>

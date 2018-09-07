@@ -1125,7 +1125,7 @@ class Battery(ISerializable):
 | gradient                | Int16  | -            | 2 Byte   | gradient                          |
 | yIntercept              | Int16  | -            | 2 Byte   | y-intercept                       |
 | flagBatteryCalibration  | Bool   | True / False | 1 Byte   | battery calibration complete flag |
-| batteryRaw              | Int32  | 0 ~ 4096     | 4 Byte   | battery ADC Raw                   |
+| batteryRaw              | Int32  | 0 ~ 4095     | 4 Byte   | battery ADC Raw                   |
 | batteryPercent          | Int8   | 0 ~ 100      | 1 Byte   | battery remain percent            |
 | voltage                 | Int16  | 0 ~ 4.5      | 2 Byte   | battery power Voltage             |
 
@@ -1151,8 +1151,8 @@ class MotorBlock(ISerializable):
 
 | Variable Name | Type   | Range    | Size   | Description                  |
 |:-------------:|:------:|:--------:|:------:|:-----------------------------|
-| forward       | UInt16 | 0 ~ 4096 | 2 Byte | Moter forward rotation speed |
-| reverse       | UInt16 | 0 ~ 4096 | 2 Byte | Moter reverse rotation speed |
+| forward       | UInt16 | 0 ~ 4095 | 2 Byte | Moter forward rotation speed |
+| reverse       | UInt16 | 0 ~ 4095 | 2 Byte | Moter reverse rotation speed |
 
 
 <br>

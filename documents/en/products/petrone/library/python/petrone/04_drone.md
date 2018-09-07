@@ -550,10 +550,10 @@ def sendMotor(self, motor0, motor1, motor2, motor3):
 
 | Variable name             | Type and Range                                    | Description                  |
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------|
-| motor0                    | 0 ~ 4096                                          | Front left moter speed       |
-| motor1                    | 0 ~ 4096                                          | Front right moter speed      |
-| motor2                    | 0 ~ 4096                                          | Rear right moter speed       |
-| motor3                    | 0 ~ 4096                                          | Rear left moter speed        |
+| motor0                    | 0 ~ 4095                                          | Front left moter speed       |
+| motor1                    | 0 ~ 4095                                          | Front right moter speed      |
+| motor2                    | 0 ~ 4095                                          | Rear right moter speed       |
+| motor3                    | 0 ~ 4095                                          | Rear left moter speed        |
 
 
 <br>

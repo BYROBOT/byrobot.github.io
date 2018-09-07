@@ -2235,7 +2235,7 @@ class Battery(ISerializable):
 | adjustGradient          | Float32  | -            | 4 Byte   | 기울기 조정값                       |
 | adjustYIntercept        | Float32  | -            | 4 Byte   | Y 절편 조정값                       |
 | flagBatteryCalibration  | Bool     | True / False | 1 Byte   | 배터리 캘리브레이션 완료 여부       |
-| batteryRaw              | Int16    | 0 ~ 4096     | 2 Byte   | 배터리 ADC Raw 값                   |
+| batteryRaw              | Int16    | 0 ~ 4095     | 2 Byte   | 배터리 ADC Raw 값                   |
 | batteryPercent          | Float32  | 0 ~ 100.0    | 4 Byte   | 배터리 % 값                         |
 | voltage                 | Float32  | 0 ~ 4.5      | 4 Byte   | 배터리 출력값을 Voltage로 변환한 값 |
 
@@ -2341,7 +2341,7 @@ class MotorBlock(ISerializable):
 | 변수 이름  | 형식                               | 범위      | 크기     | 설명           |
 |:----------:|:----------------------------------:|:---------:|:--------:|:---------------|
 | rotation   | [Rotation](02_system.md#Rotation)  | -         | 1 Byte   | 모터 회전 방향 |
-| value      | UInt16                             | 0 ~ 4096  | 2 Byte   | 모터 회전 속도 |
+| value      | UInt16                             | 0 ~ 4095  | 2 Byte   | 모터 회전 속도 |
 
 
 <br>
@@ -2394,7 +2394,7 @@ class MotorSingle(ISerializable):
 |:----------:|:----------------------------------:|:---------:|:--------:|:----------------|
 | target     | UInt8                              | 0 ~ 3     | 1 Byte   | 동작 대상 모터  |
 | rotation   | [Rotation](02_system.md#Rotation)  | -         | 1 Byte   | 모터 회전 방향  |
-| value      | UInt16                             | 0 ~ 4096  | 2 Byte   | 모터 회전 속도  |
+| value      | UInt16                             | 0 ~ 4095  | 2 Byte   | 모터 회전 속도  |
 
 
 <br>

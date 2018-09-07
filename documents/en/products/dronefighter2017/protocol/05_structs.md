@@ -420,7 +420,7 @@ namespace Protocol
 - Transport using 4 Protocol::Motor arrays in the data area. Applied to motors 0, 1, 2, 3. The order is from the left front motor to the clockwise. Drone Fighter 2017r can not reverse the motor ; these values are not applicable for motor control when using Motor::Direction:::None or Moto::Direction::Direction::None.
 
 - direction : [Motor::Direction::Type](04_definitions.md#Motor_Direction)
-- value : 0 ~ 4096
+- value : 0 ~ 4095
 
 
 <br>
@@ -443,7 +443,7 @@ namespace Protocol
 - Used to operate motor of specified number. Drone Fighter 2017 can not reverse the motor ; these values are not applicable for motor control when using Motor::Direction:::None or Moto::Direction::Direction::None.
 - target : [Motor::Part::Type](04_definitions.md#Motor_Part)
 - direction : [Motor::Direction::Type](04_definitions.md#Motor_Direction)
-- value : 0 ~ 4096
+- value : 0 ~ 4095
 
 
 <br>

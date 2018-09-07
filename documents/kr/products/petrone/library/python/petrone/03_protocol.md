@@ -1165,7 +1165,7 @@ class Battery(ISerializable):
 | gradient                | Int16  | -            | 2 Byte   | 기울기                              |
 | yIntercept              | Int16  | -            | 2 Byte   | Y 절편                              |
 | flagBatteryCalibration  | Bool   | True / False | 1 Byte   | 배터리 캘리브레이션 완료 여부       |
-| batteryRaw              | Int32  | 0 ~ 4096     | 4 Byte   | 배터리 ADC Raw 값                   |
+| batteryRaw              | Int32  | 0 ~ 4095     | 4 Byte   | 배터리 ADC Raw 값                   |
 | batteryPercent          | Int8   | 0 ~ 100      | 1 Byte   | 배터리 % 값                         |
 | voltage                 | Int16  | 0 ~ 4.5      | 2 Byte   | 배터리 출력값을 Voltage로 변환한 값 |
 
@@ -1193,8 +1193,8 @@ class MotorBlock(ISerializable):
 
 | 변수 이름  | 형식        | 범위      | 크기     | 설명                     |
 |:----------:|:-----------:|:---------:|:--------:|:-------------------------|
-| forward    | UInt16      | 0 ~ 4096  | 2 Byte   | 모터 정방향 회전 입력 값 |
-| reverse    | UInt16      | 0 ~ 4096  | 2 Byte   | 모터 역방향 회전 입력 값 |
+| forward    | UInt16      | 0 ~ 4095  | 2 Byte   | 모터 정방향 회전 입력 값 |
+| reverse    | UInt16      | 0 ~ 4095  | 2 Byte   | 모터 역방향 회전 입력 값 |
 
 
 <br>

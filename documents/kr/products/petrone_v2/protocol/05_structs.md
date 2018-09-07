@@ -755,7 +755,7 @@ namespace Protocol
 | adjustGradient          | float    | -            | 4 Byte   | 기울기 조정값                       |
 | adjustYIntercept        | float    | -            | 4 Byte   | Y 절편 조정값                       |
 | flagBatteryCalibration  | uint8_t  | 0 / 1        | 1 Byte   | 배터리 캘리브레이션 완료 여부       |
-| batteryRaw              | uint16_t | 0 ~ 4096     | 2 Byte   | 배터리 ADC Raw 값                   |
+| batteryRaw              | uint16_t | 0 ~ 4095     | 2 Byte   | 배터리 ADC Raw 값                   |
 | batteryPercent          | float    | 0 ~ 100.0    | 4 Byte   | 배터리 % 값                         |
 | voltage                 | float    | 0 ~ 4.5      | 4 Byte   | 배터리 출력값을 Voltage로 변환한 값 |
 
@@ -879,7 +879,7 @@ namespace Protocol
 | 변수 이름  | 형식                                       | 범위      | 크기     | 설명      |
 |:----------:|:------------------------------------------:|:---------:|:--------:|:----------|
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)  | -         | 1 Byte   | 회전 방향 |
-| value      | uint16_t                                   | 0 ~ 4096  | 2 Byte   | 회전 속도 |
+| value      | uint16_t                                   | 0 ~ 4095  | 2 Byte   | 회전 속도 |
 
 
 <br>
@@ -909,7 +909,7 @@ namespace Protocol
 |:----------:|:--------------------------------------------------:|:---------:|:--------:|:----------------|
 | target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 0 ~ 3     | 1 Byte   | 동작 대상 모터  |
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)       | -         | 1 Byte   | 회전 방향       |
-| value      | uint16_t                                           | 0 ~ 4096  | 2 Byte   | 회전 속도       |
+| value      | uint16_t                                           | 0 ~ 4095  | 2 Byte   | 회전 속도       |
 
 
 <br>
