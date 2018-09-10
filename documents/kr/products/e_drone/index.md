@@ -28,7 +28,7 @@
         </tr>
         <tr>
             <td><div align="center">User Manual</div></td>
-            <td><div align="center"><a href="documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
+            <td><div align="center"><a href="/documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Protocol</div></td>
