@@ -1,6 +1,6 @@
 **E-Drone User Manual**
 
-Modified : 2019.9.10
+Modified : 2018.9.10
 
 ---
 
