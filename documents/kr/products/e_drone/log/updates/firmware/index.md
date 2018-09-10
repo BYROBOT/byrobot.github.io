@@ -1,6 +1,6 @@
 **E-DRONE update log**
 
-Modified : 2018.7.10
+Modified : 2018.9.10
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2018.7.10
 
 
 <br>
+
+
+# 2018.9.10
+
+- **Drone: 0.2.1**
+- **Controller: 0.2.1**
+
+> - 장치 등록 절차 변경
+> - 여러 형태로 나누어져 있던 LED 설정 변경을 LightMode, LightEvent, LightDefault로 통합
+> - Protocol의 DataType의 순서를 다시 정리(기존의 펌웨어 업데이트, 모니터 등의 프로그램을 사용할 수 없음)
+> - 조종기, 드론의 기본색 설정 변경 가능
+
+<br>
+
+---
 
 
 # 2018.7.10
