@@ -78,7 +78,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 | 번호 | 짧게 눌렀을 때                              | 길게 눌렀을 때                           |
 |:----:|:--------------------------------------------|:-----------------------------------------|
-| 1    | 기능 없음                                   | -                                        |
+| 1    | -                                           | -                                        |
 | 2    | -                                           | 전원 ON/OFF                              |
 | 3    | 메뉴 위로 이동                              | -                                        |
 | 4    | 메뉴 왼쪽으로 이동                          | -                                        |
@@ -112,10 +112,10 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 |                   | CONTROLLER                                | 조종기 LED 기본 색 설정 변경                      |
 | CONTROL           | ATTITUDE                                  | 자세 제어                                         |
 |                   | POSITION                                  | 위치 제어                                         |
-| MODE              | MODE 1                                    | L↕ Elevator, L↔ Rudder, R↕ Throttle, L↔, Aileron  |
-|                   | MODE 2                                    | L↕ Throttle, L↔ Rudder, R↕ Elevator, L↔, Aileron  |
-|                   | MODE 3                                    | L↕ Elevator, L↔ Aileron, R↕ Throttle, L↔, Rudder  |
-|                   | MODE 4                                    | L↕ Throttle, L↔ Aileron, R↕ Elevator, L↔, Rudder  |
+| MODE              | MODE 1                                    | L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔, Aileron  |
+|                   | MODE 2                                    | L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔, Aileron  |
+|                   | MODE 3                                    | L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔, Rudder  |
+|                   | MODE 4                                    | L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔, Rudder  |
 | HEADLESS          | HEADLESS                                  | 헤드리스(방향 고정)                               |
 |                   | NORMAL                                    | 일반(드론의 현재 방향 기준)                       |
 | SPEED             | S1 (50%)                                  | 속도 1단계 (50 %)                                 |
