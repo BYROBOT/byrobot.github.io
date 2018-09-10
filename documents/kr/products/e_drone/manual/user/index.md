@@ -96,103 +96,48 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 <br>
 
 
-# 2. 조종기 펌웨어 업데이트
+# 3. 설정 화면의 메뉴 구성
 
-<b>(1) 조종기에 USB 커넥터를 연결합니다.</b>
+| 1단계             | 2단계                                     | 설명                                              |
+|:------------------|:------------------------------------------|---------------------------------------------------|
+| DISPLAY           | 높이-자세-RPM                             | -                                                 |
+|                   | 높이-방향-RPM-자세-고도-위치              | -                                                 |
+|                   | 속도-위치-자세                            | -                                                 |
+|                   | 자세-높이                                 | -                                                 |
+|                   | 위치-트림                                 | -                                                 |
+|                   | RF 정보 및 상태                           | -                                                 |
+|                   | 조이스틱 입력 값                          | -                                                 |
+| LIGHT             | DRONE                                     | 드론 LED 기본 색 설정 변경                        |
+|                   | CONTROLLER                                | 조종기 LED 기본 색 설정 변경                      |
+| CONTROL           | ATTITUDE                                  | 자세 제어                                         |
+|                   | POSITION                                  | 위치 제어                                         |
+| MODE              | MODE 1                                    | L↕ Elevator, L↔ Rudder, R↕ Throttle, L↔, Aileron  |
+|                   | MODE 2                                    | L↕ Throttle, L↔ Rudder, R↕ Elevator, L↔, Aileron  |
+|                   | MODE 3                                    | L↕ Elevator, L↔ Aileron, R↕ Throttle, L↔, Rudder  |
+|                   | MODE 4                                    | L↕ Throttle, L↔ Aileron, R↕ Elevator, L↔, Rudder  |
+| HEADLESS          | HEADLESS                                  | 헤드리스(방향 고정)                               |
+|                   | NORMAL                                    | 일반(드론의 현재 방향 기준)                       |
+| SPEED             | S1 (50%)                                  | 속도 1단계 (50 %)                                 |
+|                   | S2 (75%)                                  | 속도 2단계 (75 %)                                 |
+|                   | S3 (100%)                                 | 속도 3단계 (100 %)                                |
+| WEIGHT            | 100g ~ 150g                               | 드론 + 추가 장치의 무게                           |
+| FUNCTION          | SENSOR RESET                              | 드론의 자이로 바이어스 리셋                       |
+|                   | PAIRING                                   | 페어링                                            |
+| INFORMATION       | COUNT                                     | 비행 시간 및 이벤트 카운트 값 표시                |
+|                   | BIAS                                      | 가속도, 자이로 바이어스 값 표시                   |
+|                   | TRIM                                      | Trim 값 표시                                      |
+|                   | MOTION                                    | IMU 센서 데이터를 연산하여 변환한 결과 표시       |
+|                   | ALTITUDE                                  | 높이-고도와 관련된 센서 데이터 표시               |
+|                   | POSITION                                  | 위치 데이터 표시                                  |
+|                   | ADDRESS/D                                 | 드론의 고유번호 표시                              |
+|                   | ADDRESS/C                                 | 조종기의 고유번호 표시                            |
+|                   | BOOT                                      | 조종기의 부트 정보 및 등록 여부 표시              |
+|                   | CRC32                                     | 드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시 |
 
-<br>
-
-<b>(2) 조종기 우측 상단의 빨간색 버튼을 누른 채로, 하단 중앙의 스위치를 <i>ON</i>에서 <i>USB</i>로 밀어서 전원을 켭니다.</b>
-
-<div align="center">
-    <img src="1_controller_1_off.jpg" alt="controller off">
-</div>
-<br>
-
-<b>(3) 조종기의 전원이 켜지면서 부트로더의 펌웨어 업데이트 모드를 시작합니다.</b>
-
-<div align="center">
-    <img src="1_controller_2_bootloader.jpg" alt="controller bootloader">
-    <p>부트로더 펌웨어 업데이트 모드 진입 화면</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="1_controller_3_info.jpg" alt="controller bootloader information">
-    <p>부트로더 요약 정보 표시 화면</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="1_controller_4_ready.jpg" alt="controller update ready">
-    <p>조종기 펌웨어 업데이트 대기 화면</p>
-</div>
-<br>
-
-<b>(4) 펌웨어 업데이트 프로그램을 실행합니다.</b>
-
-<div align="center">
-    <img src="1_controller_5_folder.jpg" alt="run firmware update program">
-    <p>펌웨어 업데이트 프로그램</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="1_controller_6_firmware_folder.jpg" alt="firmware folder">
-    <p>펌웨어 파일 폴더</p>
-</div>
-<br>
-
-<b>(5) 펌웨어를 선택합니다. 처음 실행하면 기본으로 조종기 펌웨어가 선택되어 있습니다.</b>
-
-<div align="center">
-    <img src="1_controller_7_firmware_updater.jpg" alt="run firmware update program">
-    <p>펌웨어 업데이트 프로그램 실행 화면</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="1_controller_8_firmware_updater_combobox_open.jpg" alt="firmware folder">
-    <p>펌웨어 파일 선택 콤보박스</p>
-</div>
-<br>
-
-<b>(6) SCAN 버튼을 눌러 시리얼 포트 검색을 실행합니다. 그 후 SCAN 버튼 하단의 콤보 박스를 눌러 원하는 시리얼 포트를 선택합니다. 조종기를 먼저 연결한 후 프로그램을 실행하였다면 이 단계를 건너뛰셔도 됩니다.</b>
-
-<div align="center">
-    <img src="1_controller_9_scan_button.jpg" alt="scan">
-    <p>스캔 버튼</p>
-</div>
-<br>
-
-<b>(7) UPDATE 버튼을 눌러 펌웨어 업데이트를 시작합니다.</b>
-
-<div align="center">
-    <img src="1_controller_10_update_button.jpg" alt="update">
-    <p>업데이트 버튼</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="1_controller_11_firmware_updater_update.jpg" alt="update">
-    <p>업데이트 진행 화면</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="1_controller_12_controller_graph.jpg" alt="update controller">
-    <p>조종기 업데이트 진행 상태</p>
-</div>
-<br>
-
-<b>(8) 업데이트가 완료되면 조종기는 자동으로 재시작합니다. USB 연결이 정상적으로 되려면 전원을 껐다가 다시 켜시기 바랍니다.</b>
-
-<div align="center">
-    <img src="1_controller_13_updatecomplete.jpg" alt="update complete">
-    <p>조종기 업데이트 완료 상태</p>
-</div>
-<br>
-
+ * Elevator: 앞뒤 이동(Pitch)
+ * Rudder: 좌우 회전(Yaw)
+ * Throttle: 위아래 이동(Throttle)
+ * Aileron: 좌우 이동(Roll)
 
 <br>
 
