@@ -16,12 +16,12 @@ Modified : 2019.9.10
 # 1. 버튼 구성
 
 <div align="center">
-    <img src="../images/20180910_110309.jpg" alt="controller front">
+    <img src="./images/20180910_110309.jpg" alt="controller front">
 </div>
 <br>
 
 <div align="center">
-    <img src="../images/20180910_110411.jpg" alt="controller top">
+    <img src="./images/20180910_110411.jpg" alt="controller top">
 </div>
 <br>
 
