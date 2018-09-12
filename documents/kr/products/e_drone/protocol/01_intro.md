@@ -184,12 +184,12 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 # 4. 시리얼 통신 설정
 
 
-|영역 | 설정값 |
-|:---:|:---:|
+|영역       | 설정값 |
+|:---------:|:------:|
 | Baud Rate | 115200 |
-| Parity | None      |
-| Data Bits | 8 |
-| Stop Bits | 1 |
+| Parity    | None   |
+| Data Bits | 8      |
+| Stop Bits | 1      |
 
 
 <br>

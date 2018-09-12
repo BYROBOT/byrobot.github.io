@@ -113,7 +113,7 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Trim">Trim 변경 테스트</a>
+## <a name="TrimIncDec">TrimIncDec 변경 테스트</a>
 
 ```py
 from time import sleep
@@ -122,8 +122,8 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventTrimFlight(trimFlight):
-    print("{0}, {1}, {2}, {3}".format(trimFlight.roll, trimFlight.pitch, trimFlight.yaw, trimFlight.throttle))
+def eventTrim(trim):
+    print("{0}, {1}, {2}, {3}".format(trim.roll, trim.pitch, trim.yaw, trim.throttle))
 
 
 if __name__ == '__main__':
@@ -133,46 +133,46 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.TrimFlight, eventTrimFlight)
+    drone.setEventHandler(DataType.Trim, eventTrim)
 
 
     # 트림 설정 변경
     print("Roll Increase")
-    drone.sendTrim(Trim.RollIncrease)
+    drone.sendTrim(TrimIncDec.RollIncrease)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimFlight)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.2)
 
 
     # 트림 설정 변경
     print("Pitch Increase")
-    drone.sendTrim(Trim.PitchIncrease)
+    drone.sendTrim(TrimIncDec.PitchIncrease)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimFlight)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.2)
 
 
     # 트림 설정 변경
     print("Pitch Decrease")
-    drone.sendTrim(Trim.PitchDecrease)
+    drone.sendTrim(TrimIncDec.PitchDecrease)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimFlight)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.2)
 
 
     # 트림 설정 변경
     print("Trim Reset")
-    drone.sendTrim(Trim.Reset)
+    drone.sendTrim(TrimIncDec.Reset)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimFlight)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.2)
 
 
@@ -188,7 +188,7 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="TrimFlight">드론 TrimFlight 설정 변경 후 확인</a>
+## <a name="Trim">드론 Trim 설정 변경 후 확인</a>
 
 ```py
 from time import sleep
@@ -197,8 +197,8 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventTrimFlight(trimFlight):
-    print("{0}, {1}, {2}, {3}".format(trimFlight.roll, trimFlight.pitch, trimFlight.yaw, trimFlight.throttle))
+def eventTrim(trim):
+    print("{0}, {1}, {2}, {3}".format(trim.roll, trim.pitch, trim.yaw, trim.throttle))
 
 
 if __name__ == '__main__':
@@ -208,24 +208,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.TrimFlight, eventTrimFlight)
+    drone.setEventHandler(DataType.Trim, eventTrim)
 
 
     # 드론 비행 트림 설정 변경
-    drone.sendTrimFlight(10, 20, 30, 40)
+    drone.sendTrim(10, 20, 30, 40)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimFlight)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.1)
 
 
     # 드론 비행 트림 설정 변경
-    drone.sendTrimFlight(0, 0, 0, 0)
+    drone.sendTrim(0, 0, 0, 0)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.TrimFlight)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.1)
 
 

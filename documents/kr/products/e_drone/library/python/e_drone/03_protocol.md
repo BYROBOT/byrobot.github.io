@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2018.7.6
+Modified : 2018.9.12
 
 ---
 
@@ -24,20 +24,20 @@ class DataType(Enum):
     
     Ping                        = 0x01      # 통신 확인
     Ack                         = 0x02      # 데이터 수신에 대한 응답
-    Error                       = 0x03      # 오류(reserve 비트 플래그는 추후에 지정)
+    Error                       = 0x03      # 오류(reserve, 비트 플래그는 추후에 지정)
     Request                     = 0x04      # 지정한 타입의 데이터 요청
     Message                     = 0x05      # 문자열 데이터
-    Reserved_1                  = 0x06      # 예약
-    SystemInformation           = 0x07      # 시스템 정보
-    Monitor                     = 0x08      # 디버깅용 값 배열 전송. 첫번째 바이트에 타입 두 번째 바이트에 페이지 지정(수신 받는 데이터의 저장 경로 구분)
-    SystemCount                 = 0x09      # 시스템 카운트
-    Information                 = 0x0A      # 장치 정보
-    UpdateLocation              = 0x0B      # 펌웨어 업데이트 위치 정정
-    Update                      = 0x0C      # 펌웨어 업데이트
-    Encrypt                     = 0x0D      # 펌웨어 암호화
-    Address                     = 0x0E      # 장치 주소
-    Administrator               = 0x0F      # 관리자 권한 획득
-    Control                     = 0x10      # 조종 명령
+    Address                     = 0x06      # 장치 주소(MAC이 있는 경우 MAC) 혹은 고유번호(MAC이 없는 경우 UUID)
+    Information                 = 0x07      # 펌웨어 및 장치 정보
+    Update                      = 0x08      # 펌웨어 업데이트
+    UpdateLocation              = 0x09      # 펌웨어 업데이트 위치 정정
+    Encrypt                     = 0x0A      # 펌웨어 암호화
+    SystemCount                 = 0x0B      # 시스템 카운트
+    SystemInformation           = 0x0C      # 시스템 정보
+    Registration                = 0x0D      # 제품 등록
+    Administrator               = 0x0E      # 관리자 권한 획득
+    Monitor                     = 0x0F      # 디버깅용 값 배열 전송. 첫번째 바이트에 타입, 두 번째 바이트에 페이지 지정(수신 받는 데이터의 저장 경로 구분)
+    Control                     = 0x10      # 조종
 
     Command                     = 0x11      # 명령
     Pairing                     = 0x12      # 페어링
@@ -45,29 +45,17 @@ class DataType(Enum):
 
     # Light
     LightManual                 = 0x20      # LED 수동 제어
-
-    LightMode                   = 0x21      # LED 모드 지정
-    LightModeCommand            = 0x22      # LED 모드 커맨드
-    LightModeColor              = 0x23      # LED 모드 3색 직접 지정
-    LightModeColorCommand       = 0x24      # LED 모드 3색 직접 지정 커맨드
-    LightModeColors             = 0x25      # LED 모드 팔레트의 색상으로 지정
-    LightModeColorsCommand      = 0x26      # LED 모드 팔레트의 색상으로 지정 커맨드
-
-    LightEvent                  = 0x27      # LED 이벤트
-    LightEventCommand           = 0x28      # LED 이벤트 커맨드
-    LightEventColor             = 0x29      # LED 이벤트 3색 직접 지정
-    LightEventColorCommand      = 0x2A      # LED 이벤트 3색 직접 지정 커맨드
-    LightEventColors            = 0x2B      # LED 이벤트 팔레트의 색상으로 지정
-    LightEventColorsCommand     = 0x2C      # LED 이벤트 팔레트의 색상으로 지정 커맨드
-
-    LightModeDefaultColor       = 0x2D      # LED 초기 모드 3색 직접 지정
+    LightMode                   = 0x21      # LED 모드
+    LightEvent                  = 0x22      # LED 이벤트
+    LightDefault                = 0x23      # LED 초기 모드
 
     # 상태, 센서
     State                       = 0x40      # 드론의 상태(비행 모드 방위기준 배터리량)
     Attitude                    = 0x41      # 드론의 자세(Angle)
-    Altitude                    = 0x42      # 높이, 고도
-    Motion                      = 0x43      # Motion 센서 데이터(IMU)
-    Flow                        = 0x44      # Flow
+    Position                    = 0x42      # 위치
+    Altitude                    = 0x43      # 높이, 고도
+    Motion                      = 0x44      # Motion 센서 데이터(IMU)
+    Flow                        = 0x45      # Flow 센서 RAW 데이터
 
     # 설정
     Count                       = 0x50      # 카운트
@@ -141,6 +129,9 @@ class CommandType(Enum):
 
     FlightEvent             = 0x07      # 비행 이벤트 실행
 
+    # 관리자
+    ClearCounter            = 0xA0      # 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
+
     # Navigation
     NavigationTargetClear   = 0xE0      # 네비게이션 목표점 초기화
     NavigationStart         = 0xE1      # 네비게이션 시작(처음부터)
@@ -153,7 +144,7 @@ class CommandType(Enum):
     GpsRtkBase              = 0xEA
     GpsRtkRover             = 0xEB
 
-    EndOfType               = 0xA2
+    EndOfType               = 0xEC
 ```
 
 
@@ -432,36 +423,6 @@ class Address(ISerializable):
 <br>
 
 
-## <a name="Command">Command</a>
-
-명령
-
-드론 또는 조종기에 명령을 전달할 때 사용합니다.
-
-option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
-
-```py
-class Command(ISerializable):
-
-    def __init__(self):
-        self.commandType    = CommandType.None_
-        self.option         = 0
-```
-
-| 변수 이름      | 형식                                                 | 범위   | 크기     | 설명       |
-|:--------------:|:----------------------------------------------------:|:------:|:--------:|:-----------|
-| commandType    | [CommandType](#CommandType)                          | -      | 1 Byte   | 명령 타입  |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | -      | 1 Byte   | 옵션       |
-|                | [FlightEvent](02_system.md#FlightEvent)              | -      | 1 Byte   |            |
-|                | [Headless](02_system.md#Headless)                    | -      | 1 Byte   |            |
-|                | [Trim](02_system.md#Trim)                            | -      | 1 Byte   |            |
-|                | UInt8                                                | -      | 1 Byte   |            |
-
-
-<br>
-<br>
-
-
 ## <a name="Pairing">Pairing</a>
 
 페어링
@@ -518,11 +479,115 @@ class Rssi(ISerializable):
 <br>
 
 
+## <a name="Command">Command</a>
+
+명령
+
+드론 또는 조종기에 명령을 전달할 때 사용합니다.
+
+option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
+
+```py
+class Command(ISerializable):
+
+    def __init__(self):
+        self.commandType    = CommandType.None_
+        self.option         = 0
+```
+
+| 변수 이름      | 형식                                                 | 범위   | 크기     | 설명       |
+|:--------------:|:----------------------------------------------------:|:------:|:--------:|:-----------|
+| commandType    | [CommandType](#CommandType)                          | -      | 1 Byte   | 명령 타입  |
+| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | -      | 1 Byte   | 옵션       |
+|                | [FlightEvent](02_system.md#FlightEvent)              | -      | 1 Byte   |            |
+|                | [Headless](02_system.md#Headless)                    | -      | 1 Byte   |            |
+|                | [TrimIncDec](02_system.md#TrimIncDec)                | -      | 1 Byte   |            |
+|                | UInt8                                                | -      | 1 Byte   |            |
+
+
+<br>
+<br>
+
+
+## <a name="CommandLightEvent">CommandLightEvent</a>
+
+명령 + LED 이벤트
+
+드론 또는 조종기에 명령과 함께 LED 이벤트를 전달할 때 사용합니다.
+
+```py
+class CommandLightEvent(ISerializable):
+
+    def __init__(self):
+        self.command    = Command()
+        self.event      = LightEvent()
+```
+
+| 변수 이름   | 형식                                                               | 범위  | 크기     | 설명           |
+|:-----------:|:------------------------------------------------------------------:|:-----:|:--------:|:---------------|
+| command     | [Command](#Command)                                                | -     | 2 Byte   | 명령           |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트     |
+
+
+<br>
+<br>
+
+
+## <a name="CommandLightEventColor">CommandLightEventColor</a>
+
+명령 + LED 이벤트(RGB)
+
+드론 또는 조종기에 명령과 함께 LED 이벤트(RGB)를 전달할 때 사용합니다.
+
+```py
+class CommandLightEventColor(ISerializable):
+
+    def __init__(self):
+        self.command    = Command()
+        self.event      = LightEvent()
+        self.color      = Color()
+```
+
+| 변수 이름   | 형식                                                               | 범위  | 크기     | 설명           |
+|:-----------:|:------------------------------------------------------------------:|:-----:|:--------:|:---------------|
+| command     | [Command](#Command)                                                | -     | 2 Byte   | 명령           |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트     |
+| color       | [Light::Color](06_structs_light.md##Light_Color)                   | -     | 3 Byte   | LED RGB 색상   |
+
+
+<br>
+<br>
+
+
+## <a name="CommandLightEventColors">CommandLightEventColors</a>
+
+명령 + LED 이벤트(Palette)
+
+드론 또는 조종기에 명령과 함께 LED 이벤트(Palette)를 전달할 때 사용합니다.
+
+```py
+class CommandLightEventColors(ISerializable):
+
+    def __init__(self):
+        self.command    = Command()
+        self.event      = LightEvent()
+        self.colors     = Colors.Black
+```
+
+| 변수 이름   | 형식                                                               | 범위  | 크기     | 설명              |
+|:-----------:|:------------------------------------------------------------------:|:-----:|:--------:|:------------------|
+| command     | [Command](#Command)                                                | -     | 2 Byte   | 명령              |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트        |
+| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)            | -     | 1 Byte   | LED 팔레트 인덱스 |
+
+
+<br>
+<br>
+
+
 ## <a name="ControlQuad8">ControlQuad8</a>
 
 비행 조종
-
-비행 및 주행에 모두 사용할 수 있습니다.
 
 ```py
 class ControlQuad8(ISerializable):
@@ -546,30 +611,28 @@ class ControlQuad8(ISerializable):
 <br>
 
 
-## <a name="Trim">Trim</a>
+## <a name="ControlQuad8AndRequestData">ControlQuad8AndRequestData</a>
 
-비행 트림 설정
-
-호버링 시 기체가 한쪽으로 쏠리는 현상이 발생하면 반대 방향으로 적절한 값을 주어 정상적으로 동작하게 만들 수 있습니다.
+비행 조종 + 데이터 요청
 
 ```py
-class Trim(ISerializable):
+class ControlQuad8AndRequestData(ISerializable):
 
     def __init__(self):
         self.roll       = 0
         self.pitch      = 0
         self.yaw        = 0
         self.throttle   = 0
+        self.dataType   = DataType.None_
 ```
 
-| 변수 이름 | 형식     | 범위         | 크기     | 설명       |
-|:---------:|:--------:|:------------:|:--------:|:-----------|
-| roll      | Int16    | -200 ~ 200   | 2 Byte   | Roll       |
-| pitch     | Int16    | -200 ~ 200   | 2 Byte   | Pitch      |
-| yaw       | Int16    | -200 ~ 200   | 2 Byte   | Yaw        |
-| throttle  | Int16    | -200 ~ 200   | 2 Byte   | Throttle   |
-
-- e.g. [드론 Trim 설정 변경 후 확인](examples_07_setup.md#Trim)
+| 변수 이름   | 형식                    | 범위       | 크기     | 설명                  |
+|:-----------:|:-----------------------:|:----------:|:--------:|:----------------------|
+| roll        | Int8                    | -100 ~ 100 | 1 Byte   | Roll                  |
+| pitch       | Int8                    | -100 ~ 100 | 1 Byte   | Pitch                 |
+| yaw         | Int8                    | -100 ~ 100 | 1 Byte   | Yaw                   |
+| throttle    | Int8                    | -100 ~ 100 | 1 Byte   | Throttle              |
+| dataType    | [DataType](#DataType)   | -          | 1 Byte   | 요청할 데이터 타입    |
 
 
 <br>
@@ -585,49 +648,42 @@ class LightModeDrone(Enum):
     
     None_                   = 0x00
 
-    FrontNone               = 0x10
-    FrontManual             = 0x11      # 수동 제어
-    FrontHold               = 0x12      # 지정한 색상을 계속 켬
-    FrontFlicker            = 0x13      # 깜빡임
-    FrontFlickerDouble      = 0x14      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    FrontDimming            = 0x15      # 밝기 제어하여 천천히 깜빡임
+    RearNone                = 0x10
+    RearManual              = 0x11      # 수동 제어
+    RearHold                = 0x12      # 지정한 색상을 계속 켬
+    RearFlicker             = 0x13      # 깜빡임
+    RearFlickerDouble       = 0x14      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+    RearDimming             = 0x15      # 밝기 제어하여 천천히 깜빡임
 
-    RearNone                = 0x20
-    RearManual              = 0x21      # 수동 제어
-    RearHold                = 0x22      # 지정한 색상을 계속 켬
-    RearFlicker             = 0x23      # 깜빡임
-    RearFlickerDouble       = 0x24      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    RearDimming             = 0x25      # 밝기 제어하여 천천히 깜빡임
+    BodyNone                = 0x20
+    BodyManual              = 0x21      # 수동 제어
+    BodyHold                = 0x22      # 지정한 색상을 계속 켬
+    BodyFlicker             = 0x23      # 깜빡임
+    BodyFlickerDouble       = 0x24      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+    BodyDimming             = 0x25      # 밝기 제어하여 천천히 깜빡임
 
-    BodyNone                = 0x30
-    BodyManual              = 0x31      # 수동 제어
-    BodyHold                = 0x32      # 지정한 색상을 계속 켬
-    BodyFlicker             = 0x33      # 깜빡임
-    BodyFlickerDouble       = 0x34      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    BodyDimming             = 0x35      # 밝기 제어하여 천천히 깜빡임
+    ANone                   = 0x30
+    AManual                 = 0x31      # 수동 제어
+    AHold                   = 0x32      # 지정한 색상을 계속 켬
+    AFlicker                = 0x33      # 깜빡임
+    AFlickerDouble          = 0x34      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+    ADimming                = 0x35      # 밝기 제어하여 천천히 깜빡임
 
-    ANone                   = 0x40
-    AManual                 = 0x41      # 수동 제어
-    AHold                   = 0x42      # 지정한 색상을 계속 켬
-    AFlicker                = 0x43      # 깜빡임
-    AFlickerDouble          = 0x44      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    ADimming                = 0x45      # 밝기 제어하여 천천히 깜빡임
+    BNone                   = 0x40
+    BManual                 = 0x41      # 수동 제어
+    BHold                   = 0x42      # 지정한 색상을 계속 켬
+    BFlicker                = 0x43      # 깜빡임
+    BFlickerDouble          = 0x44      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+    BDimming                = 0x45      # 밝기 제어하여 천천히 깜빡임
 
-    BNone                   = 0x50
-    BManual                 = 0x51      # 수동 제어
-    BHold                   = 0x52      # 지정한 색상을 계속 켬
-    BFlicker                = 0x53      # 깜빡임
-    BFlickerDouble          = 0x54      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    BDimming                = 0x55      # 밝기 제어하여 천천히 깜빡임
+    CNone                   = 0x50
+    CManual                 = 0x51      # 수동 제어
+    CHold                   = 0x52      # 지정한 색상을 계속 켬
+    CFlicker                = 0x53      # 깜빡임
+    CFlickerDouble          = 0x54      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+    CDimming                = 0x55      # 밝기 제어하여 천천히 깜빡임
 
-    CNone                   = 0x60
-    CManual                 = 0x61      # 수동 제어
-    CHold                   = 0x62      # 지정한 색상을 계속 켬
-    CFlicker                = 0x63      # 깜빡임
-    CFlickerDouble          = 0x64      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    CDimming                = 0x65      # 밝기 제어하여 천천히 깜빡임
-
-    EndOfType               = 0x66
+    EndOfType               = 0x56
 ```
 
 
@@ -644,17 +700,16 @@ class LightFlagsDrone(Enum):
     
     None_               = 0x0000
 
-    Front               = 0x8000
-    Rear                = 0x4000
-    BodyRed             = 0x2000
-    BodyGreen           = 0x1000
-    BodyBlue            = 0x0800
+    Rear                = 0x0001
+    BodyRed             = 0x0002
+    BodyGreen           = 0x0004
+    BodyBlue            = 0x0008
 
-    A                   = 0x0400
-    B                   = 0x0200
-    CRed                = 0x0100
+    A                   = 0x0010
+    B                   = 0x0020
+    CRed                = 0x0040
     CGreen              = 0x0080
-    CBlue               = 0x0040
+    CBlue               = 0x0100
 ```
 
 
@@ -908,10 +963,10 @@ class LightManual(ISerializable):
         self.brightness     = 0
 ```
 
-| 변수 이름   | 형식   | 범위                      | 크기     | 설명            |
-|:-----------:|:------:|:-------------------------:|:--------:|:----------------|
-| flags       | UInt8  | 0b00000000 ~ 0b11111111   | 1 Byte   | LED 선택 플래그 |
-| brightness  | UInt8  | 0 ~ 255                   | 1 Byte   | 밝기            |
+| 변수 이름   | 형식   | 범위              | 크기     | 설명            |
+|:-----------:|:------:|:-----------------:|:--------:|:----------------|
+| flags       | UInt16 | 0x0000 ~ 0xFFFF   | 2 Byte   | LED 선택 플래그 |
+| brightness  | UInt8  | 0 ~ 255           | 1 Byte   | 밝기            |
 
 
 <br>
@@ -969,33 +1024,6 @@ class LightModeColor(ISerializable):
 <br>
 
 
-## <a name="LightModeColorCommand">LightModeColorCommand</a>
-
-LED 모드 변경(RGB) + Command
-
-LightModeColor에 Command를 추가하여 전송합니다.
-
-```py
-class LightModeColorCommand(ISerializable):
-    
-    def __init__(self):
-        self.mode       = LightMode()
-        self.color      = Color()
-        self.command    = Command()
-```
-
-| 변수 이름  | 형식                     | 범위 | 크기     | 설명           |
-|:----------:|:------------------------:|:----:|:--------:|:---------------|
-| mode       | [LightMode](#LightMode)  | -    | 3 Byte   | LED 동작 모드  |
-| color      | [Color](#Color)          | -    | 3 Byte   | LED RGB 색상   |
-| command    | [Command](#Command)      | -    | 2 Byte   | 명령           |
-
-
-
-<br>
-<br>
-
-
 ## <a name="LightModeColors">LightModeColors</a>
 
 LED 모드 변경(Palette)
@@ -1016,33 +1044,6 @@ class LightModeColors(ISerializable):
 | colors     | [Colors](#Colors)         | -     | 1 Byte   | LED 팔레트 인덱스  |
 
 - e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)](examples_10_light.md#Class_LightModeColors)
-
-
-<br>
-<br>
-
-
-## <a name="LightModeColorsCommand">LightModeColorsCommand</a>
-
-LED 모드 변경(Palette) + Command
-
-LightModeColors에 Command를 추가하여 전송합니다.
-
-```py
-class LightModeColorsCommand(ISerializable):
-    
-    def __init__(self):
-        self.mode       = LightMode()
-        self.colors     = Colors.Black
-        self.command    = Command()
-```
-
-| 변수 이름  | 형식                     | 범위  | 크기     | 설명                |
-|:----------:|:------------------------:|:-----:|:--------:|:--------------------|
-| mode       | [LightMode](#LightMode)  | -     | 3 Byte   | LED 동작 모드       |
-| colors     | [Colors](#Colors)        | -     | 1 Byte   | LED 팔레트 인덱스   |
-| command    | [Command](#Command)      | -     | 2 Byte   | 명령                |
-
 
 
 <br>
@@ -1102,33 +1103,6 @@ class LightEventColor(ISerializable):
 <br>
 
 
-## <a name="LightEventColorCommand">LightEventColorCommand</a>
-
-LED 이벤트 변경(RGB)
-
-LightEventColor에 Command를 추가하여 전송합니다.
-
-```py
-class LightEventColorCommand(ISerializable):
-    
-    def __init__(self):
-        self.event      = LightEvent()
-        self.color      = Color()
-        self.command    = Command()
-```
-
-| 변수 이름   | 형식                       | 범위 | 크기     | 설명          |
-|:-----------:|:--------------------------:|:----:|:--------:|:--------------|
-| event       | [LightEvent](#LightEvent)  | -    | 4 Byte   | LED 이벤트    |
-| color       | [Color](#Color)            | -    | 3 Byte   | LED RGB 색상  |
-| command     | [Command](#Command)        | -    | 2 Byte   | 명령          |
-
-
-
-<br>
-<br>
-
-
 ## <a name="LightEventColors">LightEventColors</a>
 
 LED 이벤트 변경(Palette)
@@ -1147,33 +1121,6 @@ class LightEventColors(ISerializable):
 |:---------:|:--------------------------:|:-----:|:--------:|:------------------|
 | event     | [LightEvent](#LightEvent)  | -     | 4 Byte   | LED 이벤트        |
 | colors    | [Colors](#Colors)          | -     | 1 Byte   | LED 팔레트 인덱스 |
-
-
-
-<br>
-<br>
-
-
-## <a name="LightEventColorsCommand">LightEventColorsCommand</a>
-
-LED 이벤트 변경(Palette) + Command
-
-LightEventColors에 Command를 추가하여 전송합니다.
-
-```py
-class LightEventColorsCommand(ISerializable):
-    
-    def __init__(self):
-        self.event      = LightEvent()
-        self.colors     = Colors.Black
-        self.command    = Command()
-```
-
-| 변수 이름  | 형식                      | 범위 | 크기     | 설명               |
-|:----------:|:-------------------------:|:----:|:--------:|:-------------------|
-| event      | [LightEvent](#LightEvent) | -    | 4 Byte   | LED 이벤트         |
-| colors     | [Colors](#Colors)         | -    | 1 Byte   | LED 팔레트 인덱스  |
-| command    | [Command](#Command)       | -    | 2 Byte   | 명령               |
 
 
 
@@ -1457,7 +1404,7 @@ class DisplayDrawString(ISerializable):
 | y          | Int16                           | -2000 ~ 2000  | 2 Byte        | Y축 위치       |
 | font       | [DisplayFont](#DisplayFont)     | -             | 1 Byte        | 폰트           |
 | pixel      | [DisplayPixel](#DisplayPixel)   | -             | 1 Byte        | 색상           |
-| message    | ASCII String                    | -             | 30 Byte 이하  | 표시할 문자열  |
+| message    | ASCII String                    | -             | 12 Byte 이하  | 표시할 문자열  |
 
 
 <br>
@@ -1492,7 +1439,7 @@ class DisplayDrawStringAlign(ISerializable):
 | align      | [DisplayAlign](#DisplayAlign)   | -             | 1 Byte        | 정렬           |
 | font       | [DisplayFont](#DisplayFont)     | -             | 1 Byte        | 폰트           |
 | pixel      | [DisplayPixel](#DisplayPixel)   | -             | 1 Byte        | 색상           |
-| message    | ASCII String                    | -             | 30 Byte 이하  | 표시할 문자열  |
+| message    | ASCII String                    | -             | 12 Byte 이하  | 표시할 문자열  |
 
 
 <br>
@@ -1630,6 +1577,101 @@ class Vibrator(ISerializable):
 <br>
 
 
+## <a name="ButtonFlagController">ButtonFlagController</a>
+
+조종기 버튼 플래그
+
+```py
+class ButtonFlagController(Enum):
+
+    None_               = 0x0000
+    
+    FrontLeftTop        = 0x0001
+    FrontLeftBottom     = 0x0002
+    FrontRightTop       = 0x0004
+    FrontRightBottom    = 0x0008
+    
+    TopLeft             = 0x0010
+    TopRight            = 0x0020    # POWER ON/OFF
+    
+    MidUp               = 0x0040
+    MidLeft             = 0x0080
+    MidRight            = 0x0100
+    MidDown             = 0x0200
+    
+    BottomLeft          = 0x0400
+    BottomRight         = 0x0800
+```
+
+
+<br>
+<br>
+
+
+## <a name="ButtonFlagDrone">ButtonFlagDrone</a>
+
+드론 버튼 플래그
+
+```py
+class ButtonFlagDrone(Enum):
+
+    None_           = 0x0000
+    
+    Reset           = 0x0001
+```
+
+
+<br>
+<br>
+
+
+## <a name="ButtonEvent">ButtonEvent</a>
+
+버튼 이벤트
+
+```py
+class ButtonEvent(Enum):
+
+    None_             = 0x0000
+    
+    Down              = 0x0001  # 누르기 시작
+    Press             = 0x0002  # 누르는 중
+    Up                = 0x0003  # 뗌
+    
+    EndContinuePress  = 0x0004  # 연속 입력 종료
+```
+
+
+<br>
+<br>
+
+
+## <a name="Button">Button</a>
+
+버튼 입력
+
+button에는 [ButtonFlagController](#ButtonFlagController) 또는 [ButtonFlagDrone](#ButtonFlagDrone) 의 플래그가 조합된 값이 들어옵니다.
+
+```py
+class Button(ISerializable):
+
+    def __init__(self):
+        self.button     = 0
+        self.event      = ButtonEvent.None_
+```
+
+| 변수 이름 | 형식                        | 범위  | 크기     | 설명         |
+|:---------:|:---------------------------:|:-----:|:--------:|:-------------|
+| button    | UInt16                      | -     | 2 Byte   | 버튼 입력    |
+| event     | [ButtonEvent](#ButtonEvent) | -     | 1 Byte   | 버튼 이벤트  |
+
+- e.g. [버튼 입력값 출력](examples_12_input.md#Button)
+
+
+<br>
+<br>
+
+
 ## <a name="JoystickDirection">JoystickDirection</a>
 
 조이스틱 방향
@@ -1728,101 +1770,6 @@ class Joystick(ISerializable):
 <br>
 
 
-## <a name="ButtonFlagController">ButtonFlagController</a>
-
-조종기 버튼 플래그
-
-```py
-class ButtonFlagController(Enum):
-
-    None_               = 0x0000
-    
-    FrontLeftTop        = 0x0001
-    FrontLeftBottom     = 0x0002
-    FrontRightTop       = 0x0004
-    FrontRightBottom    = 0x0008
-    
-    TopLeft             = 0x0010
-    TopRight            = 0x0020    # POWER ON/OFF
-    
-    MidUp               = 0x0040
-    MidLeft             = 0x0080
-    MidRight            = 0x0100
-    MidDown             = 0x0200
-    
-    BottomLeft          = 0x0400
-    BottomRight         = 0x0800
-```
-
-
-<br>
-<br>
-
-
-## <a name="ButtonFlagDrone">ButtonFlagDrone</a>
-
-드론 버튼 플래그
-
-```py
-class ButtonFlagDrone(Enum):
-
-    None_           = 0x0000
-    
-    Reset           = 0x0001
-```
-
-
-<br>
-<br>
-
-
-## <a name="ButtonEvent">ButtonEvent</a>
-
-버튼 이벤트
-
-```py
-class ButtonEvent(Enum):
-
-    None_             = 0x0000
-    
-    Down              = 0x0001  # 누르기 시작
-    Press             = 0x0002  # 누르는 중
-    Up                = 0x0003  # 뗌
-    
-    EndContinuePress  = 0x0004  # 연속 입력 종료
-```
-
-
-<br>
-<br>
-
-
-## <a name="Button">Button</a>
-
-버튼 입력
-
-button에는 [ButtonFlagController](#ButtonFlagController) 또는 [ButtonFlagDrone](#ButtonFlagDrone) 의 플래그가 조합된 값이 들어옵니다.
-
-```py
-class Button(ISerializable):
-
-    def __init__(self):
-        self.button     = 0
-        self.event      = ButtonEvent.None_
-```
-
-| 변수 이름 | 형식                        | 범위  | 크기     | 설명         |
-|:---------:|:---------------------------:|:-----:|:--------:|:-------------|
-| button    | UInt16                      | -     | 2 Byte   | 버튼 입력    |
-| event     | [ButtonEvent](#ButtonEvent) | -     | 1 Byte   | 버튼 이벤트  |
-
-- e.g. [버튼 입력값 출력](examples_12_input.md#Button)
-
-
-<br>
-<br>
-
-
 ## <a name="State">State</a>
 
 드론 상태
@@ -1858,92 +1805,6 @@ class State(ISerializable):
 <br>
 
 
-## <a name="Count">Count</a>
-
-카운터
-
-각 카운터 값은 드론 내부에 UInt32로 저장하고 있지만 전송 시에는 UInt16으로 변환하여 전송합니다. 만약 더 큰 값이 필요한 상황이 생기면 변경할 예정입니다.(6만번 이상 이착륙 등)
-
-```py
-class Count(ISerializable):
-
-    def __init__(self):
-        self.timeFlight     = 0
-
-        self.countTakeOff   = 0
-        self.countLanding   = 0
-        self.countAccident  = 0
-```
-
-| 변수 이름        | 형식       | 범위       | 크기     | 설명             |
-|:----------------:|:----------:|:----------:|:--------:|:-----------------|
-| timeFlight       | UInt64     | -          | 8 Byte   | 비행 시간(ms)    |
-| countTakeOff     | UInt16     | 0 ~ 65535  | 2 Byte   | 이륙 횟수        |
-| countLanding     | UInt16     | 0 ~ 65535  | 2 Byte   | 착륙 횟수        |
-| countAccident    | UInt16     | 0 ~ 65535  | 2 Byte   | 충돌 횟수        |
-
-
-<br>
-<br>
-
-
-## <a name="Vector">Vector</a>
-
-벡터
-
-```py
-class Vector(ISerializable):
-
-    def __init__(self):
-        self.x      = 0
-        self.y      = 0
-        self.z      = 0
-```
-
-| 변수 이름  | 형식    | 범위              | 크기     | 설명    |
-|:----------:|:-------:|:-----------------:|:--------:|:--------|
-| x          | Int16   | -32,768 ~ 32,767  | 2 Byte   | X       |
-| y          | Int16   | -32,768 ~ 32,767  | 2 Byte   | Y       |
-| z          | Int16   | -32,768 ~ 32,767  | 2 Byte   | Z       |
-
-
-<br>
-<br>
-
-
-## <a name="Bias">Bias</a>
-
-바이어스
-
-가속도, 자이로에 대한 바이어스 설정값입니다.
-읽기만 가능합니다.
-
-```py
-class Bias(ISerializable):
-    
-    def __init__(self):
-        self.accelX     = 0
-        self.accelY     = 0
-        self.accelZ     = 0
-        self.gyroRoll   = 0
-        self.gyroPitch  = 0
-        self.gyroYaw    = 0
-```
-
-| 변수 이름   | 형식    | 범위              | 크기     | 설명         |
-|:-----------:|:-------:|:-----------------:|:--------:|:-------------|
-| accelX      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel X      |
-| accelY      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel Y      |
-| accelZ      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel Z      |
-| gyroRoll    | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Roll    |
-| gyroPitch   | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Pitch   |
-| gyroYaw     | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Yaw     |
-
-
-<br>
-<br>
-
-
 ## <a name="Attitude">Attitude</a>
 
 자세
@@ -1964,6 +1825,58 @@ class Attitude(ISerializable):
 | yaw        | Int16      | -32,768 ~ 32,767  | 2 Byte   | Yaw        |
 
 - e.g. [자세 확인](examples_05_sensor.md#Attitude)
+
+
+<br>
+<br>
+
+
+## <a name="Position">Position</a>
+
+드론의 위치
+
+```py
+class Position(ISerializable):
+
+    def __init__(self):
+        self.x     = 0
+        self.y     = 0
+        self.z     = 0
+```
+
+| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
+|:----------:|:---------:|:-----:|:--------:|:--------|
+| x          | Float32   | -     | 4 Byte   | X축(m)  |
+| y          | Float32   | -     | 4 Byte   | Y축(m)  |
+| z          | Float32   | -     | 4 Byte   | Y축(m)  |
+
+
+<br>
+<br>
+
+
+## <a name="Altitude">Altitude</a>
+
+고도 데이터
+
+```py
+class Altitude(ISerializable):
+
+    def __init__(self):
+        self.temperature    = 0
+        self.pressure       = 0
+        self.altitude       = 0
+        self.rangeHeight    = 0
+```
+
+| 변수 이름   | 형식     | 범위 | 크기     | 설명                            |
+|:-----------:|:--------:|:----:|:--------:|:--------------------------------|
+| temperature | Float32  | -    | 4 Byte   | 온도(℃)                         |
+| pressure    | Float32  | -    | 4 Byte   | 압력                            |
+| altitude    | Float32  | -    | 4 Byte   | 압력을 해발고도로 변환한 값(m)  |
+| rangeHeight | Float32  | -    | 4 Byte   | 거리센서에서 출력한 높이 값(m)  |
+
+- e.g. [고도 데이터 확인](examples_05_sensor.md#Altitude)
 
 
 <br>
@@ -2010,34 +1923,6 @@ class Motion(ISerializable):
 <br>
 
 
-## <a name="Altitude">Altitude</a>
-
-고도 데이터
-
-```py
-class Altitude(ISerializable):
-
-    def __init__(self):
-        self.temperature    = 0
-        self.pressure       = 0
-        self.altitude       = 0
-        self.rangeHeight    = 0
-```
-
-| 변수 이름   | 형식     | 범위 | 크기     | 설명                            |
-|:-----------:|:--------:|:----:|:--------:|:--------------------------------|
-| temperature | Float32  | -    | 4 Byte   | 온도(℃)                         |
-| pressure    | Float32  | -    | 4 Byte   | 압력                            |
-| altitude    | Float32  | -    | 4 Byte   | 압력을 해발고도로 변환한 값(m)  |
-| rangeHeight | Float32  | -    | 4 Byte   | 거리센서에서 출력한 높이 값(m)  |
-
-- e.g. [고도 데이터 확인](examples_05_sensor.md#Altitude)
-
-
-<br>
-<br>
-
-
 ## <a name="Flow">Flow</a>
 
 옵티컬 플로우로 계산한 상대 위치 값
@@ -2054,6 +1939,144 @@ class Flow(ISerializable):
 |:----------:|:---------:|:-----:|:--------:|:--------|
 | x          | Float32   | -     | 4 Byte   | X축(m)  |
 | y          | Float32   | -     | 4 Byte   | Y축(m)  |
+
+
+<br>
+<br>
+
+
+## <a name="Vector">Vector</a>
+
+벡터
+
+```py
+class Vector(ISerializable):
+
+    def __init__(self):
+        self.x      = 0
+        self.y      = 0
+        self.z      = 0
+```
+
+| 변수 이름  | 형식    | 범위              | 크기     | 설명    |
+|:----------:|:-------:|:-----------------:|:--------:|:--------|
+| x          | Int16   | -32,768 ~ 32,767  | 2 Byte   | X       |
+| y          | Int16   | -32,768 ~ 32,767  | 2 Byte   | Y       |
+| z          | Int16   | -32,768 ~ 32,767  | 2 Byte   | Z       |
+
+
+<br>
+<br>
+
+
+## <a name="Count">Count</a>
+
+카운트
+
+각 카운트 값은 드론 내부에 UInt32로 저장하고 있지만, 전송 시에는 UInt16으로 변환하여 전송합니다. 만약 더 큰 값이 필요한 상황이 생기면 변경할 예정입니다.(6만번 이상 이착륙 등)
+
+```py
+class Count(ISerializable):
+
+    def __init__(self):
+        self.timeFlight     = 0
+
+        self.countTakeOff   = 0
+        self.countLanding   = 0
+        self.countAccident  = 0
+```
+
+| 변수 이름        | 형식       | 범위       | 크기     | 설명             |
+|:----------------:|:----------:|:----------:|:--------:|:-----------------|
+| timeFlight       | UInt64     | -          | 8 Byte   | 비행 시간(ms)    |
+| countTakeOff     | UInt16     | 0 ~ 65535  | 2 Byte   | 이륙 횟수        |
+| countLanding     | UInt16     | 0 ~ 65535  | 2 Byte   | 착륙 횟수        |
+| countAccident    | UInt16     | 0 ~ 65535  | 2 Byte   | 충돌 횟수        |
+
+
+<br>
+<br>
+
+
+## <a name="Bias">Bias</a>
+
+바이어스
+
+가속도, 자이로에 대한 바이어스 설정값입니다.
+읽기만 가능합니다.
+
+```py
+class Bias(ISerializable):
+    
+    def __init__(self):
+        self.accelX     = 0
+        self.accelY     = 0
+        self.accelZ     = 0
+        self.gyroRoll   = 0
+        self.gyroPitch  = 0
+        self.gyroYaw    = 0
+```
+
+| 변수 이름   | 형식    | 범위              | 크기     | 설명         |
+|:-----------:|:-------:|:-----------------:|:--------:|:-------------|
+| accelX      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel X      |
+| accelY      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel Y      |
+| accelZ      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel Z      |
+| gyroRoll    | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Roll    |
+| gyroPitch   | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Pitch   |
+| gyroYaw     | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Yaw     |
+
+
+<br>
+<br>
+
+
+## <a name="Trim">Trim</a>
+
+비행 트림 설정
+
+호버링 시 기체가 한쪽으로 쏠리는 현상이 발생하면 반대 방향으로 적절한 값을 주어 정상적으로 동작하게 만들 수 있습니다.
+
+```py
+class Trim(ISerializable):
+
+    def __init__(self):
+        self.roll       = 0
+        self.pitch      = 0
+        self.yaw        = 0
+        self.throttle   = 0
+```
+
+| 변수 이름 | 형식     | 범위         | 크기     | 설명       |
+|:---------:|:--------:|:------------:|:--------:|:-----------|
+| roll      | Int16    | -200 ~ 200   | 2 Byte   | Roll       |
+| pitch     | Int16    | -200 ~ 200   | 2 Byte   | Pitch      |
+| yaw       | Int16    | -200 ~ 200   | 2 Byte   | Yaw        |
+| throttle  | Int16    | -200 ~ 200   | 2 Byte   | Throttle   |
+
+- e.g. [드론 Trim 설정 변경 후 확인](examples_07_setup.md#Trim)
+
+
+<br>
+<br>
+
+
+## <a name="Weight">Weight</a>
+
+무게
+
+드론 + 적재물의 무게입니다. 단위는 그램(g)입니다.
+
+```py
+class Weight(ISerializable):
+
+    def __init__(self):
+        self.weight     = 0
+```
+
+| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
+|:----------:|:---------:|:-----:|:--------:|:--------|
+| weight     | Float32   | -     | 4 Byte   | 무게    |
 
 
 <br>

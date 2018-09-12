@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **System**
 
-Modified : 2018.7.6
+Modified : 2018.9.12
 
 ---
 
@@ -10,6 +10,30 @@ Modified : 2018.7.6
 
 
 <br>
+
+## <a name="ModelNumber">ModelNumber</a>
+
+모델 번호
+
+장치의 모델 번호입니다. 현재는 펌웨어 업데이트 시 제품을 확인하는 용도로 사용합니다.
+
+```py
+class ModelNumber(Enum):
+
+    None_                   = 0x00000000
+
+    Drone_4_Drone_P4        = 0x00041004    # Drone_4_Drone_P4
+
+    Drone_4_Controlle_P1    = 0x00042001    # Drone_4_Controlle_P1
+    Drone_4_Controlle_P2    = 0x00042002    # Drone_4_Controlle_P2
+
+    Drone_4_Link_P0         = 0x00043000    # Drone_4_Link_P0
+```
+
+
+<br>
+<br>
+
 
 ## <a name="DeviceType">DeviceType</a>
 
@@ -50,6 +74,8 @@ class DeviceType(Enum):
 
 비행 제어 모드
 
+e_drone에서는 **Attitude**와 **Position**만 지원합니다. 다른 모드로 변경할 경우 무시합니다.
+
 ```py
 class ModeControlFlight(Enum):
     
@@ -58,7 +84,7 @@ class ModeControlFlight(Enum):
     Attitude            = 0x10      # 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
     Position            = 0x11      # 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
     Function            = 0x12      # 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-    Rate                = 0x13      # Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음e
+    Rate                = 0x13      # Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
     
     EndOfType           = 0x14
 ```
@@ -101,11 +127,13 @@ class ModeFlight(Enum):
     None_               = 0x00
 
     Ready               = 0x10
-    TakeOff             = 0x11
-    Flight              = 0x12
-    Landing             = 0x13
-    Flip                = 0x14
-    Reverse             = 0x15
+
+    Start               = 0x11
+    TakeOff             = 0x12
+    Flight              = 0x13
+    Landing             = 0x14
+    Flip                = 0x15
+    Reverse             = 0x16
 
     Stop                = 0x20
 
@@ -135,12 +163,13 @@ class ModeUpdate(Enum):
     Update          = 0x02  # 업데이트 중
     Complete        = 0x03  # 업데이트 완료
         
-    Faild           = 0x04  # 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
+    Faild           = 0x04  # 업데이트 실패
     
     NotAvailable    = 0x05  # 업데이트 불가능 상태(Debug 모드 등)
     RunApplication  = 0x06  # 어플리케이션 동작 중
+    NotRegistered   = 0x07  # 등록되지 않음
     
-    EndOfType       = 0x07
+    EndOfType       = 0x08
 ```
 
 
@@ -170,9 +199,6 @@ class ErrorFlagsForSensor(Enum):
 
     Flow_NoAnswer               = 0x00001000    # Flow 센서 응답 없음
     Flow_WrongValue             = 0x00002000
-
-    Battery_NoAnswer            = 0x00010000    # 배터리 응답 없음
-    Battery_WrongValue          = 0x00020000
 ```
 
 
@@ -187,9 +213,11 @@ class ErrorFlagsForSensor(Enum):
 ```py
 class ErrorFlagsForState(Enum):
 
-    None_                       = 0x00000000
+    None_                           = 0x00000000
 
-    NotTested                   = 0x00000001    # 테스트하지 않음
+    NotRegistered                   = 0x00000001    # 장치 등록이 안됨
+    FlashReadLock_UnLocked          = 0x00000002    # 플래시 메모리 읽기 Lock이 안 걸림
+    BootloaderWriteLock_UnLocked    = 0x00000003    # 부트로더 영역 쓰기 Lock이 안 걸림
 ```
 
 
@@ -216,6 +244,8 @@ class FlightEvent(Enum):
     FlipRear            = 0x15
     FlipLeft            = 0x16
     FlipRight           = 0x17
+
+    Return              = 0x18      # 시작 위치로 복귀
 
     ResetHeading        = 0xA0
 
@@ -329,14 +359,14 @@ class Headless(Enum):
 <br>
 
 
-## <a name="Trim">Trim</a>
+## <a name="TrimIncDec">TrimIncDec</a>
 
 트림
 
 트림 설정 값을 한 단계씩 올리거나 낮출 때 사용합니다.
 
 ```py
-class Trim(Enum):
+class TrimIncDec(Enum):
     
     None_               = 0x00      # 없음
 
@@ -352,6 +382,28 @@ class Trim(Enum):
     Reset               = 0x09      # 전체 트림 리셋
 
     EndOfType           = 0x0A
+```
+
+
+<br>
+<br>
+
+
+## <a name="ModeMovement">ModeMovement</a>
+
+이동 상태
+
+드론의 현재 이동 상태를 나타냅니다.
+
+```py
+class ModeMovement(Enum):
+    
+    None_               = 0x00
+
+    Hovering            = 0x01      # Hovering
+    Moving              = 0x02      # Moving
+
+    EndOfType           = 0x04
 ```
 
 

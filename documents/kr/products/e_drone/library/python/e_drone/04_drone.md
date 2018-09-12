@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2018.7.6
+Modified : 2018.9.12
 
 ---
 
@@ -121,9 +121,13 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | 이름                                                              | 설명                                        |
 |:------------------------------------------------------------------|:--------------------------------------------|
 | [sendCommand](#sendCommand)                                       | 명령 전송                                   |
+| [sendCommandLightEvent](#sendCommandLightEvent)                   | 명령 전송 + LED 이벤트                      |
+| [sendCommandLightEventColor](#sendCommandLightEventColor)         | 명령 전송 + LED 이벤트(RGB)                 |
+| [sendCommandLightEventColors](#sendCommandLightEventColors)       | 명령 전송 + LED 이벤트(팔레트)              |
 | [sendModeControlFlight](#sendModeControlFlight)                   | 비행 제어 모드 변경                         |
 | [sendHeadless](#sendHeadless)                                     | 헤드리스 설정                               |
-| [sendTrim](#sendTrim)                                             | Trim 설정                                   |
+| [sendTrimIncDec](#sendTrimIncDec)                                 | Trim 한 단계씩 변경                         |
+| [sendTrim](#sendTrim)                                             | Trim 값을 지정하여 변경                     |
 | [sendWeight](#sendWeight)                                         | Weight 설정                                 |
 | [sendFlightEvent](#sendFlightEvent)                               | 비행 이벤트 실행                            |
 | [sendClearBias](#sendClearBias)                                   | 바이어스 초기화                             |
@@ -148,18 +152,14 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 |:------------------------------------------------------------------|:--------------------------------------------|
 | [sendLightManual](#sendLightManual)                               | 수동 제어                                   |
 | [sendLightModeColor](#sendLightModeColor)                         | 모드 설정(RGB)                              |
-| [sendLightModeColorCommand](#sendLightModeColorCommand)           | 모드 설정(RGB), 명령                        |
 | [sendLightModeColors](#sendLightModeColors)                       | 모드 설정(팔레트)                           |
-| [sendLightModeColorsCommand](#sendLightModeColorsCommand)         | 모드 설정(팔레트), 명령                     |
 | [sendLightEventColor](#sendLightEventColor)                       | 이벤트 설정(RGB)                            |
-| [sendLightEventColorCommand](#sendLightEventColorCommand)         | 이벤트 설정(RGB), 명령                      |
 | [sendLightEventColors](#sendLightEventColors)                     | 이벤트 설정(팔레트)                         |
-| [sendLightEventColorsCommand](#sendLightEventColorsCommand)       | 이벤트 설정(팔레트), 명령                   |
 
 <br>
 
 
-## 조종기 OLED 디스플레이
+## 조종기 LCD 디스플레이
 
 | 이름                                                              | 설명                                        |
 |:------------------------------------------------------------------|:--------------------------------------------|
@@ -409,6 +409,97 @@ def sendCommand(self, commandType, option = 0):
 <br>
 
 
+## <a name="sendCommandLightEvent">sendCommandLightEvent</a>
+
+명령 + LED 이벤트
+
+드론에 명령을 전달할 때 사용합니다.
+
+option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
+
+```py
+def sendCommandLightEvent(self, commandType, option, lightEvent, interval, repeat):
+```
+
+| 변수 이름      | 형식 또는 범위                                       | 설명                          |
+|:--------------:|:----------------------------------------------------:|:------------------------------|
+| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                     |
+| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                          |
+|                | [FlightEvent](02_system.md#FlightEvent)              |                               |
+|                | [Headless](02_system.md#Headless)                    |                               |
+|                | [Trim](02_system.md#Trim)                            |                               |
+|                | UInt8                                                |                               |
+| lightEvent     | UInt8                                                | LED 동작 모드                 |
+| interval       | 0 ~ 65535                                            | 내부 밝기 제어 함수 호출 주기 |
+| repeat         | 0 ~ 255                                              | 반복 횟수                     |
+
+
+<br>
+<br>
+
+
+## <a name="sendCommandLightEventColor">sendCommandLightEventColor</a>
+
+명령 + LED 이벤트(RGB)
+
+드론에 명령을 전달할 때 사용합니다.
+
+option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
+
+```py
+def sendCommandLightEventColor(self, commandType, option, lightEvent, interval, repeat, r, g, b):
+```
+
+| 변수 이름      | 형식 또는 범위                                       | 설명                          |
+|:--------------:|:----------------------------------------------------:|:------------------------------|
+| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                     |
+| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                          |
+|                | [FlightEvent](02_system.md#FlightEvent)              |                               |
+|                | [Headless](02_system.md#Headless)                    |                               |
+|                | [Trim](02_system.md#Trim)                            |                               |
+|                | UInt8                                                |                               |
+| lightEvent     | UInt8                                                | LED 동작 모드                 |
+| interval       | 0 ~ 65535                                            | 내부 밝기 제어 함수 호출 주기 |
+| repeat         | 0 ~ 255                                              | 반복 횟수                     |
+| r              | 0 ~ 255                                              | Red                           |
+| g              | 0 ~ 255                                              | Green                         |
+| b              | 0 ~ 255                                              | Blue                          |
+
+
+<br>
+<br>
+
+
+## <a name="sendCommandLightEventColors">sendCommandLightEventColors</a>
+
+명령 + LED 이벤트(Palette)
+
+드론에 명령을 전달할 때 사용합니다.
+
+option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
+
+```py
+def sendCommandLightEventColors(self, commandType, option, lightEvent, interval, repeat, colors):
+```
+
+| 변수 이름      | 형식 또는 범위                                       | 설명                          |
+|:--------------:|:----------------------------------------------------:|:------------------------------|
+| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                     |
+| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                          |
+|                | [FlightEvent](02_system.md#FlightEvent)              |                               |
+|                | [Headless](02_system.md#Headless)                    |                               |
+|                | [Trim](02_system.md#Trim)                            |                               |
+|                | UInt8                                                |                               |
+| lightEvent     | UInt8                                                | LED 동작 모드                 |
+| interval       | 0 ~ 65535                                            | 내부 밝기 제어 함수 호출 주기 |
+| repeat         | 0 ~ 255                                              | 반복 횟수                     |
+| colors         | [Colors](03_protocol.md#Colors)                      | 색상 팔레트 인덱스            |
+
+
+<br>
+<br>
+
+
 ## <a name="sendModeControlFlight">sendModeControlFlight</a>
 
 비행 제어 모드 설정
@@ -449,31 +540,31 @@ def sendHeadless(self, headless):
 <br>
 
 
-## <a name="sendTrim">sendTrim</a>
+## <a name="sendTrimIncDec">sendTrimIncDec</a>
 
 Trim 설정
 
 ```py
-def sendTrim(self, trim):
+def sendTrimIncDec(self, trimIncDec):
 ```
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                        |
 |:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| trim                      | [Trim](02_system.md#Trim)                         | 트림 설정                   |
+| trimIncDec                | [TrimIncDec](03_protocol.md#TrimIncDec)           | 트림 설정                   |
 
-- e.g. [Trim 변경 테스트](examples_07_setup.md#Trim)
+- e.g. [Trim 변경 테스트](examples_07_setup.md#TrimIncDec)
 
 
 <br>
 <br>
 
 
-## <a name="sendTrimFlight">sendTrimFlight</a>
+## <a name="sendTrim">sendTrim</a>
 
 비행 Trim 설정
 
 ```py
-def sendTrimFlight(self, roll, pitch, yaw, throttle):
+def sendTrim(self, roll, pitch, yaw, throttle):
 ```
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                        |
@@ -483,7 +574,7 @@ def sendTrimFlight(self, roll, pitch, yaw, throttle):
 | yaw                       | -200 ~ 200                                        | Yaw                         |
 | throttle                  | -200 ~ 200                                        | Throttle                    |
 
-- e.g. [드론 TrimFlight 설정 변경 후 확인](examples_07_setup.md#TrimFlight)
+- e.g. [드론 Trim 설정 변경 후 확인](examples_07_setup.md#Trim)
 
 
 <br>
@@ -524,12 +615,12 @@ def sendFlightEvent(self, flightEvent):
 <br>
 
 
-## <a name="sendClearTrim">sendClearTrim</a>
+## <a name="sendClearBias">sendClearBias</a>
 
-비행, 주행 Trim 초기화
+Accel, Gyro Bias 초기화
 
 ```py
-def sendClearTrim(self):
+def sendClearBias(self):
 ```
 
 
@@ -537,12 +628,12 @@ def sendClearTrim(self):
 <br>
 
 
-## <a name="sendClearBias">sendClearBias</a>
+## <a name="sendClearTrim">sendClearTrim</a>
 
-Accel, Gyro Bias 초기화
+비행, 주행 Trim 초기화
 
 ```py
-def sendClearBias(self):
+def sendClearTrim(self):
 ```
 
 
@@ -647,34 +738,6 @@ def sendLightModeColor(self, lightMode, interval, r, g, b):
 <br>
 
 
-## <a name="sendLightModeColorCommand">sendLightModeColorCommand</a>
-
-LED 모드 설정(RGB) + Command
-
-lightMode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
-
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
-```py
-def sendLightModeColorCommand(self, lightMode, interval, r, g, b, commandType, option):
-```
-
-| 변수 이름                 | 형식 또는 범위                             | 설명                                     |
-|:-------------------------:|:------------------------------------------:|:-----------------------------------------|
-| lightMode                 | UInt8                                      | LED 동작 모드                            |
-| interval                  | 0 ~ 65535                                  | 내부 밝기 제어 함수 호출 주기            |
-| r                         | 0 ~ 255                                    | Red                                      |
-| g                         | 0 ~ 255                                    | Green                                    |
-| b                         | 0 ~ 255                                    | Blue                                     |
-| commandType               | [CommandType](03_protocol.md#CommandType)  | 명령 타입                                |
-| option                    | UInt8                                      | 옵션                                     |
-
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
-
-
-<br>
-<br>
-
 
 ## <a name="sendLightModeColors">sendLightModeColors</a>
 
@@ -693,33 +756,6 @@ def sendLightModeColors(self, lightMode, interval, colors):
 | lightMode                 | UInt8                                             | LED 동작 모드                            |
 | interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
 | colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
-
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
-
-
-<br>
-<br>
-
-
-## <a name="sendLightModeColorsCommand">sendLightModeColorsCommand</a>
-
-LED 모드 설정(Palette) + Command
-
-lightMode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
-
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
-```py
-def sendLightModeColorsCommand(self, lightMode, interval, colors, commandType, option):
-```
-
-| 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
-|:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| lightMode                 | UInt8                                             | LED 동작 모드                            |
-| interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
-| colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
-| commandType               | [CommandType](03_protocol.md#CommandType)         | 명령 타입                                |
-| option                    | UInt8                                             | 옵션                                     |
 
 - e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
@@ -756,36 +792,6 @@ def sendLightEventColor(self, lightEvent, interval, repeat, r, g, b):
 <br>
 
 
-## <a name="sendLightEventColorCommand">sendLightEventColorCommand</a>
-
-LED 이벤트 설정(RGB) + Command
-
-lightEvent 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
-
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
-```py
-def sendLightEventColorCommand(self, lightEvent, interval, repeat, r, g, b, commandType, option):
-```
-
-| 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
-|:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| lightEvent                | UInt8                                             | LED 동작 모드                            |
-| interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
-| repeat                    | 0 ~ 255                                           | 반복 횟수                                |
-| r                         | 0 ~ 255                                           | Red                                      |
-| g                         | 0 ~ 255                                           | Green                                    |
-| b                         | 0 ~ 255                                           | Blue                                     |
-| commandType               | [CommandType](03_protocol.md#CommandType)         | 명령 타입                                |
-| option                    | UInt8                                             | 옵션                                     |
-
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
-
-
-<br>
-<br>
-
-
 ## <a name="sendLightEventColors">sendLightEventColors</a>
 
 LED 이벤트 설정(Palette)
@@ -804,34 +810,6 @@ def sendLightEventColors(self, lightEvent, interval, repeat, colors):
 | interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
 | repeat                    | 0 ~ 255                                           | 반복 횟수                                |
 | colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
-
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
-
-
-<br>
-<br>
-
-
-## <a name="sendLightEventColorsCommand">sendLightEventColorsCommand</a>
-
-LED 이벤트 설정(Palette) + Command
-
-lightEvent 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
-
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
-```py
-def sendLightEventColorsCommand(self, lightEvent, interval, repeat, colors, commandType, option):
-```
-
-| 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
-|:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| lightEvent                | UInt8                                             | LED 동작 모드                            |
-| interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
-| repeat                    | 0 ~ 255                                           | 반복 횟수                                |
-| colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
-| commandType               | [CommandType](03_protocol.md#CommandType)         | 명령 타입                                |
-| option                    | UInt8                                             | 옵션                                     |
 
 - e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
