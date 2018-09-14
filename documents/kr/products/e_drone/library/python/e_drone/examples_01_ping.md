@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Ping**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -25,7 +25,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone(False)
-    drone.open("COM22")
+    drone.open()
 
     drone.sendPing(DeviceType.Controller)
 
@@ -80,7 +80,7 @@ def eventAck(ack):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Ack, eventAck)

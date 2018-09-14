@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Sensor**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -26,7 +26,7 @@ def eventAltitude(altitude):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Altitude, eventAltitude)
@@ -65,7 +65,7 @@ def eventMotion(motion):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Motion, eventMotion)
@@ -101,7 +101,7 @@ def eventAttitude(attitude):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Attitude, eventAttitude)

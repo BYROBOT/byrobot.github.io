@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Pairing**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -19,10 +19,10 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone(False)
-    drone.open("COM22")
+    drone.open()
 
     # 페어링 설정
-    drone.sendPairing(DeviceType.Controller, 0x0005, 0x0004, 0x03)
+    drone.sendPairing(DeviceType.Controller, 0x0001, 0x0002, 0x0003, 0x04, 0x05)
     sleep(0.01)
 
     # 페어링데이터 요청
@@ -36,11 +36,16 @@ if __name__ == '__main__':
         
         if    dataType == DataType.Pairing:
             pairing = drone.getData(DataType.Pairing)
-            print("{0} / {1} / {2} / {3} / {4}".format(
-                pairing.address0,
-                pairing.address1,
-                pairing.address2,
-                pairing.scramble,
+
+            print("{0} / {1} / {2}".format(
+                pairing.address0, 
+                pairing.address1, 
+                pairing.address2))
+
+            print("{0}".format(
+                pairing.scramble))
+                
+            print("{0}".format(
                 pairing.channel))
             break;
 
@@ -71,24 +76,29 @@ from e_drone.protocol import *
 
 def eventPairing(pairing):
     print("eventPairing()")
-    print("{0} / {1} / {2} / {3} / {4}".format(
-        pairing.address0,
-        pairing.address1,
-        pairing.address2,
-        pairing.scramble,
+
+    print("{0} / {1} / {2}".format(
+        pairing.address0, 
+        pairing.address1, 
+        pairing.address2))
+    
+    print("{0}".format(
+        pairing.scramble))
+    
+    print("{0}".format(
         pairing.channel))
 
 
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     # 이벤트 핸들링 함수 등록
     drone.setEventHandler(DataType.Pairing, eventPairing)
 
     # 페어링 설정
-    drone.sendPairing(DeviceType.Controller, 0x0000, 0x0001, 0x0002, 0x03, 0x04)
+    drone.sendPairing(DeviceType.Controller, 0x0005, 0x0006, 0x0007, 0x08, 0x09)
     sleep(0.01)
 
     # 페어링데이터 요청

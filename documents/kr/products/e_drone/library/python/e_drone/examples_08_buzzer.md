@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Buzzer**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -19,7 +19,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
     
 
     drone.sendBuzzer(BuzzerMode.Mute, BuzzerScale.Mute.value, 500)
@@ -74,9 +74,8 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
     
-
     drone.sendBuzzer(BuzzerMode.Mute, BuzzerScale.Mute.value, 100)
     sleep(0.2);
     
@@ -111,7 +110,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     header = Header()

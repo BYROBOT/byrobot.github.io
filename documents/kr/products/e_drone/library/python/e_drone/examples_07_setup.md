@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -23,7 +23,7 @@ def eventState(state):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     # 이벤트 핸들링 함수 등록
@@ -76,7 +76,7 @@ def eventState(state):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     # 이벤트 핸들링 함수 등록
@@ -129,7 +129,7 @@ def eventTrim(trim):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     # 이벤트 핸들링 함수 등록
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
     # 트림 설정 변경
     print("Roll Increase")
-    drone.sendTrim(TrimIncDec.RollIncrease)
+    drone.sendTrimIncDec(TrimIncDec.RollIncrease)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 
     # 트림 설정 변경
     print("Pitch Increase")
-    drone.sendTrim(TrimIncDec.PitchIncrease)
+    drone.sendTrimIncDec(TrimIncDec.PitchIncrease)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -158,7 +158,7 @@ if __name__ == '__main__':
 
     # 트림 설정 변경
     print("Pitch Decrease")
-    drone.sendTrim(TrimIncDec.PitchDecrease)
+    drone.sendTrimIncDec(TrimIncDec.PitchDecrease)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -168,7 +168,7 @@ if __name__ == '__main__':
 
     # 트림 설정 변경
     print("Trim Reset")
-    drone.sendTrim(TrimIncDec.Reset)
+    drone.sendTrimIncDec(TrimIncDec.Reset)
     sleep(0.01)
 
     # 변경 사항을 확인
@@ -204,7 +204,7 @@ def eventTrim(trim):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     # 이벤트 핸들링 함수 등록

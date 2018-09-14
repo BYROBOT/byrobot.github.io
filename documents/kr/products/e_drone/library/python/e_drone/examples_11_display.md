@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Display**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -19,7 +19,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     delay = 0.5
     
@@ -81,18 +81,18 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     for i in range(0, 100, 1):
 
-        width  = int(random.randint(0, 127))
-        height = int(random.randint(0, 63))
-        x      = int(random.randint(0, 127) - width / 2)
-        y      = int(random.randint(0, 63) - height / 2)
-        pixel  = DisplayPixel(int(random.randint(0, 1)))
+        width      = int(random.randint(0, 127))
+        height     = int(random.randint(0, 63))
+        x          = int(random.randint(0, 127) - width / 2)
+        y          = int(random.randint(0, 63) - height / 2)
+        pixel      = DisplayPixel(int(random.randint(0, 1)))
 
         dataArray = drone.sendDisplayClear(x, y, width, height, pixel)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -119,7 +119,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     header = Header()
     
@@ -132,14 +132,14 @@ if __name__ == '__main__':
 
     for i in range(0, 100, 1):
 
-        data.width  = int(random.randint(0, 127))
-        data.height = int(random.randint(0, 63))
-        data.x      = int(random.randint(0, 127) - data.width / 2)
-        data.y      = int(random.randint(0, 63) - data.height / 2)
-        data.pixel  = DisplayPixel(int(random.randint(0, 1)))
+        data.width      = int(random.randint(0, 127))
+        data.height     = int(random.randint(0, 63))
+        data.x          = int(random.randint(0, 127) - data.width / 2)
+        data.y          = int(random.randint(0, 63) - data.height / 2)
+        data.pixel      = DisplayPixel(int(random.randint(0, 1)))
 
         dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -166,7 +166,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
     
     drone.sendDisplayClearAll(DisplayPixel(int(random.randint(0, 1))))
     sleep(0.1)
@@ -181,7 +181,7 @@ if __name__ == '__main__':
         line        = DisplayLine(int(random.randint(0, 2)))
 
         dataArray = drone.sendDisplayDrawLine(x1, y1, x2, y2, pixel, line)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.02)
     
@@ -207,9 +207,9 @@ from e_drone.protocol import *
 
 
 if __name__ == '__main__':
-    
-    drone = Drone()
-    drone.open("COM22")
+
+    drone = Drone(True, False, False, True, True)
+    drone.open()
 
     for i in range(0, 100, 1):
 
@@ -219,11 +219,9 @@ if __name__ == '__main__':
         pixel      = DisplayPixel(int(random.randint(0, 1)))
         flagFill   = bool(random.randint(0, 1))
 
-        dataArray = drone.sendDisplayDrawCircle(x, y, radius, pixel, flagFill)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        drone.sendDisplayDrawCircle(x, y, radius, pixel, flagFill)
+        sleep(0.05)
 
-        sleep(0.03)
-    
     drone.close()
 ```
 
@@ -247,7 +245,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
     
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     header = Header()
 
@@ -267,11 +265,12 @@ if __name__ == '__main__':
         data.flagFill   = bool(random.randint(0, 1))
 
         dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
     drone.close()
+
 ```
 
 - [DisplayDrawCircle](03_protocol.md#DisplayDrawCircle)
@@ -294,7 +293,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     for i in range(0, 100, 1):
 
@@ -307,7 +306,7 @@ if __name__ == '__main__':
         line       = DisplayLine(int(random.randint(0, 2)))
 
         dataArray = drone.sendDisplayDrawRect(x, y, width, height, pixel, flagFill, line)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -334,7 +333,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     header = Header()
     
@@ -356,7 +355,7 @@ if __name__ == '__main__':
         data.line       = DisplayLine(int(random.randint(0, 2)))
 
         dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, Drone.convertByteArrayToString(dataArray)))
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -383,7 +382,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
     
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     header = Header()
 
@@ -404,7 +403,8 @@ if __name__ == '__main__':
         
         header.length   = DisplayDrawString.getSize() + len(data.message)
 
-        print("{0} / {1}".format(i, drone.transfer(header, data)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -429,9 +429,9 @@ from e_drone.protocol import *
 
 
 if __name__ == '__main__':
-    
+
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     header = Header()
 
@@ -451,13 +451,14 @@ if __name__ == '__main__':
         data.font       = DisplayFont(int(random.randint(0, 1)))
         data.pixel      = DisplayPixel(int(random.randint(0, 1)))
         data.message    = "LOVE"
-        
+
         header.length   = DisplayDrawStringAlign.getSize() + len(data.message)
 
-        print("{0} / {1}".format(i, drone.transfer(header, data)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
-    
+
     drone.close()
 ```
 

@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Error**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -8,6 +8,11 @@ Modified : 2018.7.6
 
 
 ## <a name="Error_MotionCalibrating">Motion 센서 보정</a>
+
+2018.9.14
+
+정상 동작하지 않는 것을 확인하였습니다.
+추후 수정할 예정입니다.
 
 ```py
 from time import sleep
@@ -27,7 +32,7 @@ def eventError(error):
     print("* eventError() / SystemTime({0:10}) / ErrorFlagsForSensor({1:032b}) / ErrorFlagsForState({2:032b})".format(error.systemTime, error.errorFlagsForSensor, error.errorFlagsForState))
 
     if checkError(error.errorFlagsForSensor, ErrorFlagsForSensor.Motion_Calibrating):
-        print("    - IMU 센서를 보정 중입니다.")
+        print("    - MOTION 센서를 보정 중입니다.")
 
 
 if __name__ == '__main__':
@@ -41,7 +46,7 @@ if __name__ == '__main__':
     drone.sendPing(DeviceType.Controller)
     sleep(0.1)
 
-    drone.sendCommand(CommandType.ClearGyroBias)
+    drone.sendCommand(CommandType.ClearBias)
     sleep(0.1)
 
     for i in range(30, 0, -1):
@@ -49,8 +54,8 @@ if __name__ == '__main__':
         sleep(1)
 
         error = drone.getData(DataType.Error)
-        if not checkError(error.errorFlagsForSensor, ErrorFlagsForSensor.Motion_Calibrating):
-            print("* Motion 센서 보정이 완료되었습니다.")
+        if error and not checkError(error.errorFlagsForSensor, ErrorFlagsForSensor.Motion_Calibrating):
+            print("* MOTION 센서 보정이 완료되었습니다.")
             break
 
     drone.close()

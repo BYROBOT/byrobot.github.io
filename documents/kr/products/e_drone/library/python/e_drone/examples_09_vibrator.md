@@ -19,7 +19,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
     drone.sendVibrator(100, 200, 1200)
     sleep(1)
@@ -46,7 +46,7 @@ from e_drone.protocol import *
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     header = Header()

@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Motor**
 
-Modified : 2018.7.6
+Modified : 2018.9.14
 
 ---
 
@@ -27,7 +27,7 @@ def eventAck(ack):
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     # 이벤트 핸들링 함수 등록
@@ -67,13 +67,16 @@ from e_drone.protocol import *
 
 
 def eventAck(ack):
-    print("eventAck() / {0} / 0x{1:04X} / {2}".format(ack.dataType.name, ack.crc16, ack.systemTime))
+    print("eventAck()")
+    print("-   DataType: {0}".format(ack.dataType.name))
+    print("-      CRC16: 0x{0:04X}".format(ack.crc16))
+    print("- SystemTime: {0}".format(ack.systemTime))
 
 
 if __name__ == '__main__':
 
     drone = Drone()
-    drone.open("COM22")
+    drone.open()
 
 
     # 이벤트 핸들링 함수 등록
@@ -81,19 +84,19 @@ if __name__ == '__main__':
     sleep(0.01)
 
 
-    drone.sendMotorSingle(0, Rotation.Clockwise, 1000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
     sleep(2)
 
-    drone.sendMotorSingle(0, Rotation.Clockwise, 2000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
     sleep(2)
 
-    drone.sendMotorSingle(0, Rotation.Clockwise, 3000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 3000)
     sleep(2)
 
-    drone.sendMotorSingle(0, Rotation.Clockwise, 2000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
     sleep(2)
 
-    drone.sendMotorSingle(0, Rotation.Clockwise, 1000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
     sleep(2)
 
     drone.sendStop()
