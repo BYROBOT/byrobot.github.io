@@ -1,4 +1,4 @@
-### BYROBOT official documents repository.
+### Products
 
 ---
 
@@ -8,45 +8,41 @@
             <td><div align="center"></div></td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="240" width="240"><br>
-                    DRONE FIGHTER
+                    <a href="/documents/kr/products/dronefighter2017/">
+                        <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="240" width="240"><br>
+                        DRONE FIGHTER
+                    </a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/petrone.jpg" alt="petrone" height="240" width="240"><br>
-                    PETRONE<br>
-                    PETRONE 2.0
+                    <a href="/documents/kr/products/petrone/">
+                        <img src="/assets/images/products/petrone.jpg" alt="petrone" height="240" width="240"><br>
+                        PETRONE<br>
+                        PETRONE 2.0
+                    </a>
                 </div>
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2_and_controller" height="240" width="240"><br>
-                    PETRONE V2
+                    <a href="/documents/kr/products/petrone_v2/">
+                        <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2_and_controller" height="240" width="240"><br>
+                        PETRONE V2
+                    </a>
+                </div>
+            </td>
+            <td>
+                <div align="center">
+                    <a href="/documents/kr/products/e_drone/">
+                        <img src="/assets/images/products/e_drone.png" alt="e_drone" height="240" width="240"><br>
+                        E-DRONE
+                    </a>
                 </div>
             </td>
         </tr>
-        <tr>
-            <td><div align="center">Protocol</div></td>
-            <td><div align="center"><a href="/documents/en/products/dronefighter2017/protocol/">English</a><br/><a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a></div></td>
-            <td><div align="center"><a href="/documents/en/products/petrone/protocol/">English</a><br/><a href="/documents/kr/products/petrone/protocol/">한국어</a></div></td>
-            <td><div align="center"><a href="/documents/en/products/petrone_v2/protocol/">English</a><br/><a href="/documents/kr/products/petrone_v2/protocol/">한국어</a></div></td>
-        </tr>
-            <tr>
-            <td><div align="center">Python Library</div></td>
-                <td><div align="center">-</div></td>
-                <td><div align="center"><a href="/documents/en/products/petrone/library/python/petrone/">English</a><br/><a href="/documents/kr/products/petrone/library/python/petrone/">한국어</a></div></td>
-                <td><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">한국어</a></div></td>
-            </tr>
-            <tr>
-            <td><div align="center">Entry Examples</div></td>
-                <td><div align="center">-</div></td>
-                <td><div align="center">-</div></td>
-                <td><div align="center"><a href="/documents/en/products/petrone_v2/entry/examples/">English</a><br/><a href="/documents/kr/products/petrone_v2/entry/examples/">한국어</a></div></td>
-            </tr>
     </table>
 </div>
 
 ---
 
-Modified : 2018.3.5
+Modified : 2018.9.17

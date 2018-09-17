@@ -53,7 +53,6 @@ addthis_public_id: # AddThis sharing plugin. See http://www.addthis.com/
 
 paths:
   home: /
-  documents: /
-  repository: /repository/
-  download: /download/
+  products: /
+  software: /software/
   forum: /forum/
