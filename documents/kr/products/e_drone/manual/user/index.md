@@ -99,41 +99,466 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 # 3. 설정 화면의 메뉴 구성
 
-| 1단계             | 2단계                                     | 설명                                              |
-|:------------------|:------------------------------------------|---------------------------------------------------|
-| DISPLAY           | 높이-자세-RPM                             | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-|                   | 높이-방향-RPM-자세-고도-위치              | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-|                   | 속도-위치-자세                            | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-|                   | 자세-높이                                 | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-|                   | 위치-트림                                 | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-|                   | RF 정보 및 상태                           | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-|                   | 조이스틱 입력 값                          | 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)   |
-| LIGHT             | DRONE                                     | 드론 LED 기본 색 설정 변경                        |
-|                   | CONTROLLER                                | 조종기 LED 기본 색 설정 변경                      |
-| CONTROL           | ATTITUDE                                  | 자세 제어                                         |
-|                   | POSITION                                  | 위치 제어                                         |
-| MODE              | MODE 1                                    | L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔, Aileron  |
-|                   | MODE 2                                    | L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔, Aileron  |
-|                   | MODE 3                                    | L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔, Rudder  |
-|                   | MODE 4                                    | L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔, Rudder  |
-| HEADLESS          | HEADLESS                                  | 헤드리스(방향 고정)                               |
-|                   | NORMAL                                    | 일반(드론의 현재 방향 기준)                       |
-| SPEED             | S1 (50%)                                  | 속도 1단계 (50 %)                                 |
-|                   | S2 (75%)                                  | 속도 2단계 (75 %)                                 |
-|                   | S3 (100%)                                 | 속도 3단계 (100 %)                                |
-| WEIGHT            | 100g ~ 150g                               | 드론 + 추가 장치의 무게                           |
-| FUNCTION          | SENSOR RESET                              | 드론의 자이로 바이어스 리셋                       |
-|                   | PAIRING                                   | 페어링                                            |
-| INFORMATION       | COUNT                                     | 비행 시간 및 이벤트 카운트 값 표시                |
-|                   | BIAS                                      | 가속도, 자이로 바이어스 값 표시                   |
-|                   | TRIM                                      | Trim 값 표시                                      |
-|                   | MOTION                                    | IMU 센서 데이터를 연산하여 변환한 결과 표시       |
-|                   | ALTITUDE                                  | 높이-고도와 관련된 센서 데이터 표시               |
-|                   | POSITION                                  | 위치 데이터 표시                                  |
-|                   | ADDRESS/D                                 | 드론의 고유번호 표시                              |
-|                   | ADDRESS/C                                 | 조종기의 고유번호 표시                            |
-|                   | BOOT                                      | 조종기의 부트 정보 및 등록 여부 표시              |
-|                   | CRC32                                     | 드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시 |
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                1단계
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                2단계
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                설명
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="7">
+            <div align="center">
+                DISPLAY
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                높이-자세-RPM
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                높이-방향-RPM-자세-고도-위치
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                속도-위치-자세
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                자세-높이
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                위치-트림
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                RF 정보 및 상태
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                조이스틱 입력 값
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <div align="center">
+                LIGHT
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                DRONE
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                드론 LED 기본 색 설정 변경
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                CONTROLLER
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종기 LED 기본 색 설정 변경
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <div align="center">
+                CONTROL
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                ATTITUDE
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                자세 제어
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                POSITION
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                위치 제어
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="4">
+            <div align="center">
+                MODE
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                MODE 1
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔, Aileron
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                MODE 2
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔, Aileron
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                MODE 3
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔, Rudder
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                MODE 4
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔, Rudder
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <div align="center">
+                HEADLESS
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                HEADLESS
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                헤드리스(방향 고정)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                NORMAL
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                일반(드론의 현재 방향 기준)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="3">
+            <div align="center">
+                HEADLESS
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                S1 (50%)
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                속도 1단계 (50 %)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                S2 (75%)
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                속도 2단계 (75 %)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                S3 (100%)
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                속도 3단계 (100 %)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                WEIGHT
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                100g ~ 150g
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                드론 + 추가 장치의 무게
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <div align="center">
+                FUNCTION
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                SENSOR RESET
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                드론의 자이로 바이어스 리셋
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                PAIRING
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                페어링
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="10">
+            <div align="center">
+                INFORMATION
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                COUNT
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                비행 시간 및 이벤트 카운트 값 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                BIAS
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                가속도, 자이로 바이어스 값 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                TRIM
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                Trim 값 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                MOTION
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                IMU 센서 데이터를 연산하여 변환한 결과 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                ALTITUDE
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                높이-고도와 관련된 센서 데이터 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                POSITION
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                위치 데이터 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                ADDRESS/D
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                드론의 고유번호 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                ADDRESS/C
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종기의 고유번호 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                BOOT
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                조종기의 부트 정보 및 장치 등록 여부 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                CRC32
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시
+            </div>
+        </td>
+    </tr>
+</table>
 
  * Elevator : 앞뒤 이동(Pitch)
  * Rudder : 좌우 회전(Yaw)
