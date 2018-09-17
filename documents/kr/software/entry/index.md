@@ -10,13 +10,6 @@
         <tr>
             <td colspan="3">
                 <div align="center">
-                    Entry
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <div align="center">
                     <img src="/assets/images/products/entry.png" alt="Entry">
                 </div>
             </td>

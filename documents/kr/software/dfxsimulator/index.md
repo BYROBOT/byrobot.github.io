@@ -10,13 +10,6 @@
         <tr>
             <td colspan="2">
                 <div align="center">
-                    Drone Fighter Simulator
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div align="center">
                     <img src="/assets/images/products/dfxsimulator.gif" alt="DroneFighter Simulator">
                 </div>
             </td>

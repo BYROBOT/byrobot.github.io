@@ -6,18 +6,7 @@
 
     <br>
     
-    <a name="ByScratch"></a>
-    <hr>
-    <br>
-
     <table>
-        <tr>
-            <td colspan="3">
-                <div align="center">
-                    ByScratch
-                </div>
-            </td>
-        </tr>
         <tr>
             <td colspan="3">
                 <div align="center">
