@@ -10,6 +10,13 @@
         <tr>
             <td colspan="3">
                 <div align="center">
+                    Racing Petrone
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div align="center">
                     <img src="/assets/images/products/racingpetrone.jpg" alt="Racing Petrone">
                 </div>
             </td>
