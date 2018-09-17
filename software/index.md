@@ -10,7 +10,7 @@
         <tr>
             <td>
                 <div align="center">
-                    <a href="/documents/kr/software/entry/byscratch">
+                    <a href="/documents/kr/software/byscratch/">
                         <img src="/assets/images/products/byscratch.png" alt="ByScratch"><br>
                         ByScratch
                     </a>
