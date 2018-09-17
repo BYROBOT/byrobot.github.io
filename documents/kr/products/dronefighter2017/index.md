@@ -8,9 +8,7 @@
             <td><div align="center"></div></td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="e_drone" height="360" width="360">
-                    <br>
-                    <div align="center">Drone Fighter</div>
+                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="e_drone" height="480" width="480">
                 </div>
             </td>
         </tr>

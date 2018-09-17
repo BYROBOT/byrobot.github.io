@@ -34,7 +34,7 @@
             <td>
                 <div align="center">
                     <a href="/documents/kr/products/e_drone/">
-                        <img src="/assets/images/products/e_drone.png" alt="e_drone" height="240" width="240"><br>
+                        <img src="/assets/images/products/e_drone.jpg" alt="e_drone" height="240" width="240"><br>
                         E-DRONE
                     </a>
                 </div>
