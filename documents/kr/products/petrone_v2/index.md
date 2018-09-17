@@ -3,6 +3,7 @@
 ---
 
 <div align="center">
+
     <table>
         <tr>
             <td><div align="center"></div></td>
@@ -23,6 +24,7 @@
         <tr>
             <td>
                 <div align="center">Driver</div>
+            </td>
             <td>
                 <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 32bit</a></div>
                 <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 64bit</a></div>
@@ -75,8 +77,9 @@
             </td>
         </tr>
     </table>
+
 </div>
 
 ---
 
-Modified : 2018.9.14
+Modified : 2018.9.17
