@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2018.9.10
+Modified : 2018.9.17
 
 ---
 

@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.9.5
+Modified : 2018.9.17
 
 ---
 

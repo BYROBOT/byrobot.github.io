@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.9.5
+Modified : 2018.9.17
 
 ---
 
@@ -303,7 +303,7 @@ namespace Control
 
 드론 이동 명령
 
-RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, 각 단위의 값에 x10을 적용.
+RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, position과 velocity의 값에 x10을 적용.
 
 ```cpp
 namespace Control
@@ -318,23 +318,23 @@ namespace Control
         s16     velocityY;          // m/s      x 10
         s16     velocityZ;          // m/s      x 10
         
-        s16     heading;            // degree   x 10
-        s16     rotationalVelocity; // deg/s    x 10
+        s16     heading;            // degree
+        s16     rotationalVelocity; // deg/s
     };
 }
 ```
 
 
-| 변수 이름             | 형식     | 범위         | 크기     | 단위          | 설명           |
-|:---------------------:|:--------:|:------------:|:--------:|:--------------|:---------------|
-| positionX             | int16_t  | -            | 2 Byte   | meter x 10    | -              |
-| positionY             | int16_t  | -            | 2 Byte   | meter x 10    | -              |
-| positionZ             | int16_t  | -            | 2 Byte   | meter x 10    | 승하강         |
-| velocityX             | int16_t  | -            | 2 Byte   | m/s x 10      | -              |
-| velocityY             | int16_t  | -            | 2 Byte   | m/s x 10      | -              |
-| velocityZ             | int16_t  | -            | 2 Byte   | m/s x 10      | 승하강 속도    |
-| heading               | int16_t  | -            | 2 Byte   | degree x 10   | 좌우 회전      |
-| rotationalVelocity    | int16_t  | -            | 2 Byte   | degree/s x 10 | 좌우 회전 속도 |
+| 변수 이름             | 형식     | 범위                       | 크기     | 단위          | 설명           |
+|:---------------------:|:--------:|:--------------------------:|:--------:|:--------------|:---------------|
+| positionX             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 좌우           |
+| positionY             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 앞뒤           |
+| positionZ             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 승하강         |
+| velocityX             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 좌우 이동 속도 |
+| velocityY             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 앞뒤 이동 속도 |
+| velocityZ             | int16_t  | 2 ~ 20(0.2 ~ 2.0)          | 2 Byte   | m/s x 10      | 승하강 속도    |
+| heading               | int16_t  | -360 ~ 360                 | 2 Byte   | degree        | 좌우 회전      |
+| rotationalVelocity    | int16_t  | 10 ~ 360                   | 2 Byte   | degree/s      | 좌우 회전 속도 |
 
 
 <br>
@@ -368,16 +368,16 @@ namespace Control
 ```
 
 
-| 변수 이름             | 형식   | 범위         | 크기     | 단위     | 설명           |
-|:---------------------:|:------:|:------------:|:--------:|:---------|:---------------|
-| positionX             | float  | -            | 4 Byte   | meter    | -              |
-| positionY             | float  | -            | 4 Byte   | meter    | -              |
-| positionZ             | float  | -            | 4 Byte   | meter    | 승하강         |
-| velocityX             | float  | -            | 4 Byte   | m/s      | -              |
-| velocityY             | float  | -            | 4 Byte   | m/s      | -              |
-| velocityZ             | float  | -            | 4 Byte   | m/s      | 승하강 속도    |
-| heading               | float  | -            | 4 Byte   | degree   | 좌우 회전      |
-| rotationalVelocity    | float  | -            | 4 Byte   | degree/s | 좌우 회전 속도 |
+| 변수 이름             | 형식   | 범위           | 크기     | 단위     | 설명           |
+|:---------------------:|:------:|:--------------:|:--------:|:---------|:---------------|
+| positionX             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 좌우           |
+| positionY             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 앞뒤           |
+| positionZ             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 승하강         |
+| velocityX             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 좌우 이동 속도 |
+| velocityY             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 앞뒤 이동 속도 |
+| velocityZ             | float  | 0.2 ~ 2.0      | 4 Byte   | m/s      | 승하강 속도    |
+| heading               | float  | -360.0 ~ 360.0 | 4 Byte   | degree   | 좌우 회전      |
+| rotationalVelocity    | float  | 10.0 ~ 360.0   | 4 Byte   | degree/s | 좌우 회전 속도 |
 
 
 <br>
@@ -439,7 +439,7 @@ namespace Protocol
 | 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
 |:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
 | command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | -       | 4 Byte   | LED 이벤트   |
 
 
 <br>
