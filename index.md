@@ -6,7 +6,6 @@
 
     <table>
         <tr>
-            <td><div align="center"></div></td>
             <td>
                 <div align="center">
                     <a href="/documents/kr/products/dronefighter2017/">
