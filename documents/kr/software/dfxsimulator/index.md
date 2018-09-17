@@ -4,8 +4,6 @@
 
 <div align="center">
 
-    <br>
-
     <table>
         <tr>
             <td colspan="2">
@@ -48,8 +46,6 @@
         </tr>
     </table>
     
-    <br>
-
 </div>
 
 ---
