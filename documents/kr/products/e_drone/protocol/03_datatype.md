@@ -128,7 +128,7 @@ namespace Protocol
 | Registration                          | 0x0D | -    | 제품 등록                                      | &nbsp; |
 | Administrator                         | 0x0E | -    | 관리자                                         | &nbsp; |
 | Monitor                               | 0x0F | -    | 디버깅 데이터                                  | &nbsp; |
-| Control                               | 0x10 | D    | 조종                                           | [Control::Quad8](05_structs.md#Control_Quad8), [Control::Quad8AndRequestData](05_structs.md#Control_Quad8AndRequestData) |
+| Control                               | 0x10 | D    | 조종                                           | [Control::Quad8](05_structs.md#Control_Quad8), [Control::Quad8AndRequestData](05_structs.md#Control_Quad8AndRequestData), [Control::Position16](05_structs.md#Control_Position16), [Control::Position](05_structs.md#Control_Position) |
 | Command                               | 0x11 | A    | 명령                                           | [Protocol::Command::Command](05_structs.md#Protocol_Command_Command), [Protocol::Command::LightEvent](05_structs.md#Protocol_Command_LightEvent), [Protocol::Command::LightEventColor](05_structs.md#Protocol_Command_LightEventColor), [Protocol::Command::LightEventColors](05_structs.md#Protocol_Command_LightEventColors) |
 | Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
 | Rssi                                  | 0x13 | A    | RSSI                                           | [Protocol::Rssi](05_structs.md#Protocol_Rssi) |

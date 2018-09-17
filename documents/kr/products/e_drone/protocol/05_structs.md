@@ -298,6 +298,92 @@ namespace Control
 <br>
 
 
+<a name="Control_Position16"></a>
+## Control::Position16
+
+드론 이동 명령
+
+RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, 각 단위의 값에 x10을 적용.
+
+```cpp
+namespace Control
+{
+    struct Position16
+    {
+        s16     positionX;          // meter    x 10
+        s16     positionY;          // meter    x 10
+        s16     positionZ;          // meter    x 10
+        
+        s16     velocityX;          // m/s      x 10
+        s16     velocityY;          // m/s      x 10
+        s16     velocityZ;          // m/s      x 10
+        
+        s16     heading;            // degree   x 10
+        s16     rotationalVelocity; // deg/s    x 10
+    };
+}
+```
+
+
+| 변수 이름             | 형식     | 범위         | 크기     | 단위          | 설명           |
+|:---------------------:|:--------:|:------------:|:--------:|:--------------|:---------------|
+| positionX             | int16_t  | -            | 2 Byte   | meter x 10    | -              |
+| positionY             | int16_t  | -            | 2 Byte   | meter x 10    | -              |
+| positionZ             | int16_t  | -            | 2 Byte   | meter x 10    | 승하강         |
+| velocityX             | int16_t  | -            | 2 Byte   | m/s x 10      | -              |
+| velocityY             | int16_t  | -            | 2 Byte   | m/s x 10      | -              |
+| velocityZ             | int16_t  | -            | 2 Byte   | m/s x 10      | 승하강 속도    |
+| heading               | int16_t  | -            | 2 Byte   | degree x 10   | 좌우 회전      |
+| rotationalVelocity    | int16_t  | -            | 2 Byte   | degree/s x 10 | 좌우 회전 속도 |
+
+
+<br>
+<br>
+
+
+<a name="Control_Position"></a>
+## Control::Position
+
+드론 이동 명령
+
+드론에 UART 또는 USB를 통해 이동 명령을 내리는 경우 사용. 데이터 길이가 길어서 RF로는 전송할 수 없음.
+
+```cpp
+namespace Control
+{
+    struct Position
+    {
+        float       positionX;              // meter
+        float       positionY;              // meter
+        float       positionZ;              // meter
+        
+        float       velocityX;              // m/s
+        float       velocityY;              // m/s
+        float       velocityZ;              // m/s
+        
+        float       heading;                // degree
+        float       rotationalVelocity;     // deg/s
+    };
+}
+```
+
+
+| 변수 이름             | 형식   | 범위         | 크기     | 단위     | 설명           |
+|:---------------------:|:------:|:------------:|:--------:|:---------|:---------------|
+| positionX             | float  | -            | 4 Byte   | meter    | -              |
+| positionY             | float  | -            | 4 Byte   | meter    | -              |
+| positionZ             | float  | -            | 4 Byte   | meter    | 승하강         |
+| velocityX             | float  | -            | 4 Byte   | m/s      | -              |
+| velocityY             | float  | -            | 4 Byte   | m/s      | -              |
+| velocityZ             | float  | -            | 4 Byte   | m/s      | 승하강 속도    |
+| heading               | float  | -            | 4 Byte   | degree   | 좌우 회전      |
+| rotationalVelocity    | float  | -            | 4 Byte   | degree/s | 좌우 회전 속도 |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Command_Command"></a>
 ## Protocol::Command::Command
 
