@@ -15,11 +15,11 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td><div align="center">Drone: 0.2.2<br>Controller: 0.2.2</div></td>
+            <td><div align="center">Drone: 0.2.3<br>Controller: 0.2.3</div></td>
         </tr>
         <tr>
             <td><div align="center">Firmware</div></td>
-            <td><div align="center"><a href="https://drive.google.com/open?id=1dcfRNFpwNVhXkH2MD-VEGTOp1Q4HhwjG" target="_blank">Download</a></div></td>
+            <td><div align="center"><a href="https://drive.google.com/open?id=1Ww4Mxhr5iD9TzXU2DtMeY3pGcxzFt8Zd" target="_blank">Download</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -43,4 +43,4 @@
 
 ---
 
-Modified : 2018.9.17
+Modified : 2018.9.18

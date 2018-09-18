@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.9.14
+Modified : 2018.9.18
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2018.9.14
 
 
 <br>
+
+
+# 2018.9.18
+
+- **Drone: 0.2.3**
+- **Controller: 0.2.3**
+
+> - 조종 모드에서 조종기 전원 버튼을 짧게 누르면 LCD를 리셋함.(화면이 반전된 경우에 사용)
+> - 센서의 RAW 데이터를 읽는데 사용하는 RawFlow, RawMotion 구조체를 추가
+> - 조종기 부트로더 진입 시 진동 발생하는 문제 수정
+> - Motion 구조체로 전달하는 Accel과 Gyro값을 지정한 단위에 맞추어 계산한 값으로 변경
+> - Control::Position16, Control::Position 명령 추가함(위치와 속도로 이동 명령을 내릴 때 사용)
+> - 비행 안정화
+
+<br>
+
+---
 
 
 # 2018.9.14
