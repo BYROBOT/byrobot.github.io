@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.9.17
+Modified : 2018.9.18
 
 ---
 
@@ -49,14 +49,17 @@ namespace Protocol
             LightEvent                  = 0x22,     // LED 이벤트
             LightDefault                = 0x23,     // LED 기본 색상
 
+            // 센서 RAW 데이터
+            RawMotion                   = 0x30,     // Motion 센서 데이터 RAW 값
+            RawFlow,                                // Flow 센서 데이터 RAW 값
+
             // 상태,  센서
             State                       = 0x40,     // 드론의 상태(비행 모드, 방위기준, 배터리량)
             Attitude,                               // 드론의 자세(Angle)(Attitude)
             Position,                               // 위치
             Altitude,                               // 높이, 고도
-            Motion,                                 // Motion 센서 RAW 데이터(IMU)
-            Flow,                                   // Flow 센서 RAW 데이터
-    
+            Motion,                                 // Motion 센서 데이터 처리한 값(IMU)
+
             // 설정
             Count                       = 0x50,     // 카운트
             Bias,                                   // 엑셀, 자이로 바이어스 값
@@ -136,12 +139,13 @@ namespace Protocol
 | LightMode                             | 0x21 | D    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode), [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor), [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | LightEvent                            | 0x22 | D    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event), [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor), [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |
 | LightDefault                          | 0x23 | D    | LED 초기색                                     | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor), [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
+| RawMotion                             | 0x30 | D    | Motion Raw 데이터(Accel, Gyro)                 | [Protocol::RawMotion](05_structs.md#Protocol_RawMotion) |
+| RawFlow                               | 0x31 | D    | Flow Raw 데이터                                | [Protocol::RawFlow](05_structs.md#Protocol_RawFlow) |
 | State                                 | 0x40 | D    | 드론의 상태                                    | [Protocol::State](05_structs.md#Protocol_State) |
 | Attitude                              | 0x41 | D    | 드론의 자세(Angle)                             | [Protocol::Attitude](05_structs.md#Protocol_Attitude) |
 | Position                              | 0x42 | D    | 위치                                           | [Protocol::Position](05_structs.md#Protocol_Position) |
 | Altitude                              | 0x43 | D    | 높이, 고도                                     | [Protocol::Altitude](05_structs.md#Protocol_Altitude) |
 | Motion                                | 0x44 | D    | Motion 센서(Accel, Gyro, Angle)                | [Protocol::Motion](05_structs.md#Protocol_Motion) |
-| Flow                                  | 0x45 | D    | Flow 센서로 계산한 위치                        | [Protocol::Flow](05_structs.md#Protocol_Flow) |
 | Count                                 | 0x50 | D    | 카운트                                         | [Protocol::Count](05_structs.md#Protocol_Count) |
 | Bias                                  | 0x51 | D    | Accel, Gyro 바이어스 값                        | [Protocol::Bias](05_structs.md#Protocol_Bias) |
 | Trim                                  | 0x52 | D    | Trim                                           | [Protocol::Trim](05_structs.md#Protocol_Trim) |

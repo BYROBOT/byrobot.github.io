@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.9.17
+Modified : 2018.9.18
 
 ---
 
@@ -532,6 +532,67 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_RawMotion"></a>
+## Protocol::RawMotion
+
+Motion 센서 RAW 데이터
+
+```cpp
+namespace Protocol
+{
+    struct RawMotion
+    {
+        s16     accX;
+        s16     accY;
+        s16     accZ;
+        
+        s16     gyroRoll;
+        s16     gyroPitch;
+        s16     gyroYaw;
+    };
+}
+```
+
+| 변수 이름  | 형식     | 범위              | 크기     | 설명           |
+|:----------:|:--------:|:-----------------:|:--------:|:---------------|
+| accelX     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 X       |
+| accelY     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Y       |
+| accelZ     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Z       |
+| gyroRoll   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Roll    |
+| gyroPitch  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Pitch   |
+| gyroYaw    | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Yaw     |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_RawFlow"></a>
+## Protocol::RawFlow
+
+Flow 센서 RAW 데이터
+
+```cpp
+namespace Protocol
+{
+    struct RawFlow
+    {
+        f32     x;
+        f32     y;
+    };
+}
+```
+
+| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
+|:----------:|:---------:|:-----:|:--------:|:--------|
+| x          | float     | -     | 4 Byte   | X축     |
+| y          | float     | -     | 4 Byte   | Y축     |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_State"></a>
 ## Protocol::State
 
@@ -794,34 +855,6 @@ namespace Protocol
 | angleRoll  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Roll      |
 | anglePitch | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Pitch     |
 | angleYaw   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Yaw       |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Flow"></a>
-## Protocol::Flow
-
-Flow
-
-플로우 센서와 높이 값으로 계산한 상대 위치 값
-
-```cpp
-namespace Protocol
-{
-    struct Flow
-    {
-        f32     x;
-        f32     y;
-    };
-}
-```
-
-| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
-|:----------:|:---------:|:-----:|:--------:|:--------|
-| x          | float     | -     | 4 Byte   | X축(m)  |
-| y          | float     | -     | 4 Byte   | Y축(m)  |
 
 
 <br>
