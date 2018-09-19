@@ -90,7 +90,7 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="sendControlPosition16">이륙, 호버링, 이동, 착륙 테스트</a>
+## <a name="ControlPosition16">이륙, 호버링, 이동, 착륙 테스트</a>
 
 ```py
 from time import sleep
