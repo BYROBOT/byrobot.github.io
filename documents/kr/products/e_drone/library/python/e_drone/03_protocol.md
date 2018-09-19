@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2018.9.12
+Modified : 2018.9.19
 
 ---
 
@@ -49,13 +49,16 @@ class DataType(Enum):
     LightEvent                  = 0x22      # LED 이벤트
     LightDefault                = 0x23      # LED 초기 모드
 
+    # 센서 RAW 데이터
+    RawMotion                   = 0x30      # Motion 센서 데이터 RAW 값
+    RawFlow                     = 0x31      # Flow 센서 데이터 RAW 값
+
     # 상태, 센서
     State                       = 0x40      # 드론의 상태(비행 모드 방위기준 배터리량)
     Attitude                    = 0x41      # 드론의 자세(Angle)
     Position                    = 0x42      # 위치
     Altitude                    = 0x43      # 높이, 고도
     Motion                      = 0x44      # Motion 센서 데이터(IMU)
-    Flow                        = 0x45      # Flow 센서 RAW 데이터
 
     # 설정
     Count                       = 0x50      # 카운트
@@ -633,6 +636,82 @@ class ControlQuad8AndRequestData(ISerializable):
 | yaw         | Int8                    | -100 ~ 100 | 1 Byte   | Yaw                   |
 | throttle    | Int8                    | -100 ~ 100 | 1 Byte   | Throttle              |
 | dataType    | [DataType](#DataType)   | -          | 1 Byte   | 요청할 데이터 타입    |
+
+
+<br>
+<br>
+
+
+## <a name="ControlPosition16">ControlPosition16</a>
+
+드론 이동 명령
+
+RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, position과 velocity의 값에 x10을 적용.
+
+```py
+class ControlPosition16(ISerializable):
+
+    def __init__(self):
+        self.positionX          = 0
+        self.positionY          = 0
+        self.positionZ          = 0
+
+        self.velocityX          = 0
+        self.velocityY          = 0
+        self.velocityZ          = 0
+        
+        self.heading            = 0
+        self.rotationalVelocity = 0
+```
+
+| 변수 이름             | 형식   | 범위                       | 크기     | 단위          | 설명                 |
+|:---------------------:|:------:|:--------------------------:|:--------:|:--------------|:---------------------|
+| positionX             | Int16  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 앞(+), 뒤(-)         |
+| positionY             | Int16  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 좌(+), 우(-)         |
+| positionZ             | Int16  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 위(+), 아래(-)       |
+| velocityX             | Int16  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 앞뒤 이동 속도       |
+| velocityY             | Int16  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 좌우 이동 속도       |
+| velocityZ             | Int16  | 2 ~ 20(0.2 ~ 2.0)          | 2 Byte   | m/s x 10      | 승하강 속도          |
+| heading               | Int16  | -360 ~ 360                 | 2 Byte   | degree        | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | Int16  | 10 ~ 360                   | 2 Byte   | degree/s      | 좌우 회전 속도       |
+
+
+<br>
+<br>
+
+
+## <a name="ControlPosition">ControlPosition</a>
+
+드론 이동 명령
+
+드론에 UART 또는 USB를 통해 이동 명령을 내리는 경우 사용. 데이터 길이가 길어서 RF로는 전송할 수 없음.
+
+```py
+class ControlPosition(ISerializable):
+
+    def __init__(self):
+        self.positionX          = 0
+        self.positionY          = 0
+        self.positionZ          = 0
+
+        self.velocityX          = 0
+        self.velocityY          = 0
+        self.velocityZ          = 0
+
+        self.heading            = 0
+        self.rotationalVelocity = 0
+```
+
+| 변수 이름             | 형식   | 범위           | 크기     | 단위     | 설명                 |
+|:---------------------:|:------:|:--------------:|:--------:|:---------|:---------------------|
+| positionX             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 앞(+), 뒤(-)         |
+| positionY             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 좌(+), 우(-)         |
+| positionZ             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 위(+), 아래(-)       |
+| velocityX             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 앞뒤 이동 속도       |
+| velocityY             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 좌우 이동 속도       |
+| velocityZ             | float  | 0.2 ~ 2.0      | 4 Byte   | m/s      | 승하강 속도          |
+| heading               | float  | -360.0 ~ 360.0 | 4 Byte   | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | float  | 10.0 ~ 360.0   | 4 Byte   | degree/s | 좌우 회전 속도       |
 
 
 <br>
@@ -1770,6 +1849,58 @@ class Joystick(ISerializable):
 <br>
 
 
+## <a name="RawMotion">RawMotion</a>
+
+Motion 센서 데이터 RAW 값
+
+```py
+class RawMotion(ISerializable):
+
+    def __init__(self):
+        self.accelX     = 0
+        self.accelY     = 0
+        self.accelZ     = 0
+        self.gyroRoll   = 0
+        self.gyroPitch  = 0
+        self.gyroYaw    = 0
+```
+
+| 변수 이름  | 형식     | 범위              | 크기     | 설명           |
+|:----------:|:--------:|:-----------------:|:--------:|:---------------|
+| accelX     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 X       |
+| accelY     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Y       |
+| accelZ     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Z       |
+| gyroRoll   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Roll    |
+| gyroPitch  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Pitch   |
+| gyroYaw    | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Yaw     |
+
+
+<br>
+<br>
+
+
+## <a name="RawFlow">RawFlow</a>
+
+옵티컬 플로우로 계산한 상대 위치 값
+
+```py
+class Flow(ISerializable):
+
+    def __init__(self):
+        self.x     = 0
+        self.y     = 0
+```
+
+| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
+|:----------:|:---------:|:-----:|:--------:|:--------|
+| x          | Float32   | -     | 4 Byte   | X축(m)  |
+| y          | Float32   | -     | 4 Byte   | Y축(m)  |
+
+
+<br>
+<br>
+
+
 ## <a name="State">State</a>
 
 드론 상태
@@ -1917,28 +2048,6 @@ class Motion(ISerializable):
 | angleYaw   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Yaw       |
 
 - e.g. [Motion 센서 데이터 확인](examples_05_sensor.md#Imu)
-
-
-<br>
-<br>
-
-
-## <a name="Flow">Flow</a>
-
-옵티컬 플로우로 계산한 상대 위치 값
-
-```py
-class Flow(ISerializable):
-
-    def __init__(self):
-        self.x     = 0
-        self.y     = 0
-```
-
-| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
-|:----------:|:---------:|:-----:|:--------:|:--------|
-| x          | Float32   | -     | 4 Byte   | X축(m)  |
-| y          | Float32   | -     | 4 Byte   | Y축(m)  |
 
 
 <br>

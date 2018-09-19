@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2018.9.12
+Modified : 2018.9.19
 
 ---
 
@@ -111,6 +111,8 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | [sendStop](#sendStop)                                             | 정지                                        |
 | [sendControl](#sendControl)                                       | 비행 조종                                   |
 | [sendControlWhile](#sendControlWhile)                             | 지정한 시간 동안 비행 조종 명령 전송        |
+| [sendControlPosition16](#sendControlPosition16)                   | 이동(RF)                                    |
+| [sendControlPosition](#sendControlPosition)                       | 이동(UART, USB)                             |
 
 
 <br>
@@ -375,6 +377,60 @@ def sendControlWhile(self, roll, pitch, yaw, throttle, timeMs):
 | timeMs                    | 0 ~ 1,000,000                    | 동작 시간(ms)          |
 
 - e.g. [이륙, 호버링, 착륙 테스트](examples_04_control.md#ControlWhileAndLanding)
+
+
+<br>
+<br>
+
+
+## <a name="sendControlPosition16">sendControlPosition16</a>
+
+드론 이동 명령
+
+RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, position과 velocity의 값에 x10을 적용.
+
+```py
+def sendControlPosition16(self, positionX, positionY, positionZ, velocityX, velocityY, velocityZ, heading, rotationalVelocity):
+```
+
+| 변수 이름             | 형식     | 범위                       | 단위          | 설명                 |
+|:---------------------:|:--------:|:--------------------------:|:--------------|:---------------------|
+| positionX             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
+| positionY             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
+| positionZ             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
+| velocityX             | Int16    | 5 ~ 50(0.5 ~ 5.0)          | m/s x 10      | 앞뒤 이동 속도       |
+| velocityY             | Int16    | 5 ~ 50(0.5 ~ 5.0)          | m/s x 10      | 좌우 이동 속도       |
+| velocityZ             | Int16    | 2 ~ 20(0.2 ~ 2.0)          | m/s x 10      | 승하강 속도          |
+| heading               | Int16    | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | Int16    | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
+
+- e.g. [이륙, 호버링, 이동, 착륙 테스트](examples_04_control.md#ControlPosition16)
+
+
+<br>
+<br>
+
+
+## <a name="sendControlPosition">sendControlPosition</a>
+
+드론 이동 명령
+
+드론에 UART 또는 USB를 통해 이동 명령을 내리는 경우 사용. 데이터 길이가 길어서 RF로는 전송할 수 없음.
+
+```py
+def sendControlPosition(self, positionX, positionY, positionZ, velocityX, velocityY, velocityZ, heading, rotationalVelocity):
+```
+
+| 변수 이름             | 형식   | 범위           | 단위     | 설명                 |
+|:---------------------:|:------:|:--------------:|:---------|:---------------------|
+| positionX             | float  | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
+| positionY             | float  | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
+| positionZ             | float  | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
+| velocityX             | float  | 0.5 ~ 5.0      | m/s      | 앞뒤 이동 속도       |
+| velocityY             | float  | 0.5 ~ 5.0      | m/s      | 좌우 이동 속도       |
+| velocityZ             | float  | 0.2 ~ 2.0      | m/s      | 승하강 속도          |
+| heading               | float  | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | float  | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
 
 
 <br>

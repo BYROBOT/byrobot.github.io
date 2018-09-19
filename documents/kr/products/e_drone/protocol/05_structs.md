@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.9.18
+Modified : 2018.9.19
 
 ---
 
@@ -325,16 +325,16 @@ namespace Control
 ```
 
 
-| 변수 이름             | 형식     | 범위                       | 크기     | 단위          | 설명           |
-|:---------------------:|:--------:|:--------------------------:|:--------:|:--------------|:---------------|
-| positionX             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 좌우           |
-| positionY             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 앞뒤           |
-| positionZ             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 승하강         |
-| velocityX             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 좌우 이동 속도 |
-| velocityY             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 앞뒤 이동 속도 |
-| velocityZ             | int16_t  | 2 ~ 20(0.2 ~ 2.0)          | 2 Byte   | m/s x 10      | 승하강 속도    |
-| heading               | int16_t  | -360 ~ 360                 | 2 Byte   | degree        | 좌우 회전      |
-| rotationalVelocity    | int16_t  | 10 ~ 360                   | 2 Byte   | degree/s      | 좌우 회전 속도 |
+| 변수 이름             | 형식     | 범위                       | 크기     | 단위          | 설명                 |
+|:---------------------:|:--------:|:--------------------------:|:--------:|:--------------|:---------------------|
+| positionX             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 앞(+), 뒤(-)         |
+| positionY             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 좌(+), 우(-)         |
+| positionZ             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 위(+), 아래(-)       |
+| velocityX             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 앞뒤 이동 속도       |
+| velocityY             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 좌우 이동 속도       |
+| velocityZ             | int16_t  | 2 ~ 20(0.2 ~ 2.0)          | 2 Byte   | m/s x 10      | 승하강 속도          |
+| heading               | int16_t  | -360 ~ 360                 | 2 Byte   | degree        | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | int16_t  | 10 ~ 360                   | 2 Byte   | degree/s      | 좌우 회전 속도       |
 
 
 <br>
@@ -368,16 +368,16 @@ namespace Control
 ```
 
 
-| 변수 이름             | 형식   | 범위           | 크기     | 단위     | 설명           |
-|:---------------------:|:------:|:--------------:|:--------:|:---------|:---------------|
-| positionX             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 좌우           |
-| positionY             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 앞뒤           |
-| positionZ             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 승하강         |
-| velocityX             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 좌우 이동 속도 |
-| velocityY             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 앞뒤 이동 속도 |
-| velocityZ             | float  | 0.2 ~ 2.0      | 4 Byte   | m/s      | 승하강 속도    |
-| heading               | float  | -360.0 ~ 360.0 | 4 Byte   | degree   | 좌우 회전      |
-| rotationalVelocity    | float  | 10.0 ~ 360.0   | 4 Byte   | degree/s | 좌우 회전 속도 |
+| 변수 이름             | 형식   | 범위           | 크기     | 단위     | 설명                 |
+|:---------------------:|:------:|:--------------:|:--------:|:---------|:---------------------|
+| positionX             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 앞(+), 뒤(-)         |
+| positionY             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 좌(+), 우(-)         |
+| positionZ             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 위(+), 아래(-)       |
+| velocityX             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 앞뒤 이동 속도       |
+| velocityY             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 좌우 이동 속도       |
+| velocityZ             | float  | 0.2 ~ 2.0      | 4 Byte   | m/s      | 승하강 속도          |
+| heading               | float  | -360.0 ~ 360.0 | 4 Byte   | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | float  | 10.0 ~ 360.0   | 4 Byte   | degree/s | 좌우 회전 속도       |
 
 
 <br>

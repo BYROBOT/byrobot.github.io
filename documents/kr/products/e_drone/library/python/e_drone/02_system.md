@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **System**
 
-Modified : 2018.9.12
+Modified : 2018.9.19
 
 ---
 
@@ -74,7 +74,8 @@ class DeviceType(Enum):
 
 비행 제어 모드
 
-e_drone에서는 **Attitude**와 **Position**만 지원합니다. 다른 모드로 변경할 경우 무시합니다.
+e_drone에서는 **Attitude**와 **Position**만 지원합니다.
+다른 모드로 변경할 경우 무시합니다.
 
 ```py
 class ModeControlFlight(Enum):
