@@ -392,8 +392,9 @@ namespace Mode
         enum Type
         {
             None        = 0x00,
-            Hovering    = 0x01,     // 호버링
-            Moving      = 0x02      // 이동 중
+            Ready       = 0x01,     // 대기
+            Hovering    = 0x02,     // 호버링
+            Moving      = 0x03      // 이동 중
         };
     }
 }

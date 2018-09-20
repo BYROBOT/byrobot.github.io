@@ -398,9 +398,9 @@ def sendControlPosition16(self, positionX, positionY, positionZ, velocityX, velo
 | positionX             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
 | positionY             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
 | positionZ             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocityX             | Int16    | 5 ~ 50(0.5 ~ 5.0)          | m/s x 10      | 앞뒤 이동 속도       |
-| velocityY             | Int16    | 5 ~ 50(0.5 ~ 5.0)          | m/s x 10      | 좌우 이동 속도       |
-| velocityZ             | Int16    | 2 ~ 20(0.2 ~ 2.0)          | m/s x 10      | 승하강 속도          |
+| velocityX             | Int16    | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 앞뒤 이동 속도       |
+| velocityY             | Int16    | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 좌우 이동 속도       |
+| velocityZ             | Int16    | 2 ~ 10(0.2 ~ 1.0)          | m/s x 10      | 승하강 속도          |
 | heading               | Int16    | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
 | rotationalVelocity    | Int16    | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
 
@@ -426,9 +426,9 @@ def sendControlPosition(self, positionX, positionY, positionZ, velocityX, veloci
 | positionX             | float  | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
 | positionY             | float  | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
 | positionZ             | float  | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
-| velocityX             | float  | 0.5 ~ 5.0      | m/s      | 앞뒤 이동 속도       |
-| velocityY             | float  | 0.5 ~ 5.0      | m/s      | 좌우 이동 속도       |
-| velocityZ             | float  | 0.2 ~ 2.0      | m/s      | 승하강 속도          |
+| velocityX             | float  | 0.5 ~ 2.0      | m/s      | 앞뒤 이동 속도       |
+| velocityY             | float  | 0.5 ~ 2.0      | m/s      | 좌우 이동 속도       |
+| velocityZ             | float  | 0.2 ~ 1.0      | m/s      | 승하강 속도          |
 | heading               | float  | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
 | rotationalVelocity    | float  | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
 

@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **System**
 
-Modified : 2018.9.19
+Modified : 2018.9.20
 
 ---
 
@@ -401,8 +401,9 @@ class ModeMovement(Enum):
     
     None_               = 0x00
 
-    Hovering            = 0x01      # Hovering
-    Moving              = 0x02      # Moving
+    Ready               = 0x01      # Ready
+    Hovering            = 0x02      # Hovering
+    Moving              = 0x03      # Moving
 
     EndOfType           = 0x04
 ```

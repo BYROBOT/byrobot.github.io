@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.9.19
+Modified : 2018.9.20
 
 ---
 
@@ -30,16 +30,17 @@ namespace Protocol
         u8      length;         // 데이터의 길이
         u8      from;           // 데이터를 전송하는 장치의 DeviceType
         u8      to;             // 데이터를 수신하는 장치의 DeviceType
+        
     };
 }
 ```
 
-| 변수 이름 | 형식                                                                 | 범위      | 크기     | 설명                     |
-|:---------:|:--------------------------------------------------------------------:|:---------:|:--------:|:-------------------------|
-| dataType  | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)         | -         | 1 Byte   | 데이터의 타입            |
-| length    | uint8_t                                                              | 0 ~ 255   | 1 Byte   | 데이터의 길이            |
-| from      | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)  | -         | 1 Byte   | 데이터를 전송하는 장치   |
-| to        | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)  | -         | 1 Byte   | 데이터를 수신하는 장치   |
+| 변수 이름 | 형식                                                                 | 크기     | 범위      | 설명                     |
+|:---------:|:--------------------------------------------------------------------:|:--------:|:---------:|:-------------------------|
+| dataType  | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)         | 1 Byte   | -         | 데이터의 타입            |
+| length    | uint8_t                                                              | 1 Byte   | 0 ~ 255   | 데이터의 길이            |
+| from      | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)  | 1 Byte   | -         | 데이터를 전송하는 장치   |
+| to        | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)  | 1 Byte   | -         | 데이터를 수신하는 장치   |
 
 
 <br>
@@ -63,9 +64,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식        | 범위  | 크기     | 설명           |
-|:-----------:|:-----------:|:-----:|:--------:|:---------------|
-| systemTime  | uint64_t    | -     | 8 Byte   | 시스템 시간    |
+| 변수 이름   | 형식        | 크기     | 범위  | 설명           |
+|:-----------:|:-----------:|:--------:|:-----:|:---------------|
+| systemTime  | uint64_t    | 8 Byte   | -     | 시스템 시간    |
 
 
 <br>
@@ -91,11 +92,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름    | 형식                                                         | 범위   | 크기     | 설명                                |
-|:------------:|:------------------------------------------------------------:|:------:|:--------:|:------------------------------------|
-| systemTime   | uint64_t                                                     | -      | 8 Byte   | 시스템 시간                         |
-| dataType     | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType) | -      | 1 Byte   | 수신 받은 데이터 타입               |
-| crc16        | uint16_t                                                     | -      | 2 Byte   | 수신 받은 헤더와 데이터의 CRC16 값  |
+| 변수 이름    | 형식                                                         | 크기     | 범위   | 설명                                |
+|:------------:|:------------------------------------------------------------:|:--------:|:------:|:------------------------------------|
+| systemTime   | uint64_t                                                     | 8 Byte   | -      | 시스템 시간                         |
+| dataType     | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType) | 1 Byte   | -      | 수신 받은 데이터 타입               |
+| crc16        | uint16_t                                                     | 2 Byte   | -      | 수신 받은 헤더와 데이터의 CRC16 값  |
 
 
 <br>
@@ -125,11 +126,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름            | 형식                                                                | 범위   | 크기     | 설명                    |
-|:--------------------:|:-------------------------------------------------------------------:|:------:|:--------:|:------------------------|
-| systemTime           | uint64_t                                                            | -      | 8 Byte   | 시스템 시간             |
-| errorFlagsForSensor  | [ErrorFlagsForSensor::Type](04_definitions.md#ErrorFlagsForSensor)  | -      | 4 Byte   | 센서 오류 플래그 조합   |
-| errorFlagsForState   | [ErrorFlagsForState::Type](04_definitions.md#ErrorFlagsForState)    | -      | 4 Byte   | 상태 오류 플래그 조합   |
+| 변수 이름            | 형식                                                                | 크기     | 범위   | 설명                    |
+|:--------------------:|:-------------------------------------------------------------------:|:--------:|:------:|:------------------------|
+| systemTime           | uint64_t                                                            | 8 Byte   | -      | 시스템 시간             |
+| errorFlagsForSensor  | [ErrorFlagsForSensor::Type](04_definitions.md#ErrorFlagsForSensor)  | 4 Byte   | -      | 센서 오류 플래그 조합   |
+| errorFlagsForState   | [ErrorFlagsForState::Type](04_definitions.md#ErrorFlagsForState)    | 4 Byte   | -      | 상태 오류 플래그 조합   |
 
 
 <br>
@@ -151,9 +152,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식                                                          | 범위  | 크기     | 설명                  |
-|:-------------:|:-------------------------------------------------------------:|:-----:|:--------:|:----------------------|
-| dataType      | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)  | -     | 1 Byte   | 요청할 데이터 타입    |
+| 변수 이름     | 형식                                                          | 크기     | 범위  | 설명                  |
+|:-------------:|:-------------------------------------------------------------:|:--------:|:-----:|:----------------------|
+| dataType      | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)  | 1 Byte   | -     | 요청할 데이터 타입    |
 
 
 <br>
@@ -182,14 +183,14 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식                                                                | 범위 | 크기     | 설명                |
-|:-------------:|:-------------------------------------------------------------------:|:----:|:--------:|:--------------------|
-| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | -    | 1 Byte   | 업데이트 모드       |
-| modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)                  | -    | 4 Byte   | 모델 번호           |
-| version       | [Protocol::Version](#Protocol_Version)                              | -    | 4 Byte   | 펌웨어의 버젼       |
-| year          | uint16_t                                                            | -    | 2 Byte   | 펌웨어 빌드 년      |
-| month         | uint8_t                                                             | -    | 1 Byte   | 펌웨어 빌드 월      |
-| day           | uint8_t                                                             | -    | 1 Byte   | 펌웨어 빌드 일      |
+| 변수 이름     | 형식                                                                | 크기     | 범위 | 설명                |
+|:-------------:|:-------------------------------------------------------------------:|:--------:|:----:|:--------------------|
+| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | 1 Byte   | -    | 업데이트 모드       |
+| modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)                  | 4 Byte   | -    | 모델 번호           |
+| version       | [Protocol::Version](#Protocol_Version)                              | 4 Byte   | -    | 펌웨어의 버젼       |
+| year          | uint16_t                                                            | 2 Byte   | -    | 펌웨어 빌드 년      |
+| month         | uint8_t                                                             | 1 Byte   | -    | 펌웨어 빌드 월      |
+| day           | uint8_t                                                             | 1 Byte   | -    | 펌웨어 빌드 일      |
 
 
 <br>
@@ -220,12 +221,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                           | 범위       | 크기     | 설명         |
-|:----------:|:--------------------------------------------------------------:|:----------:|:--------:|:-------------|
-| build      | uint16_t                                                       | 0 ~ 65535  | 14 bit   | 빌드 번호    |
-| minor      | uint8_t                                                        | 0 ~ 255    | 1 Byte   | 부 번호      |
-| major      | uint8_t                                                        | 0 ~ 255    | 1 Byte   | 주 번호      |
-| v          | uint32_t                                                       | -          | 4 Byte   | build, minor, major를 하나로 묶은 것  |
+| 변수 이름  | 형식                                                           | 크기     | 범위       | 설명         |
+|:----------:|:--------------------------------------------------------------:|:--------:|:----------:|:-------------|
+| build      | uint16_t                                                       | 14 bit   | 0 ~ 65535  | 빌드 번호    |
+| minor      | uint8_t                                                        | 1 Byte   | 0 ~ 255    | 부 번호      |
+| major      | uint8_t                                                        | 1 Byte   | 0 ~ 255    | 주 번호      |
+| v          | uint32_t                                                       | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
 
 
 
@@ -251,12 +252,12 @@ namespace Control
 }
 ```
 
-| 변수 이름 | 형식     | 범위         | 크기     | 설명       | 음수 값(-) | 양수 값(+)    |
-|:---------:|:--------:|:------------:|:--------:|:-----------|:----------:|:-------------:|
-| roll      | int8_t   | -100 ~ 100   | 1 Byte   | 좌우       | 좌측       | 우측          |
-| pitch     | int8_t   | -100 ~ 100   | 1 Byte   | 전후       | 후방       | 전방          |
-| yaw       | int8_t   | -100 ~ 100   | 1 Byte   | 좌우 회전  | 반시계     | 시계 방향     |
-| throttle  | int8_t   | -100 ~ 100   | 1 Byte   | 승하강     | 하강       | 상승          |
+| 변수 이름 | 형식     | 크기     | 범위         | 설명       | 음수 값(-) | 양수 값(+)    |
+|:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
+| roll      | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
+| pitch     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
+| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 반시계     | 시계 방향     |
+| throttle  | int8_t   | 1 Byte   | -100 ~ 100   | 승하강     | 하강       | 상승          |
 
 
 <br>
@@ -285,12 +286,12 @@ namespace Control
 }
 ```
 
-| 변수 이름 | 형식     | 범위         | 크기     | 설명       | 음수 값(-) | 양수 값(+)    |
-|:---------:|:--------:|:------------:|:--------:|:-----------|:----------:|:-------------:|
-| roll      | int8_t   | -100 ~ 100   | 1 Byte   | 좌우       | 좌측       | 우측          |
-| pitch     | int8_t   | -100 ~ 100   | 1 Byte   | 전후       | 후방       | 전방          |
-| yaw       | int8_t   | -100 ~ 100   | 1 Byte   | 좌우 회전  | 반시계     | 시계 방향     |
-| throttle  | int8_t   | -100 ~ 100   | 1 Byte   | 승하강     | 하강       | 상승          |
+| 변수 이름 | 형식     | 크기     |범위         | 설명       | 음수 값(-) | 양수 값(+)    |
+|:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
+| roll      | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
+| pitch     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
+| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 반시계     | 시계 방향     |
+| throttle  | int8_t   | 1 Byte   | -100 ~ 100   | 승하강     | 하강       | 상승          |
 | dataType  | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType) | - | 1 Byte | 요청할 데이터 타입 | - | - |
 
 
@@ -325,16 +326,16 @@ namespace Control
 ```
 
 
-| 변수 이름             | 형식     | 범위                       | 크기     | 단위          | 설명                 |
-|:---------------------:|:--------:|:--------------------------:|:--------:|:--------------|:---------------------|
-| positionX             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 앞(+), 뒤(-)         |
-| positionY             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 좌(+), 우(-)         |
-| positionZ             | int16_t  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 위(+), 아래(-)       |
-| velocityX             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 앞뒤 이동 속도       |
-| velocityY             | int16_t  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 좌우 이동 속도       |
-| velocityZ             | int16_t  | 2 ~ 20(0.2 ~ 2.0)          | 2 Byte   | m/s x 10      | 승하강 속도          |
-| heading               | int16_t  | -360 ~ 360                 | 2 Byte   | degree        | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | int16_t  | 10 ~ 360                   | 2 Byte   | degree/s      | 좌우 회전 속도       |
+| 변수 이름             | 형식     | 크기     | 범위                       | 단위          | 설명                 |
+|:---------------------:|:--------:|:--------:|:--------------------------:|:--------------|:---------------------|
+| positionX             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
+| positionY             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
+| positionZ             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
+| velocityX             | int16_t  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 앞뒤 이동 속도       |
+| velocityY             | int16_t  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 좌우 이동 속도       |
+| velocityZ             | int16_t  | 2 Byte   | 2 ~ 10(0.2 ~ 1.0)          | m/s x 10      | 승하강 속도          |
+| heading               | int16_t  | 2 Byte   | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
 
 
 <br>
@@ -368,16 +369,16 @@ namespace Control
 ```
 
 
-| 변수 이름             | 형식   | 범위           | 크기     | 단위     | 설명                 |
-|:---------------------:|:------:|:--------------:|:--------:|:---------|:---------------------|
-| positionX             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 앞(+), 뒤(-)         |
-| positionY             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 좌(+), 우(-)         |
-| positionZ             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 위(+), 아래(-)       |
-| velocityX             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 앞뒤 이동 속도       |
-| velocityY             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 좌우 이동 속도       |
-| velocityZ             | float  | 0.2 ~ 2.0      | 4 Byte   | m/s      | 승하강 속도          |
-| heading               | float  | -360.0 ~ 360.0 | 4 Byte   | degree   | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | float  | 10.0 ~ 360.0   | 4 Byte   | degree/s | 좌우 회전 속도       |
+| 변수 이름             | 형식   | 크기     | 범위           | 단위     | 설명                 |
+|:---------------------:|:------:|:--------:|:--------------:|:---------|:---------------------|
+| positionX             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
+| positionY             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
+| positionZ             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
+| velocityX             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 앞뒤 이동 속도       |
+| velocityY             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 좌우 이동 속도       |
+| velocityZ             | float  | 4 Byte   | 0.2 ~ 1.0      | m/s      | 승하강 속도          |
+| heading               | float  | 4 Byte   | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | float  | 4 Byte   | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
 
 
 <br>
@@ -403,14 +404,14 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                                                    | 범위    | 크기     | 설명         |
-|:-----------:|:-----------------------------------------------------------------------:|:-------:|:--------:|:-------------|
-| commandType | [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)   | -       | 1 Byte   | 명령 타입    |
-| option      | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)    | -       | 1 Byte   | 옵션         |
-|             | [System::FlightEvent::Type](04_definitions.md#FlightEvent)              | -       |          |              |
-|             | [Headless::Type](04_definitions.md#Headless)                            | -       |          |              |
-|             | [System::Trim::Type](04_definitions.md#Trim)                            | -       |          |              |
-|             | uint8_t                                                                 | -       |          |              |
+| 변수 이름   | 형식                                                                    | 크기     | 범위    | 설명         |
+|:-----------:|:-----------------------------------------------------------------------:|:--------:|:-------:|:-------------|
+| commandType | [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)   | 1 Byte   | -       | 명령 타입    |
+| option      | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)    | 1 Byte   | -       | 옵션         |
+|             | [System::FlightEvent::Type](04_definitions.md#FlightEvent)              |          | -       |              |
+|             | [Headless::Type](04_definitions.md#Headless)                            |          | -       |              |
+|             | [System::Trim::Type](04_definitions.md#Trim)                            |          | -       |              |
+|             | uint8_t                                                                 |          | -       |              |
 
 
 <br>
@@ -436,10 +437,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
-|:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
-| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | -       | 4 Byte   | LED 이벤트   |
+| 변수 이름   | 형식                                                                  | 크기     | 범위    | 설명         |
+|:-----------:|:---------------------------------------------------------------------:|:--------:|:-------:|:-------------|
+| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | 2 Byte   | -       | 명령         |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | 4 Byte   | -       | LED 이벤트   |
 
 
 <br>
@@ -466,11 +467,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명         |
-|:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:-------------|
-| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트   |
-| color       | [Light::Color](06_structs_light.md#Light_Color)                          | -       | 3 Byte   | LED RGB 색상 |
+| 변수 이름   | 형식                                                                  | 크기     | 범위    | 설명         |
+|:-----------:|:---------------------------------------------------------------------:|:--------:|:-------:|:-------------|
+| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | 2 Byte   | -       | 명령         |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | 4 Byte   | -       | LED 이벤트   |
+| color       | [Light::Color](06_structs_light.md#Light_Color)                       | 3 Byte   | -       | LED RGB 색상 |
 
 
 <br>
@@ -497,11 +498,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                                                  | 범위    | 크기     | 설명              |
-|:-----------:|:---------------------------------------------------------------------:|:-------:|:--------:|:------------------|
-| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | -       | 2 Byte   | 명령              |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)       | -       | 4 Byte   | LED 이벤트        |
-| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)                  | -       | 1 Byte   | LED 팔레트 인덱스 |
+| 변수 이름   | 형식                                                                  | 크기     | 범위    | 설명              |
+|:-----------:|:---------------------------------------------------------------------:|:--------:|:-------:|:------------------|
+| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | 2 Byte   | -       | 명령              |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | 4 Byte   | -       | LED 이벤트        |
+| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)               | 1 Byte   | -       | LED 팔레트 인덱스 |
 
 
 <br>
@@ -523,9 +524,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식            | 범위  | 크기     | 설명         |
-|:----------:|:---------------:|:-----:|:--------:|:-------------|
-| address    | uint8_t Array   | -     | 16 Byte  | 장치 주소    |
+| 변수 이름  | 형식            | 크기     | 범위  | 설명         |
+|:----------:|:---------------:|:--------:|:-----:|:-------------|
+| address    | uint8_t Array   | 16 Byte  | -     | 장치 주소    |
 
 
 <br>
@@ -553,14 +554,14 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식     | 범위              | 크기     | 설명           |
-|:----------:|:--------:|:-----------------:|:--------:|:---------------|
-| accelX     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 X       |
-| accelY     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Y       |
-| accelZ     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Z       |
-| gyroRoll   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Roll    |
-| gyroPitch  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Pitch   |
-| gyroYaw    | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Yaw     |
+| 변수 이름  | 형식     | 크기     | 범위              | 설명           |
+|:----------:|:--------:|:--------:|:-----------------:|:---------------|
+| accelX     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 X       |
+| accelY     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Y       |
+| accelZ     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Z       |
+| gyroRoll   | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Roll    |
+| gyroPitch  | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Pitch   |
+| gyroYaw    | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Yaw     |
 
 
 <br>
@@ -583,10 +584,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
-|:----------:|:---------:|:-----:|:--------:|:--------|
-| x          | float     | -     | 4 Byte   | X축     |
-| y          | float     | -     | 4 Byte   | Y축     |
+| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
+|:----------:|:---------:|:--------:|:-----:|:--------|
+| x          | float     | 4 Byte   | -     | X축     |
+| y          | float     | 4 Byte   | -     | Y축     |
 
 
 <br>
@@ -615,15 +616,15 @@ namespace Protocol
 }
 ```
 
-| 변수 이름         | 형식                                                                  | 범위     | 크기     | 설명                   |
+| 변수 이름         | 형식                                                                  | 크기     | 범위     | 설명                   |
 |:-----------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:-----------------------|
-| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)                   | -        | 1 Byte   | System 동작 모드       |
-| modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)                   | -        | 1 Byte   | 비행 제어기 동작 모드  |
-| modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | -        | 1 Byte   | 비행 제어 모드         |
-| modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | -        | 1 Byte   | 이동 상태              |
-| headless          | [Headless::Type](04_definitions.md#Headless)                          | -        | 1 Byte   | Headless 설정 상태     |
-| sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | -        | 1 Byte   | 센서 방향              |
-| battery           | uint8_t                                                               | 0 ~ 100  | 1 Byte   | 드론 배터리 잔량       |
+| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | System 동작 모드       |
+| modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)                   | 1 Byte   | -        | 비행 제어기 동작 모드  |
+| modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | 1 Byte   | -        | 비행 제어 모드         |
+| modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | 1 Byte   | -        | 이동 상태              |
+| headless          | [Headless::Type](04_definitions.md#Headless)                          | 1 Byte   | -        | Headless 설정 상태     |
+| sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | 1 Byte   | -        | 센서 방향              |
+| battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
 
 
 <br>
@@ -647,20 +648,20 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식       | 범위              | 크기     | 설명       |
-|:----------:|:----------:|:-----------------:|:--------:|:-----------|
-| roll       | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Roll       |
-| pitch      | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Pitch      |
-| yaw        | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Yaw        |
+| 변수 이름  | 형식       | 크기     | 범위              | 설명       |
+|:----------:|:----------:|:--------:|:-----------------:|:-----------|
+| roll       | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Roll       |
+| pitch      | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Pitch      |
+| yaw        | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Yaw        |
 
 
 드론의 자세를 확인할 때 값의 범위는 다음과 같습니다.
 
-|이름      | 형식     | 범위        | 설명                |
-|:--------:|:--------:|:-----------:|:-------------------:|
-| roll     | int16_t  |  -90 ~  90  | 좌우 기울기 각도    |
-| pitch    | int16_t  |  -90 ~  90  | 전후 기울기 각도    |
-| yaw      | int16_t  | -180 ~ 180  | 좌우 회전 시 각도   |
+|이름      | 형식     | 크기     | 범위        | 설명                |
+|:--------:|:--------:|:--------:|:-----------:|:-------------------:|
+| roll     | int16_t  | 2 Byte   |  -90 ~  90  | 좌우 기울기 각도    |
+| pitch    | int16_t  | 2 Byte   |  -90 ~  90  | 전후 기울기 각도    |
+| yaw      | int16_t  | 2 Byte   | -180 ~ 180  | 좌우 회전 시 각도   |
 
 
 <br>
@@ -685,12 +686,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식     | 범위              | 크기     | 설명                |
-|:-------------:|:--------:|:-----------------:|:--------:|:--------------------|
-| temperature   | float    | -                 | 4 Byte   | 온도                |
-| pressure      | float    | -                 | 4 Byte   | 압력                |
-| altitude      | float    | -                 | 4 Byte   | 고도                |
-| rangeHeight   | float    | -                 | 4 Byte   | 거리 센서의 높이    |
+| 변수 이름     | 형식     | 크기     | 범위              | 설명                |
+|:-------------:|:--------:|:--------:|:-----------------:|:--------------------|
+| temperature   | float    | 4 Byte   | -                 | 온도                |
+| pressure      | float    | 4 Byte   | -                 | 압력                |
+| altitude      | float    | 4 Byte   | -                 | 고도                |
+| rangeHeight   | float    | 4 Byte   | -                 | 거리 센서의 높이    |
 
 
 <br>
@@ -718,14 +719,14 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식       | 범위              | 크기     | 설명        |
-|:----------:|:----------:|:-----------------:|:--------:|:------------|
-| accelX     | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Accel X     |
-| accelY     | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Accel Y     |
-| accelZ     | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Accel Z     |
-| gyroRoll   | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Gyro Roll   |
-| gyroPitch  | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Gyro Pitch  |
-| gyroYaw    | int16_t    | -32,768 ~ 32,767  | 2 Byte   | Gyro Yaw    |
+| 변수 이름  | 형식       | 크기     | 범위              | 설명        |
+|:----------:|:----------:|:--------:|:-----------------:|:------------|
+| accelX     | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Accel X     |
+| accelY     | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Accel Y     |
+| accelZ     | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Accel Z     |
+| gyroRoll   | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Gyro Roll   |
+| gyroPitch  | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Gyro Pitch  |
+| gyroYaw    | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Gyro Yaw    |
 
 
 <br>
@@ -750,12 +751,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름 | 형식     | 범위         | 크기     | 설명       |
-|:---------:|:--------:|:------------:|:--------:|:-----------|
-| roll      | int16_t  | -200 ~ 200   | 2 Byte   | Roll       |
-| pitch     | int16_t  | -200 ~ 200   | 2 Byte   | Pitch      |
-| yaw       | int16_t  | -200 ~ 200   | 2 Byte   | Yaw        |
-| throttle  | int16_t  | -200 ~ 200   | 2 Byte   | Throttle   |
+| 변수 이름 | 형식     | 크기     | 범위         | 설명       |
+|:---------:|:--------:|:--------:|:------------:|:-----------|
+| roll      | int16_t  | 2 Byte   | -200 ~ 200   | Roll       |
+| pitch     | int16_t  | 2 Byte   | -200 ~ 200   | Pitch      |
+| yaw       | int16_t  | 2 Byte   | -200 ~ 200   | Yaw        |
+| throttle  | int16_t  | 2 Byte   | -200 ~ 200   | Throttle   |
 
 
 <br>
@@ -777,9 +778,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름 | 형식     | 범위         | 크기     | 설명    |
-|:---------:|:--------:|:------------:|:--------:|:--------|
-| weight    | float    | 100 ~ 150    | 4 Byte   | 무게   |
+| 변수 이름 | 형식     | 크기     | 범위         | 설명    |
+|:---------:|:--------:|:--------:|:------------:|:--------|
+| weight    | float    | 4 Byte   | 100 ~ 150    | 무게    |
 
 
 <br>
@@ -807,12 +808,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름        | 형식       | 범위       | 크기     | 설명             |
-|:----------------:|:----------:|:----------:|:--------:|:-----------------|
-| timeFlight       | uint64_t   | -          | 8 Byte   | 비행 시간(ms)    |
-| countTakeOff     | uint16_t   | 0 ~ 65535  | 2 Byte   | 이륙 횟수        |
-| countLanding     | uint16_t   | 0 ~ 65535  | 2 Byte   | 착륙 횟수        |
-| countAccident    | uint16_t   | 0 ~ 65535  | 2 Byte   | 충돌 횟수        |
+| 변수 이름        | 형식       | 크기     | 범위       | 설명             |
+|:----------------:|:----------:|:--------:|:----------:|:-----------------|
+| timeFlight       | uint64_t   | 8 Byte   | -          | 비행 시간(ms)    |
+| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65535  | 이륙 횟수        |
+| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65535  | 착륙 횟수        |
+| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65535  | 충돌 횟수        |
 
 
 <br>
@@ -844,17 +845,17 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식     | 범위              | 크기     | 설명           |
-|:----------:|:--------:|:-----------------:|:--------:|:---------------|
-| accelX     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 X       |
-| accelY     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Y       |
-| accelZ     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Z       |
-| gyroRoll   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Roll    |
-| gyroPitch  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Pitch   |
-| gyroYaw    | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Yaw     |
-| angleRoll  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Roll      |
-| anglePitch | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Pitch     |
-| angleYaw   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Yaw       |
+| 변수 이름  | 형식     | 크기    | 범위                              | 단위                 | 설명          |
+|:----------:|:--------:|:-------:|:---------------------------------:|:--------------------:|:--------------|
+| accelX     | int16_t  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 X      |
+| accelY     | int16_t  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Y      |
+| accelZ     | int16_t  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Z      |
+| gyroRoll   | int16_t  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Roll   |
+| gyroPitch  | int16_t  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Pitch  |
+| gyroYaw    | int16_t  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Yaw    |
+| angleRoll  | int16_t  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Roll     |
+| anglePitch | int16_t  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Pitch    |
+| angleYaw   | int16_t  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Yaw      |
 
 
 <br>
@@ -881,10 +882,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                          | 범위      | 크기     | 설명      |
-|:----------:|:---------------------------------------------:|:---------:|:--------:|:----------|
-| rotation   | [Rotation::Type](04_definitions.md#Rotation)  | -         | 1 Byte   | 회전 방향 |
-| value      | uint16_t                                      | 0 ~ 4095  | 2 Byte   | 회전 속도 |
+| 변수 이름  | 형식                                          | 크기     | 범위      | 설명      |
+|:----------:|:---------------------------------------------:|:--------:|:---------:|:----------|
+| rotation   | [Rotation::Type](04_definitions.md#Rotation)  | 1 Byte   | -         | 회전 방향 |
+| value      | uint16_t                                      | 2 Byte   | 0 ~ 4095  | 회전 속도 |
 
 
 <br>
@@ -910,11 +911,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                               | 범위      | 크기     | 설명            |
-|:----------:|:--------------------------------------------------:|:---------:|:--------:|:----------------|
-| target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 0 ~ 3     | 1 Byte   | 동작 대상 모터  |
-| rotation   | [Rotation::Type](04_definitions.md#Rotation)       | -         | 1 Byte   | 회전 방향       |
-| value      | uint16_t                                           | 0 ~ 4095  | 2 Byte   | 회전 속도       |
+| 변수 이름  | 형식                                               | 크기     | 범위      | 설명            |
+|:----------:|:--------------------------------------------------:|:--------:|:---------:|:----------------|
+| target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
+| rotation   | [Rotation::Type](04_definitions.md#Rotation)       | 1 Byte   | -         | 회전 방향       |
+| value      | uint16_t                                           | 2 Byte   | 0 ~ 4095  | 회전 속도       |
 
 
 <br>
@@ -937,10 +938,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름 | 형식                                                  | 범위  | 크기     | 설명         |
-|:---------:|:-----------------------------------------------------:|:-----:|:--------:|:-------------|
-| button    | uint16_t                                              | -     | 2 Byte   | 버튼 입력    |
-| event     | [Button::Event::Type](04_definitions.md#Button_Event) | -     | 1 Byte   | 버튼 이벤트  |
+| 변수 이름 | 형식                                                  | 크기     | 범위  | 설명         |
+|:---------:|:-----------------------------------------------------:|:--------:|:-----:|:-------------|
+| button    | uint16_t                                              | 2 Byte   | -     | 버튼 입력    |
+| event     | [Button::Event::Type](04_definitions.md#Button_Event) | 1 Byte   | -     | 버튼 이벤트  |
 
 
 <br>
@@ -965,12 +966,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                              | 범위          | 크기     | 설명             |
-|:----------:|:-----------------------------------------------------------------:|:-------------:|:--------:|:-----------------|
-| x          | int8_t                                                            | -100 ~ 100    | 1 Byte   | 조이스틱 가로축  |
-| y          | int8_t                                                            | -100 ~ 100    | 1 Byte   | 조이스틱 세로축  |
-| direction  | [Joystick::Direction::Type](04_definitions.md#Joystick_Direction) | -             | 1 Byte   | 조이스틱 방향    |
-| event      | [Joystick::Event::Type](04_definitions.md#Joystick_Event)         | -             | 1 Byte   | 이벤트           |
+| 변수 이름  | 형식                                                              | 크기     | 범위          | 설명             |
+|:----------:|:-----------------------------------------------------------------:|:--------:|:-------------:|:-----------------|
+| x          | int8_t                                                            | 1 Byte   | -100 ~ 100    | 조이스틱 가로축  |
+| y          | int8_t                                                            | 1 Byte   | -100 ~ 100    | 조이스틱 세로축  |
+| direction  | [Joystick::Direction::Type](04_definitions.md#Joystick_Direction) | 1 Byte   | -             | 조이스틱 방향    |
+| event      | [Joystick::Event::Type](04_definitions.md#Joystick_Event)         | 1 Byte   | -             | 이벤트           |
 
 
 <br>
@@ -993,10 +994,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름 | 형식                                                | 범위  | 크기     | 설명            |
-|:---------:|:---------------------------------------------------:|:-----:|:--------:|:----------------|
-| left      | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | -     | 4 Byte   | 왼쪽 조이스틱   |
-| right     | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | -     | 4 Byte   | 오른쪽 조이스틱 |
+| 변수 이름 | 형식                                                | 크기     | 범위  | 설명            |
+|:---------:|:---------------------------------------------------:|:--------:|:-----:|:----------------|
+| left      | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | 4 Byte   | -     | 왼쪽 조이스틱   |
+| right     | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | 4 Byte   | -     | 오른쪽 조이스틱 |
 
 
 <br>
@@ -1020,12 +1021,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                    | 범위        | 크기   | 설명                   |
-|:----------:|:-------------------------------------------------------:|:-----------:|:------:|:-----------------------|
-| mode       | [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)     | -           | 1 Byte | 버저 동작 모드         |
-| value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | -           | 2 Byte | Scale                  |
-|            | UInt16                                                  | 0 ~ 8000    |        | Hz                     |
-| time       | UInt16                                                  | 0 ~ 65,535  | 2 Byte | 소리를 지속할 시간(ms) |
+| 변수 이름  | 형식                                                    | 크기   | 범위        | 설명                   |
+|:----------:|:-------------------------------------------------------:|:------:|:-----------:|:-----------------------|
+| mode       | [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)     | 1 Byte | -           | 버저 동작 모드         |
+| value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
+|            | UInt16                                                  | 2 Byte | 0 ~ 8000    | Hz                     |
+| time       | UInt16                                                  | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
 
 
 <br>
@@ -1050,12 +1051,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                    | 범위        | 크기     | 설명                |
-|:----------:|:-------------------------------------------------------:|:-----------:|:--------:|:--------------------|
-| mode       | [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode) | -           | 1 Byte   | 진동 동작 모드      |
-| on         | uint16_t                                                | 0 ~ 65,535  | 2 Byte   | 진동을 켠 시간(ms)  |
-| off        | uint16_t                                                | 0 ~ 65,535  | 2 Byte   | 진동을 끈 시간(ms)  |
-| total      | uint16_t                                                | 0 ~ 65,535  | 2 Byte   | 전체 동작 시간(ms)  |
+| 변수 이름  | 형식                                                    | 크기     | 범위        | 설명                |
+|:----------:|:-------------------------------------------------------:|:--------:|:-----------:|:--------------------|
+| mode       | [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode) | 1 Byte   | -           | 진동 동작 모드      |
+| on         | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
+| off        | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
+| total      | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
 
 
 <br>
@@ -1083,13 +1084,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름       | 형식      | 범위             | 크기     | 설명               |
-|:---------------:|:---------:|:----------------:|:--------:|:-------------------|
-| address0        | uint16_t  | 0x0000 ~ 0xFFFF  | 2 Byte   | 주소 0             |
-| address1        | uint16_t  | 0x0000 ~ 0xFFFF  | 2 Byte   | 주소 1             |
-| address2        | uint16_t  | 0x0000 ~ 0xFFFF  | 2 Byte   | 주소 2             |
-| scramble        | uint8_t   | 0x00 ~ 0x7F      | 1 Byte   | 스크램블           |
-| channel         | uint8_t   | 0 ~ 81           | 1 Byte   | 채널               |
+| 변수 이름       | 형식      | 크기     | 범위             | 설명               |
+|:---------------:|:---------:|:--------:|:----------------:|:-------------------|
+| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 0             |
+| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 1             |
+| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 2             |
+| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F      | 스크램블           |
+| channel         | uint8_t   | 1 Byte   | 0 ~ 81           | 채널               |
 
 
 <br>
@@ -1117,9 +1118,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름    | 형식     | 범위      | 크기     | 설명       |
-|:------------:|:--------:|:---------:|:--------:|:-----------|
-| rssi         | int8_t   | -100 ~ 0  | 1 Byte   | 신호 세기  |
+| 변수 이름    | 형식     | 크기     | 범위      | 설명       |
+|:------------:|:--------:|:--------:|:---------:|:-----------|
+| rssi         | int8_t   | 1 Byte   | -100 ~ 0  | 신호 세기  |
 
 
 <br>

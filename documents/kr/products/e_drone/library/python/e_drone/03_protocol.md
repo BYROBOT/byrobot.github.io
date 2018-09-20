@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2018.9.19
+Modified : 2018.9.20
 
 ---
 
@@ -171,12 +171,12 @@ class Header(ISerializable):
         self.to_         = DeviceType.None_
 ```
 
-| 변수 이름     | 형식                                    | 범위    | 크기     | 설명                       |
-|:-------------:|:---------------------------------------:|:-------:|:--------:|:---------------------------|
-| dataType      | [DataType](#DataType)                   | -       | 1 Byte   | 데이터의 타입              |
-| length        | UInt8                                   | 0 ~ 255 | 1 Byte   | 데이터의 길이              |
-| from_         | [DeviceType](02_system.md#DeviceType)   | -       | 1 Byte   | 데이터를 전송하는 장치     |
-| to_           | [DeviceType](02_system.md#DeviceType)   | -       | 1 Byte   | 데이터를 수신하는 장치     |
+| 변수 이름     | 형식                                    | 크기     | 범위    | 설명                       |
+|:-------------:|:---------------------------------------:|:--------:|:-------:|:---------------------------|
+| dataType      | [DataType](#DataType)                   | 1 Byte   | -       | 데이터의 타입              |
+| length        | UInt8                                   | 1 Byte   | 0 ~ 255 | 데이터의 길이              |
+| from_         | [DeviceType](02_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 전송하는 장치     |
+| to_           | [DeviceType](02_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 수신하는 장치     |
 
 
 <br>
@@ -198,9 +198,9 @@ class Ping(ISerializable):
         self.systemTime     = 0
 ```
 
-| 변수 이름    | 형식            | 범위   | 크기     | 설명              |
-|:------------:|:---------------:|:------:|:--------:|:------------------|
-| systemTime   | UInt64          | -      | 8 Byte   | 시스템 시간       |
+| 변수 이름    | 형식            | 크기     | 범위   | 설명              |
+|:------------:|:---------------:|:--------:|:------:|:------------------|
+| systemTime   | UInt64          | 8 Byte   | -      | 시스템 시간       |
 
 - e.g. [Ping 테스트(이벤트 함수 등록)](examples_01_ping.md#Class_Ping)
 
@@ -226,11 +226,11 @@ class Ack(ISerializable):
         self.crc16          = 0
 ```
 
-| 변수 이름      | 형식                    | 범위  | 크기     | 설명                                     |
-|:--------------:|:-----------------------:|:-----:|:--------:|:-----------------------------------------|
-| systemTime     | UInt64                  | -     | 8 Byte   | 시스템 시간                              |
-| dataType       | [DataType](#DataType)   | -     | 1 Byte   | 수신 받은 데이터 타입                    |
-| crc16          | UInt16                  | -     | 2 Byte   | 수신 받은 헤더와 데이터의 CRC16 값       |
+| 변수 이름      | 형식                    | 크기     | 범위  | 설명                                     |
+|:--------------:|:-----------------------:|:--------:|:-----:|:-----------------------------------------|
+| systemTime     | UInt64                  | 8 Byte   | -     | 시스템 시간                              |
+| dataType       | [DataType](#DataType)   | 1 Byte   | -     | 수신 받은 데이터 타입                    |
+| crc16          | UInt16                  | 2 Byte   | -     | 수신 받은 헤더와 데이터의 CRC16 값       |
 
 - e.g. [Ping 테스트(이벤트 함수 등록)](examples_01_ping.md#Class_Ping)
 
@@ -258,11 +258,11 @@ class Error(ISerializable):
         self.errorFlagsForState     = 0
 ```
 
-| 변수 이름            | 형식                                                     | 범위  | 크기     | 설명                  |
-|:--------------------:|:--------------------------------------------------------:|:-----:|:--------:|:----------------------|
-| systemTime           | UInt64                                                   | -     | 8 Byte   | 시스템 시간           |
-| errorFlagsForSensor  | [ErrorFlagsForSensor](02_system.md#ErrorFlagsForSensor)  | -     | 4 Byte   | 센서 오류 플래그 조합 |
-| errorFlagsForState   | [ErrorFlagsForState](02_system.md#ErrorFlagsForState)    | -     | 4 Byte   | 상태 오류 플래그 조합 |
+| 변수 이름            | 형식                                                     | 크기     | 범위  | 설명                  |
+|:--------------------:|:--------------------------------------------------------:|:--------:|:-----:|:----------------------|
+| systemTime           | UInt64                                                   | 8 Byte   | -     | 시스템 시간           |
+| errorFlagsForSensor  | [ErrorFlagsForSensor](02_system.md#ErrorFlagsForSensor)  | 4 Byte   | -     | 센서 오류 플래그 조합 |
+| errorFlagsForState   | [ErrorFlagsForState](02_system.md#ErrorFlagsForState)    | 4 Byte   | -     | 상태 오류 플래그 조합 |
 
 - e.g. [IMU 센서 보정](examples_13_error.md#Error_ImuCalibrating)
 
@@ -284,9 +284,9 @@ class Request(ISerializable):
         self.dataType    = DataType.None_
 ```
 
-| 변수 이름     | 형식                        | 범위  | 크기     | 설명                  |
-|:-------------:|:---------------------------:|:-----:|:--------:|:----------------------|
-| dataType      | [DataType](#DataType)       | -     | 1 Byte   | 요청할 데이터 타입    |
+| 변수 이름     | 형식                        | 크기     | 범위  | 설명                  |
+|:-------------:|:---------------------------:|:--------:|:-----:|:----------------------|
+| dataType      | [DataType](#DataType)       | 1 Byte   | -     | 요청할 데이터 타입    |
 
 
 <br>
@@ -306,9 +306,9 @@ class Message():
         self.message    = ""
 ```
 
-| 변수 이름    | 형식            | 범위  | 크기               | 설명     |
-|:------------:|:---------------:|:-----:|:------------------:|:---------|
-| message      | ASCII String    | -     | 장치에 따라 다름   | 메세지   |
+| 변수 이름    | 형식            | 크기               | 범위  | 설명     |
+|:------------:|:---------------:|:------------------:|:-----:|:---------|
+| message      | ASCII String    | 장치에 따라 다름   | -     | 메세지   |
 
 
 <br>
@@ -332,12 +332,12 @@ class Version(ISerializable):
         self.v              = 0         # build, minor, major을 하나의 UInt32로 묶은 것(버젼 비교 시 사용)
 ```
 
-| 변수 이름  | 형식                                              | 범위       | 크기     | 설명         |
-|:----------:|:-------------------------------------------------:|:----------:|:--------:|:-------------|
-| build      | UInt16                                            | 0 ~ 65535  | 2 Byte   | 빌드 번호    |
-| minor      | UInt8                                             | 0 ~ 255    | 1 Byte   | 부 번호      |
-| major      | UInt8                                             | 0 ~ 255    | 1 Byte   | 주 번호      |
-| v          | UInt32                                            | -          | 4 Byte   | build, minor, major를 하나로 묶은 것  |
+| 변수 이름  | 형식                                              | 크기     | 범위       | 설명         |
+|:----------:|:-------------------------------------------------:|:--------:|:----------:|:-------------|
+| build      | UInt16                                            | 2 Byte   | 0 ~ 65535  | 빌드 번호    |
+| minor      | UInt8                                             | 1 Byte   | 0 ~ 255    | 부 번호      |
+| major      | UInt8                                             | 1 Byte   | 0 ~ 255    | 주 번호      |
+| v          | UInt32                                            | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
 
 
 <br>
@@ -358,10 +358,10 @@ class SystemInformation(ISerializable):
         self.crc32application   = 0
 ```
 
-| 변수 이름         | 형식       | 범위  | 크기    | 설명                         |
-|:-----------------:|:----------:|:-----:|:-------:|:-----------------------------|
-| crc32bootloader   | UInt32     | -     | 4 Byte  | Bootloader 영역의 CRC32      |
-| crc32application  | UInt32     | -     | 4 Byte  | Application 영역의 CRC32     |
+| 변수 이름         | 형식       | 크기    | 범위  | 설명                         |
+|:-----------------:|:----------:|:-------:|:-----:|:-----------------------------|
+| crc32bootloader   | UInt32     | 4 Byte  | -     | Bootloader 영역의 CRC32      |
+| crc32application  | UInt32     | 4 Byte  | -     | Application 영역의 CRC32     |
 
 
 <br>
@@ -388,14 +388,14 @@ class Information(ISerializable):
         self.day            = 0
 ```
 
-| 변수 이름     | 형식                                      | 범위 | 크기     | 설명                |
-|:-------------:|:-----------------------------------------:|:----:|:--------:|:--------------------|
-| modeUpdate    | [ModeUpdate](02_system.md#ModeUpdate)     | -    | 1 Byte   | 업데이트 진행 상황  |
-| modelNumber   | [ModelNumber](02_system.md#ModelNumber)   | -    | 4 Byte   | 모델 번호           |
-| version       | [Version](#Version)                       | -    | 4 Byte   | 펌웨어의 버젼       |
-| year          | UInt16                                    | -    | 2 Byte   | 펌웨어 빌드 년      |
-| month         | UInt8                                     | -    | 1 Byte   | 펌웨어 빌드 월      |
-| day           | UInt8                                     | -    | 1 Byte   | 펌웨어 빌드 일      |
+| 변수 이름     | 형식                                      | 크기     | 범위 | 설명                |
+|:-------------:|:-----------------------------------------:|:--------:|:----:|:--------------------|
+| modeUpdate    | [ModeUpdate](02_system.md#ModeUpdate)     | 1 Byte   | -    | 업데이트 진행 상황  |
+| modelNumber   | [ModelNumber](02_system.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
+| version       | [Version](#Version)                       | 4 Byte   | -    | 펌웨어의 버젼       |
+| year          | UInt16                                    | 2 Byte   | -    | 펌웨어 빌드 년      |
+| month         | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 월      |
+| day           | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 일      |
 
 - e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_12_information.md#Class_Information)
 
@@ -417,9 +417,9 @@ class Address(ISerializable):
         self.address    = bytearray()
 ```
 
-| 변수 이름  | 형식          | 범위  | 크기     | 설명         |
-|:----------:|:-------------:|:-----:|:--------:|:-------------|
-| address    | UInt8 Array   | -     | 16 Byte  | 장치 주소    |
+| 변수 이름  | 형식          | 크기     | 범위  | 설명         |
+|:----------:|:-------------:|:--------:|:-----:|:-------------|
+| address    | UInt8 Array   | 16 Byte  | -     | 장치 주소    |
 
 
 <br>
@@ -443,13 +443,13 @@ class Pairing(ISerializable):
         self.channel        = 0
 ```
 
-| 변수 이름       | 형식      | 범위       | 크기     | 설명               |
-|:---------------:|:---------:|:----------:|:--------:|:-------------------|
-| address0        | UInt16    | 0 ~ 65535  | 2 Byte   | 장치의 주소 0      |
-| address1        | UInt16    | 0 ~ 65535  | 2 Byte   | 장치의 주소 1      |
-| address2        | UInt16    | 0 ~ 65535  | 2 Byte   | 장치의 주소 2      |
-| scramble        | UInt16    | 0 ~ 127    | 1 Byte   | 스크램블           |
-| channel         | UInt8     | 0 ~ 81     | 1 Byte   | 채널               |
+| 변수 이름       | 형식      | 크기     | 범위       | 설명               |
+|:---------------:|:---------:|:--------:|:----------:|:-------------------|
+| address0        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 0      |
+| address1        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 1      |
+| address2        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 2      |
+| scramble        | UInt16    | 1 Byte   | 0 ~ 127    | 스크램블           |
+| channel         | UInt8     | 1 Byte   | 0 ~ 81     | 채널               |
 
 
 <br>
@@ -498,14 +498,14 @@ class Command(ISerializable):
         self.option         = 0
 ```
 
-| 변수 이름      | 형식                                                 | 범위   | 크기     | 설명       |
-|:--------------:|:----------------------------------------------------:|:------:|:--------:|:-----------|
-| commandType    | [CommandType](#CommandType)                          | -      | 1 Byte   | 명령 타입  |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | -      | 1 Byte   | 옵션       |
-|                | [FlightEvent](02_system.md#FlightEvent)              | -      | 1 Byte   |            |
-|                | [Headless](02_system.md#Headless)                    | -      | 1 Byte   |            |
-|                | [TrimIncDec](02_system.md#TrimIncDec)                | -      | 1 Byte   |            |
-|                | UInt8                                                | -      | 1 Byte   |            |
+| 변수 이름      | 형식                                                 | 크기     | 범위   | 설명       |
+|:--------------:|:----------------------------------------------------:|:--------:|:------:|:-----------|
+| commandType    | [CommandType](#CommandType)                          | 1 Byte   | -      | 명령 타입  |
+| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
+|                | [FlightEvent](02_system.md#FlightEvent)              | 1 Byte   | -      |            |
+|                | [Headless](02_system.md#Headless)                    | 1 Byte   | -      |            |
+|                | [TrimIncDec](02_system.md#TrimIncDec)                | 1 Byte   | -      |            |
+|                | UInt8                                                | 1 Byte   | -      |            |
 
 
 <br>
@@ -526,10 +526,10 @@ class CommandLightEvent(ISerializable):
         self.event      = LightEvent()
 ```
 
-| 변수 이름   | 형식                                                               | 범위  | 크기     | 설명           |
-|:-----------:|:------------------------------------------------------------------:|:-----:|:--------:|:---------------|
-| command     | [Command](#Command)                                                | -     | 2 Byte   | 명령           |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트     |
+| 변수 이름   | 형식                                                               | 크기     | 범위  | 설명           |
+|:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:---------------|
+| command     | [Command](#Command)                                                | 2 Byte   | -     | 명령           |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
 
 
 <br>
@@ -551,11 +551,11 @@ class CommandLightEventColor(ISerializable):
         self.color      = Color()
 ```
 
-| 변수 이름   | 형식                                                               | 범위  | 크기     | 설명           |
-|:-----------:|:------------------------------------------------------------------:|:-----:|:--------:|:---------------|
-| command     | [Command](#Command)                                                | -     | 2 Byte   | 명령           |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트     |
-| color       | [Light::Color](06_structs_light.md##Light_Color)                   | -     | 3 Byte   | LED RGB 색상   |
+| 변수 이름   | 형식                                                               | 크기     | 범위  | 설명           |
+|:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:---------------|
+| command     | [Command](#Command)                                                | 2 Byte   | -     | 명령           |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
+| color       | [Light::Color](06_structs_light.md##Light_Color)                   | 3 Byte   | -     | LED RGB 색상   |
 
 
 <br>
@@ -577,11 +577,11 @@ class CommandLightEventColors(ISerializable):
         self.colors     = Colors.Black
 ```
 
-| 변수 이름   | 형식                                                               | 범위  | 크기     | 설명              |
-|:-----------:|:------------------------------------------------------------------:|:-----:|:--------:|:------------------|
-| command     | [Command](#Command)                                                | -     | 2 Byte   | 명령              |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트        |
-| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)            | -     | 1 Byte   | LED 팔레트 인덱스 |
+| 변수 이름   | 형식                                                               | 크기     | 범위  | 설명              |
+|:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:------------------|
+| command     | [Command](#Command)                                                | 2 Byte   | -     | 명령              |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트        |
+| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)            | 1 Byte   | -     | LED 팔레트 인덱스 |
 
 
 <br>
@@ -602,12 +602,12 @@ class ControlQuad8(ISerializable):
         self.throttle   = 0
 ```
 
-| 변수 이름   | 형식      | 범위       | 크기     | 설명       |
-|:-----------:|:---------:|:----------:|:--------:|:-----------|
-| roll        | Int8      | -100 ~ 100 | 1 Byte   | Roll       |
-| pitch       | Int8      | -100 ~ 100 | 1 Byte   | Pitch      |
-| yaw         | Int8      | -100 ~ 100 | 1 Byte   | Yaw        |
-| throttle    | Int8      | -100 ~ 100 | 1 Byte   | Throttle   |
+| 변수 이름   | 형식      | 크기     | 범위       | 설명       |
+|:-----------:|:---------:|:--------:|:----------:|:-----------|
+| roll        | Int8      | 1 Byte   | -100 ~ 100 | Roll       |
+| pitch       | Int8      | 1 Byte   | -100 ~ 100 | Pitch      |
+| yaw         | Int8      | 1 Byte   | -100 ~ 100 | Yaw        |
+| throttle    | Int8      | 1 Byte   | -100 ~ 100 | Throttle   |
 
 
 <br>
@@ -629,13 +629,13 @@ class ControlQuad8AndRequestData(ISerializable):
         self.dataType   = DataType.None_
 ```
 
-| 변수 이름   | 형식                    | 범위       | 크기     | 설명                  |
-|:-----------:|:-----------------------:|:----------:|:--------:|:----------------------|
-| roll        | Int8                    | -100 ~ 100 | 1 Byte   | Roll                  |
-| pitch       | Int8                    | -100 ~ 100 | 1 Byte   | Pitch                 |
-| yaw         | Int8                    | -100 ~ 100 | 1 Byte   | Yaw                   |
-| throttle    | Int8                    | -100 ~ 100 | 1 Byte   | Throttle              |
-| dataType    | [DataType](#DataType)   | -          | 1 Byte   | 요청할 데이터 타입    |
+| 변수 이름   | 형식                    | 크기     | 범위       | 설명                  |
+|:-----------:|:-----------------------:|:--------:|:----------:|:----------------------|
+| roll        | Int8                    | 1 Byte   | -100 ~ 100 | Roll                  |
+| pitch       | Int8                    | 1 Byte   | -100 ~ 100 | Pitch                 |
+| yaw         | Int8                    | 1 Byte   | -100 ~ 100 | Yaw                   |
+| throttle    | Int8                    | 1 Byte   | -100 ~ 100 | Throttle              |
+| dataType    | [DataType](#DataType)   | 1 Byte   | -          | 요청할 데이터 타입    |
 
 
 <br>
@@ -664,16 +664,16 @@ class ControlPosition16(ISerializable):
         self.rotationalVelocity = 0
 ```
 
-| 변수 이름             | 형식   | 범위                       | 크기     | 단위          | 설명                 |
-|:---------------------:|:------:|:--------------------------:|:--------:|:--------------|:---------------------|
-| positionX             | Int16  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 앞(+), 뒤(-)         |
-| positionY             | Int16  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 좌(+), 우(-)         |
-| positionZ             | Int16  | -100 ~ 100(-10.0 ~ 10.0)   | 2 Byte   | meter x 10    | 위(+), 아래(-)       |
-| velocityX             | Int16  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 앞뒤 이동 속도       |
-| velocityY             | Int16  | 5 ~ 50(0.5 ~ 5.0)          | 2 Byte   | m/s x 10      | 좌우 이동 속도       |
-| velocityZ             | Int16  | 2 ~ 20(0.2 ~ 2.0)          | 2 Byte   | m/s x 10      | 승하강 속도          |
-| heading               | Int16  | -360 ~ 360                 | 2 Byte   | degree        | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | Int16  | 10 ~ 360                   | 2 Byte   | degree/s      | 좌우 회전 속도       |
+| 변수 이름             | 형식   | 크기     | 범위                       | 단위          | 설명                 |
+|:---------------------:|:------:|:--------:|:--------------------------:|:--------------|:---------------------|
+| positionX             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
+| positionY             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
+| positionZ             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
+| velocityX             | Int16  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 앞뒤 이동 속도       |
+| velocityY             | Int16  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 좌우 이동 속도       |
+| velocityZ             | Int16  | 2 Byte   | 2 ~ 10(0.2 ~ 1.0)          | m/s x 10      | 승하강 속도          |
+| heading               | Int16  | 2 Byte   | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
 
 
 <br>
@@ -702,16 +702,16 @@ class ControlPosition(ISerializable):
         self.rotationalVelocity = 0
 ```
 
-| 변수 이름             | 형식   | 범위           | 크기     | 단위     | 설명                 |
-|:---------------------:|:------:|:--------------:|:--------:|:---------|:---------------------|
-| positionX             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 앞(+), 뒤(-)         |
-| positionY             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 좌(+), 우(-)         |
-| positionZ             | float  | -10.0 ~ 10.0   | 4 Byte   | meter    | 위(+), 아래(-)       |
-| velocityX             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 앞뒤 이동 속도       |
-| velocityY             | float  | 0.5 ~ 5.0      | 4 Byte   | m/s      | 좌우 이동 속도       |
-| velocityZ             | float  | 0.2 ~ 2.0      | 4 Byte   | m/s      | 승하강 속도          |
-| heading               | float  | -360.0 ~ 360.0 | 4 Byte   | degree   | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | float  | 10.0 ~ 360.0   | 4 Byte   | degree/s | 좌우 회전 속도       |
+| 변수 이름             | 형식   | 크기     | 범위           | 단위     | 설명                 |
+|:---------------------:|:------:|:--------:|:--------------:|:---------|:---------------------|
+| positionX             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
+| positionY             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
+| positionZ             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
+| velocityX             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 앞뒤 이동 속도       |
+| velocityY             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 좌우 이동 속도       |
+| velocityZ             | float  | 4 Byte   | 0.2 ~ 1.0      | m/s      | 승하강 속도          |
+| heading               | float  | 4 Byte   | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | float  | 4 Byte   | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
 
 
 <br>
@@ -855,11 +855,11 @@ class Color(ISerializable):
         self.b      = 0
 ```
 
-| 변수 이름   | 형식    | 범위     | 크기     | 설명    |
+| 변수 이름   | 형식    | 크기     | 범위     | 설명    |
 |:-----------:|:-------:|:--------:|:--------:|:--------|
-| r           | UInt8   | 0 ~ 255  | 1 Byte   | Red     |
-| g           | UInt8   | 0 ~ 255  | 1 Byte   | Green   |
-| b           | UInt8   | 0 ~ 255  | 1 Byte   | Blue    |
+| r           | UInt8   | 1 Byte   | 0 ~ 255  | Red     |
+| g           | UInt8   | 1 Byte   | 0 ~ 255  | Green   |
+| b           | UInt8   | 1 Byte   | 0 ~ 255  | Blue    |
 
 
 <br>
@@ -1042,10 +1042,10 @@ class LightManual(ISerializable):
         self.brightness     = 0
 ```
 
-| 변수 이름   | 형식   | 범위              | 크기     | 설명            |
-|:-----------:|:------:|:-----------------:|:--------:|:----------------|
-| flags       | UInt16 | 0x0000 ~ 0xFFFF   | 2 Byte   | LED 선택 플래그 |
-| brightness  | UInt8  | 0 ~ 255           | 1 Byte   | 밝기            |
+| 변수 이름   | 형식   | 크기     | 범위              | 설명            |
+|:-----------:|:------:|:--------:|:-----------------:|:----------------|
+| flags       | UInt16 | 2 Byte   | 0x0000 ~ 0xFFFF   | LED 선택 플래그 |
+| brightness  | UInt8  | 1 Byte   | 0 ~ 255           | 밝기            |
 
 
 <br>
@@ -1067,10 +1067,10 @@ class LightMode(ISerializable):
         self.interval    = 0
 ```
 
-| 변수 이름   | 형식      | 범위       | 크기     | 설명                           |
-|:-----------:|:---------:|:----------:|:--------:|:-------------------------------|
-| mode        | UInt8     | -          | 1 Byte   | LED 동작 모드                  |
-| interval    | UInt16    | 0 ~ 65535  | 2 Byte   | 내부 밝기 제어 함수 호출 주기  |
+| 변수 이름   | 형식      | 크기     | 범위       | 설명                           |
+|:-----------:|:---------:|:--------:|:----------:|:-------------------------------|
+| mode        | UInt8     | 1 Byte   | -          | LED 동작 모드                  |
+| interval    | UInt16    | 2 Byte   | 0 ~ 65535  | 내부 밝기 제어 함수 호출 주기  |
 
 
 <br>
@@ -1091,10 +1091,10 @@ class LightModeColor(ISerializable):
         self.color      = Color()
 ```
 
-| 변수 이름   | 형식                     | 범위   | 크기     | 설명           |
-|:-----------:|:------------------------:|:------:|:--------:|:---------------|
-| mode        | [LightMode](#LightMode)  | -      | 3 Byte   | LED 동작 모드  |
-| color       | [Color](#Color)          | -      | 3 Byte   | LED RGB 색상   |
+| 변수 이름   | 형식                     | 크기     | 범위   | 설명           |
+|:-----------:|:------------------------:|:--------:|:------:|:---------------|
+| mode        | [LightMode](#LightMode)  | 3 Byte   | -      | LED 동작 모드  |
+| color       | [Color](#Color)          | 3 Byte   | -      | LED RGB 색상   |
 
 - e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)](examples_10_light.md#Class_LightModeColor)
 
@@ -1117,10 +1117,10 @@ class LightModeColors(ISerializable):
         self.colors     = Colors.Black
 ```
 
-| 변수 이름  | 형식                      | 범위  | 크기     | 설명               |
-|:----------:|:-------------------------:|:-----:|:--------:|:-------------------|
-| mode       | [LightMode](#LightMode)   | -     | 3 Byte   | LED 동작 모드      |
-| colors     | [Colors](#Colors)         | -     | 1 Byte   | LED 팔레트 인덱스  |
+| 변수 이름  | 형식                      | 크기     | 범위  | 설명               |
+|:----------:|:-------------------------:|:--------:|:-----:|:-------------------|
+| mode       | [LightMode](#LightMode)   | 3 Byte   | -     | LED 동작 모드      |
+| colors     | [Colors](#Colors)         | 1 Byte   | -     | LED 팔레트 인덱스  |
 
 - e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)](examples_10_light.md#Class_LightModeColors)
 
@@ -1146,11 +1146,11 @@ class LightEvent(ISerializable):
         self.repeat     = 0
 ```
 
-| 변수 이름  | 형식     | 범위       | 크기     | 설명                           |
-|:----------:|:--------:|:----------:|:--------:|:-------------------------------|
-| event      | UInt8    | -          | 1 Byte   | LED 동작 모드                  |
-| interval   | UInt16   | 0 ~ 65535  | 2 Byte   | 내부 색상 변화 함수 호출 주기  |
-| repeat     | UInt8    | 0 ~ 255    | 1 Byte   | 반복 횟수                      |
+| 변수 이름  | 형식     | 크기     | 범위       | 설명                           |
+|:----------:|:--------:|:--------:|:----------:|:-------------------------------|
+| event      | UInt8    | 1 Byte   | -          | LED 동작 모드                  |
+| interval   | UInt16   | 2 Byte   | 0 ~ 65535  | 내부 색상 변화 함수 호출 주기  |
+| repeat     | UInt8    | 1 Byte   | 0 ~ 255    | 반복 횟수                      |
 
 
 <br>
@@ -1171,10 +1171,10 @@ class LightEventColor(ISerializable):
         self.color      = Color()
 ```
 
-| 변수 이름   | 형식                        | 범위  | 크기     | 설명           |
-|:-----------:|:---------------------------:|:-----:|:--------:|:---------------|
-| event       | [LightEvent](#LightEvent)   | -     | 4 Byte   | LED 이벤트     |
-| color       | [Color](#Color)             | -     | 3 Byte   | LED RGB 색상   |
+| 변수 이름   | 형식                        | 크기     | 범위  | 설명           |
+|:-----------:|:---------------------------:|:--------:|:-----:|:---------------|
+| event       | [LightEvent](#LightEvent)   | 4 Byte   | -     | LED 이벤트     |
+| color       | [Color](#Color)             | 3 Byte   | -     | LED RGB 색상   |
 
 
 
@@ -1196,10 +1196,10 @@ class LightEventColors(ISerializable):
         self.colors     = Colors.Black
 ```
 
-| 변수 이름 | 형식                       | 범위  | 크기     | 설명              |
-|:---------:|:--------------------------:|:-----:|:--------:|:------------------|
-| event     | [LightEvent](#LightEvent)  | -     | 4 Byte   | LED 이벤트        |
-| colors    | [Colors](#Colors)          | -     | 1 Byte   | LED 팔레트 인덱스 |
+| 변수 이름 | 형식                       | 크기     | 범위  | 설명              |
+|:---------:|:--------------------------:|:--------:|:-----:|:------------------|
+| event     | [LightEvent](#LightEvent)  | 4 Byte   | -     | LED 이벤트        |
+| colors    | [Colors](#Colors)          | 1 Byte   | -     | LED 팔레트 인덱스 |
 
 
 
@@ -1285,9 +1285,9 @@ class DisplayClearAll(ISerializable):
         self.pixel       = DisplayPixel.White
 ```
 
-| 변수 이름   | 형식                           | 범위 | 크기     | 설명        |
-|:-----------:|:------------------------------:|:----:|:--------:|:------------|
-| pixel       | [DisplayPixel](#DisplayPixel)  | -    | 1 Byte   | 채울 색상   |
+| 변수 이름   | 형식                           | 크기     | 범위 | 설명        |
+|:-----------:|:------------------------------:|:--------:|:----:|:------------|
+| pixel       | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -    | 채울 색상   |
 
 
 <br>
@@ -1309,13 +1309,13 @@ class DisplayClear(ISerializable):
         self.pixel       = DisplayPixel.White
 ```
 
-| 변수 이름  | 형식                            | 범위          | 크기     | 설명            |
-|:----------:|:-------------------------------:|:-------------:|:--------:|:----------------|
-| x          | Int16                           | -2000 ~ 2000  | 2 Byte   | X축 시작 위치   |
-| y          | Int16                           | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치   |
-| width      | Int16                           | -2000 ~ 2000  | 2 Byte   | 너비            |
-| height     | Int16                           | -2000 ~ 2000  | 2 Byte   | 높이            |
-| pixel      | [DisplayPixel](#DisplayPixel)   | -             | 1 Byte   | 채울 색상       |
+| 변수 이름  | 형식                            | 크기     | 범위          | 설명            |
+|:----------:|:-------------------------------:|:--------:|:-------------:|:----------------|
+| x          | Int16                           | 2 Byte   | -2000 ~ 2000  | X축 시작 위치   |
+| y          | Int16                           | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치   |
+| width      | Int16                           | 2 Byte   | -2000 ~ 2000  | 너비            |
+| height     | Int16                           | 2 Byte   | -2000 ~ 2000  | 높이            |
+| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte   | -             | 채울 색상       |
 
 
 <br>
@@ -1336,12 +1336,12 @@ class DisplayInvert(ISerializable):
         self.height      = 0
 ```
 
-| 변수 이름   | 형식    | 범위          | 크기     | 설명           |
-|:-----------:|:-------:|:-------------:|:--------:|:---------------|
-| x           | Int16   | -2000 ~ 2000  | 2 Byte   | X축 시작 위치  |
-| y           | Int16   | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치  |
-| width       | Int16   | -2000 ~ 2000  | 2 Byte   | 너비           |
-| height      | Int16   | -2000 ~ 2000  | 2 Byte   | 높이           |
+| 변수 이름   | 형식    | 크기     | 범위          | 설명           |
+|:-----------:|:-------:|:--------:|:-------------:|:---------------|
+| x           | Int16   | 2 Byte   | -2000 ~ 2000  | X축 시작 위치  |
+| y           | Int16   | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치  |
+| width       | Int16   | 2 Byte   | -2000 ~ 2000  | 너비           |
+| height      | Int16   | 2 Byte   | -2000 ~ 2000  | 높이           |
 
 
 <br>
@@ -1361,11 +1361,11 @@ class DisplayDrawPoint(ISerializable):
         self.pixel       = DisplayPixel.White
 ```
 
-| 변수 이름  | 형식                           | 범위          | 크기     | 설명       |
-|:----------:|:------------------------------:|:-------------:|:--------:|:-----------|
-| x          | Int16                          | -2000 ~ 2000  | 2 Byte   | X축 위치   |
-| y          | Int16                          | -2000 ~ 2000  | 2 Byte   | Y축 위치   |
-| pixel      | [DisplayPixel](#DisplayPixel)  | -             | 1 Byte   | 점 색상    |
+| 변수 이름  | 형식                           | 크기     | 범위          | 설명       |
+|:----------:|:------------------------------:|:--------:|:-------------:|:-----------|
+| x          | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 위치   |
+| y          | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 위치   |
+| pixel      | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -             | 점 색상    |
 
 
 <br>
@@ -1388,14 +1388,14 @@ class DisplayDrawLine(ISerializable):
         self.line        = DisplayLine.Solid
 ```
 
-| 변수 이름  | 형식                           | 범위          | 크기     | 설명           |
-|:----------:|:------------------------------:|:-------------:|:--------:|:---------------|
-| x1         | Int16                          | -2000 ~ 2000  | 2 Byte   | X축 시작 위치  |
-| y1         | Int16                          | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치  |
-| x2         | Int16                          | -2000 ~ 2000  | 2 Byte   | X축 끝 위치    |
-| y2         | Int16                          | -2000 ~ 2000  | 2 Byte   | Y축 끝 위치    |
-| pixel      | [DisplayPixel](#DisplayPixel)  | -             | 1 Byte   | 선 색상        |
-| line       | [DisplayLine](#DisplayLine)    | -             | 1 Byte   | 선 형태        |
+| 변수 이름  | 형식                           | 크기     | 범위          | 설명           |
+|:----------:|:------------------------------:|:--------:|:-------------:|:---------------|
+| x1         | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 시작 위치  |
+| y1         | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치  |
+| x2         | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 끝 위치    |
+| y2         | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 끝 위치    |
+| pixel      | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -             | 선 색상        |
+| line       | [DisplayLine](#DisplayLine)    | 1 Byte   | -             | 선 형태        |
 
 
 <br>
@@ -1419,15 +1419,15 @@ class DisplayDrawRect(ISerializable):
         self.line        = DisplayLine.Solid
 ```
 
-| 변수 이름  | 형식                            | 범위          | 크기     | 설명                     |
-|:----------:|:-------------------------------:|:-------------:|:--------:|:-------------------------|
-| x          | Int16                           | -2000 ~ 2000  | 2 Byte   | X축 시작 위치            |
-| y          | Int16                           | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치            |
-| width      | Int16                           | -2000 ~ 2000  | 2 Byte   | 너비                     |
-| height     | Int16                           | -2000 ~ 2000  | 2 Byte   | 높이                     |
-| pixel      | [DisplayPixel](#DisplayPixel)   | -             | 1 Byte   | 색상                     |
-| flagFill   | Bool                            | -             | 1 Byte   | True인 경우 내부를 채움  |
-| line       | [DisplayLine](#DisplayLine)     | -             | 1 Byte   | 선 형태                  |
+| 변수 이름  | 형식                            | 크기     | 범위          | 설명                     |
+|:----------:|:-------------------------------:|:--------:|:-------------:|:-------------------------|
+| x          | Int16                           | 2 Byte   | -2000 ~ 2000  | X축 시작 위치            |
+| y          | Int16                           | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치            |
+| width      | Int16                           | 2 Byte   | -2000 ~ 2000  | 너비                     |
+| height     | Int16                           | 2 Byte   | -2000 ~ 2000  | 높이                     |
+| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte   | -             | 색상                     |
+| flagFill   | Bool                            | 1 Byte   | -             | True인 경우 내부를 채움  |
+| line       | [DisplayLine](#DisplayLine)     | 1 Byte   | -             | 선 형태                  |
 
 
 <br>
@@ -1449,13 +1449,13 @@ class DisplayDrawCircle(ISerializable):
         self.flagFill   = True
 ```
 
-| 변수 이름 | 형식                           | 범위          | 크기     | 설명                    |
-|:---------:|:------------------------------:|:-------------:|:--------:|:------------------------|
-| x         | Int16                          | -2000 ~ 2000  | 2 Byte   | X축 중심점 위치         |
-| y         | Int16                          | -2000 ~ 2000  | 2 Byte   | Y축 중심점 위치         |
-| radius    | Int16                          | 1 ~ 2000      | 2 Byte   | 반지름                  |
-| pixel     | [DisplayPixel](#DisplayPixel)  | -             | 1 Byte   | 색상                    |
-| flagFill  | Bool                           | -             | 1 Byte   | True인 경우 내부를 채움 |
+| 변수 이름 | 형식                           | 크기     | 범위          | 설명                    |
+|:---------:|:------------------------------:|:--------:|:-------------:|:------------------------|
+| x         | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 중심점 위치         |
+| y         | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 중심점 위치         |
+| radius    | Int16                          | 2 Byte   | 1 ~ 2000      | 반지름                  |
+| pixel     | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -             | 색상                    |
+| flagFill  | Bool                           | 1 Byte   | -             | True인 경우 내부를 채움 |
 
 
 <br>
@@ -1477,13 +1477,13 @@ class DisplayDrawString(ISerializable):
         self.message    = ""
 ```
 
-| 변수 이름  | 형식                            | 범위          | 크기          | 설명           |
+| 변수 이름  | 형식                            | 크기          | 범위          | 설명           |
 |:----------:|:-------------------------------:|:-------------:|:-------------:|:---------------|
-| x          | Int16                           | -2000 ~ 2000  | 2 Byte        | X축 위치       |
-| y          | Int16                           | -2000 ~ 2000  | 2 Byte        | Y축 위치       |
-| font       | [DisplayFont](#DisplayFont)     | -             | 1 Byte        | 폰트           |
-| pixel      | [DisplayPixel](#DisplayPixel)   | -             | 1 Byte        | 색상           |
-| message    | ASCII String                    | -             | 12 Byte 이하  | 표시할 문자열  |
+| x          | Int16                           | 2 Byte        | -2000 ~ 2000  | X축 위치       |
+| y          | Int16                           | 2 Byte        | -2000 ~ 2000  | Y축 위치       |
+| font       | [DisplayFont](#DisplayFont)     | 1 Byte        | -             | 폰트           |
+| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte        | -             | 색상           |
+| message    | ASCII String                    | 12 Byte 이하  | -             | 표시할 문자열  |
 
 
 <br>
@@ -1510,15 +1510,15 @@ class DisplayDrawStringAlign(ISerializable):
         self.message    = ""
 ```
 
-| 변수 이름  | 형식                            | 범위          | 크기          | 설명           |
+| 변수 이름  | 형식                            | 크기          | 범위          | 설명           |
 |:----------:|:-------------------------------:|:-------------:|:-------------:|:---------------|
-| x_start    | Int16                           | -2000 ~ 2000  | 2 Byte        | X축 시작 위치  |
-| x_end      | Int16                           | -2000 ~ 2000  | 2 Byte        | X축 끝 위치    |
-| y          | Int16                           | -2000 ~ 2000  | 2 Byte        | Y축 위치       |
-| align      | [DisplayAlign](#DisplayAlign)   | -             | 1 Byte        | 정렬           |
-| font       | [DisplayFont](#DisplayFont)     | -             | 1 Byte        | 폰트           |
-| pixel      | [DisplayPixel](#DisplayPixel)   | -             | 1 Byte        | 색상           |
-| message    | ASCII String                    | -             | 12 Byte 이하  | 표시할 문자열  |
+| x_start    | Int16                           | 2 Byte        | -2000 ~ 2000  | X축 시작 위치  |
+| x_end      | Int16                           | 2 Byte        | -2000 ~ 2000  | X축 끝 위치    |
+| y          | Int16                           | 2 Byte        | -2000 ~ 2000  | Y축 위치       |
+| align      | [DisplayAlign](#DisplayAlign)   | 1 Byte        | -             | 정렬           |
+| font       | [DisplayFont](#DisplayFont)     | 1 Byte        | -             | 폰트           |
+| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte        | -             | 색상           |
+| message    | ASCII String                    | 12 Byte 이하  | -             | 표시할 문자열  |
 
 
 <br>
@@ -1596,11 +1596,11 @@ class Buzzer(ISerializable):
         self.time       = 0
 ```
 
-| 변수 이름  | 형식                      | 범위       | 크기   | 설명                   |
-|:----------:|:-------------------------:|:----------:|:------:|:-----------------------|
-| mode       | [BuzzerMode](#BuzzerMode) | -          | 1 Byte | 버저 동작 모드         |
-| value      | UInt16                    | 0 ~ 8000   | 2 Byte | Scale 값 또는 Hz 값    |
-| time       | UInt16                    | 0 ~ 65,535 | 2 Byte | 소리를 지속할 시간(ms) |
+| 변수 이름  | 형식                      | 크기   | 범위       | 설명                   |
+|:----------:|:-------------------------:|:------:|:----------:|:-----------------------|
+| mode       | [BuzzerMode](#BuzzerMode) | 1 Byte | -          | 버저 동작 모드         |
+| value      | UInt16                    | 2 Byte | 0 ~ 8000   | Scale 값 또는 Hz 값    |
+| time       | UInt16                    | 2 Byte | 0 ~ 65,535 | 소리를 지속할 시간(ms) |
 
 - e.g. [Buzzer 클래스 데이터를 직접 채워서 전송하기](examples_08_buzzer.md#Class_Buzzer)
 
@@ -1642,12 +1642,12 @@ class Vibrator(ISerializable):
         self.total      = 0
 ```
 
-| 변수 이름  | 형식                          | 범위        | 크기     | 설명                |
-|:----------:|:-----------------------------:|:-----------:|:--------:|:--------------------|
-| mode       | [VibratorMode](#VibratorMode) | -           | 1 Byte   | 진동 동작 모드      |
-| on         | UInt16                        | 0 ~ 65,535  | 2 Byte   | 진동을 켠 시간(ms)  |
-| off        | UInt16                        | 0 ~ 65,535  | 2 Byte   | 진동을 끈 시간(ms)  |
-| total      | UInt16                        | 0 ~ 65,535  | 2 Byte   | 전체 동작 시간(ms)  |
+| 변수 이름  | 형식                          | 크기     | 범위        | 설명                |
+|:----------:|:-----------------------------:|:--------:|:-----------:|:--------------------|
+| mode       | [VibratorMode](#VibratorMode) | 1 Byte   | -           | 진동 동작 모드      |
+| on         | UInt16                        | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
+| off        | UInt16                        | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
+| total      | UInt16                        | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
 
 - e.g. [Vibrator 클래스 데이터를 직접 채워서 전송하기](examples_09_vibrator.md#Class_Vibrator)
 
@@ -1739,10 +1739,10 @@ class Button(ISerializable):
         self.event      = ButtonEvent.None_
 ```
 
-| 변수 이름 | 형식                        | 범위  | 크기     | 설명         |
-|:---------:|:---------------------------:|:-----:|:--------:|:-------------|
-| button    | UInt16                      | -     | 2 Byte   | 버튼 입력    |
-| event     | [ButtonEvent](#ButtonEvent) | -     | 1 Byte   | 버튼 이벤트  |
+| 변수 이름 | 형식                        | 크기     | 범위  | 설명         |
+|:---------:|:---------------------------:|:--------:|:-----:|:-------------|
+| button    | UInt16                      | 2 Byte   | -     | 버튼 입력    |
+| event     | [ButtonEvent](#ButtonEvent) | 1 Byte   | -     | 버튼 이벤트  |
 
 - e.g. [버튼 입력값 출력](examples_12_input.md#Button)
 
@@ -1813,12 +1813,12 @@ class JoystickBlock(ISerializable):
         self.event      = JoystickEvent.None_
 ```
 
-| 변수 이름  | 형식                                    | 범위          | 크기     | 설명           |
-|:----------:|:---------------------------------------:|:-------------:|:--------:|:---------------|
-| x          | Int8                                    | -100 ~ 100    | 1 Byte   | X축 값         |
-| y          | Int8                                    | -100 ~ 100    | 1 Byte   | Y축 값         |
-| direction  | [JoystickDirection](#JoystickDirection) | -             | 1 Byte   | 조이스틱 방향  |
-| event      | [JoystickEvent](#JoystickEvent)         | -             | 1 Byte   | 이벤트         |
+| 변수 이름  | 형식                                    | 크기     | 범위          | 설명           |
+|:----------:|:---------------------------------------:|:--------:|:-------------:|:---------------|
+| x          | Int8                                    | 1 Byte   | -100 ~ 100    | X축 값         |
+| y          | Int8                                    | 1 Byte   | -100 ~ 100    | Y축 값         |
+| direction  | [JoystickDirection](#JoystickDirection) | 1 Byte   | -             | 조이스틱 방향  |
+| event      | [JoystickEvent](#JoystickEvent)         | 1 Byte   | -             | 이벤트         |
 
 
 <br>
@@ -1837,10 +1837,10 @@ class Joystick(ISerializable):
         self.right      = JoystickBlock()
 ```
 
-| 변수 이름 | 형식                             | 범위  | 크기     | 설명            |
-|:---------:|:--------------------------------:|:-----:|:--------:|:----------------|
-| left      | [JoystickBlock](#JoystickBlock)  | -     | 4 Byte   | 왼쪽 조이스틱   |
-| right     | [JoystickBlock](#JoystickBlock)  | -     | 4 Byte   | 오른쪽 조이스틱 |
+| 변수 이름 | 형식                             | 크기     | 범위  | 설명            |
+|:---------:|:--------------------------------:|:--------:|:-----:|:----------------|
+| left      | [JoystickBlock](#JoystickBlock)  | 4 Byte   | -     | 왼쪽 조이스틱   |
+| right     | [JoystickBlock](#JoystickBlock)  | 4 Byte   | -     | 오른쪽 조이스틱 |
 
 - e.g. [조이스틱 입력값 출력](examples_12_input.md#Joystick)
 
@@ -1865,14 +1865,14 @@ class RawMotion(ISerializable):
         self.gyroYaw    = 0
 ```
 
-| 변수 이름  | 형식     | 범위              | 크기     | 설명           |
-|:----------:|:--------:|:-----------------:|:--------:|:---------------|
-| accelX     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 X       |
-| accelY     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Y       |
-| accelZ     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Z       |
-| gyroRoll   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Roll    |
-| gyroPitch  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Pitch   |
-| gyroYaw    | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Yaw     |
+| 변수 이름  | 형식     | 크기     | 범위              | 설명           |
+|:----------:|:--------:|:--------:|:-----------------:|:---------------|
+| accelX     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 X       |
+| accelY     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Y       |
+| accelZ     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Z       |
+| gyroRoll   | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Roll    |
+| gyroPitch  | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Pitch   |
+| gyroYaw    | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Yaw     |
 
 
 <br>
@@ -1891,10 +1891,10 @@ class Flow(ISerializable):
         self.y     = 0
 ```
 
-| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
-|:----------:|:---------:|:-----:|:--------:|:--------|
-| x          | Float32   | -     | 4 Byte   | X축(m)  |
-| y          | Float32   | -     | 4 Byte   | Y축(m)  |
+| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
+|:----------:|:---------:|:--------:|:-----:|:--------|
+| x          | Float32   | 4 Byte   | -     | X축(m)  |
+| y          | Float32   | 4 Byte   | -     | Y축(m)  |
 
 
 <br>
@@ -1919,15 +1919,15 @@ class State(ISerializable):
         self.battery            = 0
 ```
 
-| 변수 이름         | 형식                                                | 범위     | 크기     | 설명                   |
+| 변수 이름         | 형식                                                | 크기     | 범위     | 설명                   |
 |:-----------------:|:---------------------------------------------------:|:--------:|:--------:|:-----------------------|
-| modeSystem        | [ModeSystem](02_system.md#ModeSystem)               | -        | 1 Byte   | System 동작 모드       |
-| modeFlight        | [ModeFlight](02_system.md#ModeFlight)               | -        | 1 Byte   | 비행 제어기 동작 모드  |
-| modeControlFlight | [ModeControlFlight](02_system.md#ModeControlFlight) | -        | 1 Byte   | 비행 제어 모드         |
-| modeMovement      | [ModeMovement](02_system.md#ModeMovement)           | -        | 1 Byte   | 이동 상태              |
-| headless          | [Headless](02_system.md#Headless)                   | -        | 1 Byte   | Headless 설정 상태     |
-| sensorOrientation | [SensorOrientation](02_system.md#SensorOrientation) | -        | 1 Byte   | 센서 방향              |
-| battery           | UInt8                                               | 0 ~ 100  | 1 Byte   | 드론 배터리 잔량       |
+| modeSystem        | [ModeSystem](02_system.md#ModeSystem)               | 1 Byte   | -        | System 동작 모드       |
+| modeFlight        | [ModeFlight](02_system.md#ModeFlight)               | 1 Byte   | -        | 비행 제어기 동작 모드  |
+| modeControlFlight | [ModeControlFlight](02_system.md#ModeControlFlight) | 1 Byte   | -        | 비행 제어 모드         |
+| modeMovement      | [ModeMovement](02_system.md#ModeMovement)           | 1 Byte   | -        | 이동 상태              |
+| headless          | [Headless](02_system.md#Headless)                   | 1 Byte   | -        | Headless 설정 상태     |
+| sensorOrientation | [SensorOrientation](02_system.md#SensorOrientation) | 1 Byte   | -        | 센서 방향              |
+| battery           | UInt8                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
 
 - e.g. [드론 모드를 변경 후 확인](examples_07_setup.md#ModeVehicle)
 
@@ -1949,11 +1949,11 @@ class Attitude(ISerializable):
         self.yaw        = 0
 ```
 
-| 변수 이름  | 형식       | 범위              | 크기     | 설명       |
-|:----------:|:----------:|:-----------------:|:--------:|:-----------|
-| roll       | Int16      | -32,768 ~ 32,767  | 2 Byte   | Roll       |
-| pitch      | Int16      | -32,768 ~ 32,767  | 2 Byte   | Pitch      |
-| yaw        | Int16      | -32,768 ~ 32,767  | 2 Byte   | Yaw        |
+| 변수 이름  | 형식       | 크기     | 범위              | 설명       |
+|:----------:|:----------:|:--------:|:-----------------:|:-----------|
+| roll       | Int16      | 2 Byte   | -32,768 ~ 32,767  | Roll       |
+| pitch      | Int16      | 2 Byte   | -32,768 ~ 32,767  | Pitch      |
+| yaw        | Int16      | 2 Byte   | -32,768 ~ 32,767  | Yaw        |
 
 - e.g. [자세 확인](examples_05_sensor.md#Attitude)
 
@@ -1975,11 +1975,11 @@ class Position(ISerializable):
         self.z     = 0
 ```
 
-| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
-|:----------:|:---------:|:-----:|:--------:|:--------|
-| x          | Float32   | -     | 4 Byte   | X축(m)  |
-| y          | Float32   | -     | 4 Byte   | Y축(m)  |
-| z          | Float32   | -     | 4 Byte   | Y축(m)  |
+| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
+|:----------:|:---------:|:--------:|:-----:|:--------|
+| x          | Float32   | 4 Byte   | -     | X축(m)  |
+| y          | Float32   | 4 Byte   | -     | Y축(m)  |
+| z          | Float32   | 4 Byte   | -     | Y축(m)  |
 
 
 <br>
@@ -2000,12 +2000,12 @@ class Altitude(ISerializable):
         self.rangeHeight    = 0
 ```
 
-| 변수 이름   | 형식     | 범위 | 크기     | 설명                            |
-|:-----------:|:--------:|:----:|:--------:|:--------------------------------|
-| temperature | Float32  | -    | 4 Byte   | 온도(℃)                         |
-| pressure    | Float32  | -    | 4 Byte   | 압력                            |
-| altitude    | Float32  | -    | 4 Byte   | 압력을 해발고도로 변환한 값(m)  |
-| rangeHeight | Float32  | -    | 4 Byte   | 거리센서에서 출력한 높이 값(m)  |
+| 변수 이름   | 형식     | 크기     | 범위 | 설명                            |
+|:-----------:|:--------:|:--------:|:----:|:--------------------------------|
+| temperature | Float32  | 4 Byte   | -    | 온도(℃)                         |
+| pressure    | Float32  | 4 Byte   | -    | 압력                            |
+| altitude    | Float32  | 4 Byte   | -    | 압력을 해발고도로 변환한 값(m)  |
+| rangeHeight | Float32  | 4 Byte   | -    | 거리센서에서 출력한 높이 값(m)  |
 
 - e.g. [고도 데이터 확인](examples_05_sensor.md#Altitude)
 
@@ -2019,6 +2019,8 @@ class Altitude(ISerializable):
 Motion 센서 데이터와 드론의 자세
 
 angleRoll, anglePitch, angleYaw는 Attitude에서 받을 수 있는 드론의 자세값과 같은 값입니다.
+
+accelX, accelY, accelZ 값은 **x10**을 한 값입니다.
 
 ```py
 class Motion(ISerializable):
@@ -2035,17 +2037,17 @@ class Motion(ISerializable):
         self.angleYaw   = 0
 ```
 
-| 변수 이름  | 형식     | 범위              | 크기     | 설명           |
-|:----------:|:--------:|:-----------------:|:--------:|:---------------|
-| accelX     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 X       |
-| accelY     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Y       |
-| accelZ     | Int16    | -32,768 ~ 32,767  | 2 Byte   | 가속도 Z       |
-| gyroRoll   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Roll    |
-| gyroPitch  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Pitch   |
-| gyroYaw    | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자이로 Yaw     |
-| angleRoll  | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Roll      |
-| anglePitch | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Pitch     |
-| angleYaw   | Int16    | -32,768 ~ 32,767  | 2 Byte   | 자세 Yaw       |
+| 변수 이름  | 형식   | 크기    | 범위                              | 단위                 | 설명          |
+|:----------:|:------:|:-------:|:---------------------------------:|:--------------------:|:--------------|
+| accelX     | Int16  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 X      |
+| accelY     | Int16  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Y      |
+| accelZ     | Int16  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Z      |
+| gyroRoll   | Int16  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Roll   |
+| gyroPitch  | Int16  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Pitch  |
+| gyroYaw    | Int16  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Yaw    |
+| angleRoll  | Int16  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Roll     |
+| anglePitch | Int16  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Pitch    |
+| angleYaw   | Int16  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Yaw      |
 
 - e.g. [Motion 센서 데이터 확인](examples_05_sensor.md#Imu)
 
@@ -2067,11 +2069,11 @@ class Vector(ISerializable):
         self.z      = 0
 ```
 
-| 변수 이름  | 형식    | 범위              | 크기     | 설명    |
-|:----------:|:-------:|:-----------------:|:--------:|:--------|
-| x          | Int16   | -32,768 ~ 32,767  | 2 Byte   | X       |
-| y          | Int16   | -32,768 ~ 32,767  | 2 Byte   | Y       |
-| z          | Int16   | -32,768 ~ 32,767  | 2 Byte   | Z       |
+| 변수 이름  | 형식    | 크기     | 범위              | 설명    |
+|:----------:|:-------:|:--------:|:-----------------:|:--------|
+| x          | Int16   | 2 Byte   | -32,768 ~ 32,767  | X       |
+| y          | Int16   | 2 Byte   | -32,768 ~ 32,767  | Y       |
+| z          | Int16   | 2 Byte   | -32,768 ~ 32,767  | Z       |
 
 
 <br>
@@ -2095,12 +2097,12 @@ class Count(ISerializable):
         self.countAccident  = 0
 ```
 
-| 변수 이름        | 형식       | 범위       | 크기     | 설명             |
-|:----------------:|:----------:|:----------:|:--------:|:-----------------|
-| timeFlight       | UInt64     | -          | 8 Byte   | 비행 시간(ms)    |
-| countTakeOff     | UInt16     | 0 ~ 65535  | 2 Byte   | 이륙 횟수        |
-| countLanding     | UInt16     | 0 ~ 65535  | 2 Byte   | 착륙 횟수        |
-| countAccident    | UInt16     | 0 ~ 65535  | 2 Byte   | 충돌 횟수        |
+| 변수 이름        | 형식       | 크기     | 범위       | 설명             |
+|:----------------:|:----------:|:--------:|:----------:|:-----------------|
+| timeFlight       | UInt64     | 8 Byte   | -          | 비행 시간(ms)    |
+| countTakeOff     | UInt16     | 2 Byte   | 0 ~ 65535  | 이륙 횟수        |
+| countLanding     | UInt16     | 2 Byte   | 0 ~ 65535  | 착륙 횟수        |
+| countAccident    | UInt16     | 2 Byte   | 0 ~ 65535  | 충돌 횟수        |
 
 
 <br>
@@ -2126,14 +2128,14 @@ class Bias(ISerializable):
         self.gyroYaw    = 0
 ```
 
-| 변수 이름   | 형식    | 범위              | 크기     | 설명         |
-|:-----------:|:-------:|:-----------------:|:--------:|:-------------|
-| accelX      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel X      |
-| accelY      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel Y      |
-| accelZ      | Int16   | -32,768 ~ 32,767  | 2 Byte   | Accel Z      |
-| gyroRoll    | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Roll    |
-| gyroPitch   | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Pitch   |
-| gyroYaw     | Int16   | -32,768 ~ 32,767  | 2 Byte   | Gyro Yaw     |
+| 변수 이름   | 형식    | 크기     | 범위              | 설명         |
+|:-----------:|:-------:|:--------:|:-----------------:|:-------------|
+| accelX      | Int16   | 2 Byte   | -32,768 ~ 32,767  | Accel X      |
+| accelY      | Int16   | 2 Byte   | -32,768 ~ 32,767  | Accel Y      |
+| accelZ      | Int16   | 2 Byte   | -32,768 ~ 32,767  | Accel Z      |
+| gyroRoll    | Int16   | 2 Byte   | -32,768 ~ 32,767  | Gyro Roll    |
+| gyroPitch   | Int16   | 2 Byte   | -32,768 ~ 32,767  | Gyro Pitch   |
+| gyroYaw     | Int16   | 2 Byte   | -32,768 ~ 32,767  | Gyro Yaw     |
 
 
 <br>
@@ -2156,12 +2158,12 @@ class Trim(ISerializable):
         self.throttle   = 0
 ```
 
-| 변수 이름 | 형식     | 범위         | 크기     | 설명       |
-|:---------:|:--------:|:------------:|:--------:|:-----------|
-| roll      | Int16    | -200 ~ 200   | 2 Byte   | Roll       |
-| pitch     | Int16    | -200 ~ 200   | 2 Byte   | Pitch      |
-| yaw       | Int16    | -200 ~ 200   | 2 Byte   | Yaw        |
-| throttle  | Int16    | -200 ~ 200   | 2 Byte   | Throttle   |
+| 변수 이름 | 형식     | 크기     | 범위         | 설명       |
+|:---------:|:--------:|:--------:|:------------:|:-----------|
+| roll      | Int16    | 2 Byte   | -200 ~ 200   | Roll       |
+| pitch     | Int16    | 2 Byte   | -200 ~ 200   | Pitch      |
+| yaw       | Int16    | 2 Byte   | -200 ~ 200   | Yaw        |
+| throttle  | Int16    | 2 Byte   | -200 ~ 200   | Throttle   |
 
 - e.g. [드론 Trim 설정 변경 후 확인](examples_07_setup.md#Trim)
 
@@ -2183,9 +2185,9 @@ class Weight(ISerializable):
         self.weight     = 0
 ```
 
-| 변수 이름  | 형식      | 범위  | 크기     | 설명    |
-|:----------:|:---------:|:-----:|:--------:|:--------|
-| weight     | Float32   | -     | 4 Byte   | 무게    |
+| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
+|:----------:|:---------:|:--------:|:-----:|:--------|
+| weight     | Float32   | 4 Byte   | -     | 무게    |
 
 
 <br>
@@ -2204,10 +2206,10 @@ class MotorBlock(ISerializable):
         self.value      = 0
 ```
 
-| 변수 이름  | 형식                               | 범위      | 크기     | 설명           |
-|:----------:|:----------------------------------:|:---------:|:--------:|:---------------|
-| rotation   | [Rotation](02_system.md#Rotation)  | -         | 1 Byte   | 모터 회전 방향 |
-| value      | UInt16                             | 0 ~ 4095  | 2 Byte   | 모터 회전 속도 |
+| 변수 이름  | 형식                               | 크기     | 범위      | 설명           |
+|:----------:|:----------------------------------:|:--------:|:---------:|:---------------|
+| rotation   | [Rotation](02_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향 |
+| value      | UInt16                             | 2 Byte   | 0 ~ 4095  | 모터 회전 속도 |
 
 
 <br>
@@ -2231,12 +2233,12 @@ class Motor(ISerializable):
         self.motor.append(MotorBlock())
 ```
 
-| 변수 이름  | 형식                        | 범위  | 크기     | 설명           |
-|:----------:|:---------------------------:|:-----:|:--------:|:---------------|
-| motor[0]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 왼쪽 앞 모터   |
-| motor[1]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 오른쪽 앞 모터 |
-| motor[2]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 오른쪽 뒤 모터 |
-| motor[3]   | [MotorBlock](#MotorBlock)   | -     | 3 Byte   | 왼쪽 뒤 모터   |
+| 변수 이름  | 형식                        | 크기     | 범위  | 설명           |
+|:----------:|:---------------------------:|:--------:|:-----:|:---------------|
+| motor[0]   | [MotorBlock](#MotorBlock)   | 3 Byte   | -     | 왼쪽 앞 모터   |
+| motor[1]   | [MotorBlock](#MotorBlock)   | 3 Byte   | -     | 오른쪽 앞 모터 |
+| motor[2]   | [MotorBlock](#MotorBlock)   | 3 Byte   | -     | 오른쪽 뒤 모터 |
+| motor[3]   | [MotorBlock](#MotorBlock)   | 3 Byte   | -     | 왼쪽 뒤 모터   |
 
 
 <br>
@@ -2256,11 +2258,11 @@ class MotorSingle(ISerializable):
         self.value      = 0
 ```
 
-| 변수 이름  | 형식                               | 범위      | 크기     | 설명            |
-|:----------:|:----------------------------------:|:---------:|:--------:|:----------------|
-| target     | UInt8                              | 0 ~ 3     | 1 Byte   | 동작 대상 모터  |
-| rotation   | [Rotation](02_system.md#Rotation)  | -         | 1 Byte   | 모터 회전 방향  |
-| value      | UInt16                             | 0 ~ 4095  | 2 Byte   | 모터 회전 속도  |
+| 변수 이름  | 형식                               | 크기     | 범위      | 설명            |
+|:----------:|:----------------------------------:|:--------:|:---------:|:----------------|
+| target     | UInt8                              | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
+| rotation   | [Rotation](02_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향  |
+| value      | UInt16                             | 2 Byte   | 0 ~ 4095  | 모터 회전 속도  |
 
 
 <br>

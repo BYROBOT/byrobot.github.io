@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Display**
 
-Modified : 2018.9.5
+Modified : 2018.9.20
 
 ---
 
@@ -146,9 +146,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                    | 범위 | 크기     | 설명        |
-|:-----------:|:---------------------------------------:|:----:|:--------:|:------------|
-| pixel       | [Display::Pixel::Type](#Display_Pixel)  | -    | 1 Byte   | 채울 색상   |
+| 변수 이름   | 형식                                    | 크기     | 범위 | 설명        |
+|:-----------:|:---------------------------------------:|:--------:|:----:|:------------|
+| pixel       | [Display::Pixel::Type](#Display_Pixel)  | 1 Byte   | -    | 채울 색상   |
 
 
 <br>
@@ -177,13 +177,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                     | 범위          | 크기     | 설명            |
-|:----------:|:----------------------------------------:|:-------------:|:--------:|:----------------|
-| x          | int16_t                                  | -2000 ~ 2000  | 2 Byte   | X축 시작 위치   |
-| y          | int16_t                                  | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치   |
-| width      | int16_t                                  | -2000 ~ 2000  | 2 Byte   | 너비            |
-| height     | int16_t                                  | -2000 ~ 2000  | 2 Byte   | 높이            |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)   | -             | 1 Byte   | 채울 색상       |
+| 변수 이름  | 형식                                     | 크기     | 범위          | 설명            |
+|:----------:|:----------------------------------------:|:--------:|:-------------:|:----------------|
+| x          | int16_t                                  | 2 Byte   | -2000 ~ 2000  | X축 시작 위치   |
+| y          | int16_t                                  | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치   |
+| width      | int16_t                                  | 2 Byte   | -2000 ~ 2000  | 너비            |
+| height     | int16_t                                  | 2 Byte   | -2000 ~ 2000  | 높이            |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)   | 1 Byte   | -             | 채울 색상       |
 
 
 <br>
@@ -211,12 +211,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식    | 범위          | 크기     | 설명           |
-|:-----------:|:-------:|:-------------:|:--------:|:---------------|
-| x           | int16_t | -2000 ~ 2000  | 2 Byte   | X축 시작 위치  |
-| y           | int16_t | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치  |
-| width       | int16_t | -2000 ~ 2000  | 2 Byte   | 너비           |
-| height      | int16_t | -2000 ~ 2000  | 2 Byte   | 높이           |
+| 변수 이름   | 형식    | 크기     | 범위          | 설명           |
+|:-----------:|:-------:|:--------:|:-------------:|:---------------|
+| x           | int16_t | 2 Byte   | -2000 ~ 2000  | X축 시작 위치  |
+| y           | int16_t | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치  |
+| width       | int16_t | 2 Byte   | -2000 ~ 2000  | 너비           |
+| height      | int16_t | 2 Byte   | -2000 ~ 2000  | 높이           |
 
 
 <br>
@@ -243,11 +243,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                    | 범위          | 크기     | 설명       |
-|:----------:|:---------------------------------------:|:-------------:|:--------:|:-----------|
-| x          | int16_t                                 | -2000 ~ 2000  | 2 Byte   | X축 위치   |
-| y          | int16_t                                 | -2000 ~ 2000  | 2 Byte   | Y축 위치   |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)  | -             | 1 Byte   | 점 색상    |
+| 변수 이름  | 형식                                    | 크기     | 범위          | 설명       |
+|:----------:|:---------------------------------------:|:--------:|:-------------:|:-----------|
+| x          | int16_t                                 | 2 Byte   | -2000 ~ 2000  | X축 위치   |
+| y          | int16_t                                 | 2 Byte   | -2000 ~ 2000  | Y축 위치   |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)  | 1 Byte   | -             | 점 색상    |
 
 
 <br>
@@ -277,14 +277,14 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                    | 범위          | 크기     | 설명           |
-|:----------:|:---------------------------------------:|:-------------:|:--------:|:---------------|
-| x1         | int16_t                                 | -2000 ~ 2000  | 2 Byte   | X축 시작 위치  |
-| y1         | int16_t                                 | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치  |
-| x2         | int16_t                                 | -2000 ~ 2000  | 2 Byte   | X축 끝 위치    |
-| y2         | int16_t                                 | -2000 ~ 2000  | 2 Byte   | Y축 끝 위치    |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)  | -             | 1 Byte   | 선 색상        |
-| line       | [Display::Line::Type](#Display_Line)    | -             | 1 Byte   | 선 형태        |
+| 변수 이름  | 형식                                    | 크기     | 범위          | 설명           |
+|:----------:|:---------------------------------------:|:--------:|:-------------:|:---------------|
+| x1         | int16_t                                 | 2 Byte   | -2000 ~ 2000  | X축 시작 위치  |
+| y1         | int16_t                                 | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치  |
+| x2         | int16_t                                 | 2 Byte   | -2000 ~ 2000  | X축 끝 위치    |
+| y2         | int16_t                                 | 2 Byte   | -2000 ~ 2000  | Y축 끝 위치    |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)  | 1 Byte   | -             | 선 색상        |
+| line       | [Display::Line::Type](#Display_Line)    | 1 Byte   | -             | 선 형태        |
 
 
 <br>
@@ -315,15 +315,15 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                     | 범위          | 크기     | 설명                     |
-|:----------:|:----------------------------------------:|:-------------:|:--------:|:-------------------------|
-| x          | int16_t                                  | -2000 ~ 2000  | 2 Byte   | X축 시작 위치            |
-| y          | int16_t                                  | -2000 ~ 2000  | 2 Byte   | Y축 시작 위치            |
-| width      | int16_t                                  | -2000 ~ 2000  | 2 Byte   | 너비                     |
-| height     | int16_t                                  | -2000 ~ 2000  | 2 Byte   | 높이                     |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)   | -             | 1 Byte   | 색상                     |
-| flagFill   | uint8_t                                  | -             | 1 Byte   | 0(채우지 않음), 1(채움)  |
-| line       | [Display::Line::Type](#Display_Line)     | -             | 1 Byte   | 선 형태                  |
+| 변수 이름  | 형식                                     | 크기     | 범위          | 설명                     |
+|:----------:|:----------------------------------------:|:--------:|:-------------:|:-------------------------|
+| x          | int16_t                                  | 2 Byte   | -2000 ~ 2000  | X축 시작 위치            |
+| y          | int16_t                                  | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치            |
+| width      | int16_t                                  | 2 Byte   | -2000 ~ 2000  | 너비                     |
+| height     | int16_t                                  | 2 Byte   | -2000 ~ 2000  | 높이                     |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)   | 1 Byte   | -             | 색상                     |
+| flagFill   | uint8_t                                  | 1 Byte   | -             | 0(채우지 않음), 1(채움)  |
+| line       | [Display::Line::Type](#Display_Line)     | 1 Byte   | -             | 선 형태                  |
 
 
 <br>
@@ -352,13 +352,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                     | 범위          | 크기     | 설명                     |
-|:----------:|:----------------------------------------:|:-------------:|:--------:|:-------------------------|
-| x          | int16_t                                  | -2000 ~ 2000  | 2 Byte   | X축 중심점 위치          |
-| y          | int16_t                                  | -2000 ~ 2000  | 2 Byte   | Y축 중심점 위치          |
-| radius     | int16_t                                  | 1 ~ 2000      | 2 Byte   | 반지름                   |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)   | -             | 1 Byte   | 색상                     |
-| flagFill   | uint8_t                                  | -             | 1 Byte   | 0(채우지 않음), 1(채움)  |
+| 변수 이름  | 형식                                     | 크기     | 범위          | 설명                     |
+|:----------:|:----------------------------------------:|:--------:|:-------------:|:-------------------------|
+| x          | int16_t                                  | 2 Byte   | -2000 ~ 2000  | X축 중심점 위치          |
+| y          | int16_t                                  | 2 Byte   | -2000 ~ 2000  | Y축 중심점 위치          |
+| radius     | int16_t                                  | 2 Byte   | 1 ~ 2000      | 반지름                   |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)   | 1 Byte   | -             | 색상                     |
+| flagFill   | uint8_t                                  | 1 Byte   | -             | 0(채우지 않음), 1(채움)  |
 
 
 <br>
@@ -390,13 +390,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                    | 범위          | 크기          | 설명           |
+| 변수 이름  | 형식                                    | 크기          | 범위          | 설명           |
 |:----------:|:---------------------------------------:|:-------------:|:-------------:|:---------------|
-| x          | int16_t                                 | -2000 ~ 2000  | 2 Byte        | X축 위치       |
-| y          | int16_t                                 | -2000 ~ 2000  | 2 Byte        | Y축 위치       |
-| font       | [Display::Font::Type](#Display_Font)    | -             | 1 Byte        | 폰트           |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)  | -             | 1 Byte        | 색상           |
-| message    | ASCII String                            | -             | 30 Byte 이하  | 표시할 문자열  |
+| x          | int16_t                                 | 2 Byte        | -2000 ~ 2000  | X축 위치       |
+| y          | int16_t                                 | 2 Byte        | -2000 ~ 2000  | Y축 위치       |
+| font       | [Display::Font::Type](#Display_Font)    | 1 Byte        | -             | 폰트           |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)  | 1 Byte        | -             | 색상           |
+| message    | ASCII String                            | 30 Byte 이하  | -             | 표시할 문자열  |
 
 
 <br>
@@ -432,15 +432,15 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                     | 범위          | 크기          | 설명           |
+| 변수 이름  | 형식                                     | 크기          | 범위          | 설명           |
 |:----------:|:----------------------------------------:|:-------------:|:-------------:|:---------------|
-| xStart     | int16_t                                  | -2000 ~ 2000  | 2 Byte        | X축 시작 위치  |
-| xEnd       | int16_t                                  | -2000 ~ 2000  | 2 Byte        | X축 끝 위치    |
-| y          | int16_t                                  | -2000 ~ 2000  | 2 Byte        | Y축 위치       |
-| align      | [Display::Align::Type](#Display_Align)   | -             | 1 Byte        | 정렬           |
-| font       | [Display::Font::Type](#Display_Font)     | -             | 1 Byte        | 폰트           |
-| pixel      | [Display::Pixel::Type](#Display_Pixel)   | -             | 1 Byte        | 색상           |
-| message    | ASCII String                             | -             | 30 Byte 이하  | 표시할 문자열  |
+| xStart     | int16_t                                  | 2 Byte        | -2000 ~ 2000  | X축 시작 위치  |
+| xEnd       | int16_t                                  | 2 Byte        | -2000 ~ 2000  | X축 끝 위치    |
+| y          | int16_t                                  | 2 Byte        | -2000 ~ 2000  | Y축 위치       |
+| align      | [Display::Align::Type](#Display_Align)   | 1 Byte        | -             | 정렬           |
+| font       | [Display::Font::Type](#Display_Font)     | 1 Byte        | -             | 폰트           |
+| pixel      | [Display::Pixel::Type](#Display_Pixel)   | 1 Byte        | -             | 색상           |
+| message    | ASCII String                             | 30 Byte 이하  | -             | 표시할 문자열  |
 
 
 <br>
@@ -491,13 +491,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                     | 범위          | 크기           | 설명           |
-|:----------:|:----------------------------------------:|:-------------:|:--------------:|:---------------|
-| x          | int16_t                                  | -2000 ~ 2000  | 2 Byte         | X축 시작 위치  |
-| y          | int16_t                                  | -2000 ~ 2000  | 2 Byte         | Y축 시작 위치  |
-| width      | int16_t                                  | -2000 ~ 2000  | 2 Byte         | 너비           |
-| height     | int16_t                                  | -2000 ~ 2000  | 2 Byte         | 높이           |
-| imageArray | uint8_t Array                            | -             | 128 Byte 이하  | 이미지 배열    |
+| 변수 이름  | 형식                                     | 크기           | 범위          | 설명           |
+|:----------:|:----------------------------------------:|:--------------:|:-------------:|:---------------|
+| x          | int16_t                                  | 2 Byte         | -2000 ~ 2000  | X축 시작 위치  |
+| y          | int16_t                                  | 2 Byte         | -2000 ~ 2000  | Y축 시작 위치  |
+| width      | int16_t                                  | 2 Byte         | -2000 ~ 2000  | 너비           |
+| height     | int16_t                                  | 2 Byte         | -2000 ~ 2000  | 높이           |
+| imageArray | uint8_t Array                            | 128 Byte 이하  | -             | 이미지 배열    |
 
 
 <br>

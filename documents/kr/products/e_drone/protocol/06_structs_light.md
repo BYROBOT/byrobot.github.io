@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Light**
 
-Modified : 2018.9.5
+Modified : 2018.9.20
 
 ---
 
@@ -378,11 +378,11 @@ namespace Light
 }
 ```
 
-| 변수 이름   | 형식    | 범위     | 크기     | 설명    |
+| 변수 이름   | 형식    | 크기     | 범위     | 설명    |
 |:-----------:|:-------:|:--------:|:--------:|:--------|
-| r           | uint8_t | 0 ~ 255  | 1 Byte   | Red     |
-| g           | uint8_t | 0 ~ 255  | 1 Byte   | Green   |
-| b           | uint8_t | 0 ~ 255  | 1 Byte   | Blue    |
+| r           | uint8_t | 1 Byte   | 0 ~ 255  | Red     |
+| g           | uint8_t | 1 Byte   | 0 ~ 255  | Green   |
+| b           | uint8_t | 1 Byte   | 0 ~ 255  | Blue    |
 
 
 <br>
@@ -410,11 +410,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                                 | 범위                                      | 크기     | 설명                          |
-|:-----------:|:----------------------------------------------------:|:-----------------------------------------:|:--------:|:------------------------------|
-| flags       | [Light::Drone::Flags](#Light_Drone_Flags)            | 0b0000000000000000 ~ 0b1111111111111111   | 2 Byte   | 드론 LED 선택 플래그 조합     |
-|             | [Light::Controller::Flags](#Light_Controller_Flags)  | 0b0000000000000000 ~ 0b1111111111111111   |          | 조종기 LED 선택 플래그 조합   |
-| brightness  | uint8_t                                              | 0 ~ 255                                   | 1 Byte   | 밝기                          |
+| 변수 이름   | 형식                                                 | 크기     | 범위                                      | 설명                          |
+|:-----------:|:----------------------------------------------------:|:--------:|:-----------------------------------------:|:------------------------------|
+| flags       | [Light::Drone::Flags](#Light_Drone_Flags)            | 2 Byte   | 0b0000000000000000 ~ 0b1111111111111111   | 드론 LED 선택 플래그 조합     |
+|             | [Light::Controller::Flags](#Light_Controller_Flags)  |          | 0b0000000000000000 ~ 0b1111111111111111   | 조종기 LED 선택 플래그 조합   |
+| brightness  | uint8_t                                              | 1 Byte   | 0 ~ 255                                   | 밝기                          |
 
 
 <br>
@@ -440,11 +440,11 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                                    | 범위       | 크기     | 설명                           |
-|:-----------:|:-------------------------------------------------------:|:----------:|:--------:|:-------------------------------|
-| mode        | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | -          | 1 Byte   | 드론 LED 동작 모드             |
-|             | [Light::Controller::Mode::Type](#Light_Controller_Mode) | -          |          | 조종기 LED 동작 모드           |
-| interval    | uint16_t                                                | 0 ~ 65535  | 2 Byte   | 내부 밝기 제어 함수 호출 주기  |
+| 변수 이름   | 형식                                                    | 크기     | 범위       | 설명                           |
+|:-----------:|:-------------------------------------------------------:|:--------:|:----------:|:-------------------------------|
+| mode        | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte   | -          | 드론 LED 동작 모드             |
+|             | [Light::Controller::Mode::Type](#Light_Controller_Mode) |          | -          | 조종기 LED 동작 모드           |
+| interval    | uint16_t                                                | 2 Byte   | 0 ~ 65535  | 내부 밝기 제어 함수 호출 주기  |
 
 
 <br>
@@ -472,10 +472,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                           | 범위   | 크기     | 설명           |
-|:-----------:|:----------------------------------------------:|:------:|:--------:|:---------------|
-| mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)  | -      | 3 Byte   | LED 동작 모드  |
-| color       | [Light::Color](#Light_Color)                   | -      | 3 Byte   | LED RGB 색상   |
+| 변수 이름   | 형식                                           | 크기     | 범위   | 설명           |
+|:-----------:|:----------------------------------------------:|:--------:|:------:|:---------------|
+| mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)  | 3 Byte   | -      | LED 동작 모드  |
+| color       | [Light::Color](#Light_Color)                   | 3 Byte   | -      | LED RGB 색상   |
 
 
 <br>
@@ -501,10 +501,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                           | 범위   | 크기     | 설명                |
-|:-----------:|:----------------------------------------------:|:------:|:--------:|:--------------------|
-| mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)  | -      | 3 Byte   | LED 동작 모드       |
-| colors      | [Light::Colors::Type](#Light_Colors)           | -      | 1 Byte   | LED 팔레트 인덱스   |
+| 변수 이름   | 형식                                           | 크기     | 범위   | 설명                |
+|:-----------:|:----------------------------------------------:|:--------:|:------:|:--------------------|
+| mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)  | 3 Byte   | -      | LED 동작 모드       |
+| colors      | [Light::Colors::Type](#Light_Colors)           | 1 Byte   | -      | LED 팔레트 인덱스   |
 
 
 <br>
@@ -531,12 +531,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                    | 범위       | 크기   | 설명                          |
-|:----------:|:-------------------------------------------------------:|:----------:|:------:|:------------------------------|
-| event      | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | -          | 1 Byte | 드론 LED 동작 모드            |
-|            | [Light::Controller::Mode::Type](#Light_Controller_Mode) | -          |        | 조종기 LED 동작 모드          |
-| interval   | UInt16                                                  | 0 ~ 65535  | 2 Byte | 내부 색상 변화 함수 호출 주기 |
-| repeat     | UInt8                                                   | 0 ~ 255    | 1 Byte | 반복 횟수                     |
+| 변수 이름  | 형식                                                    | 크기   | 범위       | 설명                          |
+|:----------:|:-------------------------------------------------------:|:------:|:----------:|:------------------------------|
+| event      | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte | -          | 드론 LED 동작 모드            |
+|            | [Light::Controller::Mode::Type](#Light_Controller_Mode) |        | -          | 조종기 LED 동작 모드          |
+| interval   | UInt16                                                  | 2 Byte | 0 ~ 65535  | 내부 색상 변화 함수 호출 주기 |
+| repeat     | UInt8                                                   | 1 Byte | 0 ~ 255    | 반복 횟수                     |
 
 
 <br>
@@ -562,10 +562,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름   | 형식                                            | 범위  | 크기     | 설명           |
-|:-----------:|:-----------------------------------------------:|:-----:|:--------:|:---------------|
-| event       | [Protocol::Light::Event](#Protocol_Light_Event) | -     | 4 Byte   | LED 이벤트     |
-| color       | [Light::Color](#Light_Color)                    | -     | 3 Byte   | LED RGB 색상   |
+| 변수 이름   | 형식                                            | 크기     | 범위  | 설명           |
+|:-----------:|:-----------------------------------------------:|:--------:|:-----:|:---------------|
+| event       | [Protocol::Light::Event](#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
+| color       | [Light::Color](#Light_Color)                    | 3 Byte   | -     | LED RGB 색상   |
 
 
 <br>
@@ -591,10 +591,10 @@ namespace Protocol
 }
 ```
 
-| 변수 이름 | 형식                                             | 범위  | 크기     | 설명              |
-|:---------:|:------------------------------------------------:|:-----:|:--------:|:------------------|
-| event     | [Protocol::Light::Event](#Protocol_Light_Event)  | -     | 4 Byte   | LED 이벤트        |
-| colors    | [Light::Colors::Type](#Light_Colors)             | -     | 1 Byte   | LED 팔레트 인덱스 |
+| 변수 이름 | 형식                                             | 크기     | 범위  | 설명              |
+|:---------:|:------------------------------------------------:|:--------:|:-----:|:------------------|
+| event     | [Protocol::Light::Event](#Protocol_Light_Event)  | 4 Byte   | -     | LED 이벤트        |
+| colors    | [Light::Colors::Type](#Light_Colors)             | 1 Byte   | -     | LED 팔레트 인덱스 |
 
 
 <br>
