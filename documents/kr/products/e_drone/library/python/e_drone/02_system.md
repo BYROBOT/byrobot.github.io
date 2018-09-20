@@ -8,10 +8,14 @@ Modified : 2018.9.20
 
 ---
 
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
-## <a name="ModelNumber">ModelNumber</a>
+
+<a name="ModelNumber"></a>
+## ModelNumber
 
 모델 번호
 
@@ -35,7 +39,8 @@ class ModelNumber(Enum):
 <br>
 
 
-## <a name="DeviceType">DeviceType</a>
+<a name="DeviceType"></a>
+## DeviceType
 
 장치 타입
 
@@ -70,7 +75,8 @@ class DeviceType(Enum):
 <br>
 
 
-## <a name="ModeControlFlight">ModeControlFlight</a>
+<a name="ModeControlFlight"></a>
+## ModeControlFlight
 
 비행 제어 모드
 
@@ -95,7 +101,8 @@ class ModeControlFlight(Enum):
 <br>
 
 
-## <a name="ModeSystem">ModeSystem</a>
+<a name="ModeSystem"></a>
+## ModeSystem
 
 System 동작 모드
 
@@ -118,7 +125,8 @@ class ModeSystem(Enum):
 <br>
 
 
-## <a name="ModeFlight">ModeFlight</a>
+<a name="ModeFlight"></a>
+## ModeFlight
 
 비행 제어기 동작 모드
 
@@ -151,7 +159,8 @@ class ModeFlight(Enum):
 <br>
 
 
-## <a name="ModeUpdate">ModeUpdate</a>
+<a name="ModeUpdate"></a>
+## ModeUpdate
 
 업데이트 동작 모드
 
@@ -178,7 +187,8 @@ class ModeUpdate(Enum):
 <br>
 
 
-## <a name="ErrorFlagsForSensor">ErrorFlagsForSensor</a>
+<a name="ErrorFlagsForSensor"></a>
+## ErrorFlagsForSensor
 
 센서 오류 플래그
 
@@ -207,7 +217,8 @@ class ErrorFlagsForSensor(Enum):
 <br>
 
 
-## <a name="ErrorFlagsForState">ErrorFlagsForState</a>
+<a name="ErrorFlagsForState"></a>
+## ErrorFlagsForState
 
 상태 오류 플래그
 
@@ -226,7 +237,8 @@ class ErrorFlagsForState(Enum):
 <br>
 
 
-## <a name="FlightEvent">FlightEvent</a>
+<a name="FlightEvent"></a>
+## FlightEvent
 
 비행 이벤트
 
@@ -258,7 +270,8 @@ class FlightEvent(Enum):
 <br>
 
 
-## <a name="Direction">Direction</a>
+<a name="Direction"></a>
+## Direction
 
 방향
 
@@ -285,7 +298,8 @@ class Direction(Enum):
 <br>
 
 
-## <a name="Rotation">Rotation</a>
+<a name="Rotation"></a>
+## Rotation
 
 회전 방향
 
@@ -313,7 +327,8 @@ class Rotation(Enum):
 <br>
 
 
-## <a name="SensorOrientation">SensorOrientation</a>
+<a name="SensorOrientation"></a>
+## SensorOrientation
 
 센서 방향
 
@@ -336,7 +351,8 @@ class SensorOrientation(Enum):
 <br>
 
 
-## <a name="Headless">Headless</a>
+<a name="Headless"></a>
+## Headless
 
 Headless모드
 
@@ -360,7 +376,8 @@ class Headless(Enum):
 <br>
 
 
-## <a name="TrimIncDec">TrimIncDec</a>
+<a name="TrimIncDec"></a>
+## TrimIncDec
 
 트림
 
@@ -390,7 +407,8 @@ class TrimIncDec(Enum):
 <br>
 
 
-## <a name="ModeMovement">ModeMovement</a>
+<a name="ModeMovement"></a>
+## ModeMovement
 
 이동 상태
 
