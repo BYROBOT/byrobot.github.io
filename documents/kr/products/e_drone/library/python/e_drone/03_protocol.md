@@ -137,6 +137,8 @@ class CommandType(Enum):
 
     FlightEvent             = 0x07      # 비행 이벤트 실행
 
+    SetDefault              = 0x08      # 기본 설정으로 초기화
+
     # 관리자
     ClearCounter            = 0xA0      # 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
 

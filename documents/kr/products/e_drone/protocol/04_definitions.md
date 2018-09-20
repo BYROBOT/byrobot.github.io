@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.9.5
+Modified : 2018.9.20
 
 ---
 
@@ -40,6 +40,8 @@ namespace Protocol
 
             FlightEvent                 = 0x07,     // 비행 이벤트 실행
 
+            SetDefault                  = 0x08,     // 기본 설정으로 초기화
+            
             EndOfType
         };
     }
@@ -391,10 +393,12 @@ namespace Mode
     {
         enum Type
         {
-            None        = 0x00,
-            Ready       = 0x01,     // 대기
-            Hovering    = 0x02,     // 호버링
-            Moving      = 0x03      // 이동 중
+            None            = 0x00,
+            
+            Ready           = 0x01,
+            Hovering        = 0x02,
+            Moving          = 0x03,
+            ReturnHome      = 0x04
         };
     }
 }
