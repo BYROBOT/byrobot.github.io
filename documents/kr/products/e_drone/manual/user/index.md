@@ -431,7 +431,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
     </tr>
     <tr>
-        <td rowspan="2">
+        <td rowspan="3">
             <div align="center">
                 FUNCTION
             </div>
@@ -456,6 +456,18 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         <td>
             <div align="center">
                 페어링
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                SET DEFAULT
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                설정값 초기화(드론이 연결된 경우 드론 설정도 초기화 됨)
             </div>
         </td>
     </tr>
