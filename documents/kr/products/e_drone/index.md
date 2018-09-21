@@ -19,7 +19,7 @@
         </tr>
         <tr>
             <td><div align="center">Firmware</div></td>
-            <td><div align="center"><a href="https://drive.google.com/open?id=127GuTCtf9lDegly3m8wjVQylEmDxLPui" target="_blank">Download</a></div></td>
+            <td><div align="center"><a href="https://drive.google.com/open?id=1hcrZP4-3Cyx9UXgjHJz2oz_ofnEIXitH" target="_blank">Download</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
