@@ -303,8 +303,8 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="left">
-                L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔, Aileron<br>
-                L↕ 앞뒤, L↔ 좌우 회전, R↕ 위아래, R↔, 좌우
+                L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔ Aileron<br>
+                L↕ 앞뒤, L↔ 좌우 회전, R↕ 위아래, R↔ 좌우
             </div>
         </td>
     </tr>
@@ -316,8 +316,8 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="left">
-                L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔, Aileron<br>
-                L↕ 위아래, L↔ 좌우 회전, R↕ 앞뒤, R↔, 좌우
+                L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔ Aileron<br>
+                L↕ 위아래, L↔ 좌우 회전, R↕ 앞뒤, R↔ 좌우
             </div>
         </td>
     </tr>
@@ -329,8 +329,8 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="left">
-                L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔, Rudder<br>
-                L↕ 앞뒤, L↔ 좌우, R↕ 위아래, R↔, 좌우 회전
+                L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔ Rudder<br>
+                L↕ 앞뒤, L↔ 좌우, R↕ 위아래, R↔ 좌우 회전
             </div>
         </td>
     </tr>
@@ -342,8 +342,8 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="left">
-                L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔, Rudder<br>
-                L↕ 위아래, L↔ 좌우, R↕ 앞뒤, R↔, 좌우 회전
+                L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔ Rudder<br>
+                L↕ 위아래, L↔ 좌우, R↕ 앞뒤, R↔ 좌우 회전
             </div>
         </td>
     </tr>

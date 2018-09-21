@@ -15,11 +15,11 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td><div align="center">Drone: 0.2.6<br>Controller: 0.2.6</div></td>
+            <td><div align="center">Drone: 0.2.7<br>Controller: 0.2.6</div></td>
         </tr>
         <tr>
             <td><div align="center">Firmware</div></td>
-            <td><div align="center"><a href="https://drive.google.com/open?id=1mBbL6MBw_RPWvobXpXCxeg33jhM3bViH" target="_blank">Download</a></div></td>
+            <td><div align="center"><a href="https://drive.google.com/open?id=127GuTCtf9lDegly3m8wjVQylEmDxLPui" target="_blank">Download</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
