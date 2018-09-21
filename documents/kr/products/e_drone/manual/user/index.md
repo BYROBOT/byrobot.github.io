@@ -155,7 +155,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -167,7 +167,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -179,7 +179,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -191,7 +191,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -203,7 +203,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -215,7 +215,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -227,7 +227,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
             </div>
         </td>
@@ -244,7 +244,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 드론 LED 기본 색 설정 변경
             </div>
         </td>
@@ -256,7 +256,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종기 LED 기본 색 설정 변경
             </div>
         </td>
@@ -273,7 +273,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 자세 제어
             </div>
         </td>
@@ -285,7 +285,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 위치 제어
             </div>
         </td>
@@ -302,7 +302,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔, Aileron
             </div>
         </td>
@@ -314,7 +314,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔, Aileron
             </div>
         </td>
@@ -326,7 +326,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔, Rudder
             </div>
         </td>
@@ -338,7 +338,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔, Rudder
             </div>
         </td>
@@ -355,7 +355,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 헤드리스(방향 고정)
             </div>
         </td>
@@ -367,7 +367,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 일반(드론의 현재 방향 기준)
             </div>
         </td>
@@ -380,11 +380,11 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="center">
-                S1 (50%)
+                S1 (30%)
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 속도 1단계 (50 %)
             </div>
         </td>
@@ -392,12 +392,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                S2 (75%)
+                S2 (70%)
             </div>
         </td>
         <td>
-            <div align="center">
-                속도 2단계 (75 %)
+            <div align="left">
+                속도 2단계 (70 %)
             </div>
         </td>
     </tr>
@@ -408,7 +408,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 속도 3단계 (100 %)
             </div>
         </td>
@@ -425,7 +425,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 드론 + 추가 장치의 무게
             </div>
         </td>
@@ -442,7 +442,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 드론의 자이로 바이어스 리셋
             </div>
         </td>
@@ -454,7 +454,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 페어링
             </div>
         </td>
@@ -466,7 +466,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 설정값 초기화(드론이 연결된 경우 드론 설정도 초기화 됨)
             </div>
         </td>
@@ -483,7 +483,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 비행 시간 및 이벤트 카운트 값 표시
             </div>
         </td>
@@ -495,7 +495,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 가속도, 자이로 바이어스 값 표시
             </div>
         </td>
@@ -507,7 +507,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 Trim 값 표시
             </div>
         </td>
@@ -519,7 +519,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 IMU 센서 데이터를 연산하여 변환한 결과 표시
             </div>
         </td>
@@ -531,7 +531,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 높이-고도와 관련된 센서 데이터 표시
             </div>
         </td>
@@ -543,7 +543,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 위치 데이터 표시
             </div>
         </td>
@@ -555,7 +555,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 드론의 고유번호 표시
             </div>
         </td>
@@ -567,7 +567,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종기의 고유번호 표시
             </div>
         </td>
@@ -579,7 +579,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 조종기의 부트 정보 및 장치 등록 여부 표시
             </div>
         </td>
@@ -591,7 +591,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
             </div>
         </td>
         <td>
-            <div align="center">
+            <div align="left">
                 드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시
             </div>
         </td>
