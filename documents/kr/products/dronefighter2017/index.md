@@ -12,7 +12,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center">Firmware</div></td>
+            <td colspan="2"><div align="center"><br>Firmware<br></div></td>
         </tr>
         <tr>
             <td><div align="center">Version<br>(General)</div></td>
@@ -38,7 +38,7 @@
             <td><div align="center"><a href="/documents/kr/products/dronefighter2017/manual/update/">Manual</a></div></td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center">Driver</div></td>
+            <td colspan="2"><div align="center"><br>Driver<br></div></td>
         </tr>
         <tr>
             <td><div align="center">Driver</div></td>
@@ -48,7 +48,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center">Documents</div></td>
+            <td colspan="2"><div align="center"><br>Documents<br></div></td>
         </tr>
         <tr>
             <td><div align="center">Protocol</div></td>
