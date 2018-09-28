@@ -22,6 +22,8 @@ Modified : 2018.9.28
 > - Trim  화면에 Height(Range 센서의 값) 대신 Z(고도)를 표시
 > - 비행 안정화
 
+[Download](https://drive.google.com/open?id=13YRVPrqF1b_TGNp4kB4Uzw2rtD0BU82r)
+
 
 <br>
 
@@ -35,6 +37,8 @@ Modified : 2018.9.28
 
 > - RF를 통해 드론 제어 중 RF 연결이 끊기면 10초 후 착륙 시작, 2분 후 강제 정지
 > - 착륙 시 조종 중립, 목표 위치 초기화
+
+[Download](https://drive.google.com/open?id=1hcrZP4-3Cyx9UXgjHJz2oz_ofnEIXitH)
 
 
 <br>
