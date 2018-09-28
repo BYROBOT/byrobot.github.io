@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.9.20
+Modified : 2018.9.28
 
 ---
 
@@ -787,6 +787,40 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_ReactionForConnectionStatus"></a>
+## Protocol::ReactionForConnectionStatus
+
+연결이 끊어졌을 때 드론 동작을 처리할 시간 설정
+
+단위는 ms, 값을 0으로 설정할 경우 해당 항목은 무시
+
+마지막으로 드론 조종 명령을 전송한 장치와의 연결이 끊어지면, 지정한 시간 후 조종 중립, 착륙, 강제 정지를 실행
+
+기본으로 연결된 장치는 Rf이며, 설정값은 플래시 메모리에 저장되지 않으므로 매번 드론을 새로 시작할 때마다 설정해야 함
+
+```cpp
+namespace Protocol
+{
+    struct ReactionForConnectionStatus
+    {
+        u16     timeNeutral;        // 조종 중립
+        u16     timeLanding;        // 착륙
+        u32     timeStop;           // 정지
+    };
+}
+```
+
+| 변수 이름     | 형식      | 크기     | 범위               | 설명                                            |
+|:-------------:|:---------:|:--------:|:------------------:|:------------------------------------------------|
+| timeNeutral   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 조종 중립으로 변경할 시간    |
+| timeLanding   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 드론을 착륙할 시간           |
+| timeStop      | uint32_t  | 4 Byte   | 0 ~ 4,294,967,295  | 연결이 끊어졌을 때 드론을 정지할 시간           |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Count"></a>
 ## Protocol::Count
 
@@ -811,9 +845,9 @@ namespace Protocol
 | 변수 이름        | 형식       | 크기     | 범위       | 설명             |
 |:----------------:|:----------:|:--------:|:----------:|:-----------------|
 | timeFlight       | uint64_t   | 8 Byte   | -          | 비행 시간(ms)    |
-| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65535  | 이륙 횟수        |
-| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65535  | 착륙 횟수        |
-| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65535  | 충돌 횟수        |
+| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 이륙 횟수        |
+| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 착륙 횟수        |
+| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535  | 충돌 횟수        |
 
 
 <br>
@@ -845,17 +879,17 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식     | 크기    | 범위                              | 단위                 | 설명          |
-|:----------:|:--------:|:-------:|:---------------------------------:|:--------------------:|:--------------|
-| accelX     | int16_t  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 X      |
-| accelY     | int16_t  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Y      |
-| accelZ     | int16_t  | 2 Byte  | -1568 ~ 1568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Z      |
-| gyroRoll   | int16_t  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Roll   |
-| gyroPitch  | int16_t  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Pitch  |
-| gyroYaw    | int16_t  | 2 Byte  | -2000 ~ 2000                      | degree/s             | 자이로 Yaw    |
-| angleRoll  | int16_t  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Roll     |
-| anglePitch | int16_t  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Pitch    |
-| angleYaw   | int16_t  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Yaw      |
+| 변수 이름  | 형식     | 크기    | 범위                                | 단위                 | 설명          |
+|:----------:|:--------:|:-------:|:-----------------------------------:|:--------------------:|:--------------|
+| accelX     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 X      |
+| accelY     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Y      |
+| accelZ     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Z      |
+| gyroRoll   | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Roll   |
+| gyroPitch  | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Pitch  |
+| gyroYaw    | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Yaw    |
+| angleRoll  | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Roll     |
+| anglePitch | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Pitch    |
+| angleYaw   | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Yaw      |
 
 
 <br>
@@ -885,7 +919,7 @@ namespace Protocol
 | 변수 이름  | 형식                                          | 크기     | 범위      | 설명      |
 |:----------:|:---------------------------------------------:|:--------:|:---------:|:----------|
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)  | 1 Byte   | -         | 회전 방향 |
-| value      | uint16_t                                      | 2 Byte   | 0 ~ 4095  | 회전 속도 |
+| value      | uint16_t                                      | 2 Byte   | 0 ~ 4,095 | 회전 속도 |
 
 
 <br>
@@ -915,7 +949,7 @@ namespace Protocol
 |:----------:|:--------------------------------------------------:|:--------:|:---------:|:----------------|
 | target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)       | 1 Byte   | -         | 회전 방향       |
-| value      | uint16_t                                           | 2 Byte   | 0 ~ 4095  | 회전 속도       |
+| value      | uint16_t                                           | 2 Byte   | 0 ~ 4,095 | 회전 속도       |
 
 
 <br>
@@ -1025,7 +1059,7 @@ namespace Protocol
 |:----------:|:-------------------------------------------------------:|:------:|:-----------:|:-----------------------|
 | mode       | [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)     | 1 Byte | -           | 버저 동작 모드         |
 | value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
-|            | UInt16                                                  | 2 Byte | 0 ~ 8000    | Hz                     |
+|            | UInt16                                                  | 2 Byte | 0 ~ 8,000   | Hz                     |
 | time       | UInt16                                                  | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
 
 

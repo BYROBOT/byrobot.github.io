@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.9.18
+Modified : 2018.9.28
 
 ---
 
@@ -65,7 +65,8 @@ namespace Protocol
             Bias,                                   // 엑셀, 자이로 바이어스 값
             Trim,                                   // 트림
             Weight,                                 // 무게 설정
-            
+            ReactionForConnectionStatus,            // 연결 상태에 대한 반응
+
             // Devices
             Motor                       = 0x60,     // 모터 제어 및 현재 제어값 확인
             MotorSingle,                            // 한 개의 모터 제어
@@ -150,6 +151,7 @@ namespace Protocol
 | Bias                                  | 0x51 | D    | Accel, Gyro 바이어스 값                        | [Protocol::Bias](05_structs.md#Protocol_Bias) |
 | Trim                                  | 0x52 | D    | Trim                                           | [Protocol::Trim](05_structs.md#Protocol_Trim) |
 | Weight                                | 0x53 | D    | 무게                                           | [Protocol::Weight](05_structs.md#Protocol_Weight) |
+| ReactionForConnectionStatus           | 0x54 | D    | 연결 상태에 대한 반응                          | [Protocol::ReactionForConnectionStatus](05_structs.md#Protocol_ReactionForConnectionStatus) |
 | Motor                                 | 0x60 | D    | 모터 제어 및 현재 제어값 확인                  | [Protocol::Motor](05_structs.md#Protocol_Motor) |
 | MotorSingle                           | 0x61 | D    | 한 개의 모터 제어                              | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
 | Buzzer                                | 0x62 | C    | 버저 제어                                      | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer) |
