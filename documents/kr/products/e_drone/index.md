@@ -12,7 +12,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center"><br>Firmware<br></div></td>
+            <td colspan="2"><div align="center">&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
@@ -27,7 +27,7 @@
             <td><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">Update log</a></div></td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center"><br>Documents<br></div></td>
+            <td colspan="2"><div align="center">&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">User Manual</div></td>

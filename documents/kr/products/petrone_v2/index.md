@@ -12,7 +12,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center"><br>Firmware<br></div></td>
+            <td colspan="2"><div align="center">&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
@@ -40,7 +40,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center"><br>Driver<br></div></td>
+            <td colspan="2"><div align="center">&nbsp;<br>Driver<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td>
@@ -53,7 +53,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center"><br>Documents<br></div></td>
+            <td colspan="2"><div align="center">&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">Protocol</div></td>
@@ -74,7 +74,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><div align="center"><br>Repository<br></div></td>
+            <td colspan="2"><div align="center">&nbsp;<br>Repository<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">Repository</div></td>
