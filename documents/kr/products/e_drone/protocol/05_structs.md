@@ -787,8 +787,8 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_ReactionForConnectionStatus"></a>
-## Protocol::ReactionForConnectionStatus
+<a name="Protocol_LostConnection"></a>
+## Protocol::LostConnection
 
 연결이 끊어졌을 때 드론 동작을 처리할 시간 설정
 
@@ -801,7 +801,7 @@ namespace Protocol
 ```cpp
 namespace Protocol
 {
-    struct ReactionForConnectionStatus
+    struct LostConnection
     {
         u16     timeNeutral;        // 조종 중립
         u16     timeLanding;        // 착륙

@@ -3,21 +3,44 @@
 ---
 
 <div align="center">
-
     <table>
         <tr>
-            <td><div align="center"></div></td>
-            <td>
+            <td colspan="2">
                 <div align="center">
                     <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2" height="480" width="480">
                 </div>
             </td>
         </tr>
         <tr>
+            <td colspan="2"><div align="center">Firmware</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Version</div></td>
             <td>
                 <div align="center">Drone: 1.3.R.2<br>Controller: 1.3.R.2</div>
             </td>
+        </tr>
+        <tr>
+            <td><div align="center">Firmware</div></td>
+            <td>
+                <div align="center"><a href="https://drive.google.com/open?id=1wVFreiSFHyedjRDVR3x3wTi1GA88khEc" target="_blank">Windows</a></div>
+                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180723_release_1.3_3.zip" target="_blank">Windows(2)</a></div>
+            </td>
+        </tr>
+        <tr>
+            <td><div align="center">Update Log</div></td>
+            <td>
+                <div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div>
+            </td>
+        </tr>
+        <tr>
+            <td><div align="center">Update Manual</div></td>
+            <td>
+                <div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/">Manual</a></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><div align="center">Driver</div></td>
         </tr>
         <tr>
             <td>
@@ -30,23 +53,7 @@
             </td>
         </tr>
         <tr>
-            <td><div align="center">Firmware</div></td>
-            <td>
-                <div align="center"><a href="https://drive.google.com/open?id=1wVFreiSFHyedjRDVR3x3wTi1GA88khEc" target="_blank">Windows</a></div>
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180723_release_1.3_3.zip" target="_blank">Windows(2)</a></div>
-            </td>
-        </tr>
-        <tr>
-            <td><div align="center">Update Manual</div></td>
-            <td>
-                <div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/">Manual</a></div>
-            </td>
-        </tr>
-        <tr>
-            <td><div align="center">Update Log</div></td>
-            <td>
-                <div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div>
-            </td>
+            <td colspan="2"><div align="center">Documents</div></td>
         </tr>
         <tr>
             <td><div align="center">Protocol</div></td>
@@ -67,6 +74,9 @@
             </td>
         </tr>
         <tr>
+            <td colspan="2"><div align="center">Repository</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Repository</div></td>
             <td>
                 <div align="center">
@@ -75,9 +85,8 @@
             </td>
         </tr>
     </table>
-
 </div>
 
 ---
 
-Modified : 2018.9.17
+Modified : 2018.9.28

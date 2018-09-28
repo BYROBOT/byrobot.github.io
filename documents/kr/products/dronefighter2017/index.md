@@ -5,12 +5,14 @@
 <div align="center">
     <table>
         <tr>
-            <td><div align="center"></div></td>
-            <td>
+            <td colspan="2">
                 <div align="center">
                     <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="e_drone" height="480" width="480">
                 </div>
             </td>
+        </tr>
+        <tr>
+            <td colspan="2"><div align="center">Firmware</div></td>
         </tr>
         <tr>
             <td><div align="center">Version<br>(General)</div></td>
@@ -19,13 +21,6 @@
         <tr>
             <td><div align="center">Version<br>(Education)</div></td>
             <td><div align="center">Drone: 1703<br>Controller: 1802</div></td>
-        </tr>
-        <tr>
-            <td><div align="center">Driver</div></td>
-            <td>
-                <div align="center"><a href="https://drive.google.com/open?id=19bmT3b8a3nEqCXzXk88lMeO7gHxyGZuY" target="_blank">Win7, Win8</a></div>
-                <div align="center">Win 10은 자동 인식</div>
-            </td>
         </tr>
         <tr>
             <td><div align="center">Firmware</div></td>
@@ -43,6 +38,19 @@
             <td><div align="center"><a href="/documents/kr/products/dronefighter2017/manual/update/">Manual</a></div></td>
         </tr>
         <tr>
+            <td colspan="2"><div align="center">Driver</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Driver</div></td>
+            <td>
+                <div align="center"><a href="https://drive.google.com/open?id=19bmT3b8a3nEqCXzXk88lMeO7gHxyGZuY" target="_blank">Win7, Win8</a></div>
+                <div align="center">Win 10은 자동 인식</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><div align="center">Documents</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Protocol</div></td>
             <td>
                 <div align="center"><a href="/documents/en/products/dronefighter2017/protocol/">English</a><br/><a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a></div>
@@ -53,4 +61,4 @@
 
 ---
 
-Modified : 2018.9.17
+Modified : 2018.9.28

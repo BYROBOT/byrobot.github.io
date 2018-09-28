@@ -3,19 +3,20 @@
 ---
 
 <div align="center">
-
     <table>
         <tr>
-            <td><div align="center"></div></td>
-            <td>
+            <td colspan="2">
                 <div align="center">
                     <img src="/assets/images/products/e_drone.jpg" alt="e_drone" height="480" width="480">
                 </div>
             </td>
         </tr>
         <tr>
+            <td colspan="2"><div align="center">Firmware</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Version</div></td>
-            <td><div align="center">Drone: 0.2.7<br>Controller: 0.2.6</div></td>
+            <td><div align="center">Drone: 0.2.8<br>Controller: 0.2.7</div></td>
         </tr>
         <tr>
             <td><div align="center">Firmware</div></td>
@@ -24,6 +25,9 @@
         <tr>
             <td><div align="center">Update Log</div></td>
             <td><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">Update log</a></div></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div align="center">Documents</div></td>
         </tr>
         <tr>
             <td><div align="center">User Manual</div></td>
@@ -38,9 +42,8 @@
             <td><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
         </tr>
     </table>
-
 </div>
 
 ---
 
-Modified : 2018.9.21
+Modified : 2018.9.28
