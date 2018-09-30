@@ -25,7 +25,7 @@
             <td><div align="center">4.2</div></td>
         </tr>
         <tr>
-            <td rowspan="2"<div align="center">Education</div></td>
+            <td rowspan="2"><div align="center">Education</div></td>
             <td><div align="center">Drone</div></td>
             <td><div align="center">1703</div></td>
         </tr>
