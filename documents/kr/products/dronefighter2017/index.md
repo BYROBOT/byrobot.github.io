@@ -15,8 +15,8 @@
             <td colspan="4"><div align="center">&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="4"<div align="center">Version</div></td>
-            <td rowspan="2"<div align="center">General</div></td>
+            <td rowspan="4"><div align="center">Version</div></td>
+            <td rowspan="2"><div align="center">General</div></td>
             <td><div align="center">Drone</div></td>
             <td><div align="center">4.2</div></td>
         </tr>

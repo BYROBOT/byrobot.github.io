@@ -18,10 +18,10 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">Controller</div></td>
+            <td><div align="center">0.2.8</div></td>
         </tr>
         <tr>
-            <td><div align="center">0.2.8</div></td>
+            <td><div align="center">Controller</div></td>
             <td><div align="center">0.2.7</div></td>
         </tr>
         </tr>
