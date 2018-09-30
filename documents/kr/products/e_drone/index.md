@@ -16,7 +16,26 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td><div align="center">Drone: 0.2.8<br>Controller: 0.2.7</div></td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <div align="center">Drone</div>
+                        </td>
+                        <td>
+                            <div align="center">0.2.8</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div align="center">Controller</div>
+                        </td>
+                        <td>
+                            <div align="center">0.2.7</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
         </tr>
         <tr>
             <td><div align="center">Firmware</div></td>
@@ -46,4 +65,4 @@
 
 ---
 
-Modified : 2018.9.28
+Modified : 2018.10.1
