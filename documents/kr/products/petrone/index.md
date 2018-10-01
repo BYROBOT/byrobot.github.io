@@ -58,13 +58,13 @@
         <tr>
             <td><div align="center">Protocol</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/en/products/petrone/protocol/">English</a>,&nbsp;<a href="/documents/kr/products/petrone/protocol/">한국어</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone/protocol/">English</a></div>
             </td>
         </tr>
         <tr>
             <td><div align="center">Python Library</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/en/products/petrone/library/python/petrone/">English</a>,&nbsp;<a href="/documents/kr/products/petrone/library/python/petrone/">한국어</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone/library/python/petrone/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone/library/python/petrone/">English</a></div>
             </td>
         </tr>
         <tr>

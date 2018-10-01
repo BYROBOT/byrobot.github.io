@@ -63,7 +63,7 @@
         <tr>
             <td><div align="center">Protocol</div></td>
             <td colspan="3">
-                <div align="center"><a href="/documents/en/products/dronefighter2017/protocol/">English</a>,&nbsp;<a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a></div>
+                <div align="center"><a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/dronefighter2017/protocol/">English</a></div>
             </td>
         </tr>
     </table>

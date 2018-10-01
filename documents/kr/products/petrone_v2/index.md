@@ -57,8 +57,8 @@
                 <div align="center">Download</div>
             </td>
             <td colspan="2">
-                <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 32bit</a></div>
-                <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 64bit</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
@@ -68,7 +68,7 @@
         <tr>
             <td><div align="center">Protocol</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/en/products/petrone_v2/protocol/">English</a>,&nbsp;<a href="/documents/kr/products/petrone_v2/protocol/">한국어</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone_v2/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone_v2/protocol/">English</a></div>
             </td>
         </tr>
         <tr>
@@ -80,7 +80,7 @@
         <tr>
             <td><div align="center">Entry Examples</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/en/products/petrone_v2/entry/examples/">English</a>,&nbsp;<a href="/documents/kr/products/petrone_v2/entry/examples/">한국어</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone_v2/entry/examples/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone_v2/entry/examples/">English</a></div>
             </td>
         </tr>
         <tr>
