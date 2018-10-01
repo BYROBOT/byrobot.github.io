@@ -36,8 +36,7 @@
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="3">
-                <div align="center"><a href="https://drive.google.com/open?id=1Iu085RiTYxA8CBpZ80ZGDym7qCj0ETyy" target="_blank">Windows</a></div>
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/DroneFighter_20180504_release_4.zip" target="_blank">Windows(2)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1Iu085RiTYxA8CBpZ80ZGDym7qCj0ETyy" target="_blank">Windows</a>,&nbsp;<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/DroneFighter_20180504_release_4.zip" target="_blank">Windows(2)</a></div>
             </td>
         </tr>
         <tr>
@@ -64,7 +63,7 @@
         <tr>
             <td><div align="center">Protocol</div></td>
             <td colspan="3">
-                <div align="center"><a href="/documents/en/products/dronefighter2017/protocol/">English</a><br/><a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a></div>
+                <div align="center"><a href="/documents/en/products/dronefighter2017/protocol/">English</a>,&nbsp;<a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a></div>
             </td>
         </tr>
     </table>
@@ -72,4 +71,4 @@
 
 ---
 
-Modified : 2018.9.28
+Modified : 2018.10.1

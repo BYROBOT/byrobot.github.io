@@ -34,8 +34,7 @@
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="2">
-                <div align="center"><a href="https://drive.google.com/open?id=1wVFreiSFHyedjRDVR3x3wTi1GA88khEc" target="_blank">Windows</a></div>
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180723_release_1.3_3.zip" target="_blank">Windows(2)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1wVFreiSFHyedjRDVR3x3wTi1GA88khEc" target="_blank">Windows</a>,&nbsp;<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180723_release_1.3_3.zip" target="_blank">Windows(2)</a></div>
             </td>
         </tr>
         <tr>
@@ -69,7 +68,7 @@
         <tr>
             <td><div align="center">Protocol</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/en/products/petrone_v2/protocol/">English</a><br/><a href="/documents/kr/products/petrone_v2/protocol/">한국어</a></div>
+                <div align="center"><a href="/documents/en/products/petrone_v2/protocol/">English</a>,&nbsp;<a href="/documents/kr/products/petrone_v2/protocol/">한국어</a></div>
             </td>
         </tr>
         <tr>
@@ -81,7 +80,7 @@
         <tr>
             <td><div align="center">Entry Examples</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/en/products/petrone_v2/entry/examples/">English</a><br/><a href="/documents/kr/products/petrone_v2/entry/examples/">한국어</a></div>
+                <div align="center"><a href="/documents/en/products/petrone_v2/entry/examples/">English</a>,&nbsp;<a href="/documents/kr/products/petrone_v2/entry/examples/">한국어</a></div>
             </td>
         </tr>
         <tr>
@@ -100,4 +99,4 @@
 
 ---
 
-Modified : 2018.9.28
+Modified : 2018.10.1
