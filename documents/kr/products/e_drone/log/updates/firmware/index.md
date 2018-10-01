@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.9.28
+Modified : 2018.10.1
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2018.9.28
 
 
 <br>
+
+
+# 2018.10.1
+
+- **Drone: 0.2.9**
+- **Controller: 0.2.8**
+
+> - 드론, 조종기 기본 색을 Green으로 변경
+> - 드론을 UART 또는 USB로 연결해서 이륙했을 때 바로 멈추는 문제 수정
+> - 고도 제어 안정화
+> - 비행 안정화
+
+[Download](https://drive.google.com/open?id=12P5_t1x8C8ePndzkB1kkVVcQQmiAVgC_)
+
+
+<br>
+
+---
 
 
 # 2018.9.28

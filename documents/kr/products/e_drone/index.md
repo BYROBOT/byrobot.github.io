@@ -16,18 +16,22 @@
         </tr>
         <tr>
         <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.10.1</div></td>
+        </tr>
+        <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">0.2.8</div></td>
+            <td><div align="center">0.2.9</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">0.2.7</div></td>
+            <td><div align="center">0.2.8</div></td>
         </tr>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=13YRVPrqF1b_TGNp4kB4Uzw2rtD0BU82r" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=12P5_t1x8C8ePndzkB1kkVVcQQmiAVgC_" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
