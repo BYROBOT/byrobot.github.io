@@ -15,11 +15,6 @@
             <td colspan="3"><div align="center">&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
-        <tr>
-            <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.10.1</div></td>
-        </tr>
-        <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
             <td><div align="center">0.2.9</div></td>
@@ -28,6 +23,9 @@
             <td><div align="center">Controller</div></td>
             <td><div align="center">0.2.8</div></td>
         </tr>
+        <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.10.1</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
