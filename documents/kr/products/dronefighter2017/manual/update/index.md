@@ -1,6 +1,6 @@
 **Drone Fighter firmware Update**
 
-Modified : 2018.3.29
+Modified : 2018.10.1
 
 ---
 
@@ -15,7 +15,7 @@ Modified : 2018.3.29
 
 # 1. 펌웨어 다운로드
 
-[Download](/download/) 페이지에서 최신 Drone Fighter 펌웨어를 다운로드 받습니다.
+[DRONE FIGHTER](http://dev.byrobot.co.kr/documents/kr/products/dronefighter2017/) 페이지에서 최신 Drone Fighter 펌웨어를 다운로드 받습니다.
 
 
 <br>

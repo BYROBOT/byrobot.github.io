@@ -1,6 +1,6 @@
 **PETRONE firmware Update**
 
-Modified : 2018.6.12
+Modified : 2018.10.1
 
 ---
 
@@ -15,7 +15,7 @@ Modified : 2018.6.12
 
 # 1. 펌웨어 다운로드
 
-[Download](/download/) 페이지에서 최신 Petrone 펌웨어를 다운로드 받습니다.
+[PETRONE](http://dev.byrobot.co.kr/documents/kr/products/petrone/) 페이지에서 최신 Petrone 펌웨어를 다운로드 받습니다.
 
 Petrone은 앱에서 펌웨어 업데이트를 진행하므로 여기에서는 ***Petrone Link***의 펌웨어 업데이트에 대해서만 설명하겠습니다.
 
