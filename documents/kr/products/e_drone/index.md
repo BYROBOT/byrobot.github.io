@@ -26,8 +26,8 @@
         </tr>
         </tr>
         <tr>
-            <td><div align="center">Firmware</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=13YRVPrqF1b_TGNp4kB4Uzw2rtD0BU82r" target="_blank">Download</a></div></td>
+            <td><div align="center">Download</div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=13YRVPrqF1b_TGNp4kB4Uzw2rtD0BU82r" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
