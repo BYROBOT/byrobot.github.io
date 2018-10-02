@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.1
+Modified : 2018.10.2
 
 ---
 
@@ -9,6 +9,26 @@ Modified : 2018.10.1
 
 
 <br>
+
+
+# 2018.10.2
+
+- **Drone: 0.2.10**
+- **Controller: 0.2.9**
+
+> - 드론 부팅 시 각 센서를 초기화 할 때 정상적으로 연결되지 않는 경우 관련 ERROR 플래그를 활성화하게 함
+> - 조종기의 드론 오류와 관련된 메세지 출력 부분 수정
+> - 조종기에서 "SET DEFAULT" 선택 시 weight, trim이 초기화되지 않는 문제 수정
+> - 조종기 Function 메뉴에서도 드론의 상태 데이터 요청("SET DEFAULT"를 실행했을때 상단 상태 표시줄의 값이 바뀌지 않는 문제가 있었음)
+> - 조종기 Information 메뉴의 Altitude, Position 값 소수점 표시 위치를 일치시킴
+> - 화면 상단 상태 표시줄의 텍스트 간격을 3에서 4로 변경
+
+[Download](https://drive.google.com/open?id=1Z4ObTvkYi-pkSR1zpvyTJyI3o3vmYYLW)
+
+
+<br>
+
+---
 
 
 # 2018.10.1
