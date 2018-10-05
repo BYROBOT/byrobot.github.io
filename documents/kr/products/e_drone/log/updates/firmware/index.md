@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.2
+Modified : 2018.10.5
 
 ---
 
@@ -9,6 +9,26 @@ Modified : 2018.10.2
 
 
 <br>
+
+
+# 2018.10.5
+
+- **Drone: 0.2.11**
+- **Controller: 0.2.10**
+
+> - 드론 고도 제어 안정화
+> - 바닥 이미지를 인식할 수 없을 때의 제어 처리 및 조종기에 상태 알림 추가
+> - 드론, 조종기 앱 동작 시 UART의 Baudrate를 57600으로 변경함. 부트로더에서는 아직 115200 사용 중
+> - 드론 UART 통신 안정화
+> - 비행 중 컨트롤 모드 변경 불가능하게 막음
+> - 드론, 조종기의 RF 주소가 0, 0, 0인 경우 RF 데이터 송수신을 차단
+
+[Download](https://drive.google.com/open?id=1n3gUKYbTCdR6DowdWxySC_OZWJIB4xDl)
+
+
+<br>
+
+---
 
 
 # 2018.10.2

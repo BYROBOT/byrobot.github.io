@@ -32,6 +32,10 @@
             </td>
         </tr>
         <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.7.23</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Download</div></td>
             <td colspan="2">
                 <div align="center"><a href="https://drive.google.com/open?id=1wVFreiSFHyedjRDVR3x3wTi1GA88khEc" target="_blank">Windows</a>,&nbsp;<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneV2_20180723_release_1.3_3.zip" target="_blank">Windows(2)</a></div>

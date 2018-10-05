@@ -28,6 +28,15 @@
             <td><div align="center">17</div></td>
         </tr>
         <tr>
+            <td rowspan="3"><div align="center">Release Date</div></td>
+            <td><div align="center">Drone</div></td>
+            <td><div align="center">2018.5.31</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Link</div></td>
+            <td><div align="center">2018.3.5</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Download</div></td>
             <td colspan="2">
                 <div align="center"><a href="https://drive.google.com/open?id=1GkjdZaI1P0CaDn6RZDYJ9-ZNmt5Onkp-" target="_blank">Windows</a>,&nbsp;<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/PetroneLink_20180305_release_0.zip" target="_blank">Windows(2)</a></div>
@@ -49,7 +58,7 @@
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="2">
-                <div align="center"><a href="https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip" target="_blank">CP210x Windows Drivers(for Petrone Link)</a></div>
+                <div align="center"><a href="https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip" target="_blank">CP210x Windows Drivers<br>(for Petrone Link)</a></div>
             </td>
         </tr>
         <tr>
