@@ -7,7 +7,7 @@
         <tr>
             <td colspan="3">
                 <div align="center">
-                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2" height="480" width="480">
+                    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2">
                 </div>
             </td>
         </tr>
@@ -40,13 +40,13 @@
         <tr>
             <td><div align="center">Update Log</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">Update log</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone_v2/log/updates/firmware/">한국어</a></div>
             </td>
         </tr>
         <tr>
             <td><div align="center">Update Manual</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/">Manual</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone_v2/manual/update/">한국어</a></div>
             </td>
         </tr>
         <tr>
@@ -99,4 +99,4 @@
 
 ---
 
-Modified : 2018.10.1
+Modified : 2018.10.5

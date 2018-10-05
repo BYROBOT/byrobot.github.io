@@ -7,7 +7,7 @@
         <tr>
             <td colspan="4">
                 <div align="center">
-                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="e_drone" height="480" width="480">
+                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter">
                 </div>
             </td>
         </tr>
@@ -41,11 +41,11 @@
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
-            <td colspan="3"><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">Update log</a></div></td>
+            <td colspan="3"><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Manual</div></td>
-            <td colspan="3"><div align="center"><a href="/documents/kr/products/dronefighter2017/manual/update/">Manual</a></div></td>
+            <td colspan="3"><div align="center"><a href="/documents/kr/products/dronefighter2017/manual/update/">한국어</a></div></td>
         </tr>
         <tr>
             <td colspan="4"><div align="center">&nbsp;<br>Driver<br>&nbsp;</div></td>
@@ -71,4 +71,4 @@
 
 ---
 
-Modified : 2018.10.1
+Modified : 2018.10.5

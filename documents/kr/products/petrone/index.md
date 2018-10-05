@@ -7,7 +7,7 @@
         <tr>
             <td colspan="3">
                 <div align="center">
-                    <img src="/assets/images/products/petrone.jpg" alt="e_drone" height="480" width="480">
+                    <img src="/assets/images/products/petrone.jpg" alt="petrone">
                 </div>
             </td>
         </tr>
@@ -35,12 +35,12 @@
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">Update log</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/petrone/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Manual</div></td>
             <td colspan="2">
-                <div align="center"><a href="/documents/kr/products/petrone/manual/update/">Manual</a></div>
+                <div align="center"><a href="/documents/kr/products/petrone/manual/update/">한국어</a></div>
             </td>
         </tr>
         <tr>
@@ -49,7 +49,7 @@
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="2">
-                <div align="center"><a href="https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip" target="_blank">Petrone Link(CP210x)</a></div>
+                <div align="center"><a href="https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip" target="_blank">CP210x Windows Drivers(for Petrone Link)</a></div>
             </td>
         </tr>
         <tr>
@@ -94,4 +94,4 @@
 
 ---
 
-Modified : 2018.10.1
+Modified : 2018.10.5
