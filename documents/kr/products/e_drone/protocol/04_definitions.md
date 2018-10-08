@@ -134,21 +134,22 @@ namespace ErrorFlagsForSensor
 {
     enum Type
     {
-        None                        = 0x00000000,
+        None                                    = 0x00000000,
 
-        Motion_NoAnswer             = 0x00000001,   // Motion 센서 응답 없음
-        Motion_WrongValue           = 0x00000002,
-        Motion_NotCalibrated        = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
-        Motion_Calibrating          = 0x00000008,   // Gyro Bias 보정 중
+        Motion_NoAnswer                         = 0x00000001,   // Motion 응답 없음
+        Motion_WrongValue                       = 0x00000002,   // Motion 잘못된 값
+        Motion_NotCalibrated                    = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
+        Motion_Calibrating                      = 0x00000008,   // Gyro Bias 보정 중
 
-        Pressure_NoAnswer           = 0x00000010,   // 압력센서 응답 없음
-        Pressure_WrongValue         = 0x00000020,
+        Pressure_NoAnswer                       = 0x00000010,   // 압력 센서 응답 없음
+        Pressure_WrongValue                     = 0x00000020,   // 압력 센서 잘못된 값
 
-        RangeGround_NoAnswer        = 0x00000100,   // 바닥 거리센서 응답 없음
-        RangeGround_WrongValue      = 0x00000200,
+        RangeGround_NoAnswer                    = 0x00000100,   // 바닥 거리 센서 응답 없음
+        RangeGround_WrongValue                  = 0x00000200,   // 바닥 거리 센서 잘못된 값
 
-        Flow_NoAnswer               = 0x00001000,   // Flow 센서 응답 없음
-        Flow_WrongValue             = 0x00002000,
+        Flow_NoAnswer                           = 0x00001000,   // Flow 응답 없음
+        Flow_WrongValue                         = 0x00002000,   // Flow 잘못된 값
+        Flow_CannotRecognizeGroundImage         = 0x00004000,   // 바닥 이미지를 인식할 수 없음
     };
 }
 ```
@@ -168,11 +169,13 @@ namespace ErrorFlagsForState
 {
     enum Type
     {
-        None                            = 0x00000000,
+        None                                    = 0x00000000,
 
-        NotRegistered                   = 0x00000001,   // 장치 등록이 안됨
-        FlashReadLock_UnLocked          = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
-        BootloaderWriteLock_UnLocked    = 0x00000003,   // 부트로더 영역 쓰기 Lock이 안 걸림
+        NotRegistered                           = 0x00000001,   // 장치 등록이 안됨
+        FlashReadLock_UnLocked                  = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
+        BootloaderWriteLock_UnLocked            = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
+        
+        TakeoffFailure_CheckPropellerAndMotor   = 0x00000010,   // 이륙 실패
     };
 }
 ```
