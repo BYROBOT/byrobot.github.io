@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.5
+Modified : 2018.10.8
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2018.10.5
 
 
 <br>
+
+
+# 2018.10.8
+
+- **Drone: 0.2.12**
+- **Controller: 0.2.11**
+
+> - 드론 고도 제어 안정화
+> - X, Y 위치 안정화
+> - Weight 설정 변경 없이 작동할 수 있도록 제어 변경(현재는 Weight 설정을 무시)
+> - 에러 플래그 이름 수정
+> - 프로펠러, 모터 문제로 이륙이 안되는 경우 오류 메세지 출력
+> - 모든 UART, USB 시리얼 통신의 Baudrate를 57600으로 변경
+> - 배터리 경고 이외에 무선 연결 끊어짐, 프로펠러-모터 문제로 이륙 불가, 바닥 이미지 인식 불가, Motion 센서 캘리브레이션 진동 알림 추가
+
+[Download](https://drive.google.com/open?id=1Jefp48LHR00dRrWSEIMVFJNOrADs0K59)
+
+
+<br>
+
+---
 
 
 # 2018.10.5
