@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2018.9.20
+Modified : 2018.10.8
 
 ---
 
@@ -69,6 +69,7 @@ class DataType(Enum):
     Bias                        = 0x51      # 엑셀, 자이로 바이어스 값
     Trim                        = 0x52      # 트림
     Weight                      = 0x53      # 무게
+    LostConnection              = 0x54      # 연결이 끊긴 후 반응 설정
 
     # Devices
     Motor                       = 0x60      # 모터 제어 및 현재 제어값 확인
@@ -2266,6 +2267,33 @@ class Weight(ISerializable):
 | 변수 이름  | 형식      | 크기     | 범위  | 설명    |
 |:----------:|:---------:|:--------:|:-----:|:--------|
 | weight     | Float32   | 4 Byte   | -     | 무게    |
+
+
+<br>
+<br>
+
+
+<a name="LostConnection"></a>
+## LostConnection
+
+통신 연결이 끊긴 후 반응 시간 설정
+
+마지막으로 비행 이벤트 또는 조종 명령을 보냈던 장치와의 연결이 끊어진 후에 지정한 시간이 경과하면 해당 명령을 실행. 시간을 0으로 설정한 경우 해당 명령은 실행하지 않음. 시간 단위는 ms
+
+```py
+class LostConnection(ISerializable):
+
+    def __init__(self):
+        self.timeNeutral    = 0
+        self.timeLanding    = 0
+        self.timeStop       = 0
+```
+
+| 변수 이름     | 형식      | 크기     | 범위               | 설명      |
+|:-------------:|:---------:|:--------:|:------------------:|:----------|
+| timeNeutral   | UInt16    | 2 Byte   | 0 ~ 65,535         | 조종 중립 |
+| timeLanding   | UInt16    | 2 Byte   | 0 ~ 65,535         | 착륙      |
+| timeStop      | UInt32    | 4 Byte   | 0 ~ 4,294,967,295  | 정지      |
 
 
 <br>

@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2018.9.19
+Modified : 2018.10.8
 
 ---
 
@@ -131,9 +131,11 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | [sendTrimIncDec](#sendTrimIncDec)                                 | Trim 한 단계씩 변경                         |
 | [sendTrim](#sendTrim)                                             | Trim 값을 지정하여 변경                     |
 | [sendWeight](#sendWeight)                                         | Weight 설정                                 |
+| [sendLostConnection](#sendLostConnection)                         | 연결이 끊긴 후 반응 시간 설정               |
 | [sendFlightEvent](#sendFlightEvent)                               | 비행 이벤트 실행                            |
 | [sendClearBias](#sendClearBias)                                   | 바이어스 초기화                             |
 | [sendClearTrim](#sendClearTrim)                                   | Trim 초기화                                 |
+| [sendSetDefault](#sendSetDefault)                                 | 장치 설정 초기화                            |
 
 <br>
 
@@ -654,6 +656,27 @@ def sendWeight(self, weight):
 <br>
 
 
+## <a name="sendLostConnection">sendLostConnection</a>
+
+통신 연결이 끊긴 후 반응 시간 설정
+
+마지막으로 비행 이벤트 또는 조종 명령을 보냈던 장치와의 연결이 끊어진 후에 지정한 시간이 경과하면 해당 명령을 실행. 시간을 0으로 설정한 경우 해당 명령은 실행하지 않음. 시간 단위는 ms
+
+```py
+def sendLostConnection(self, timeNeutral, timeLanding, timeStop):
+```
+
+| 변수 이름     | 형식 또는 범위     | 설명      |
+|:-------------:|:------------------:|:----------|
+| timeNeutral   | 0 ~ 65,535         | 조종 중립 |
+| timeLanding   | 0 ~ 65,535         | 착륙      |
+| timeStop      | 0 ~ 4,294,967,295  | 정지      |
+
+
+<br>
+<br>
+
+
 ## <a name="sendFlightEvent">sendFlightEvent</a>
 
 비행 이벤트 실행
@@ -690,6 +713,21 @@ def sendClearBias(self):
 
 ```py
 def sendClearTrim(self):
+```
+
+
+<br>
+<br>
+
+
+## <a name="sendSetDefault">sendSetDefault</a>
+
+장치 설정 초기화
+
+지정한 장치의 설정을 초기화 함
+
+```py
+def sendSetDefault(self, deviceType):
 ```
 
 

@@ -1,6 +1,6 @@
 **[PETRONE](index.md)** / **BLE** / **Protocol** / **Definitions**
 
-Modified : 2018.4.26
+Modified : 2018.10.8
 
 ---
 
@@ -98,7 +98,7 @@ namespace System
             Update,     // 업데이트 중
             Complete,   // 업데이트 완료
 
-            Faild,      // 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우)
+            Failed,     // 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우)
 
             EndOfType
         };

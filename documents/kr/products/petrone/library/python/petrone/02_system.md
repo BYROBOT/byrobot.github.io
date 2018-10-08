@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **System**
 
-Modified : 2018.5.18
+Modified : 2018.10.8
 
 ---
 
@@ -161,7 +161,7 @@ class ModeUpdate(Enum):
     Update              = 0x02      # 업데이트 중
     Complete            = 0x03      # 업데이트 완료
 
-    Faild               = 0x04      # 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
+    Failed              = 0x04      # 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
 
     EndOfType           = 0x05
 ```

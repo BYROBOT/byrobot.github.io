@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **System**
 
-Modified : 2018.02.13
+Modified : 2018.10.8
 
 ---
 
@@ -158,7 +158,7 @@ class ModeUpdate(Enum):
     Update              = 0x02      # Updating
     Complete            = 0x03      # Update complete
 
-    Faild               = 0x04      # Update Faild( Ex: Update has reached completion but firmware data body CRC16 does not match, etc.)
+    Failed              = 0x04      # Update Failed( Ex: Update has reached completion but firmware data body CRC16 does not match, etc.)
 
     EndOfType           = 0x05
 ```

@@ -1,5 +1,5 @@
 ***PETRONE / BLE / Protocol / Definitions***<br>
-Modified : 2017.10.18
+Modified : 2018.10.8
 
 ---
 
@@ -59,11 +59,11 @@ namespace System
         enum Type
         {
             None,
-			
+            
             PetroneMain,
             PetroneSub,
             Link,
-			
+
             EndOfType
         };
     }
@@ -89,7 +89,7 @@ namespace System
             Update,     // Firmware updating
             Complete,   // Firmware update complete
 
-            Faild,      // Update Faild( Ex: Update has reached completion but firmware data body CRC16 does not match, etc.)
+            Failed,     // Update Failed( Ex: Update has reached completion but firmware data body CRC16 does not match, etc.)
 
             EndOfType
         };

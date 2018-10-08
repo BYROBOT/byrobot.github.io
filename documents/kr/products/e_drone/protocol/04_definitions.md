@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.9.20
+Modified : 2018.10.8
 
 ---
 
@@ -306,7 +306,7 @@ namespace Mode
             Update,             // 업데이트 중
             Complete,           // 업데이트 완료
                 
-            Faild,              // 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
+            Failed,             // 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
 
             NotAvailable,       // 업데이트 불가능 상태(Debug 모드 등)
             RunApplication,     // 어플리케이션 동작 중

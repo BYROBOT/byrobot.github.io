@@ -1,6 +1,6 @@
 **[PETRONE](../index.md)** / **LINK** / **Protocol** / **Definitions**
 
-Modified : 2018.3.6
+Modified : 2018.10.8
 
 ---
 
@@ -142,13 +142,13 @@ namespace System
             Connecting,                         // 장치 연결 시작       
             Connected,                          // 장치 연결
             
-            ConnectionFaild,                    // 연결 실패
-            ConnectionFaildNoDevices,           // 연결 실패 - 장치가 없음
-            ConnectionFaildNotReady,            // 연결 실패 - 대기 상태가 아님
+            ConnectionFailed,                   // 연결 실패
+            ConnectionFailedNoDevices,          // 연결 실패 - 장치가 없음
+            ConnectionFailedNotReady,           // 연결 실패 - 대기 상태가 아님
             
             PairingStart,                       // 페어링 시작
             PairingSuccess,                     // 페어링 성공
-            PairingFaild,                       // 페어링 실패
+            PairingFailed,                       // 페어링 실패
             
             BondingSuccess,                     // Bonding 성공
             

@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2018.02.12
+Modified : 2018.10.8
 
 ---
 
@@ -343,8 +343,8 @@ eventLinkEventAddress() / EventLink.Connected / 0 / A8 B5 60 78 D5 A4
 [     4.481] EventLink.Connected]
 0A 55 E1 02 0D 05 C7 BA
 [     4.625] Success / Receiver / Section.End / Receive complete / DataType.LinkEvent / [receive: 0xBAC7]
-eventLinkEvent() / EventLink.PairingFaild / 5
-[     4.625] EventLink.PairingFaild]
+eventLinkEvent() / EventLink.PairingFailed / 5
+[     4.625] EventLink.PairingFailed]
 0A 55 E1 02 0F 01 21 9C
 [     4.827] Success / Receiver / Section.End / Receive complete / DataType.LinkEvent / [receive: 0x9C21]
 eventLinkEvent() / EventLink.LookupAttribute / 1

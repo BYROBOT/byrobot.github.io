@@ -1,6 +1,6 @@
 **[PETRONE_V2](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.02.13
+Modified : 2018.10.8
 
 ---
 
@@ -301,7 +301,7 @@ namespace Mode
             Update,             // Updating.
             Complete,           // Update complete
                 
-            Faild,              // Update Faild( Ex: Update has reached completion but firmware data body CRC16 does not match, etc.)
+            Failed,             // Update Failed( Ex: Update has reached completion but firmware data body CRC16 does not match, etc.)
 
             NotAvailable,       // Cannot available update(Debug mode, etc.)
             RunApplication,     // application is running
