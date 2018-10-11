@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.8
+Modified : 2018.10.11
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2018.10.8
 
 
 <br>
+
+
+# 2018.10.11
+
+- **Drone: 0.2.13**
+- **Controller: 0.2.12**
+
+> - 드론이 비행중일 때 Control, Mode, Headless, Function 메뉴에 진입할 수 없게 막음
+> - 프로펠러 진동 경고
+> - 스피드 설정 변경 시 회전 속도도 변함
+> - 고도 유지 안정화
+> - 호버링 안정화
+> - 이륙 안정화
+> - Information에 RF 항목 추가
+
+[Download](https://drive.google.com/open?id=1Ns7FeEJifz3UG3OXGHZ--GhBcn3YCoZ_)
+
+
+<br>
+
+---
 
 
 # 2018.10.8
