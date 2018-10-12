@@ -36,6 +36,10 @@
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
+            <td><div align="center">Update Manual</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/manual/update/">한국어</a></div></td>
+        </tr>
+        <tr>
             <td colspan="3"><div align="center">&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
