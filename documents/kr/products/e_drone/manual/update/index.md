@@ -32,7 +32,7 @@ Modified : 2018.10.12
 <b>(1) "Drone4AutoUpdater.exe"를 실행합니다.</b>
 
 <div align="center">
-    <img src="2_folder_drone4autoupdater.jpg" alt="Drone4AutoUpdater.exe">
+    <img src="./images/2_folder_drone4autoupdater.jpg" alt="Drone4AutoUpdater.exe">
     <p>Drone4AutoUpdater.exe</p>
 </div>
 <br>
@@ -44,7 +44,7 @@ Modified : 2018.10.12
 <b>(3) 드론 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.</b>
 
 <div align="center">
-    <img src="2_1_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
+    <img src="./images/2_1_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
     <p>드론 부트로더 진입 버튼</p>
 </div>
 <br>
@@ -60,7 +60,7 @@ Modified : 2018.10.12
 <b>(1) "Drone4AutoUpdater.exe"를 실행합니다.</b>
 
 <div align="center">
-    <img src="2_folder_drone4autoupdater.jpg" alt="Drone4AutoUpdater.exe">
+    <img src="./images/2_folder_drone4autoupdater.jpg" alt="Drone4AutoUpdater.exe">
     <p>Drone4AutoUpdater.exe</p>
 </div>
 <br>
@@ -72,7 +72,7 @@ Modified : 2018.10.12
 <b>(3) 조종기 전면 왼쪽 위의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.</b>
 
 <div align="center">
-    <img src="2_2_e_drone_controller_top_bootloader_button.jpg" alt="controller top">
+    <img src="./images/2_2_e_drone_controller_top_bootloader_button.jpg" alt="controller top">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>
