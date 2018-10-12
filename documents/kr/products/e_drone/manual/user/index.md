@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2018.9.21
+Modified : 2018.10.12
 
 ---
 
@@ -97,6 +97,8 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 | 10   | -                                           | -                                        |
 | 11   | -                                           | 이륙 / 착륙                              |
 | 12   | -                                           | -                                        |
+
+ * 좌측 조이스틱을 아래로 향한 상태에서 11번 버튼을 누르면 정지 명령을 전송합니다.
 
 <br>
 
@@ -418,23 +420,6 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
     </tr>
     <tr>
-        <td>
-            <div align="center">
-                WEIGHT
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                100g ~ 150g
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                드론 + 추가 장치의 무게
-            </div>
-        </td>
-    </tr>
-    <tr>
         <td rowspan="3">
             <div align="center">
                 FUNCTION
@@ -476,7 +461,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
     </tr>
     <tr>
-        <td rowspan="10">
+        <td rowspan="9">
             <div align="center">
                 INFORMATION
             </div>
@@ -555,24 +540,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                ADDRESS/D
+                ADDRESS
             </div>
         </td>
         <td>
             <div align="left">
-                드론의 고유번호 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                ADDRESS/C
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종기의 고유번호 표시
+                드론과 조종기의 고유번호 표시
             </div>
         </td>
     </tr>
