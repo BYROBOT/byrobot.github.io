@@ -67,10 +67,10 @@ Modified : 2018.10.12
 
 <br>
 
-(3) 조종기 전면 왼쪽 위의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(3) 조종기 왼쪽 위의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/2_2_e_drone_controller_top_bootloader_button.jpg" alt="controller top">
+    <img src="./images/2_2_e_drone_controller_front_bootloader_button.jpg" alt="controller top">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>
