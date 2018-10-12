@@ -72,12 +72,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ## 2.2. 버튼 구성 및 기능
 
 <div align="center">
-    <img src="./images/20180910_110309.jpg" alt="controller front">
+    <img src="./images/e_drone_controller_front_nunber.jpg" alt="controller front">
 </div>
 <br>
 
 <div align="center">
-    <img src="./images/20180910_110411.jpg" alt="controller top">
+    <img src="./images/e_drone_controller_top_nunber.jpg" alt="controller top">
 </div>
 <br>
 
