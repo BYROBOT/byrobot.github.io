@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.11
+Modified : 2018.10.12
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2018.10.11
 
 
 <br>
+
+
+# 2018.10.12
+
+- **Drone: 0.2.14**
+- **Controller: 0.2.13**
+
+> - Flow 센서와 관련된 설정 변경
+> - Attitude 모드에서만 조이스틱 Yaw 조작 시 속도 변경 적용, Position 모드에서는 속도 변경과 상관없이 고정(180deg/s)
+> - 조종기 설정 메뉴에서 Weight 설정 제거
+> - 드론이 연결되지 않은 경우 Version, Address, CRC 표시창에서 조종기의 정보만 표시
+
+[Download](https://drive.google.com/open?id=1xe-Qdtrq0MugPBwr8ihBoZrAaZ2QJXB3)
+
+
+<br>
+
+---
 
 
 # 2018.10.11

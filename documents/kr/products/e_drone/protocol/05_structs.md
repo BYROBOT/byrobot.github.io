@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.9.28
+Modified : 2018.10.12
 
 ---
 
@@ -662,6 +662,35 @@ namespace Protocol
 | roll     | int16_t  | 2 Byte   |  -90 ~  90  | 좌우 기울기 각도    |
 | pitch    | int16_t  | 2 Byte   |  -90 ~  90  | 전후 기울기 각도    |
 | yaw      | int16_t  | 2 Byte   | -180 ~ 180  | 좌우 회전 시 각도   |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Position"></a>
+## Protocol::Position
+
+위치
+
+```cpp
+namespace Protocol
+{
+    struct Position
+    {
+        float       x;              // meter
+        float       y;              // meter
+        float       z;              // meter
+    };
+}
+```
+
+
+| 변수 이름     | 형식   | 크기     | 범위             | 단위     | 설명                 |
+|:-------------:|:------:|:--------:|:----------------:|:---------|:---------------------|
+| x             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 앞(+), 뒤(-)         |
+| y             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 좌(+), 우(-)         |
+| z             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 위(+), 아래(-)       |
 
 
 <br>
