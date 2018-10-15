@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2018.10.12
+Modified : 2018.10.16
 
 ---
 
@@ -33,6 +33,13 @@ Modified : 2018.10.12
 
 <div align="center">
     <img src="./images/2_folder_drone4autoupdater.jpg" alt="Drone4AutoUpdater.exe">
+    <p>펌웨어 업데이트 프로그램 폴더</p>
+</div>
+<br>
+
+<div align="center">
+    <img src="./images/2_1_drone4autoupdater.png" alt="Drone4AutoUpdater.exe">
+    <p>펌웨어 업데이트 프로그램 실행 화면</p>
 </div>
 <br>
 
@@ -43,13 +50,24 @@ Modified : 2018.10.12
 (3) 드론 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/2_1_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
+    <img src="./images/2_2_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
     <p>드론 부트로더 진입 버튼</p>
 </div>
 <br>
 
 (4) 드론의 전원이 켜지고 자동으로 업데이트를 진행합니다.
 
+<div align="center">
+    <img src="./images/2_3_drone4autoupdater.png" alt="Drone4AutoUpdater.exe">
+    <p>펌웨어 업데이트 진행 화면</p>
+</div>
+<br>
+
+<div align="center">
+    <img src="./images/2_4_drone4autoupdater.png" alt="Drone4AutoUpdater.exe">
+    <p>펌웨어 업데이트 완료 화면</p>
+</div>
+<br>
 
 <br>
 
@@ -60,6 +78,13 @@ Modified : 2018.10.12
 
 <div align="center">
     <img src="./images/2_folder_drone4autoupdater.jpg" alt="Drone4AutoUpdater.exe">
+    <p>펌웨어 업데이트 프로그램 폴더</p>
+</div>
+<br>
+
+<div align="center">
+    <img src="./images/2_1_drone4autoupdater.png" alt="Drone4AutoUpdater.exe">
+    <p>펌웨어 업데이트 프로그램 실행 화면</p>
 </div>
 <br>
 
