@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.10.12
+Modified : 2018.10.15
 
 ---
 
@@ -1132,6 +1132,8 @@ namespace Protocol
 페어링
 
 장치의 페어링 정보를 확인하거나 변경할 때 사용합니다.
+
+address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
 
 ```cpp
 namespace Protocol

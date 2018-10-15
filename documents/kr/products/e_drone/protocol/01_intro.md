@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Intro**
 
-Modified : 2018.7.5
+Modified : 2018.10.15
 
 ---
 
@@ -186,7 +186,7 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 
 |영역       | 설정값 |
 |:---------:|:------:|
-| Baud Rate | 115200 |
+| Baud Rate | 57600  |
 | Parity    | None   |
 | Data Bits | 8      |
 | Stop Bits | 1      |

@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.12
+Modified : 2018.10.15
 
 ---
 
@@ -9,6 +9,26 @@ Modified : 2018.10.12
 
 
 <br>
+
+
+# 2018.10.15
+
+- **Drone: 0.2.15**
+- **Controller: 0.2.14**
+
+> - Flow 센서 설정 변경
+> - 회전 명령 시에 계속 도는 문제 수정
+> - Attitude Mode 일 때 최대 각도 40에서 35도로 줄임
+> - 조종기 설정 메뉴에서 Weight 설정 제거
+> - 드론이 연결되지 않은 경우 Version, Address, CRC 표시창에서 조종기의 정보만 표시
+> - Trim 설정값을 무시하게 함(Trim 적용 방법 변경 예정)
+
+[Download](https://drive.google.com/open?id=1frTwqh9EYkJAiVj9LugHLo02DE3VCvBl)
+
+
+<br>
+
+---
 
 
 # 2018.10.12
