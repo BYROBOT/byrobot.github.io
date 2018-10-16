@@ -11,6 +11,23 @@ Modified : 2018.10.16
 <br>
 
 
+# 2018.10.16
+
+- **Drone: 0.2.16**
+- Controller: 0.2.14
+
+> - 비행 제어 설정이 Position 모드일 때에만 바닥 이미지 경고 활성화
+> - 비행 제어 설정이 Attitude 모드일 때에만 트림 값 적용
+> - Flow 센서 설정 변경
+
+[Download](https://drive.google.com/open?id=1EOwzym4Ncf7neTeluddCu6258EufrfwV)
+
+
+<br>
+
+---
+
+
 # 2018.10.15
 
 - **Drone: 0.2.15**
