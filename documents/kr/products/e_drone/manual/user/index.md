@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2018.10.12
+Modified : 2018.10.16
 
 ---
 
@@ -591,6 +591,33 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
  * Rudder : 좌우 회전(Yaw)
  * Throttle : 위아래 이동(Throttle)
  * Aileron : 좌우 이동(Roll)
+
+
+<br>
+
+
+<br>
+
+
+## 2.4. MODE
+
+### 2.4.1. MODE 1
+
+<div align="center">
+    <img src="./images/mode1.png" alt="MODE 1">
+    <p>MODE 1</p>
+</div>
+<br>
+
+<br>
+
+### 2.4.2. MODE 2
+
+<div align="center">
+    <img src="./images/mode2.png" alt="MODE 2">
+    <p>MODE 2</p>
+</div>
+<br>
 
 <br>
 
