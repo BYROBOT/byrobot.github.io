@@ -71,53 +71,37 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 ## 2.2. 버튼 구성 및 기능
 
-<div align="center">
-    <img src="./images/e_drone_controller_front_nunber.jpg" alt="controller front">
-</div>
-<br>
-
-<div align="center">
-    <img src="./images/e_drone_controller_top_nunber.jpg" alt="controller top">
-</div>
 <br>
 
 ### 2.2.1. 조종 화면
 
-| 번호 | 짧게 눌렀을 때                              | 길게 눌렀을 때                           |
-|:----:|:--------------------------------------------|:-----------------------------------------|
-| 1    | LCD 백라이트 ON/OFF                         | Return Home                              |
-| 2    | LCD 초기화(화면이 뒤집히는 경우 사용)       | 전원 ON/OFF                              |
-| 3    | 이전 조종 화면으로 전환                     | 설정 화면으로 이동                       |
-| 4    | 다음 조종 화면으로 전환                     | 페어링(비행 중에는 작동하지 않음)        |
-| 5    | Trim Pitch 증가(드론을 앞으로 향하게 함)    | -                                        |
-| 6    | Trim Roll 감소(드론을 왼쪽으로 향하게 함)   | -                                        |
-| 7    | Trim Roll 증가(드론을 오른쪽으로 향하게 함) | -                                        |
-| 8    | Trim Pitch 감소(드론을 뒤로 향하게 함)      | -                                        |
-| 9    | -                                           | -                                        |
-| 10   | -                                           | -                                        |
-| 11   | -                                           | 이륙 / 착륙                              |
-| 12   | -                                           | -                                        |
+<div align="center">
+    <img src="./images/button_control_front.png" alt="조종기 전면">
+    <p>조종 화면에서 전면 버튼의 기능</p>
+</div>
+<br>
 
- * 좌측 조이스틱을 아래로 향한 상태에서 11번 버튼을 누르면 정지 명령을 전송합니다.
+<div align="center">
+    <img src="./images/button_control_top.png" alt="조종기 상단">
+    <p>조종 화면에서 상단 버튼의 기능</p>
+</div>
+<br>
 
 <br>
 
 ### 2.2.2. 설정 화면
 
-| 번호 | 짧게 눌렀을 때                              | 길게 눌렀을 때                           |
-|:----:|:--------------------------------------------|:-----------------------------------------|
-| 1    | LCD 백라이트 ON/OFF                         | -                                        |
-| 2    | LCD 초기화(화면이 뒤집히는 경우 사용)       | 전원 ON/OFF                              |
-| 3    | -                                           | 조종 화면으로 이동                       |
-| 4    | -                                           | 페어링(비행 중에는 작동하지 않음)        |
-| 5    | 메뉴 위로 이동                              | -                                        |
-| 6    | 메뉴 왼쪽으로 이동                          | -                                        |
-| 7    | 메뉴 오른쪽으로 이동                        | -                                        |
-| 8    | 메뉴 아래로 이동                            | -                                        |
-| 9    | -                                           | -                                        |
-| 10   | -                                           | -                                        |
-| 11   | 메뉴 왼쪽으로 이동                          | -                                        |
-| 12   | 메뉴 오른쪽으로 이동 또는 항목 선택         | -                                        |
+<div align="center">
+    <img src="./images/button_setup_front.png" alt="조종기 전면">
+    <p>설정 화면에서 전면 버튼의 기능</p>
+</div>
+<br>
+
+<div align="center">
+    <img src="./images/button_setup_top.png" alt="조종기 상단">
+    <p>설정 화면에서 상단 버튼의 기능</p>
+</div>
+<br>
 
 <br>
 
