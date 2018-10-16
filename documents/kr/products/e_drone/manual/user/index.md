@@ -381,7 +381,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td rowspan="3">
             <div align="center">
-                HEADLESS
+                SPEED
             </div>
         </td>
         <td>
@@ -391,7 +391,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="left">
-                속도 1단계 (50 %)
+                속도 1단계 (30 %)
             </div>
         </td>
     </tr>
@@ -461,7 +461,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
     </tr>
     <tr>
-        <td rowspan="9">
+        <td rowspan="10">
             <div align="center">
                 INFORMATION
             </div>
@@ -534,6 +534,18 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         <td>
             <div align="left">
                 위치 데이터 표시
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                RF
+            </div>
+        </td>
+        <td>
+            <div align="left">
+                RF 설정 데이터 표시
             </div>
         </td>
     </tr>
