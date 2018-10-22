@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.10.8
+Modified : 2018.10.22
 
 ---
 
@@ -65,13 +65,16 @@ namespace ModelNumber
 {
     enum Type
     {
-        //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Project Sub Index)
+        //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
         Drone_4_Drone_P4        = 0x00041004,       // Drone_4_Drone_P4
 
         Drone_4_Controller_P1   = 0x00042001,       // Drone_4_Controller_P1
         Drone_4_Controller_P2   = 0x00042002,       // Drone_4_Controller_P2
 
         Drone_4_Link_P0         = 0x00043000,       // Drone_4_Link_P0
+
+        Drone_4_Tester_P2       = 0x0004A002,       // Drone_4_Tester_P2
+        Drone_4_Monitor_P2      = 0x0004A102,       // Drone_4_Monitor_P2
     };
 }
 ```
@@ -101,6 +104,8 @@ namespace Protocol
 
             Link        = 0x30,     // 링크 모듈(Client)
             LinkServer  = 0x31,     // 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+
+            Range       = 0x40,
 
             ByScratch   = 0x80,     // 바이스크래치
             Scratch     = 0x81,     // 스크래치
@@ -176,6 +181,7 @@ namespace ErrorFlagsForState
         BootloaderWriteLock_UnLocked            = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
         
         TakeoffFailure_CheckPropellerAndMotor   = 0x00000010,   // 이륙 실패
+        CheckPropellerVibration                 = 0x00000020,   // 프로펠러 진동발생
     };
 }
 ```
@@ -200,7 +206,7 @@ namespace Mode
             enum Type
             {
                 None = 0,
-            
+
                 Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
                 Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
                 Function    = 0x12, // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
@@ -308,7 +314,7 @@ namespace Mode
             Ready,              // 업데이트 가능 상태
             Update,             // 업데이트 중
             Complete,           // 업데이트 완료
-                
+
             Failed,             // 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
 
             NotAvailable,       // 업데이트 불가능 상태(Debug 모드 등)
@@ -368,12 +374,12 @@ namespace Direction
         Front,
         Right,
         Rear,
-        
+
         Top,
         Bottom,
-        
+
         Center,
-        
+
         EndOfType
     };
 }
@@ -397,7 +403,7 @@ namespace Mode
         enum Type
         {
             None            = 0x00,
-            
+
             Ready           = 0x01,
             Hovering        = 0x02,
             Moving          = 0x03,
@@ -431,10 +437,10 @@ namespace Headless
     enum Type
     {
         None = 0,
-        
+
         Headless,   // 사용자 중심 좌표
         Normal,     // 드론 중심 좌표
-        
+
         EndOfType
     };
 }
@@ -467,9 +473,9 @@ namespace Trim
         YawDecrease,        // Yaw 감소
         ThrottleIncrease,   // Throttle 증가
         ThrottleDecrease,   // Throttle 감소
-        
+
         Reset,              // 전체 트림 리셋
-        
+
         EndOfType
     };
 }
@@ -497,10 +503,10 @@ namespace Rotation
     enum Type
     {
         None = 0,
-        
+
         Clockwise,              // 시계 방향
         Counterclockwise,       // 반시계 방향
-        
+
         EndOfType
     };
 }
@@ -527,9 +533,9 @@ namespace Rotation
             M2,		// Front Right
             M3,		// Rear Right
             M4,		// Rear Left
-            
+
             EndOfPart,
-            
+
             All
         };
     }
@@ -552,22 +558,22 @@ namespace FlightEvent
     enum Type
     {
         None = 0,               // 없음
-        
+
         Stop = 0x10,            // 정지
         TakeOff,                // 이륙
         Landing,                // 착륙
-        
+
         Reverse,                // 뒤집기
-        
+
         FlipFront,              // 회전
         FlipRear,               // 회전
         FlipLeft,               // 회전
         FlipRight,              // 회전
 
         Return,                 // 시작 위치로 돌아가기
-        
+
         ResetHeading = 0xA0,    // 헤딩 리셋(Headless 모드 일 때 현재 heading을 0도로 변경)
-        
+
         EndOfType
     };
 }
@@ -621,15 +627,15 @@ namespace Joystick
         enum Type
         {
             None    = 0,        // 정의하지 않은 영역(무시함)
-            
+
             VT      = 0x10,     //   위(세로)
             VM      = 0x20,     // 중앙(세로)
             VB      = 0x40,     // 아래(세로)
-            
+
             HL      = 0x01,     //   왼쪽(가로)
             HM      = 0x02,     //   중앙(가로)
             HR      = 0x04,     // 오른쪽(가로)
-            
+
             TL = 0x11,  TM = 0x12,  TR = 0x14,
             ML = 0x21,  CN = 0x22,  MR = 0x24,
             BL = 0x41,  BM = 0x42,  BR = 0x44
@@ -657,11 +663,11 @@ namespace Joystick
         enum Type
         {
             None    = 0,        // 이벤트 없음
-            
+
             In,                 // 특정 영역에 진입
             Stay,               // 특정 영역에서 상태 유지
             Out,                // 특정 영역에서 벗어남
-            
+
             EndOfType
         };
     }
@@ -723,14 +729,14 @@ namespace Buzzer
             C2, CS2, D2, DS2, E2, F2, FS2, G2, GS2, A2, AS2, B2,
             C3, CS3, D3, DS3, E3, F3, FS3, G3, GS3, A3, AS3, B3,
             C4, CS4, D4, DS4, E4, F4, FS4, G4, GS4, A4, AS4, B4,
-            
+
             C5, CS5, D5, DS5, E5, F5, FS5, G5, GS5, A5, AS5, B5,
             C6, CS6, D6, DS6, E6, F6, FS6, G6, GS6, A6, AS6, B6,
             C7, CS7, D7, DS7, E7, F7, FS7, G7, GS7, A7, AS7, B7,
             C8, CS8, D8, DS8, E8, F8, FS8, G8, GS8, A8, AS8, B8,
-        
+
             EndOfType,
-            
+
             Mute    = 0xEE,     // 묵음
             Fin     = 0xFF      // 악보의 끝
         };
@@ -755,10 +761,10 @@ namespace Vibrator
         enum Type
         {
             Stop            = 0,    // 정지
-            
+
             Instantally     = 1,    // 즉시 적용
             Continually     = 2,    // 예약
-            
+
             EndOfType
         };
     }

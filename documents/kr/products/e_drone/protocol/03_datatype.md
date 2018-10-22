@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.9.28
+Modified : 2018.10.22
 
 ---
 
@@ -59,6 +59,7 @@ namespace Protocol
             Position,                               // 위치
             Altitude,                               // 높이, 고도
             Motion,                                 // Motion 센서 데이터 처리한 값(IMU)
+            Range,                                  // 거리센서 데이터
 
             // 설정
             Count                       = 0x50,     // 카운트
@@ -147,6 +148,7 @@ namespace Protocol
 | Position                              | 0x42 | D    | 위치                                           | [Protocol::Position](05_structs.md#Protocol_Position) |
 | Altitude                              | 0x43 | D    | 높이, 고도                                     | [Protocol::Altitude](05_structs.md#Protocol_Altitude) |
 | Motion                                | 0x44 | D    | Motion 센서(Accel, Gyro, Angle)                | [Protocol::Motion](05_structs.md#Protocol_Motion) |
+| Range                                 | 0x45 | D    | Range 센서                                     | [Protocol::Range](05_structs.md#Protocol_Range) |
 | Count                                 | 0x50 | D    | 카운트                                         | [Protocol::Count](05_structs.md#Protocol_Count) |
 | Bias                                  | 0x51 | D    | Accel, Gyro 바이어스 값                        | [Protocol::Bias](05_structs.md#Protocol_Bias) |
 | Trim                                  | 0x52 | D    | Trim                                           | [Protocol::Trim](05_structs.md#Protocol_Trim) |

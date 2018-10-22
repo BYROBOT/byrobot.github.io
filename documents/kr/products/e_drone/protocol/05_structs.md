@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.10.15
+Modified : 2018.10.22
 
 ---
 
@@ -919,6 +919,40 @@ namespace Protocol
 | angleRoll  | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Roll     |
 | anglePitch | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Pitch    |
 | angleYaw   | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Yaw      |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Range"></a>
+## Protocol::Range
+
+Range 센서 데이터 출력
+
+```cpp
+namespace Protocol
+{
+    struct Range
+    {
+        s16     left;
+        s16     front;
+        s16     right;
+        s16     rear;
+        s16     top;
+        s16     bottom;
+    };
+}
+```
+
+| 변수 이름  | 형식     | 크기    | 범위            | 단위      | 설명                                      |
+|:----------:|:--------:|:-------:|:---------------:|:---------:|:------------------------------------------|
+| left       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 왼쪽을 바라보는 거리 센서의 출력 값       |
+| front      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 정면을 바라보는 거리 센서의 출력 값       |
+| right      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 오른쪽을 바라보는 거리 센서의 출력 값     |
+| rear       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 뒤를 바라보는 거리 센서의 출력 값         |
+| top        | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 위쪽를 바라보는 거리 센서의 출력 값       |
+| bottom     | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 아래쪽을 바라보는 거리 센서의 출력 값     |
 
 
 <br>
