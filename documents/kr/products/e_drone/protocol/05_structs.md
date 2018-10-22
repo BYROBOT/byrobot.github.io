@@ -161,6 +161,30 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_Address"></a>
+## Protocol::Address
+
+장치 주소(고유번호)
+
+```cpp
+namespace Protocol
+{
+    struct Address
+    {
+        u8   address[16];
+    };
+}
+```
+
+| 변수 이름  | 형식            | 크기     | 범위  | 설명         |
+|:----------:|:---------------:|:--------:|:-----:|:-------------|
+| address    | uint8_t Array   | 16 Byte  | -     | 장치 주소    |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Information"></a>
 ## Protocol::Information
 
@@ -509,24 +533,66 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Address"></a>
-## Protocol::Address
+<a name="Protocol_Pairing"></a>
+## Protocol::Pairing
 
-장치 주소(고유번호)
+페어링
+
+장치의 페어링 정보를 확인하거나 변경할 때 사용합니다.
+
+address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
 
 ```cpp
 namespace Protocol
 {
-    struct Address
+    struct Pairing
     {
-        u8   address[16];
+        u16     address0;
+        u16     address1;
+        u16     address2;
+        u8      scramble;
+        u8      channel;
     };
 }
 ```
 
-| 변수 이름  | 형식            | 크기     | 범위  | 설명         |
-|:----------:|:---------------:|:--------:|:-----:|:-------------|
-| address    | uint8_t Array   | 16 Byte  | -     | 장치 주소    |
+| 변수 이름       | 형식      | 크기     | 범위             | 설명               |
+|:---------------:|:---------:|:--------:|:----------------:|:-------------------|
+| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 0             |
+| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 1             |
+| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 2             |
+| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F      | 스크램블           |
+| channel         | uint8_t   | 1 Byte   | 0 ~ 81           | 채널               |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Rssi"></a>
+## Protocol::Rssi
+
+RSSI
+
+Received signal strength indication
+
+[http://www.metageek.com/training/resources/understanding-rssi.html](http://www.metageek.com/training/resources/understanding-rssi.html)
+
+현재 무선으로 연결된 장치의 신호 세기를 반환합니다.
+
+```cpp
+namespace Protocol
+{
+    struct Rssi
+    {
+        s8     Rssi;
+    };
+}
+```
+
+| 변수 이름    | 형식     | 크기     | 범위      | 설명       |
+|:------------:|:--------:|:--------:|:---------:|:-----------|
+| rssi         | int8_t   | 1 Byte   | -100 ~ 0  | 신호 세기  |
 
 
 <br>
@@ -727,6 +793,115 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_Motion"></a>
+## Protocol::Motion
+
+Motion 센서 데이터와 드론의 자세
+
+```cpp
+namespace Protocol
+{
+    struct Motion
+    {
+        s16     accX;
+        s16     accY;
+        s16     accZ;
+        
+        s16     gyroRoll;
+        s16     gyroPitch;
+        s16     gyroYaw;
+
+        s16     angleRoll;
+        s16     anglePitch;
+        s16     angleYaw;
+    };
+}
+```
+
+| 변수 이름  | 형식     | 크기    | 범위                                | 단위                 | 설명          |
+|:----------:|:--------:|:-------:|:-----------------------------------:|:--------------------:|:--------------|
+| accelX     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 X      |
+| accelY     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Y      |
+| accelZ     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Z      |
+| gyroRoll   | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Roll   |
+| gyroPitch  | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Pitch  |
+| gyroYaw    | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Yaw    |
+| angleRoll  | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Roll     |
+| anglePitch | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Pitch    |
+| angleYaw   | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Yaw      |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Range"></a>
+## Protocol::Range
+
+Range 센서 데이터 출력
+
+```cpp
+namespace Protocol
+{
+    struct Range
+    {
+        s16     left;
+        s16     front;
+        s16     right;
+        s16     rear;
+        s16     top;
+        s16     bottom;
+    };
+}
+```
+
+| 변수 이름  | 형식     | 크기    | 범위            | 단위      | 설명                                      |
+|:----------:|:--------:|:-------:|:---------------:|:---------:|:------------------------------------------|
+| left       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 왼쪽을 바라보는 거리 센서의 출력 값       |
+| front      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 정면을 바라보는 거리 센서의 출력 값       |
+| right      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 오른쪽을 바라보는 거리 센서의 출력 값     |
+| rear       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 뒤를 바라보는 거리 센서의 출력 값         |
+| top        | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 위쪽를 바라보는 거리 센서의 출력 값       |
+| bottom     | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 아래쪽을 바라보는 거리 센서의 출력 값     |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Count"></a>
+## Protocol::Count
+
+카운트
+
+비행 시간 및 관련 카운트 값을 읽을 때 사용합니다.
+
+```cpp
+namespace Protocol
+{
+    struct Count
+    {
+        u64     timeFlight;             // 비행 시간
+        
+        u16     countTakeOff;           // 이륙 횟수
+        u16     countLanding;           // 착륙 횟수
+        u16     countAccident;          // 충돌 횟수
+    };
+}
+```
+
+| 변수 이름        | 형식       | 크기     | 범위       | 설명             |
+|:----------------:|:----------:|:--------:|:----------:|:-----------------|
+| timeFlight       | uint64_t   | 8 Byte   | -          | 비행 시간(ms)    |
+| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 이륙 횟수        |
+| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 착륙 횟수        |
+| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535  | 충돌 횟수        |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Bias"></a>
 ## Protocol::Bias
 
@@ -850,115 +1025,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Count"></a>
-## Protocol::Count
-
-카운트
-
-비행 시간 및 관련 카운트 값을 읽을 때 사용합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Count
-    {
-        u64     timeFlight;             // 비행 시간
-        
-        u16     countTakeOff;           // 이륙 횟수
-        u16     countLanding;           // 착륙 횟수
-        u16     countAccident;          // 충돌 횟수
-    };
-}
-```
-
-| 변수 이름        | 형식       | 크기     | 범위       | 설명             |
-|:----------------:|:----------:|:--------:|:----------:|:-----------------|
-| timeFlight       | uint64_t   | 8 Byte   | -          | 비행 시간(ms)    |
-| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 이륙 횟수        |
-| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 착륙 횟수        |
-| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535  | 충돌 횟수        |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Motion"></a>
-## Protocol::Motion
-
-Motion 센서 데이터와 드론의 자세
-
-```cpp
-namespace Protocol
-{
-    struct Motion
-    {
-        s16     accX;
-        s16     accY;
-        s16     accZ;
-        
-        s16     gyroRoll;
-        s16     gyroPitch;
-        s16     gyroYaw;
-
-        s16     angleRoll;
-        s16     anglePitch;
-        s16     angleYaw;
-    };
-}
-```
-
-| 변수 이름  | 형식     | 크기    | 범위                                | 단위                 | 설명          |
-|:----------:|:--------:|:-------:|:-----------------------------------:|:--------------------:|:--------------|
-| accelX     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 X      |
-| accelY     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Y      |
-| accelZ     | int16_t  | 2 Byte  | -1,568 ~ 1,568<br>(-156.8 ~ 156.8)  | m/s<sup>2</sup> x 10 | 가속도 Z      |
-| gyroRoll   | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Roll   |
-| gyroPitch  | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Pitch  |
-| gyroYaw    | int16_t  | 2 Byte  | -2,000 ~ 2,000                      | degree/s             | 자이로 Yaw    |
-| angleRoll  | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Roll     |
-| anglePitch | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Pitch    |
-| angleYaw   | int16_t  | 2 Byte  | -180 ~ 180                          | degree               | 자세 Yaw      |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Range"></a>
-## Protocol::Range
-
-Range 센서 데이터 출력
-
-```cpp
-namespace Protocol
-{
-    struct Range
-    {
-        s16     left;
-        s16     front;
-        s16     right;
-        s16     rear;
-        s16     top;
-        s16     bottom;
-    };
-}
-```
-
-| 변수 이름  | 형식     | 크기    | 범위            | 단위      | 설명                                      |
-|:----------:|:--------:|:-------:|:---------------:|:---------:|:------------------------------------------|
-| left       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 왼쪽을 바라보는 거리 센서의 출력 값       |
-| front      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 정면을 바라보는 거리 센서의 출력 값       |
-| right      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 오른쪽을 바라보는 거리 센서의 출력 값     |
-| rear       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 뒤를 바라보는 거리 센서의 출력 값         |
-| top        | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 위쪽를 바라보는 거리 센서의 출력 값       |
-| bottom     | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 아래쪽을 바라보는 거리 센서의 출력 값     |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Motor"></a>
 ## Protocol::Motor
 
@@ -1013,6 +1079,65 @@ namespace Protocol
 | target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
 | rotation   | [Rotation::Type](04_definitions.md#Rotation)       | 1 Byte   | -         | 회전 방향       |
 | value      | uint16_t                                           | 2 Byte   | 0 ~ 4,095 | 회전 속도       |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Buzzer"></a>
+## Protocol::Buzzer
+
+버저
+
+```cpp
+namespace Protocol
+{
+    struct Buzzer
+    {
+        u8      mode;   // 버저 작동 모드
+        u16     value;  // Scale 또는 hz
+        u16     time;   // 연주 시간(ms)
+    };
+}
+```
+
+| 변수 이름  | 형식                                                    | 크기   | 범위        | 설명                   |
+|:----------:|:-------------------------------------------------------:|:------:|:-----------:|:-----------------------|
+| mode       | [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)     | 1 Byte | -           | 버저 동작 모드         |
+| value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
+|            | UInt16                                                  | 2 Byte | 0 ~ 8,000   | Hz                     |
+| time       | UInt16                                                  | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_Vibrator"></a>
+## Protocol::Vibrator
+
+진동
+
+```cpp
+namespace Protocol
+{
+    struct Vibrator
+    {
+        u8      mode;   // 모드(0은 set, 1은 reserve)
+        u16     on;     // 진동을 켠 시간(ms)
+        u16     off;    // 진동을 끈 시간(ms)
+        u16     total;  // 전체 진행 시간(ms)
+    };
+}
+```
+
+| 변수 이름  | 형식                                                    | 크기     | 범위        | 설명                |
+|:----------:|:-------------------------------------------------------:|:--------:|:-----------:|:--------------------|
+| mode       | [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode) | 1 Byte   | -           | 진동 동작 모드      |
+| on         | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
+| off        | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
+| total      | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
 
 
 <br>
@@ -1095,131 +1220,6 @@ namespace Protocol
 |:---------:|:---------------------------------------------------:|:--------:|:-----:|:----------------|
 | left      | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | 4 Byte   | -     | 왼쪽 조이스틱   |
 | right     | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | 4 Byte   | -     | 오른쪽 조이스틱 |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Buzzer"></a>
-## Protocol::Buzzer
-
-버저
-
-```cpp
-namespace Protocol
-{
-    struct Buzzer
-    {
-        u8      mode;   // 버저 작동 모드
-        u16     value;  // Scale 또는 hz
-        u16     time;   // 연주 시간(ms)
-    };
-}
-```
-
-| 변수 이름  | 형식                                                    | 크기   | 범위        | 설명                   |
-|:----------:|:-------------------------------------------------------:|:------:|:-----------:|:-----------------------|
-| mode       | [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)     | 1 Byte | -           | 버저 동작 모드         |
-| value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
-|            | UInt16                                                  | 2 Byte | 0 ~ 8,000   | Hz                     |
-| time       | UInt16                                                  | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Vibrator"></a>
-## Protocol::Vibrator
-
-진동
-
-```cpp
-namespace Protocol
-{
-    struct Vibrator
-    {
-        u8      mode;   // 모드(0은 set, 1은 reserve)
-        u16     on;     // 진동을 켠 시간(ms)
-        u16     off;    // 진동을 끈 시간(ms)
-        u16     total;  // 전체 진행 시간(ms)
-    };
-}
-```
-
-| 변수 이름  | 형식                                                    | 크기     | 범위        | 설명                |
-|:----------:|:-------------------------------------------------------:|:--------:|:-----------:|:--------------------|
-| mode       | [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode) | 1 Byte   | -           | 진동 동작 모드      |
-| on         | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
-| off        | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
-| total      | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Pairing"></a>
-## Protocol::Pairing
-
-페어링
-
-장치의 페어링 정보를 확인하거나 변경할 때 사용합니다.
-
-address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Pairing
-    {
-        u16     address0;
-        u16     address1;
-        u16     address2;
-        u8      scramble;
-        u8      channel;
-    };
-}
-```
-
-| 변수 이름       | 형식      | 크기     | 범위             | 설명               |
-|:---------------:|:---------:|:--------:|:----------------:|:-------------------|
-| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 0             |
-| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 1             |
-| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 2             |
-| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F      | 스크램블           |
-| channel         | uint8_t   | 1 Byte   | 0 ~ 81           | 채널               |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Rssi"></a>
-## Protocol::Rssi
-
-RSSI
-
-Received signal strength indication
-
-[http://www.metageek.com/training/resources/understanding-rssi.html](http://www.metageek.com/training/resources/understanding-rssi.html)
-
-현재 무선으로 연결된 장치의 신호 세기를 반환합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Rssi
-    {
-        s8     Rssi;
-    };
-}
-```
-
-| 변수 이름    | 형식     | 크기     | 범위      | 설명       |
-|:------------:|:--------:|:--------:|:---------:|:-----------|
-| rssi         | int8_t   | 1 Byte   | -100 ~ 0  | 신호 세기  |
 
 
 <br>
