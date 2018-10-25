@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.10.22
+Modified : 2018.10.25
 
 ---
 
@@ -576,6 +576,78 @@ namespace FlightEvent
 
         EndOfType
     };
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Button_Drone_ButtonType"></a>
+## Button::Drone::ButtonType::Type
+
+드론 버튼 플래그
+
+```cpp
+namespace Button
+{
+    namespace Drone
+    {
+        namespace ButtonType
+        {
+            enum Type
+            {
+                None        = 0x0000,
+                
+                // 버튼
+                Reset       = 0x0001
+            };
+        }
+    }
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Button_Controller_ButtonType"></a>
+## Button::Controller::ButtonType::Type
+
+조종기 버튼 플래그
+
+```cpp
+namespace Button
+{
+    namespace Controller
+    {
+        namespace ButtonType
+        {
+            enum Type
+            {
+                None                = 0x0000,
+                
+                // 버튼
+                FrontLeftTop        = 0x0001,
+                FrontLeftBottom     = 0x0002,
+                FrontRightTop       = 0x0004,
+                FrontRightBottom    = 0x0008,
+                
+                TopLeft             = 0x0010,
+                TopRight            = 0x0020,   // POWER ON/OFF
+                
+                MidUp               = 0x0040,
+                MidLeft             = 0x0080,
+                MidRight            = 0x0100,
+                MidDown             = 0x0200,
+                
+                BottomLeft          = 0x0400,
+                BottomRight         = 0x0800,
+            };
+        }
+    }
 }
 ```
 
