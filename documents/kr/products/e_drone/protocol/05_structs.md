@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.10.22
+Modified : 2018.10.26
 
 ---
 
@@ -280,7 +280,7 @@ namespace Control
 |:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
 | roll      | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
 | pitch     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
-| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 반시계     | 시계 방향     |
+| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 시계 방향  | 반시계 방향   |
 | throttle  | int8_t   | 1 Byte   | -100 ~ 100   | 승하강     | 하강       | 상승          |
 
 
@@ -310,11 +310,11 @@ namespace Control
 }
 ```
 
-| 변수 이름 | 형식     | 크기     |범위         | 설명       | 음수 값(-) | 양수 값(+)    |
+| 변수 이름 | 형식     | 크기     |범위          | 설명       | 음수 값(-) | 양수 값(+)    |
 |:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
 | roll      | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
 | pitch     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
-| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 반시계     | 시계 방향     |
+| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 시계 방향  | 반시계 방향   |
 | throttle  | int8_t   | 1 Byte   | -100 ~ 100   | 승하강     | 하강       | 상승          |
 | dataType  | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType) | - | 1 Byte | 요청할 데이터 타입 | - | - |
 
@@ -338,10 +338,7 @@ namespace Control
         s16     positionX;          // meter    x 10
         s16     positionY;          // meter    x 10
         s16     positionZ;          // meter    x 10
-        
-        s16     velocityX;          // m/s      x 10
-        s16     velocityY;          // m/s      x 10
-        s16     velocityZ;          // m/s      x 10
+        s16     velocity;          // m/s      x 10
         
         s16     heading;            // degree
         s16     rotationalVelocity; // deg/s
@@ -355,9 +352,7 @@ namespace Control
 | positionX             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
 | positionY             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
 | positionZ             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocityX             | int16_t  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 앞뒤 이동 속도       |
-| velocityY             | int16_t  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 좌우 이동 속도       |
-| velocityZ             | int16_t  | 2 Byte   | 2 ~ 10(0.2 ~ 1.0)          | m/s x 10      | 승하강 속도          |
+| velocity              | int16_t  | 2 Byte   | 0 ~ 50(0.0 ~ 5.0)          | m/s x 10      | 이동 속도            |
 | heading               | int16_t  | 2 Byte   | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
 | rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
 
