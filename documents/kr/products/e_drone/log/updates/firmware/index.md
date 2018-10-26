@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.16
+Modified : 2018.10.26
 
 ---
 
@@ -9,6 +9,29 @@ Modified : 2018.10.16
 
 
 <br>
+
+
+# 2018.10.26
+
+- **Drone: 0.2.17**
+- **Controller: 0.2.15**
+
+> - Control::Position16에서 x, y, z에 대한 각각의 속도를 하나의 속도 값으로 사용하도록 변경함
+> - yaw 회전 방향 수정(+값 입력 시 반시계 방향으로 회전)
+> - RF 송수신 중단 시 주기적으로 Ping 전송
+> - 고도, 속도 안정화
+> - 리턴 홈 안정화
+> - CommandType에 조종기 백라이트 제어 추가
+> - Range 센서 데이터 구조체 추가
+> - 조종기를 USB에 연결하여 전원이 켜지는 경우 로고를 표시하지 않게 함
+
+
+[Download](https://drive.google.com/open?id=1sBZC7AsoRa8H6IQDhcsT9CMiU8919anL)
+
+
+<br>
+
+---
 
 
 # 2018.10.16

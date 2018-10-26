@@ -353,8 +353,8 @@ namespace Control
 | positionY             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
 | positionZ             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
 | velocity              | int16_t  | 2 Byte   | 0 ~ 50(0.0 ~ 5.0)          | m/s x 10      | 이동 속도            |
-| heading               | int16_t  | 2 Byte   | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
+| heading               | int16_t  | 2 Byte   | -360 ~ 360                 | degree        | 반시계방향(+), 시계방향(-) |
+| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 180                   | degree/s      | 좌우 회전 속도       |
 
 
 <br>
@@ -393,11 +393,9 @@ namespace Control
 | positionX             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
 | positionY             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
 | positionZ             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
-| velocityX             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 앞뒤 이동 속도       |
-| velocityY             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 좌우 이동 속도       |
-| velocityZ             | float  | 4 Byte   | 0.2 ~ 1.0      | m/s      | 승하강 속도          |
-| heading               | float  | 4 Byte   | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | float  | 4 Byte   | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
+| velocity              | float  | 4 Byte   | 0.0 ~ 5.0      | m/s      | 앞뒤 이동 속도       |
+| heading               | float  | 4 Byte   | -360.0 ~ 360.0 | degree   | 반시계방향(+), 시계방향(-) |
+| rotationalVelocity    | float  | 4 Byte   | 10.0 ~ 180.0   | degree/s | 좌우 회전 속도       |
 
 
 <br>
