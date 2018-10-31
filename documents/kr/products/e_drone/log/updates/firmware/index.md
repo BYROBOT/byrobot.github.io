@@ -13,6 +13,22 @@ Modified : 2018.10.31
 
 # 2018.10.31
 
+- **Drone: 0.2.19**
+- Controller: 0.2.15
+
+> - 바이스크래치 블럭 코딩에서 오른쪽으로 회전하지 않는 현상 수정
+
+
+[Download](https://drive.google.com/open?id=12laWDx2UjLTwVd3jOeRJuYEWvmkY6vx6)
+
+
+<br>
+
+---
+
+
+# 2018.10.31
+
 - **Drone: 0.2.18**
 - Controller: 0.2.15
 
