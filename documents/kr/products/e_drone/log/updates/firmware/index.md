@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.26
+Modified : 2018.10.31
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2018.10.26
 
 
 <br>
+
+
+# 2018.10.31
+
+- **Drone: 0.2.18**
+- Controller: 0.2.15
+
+> - 드론에서 외부 Range 센서 모듈의 데이터를 수집
+> - 드론에 'DataType::Range'를 요청 시 외부 Range 센서의 데이터를 통합하여 전달(센서가 연결되지 않은 경우 -1, 연결되었으나 감지할 수 있는 거리를 벗어난 경우 8000이 넘는 값을 출력함. 값의 단위는 mm)
+> - 호버링 안정화
+
+
+[Download](https://drive.google.com/open?id=1pcdTc3TwpIynK6D0kJO_ugnlO5ZFFSTj)
+
+
+<br>
+
+---
 
 
 # 2018.10.26
