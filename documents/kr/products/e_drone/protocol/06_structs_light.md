@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Light**
 
-Modified : 2018.9.20
+Modified : 2018.11.26
 
 ---
 
@@ -40,6 +40,8 @@ namespace Light
                 RearFlicker,            // 깜빡임
                 RearFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
                 RearDimming,            // 밝기 제어하여 천천히 깜빡임
+                RearSunrise,            // 꺼진 상태에서 점점 밝아짐
+                RearSunset,             // 켜진 상태에서 점점 어두워짐
                 
                 BodyNone = 0x20,
                 BodyManual,             // 수동 제어
@@ -47,6 +49,8 @@ namespace Light
                 BodyFlicker,            // 깜빡임
                 BodyFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
                 BodyDimming,            // 밝기 제어하여 천천히 깜빡임
+                BodySunrise,            // 꺼진 상태에서 점점 밝아짐
+                BodySunset,             // 켜진 상태에서 점점 어두워짐
                 
                 ANone = 0x30,
                 AManual,                // 수동 제어
@@ -54,6 +58,8 @@ namespace Light
                 AFlicker,               // 깜빡임
                 AFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
                 ADimming,               // 밝기 제어하여 천천히 깜빡임
+                ASunrise,               // 꺼진 상태에서 점점 밝아짐
+                ASunset,                // 켜진 상태에서 점점 어두워짐
                 
                 BNone = 0x40,
                 BManual,                // 수동 제어
@@ -61,6 +67,8 @@ namespace Light
                 BFlicker,               // 깜빡임
                 BFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
                 BDimming,               // 밝기 제어하여 천천히 깜빡임
+                BSunrise,               // 꺼진 상태에서 점점 밝아짐
+                BSunset,                // 켜진 상태에서 점점 어두워짐
                 
                 CNone = 0x50,
                 CManual,                // 수동 제어
@@ -68,6 +76,8 @@ namespace Light
                 CFlicker,               // 깜빡임
                 CFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
                 CDimming,               // 밝기 제어하여 천천히 깜빡임
+                CSunrise,               // 꺼진 상태에서 점점 밝아짐
+                CSunset,                // 켜진 상태에서 점점 어두워짐
                 
                 EndOfType
             };
@@ -141,6 +151,8 @@ namespace Light
                 BodyFlicker,        // 깜빡임
                 BodyFlickerDouble,  // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
                 BodyDimming,        // 밝기 제어하여 천천히 깜빡임
+                BodySunrise,        // 꺼진 상태에서 점점 밝아짐
+                BodySunset,         // 켜진 상태에서 점점 어두워짐
                 
                 EndOfType
             };
@@ -200,20 +212,20 @@ namespace Light
         enum Type
         {
             AliceBlue,              // 0x00
-            AntiqueWhite,           // 0x01 
+            AntiqueWhite,           // 0x01
             Aqua,                   // 0x02
             Aquamarine,             // 0x03
             Azure,                  // 0x04
             Beige,                  // 0x05
-            Bisque,                 // 0x06 
-            Black,                  // 0x07 
-            BlanchedAlmond,         // 0x08 
-            Blue,                   // 0x09 
+            Bisque,                 // 0x06
+            Black,                  // 0x07
+            BlanchedAlmond,         // 0x08
+            Blue,                   // 0x09
             BlueViolet,             // 0x0A
-            Brown,                  // 0x0B 
-            BurlyWood,              // 0x0C 
-            CadetBlue,              // 0x0D 
-            Chartreuse,             // 0x0E 
+            Brown,                  // 0x0B
+            BurlyWood,              // 0x0C
+            CadetBlue,              // 0x0D
+            Chartreuse,             // 0x0E
             Chocolate,              // 0x0F
             Coral,                  // 0x10
             CornflowerBlue,         // 0x11
