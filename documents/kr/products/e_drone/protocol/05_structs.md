@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.11.21
+Modified : 2018.11.26
 
 ---
 
@@ -328,7 +328,7 @@ namespace Control
 
 드론 이동 명령
 
-RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, position과 velocity의 값에 x10을 적용.
+추후 제거할 예정
 
 ```cpp
 namespace Control
@@ -366,7 +366,7 @@ namespace Control
 
 드론 이동 명령
 
-드론에 UART 또는 USB를 통해 이동 명령을 내리는 경우 사용. 데이터 길이가 길어서 RF로는 전송할 수 없음.
+드론에 이동 명령을 내리는 경우 사용.
 
 ```cpp
 namespace Control
