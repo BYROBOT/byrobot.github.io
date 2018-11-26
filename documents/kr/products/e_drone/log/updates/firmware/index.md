@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.10.31
+Modified : 2018.11.26
 
 ---
 
@@ -9,6 +9,49 @@ Modified : 2018.10.31
 
 
 <br>
+
+
+# 2018.11.26
+
+- **Drone: 1.0.1**
+- **Controller: 1.0.1**
+
+> - 고도, 회번, 자세, 플립 비행 안정화
+> - 드론 비행 시간을 시:분:초 로 표시하게 함. 이전에는 ms로 표시
+> - 배터리가 30% 미만이거나 기체가 무거울 때 플립을 할 수 없음
+> - 충돌 시 모터가 정지하지 않는 문제 수정
+> - 백라이트 ON/OFF 설정을 플래시 메모리에 저장
+> - 드론과 조종기의 모든 LED 동작 모드에 Sunrise, Sunset 추가
+> - 조종기 설정 화면 Light 메뉴에 SUNRISE, SUNSET 모드를 추가
+> - 조종기 전면 좌측 위의 버튼을 짧게 누르면 속도 변경
+> - 조종기 전면 우측 위의 버튼을 짧게 누르면 LED 기본 색상 변경(R, G, B, C, M, Y, W 순서로 바뀜)
+> - 데이터 저장 블럭의 크기를 512바이트에서 256바이트로 줄임
+> - RF 데이터 송수신 구조 수정
+> - 조종기에서 페어링 시 페어링에 필요한 데이터 이외에는 전송 차단
+> - 동작 중 RF 칩이 리셋되면 RF 칩 초기화
+> - **Control::Position** 내부 변수 중 **heading**과 **rotationalVelocity**의 변수형을 **float**에서 **int16_t**로 변경
+> - InformationAssembledForController의 angleRoll, anglePitch 크기를 1바이트에서 2바이트로 변경
+
+
+[Download](https://drive.google.com/open?id=1lPQJMa7fzgPj9UhWcc3w3bGusudk7ZJ3)
+
+
+<br>
+
+---
+
+
+# 2018.11.2
+
+- **Drone: 1.0.0**
+- **Controller: 1.0.0**
+
+> - 정식 제품 출시
+
+
+<br>
+
+---
 
 
 # 2018.10.31 - 2

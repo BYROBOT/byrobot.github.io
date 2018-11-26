@@ -8,10 +8,11 @@
  5. [Examples - Information](examples_01_information.md)
  6. [Examples - Imu](examples_02_imu.md)
  7. [Examples - Test Flight](examples_03_test_flight.md)
+ 8. [Examples - Light](examples_04_light.md)
 
 [Install Python 3 on macOS](/documents/kr/manual/install_python_3_on_mac_os/)
 
 
 ---
 
-Modified : 2018.5.18
+Modified : 2018.11.26

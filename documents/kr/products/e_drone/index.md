@@ -17,19 +17,19 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">0.2.19</div></td>
+            <td><div align="center">1.0.1</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">0.2.15</div></td>
+            <td><div align="center">1.0.1</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.10.31</div></td>
+            <td colspan="2"><div align="center">2018.11.26</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=12laWDx2UjLTwVd3jOeRJuYEWvmkY6vx6" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1lPQJMa7fzgPj9UhWcc3w3bGusudk7ZJ3" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -38,6 +38,19 @@
         <tr>
             <td><div align="center">Update Manual</div></td>
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/manual/update/">한국어</a></div></td>
+        </tr>
+        <tr>
+            <td colspan="3"><div align="center">&nbsp;<br>Driver<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td>
+                <div align="center">Download</div>
+            </td>
+            <td colspan="2">
+                <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
+                <div align="center">Win 10은 자동 인식</div>
+            </td>
         </tr>
         <tr>
             <td colspan="3"><div align="center">&nbsp;<br>Documents<br>&nbsp;</div></td>
@@ -59,4 +72,4 @@
 
 ---
 
-Modified : 2018.10.31
+Modified : 2018.11.26

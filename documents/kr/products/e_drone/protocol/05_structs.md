@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.10.26
+Modified : 2018.11.21
 
 ---
 
@@ -338,7 +338,7 @@ namespace Control
         s16     positionX;          // meter    x 10
         s16     positionY;          // meter    x 10
         s16     positionZ;          // meter    x 10
-        s16     velocity;          // m/s      x 10
+        s16     velocity;           // m/s      x 10
         
         s16     heading;            // degree
         s16     rotationalVelocity; // deg/s
@@ -377,25 +377,23 @@ namespace Control
         float       positionY;              // meter
         float       positionZ;              // meter
         
-        float       velocityX;              // m/s
-        float       velocityY;              // m/s
-        float       velocityZ;              // m/s
+        float       velocity;               // m/s
         
-        float       heading;                // degree
-        float       rotationalVelocity;     // deg/s
+        s16         heading;                // degree
+        s16         rotationalVelocity;     // deg/s
     };
 }
 ```
 
 
-| 변수 이름             | 형식   | 크기     | 범위           | 단위     | 설명                 |
-|:---------------------:|:------:|:--------:|:--------------:|:---------|:---------------------|
-| positionX             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
-| positionY             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
-| positionZ             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
-| velocity              | float  | 4 Byte   | 0.0 ~ 5.0      | m/s      | 앞뒤 이동 속도       |
-| heading               | float  | 4 Byte   | -360.0 ~ 360.0 | degree   | 반시계방향(+), 시계방향(-) |
-| rotationalVelocity    | float  | 4 Byte   | 10.0 ~ 180.0   | degree/s | 좌우 회전 속도       |
+| 변수 이름             | 형식     | 크기     | 범위           | 단위     | 설명                 |
+|:---------------------:|:--------:|:--------:|:--------------:|:---------|:---------------------|
+| positionX             | float    | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
+| positionY             | float    | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
+| positionZ             | float    | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
+| velocity              | float    | 4 Byte   | 0.0 ~ 5.0      | m/s      | 앞뒤 이동 속도       |
+| heading               | int16_t  | 2 Byte   | -360 ~ 360     | degree   | 반시계방향(+), 시계방향(-) |
+| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 180       | degree/s | 좌우 회전 속도       |
 
 
 <br>
@@ -1231,8 +1229,8 @@ namespace Protocol
 {
     struct InformationAssembledForController
     {
-        s8      angleRoll;              // 자세 Roll
-        s8      anglePitch;             // 자세 Pitch
+        s16     angleRoll;              // 자세 Roll
+        s16     anglePitch;             // 자세 Pitch
         s16     angleYaw;               // 자세 Yaw
 
         u16     rpm;                    // RPM

@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.10.22
+Modified : 2018.11.23
 
 ---
 
@@ -90,8 +90,8 @@ namespace Protocol
             DisplayDrawImage,                       // 그림 그리기
 
             // Information Assembled
-            InformationAssembledForController       = 0xA0,     // 자주 갱신되는 비행 데이터 모음
-            InformationAssembledForEntry            = 0xA1,     // 자주 갱신되는 비행 데이터 모음
+            InformationAssembledForController       = 0xA0,     // 데이터 모음
+            InformationAssembledForEntry            = 0xA1,     // 데이터 모음
 
             // Navigation
             NavigationTarget                        = 0xD0,     // 네비게이션 목표점
@@ -133,7 +133,7 @@ namespace Protocol
 | Registration                          | 0x0D | -    | 제품 등록                                      | &nbsp; |
 | Administrator                         | 0x0E | -    | 관리자                                         | &nbsp; |
 | Monitor                               | 0x0F | -    | 디버깅 데이터                                  | &nbsp; |
-| Control                               | 0x10 | D    | 조종                                           | [Control::Quad8](05_structs.md#Control_Quad8),<br> [Control::Quad8AndRequestData](05_structs.md#Control_Quad8AndRequestData),<br> [Control::Position16](05_structs.md#Control_Position16),<br> [Control::Position](05_structs.md#Control_Position) |
+| Control                               | 0x10 | D    | 조종                                           | [Control::Quad8](05_structs.md#Control_Quad8),<br> [Control::Quad8AndRequestData](05_structs.md#Control_Quad8AndRequestData),<br> [Control::Position](05_structs.md#Control_Position) |
 | Command                               | 0x11 | A    | 명령                                           | [Protocol::Command::Command](05_structs.md#Protocol_Command_Command),<br> [Protocol::Command::LightEvent](05_structs.md#Protocol_Command_LightEvent),<br> [Protocol::Command::LightEventColor](05_structs.md#Protocol_Command_LightEventColor),<br> [Protocol::Command::LightEventColors](05_structs.md#Protocol_Command_LightEventColors) |
 | Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
 | Rssi                                  | 0x13 | A    | RSSI                                           | [Protocol::Rssi](05_structs.md#Protocol_Rssi) |

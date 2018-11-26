@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **System**
 
-Modified : 2018.10.8
+Modified : 2018.11.26
 
 ---
 
@@ -336,6 +336,7 @@ class Trim(Enum):
  5. [Examples - Information](examples_01_information.md)
  6. [Examples - Imu](examples_02_imu.md)
  7. [Examples - Test Flight](examples_03_test_flight.md)
+ 8. [Examples - Light](examples_04_light.md)
 
 <br>
 

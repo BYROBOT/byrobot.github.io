@@ -67,6 +67,7 @@ namespace ModelNumber
     {
         //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
         Drone_4_Drone_P4        = 0x00041004,       // Drone_4_Drone_P4
+        Drone_4_Drone_P5        = 0x00041005,       // Drone_4_Drone_P5
 
         Drone_4_Controller_P1   = 0x00042001,       // Drone_4_Controller_P1
         Drone_4_Controller_P2   = 0x00042002,       // Drone_4_Controller_P2

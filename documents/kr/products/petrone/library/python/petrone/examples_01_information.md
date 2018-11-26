@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2018.10.8
+Modified : 2018.11.26
 
 ---
 
@@ -515,6 +515,7 @@ eventLinkEvent() / EventLink.Disconnected / 22
  5. **Examples - Information**
  6. [Examples - Imu](examples_02_imu.md)
  7. [Examples - Test Flight](examples_03_test_flight.md)
+ 8. [Examples - Light](examples_04_light.md)
 
 <br>
 
