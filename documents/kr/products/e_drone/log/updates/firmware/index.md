@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.11.26
+Modified : 2018.11.27
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2018.11.26
 
 
 <br>
+
+
+# 2018.11.27
+
+- **Drone: 1.0.2**
+- **Controller: 1.0.2**
+
+> - RF 연결과 관련된 Light 이벤트 수정
+> - 고도 튀는 현상 수정
+
+
+[Download](https://drive.google.com/open?id=1N6DntJUG3G6K3NXd8F02Uiu7ub6ykaWv)
+
+
+<br>
+
+---
 
 
 # 2018.11.26
