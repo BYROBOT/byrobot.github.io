@@ -21,15 +21,15 @@
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">1.0.2</div></td>
+            <td><div align="center">1.0.3</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.11.27</div></td>
+            <td colspan="2"><div align="center">2018.11.28</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1N6DntJUG3G6K3NXd8F02Uiu7ub6ykaWv" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=16KZXNAf9SRyKWoXe7c6Uim_2tzBm428e" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -72,4 +72,4 @@
 
 ---
 
-Modified : 2018.11.27
+Modified : 2018.11.28

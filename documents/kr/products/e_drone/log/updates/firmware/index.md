@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.11.27
+Modified : 2018.11.28
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2018.11.27
 
 
 <br>
+
+
+# 2018.11.28
+
+- Drone: 1.0.2
+- **Controller: 1.0.3**
+
+> - 이착륙 버튼을 사용 중 낮은 확률로 조종이 중단되는 문제 수정
+> - 이착륙 버튼 아래의 버튼을 눌렀을 때 Link 모드로 전환되는 문제 수정
+> - LINK 모드에서도 주기적으로 드론의 데이터 요청(배터리 잔량 업데이트 등에 사용)
+> - LINK 모드에서 처음 PC에서 데이터를 받기 전까지 조이스틱과 버튼을 조작할 수 없었던 문제 수정
+> - LINK 모드일 때 특정 장치로부터 데이터를 받은 후 부터 조이스틱과 버튼 입력을 PC에 전송하게 함(Tester, Monitor, Scratch, Entry, ByScratch)
+> - LINK 모드에서 전원 버튼을 짧게 눌렀다가 떼면 조종 모드로 전환(드론에 문제가 생긴 경우 사용, 다시 LINK 모드로 전환하려면 USB를 분리했다 다시 연결해야 함)
+
+
+[Download](https://drive.google.com/open?id=16KZXNAf9SRyKWoXe7c6Uim_2tzBm428e)
+
+
+<br>
+
+---
 
 
 # 2018.11.27
