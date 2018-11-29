@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.11.28
+Modified : 2018.11.29
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2018.11.28
 
 
 <br>
+
+
+# 2018.11.29
+
+- **Drone: 1.0.3**
+- **Controller: 1.0.4**
+
+> - 고도 안정화
+> - 호버링 안정화
+> - RF 동일 채널을 사용하는 조종기가 있을 때의 조종 안정성 향상
+> - 조종 화면 중 조이스틱 화면에 실제 드론에 전달하는 조종 값을 표시(모드에 따라 R, P, Y, T의 위치가 바뀜)
+> - 조종 화면 중 RF 화면 중앙 그래프 내부의 폰트를 10x16으로 변경
+> - 조종 화면 중 RF 화면 우측 하단에 응답 수신률의 평균 값을 표시
+
+
+[Download](https://drive.google.com/open?id=1z55A8It5IpabF8iPVIUSqAdGvA86qIE-)
+
+
+<br>
+
+---
 
 
 # 2018.11.28
