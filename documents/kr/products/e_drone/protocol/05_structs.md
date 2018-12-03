@@ -376,7 +376,6 @@ namespace Control
         float       positionX;              // meter
         float       positionY;              // meter
         float       positionZ;              // meter
-        
         float       velocity;               // m/s
         
         s16         heading;                // degree

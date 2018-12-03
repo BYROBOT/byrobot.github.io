@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.11.29
+Modified : 2018.12.4
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2018.11.29
 
 
 <br>
+
+
+# 2018.12.4
+
+- **Drone: 1.0.4**
+- **Controller: 1.0.5**
+
+> - Reverse 경고 활성화(이륙 실패 시에만 표시)
+> - 바이블럭에서 10% 조종기값 적용 안되는 현상 수정
+> - 이륙 속도를 0.7m/s로 변경
+> - 모드 1, 3, 4에서 수동 이륙 가능하게 함
+
+
+[Download](https://drive.google.com/open?id=1-TvDtzoEYvBLOGVrtsiwF4hcQWuIZz2g)
+
+
+<br>
+
+---
 
 
 # 2018.11.29
