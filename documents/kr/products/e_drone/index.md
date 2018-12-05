@@ -57,10 +57,18 @@
         </tr>
         <tr>
             <td>
+                <div align="center">Version</div>
+            </td>
+            <td colspan="2">
+                <div align="center">1.0.12</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <div align="center">Download</div>
             </td>
             <td colspan="2">
-                <div align="center"><a href="https://drive.google.com/open?id=1N-jgwEfvZWofwI1_oxppDXOK7QrOArND" target="_blank">Android<br>(Android 4.4 이상)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1N-jgwEfvZWofwI1_oxppDXOK7QrOArND" target="_blank">Android (4.4 이상)</a></div>
             </td>
         </tr>
         <tr>
