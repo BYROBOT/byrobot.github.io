@@ -65,6 +65,14 @@
         </tr>
         <tr>
             <td>
+                <div align="center">Release Date</div>
+            </td>
+            <td colspan="2">
+                <div align="center">2018.12.5</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <div align="center">Download</div>
             </td>
             <td colspan="2">
