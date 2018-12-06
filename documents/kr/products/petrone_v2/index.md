@@ -16,8 +16,8 @@
                 <div align="center">
                     <a href="#Firmware"><span style="color:#088A4B">Firmware</span></a>&nbsp;
                     <a href="#Driver"><span style="color:#DF0174">Driver</span></a>&nbsp;
-                    <a href="#Documents"><span style="color:#088A4B">Documents</span></a>
-                    <a href="#Repository"><span style="color:#DF0174">Repository</span></a>&nbsp;
+                    <a href="#Documents"><span style="color:#088A4B">Documents</span></a>&nbsp;
+                    <a href="#Repository"><span style="color:#DF0174">Repository</span></a>
                 </div>
             </td>
         </tr>
