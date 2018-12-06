@@ -12,12 +12,12 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3">
+            <td colspan="3" bgcolor='#EFF8FB'>
                 <div align="center">
-                    <a href="#Firmware"><span style="color:#8A084B">Firmware</span></a>&nbsp;
-                    <a href="#Driver"><span style="color:#0B3861">Driver</span></a>&nbsp;
-                    <a href="#ByBlocks"><span style="color:#0B3861">ByBlocks</span></a>&nbsp;
-                    <a href="#Documents"><span style="color:#0B3861">Documents</span></a>
+                    <a href="#Firmware"><span style="color:#B4045F">Firmware</span></a>&nbsp;
+                    <a href="#Driver"><span style="color:#01A9DB">Driver</span></a>&nbsp;
+                    <a href="#ByBlocks"><span style="color:#B4045F">ByBlocks</span></a>&nbsp;
+                    <a href="#Documents"><span style="color:#01A9DB">Documents</span></a>
                 </div>
             </td>
         </tr>
