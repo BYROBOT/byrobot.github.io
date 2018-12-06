@@ -14,10 +14,10 @@
         <tr>
             <td colspan="3">
                 <div align="center">
-                    <a href="#Firmware"><span style="color:#0489B1">Firmware</span></a>&nbsp;
-                    <a href="#Driver"><span style="color:#FF4000">Driver</span></a>&nbsp;
-                    <a href="#ByBlocks"><span style="color:#0489B1">ByBlocks</span></a>&nbsp;
-                    <a href="#Documents"><span style="color:#FF4000">Documents</span></a>
+                    <a href="#Firmware"><span style="color:#088A4B">Firmware</span></a>&nbsp;
+                    <a href="#Driver"><span style="color:#0489B1">Driver</span></a>&nbsp;
+                    <a href="#ByBlocks"><span style="color:#088A4B">ByBlocks</span></a>&nbsp;
+                    <a href="#Documents"><span style="color:#0489B1">Documents</span></a>
                 </div>
             </td>
         </tr>
