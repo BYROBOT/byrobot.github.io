@@ -12,7 +12,14 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3"><div align="center">&nbsp;<br><a href="#Firmware"><span style="color:#FE2E9A">Firmware</span></a>&nbsp;<a href="#Driver"><span style="color:#2EFE9A">Driver</span></a>&nbsp;<br>&nbsp;</div></td>
+            <td colspan="3">
+                <div align="center">
+                    <a href="#Firmware"><span style="color:#8A084B">Firmware</span></a>&nbsp;
+                    <a href="#Driver"><span style="color:#0B3861">Driver</span></a>&nbsp;
+                    <a href="#ByBlocks"><span style="color:#0B3861">ByBlocks</span></a>&nbsp;
+                    <a href="#Documents"><span style="color:#0B3861">Documents</span></a>
+                </div>
+            </td>
         </tr>
         <tr>
             <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
@@ -56,7 +63,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3"><div align="center">&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
+            <td colspan="3"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td>
@@ -83,7 +90,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3"><div align="center">&nbsp;<br>Documents<br>&nbsp;</div></td>
+            <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">User Manual</div></td>
