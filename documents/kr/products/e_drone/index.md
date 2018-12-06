@@ -12,7 +12,10 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3"><div align="center">&nbsp;<br>Firmware<br>&nbsp;</div></td>
+            <td colspan="3"><div align="center">&nbsp;<br><a href="#Firmware">Firmware</a>&nbsp;<a href="#Driver">Driver</a>&nbsp;<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td colspan="3"><div align="center">&nbsp;<br><a name="Firmware">Firmware</a><br>&nbsp;</div></td>
         </tr>
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
@@ -40,7 +43,7 @@
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/manual/update/">한국어</a></div></td>
         </tr>
         <tr>
-            <td colspan="3"><div align="center">&nbsp;<br>Driver<br>&nbsp;</div></td>
+            <td colspan="3"><div align="center">&nbsp;<br><a name="Driver">Driver</a><br>&nbsp;</div></td>
         </tr>
         <tr>
             <td>
@@ -99,4 +102,4 @@
 
 ---
 
-Modified : 2018.12.5
+Modified : 2018.12.6
