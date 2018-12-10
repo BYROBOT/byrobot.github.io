@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2018.10.8
+Modified : 2018.12.6
 
 ---
 
@@ -63,6 +63,7 @@ class DataType(Enum):
     Position                    = 0x42      # 위치
     Altitude                    = 0x43      # 높이, 고도
     Motion                      = 0x44      # Motion 센서 데이터(IMU)
+    Range                       = 0x45      # 거리센서 데이터
 
     # 설정
     Count                       = 0x50      # 카운트
@@ -139,9 +140,7 @@ class CommandType(Enum):
     FlightEvent             = 0x07      # 비행 이벤트 실행
 
     SetDefault              = 0x08      # 기본 설정으로 초기화
-
-    # 관리자
-    ClearCounter            = 0xA0      # 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
+    Backlight               = 0x09      # 조종기 백라이트 설정
 
     # Navigation
     NavigationTargetClear   = 0xE0      # 네비게이션 목표점 초기화
@@ -347,12 +346,12 @@ class Version(ISerializable):
         self.v              = 0         # build, minor, major을 하나의 UInt32로 묶은 것(버젼 비교 시 사용)
 ```
 
-| 변수 이름  | 형식                                              | 크기     | 범위       | 설명         |
-|:----------:|:-------------------------------------------------:|:--------:|:----------:|:-------------|
-| build      | UInt16                                            | 2 Byte   | 0 ~ 65535  | 빌드 번호    |
-| minor      | UInt8                                             | 1 Byte   | 0 ~ 255    | 부 번호      |
-| major      | UInt8                                             | 1 Byte   | 0 ~ 255    | 주 번호      |
-| v          | UInt32                                            | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
+| 변수 이름  | 형식         | 크기     | 범위       | 설명         |
+|:----------:|:------------:|:--------:|:----------:|:-------------|
+| build      | UInt16       | 2 Byte   | 0 ~ 65535  | 빌드 번호    |
+| minor      | UInt8        | 1 Byte   | 0 ~ 255    | 부 번호      |
+| major      | UInt8        | 1 Byte   | 0 ~ 255    | 주 번호      |
+| v          | UInt32       | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
 
 
 <br>
