@@ -17,7 +17,8 @@
                     <a href="#Firmware"><span style="color:#0489B1">Firmware</span></a>&nbsp;
                     <a href="#Driver"><span style="color:#FF4000">Driver</span></a>&nbsp;
                     <a href="#Documents"><span style="color:#0489B1">Documents</span></a>&nbsp;
-                    <a href="#Repository"><span style="color:#FF4000">Repository</span></a>
+                    <a href="#Python"><span style="color:#FF4000">Python</span></a>&nbsp;
+                    <a href="#Repository"><span style="color:#0489B1">Repository</span></a>
                 </div>
             </td>
         </tr>
@@ -87,6 +88,28 @@
             </td>
         </tr>
         <tr>
+            <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Library</div></td>
+            <td colspan="2"><div align="center"><a href="https://pypi.org/project/petrone/" target="_blank">petrone</a></div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Version</div></td>
+            <td colspan="2"><div align="center">0.1.57</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.11.26</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Manual</div></td>
+            <td colspan="2">
+                <div align="center"><a href="/documents/kr/products/petrone/library/python/petrone/">한국어</a>,&nbsp;
+                <a href="/documents/en/products/petrone/library/python/petrone/">English</a></div>
+            </td>
+        </tr>
+        <tr>
             <td colspan="3"><div align="center"><a name="Repository"></a>&nbsp;<br>Repository<br>&nbsp;</div></td>
         </tr>
         <tr>
@@ -113,4 +136,4 @@
 
 ---
 
-Modified : 2018.12.6
+Modified : 2018.12.11

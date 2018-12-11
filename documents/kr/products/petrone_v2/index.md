@@ -17,7 +17,8 @@
                     <a href="#Firmware"><span style="color:#088A4B">Firmware</span></a>&nbsp;
                     <a href="#Driver"><span style="color:#DF0174">Driver</span></a>&nbsp;
                     <a href="#Documents"><span style="color:#088A4B">Documents</span></a>&nbsp;
-                    <a href="#Repository"><span style="color:#DF0174">Repository</span></a>
+                    <a href="#Python"><span style="color:#DF0174">Python</span></a>&nbsp;
+                    <a href="#Repository"><span style="color:#088A4B">Repository</span></a>
                 </div>
             </td>
         </tr>
@@ -86,16 +87,29 @@
             </td>
         </tr>
         <tr>
-            <td><div align="center">Python Library</div></td>
-            <td colspan="2">
-                <div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">한국어</a></div>
-            </td>
-        </tr>
-        <tr>
             <td><div align="center">Entry Examples</div></td>
             <td colspan="2">
                 <div align="center"><a href="/documents/kr/products/petrone_v2/entry/examples/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone_v2/entry/examples/">English</a></div>
             </td>
+        </tr>
+        <tr>
+            <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Library</div></td>
+            <td colspan="2"><div align="center"><a href="https://pypi.org/project/petrone-v2/" target="_blank">petrone_v2</a></div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Version</div></td>
+            <td colspan="2"><div align="center">0.1.81</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.8.2</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Manual</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/petrone_v2/library/python/petrone_v2/">한국어</a></div></td>
         </tr>
         <tr>
             <td colspan="3"><div align="center"><a name="Repository"></a>&nbsp;<br>Repository<br>&nbsp;</div></td>
@@ -113,4 +127,4 @@
 
 ---
 
-Modified : 2018.12.6
+Modified : 2018.12.11
