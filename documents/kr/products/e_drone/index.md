@@ -16,8 +16,9 @@
                 <div align="center">
                     <a href="#Firmware"><span style="color:#0489B1">Firmware</span></a>&nbsp;
                     <a href="#Driver"><span style="color:#FF4000">Driver</span></a>&nbsp;
-                    <a href="#ByBlocks"><span style="color:#0489B1">ByBlocks</span></a>&nbsp;
-                    <a href="#Documents"><span style="color:#FF4000">Documents</span></a>
+                    <a href="#Documents"><span style="color:#0489B1">Documents</span></a>&nbsp;
+                    <a href="#ByBlocks"><span style="color:#FF4000">ByBlocks</span></a>&nbsp;
+                    <a href="#Python"><span style="color:#0489B1">Python</span></a>
                 </div>
             </td>
         </tr>
@@ -27,19 +28,19 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">1.0.4</div></td>
-        </tr>
-        <tr>
-            <td><div align="center">Controller</div></td>
             <td><div align="center">1.0.5</div></td>
         </tr>
         <tr>
+            <td><div align="center">Controller</div></td>
+            <td><div align="center">1.0.6</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.12.4</div></td>
+            <td colspan="2"><div align="center">2018.12.11</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1-TvDtzoEYvBLOGVrtsiwF4hcQWuIZz2g" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1SO7FqX1txobr0dopoVJavsJf6rgjI5sB" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -63,33 +64,6 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
-        </tr>
-        <tr>
-            <td>
-                <div align="center">Version</div>
-            </td>
-            <td colspan="2">
-                <div align="center">1.0.12</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div align="center">Release Date</div>
-            </td>
-            <td colspan="2">
-                <div align="center">2018.12.5</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div align="center">Download</div>
-            </td>
-            <td colspan="2">
-                <div align="center"><a href="https://drive.google.com/open?id=1N-jgwEfvZWofwI1_oxppDXOK7QrOArND" target="_blank">Android (4.4 이상)</a></div>
-            </td>
-        </tr>
-        <tr>
             <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
@@ -101,7 +75,41 @@
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
         </tr>
         <tr>
-            <td><div align="center">Python Library</div></td>
+            <td colspan="3"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Version</div></td>
+            <td colspan="2"><div align="center">1.0.12</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.12.5</div></td>
+        </tr>
+        <tr>
+            <td>
+                <div align="center">Download</div>
+            </td>
+            <td colspan="2">
+                <div align="center"><a href="https://drive.google.com/open?id=1N-jgwEfvZWofwI1_oxppDXOK7QrOArND" target="_blank">Android (4.4 이상)</a></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Library</div></td>
+            <td colspan="2"><div align="center"><a href="https://pypi.python.org/pypi/e_drone" target="_blank">e_drone</a></div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Version</div></td>
+            <td colspan="2"><div align="center">0.1.13</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Release Date</div></td>
+            <td colspan="2"><div align="center">2018.12.5</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Manual</div></td>
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
         </tr>
     </table>
@@ -109,4 +117,4 @@
 
 ---
 
-Modified : 2018.12.6
+Modified : 2018.12.11

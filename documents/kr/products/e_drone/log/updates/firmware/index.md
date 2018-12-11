@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.12.4
+Modified : 2018.12.11
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2018.12.4
 
 
 <br>
+
+
+# 2018.12.11
+
+- **Drone: 1.0.5**
+- **Controller: 1.0.6**
+
+> - 무게 150g에서 호버링 안정화
+> - 리턴 홈 기능 안정화
+> - RF 통신 데이터 송수신부분 수정(업데이트 이후에는 이전 조종기 또는 드론과 통신이 안됨)
+> - 드론과 조종기 페어링 시 드론이 새로운 주소를 생성하게 함(여러 드론이 하나의 조종기와 페어링되는 현상을 막기 위함)
+
+
+[Download](https://drive.google.com/open?id=1SO7FqX1txobr0dopoVJavsJf6rgjI5sB)
+
+
+<br>
+
+---
 
 
 # 2018.12.4
