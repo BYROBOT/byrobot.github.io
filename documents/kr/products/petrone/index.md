@@ -82,12 +82,6 @@
             </td>
         </tr>
         <tr>
-            <td><div align="center">Python Library</div></td>
-            <td colspan="2">
-                <div align="center"><a href="/documents/kr/products/petrone/library/python/petrone/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone/library/python/petrone/">English</a></div>
-            </td>
-        </tr>
-        <tr>
             <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
         <tr>
