@@ -17,9 +17,10 @@ Modified : 2018.12.12
 - **Controller: 1.0.7**
 
 > - 제품 생산 관련 문제로 12월 11일 버전에서 변경했던 RF 데이터 송수신부 처리 방법과 페어링 변경 사항을 이전 상태로 되돌림(추후 다시 적용할 예정)
+> - DeviceType::Tester, DeviceType::Monitor 장치가 조종기와 USB로 연결된 경우 Link <-> 조종 모드 전환을 못하게 막음
 
 
-[Download](https://drive.google.com/open?id=1Kz6Nrn3XC0I81je_zcDtmrGH4k_4n0jI)
+[Download](https://drive.google.com/open?id=1bfUo0DlxnkkrpQMV0S6yIWEDJCGH4_yL)
 
 
 <br>

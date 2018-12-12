@@ -40,7 +40,7 @@
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1Kz6Nrn3XC0I81je_zcDtmrGH4k_4n0jI" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1bfUo0DlxnkkrpQMV0S6yIWEDJCGH4_yL" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
