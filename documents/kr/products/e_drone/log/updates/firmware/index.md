@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.12.11
+Modified : 2018.12.12
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2018.12.11
 
 
 <br>
+
+
+# 2018.12.12
+
+- **Drone: 1.0.6**
+- **Controller: 1.0.7**
+
+> - 제품 생산 관련 문제로 12월 11일 버전에서 변경했던 RF 데이터 송수신부 처리 방법과 페어링 변경 사항을 이전 상태로 되돌림(추후 다시 적용할 예정)
+
+
+[Download](https://drive.google.com/open?id=1Kz6Nrn3XC0I81je_zcDtmrGH4k_4n0jI)
+
+
+<br>
+
+---
 
 
 # 2018.12.11
