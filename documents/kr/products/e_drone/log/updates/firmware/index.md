@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2018.12.12
+Modified : 2019.1.7
 
 ---
 
@@ -9,6 +9,26 @@ Modified : 2018.12.12
 
 
 <br>
+
+
+# 2019.1.4
+
+- **Drone: 1.1.1**
+- **Controller: 1.1.1**
+
+> - RF 데이터 송수신 설정 및 CRC 확인 부분을 수정하여 이전 버전의 드론, 조종기와 혼용 불가
+> - 비행 중 이륙 명령 시 정지되는 문제 수정
+> - 채널을 10진수로 표시
+> - 장치 주소 표시 방법 변경
+> - 펌웨어 자동 업데이트 프로그램을 **Drone4AutoUpdater**에서 **Drone4AutoUpdaterLight**로 변경
+
+
+[Download](https://drive.google.com/open?id=1evhGziW8lAuBhKS6QomrtZoDm34-YudW)
+
+
+<br>
+
+---
 
 
 # 2018.12.12
