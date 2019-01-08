@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2018.5.4
+Modified : 2019.1.9
 
 ---
 
@@ -11,6 +11,24 @@ Modified : 2018.5.4
 <br>
 
 
+# 2019.1.9
+
+- **General Drone: 4.5**
+- **General Controller: 4.5**
+- Education Drone: 1703
+- Education Controller: 1802
+
+> - 일반 버전의 비행 고도 제어 안정화
+
+
+[Download](https://drive.google.com/open?id=1BTupi6vghIxuyltDQqAsq0kW9-ww2tct)
+
+
+<br>
+
+---
+
+
 # 2018.5.4
 
 - **General Drone: 4.2**
@@ -18,7 +36,11 @@ Modified : 2018.5.4
 - Education Drone: 1703
 - Education Controller: 1802
 
-> - 교육용 버젼에서 일반 버젼으로 변경했을 때 드론과 조종기의 주소와 설정이 0으로 모두 초기화되는 현상 수정
+> - 교육용 버전에서 일반 버전으로 변경했을 때 드론과 조종기의 주소와 설정이 0으로 모두 초기화되는 현상 수정
+
+
+[Download](https://drive.google.com/open?id=1Iu085RiTYxA8CBpZ80ZGDym7qCj0ETyy)
+
 
 <br>
 
@@ -32,7 +54,7 @@ Modified : 2018.5.4
 - Education Drone: 1703
 - Education Controller: 1802
 
-> - 교육용 버젼에서 일반 버젼으로 변경했을 때 팀 선택 및 LED 점등에 문제가 발생하는 것을 수정
+> - 교육용 버전에서 일반 버전으로 변경했을 때 팀 선택 및 LED 점등에 문제가 발생하는 것을 수정
 
 <br>
 

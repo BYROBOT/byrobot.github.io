@@ -27,11 +27,11 @@
             <td rowspan="4"><div align="center">Version</div></td>
             <td rowspan="2"><div align="center">General</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">4.2</div></td>
+            <td><div align="center">4.5</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">4.2</div></td>
+            <td><div align="center">4.5</div></td>
         </tr>
         <tr>
             <td rowspan="2"><div align="center">Education</div></td>
@@ -44,12 +44,12 @@
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="3"><div align="center">2018.5.4</div></td>
+            <td colspan="3"><div align="center">2019.1.9</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="3">
-                <div align="center"><a href="https://drive.google.com/open?id=1Iu085RiTYxA8CBpZ80ZGDym7qCj0ETyy" target="_blank">Windows</a>,&nbsp;<a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/DroneFighter_20180504_release_4.zip" target="_blank">Windows(2)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1BTupi6vghIxuyltDQqAsq0kW9-ww2tct" target="_blank">Windows</a></div>
             </td>
         </tr>
         <tr>
@@ -84,4 +84,4 @@
 
 ---
 
-Modified : 2018.12.6
+Modified : 2019.1.9
