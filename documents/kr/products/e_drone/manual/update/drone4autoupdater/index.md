@@ -1,10 +1,16 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2018.10.16
+Modified : 2019.1.9
 
 ---
 
 <h3>E-Drone 펌웨어 업데이트</h3>
+
+
+---
+
+- **Drone4AutoUpdater**
+- [Drone4AutoUpdaterLight](../drone4autoupdaterlight/)
 
 ---
 

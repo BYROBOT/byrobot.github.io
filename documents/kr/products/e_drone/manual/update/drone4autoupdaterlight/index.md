@@ -1,10 +1,15 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2019.1.7
+Modified : 2019.1.9
 
 ---
 
 <h3>E-Drone 펌웨어 업데이트</h3>
+
+---
+
+- [Drone4AutoUpdater](../drone4autoupdater/)
+- **Drone4AutoUpdaterLight**
 
 ---
 
@@ -127,11 +132,3 @@ Modified : 2019.1.7
 
 여기까지 E-Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
 
-
-<br>
-<br>
-
-
-**Drone4AutoUpdater** 프로그램의 사용 방법은 아래의 문서를 참고하시기 바랍니다.
-
-[Drone4AutoUpdater](../drone4autoupdater/)
