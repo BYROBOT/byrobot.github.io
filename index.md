@@ -3,6 +3,15 @@
 ---
 
 <div align="center">
+    <b>News</b><br>
+    <a href="/documents/kr/products/dronefighter2017/#Firmware">드론파이터 펌웨어 업데이트</a> <sup><i>2019.1.9</i></sup><br>
+    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">E-DRONE 펌웨어 업데이트 설명서 추가</a> <sup><i>2019.1.9</i></sup><br>
+    <a href="/documents/kr/products/e_drone/#Firmware">E-DRONE 펌웨어 업데이트</a> <sup><i>2018.12.12</i></sup>
+</div>
+
+---
+
+<div align="center">
 
     <table>
         <tr>
@@ -46,13 +55,5 @@
 
 ---
 
-<div align="center">
-    <b>News</b><br>
-    2019.1.9 <a href="/documents/kr/products/dronefighter2017/#Firmware">드론파이터 펌웨어 업데이트</a><br>
-    2019.1.9 <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">E-DRONE 펌웨어 업데이트 설명서 추가(Drone4AutoUpdaterLight)</a><br>
-    2018.12.12 <a href="/documents/kr/products/e_drone/#Firmware">E-DRONE 펌웨어 업데이트</a><br>
-</div>
-
----
 
 Modified : 2019.1.9
