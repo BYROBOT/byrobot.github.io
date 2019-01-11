@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2018.9.14
+Modified : 2019.1.11
 
 ---
 
@@ -114,6 +114,8 @@ if __name__ == '__main__':
 
 
 ## <a name="TrimIncDec">TrimIncDec 변경 테스트</a>
+
+* 예제가 정상적으로 동작하지 않습니다. 추후 수정하겠습니다.
 
 ```py
 from time import sleep

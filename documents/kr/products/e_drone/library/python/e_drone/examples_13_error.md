@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Error**
 
-Modified : 2018.9.14
+Modified : 2019.1.11
 
 ---
 
@@ -9,12 +9,8 @@ Modified : 2018.9.14
 
 ## <a name="Error_MotionCalibrating">Motion 센서 보정</a>
 
-2018.9.14
-
-정상 동작하지 않는 것을 확인하였습니다.
-추후 수정할 예정입니다.
-
 ```py
+# 드론 센서 캘리브레이션 요청 후 에러로 나타난 캘리브레이션 진행 상태를 화면에 표시
 from time import sleep
 
 from e_drone.drone import *

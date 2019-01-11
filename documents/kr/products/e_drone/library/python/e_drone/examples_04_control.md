@@ -23,12 +23,12 @@ if __name__ == '__main__':
 
     print("TakeOff")
     drone.sendTakeOff()
-    for i in range(3, 0, -1):
+    for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Hovering")
-    for i in range(5, 0, -1):
+    for i in range(3, 0, -1):
         print("{0}".format(i))
         drone.sendControlWhile(0, 0, 0, 0, 1000)
         sleep(0.01)
@@ -110,13 +110,13 @@ if __name__ == '__main__':
 
     print("TakeOff")
     drone.sendTakeOff()
-    for i in range(3, 0, -1):
+    for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Hovering")
     drone.sendControlWhile(0, 0, 0, 0, 3600)
-    for i in range(5, 0, -1):
+    for i in range(3, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
