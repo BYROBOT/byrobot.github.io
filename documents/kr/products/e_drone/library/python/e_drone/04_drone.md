@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2018.10.8
+Modified : 2019.1.11
 
 ---
 
@@ -389,10 +389,10 @@ def sendControlWhile(self, roll, pitch, yaw, throttle, timeMs):
 
 드론 이동 명령
 
-RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, position과 velocity의 값에 x10을 적용.
+모든 변수에 2byte 정수를 사용하는 대신 position과 velocity의 값에 x10을 적용.
 
 ```py
-def sendControlPosition16(self, positionX, positionY, positionZ, velocityX, velocityY, velocityZ, heading, rotationalVelocity):
+def sendControlPosition16(self, positionX, positionY, positionZ, velocity, heading, rotationalVelocity):
 ```
 
 | 변수 이름             | 형식     | 범위                       | 단위          | 설명                 |
@@ -400,13 +400,9 @@ def sendControlPosition16(self, positionX, positionY, positionZ, velocityX, velo
 | positionX             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
 | positionY             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
 | positionZ             | Int16    | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocityX             | Int16    | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 앞뒤 이동 속도       |
-| velocityY             | Int16    | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 좌우 이동 속도       |
-| velocityZ             | Int16    | 2 ~ 10(0.2 ~ 1.0)          | m/s x 10      | 승하강 속도          |
+| velocity              | Int16    | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 위치 이동 속도       |
 | heading               | Int16    | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
 | rotationalVelocity    | Int16    | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
-
-- e.g. [이륙, 호버링, 이동, 착륙 테스트](examples_04_control.md#ControlPosition16)
 
 
 <br>
@@ -417,10 +413,10 @@ def sendControlPosition16(self, positionX, positionY, positionZ, velocityX, velo
 
 드론 이동 명령
 
-드론에 UART 또는 USB를 통해 이동 명령을 내리는 경우 사용. 데이터 길이가 길어서 RF로는 전송할 수 없음.
+position과 velocity는 실수 값, heading과 rotationalVelocity에는 정수 값 사용
 
 ```py
-def sendControlPosition(self, positionX, positionY, positionZ, velocityX, velocityY, velocityZ, heading, rotationalVelocity):
+def sendControlPosition(self, positionX, positionY, positionZ, velocity, heading, rotationalVelocity):
 ```
 
 | 변수 이름             | 형식   | 범위           | 단위     | 설명                 |
@@ -428,11 +424,12 @@ def sendControlPosition(self, positionX, positionY, positionZ, velocityX, veloci
 | positionX             | float  | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
 | positionY             | float  | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
 | positionZ             | float  | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
-| velocityX             | float  | 0.5 ~ 2.0      | m/s      | 앞뒤 이동 속도       |
-| velocityY             | float  | 0.5 ~ 2.0      | m/s      | 좌우 이동 속도       |
-| velocityZ             | float  | 0.2 ~ 1.0      | m/s      | 승하강 속도          |
-| heading               | float  | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | float  | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
+| velocity              | float  | 0.5 ~ 2.0      | m/s      | 위치 이동 속도       |
+| heading               | Int16  | -360 ~ 360     | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | Int16  | 10 ~ 360       | degree/s | 좌우 회전 속도       |
+
+- e.g. [이륙, 호버링, 전진, 착륙 테스트](examples_04_control.md#ControlPosition)
+- e.g. [이륙, 호버링, 1미터 전진, 1미터 오른쪽 이동, 리턴 홈 테스트](examples_04_control.md#ControlReturnHome)
 
 
 <br>

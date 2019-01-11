@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2018.12.6
+Modified : 2019.1.11
 
 ---
 
@@ -672,7 +672,7 @@ class ControlQuad8AndRequestData(ISerializable):
 
 드론 이동 명령
 
-RF 통신으로 전달 가능한 데이터 길이의 제한 때문에 각 변수의 크기를 2byte로 제한하고, position과 velocity의 값에 x10을 적용.
+모든 변수에 2byte 정수를 사용하는 대신 position과 velocity의 값에 x10을 적용.
 
 ```py
 class ControlPosition16(ISerializable):
@@ -682,10 +682,8 @@ class ControlPosition16(ISerializable):
         self.positionY          = 0
         self.positionZ          = 0
 
-        self.velocityX          = 0
-        self.velocityY          = 0
-        self.velocityZ          = 0
-        
+        self.velocity          = 0
+
         self.heading            = 0
         self.rotationalVelocity = 0
 ```
@@ -695,9 +693,7 @@ class ControlPosition16(ISerializable):
 | positionX             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
 | positionY             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
 | positionZ             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocityX             | Int16  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 앞뒤 이동 속도       |
-| velocityY             | Int16  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 좌우 이동 속도       |
-| velocityZ             | Int16  | 2 Byte   | 2 ~ 10(0.2 ~ 1.0)          | m/s x 10      | 승하강 속도          |
+| velocity              | Int16  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 위치 이동 속도       |
 | heading               | Int16  | 2 Byte   | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
 | rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
 
@@ -711,7 +707,7 @@ class ControlPosition16(ISerializable):
 
 드론 이동 명령
 
-드론에 UART 또는 USB를 통해 이동 명령을 내리는 경우 사용. 데이터 길이가 길어서 RF로는 전송할 수 없음.
+position과 velocity는 실수 값, heading과 rotationalVelocity에는 정수 값 사용
 
 ```py
 class ControlPosition(ISerializable):
@@ -721,9 +717,7 @@ class ControlPosition(ISerializable):
         self.positionY          = 0
         self.positionZ          = 0
 
-        self.velocityX          = 0
-        self.velocityY          = 0
-        self.velocityZ          = 0
+        self.velocity           = 0
 
         self.heading            = 0
         self.rotationalVelocity = 0
@@ -734,11 +728,9 @@ class ControlPosition(ISerializable):
 | positionX             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
 | positionY             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
 | positionZ             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
-| velocityX             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 앞뒤 이동 속도       |
-| velocityY             | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 좌우 이동 속도       |
-| velocityZ             | float  | 4 Byte   | 0.2 ~ 1.0      | m/s      | 승하강 속도          |
-| heading               | float  | 4 Byte   | -360.0 ~ 360.0 | degree   | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | float  | 4 Byte   | 10.0 ~ 360.0   | degree/s | 좌우 회전 속도       |
+| velocity              | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 위치 이동 속도       |
+| heading               | Int16  | 2 Byte   | -360 ~ 360     | degree   | 좌회전(+), 우회전(-) |
+| rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 360       | degree/s | 좌우 회전 속도       |
 
 
 <br>

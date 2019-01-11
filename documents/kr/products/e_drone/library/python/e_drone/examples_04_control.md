@@ -94,7 +94,7 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="ControlPosition16">이륙, 호버링, 전진, 착륙 테스트</a>
+## <a name="ControlPosition">이륙, 호버링, 전진, 착륙 테스트</a>
 
 ```py
 from time import sleep
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
 - [sendTakeOff()](04_drone.md#sendTakeOff)
 - [sendControlWhile()](04_drone.md#sendControlWhile)
-- [sendControlPosition16()](04_drone.md#sendControlPosition16)
+- [sendControlPosition()](04_drone.md#sendControlPosition)
 - [sendLanding()](04_drone.md#sendLanding)
 
 
@@ -162,24 +162,24 @@ if __name__ == '__main__':
 
     print("TakeOff")
     drone.sendTakeOff()
-    for i in range(3, 0, -1):
+    for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Hovering")
     drone.sendControlWhile(0, 0, 0, 0, 3600)
-    for i in range(5, 0, -1):
+    for i in range(3, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Go Front 1 meter")
-    drone.sendControlPosition16(10, 0, 0, 5, 0, 0)
+    drone.sendControlPosition(1.0, 0, 0, 0.5, 0, 0)
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Go Right 1 meter")
-    drone.sendControlPosition16(0, -10, 0, 5, 0, 0)
+    drone.sendControlPosition(0, -1.0, 0, 0.5, 0, 0)
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
@@ -196,7 +196,7 @@ if __name__ == '__main__':
 
 - [sendTakeOff()](04_drone.md#sendTakeOff)
 - [sendControlWhile()](04_drone.md#sendControlWhile)
-- [sendControlPosition16()](04_drone.md#sendControlPosition16)
+- [sendControlPosition()](04_drone.md#sendControlPosition)
 - [sendFlightEvent()](04_drone.md#sendFlightEvent)
 - [sendLanding()](04_drone.md#sendLanding)
 
