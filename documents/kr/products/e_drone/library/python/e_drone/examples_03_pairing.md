@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Pairing**
 
-Modified : 2018.9.14
+Modified : 2019.1.10
 
 ---
 
@@ -10,6 +10,7 @@ Modified : 2018.9.14
 ## <a name="Pairing">페어링 변경 후 변경된 정보 확인</a>
 
 ```py
+# 조종기의 페어링 정보를 변경하고, 변경된 정보를 요청한 후 응답을 기다려 출력하는 예제
 from time import sleep
 
 from e_drone.drone import *
@@ -37,20 +38,17 @@ if __name__ == '__main__':
         if    dataType == DataType.Pairing:
             pairing = drone.getData(DataType.Pairing)
 
-            print("{0} / {1} / {2}".format(
+            print("Address: 0x{0:04X}{1:04X}{2:04X} / {0}.{1}.{2}".format(
                 pairing.address0, 
                 pairing.address1, 
                 pairing.address2))
 
-            print("{0}".format(
-                pairing.scramble))
-                
-            print("{0}".format(
-                pairing.channel))
-            break;
+            print("Scramble: {0}".format(pairing.scramble))
+            print("Channel: {0}".format(pairing.channel))
+            break
 
         if time.time() > timeStart + 1:
-            break;
+            break
     
     drone.close()
 ```
@@ -68,6 +66,7 @@ if __name__ == '__main__':
 ## 페어링 변경 후 변경된 정보 확인(이벤트 함수 등록)
 
 ```py
+# 조종기의 페어링 정보를 변경하고, 변경된 정보를 요청한 후 이벤트 핸들러를 통해 응답을 출력하는 예제
 from time import sleep
 
 from e_drone.drone import *
@@ -77,16 +76,13 @@ from e_drone.protocol import *
 def eventPairing(pairing):
     print("eventPairing()")
 
-    print("{0} / {1} / {2}".format(
+    print("Address: 0x{0:04X}{1:04X}{2:04X} / {0}.{1}.{2}".format(
         pairing.address0, 
         pairing.address1, 
         pairing.address2))
-    
-    print("{0}".format(
-        pairing.scramble))
-    
-    print("{0}".format(
-        pairing.channel))
+
+    print("Scramble: {0}".format(pairing.scramble))
+    print("Channel: {0}".format(pairing.channel))
 
 
 if __name__ == '__main__':

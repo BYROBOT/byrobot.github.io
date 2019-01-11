@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2018.9.14
+Modified : 2019.1.10
 
 ---
 
@@ -31,16 +31,22 @@ if __name__ == '__main__':
         
         if dataType == DataType.Information:
             information = drone.getData(DataType.Information)
-            print("{0} / 0x{0:08X}".format(information.version.v))
-            print("{0}.{1}.{2}".format(
+            print("ModeUpdate: {0}".format(information.modeUpdate))
+            print("ModelNumber: {0}".format(information.modelNumber))
+            print("Version: {0}.{1}.{2} / {3} / 0x{3:08X}".format(
                 information.version.major,
                 information.version.minor,
-                information.version.build))
-            break;
+                information.version.build,
+                information.version.v))
+            print("Release Date: {0}.{1}.{2}".format(
+                information.year,
+                information.month,
+                information.day))
+            break
 
         if time.time() > timeStart + 1:
-            break;
-    
+            break
+
     drone.close()
 ```
 
@@ -55,6 +61,7 @@ if __name__ == '__main__':
 ## <a name="Class_Information">조종기의 펌웨어 정보 요청(이벤트 함수 등록)</a>
 
 ```py
+# 조종기의 펌웨어 정보를 요청하고, 이벤트 핸들러를 통해 응답을 출력하는 예제
 from time import sleep
 
 from e_drone.drone import *
@@ -63,11 +70,17 @@ from e_drone.protocol import *
 
 def eventInformation(information):
     print("eventInformation()")
-    print("{0} / 0x{0:08X}".format(information.version.v))
-    print("{0}.{1}.{2}".format(
+    print("ModeUpdate: {0}".format(information.modeUpdate))
+    print("ModelNumber: {0}".format(information.modelNumber))
+    print("Version: {0}.{1}.{2} / {3} / 0x{3:08X}".format(
         information.version.major,
         information.version.minor,
-        information.version.build))
+        information.version.build,
+        information.version.v))
+    print("Release Date: {0}.{1}.{2}".format(
+        information.year,
+        information.month,
+        information.day))
 
 
 if __name__ == '__main__':
