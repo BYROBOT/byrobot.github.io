@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **System**
 
-Modified : 2018.10.8
+Modified : 2019.1.11
 
 ---
 
@@ -26,12 +26,24 @@ class ModelNumber(Enum):
 
     None_                   = 0x00000000
 
+    Drone_3_Drone_P1        = 0x00031001    # Drone_3_Drone_P1 (Lightrone / GD65 / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding)
+    Drone_3_Drone_P2        = 0x00031002    # Drone_3_Drone_P2 (Soccer Drone / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
+    Drone_3_Drone_P3        = 0x00031003    # Drone_3_Drone_P3 (GD240 / HW2181 / Keil / power button / u30 flow / 3.7v / geared motor / barometer)
+    Drone_3_Drone_P4        = 0x00031004    # Drone_3_Drone_P4 (GD50N / HW2181 / Keil / power button / 3.7v / barometer)
+    Drone_3_Drone_P5        = 0x00031005    # Drone_3_Drone_P5 (GD30 / HW2181 / Keil / 3.7v / nomal binding)
+
+    Drone_3_Controller_P1   = 0x00032001    # Drone_3_Controller_P1
+
     Drone_4_Drone_P4        = 0x00041004    # Drone_4_Drone_P4
+    Drone_4_Drone_P5        = 0x00041005    # Drone_4_Drone_P5
 
     Drone_4_Controlle_P1    = 0x00042001    # Drone_4_Controlle_P1
     Drone_4_Controlle_P2    = 0x00042002    # Drone_4_Controlle_P2
 
     Drone_4_Link_P0         = 0x00043000    # Drone_4_Link_P0
+
+    Drone_4_Tester_P2       = 0x0004A002    # Drone_4_Tester_P2
+    Drone_4_Monitor_P2      = 0x0004A102    # Drone_4_Monitor_P2
 ```
 
 
@@ -57,6 +69,10 @@ class DeviceType(Enum):
 
     Link        = 0x30      # 링크 모듈(Client)
     LinkServer  = 0x31      # 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+
+    Range       = 0x40      # 거리 센서 모듈
+
+    Base        = 0x70      # 베이스
 
     ByScratch   = 0x80      # 바이스크래치
     Scratch     = 0x81      # 스크래치
