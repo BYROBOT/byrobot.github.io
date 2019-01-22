@@ -40,6 +40,8 @@ author:
       url:  https://www.youtube.com/user/BYROBOTCO
     - name: github
       url:  https://github.com/byrobot
+    - name: discord
+      url:  https://discord.gg/UVVJMye
 blog:
   cc_license: https://creativecommons.org/licenses/by-sa/4.0/
   cc_license_image: /assets/images/theme/cc-by-sa.png
