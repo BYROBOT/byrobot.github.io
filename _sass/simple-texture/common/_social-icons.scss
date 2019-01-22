@@ -91,4 +91,11 @@ $size: 48;
 
         background-color: #6383A8;
     }
+    
+    .ico-discord {
+        @include get-ico-image(discord);
+
+        background-color: #181717;
+    }
+
 }
