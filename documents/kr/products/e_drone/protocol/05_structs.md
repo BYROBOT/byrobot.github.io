@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2018.11.26
+Modified : 2019.1.30
 
 ---
 
@@ -666,6 +666,7 @@ namespace Protocol
         u8      modeControlFlight;  // 비행 제어 모드
         u8      modeMovement;       // 이동 상태
         u8      headless;           // 헤드리스 모드
+        u8      controlSpeed;       // 제어 속도
         u8      sensorOrientation;  // 센서 방향
         u8      battery;            // 배터리량(0 ~ 100%)
     };
@@ -679,6 +680,7 @@ namespace Protocol
 | modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | 1 Byte   | -        | 비행 제어 모드         |
 | modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | 1 Byte   | -        | 이동 상태              |
 | headless          | [Headless::Type](04_definitions.md#Headless)                          | 1 Byte   | -        | Headless 설정 상태     |
+| controlSpeed      | uint8_t                                                               | 1 Byte   | -        | 제어 속도(1, 2, 3)     |
 | sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | 1 Byte   | -        | 센서 방향              |
 | battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
 
@@ -734,9 +736,9 @@ namespace Protocol
 {
     struct Position
     {
-        float       x;              // meter
-        float       y;              // meter
-        float       z;              // meter
+        float       x;      // meter
+        float       y;      // meter
+        float       z;      // meter
     };
 }
 ```
@@ -796,7 +798,7 @@ namespace Protocol
         s16     accX;
         s16     accY;
         s16     accZ;
-        
+
         s16     gyroRoll;
         s16     gyroPitch;
         s16     gyroYaw;
@@ -872,7 +874,7 @@ namespace Protocol
     struct Count
     {
         u64     timeFlight;             // 비행 시간
-        
+
         u16     countTakeOff;           // 이륙 횟수
         u16     countLanding;           // 착륙 횟수
         u16     countAccident;          // 충돌 횟수
@@ -883,9 +885,9 @@ namespace Protocol
 | 변수 이름        | 형식       | 크기     | 범위       | 설명             |
 |:----------------:|:----------:|:--------:|:----------:|:-----------------|
 | timeFlight       | uint64_t   | 8 Byte   | -          | 비행 시간(ms)    |
-| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 이륙 횟수        |
-| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535  | 착륙 횟수        |
-| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535  | 충돌 횟수        |
+| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 이륙 횟수        |
+| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 착륙 횟수        |
+| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535 | 충돌 횟수        |
 
 
 <br>
@@ -905,7 +907,7 @@ namespace Protocol
         s16     accelX;         // X
         s16     accelY;         // Y
         s16     accelZ;         // Z
-        
+
         s16     gyroRoll;       // Roll
         s16     gyroPitch;      // Pitch
         s16     gyroYaw;        // Yaw

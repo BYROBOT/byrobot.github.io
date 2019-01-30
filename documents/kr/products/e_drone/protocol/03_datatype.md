@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2018.11.23
+Modified : 2019.1.30
 
 ---
 
@@ -42,6 +42,7 @@ namespace Protocol
             Command                     = 0x11,     // 명령
             Pairing                     = 0x12,     // 페어링
             Rssi                        = 0x13,     // RSSI
+            TimeSync                    = 0x14,     // 시간 동기화
 
             // Light
             LightManual                 = 0x20,     // LED 수동 제어
@@ -93,16 +94,6 @@ namespace Protocol
             InformationAssembledForController       = 0xA0,     // 데이터 모음
             InformationAssembledForEntry            = 0xA1,     // 데이터 모음
 
-            // Navigation
-            NavigationTarget                        = 0xD0,     // 네비게이션 목표점
-            NavigationLocation                      = 0xD1,     // 네비게이션 가상 위치
-            NavigationMonitor                       = 0xD2,
-            NavigationHeading                       = 0xD3,
-            NavigationCounter                       = 0xD4,
-            
-            GpsRtkNavigationState                   = 0xDA,     // RTK RAW 데이터 전송
-            GpsRtkExtendedRawMeasurementData        = 0xDB,     // RTK RAW 데이터 전송
-
             EndOfType
         };
     }
@@ -137,6 +128,7 @@ namespace Protocol
 | Command                               | 0x11 | A    | 명령                                           | [Protocol::Command::Command](05_structs.md#Protocol_Command_Command),<br> [Protocol::Command::LightEvent](05_structs.md#Protocol_Command_LightEvent),<br> [Protocol::Command::LightEventColor](05_structs.md#Protocol_Command_LightEventColor),<br> [Protocol::Command::LightEventColors](05_structs.md#Protocol_Command_LightEventColors) |
 | Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
 | Rssi                                  | 0x13 | A    | RSSI                                           | [Protocol::Rssi](05_structs.md#Protocol_Rssi) |
+| TimeSync                              | 0x14 | A    | TimeSync                                       | &nbsp; |
 | LightManual                           | 0x20 | A    | LED 수동 제어                                  | [Protocol::Light::Manual](06_structs_light.md#Protocol_Light_Manual) |
 | LightMode                             | 0x21 | D    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode),<br> [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | LightEvent                            | 0x22 | D    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event),<br> [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor),<br> [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |

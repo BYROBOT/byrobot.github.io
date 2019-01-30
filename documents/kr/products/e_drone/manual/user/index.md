@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2018.11.26
+Modified : 2019.1.30
 
 ---
 
@@ -370,36 +370,65 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         </td>
         <td>
             <div align="center">
-                S1 (30%)
+                S1
             </div>
         </td>
         <td>
             <div align="left">
-                속도 1단계 (30 %)
+                속도 1단계(느림)
             </div>
         </td>
     </tr>
     <tr>
         <td>
             <div align="center">
-                S2 (70%)
+                S2
             </div>
         </td>
         <td>
             <div align="left">
-                속도 2단계 (70 %)
+                속도 2단계
             </div>
         </td>
     </tr>
     <tr>
         <td>
             <div align="center">
-                S3 (100%)
+                S3
             </div>
         </td>
         <td>
             <div align="left">
-                속도 3단계 (100 %)
+                속도 3단계(빠름)
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <div align="center">
+                FHSS
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                ON
+            </div>
+        </td>
+        <td>
+            <div align="left">
+                채널 호핑
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div align="center">
+                OFF
+            </div>
+        </td>
+        <td>
+            <div align="left">
+                고정 채널
             </div>
         </td>
     </tr>

@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2018.10.25
+Modified : 2019.1.30
 
 ---
 
@@ -33,7 +33,7 @@ namespace Protocol
             
             ModeControlFlight           = 0x02,     // 비행 제어 모드 설정
             Headless                    = 0x03,     // 헤드리스 모드 설정
-            Trim                        = 0x04,     // 트림 변경
+            ControlSpeed                = 0x04,     // 제어 속도 설정
             
             ClearBias                   = 0x05,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
             ClearTrim                   = 0x06,     // 트림 초기화
@@ -66,16 +66,23 @@ namespace ModelNumber
     enum Type
     {
         //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
-        Drone_4_Drone_P4        = 0x00041004,       // Drone_4_Drone_P4
-        Drone_4_Drone_P5        = 0x00041005,       // Drone_4_Drone_P5
+        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1
+        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2
+        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3
+        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4
+        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5
 
-        Drone_4_Controller_P1   = 0x00042001,       // Drone_4_Controller_P1
-        Drone_4_Controller_P2   = 0x00042002,       // Drone_4_Controller_P2
+        Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
+        Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
 
-        Drone_4_Link_P0         = 0x00043000,       // Drone_4_Link_P0
+        Drone_4_Drone_P5        = 0x00041005,   // Drone_4_Drone_P5
 
-        Drone_4_Tester_P2       = 0x0004A002,       // Drone_4_Tester_P2
-        Drone_4_Monitor_P2      = 0x0004A102,       // Drone_4_Monitor_P2
+        Drone_4_Controller_P2   = 0x00042002,   // Drone_4_Controller_P2
+
+        Drone_4_Link_P0         = 0x00043000,   // Drone_4_Link_P0
+
+        Drone_4_Tester_P2       = 0x0004A002,   // Drone_4_Tester_P2
+        Drone_4_Monitor_P2      = 0x0004A102,   // Drone_4_Monitor_P2
     };
 }
 ```
@@ -106,7 +113,9 @@ namespace Protocol
             Link        = 0x30,     // 링크 모듈(Client)
             LinkServer  = 0x31,     // 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
 
-            Range       = 0x40,
+            Range       = 0x40,     // 거리 센서 모듈
+
+            Base        = 0x70,     // 베이스
 
             ByScratch   = 0x80,     // 바이스크래치
             Scratch     = 0x81,     // 스크래치
@@ -180,9 +189,13 @@ namespace ErrorFlagsForState
         NotRegistered                           = 0x00000001,   // 장치 등록이 안됨
         FlashReadLock_UnLocked                  = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
         BootloaderWriteLock_UnLocked            = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
-        
+
         TakeoffFailure_CheckPropellerAndMotor   = 0x00000010,   // 이륙 실패
         CheckPropellerVibration                 = 0x00000020,   // 프로펠러 진동발생
+        Attitude_NotStable                      = 0x00000040,   // 자세가 많이 기울어져 있거나 뒤집어져 있을때
+
+        CanNotFlip_LowBattery                   = 0x00000100,   // 배터리가 30이하
+        CanNotFlip_TooHeavy                     = 0x00000200,   // 기체가 무거움
     };
 }
 ```
@@ -211,7 +224,7 @@ namespace Mode
                 Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
                 Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
                 Function    = 0x12, // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-                
+
                 EndOfType
             };
         }
@@ -237,13 +250,13 @@ namespace Mode
         enum Type
         {
             None = 0,
-            
+
             Boot,               // 부팅
             Start,              // 시작 코드 실행
             Running,            // 메인 코드 동작
             ReadyToReset,       // 리셋 대기(1초 뒤 리셋)
             Error,              // 오류
-                    
+
             EndOfType
         };
     }
@@ -344,11 +357,11 @@ namespace SensorOrientation
     enum Type
     {
         None = 0,
-        
+
         Normal,             // 정상
         ReverseStart,       // 뒤집히기 시작
         Reversed,           // 뒤집힘
-        
+
         EndOfType
     };
 }
@@ -452,41 +465,6 @@ namespace Headless
 <br>
 
 
-<a name="Trim"></a>
-## Trim::Type
-
-Trim
-
-페트론이 한쪽 방향으로 흐를 때 반대 방향을 입력하여 호버링을 할 수 있게 조정합니다. 한 번 전송할 때마다 일정하게 값이 변합니다.
-
-```cpp
-namespace Trim
-{
-    enum Type
-    {
-        None = 0,
-
-        RollIncrease,       // Roll 증가
-        RollDecrease,       // Roll 감소
-        PitchIncrease,      // Pitch 증가
-        PitchDecrease,      // Pitch 감소
-        YawIncrease,        // Yaw 증가
-        YawDecrease,        // Yaw 감소
-        ThrottleIncrease,   // Throttle 증가
-        ThrottleDecrease,   // Throttle 감소
-
-        Reset,              // 전체 트림 리셋
-
-        EndOfType
-    };
-}
-```
-
-
-<br>
-<br>
-
-
 <a name="Rotation"></a>
 ## Rotation::Type
 
@@ -530,10 +508,10 @@ namespace Rotation
     {
         enum Type
         {
-            M1,		// Front Left
-            M2,		// Front Right
-            M3,		// Rear Right
-            M4,		// Rear Left
+            M1,     // Front Left
+            M2,     // Front Right
+            M3,     // Rear Right
+            M4,     // Rear Left
 
             EndOfPart,
 
@@ -600,7 +578,7 @@ namespace Button
             enum Type
             {
                 None        = 0x0000,
-                
+
                 // 버튼
                 Reset       = 0x0001
             };
@@ -629,21 +607,21 @@ namespace Button
             enum Type
             {
                 None                = 0x0000,
-                
+
                 // 버튼
                 FrontLeftTop        = 0x0001,
                 FrontLeftBottom     = 0x0002,
                 FrontRightTop       = 0x0004,
                 FrontRightBottom    = 0x0008,
-                
+
                 TopLeft             = 0x0010,
                 TopRight            = 0x0020,   // POWER ON/OFF
-                
+
                 MidUp               = 0x0040,
                 MidLeft             = 0x0080,
                 MidRight            = 0x0100,
                 MidDown             = 0x0200,
-                
+
                 BottomLeft          = 0x0400,
                 BottomRight         = 0x0800,
             };
