@@ -28,19 +28,19 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">1.0.6</div></td>
+            <td><div align="center">1.1.9</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">1.0.7</div></td>
+            <td><div align="center">1.1.10</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.12.12</div></td>
+            <td colspan="2"><div align="center">2019.1.30</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1bfUo0DlxnkkrpQMV0S6yIWEDJCGH4_yL" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1ggsL65s91iuSwE8XrM8op1gLdOFy8Xvt" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -50,7 +50,7 @@
             <td><div align="center">Update Manual</div></td>
             <td colspan="2">
                 <div align="center">
-                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdater/">한국어</a>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">한국어</a>
                 </div>
             </td>
         </tr>
@@ -121,4 +121,4 @@
 
 ---
 
-Modified : 2019.1.11
+Modified : 2019.1.30
