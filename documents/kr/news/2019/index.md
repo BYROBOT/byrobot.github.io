@@ -2,6 +2,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019131">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.1.31</i></sup><br>
+
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019130">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.1.30</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/#Python">E-DRONE 파이썬 라이브러리 및 예제 업데이트</a> <sup><i>2019.1.11</i></sup><br>
@@ -13,4 +15,4 @@
 ---
 
 
-Modified : 2019.1.30
+Modified : 2019.1.31

@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.1.30
+Modified : 2019.1.31
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.1.30
 
 
 <br>
+
+
+# 2019.1.31
+
+- **Drone: 1.1.10**
+- Controller: 1.1.10
+
+> - 호버링 안정화
+> - 속도 조절
+> - 드론 컴파일 최적화 옵션 OFF
+
+
+[Download](https://drive.google.com/open?id=1NknvySgNCq4HtWd7OKkjGEuEfOiakFuG)
+
+
+<br>
+
+---
 
 
 # 2019.1.30
