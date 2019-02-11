@@ -4,9 +4,9 @@
 
 <div align="center">
     <a href="/documents/kr/news/2019"><b>News</b></a><br>
+    <a href="/documents/kr/products/e_drone/protocol/05_structs/#Protocol_InformationAssembledForByBlocks">바이블럭용 데이터 구조체 추가</a> <sup><i>2019.2.11</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019131">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.1.31</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019130">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.1.30</i></sup><br>
-    <a href="/documents/kr/products/e_drone/#Python">E-DRONE 파이썬 라이브러리 및 예제 업데이트</a> <sup><i>2019.1.11</i></sup><br>
 </div>
 
 <div align="center">
@@ -54,4 +54,4 @@
 ---
 
 
-Modified : 2019.1.31
+Modified : 2019.2.11
