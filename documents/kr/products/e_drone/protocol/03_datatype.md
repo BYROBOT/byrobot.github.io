@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.1.30
+Modified : 2019.2.11
 
 ---
 
@@ -93,6 +93,7 @@ namespace Protocol
             // Information Assembled
             InformationAssembledForController       = 0xA0,     // 데이터 모음
             InformationAssembledForEntry            = 0xA1,     // 데이터 모음
+            InformationAssembledForByBlocks         = 0xA2,     // 데이터 모음
 
             EndOfType
         };
@@ -163,6 +164,7 @@ namespace Protocol
 | DisplayDrawImage                      | 0x88 | C    | 이미지 그리기                                  | [Protocol::Display::DrawImage](07_structs_display.md#Protocol_Display_DrawImage) |
 | InformationAssembledForController     | 0xA0 | D    | 자주 갱신되는 데이터 모음(조종기)              | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
 | InformationAssembledForEntry          | 0xA1 | D    | 자주 갱신되는 데이터 모음(엔트리)              | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |
+| InformationAssembledForByBlocks       | 0xA2 | D    | 자주 갱신되는 데이터 모음(바이블럭)            | [Protocol::InformationAssembledForByBlocks](05_structs.md#Protocol_InformationAssembledForByBlocks) |
 
 <br>
 

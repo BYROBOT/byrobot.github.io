@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.1.30
+Modified : 2019.2.11
 
 ---
 
@@ -1276,6 +1276,39 @@ namespace Protocol
         float   positionY;
 
         float   rangeHeight;
+    };
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Protocol_InformationAssembledForByBlocks"></a>
+## Protocol::InformationAssembledForByBlocks
+
+자주 갱신되는 데이터 모음(바이블럭)
+
+```cpp
+namespace Protocol
+{
+    struct InformationAssembledForByBlocks
+    {
+        s8          battery;            // 배터리 잔량
+        
+        s16         angleRoll;          // 자세 Roll
+        s16         anglePitch;         // 자세 Pitch
+        s16         angleYaw;           // 자세 Yaw
+        
+        s16         positionX;          // meter x 10
+        s16         positionY;          // meter x 10
+        s16         positionZ;          // meter x 10
+        
+        s16         rangeLeft;          // meter x 1000
+        s16         rangeFront;         // meter x 1000
+        s16         rangeRight;         // meter x 1000
+        s16         rangeBottom;        // meter x 1000
     };
 }
 ```
