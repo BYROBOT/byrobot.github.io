@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.1.31
+Modified : 2019.2.12
 
 ---
 
@@ -46,6 +46,7 @@ Modified : 2019.1.31
 > - 와치독 사용
 > - 속도 조절 설정을 드론에 저장
 > - 고도 안정화
+> - [Protocol::State](/documents/kr/products/e_drone/protocol/05_structs/#heading-protocolstate) 구조체 수정(controlSpeed 추가)
 
 
 [Download](https://drive.google.com/open?id=1ggsL65s91iuSwE8XrM8op1gLdOFy8Xvt)
