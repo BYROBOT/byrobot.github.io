@@ -11,6 +11,25 @@ Modified : 2019.2.12
 <br>
 
 
+# 2019.2.12
+
+- **Drone: 1.1.12**
+- **Controller: 1.1.11**
+
+> - 배터리 레벨 수정
+> - [Protocol::InformationAssembledForByBlocks](/documents/kr/products/e_drone/protocol/05_structs/#heading-protocolinformationassembledforbyblocks) 추가
+> - USB 장치를 조종기에 연결 시 FHSS를 끔
+> - 동작 중 LCD 초기화 시 백라이트를 끄는 버그 수정
+
+
+[Download](https://drive.google.com/open?id=1Nn86H8nojuHVXttusGU6h6RqxQE8suqT)
+
+
+<br>
+
+---
+
+
 # 2019.1.31
 
 - **Drone: 1.1.10**
