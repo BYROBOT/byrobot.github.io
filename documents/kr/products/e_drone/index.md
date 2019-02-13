@@ -22,6 +22,7 @@
                 </div>
             </td>
         </tr>
+        <!-- Firmware -->
         <tr>
             <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
@@ -54,6 +55,7 @@
                 </div>
             </td>
         </tr>
+        <!-- Driver -->
         <tr>
             <td colspan="3"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
         </tr>
@@ -67,6 +69,7 @@
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
+        <!-- Documents -->
         <tr>
             <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
@@ -78,6 +81,7 @@
             <td><div align="center">Protocol</div></td>
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
         </tr>
+        <!-- ByBlocks -->
         <tr>
             <td colspan="3"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
         </tr>
@@ -99,8 +103,9 @@
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/coding/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/byblocks/">한국어</a></div></td>
         </tr>
+        <!-- Python -->
         <tr>
             <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
