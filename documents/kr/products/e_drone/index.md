@@ -83,19 +83,23 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">1.0.12</div></td>
+            <td colspan="2"><div align="center">1.0.18</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.12.5</div></td>
+            <td colspan="2"><div align="center">2019.2.13</div></td>
         </tr>
         <tr>
             <td>
                 <div align="center">Download</div>
             </td>
             <td colspan="2">
-                <div align="center"><a href="https://drive.google.com/open?id=1N-jgwEfvZWofwI1_oxppDXOK7QrOArND" target="_blank">Android (4.4 이상)</a></div>
+                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.18.apk" target="_blank">Android (4.4 이상)</a></div>
             </td>
+        </tr>
+        <tr>
+            <td><div align="center">Update Log</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/coding/">한국어</a></div></td>
         </tr>
         <tr>
             <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
