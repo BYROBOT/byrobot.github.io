@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.2.12
+Modified : 2019.2.13
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2019.2.12
 
 
 <br>
+
+
+# 2019.2.13
+
+- Drone: 1.1.12
+- **Controller: 1.1.12**
+
+> - 조종기 LINK 모드의 USB 데이터 송수신 상태 표시 수정
+
+
+[Download](https://drive.google.com/open?id=1CH5I231H2Vx36VajtI9xc9COILmKfcnh)
+
+
+<br>
+
+---
 
 
 # 2019.2.12

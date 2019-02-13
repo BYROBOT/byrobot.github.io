@@ -32,15 +32,15 @@
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">1.1.11</div></td>
+            <td><div align="center">1.1.12</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.2.12</div></td>
+            <td colspan="2"><div align="center">2019.2.13</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1Nn86H8nojuHVXttusGU6h6RqxQE8suqT" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1CH5I231H2Vx36VajtI9xc9COILmKfcnh" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -121,4 +121,4 @@
 
 ---
 
-Modified : 2019.2.12
+Modified : 2019.2.13
