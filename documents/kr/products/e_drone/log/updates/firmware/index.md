@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.2.13
+Modified : 2019.2.20
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2019.2.13
 
 
 <br>
+
+
+# 2019.2.20
+
+- **Drone: 1.1.13**
+- Controller: 1.1.12
+
+> - 작은 상승 스로틀 값에 하강하는 현상 수정
+> - 배터리 레벨 수정
+
+
+[Download](https://drive.google.com/open?id=1dxxks9QnZLSWKYimyIlwqNZngWcGBUPg)
+
+
+<br>
+
+---
 
 
 # 2019.2.13

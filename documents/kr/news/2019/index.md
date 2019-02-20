@@ -2,6 +2,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019220">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.20</i></sup><br>
+
 - <a href="/documents/kr/products/e_drone/log/updates/byblocks/#heading-2019213">ByBlocks for E-DRONE 업데이트</a> <sup><i>2019.2.13</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019213">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.13</i></sup><br>
@@ -23,4 +25,4 @@
 ---
 
 
-Modified : 2019.2.13
+Modified : 2019.2.20
