@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.2.11
+Modified : 2019.2.26
 
 ---
 
@@ -873,7 +873,8 @@ namespace Protocol
 {
     struct Count
     {
-        u64     timeFlight;             // 비행 시간
+        u32     timeSystem;             // 시스템 동작 시간
+        u32     timeFlight;             // 비행 시간
 
         u16     countTakeOff;           // 이륙 횟수
         u16     countLanding;           // 착륙 횟수
@@ -882,12 +883,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름        | 형식       | 크기     | 범위       | 설명             |
-|:----------------:|:----------:|:--------:|:----------:|:-----------------|
-| timeFlight       | uint64_t   | 8 Byte   | -          | 비행 시간(ms)    |
-| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 이륙 횟수        |
-| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 착륙 횟수        |
-| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535 | 충돌 횟수        |
+| 변수 이름        | 형식       | 크기     | 범위       | 설명                  |
+|:----------------:|:----------:|:--------:|:----------:|:----------------------|
+| timeSystem       | uint32_t   | 4 Byte   | -          | 시스템 동작 시간(sec) |
+| timeFlight       | uint32_t   | 4 Byte   | -          | 비행 시간(sec)        |
+| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 이륙 횟수             |
+| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 착륙 횟수             |
+| countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535 | 충돌 횟수             |
 
 
 <br>

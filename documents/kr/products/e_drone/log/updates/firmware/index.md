@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.2.20
+Modified : 2019.2.26
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2019.2.20
 
 
 <br>
+
+
+# 2019.2.25
+
+- **Drone: 1.1.14**
+- **Controller: 1.1.13**
+
+> - Protocol::Count 구조체의 timeFlight(u64, ms) 변수를 timeSystem(u32, sec), timeFlight(u32, sec) 로 변경함
+> - 조종기에 Protocol::Count 데이터를 요청하는 경우, timeSystem 변수에 현재까지의 동작시간을 초 단위로 반환. 나머지 값들은 0.
+
+
+[Download](https://drive.google.com/open?id=15F2jmq6gBaBC-JHWj30VC6_8ysGWVZsR)
+
+
+<br>
+
+---
 
 
 # 2019.2.20
