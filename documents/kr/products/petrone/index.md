@@ -28,7 +28,7 @@
         <tr>
             <td rowspan="3"><div align="center">Version</div></td>
             <td><div align="center">Drone Main</div></td>
-            <td><div align="center">50</div></td>
+            <td><div align="center">51</div></td>
         </tr>
         <tr>
             <td><div align="center">Drone Sub</div></td>
@@ -41,7 +41,7 @@
         <tr>
             <td rowspan="2"><div align="center">Release Date</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">2018.5.31</div></td>
+            <td><div align="center">2019.2.27</div></td>
         </tr>
         <tr>
             <td><div align="center">Link</div></td>
@@ -130,4 +130,4 @@
 
 ---
 
-Modified : 2018.12.11
+Modified : 2019.2.27
