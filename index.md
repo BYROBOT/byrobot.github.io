@@ -4,9 +4,9 @@
 
 <div align="center">
     <a href="/documents/kr/news/2019"><b>News</b></a><br>
+    <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019227">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.27</i></sup><br>
     <a href="/documents/kr/products/petrone/log/updates/firmware/#heading-2019227">PETRONE 펌웨어 업데이트</a> <sup><i>2019.2.27</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019225">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.25</i></sup><br>
-    <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019220">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.20</i></sup><br>
 </div>
 
 <div align="center">
