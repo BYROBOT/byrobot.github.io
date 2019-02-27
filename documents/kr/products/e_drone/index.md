@@ -41,7 +41,7 @@
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/drive/folders/19PebbjRa6Kch_xvTaxVXPZ_TBnda0Kuk" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=18Q3nRRqmCTlZG8WtzxMGhNUfHtcfiRaE" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>

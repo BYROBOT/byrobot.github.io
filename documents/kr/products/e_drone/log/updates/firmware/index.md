@@ -24,7 +24,7 @@ Modified : 2019.2.27
 > - 전원을 켤 때 "도미솔", 전원 끌 때 "솔미도" 소리가 나게 함
 
 
-[Download](https://drive.google.com/drive/folders/19PebbjRa6Kch_xvTaxVXPZ_TBnda0Kuk)
+[Download](https://drive.google.com/open?id=18Q3nRRqmCTlZG8WtzxMGhNUfHtcfiRaE)
 
 
 <br>
