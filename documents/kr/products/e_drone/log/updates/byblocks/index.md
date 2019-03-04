@@ -1,6 +1,6 @@
 **[ByBlocks for E-Drone](/documents/kr/products/e_drone/#ByBlocks) update log**
 
-Modified : 2019.2.13
+Modified : 2019.3.5
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2019.2.13
 
 
 <br>
+
+
+# 2019.2.28
+
+- **ByBlocks for E-Drone: 1.0.19**
+
+> - English localize
+
+
+[Download](https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.19.apk)
+
+
+<br>
+
+---
 
 
 # 2019.2.13
@@ -22,21 +37,6 @@ Modified : 2019.2.13
 
 
 [Download](https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.18.apk)
-
-
-<br>
-
----
-
-
-# 2019.2.28
-
-- **ByBlocks for E-Drone: 1.0.19**
-
-> - English localize
-
-
-[Download](https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.19.apk)
 
 
 <br>

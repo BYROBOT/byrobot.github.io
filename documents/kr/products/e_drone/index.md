@@ -87,18 +87,18 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">1.0.18</div></td>
+            <td colspan="2"><div align="center">1.0.19</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.2.13</div></td>
+            <td colspan="2"><div align="center">2019.2.28</div></td>
         </tr>
         <tr>
             <td>
                 <div align="center">Download</div>
             </td>
             <td colspan="2">
-                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.18.apk" target="_blank">Android (4.4 이상)</a></div>
+                <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.19.apk" target="_blank">Android (4.4 이상)</a></div>
             </td>
         </tr>
         <tr>

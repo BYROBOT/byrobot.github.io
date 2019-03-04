@@ -2,6 +2,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drone/log/updates/byblocks/#heading-2019228">ByBlocks for E-DRONE 업데이트</a> <sup><i>2019.2.28</i></sup><br>
+
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019227">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.27</i></sup><br>
 
 - <a href="/documents/kr/products/petrone/log/updates/firmware/#heading-2019227">PETRONE 펌웨어 업데이트</a> <sup><i>2019.2.27</i></sup><br>
@@ -31,4 +33,4 @@
 ---
 
 
-Modified : 2019.2.27
+Modified : 2019.3.5
