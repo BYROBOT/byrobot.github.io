@@ -25,3 +25,18 @@ Modified : 2019.2.13
 
 
 <br>
+
+---
+
+
+# 2019.2.28
+
+- **ByBlocks for E-Drone: 1.0.19**
+
+> - English localize
+
+
+[Download](https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.19.apk)
+
+
+<br>
