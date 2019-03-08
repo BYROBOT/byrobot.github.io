@@ -1,6 +1,6 @@
 **[*petrone* for python](index.md)** / **Intro**
 
-Modified : 2018.11.26
+Modified : 2019.3.8
 
 ---
 
@@ -40,6 +40,12 @@ Modified : 2018.11.26
 > pip install petrone
 ```
 
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 install petrone
+```
+
 <br>
 
 최신 버젼이 설치되지 않는다면 아래의 명령을 사용하시기 바랍니다.
@@ -48,12 +54,37 @@ Modified : 2018.11.26
 > pip --no-cache-dir install petrone
 ```
 
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 --no-cache-dir install petrone
+```
+
 
 <br>
 <br>
 
 
-# 3. 삭제
+# 3. 업그레이드
+
+최신 버전으로 업그레이드 하시려면 아래의 명령을 실행하시면 됩니다.
+
+```
+> pip install --upgrade petrone
+```
+
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 install --upgrade petrone
+```
+
+
+<br>
+<br>
+
+
+# 4. 삭제
 
 아래의 명령을 실행하시면 *petrone*이 삭제됩니다.
 
@@ -61,12 +92,18 @@ Modified : 2018.11.26
 > pip uninstall petrone
 ```
 
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> pip3 uninstall petrone
+```
+
 
 <br>
 <br>
 
 
-# 4. 시리얼 포트 검색
+# 5. 시리얼 포트 검색
 
 
 Drone 클래스 내부에서 pyserial을 사용하여 시리얼 포트에 연결합니다. 시리얼 포트에 연결하려면 장치 이름을 알고 있어야 합니다. 이 때 필요한 것이 컴퓨터에 연결된 시리얼 통신 장치들을 검색할 수 있는 명령입니다. 이 명령은 **pyserial**에서 제공하고 있습니다.
@@ -111,7 +148,7 @@ for node in nodes:
 <br>
 
 
-# 5. 응용 프로젝트 예제
+# 6. 응용 프로젝트 예제
 
 아래는 응용 프로젝트 예제입니다.
 
