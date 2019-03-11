@@ -76,12 +76,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_1.jpg">
+                <img src="./images/drone4controller_1.png">
             </div>
         </td>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_1_desc.jpg">
+                <img src="./images/drone4controller_1_desc.png">
             </div>
         </td>
     </tr>
@@ -97,12 +97,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_2.jpg">
+                <img src="./images/drone4controller_2.png">
             </div>
         </td>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_2_desc.jpg">
+                <img src="./images/drone4controller_2_desc.png">
             </div>
         </td>
     </tr>
@@ -118,12 +118,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_3.jpg">
+                <img src="./images/drone4controller_3.png">
             </div>
         </td>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_3_desc.jpg">
+                <img src="./images/drone4controller_3_desc.png">
             </div>
         </td>
     </tr>
@@ -139,7 +139,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_4.jpg">
+                <img src="./images/drone4controller_4.png">
             </div>
         </td>
     </tr>
@@ -155,7 +155,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_5.jpg">
+                <img src="./images/drone4controller_5.png">
             </div>
         </td>
     </tr>
@@ -171,12 +171,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_6.jpg">
+                <img src="./images/drone4controller_6.png">
             </div>
         </td>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_6_desc.jpg">
+                <img src="./images/drone4controller_6_desc.png">
             </div>
         </td>
     </tr>
@@ -192,7 +192,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_7.jpg">
+                <img src="./images/drone4controller_7.png">
             </div>
         </td>
     </tr>
@@ -208,12 +208,12 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
     <tr>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_8.jpg">
+                <img src="./images/drone4controller_8.png">
             </div>
         </td>
         <td>
             <div align="center">
-                <img src="./images/drone4controller_8_desc.jpg">
+                <img src="./images/drone4controller_8_desc.png">
             </div>
         </td>
     </tr>
