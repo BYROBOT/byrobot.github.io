@@ -142,6 +142,11 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
                 <img src="./images/drone4controller_4.png">
             </div>
         </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_4_desc.png">
+            </div>
+        </td>
     </tr>
 </table>
 
@@ -156,6 +161,11 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         <td>
             <div align="center">
                 <img src="./images/drone4controller_5.png">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_5_desc.png">
             </div>
         </td>
     </tr>
@@ -193,6 +203,11 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
         <td>
             <div align="center">
                 <img src="./images/drone4controller_7.png">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_7_desc.png">
             </div>
         </td>
     </tr>
