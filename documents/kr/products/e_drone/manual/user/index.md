@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2019.1.30
+Modified : 2019.3.11
 
 ---
 
@@ -66,14 +66,171 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 <br>
 
 
-<br>
-
-
-## 2.2. 버튼 구성 및 기능
+## 2.2 조종 화면 세부 구성
 
 <br>
 
-### 2.2.1. 조종 화면
+### 2.2.1. 높이-자세-RPM
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_1.jpg">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_1_desc.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.2. 높이-방향-RPM-자세-고도-위치
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_2.jpg">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_2_desc.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.3. 속도-위치-자세
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_3.jpg">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_3_desc.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.4. 자세-높이
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_4.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.5. 위치-트림
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_5.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.6. RF 정보 및 상태 
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_6.jpg">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_6_desc.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.7. 조이스틱 입력 값 
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_7.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+### 2.2.8. 버전
+
+<table>
+    <tr>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_8.jpg">
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                <img src="./images/drone4controller_8_desc.jpg">
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+
+
+<br>
+
+
+## 2.3. 버튼 구성 및 기능
+
+<br>
+
+### 2.3.1. 조종 화면
 
 <div align="center">
     <img src="./images/button_control_front.png" alt="조종기 전면">
@@ -89,7 +246,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <br>
 
-### 2.2.2. 설정 화면
+### 2.3.2. 설정 화면
 
 <div align="center">
     <img src="./images/button_setup_front.png" alt="조종기 전면">
@@ -109,7 +266,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 <br>
 
 
-## 2.3. 설정 화면 메뉴 구성
+## 2.4. 설정 화면 메뉴 구성
 
 <table>
     <tr>
@@ -612,9 +769,9 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 <br>
 
 
-## 2.4. MODE
+## 2.5. MODE
 
-### 2.4.1. MODE 1
+### 2.5.1. MODE 1
 
 <div align="center">
     <img src="./images/mode1.png" alt="MODE 1">
@@ -624,7 +781,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <br>
 
-### 2.4.2. MODE 2
+### 2.5.2. MODE 2
 
 <div align="center">
     <img src="./images/mode2.png" alt="MODE 2">
