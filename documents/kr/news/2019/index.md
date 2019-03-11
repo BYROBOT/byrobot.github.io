@@ -2,6 +2,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drone/manual/user/#heading-22-%EC%A1%B0%EC%A2%85-%ED%99%94%EB%A9%B4-%EC%84%B8%EB%B6%80-%EA%B5%AC%EC%84%B1">E-Drone 조종 화면에 대한 설명 추가</a> <sup><i>2019.3.11</i></sup><br>
+
 - <a href="/documents/kr/products/e_drone/log/updates/byblocks/#heading-2019228">ByBlocks for E-DRONE 업데이트</a> <sup><i>2019.2.28</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2019227">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.2.27</i></sup><br>
@@ -33,4 +35,4 @@
 ---
 
 
-Modified : 2019.3.5
+Modified : 2019.3.11
