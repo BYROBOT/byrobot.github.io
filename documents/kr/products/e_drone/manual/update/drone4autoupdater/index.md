@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2019.1.9
+Modified : 2019.3.12
 
 ---
 
@@ -11,6 +11,7 @@ Modified : 2019.1.9
 
 - **Drone4AutoUpdater**
 - [Drone4AutoUpdaterLight](../drone4autoupdaterlight/)
+- [Python Library](../python/)
 
 ---
 
