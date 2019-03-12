@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Intro**
 
-Modified : 2019.3.8
+Modified : 2019.3.13
 
 ---
 
@@ -16,9 +16,9 @@ Modified : 2019.3.8
 
 [Install Python 3 on macOS](/documents/kr/manual/install_python_3_on_mac_os/)
 
+<br>
+<br>
 
-<br>
-<br>
 
 
 # 1. *e_drone* for python 소개
@@ -27,9 +27,9 @@ Modified : 2019.3.8
 
 [https://pypi.python.org/pypi/e_drone](https://pypi.python.org/pypi/e_drone)
 
+<br>
+<br>
 
-<br>
-<br>
 
 
 # 2. 설치
@@ -61,9 +61,9 @@ Modified : 2019.3.8
 > pip3 --no-cache-dir install e_drone
 ```
 
+<br>
+<br>
 
-<br>
-<br>
 
 
 # 3. 업그레이드
@@ -80,9 +80,9 @@ Modified : 2019.3.8
 > pip3 install --upgrade e_drone
 ```
 
+<br>
+<br>
 
-<br>
-<br>
 
 
 # 4. 삭제
@@ -99,12 +99,37 @@ Modified : 2019.3.8
 > pip3 uninstall e_drone
 ```
 
+<br>
+<br>
+
+
+
+# 5. 드론, 조종기 펌웨어 업그레이드
+
+펌웨어를 최신 버전으로 업그레이드 하시려면 드론 또는 조종기를 부트로더 모드로 USB에 연결한 후 아래의 명령을 실행하시면 됩니다.
+
+
+```
+> python -m e_drone upgrade
+```
+
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> python3 -m e_drone upgrade
+```
+
+상세한 설명은 아래의 문서를 참고하시기 바랍니다.
+
+
+[e_drone 파이썬 라이브러리를 사용한 펌웨어 업데이트](/documents/kr/products/e_drone/manual/update/python/)
 
 <br>
 <br>
 
 
-# 5. 시리얼 포트 검색
+
+# 6. 시리얼 포트 검색
 
 
 Drone 클래스 내부에서 pyserial을 사용하여 시리얼 포트에 연결합니다. 시리얼 포트에 연결하려면 장치 이름을 알고 있어야 합니다. 이 때 필요한 것이 컴퓨터에 연결된 시리얼 통신 장치들을 검색할 수 있는 명령입니다. 이 명령은 **pyserial**에서 제공하고 있습니다.
@@ -144,12 +169,12 @@ for node in nodes:
     count += 1
 ```
 
-
 <br>
 <br>
 
 
-# 6. 응용 프로젝트 예제
+
+# 7. 응용 프로젝트 예제
 
 아래는 응용 프로젝트 예제입니다.
 

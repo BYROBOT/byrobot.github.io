@@ -1,10 +1,10 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2019.3.12
+Modified : 2019.3.13
 
 ---
 
-<h3>E-Drone 펌웨어 업데이트</h3>
+<h3>E-Drone 펌웨어 업그레이드</h3>
 
 ---
 
@@ -26,23 +26,26 @@ Modified : 2019.3.12
 <br>
 
 
+
 # 2. e_drone 파이썬 라이브러리 설치
 
 아래의 문서를 참고하여 e_drone 파이썬 라이브러리를 설치하시기 바랍니다.
 
-0.1.25 버전 이상부터 펌웨어 업데이트를 지원합니다.
+0.1.25 버전부터 펌웨어 업그레이드를 지원합니다.
 
 <a href="/documents/kr/products/e_drone/library/python/e_drone/01_intro/">e_drone 설치 메뉴얼</a>
 
 <br>
 
 
-# 3. 펌웨어 업데이트
+
+# 3. 펌웨어 업그레이드
 
 <br>
 
 
-## 3.1. 드론 업데이트
+
+## 3.1. 드론 업그레이드
 
 (1) 드론에 배터리가 연결되어 있다면 제거합니다.
 
@@ -56,22 +59,23 @@ Modified : 2019.3.12
 </div>
 <br>
 
-(3) 펌웨어 업데이트 명령을 실행합니다.
+(3) 펌웨어 업그레이드 명령을 실행합니다.
 
 ```
-> python -m e_drone.update
+> python -m e_drone upgrade
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> python3 -m e_drone.update
+> python3 -m e_drone upgrade
 ```
 
 <br>
 
 
-## 3.2. 조종기 업데이트
+
+## 3.2. 조종기 업그레이드
 
 (1) 조종기의 전원이 켜져 있으면 꺼주시기 바랍니다.
 
@@ -85,16 +89,16 @@ Modified : 2019.3.12
 </div>
 <br>
 
-(3) 펌웨어 업데이트 명령을 실행합니다.
+(3) 펌웨어 업그레이드 명령을 실행합니다.
 
 ```
-> python -m e_drone.update
+> python -m e_drone upgrade
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> python3 -m e_drone.update
+> python3 -m e_drone upgrade
 ```
 
 
@@ -102,5 +106,5 @@ Modified : 2019.3.12
 <br>
 
 
-여기까지 E-Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
+여기까지 E-Drone 드론과 조종기의 펌웨어 업그레이드를 완료하였습니다.
 
