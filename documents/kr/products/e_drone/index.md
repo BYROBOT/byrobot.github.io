@@ -115,7 +115,7 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">0.1.25</div></td>
+            <td colspan="2"><div align="center">0.1.28</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
