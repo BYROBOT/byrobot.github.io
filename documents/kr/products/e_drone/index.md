@@ -115,11 +115,11 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">0.1.16</div></td>
+            <td colspan="2"><div align="center">0.1.25</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.1.11</div></td>
+            <td colspan="2"><div align="center">2019.3.12</div></td>
         </tr>
         <tr>
             <td><div align="center">Manual</div></td>
@@ -130,4 +130,4 @@
 
 ---
 
-Modified : 2019.2.27
+Modified : 2019.3.12
