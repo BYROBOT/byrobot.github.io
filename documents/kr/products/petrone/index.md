@@ -22,6 +22,7 @@
                 </div>
             </td>
         </tr>
+        <!-- Firmware -->
         <tr>
             <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
@@ -63,6 +64,7 @@
                 <div align="center"><a href="/documents/kr/products/petrone/manual/update/">한국어</a></div>
             </td>
         </tr>
+        <!-- Driver -->
         <tr>
             <td colspan="3"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
         </tr>
@@ -72,6 +74,7 @@
                 <div align="center"><a href="https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip" target="_blank">CP210x Windows Drivers<br>(for Petrone Link)</a></div>
             </td>
         </tr>
+        <!-- Documents -->
         <tr>
             <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
@@ -81,6 +84,7 @@
                 <div align="center"><a href="/documents/kr/products/petrone/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone/protocol/">English</a></div>
             </td>
         </tr>
+        <!-- Python -->
         <tr>
             <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
@@ -90,11 +94,11 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">0.1.57</div></td>
+            <td colspan="2"><div align="center">0.1.58</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2018.11.26</div></td>
+            <td colspan="2"><div align="center">2019.3.14</div></td>
         </tr>
         <tr>
             <td><div align="center">Manual</div></td>
@@ -103,6 +107,7 @@
                 <a href="/documents/en/products/petrone/library/python/petrone/">English</a></div>
             </td>
         </tr>
+        <!-- Repository -->
         <tr>
             <td colspan="3"><div align="center"><a name="Repository"></a>&nbsp;<br>Repository<br>&nbsp;</div></td>
         </tr>
@@ -130,4 +135,4 @@
 
 ---
 
-Modified : 2019.2.27
+Modified : 2019.3.14
