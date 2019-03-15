@@ -57,6 +57,7 @@ Modified : 2019.3.15
     <img src="./images/1_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
     <p>드론 부트로더 진입 버튼</p>
 </div>
+
 <br>
 
 (3) 펌웨어 업그레이드 명령을 실행합니다.
@@ -71,9 +72,11 @@ Modified : 2019.3.15
 > python3 -m e_drone upgrade
 ```
 
+<br>
+
 <div align="center">
     <img src="./images/2_drone_upgrade_complete.png" alt="drone upgrade complete">
-    <p>드론 펌웨어 업데이트 완료</p>
+    <p>드론 펌웨어 업데이트 완료 화면</p>
 </div>
 <br>
 
@@ -107,9 +110,11 @@ Modified : 2019.3.15
 > python3 -m e_drone upgrade
 ```
 
+<br>
+
 <div align="center">
     <img src="./images/4_controller_upgrade_complete.png" alt="controller upgrade complete">
-    <p>조종기 펌웨어 업데이트 완료</p>
+    <p>조종기 펌웨어 업데이트 완료 화면</p>
 </div>
 <br>
 
