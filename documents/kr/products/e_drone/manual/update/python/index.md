@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2019.3.13
+Modified : 2019.3.15
 
 ---
 
@@ -71,6 +71,12 @@ Modified : 2019.3.13
 > python3 -m e_drone upgrade
 ```
 
+<div align="center">
+    <img src="./images/2_drone_upgrade_complete.png" alt="drone upgrade complete">
+    <p>드론 펌웨어 업데이트 완료</p>
+</div>
+<br>
+
 <br>
 
 
@@ -84,7 +90,7 @@ Modified : 2019.3.13
 (2) 조종기 왼쪽 위의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/2_e_drone_controller_front_bootloader_button.jpg" alt="controller top">
+    <img src="./images/3_e_drone_controller_top_bootloader_button.jpg" alt="controller top">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>
@@ -100,6 +106,12 @@ Modified : 2019.3.13
 ```
 > python3 -m e_drone upgrade
 ```
+
+<div align="center">
+    <img src="./images/4_controller_upgrade_complete.png" alt="controller upgrade complete">
+    <p>조종기 펌웨어 업데이트 완료</p>
+</div>
+<br>
 
 
 
