@@ -19,12 +19,14 @@ Modified : 2019.3.22
 e_drive 라이브러리는 소스 코드 작성없이 원하는 명령을 실행하거나 데이터를 확인할 수 있는 command line 명령어를 
 지원하고 있습니다. 아래에서 소개하는 명령어를 실행하여 간단하게 데이터를 확인하거나 작동해보시기 바랍니다.
 
+<br>
 
 
 ## request
 
 데이터 요청
 
+<br>
 
 ### State 데이터 요청
 
@@ -34,6 +36,7 @@ State 데이터를 20회 0.2초 주기로 요청하는 명령은 다음과 같�
 > python -m e_drive request State 20 0.2
 ```
 
+<br>
 
 ### RawCard 데이터 요청
 
@@ -43,6 +46,7 @@ RawCard 데이터를 100회 0.2초 주기로 요청하는 명령은 다음과 �
 > python -m e_drive request RawCard 100 0.2
 ```
 
+<br>
 
 ### RawCard 데이터 중 색상 인식 범위 출력 요청
 
