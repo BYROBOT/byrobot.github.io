@@ -1,4 +1,4 @@
-### E-Drone
+### E-Drive
 
 ---
 
@@ -7,7 +7,7 @@
         <tr>
             <td colspan="3">
                 <div align="center">
-                    <img src="/assets/images/products/e_drone.jpg" alt="e_drone">
+                    <img src="/assets/images/products/e_drive.jpg" alt="e_drive">
                 </div>
             </td>
         </tr>
@@ -45,13 +45,13 @@
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Manual</div></td>
             <td colspan="2">
                 <div align="center">
-                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">한국어</a>
+                    <a href="/documents/kr/products/e_drive/manual/update/drone4autoupdaterlight/">한국어</a>
                 </div>
             </td>
         </tr>
@@ -75,11 +75,11 @@
         </tr>
         <tr>
             <td><div align="center">User Manual</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/manual/user/">한국어</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Protocol</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_d rone/protocol/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
         </tr>
         <!-- ByBlocks -->
         <tr>
@@ -103,7 +103,7 @@
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/byblocks/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
         </tr>
         <!-- Python -->
         <tr>
@@ -111,7 +111,7 @@
         </tr>
         <tr>
             <td><div align="center">Library</div></td>
-            <td colspan="2"><div align="center"><a href="https://pypi.python.org/pypi/e_drone" target="_blank">e_drone</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://pypi.python.org/pypi/e_drive" target="_blank">e_drive</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
@@ -123,7 +123,7 @@
         </tr>
         <tr>
             <td><div align="center">Manual</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/library/python/e_drive/">한국어</a></div></td>
         </tr>
     </table>
 </div>
