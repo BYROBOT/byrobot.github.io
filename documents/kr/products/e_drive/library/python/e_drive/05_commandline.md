@@ -60,6 +60,22 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
+### RawLineTracer 데이터 요청
+
+RawLineTracer 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
+
+```
+> python -m e_drive request RawLineTracer 10 0.2
+```
+
+<div align="center">
+    <img src="../images/05_commandline_request_rawlinetracer.png">
+    <p>RawLineTracer 요청 실행 결과</p>
+</div>
+
+<br>
+
+
 ### RawCard 데이터 요청
 
 RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
