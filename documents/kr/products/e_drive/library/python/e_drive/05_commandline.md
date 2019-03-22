@@ -30,31 +30,46 @@ e_drive 라이브러리는 소스 코드 작성없이 원하는 명령을 실행
 
 ### State 데이터 요청
 
-State 데이터를 20회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
+State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
 ```
-> python -m e_drive request State 20 0.2
+> python -m e_drive request State 10 0.5
 ```
+
+<div align="center">
+    <img src="./images/05_commandline_request_state.png">
+    <p>State 요청 실행 결과</p>
+</div>
 
 <br>
 
 ### RawCard 데이터 요청
 
-RawCard 데이터를 100회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
+RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
 ```
-> python -m e_drive request RawCard 100 0.2
+> python -m e_drive request RawCard 10 0.5
 ```
+
+<div align="center">
+    <img src="./images/05_commandline_request_rawcard.png">
+    <p>RawCard 요청 실행 결과</p>
+</div>
 
 <br>
 
 ### RawCard 데이터 중 색상 인식 범위 출력 요청
 
-RawCard 데이터 중 색상 인식 범위 데이터를 100회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
+RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
 ```
-> python -m e_drive request RawCardRange 100 0.2
+> python -m e_drive request RawCardRange 10 0.5
 ```
+
+<div align="center">
+    <img src="./images/05_commandline_request_rawcardrange.png">
+    <p>RawCardRange 요청 실행 결과</p>
+</div>
 
 
 
