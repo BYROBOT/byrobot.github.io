@@ -37,7 +37,7 @@ State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같�
 ```
 
 <div align="center">
-    <img src="./images/05_commandline_request_state.png">
+    <img src="../images/05_commandline_request_state.png">
     <p>State 요청 실행 결과</p>
 </div>
 
@@ -52,7 +52,7 @@ RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같
 ```
 
 <div align="center">
-    <img src="./images/05_commandline_request_rawcard.png">
+    <img src="../images/05_commandline_request_rawcard.png">
     <p>RawCard 요청 실행 결과</p>
 </div>
 
@@ -67,7 +67,7 @@ RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 �
 ```
 
 <div align="center">
-    <img src="./images/05_commandline_request_rawcardrange.png">
+    <img src="../images/05_commandline_request_rawcardrange.png">
     <p>RawCardRange 요청 실행 결과</p>
 </div>
 
