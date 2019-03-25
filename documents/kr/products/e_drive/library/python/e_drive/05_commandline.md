@@ -1,6 +1,6 @@
 **[*e_drive* for python](index.md)** / **Drone**
 
-Modified : 2019.3.22
+Modified : 2019.3.25
 
 ---
 
@@ -128,6 +128,45 @@ RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 �
 <div align="center">
     <img src="../images/05_commandline_buzzer.png">
     <p>Buzzer 테스트</p>
+</div>
+
+
+
+<br>
+<br>
+
+
+
+# GUI
+
+e_drive 라이브러리에서는 시험적으로 kivy 라이브러리를 사용한 응용프로그램을 제공합니다.
+
+e_drive 라이브러리에 의존성을 포함하지 않은 상태이기 때문에 직접 설치가 필요합니다.
+
+<br>
+kivy 라이브러리 설치는 아래의 링크를 참고하시기 바랍니다.
+
+[Kivy Installation](https://kivy.org/doc/stable/installation/installation.html)
+
+<br>
+윈도우 버전의 설치는 아래의 링크를 참고하시기 바랍니다.
+
+[Installation on Windows](https://kivy.org/doc/stable/installation/installation-windows.html#installation)
+
+<br>
+<br>
+
+### 카드 읽기 테스트
+
+센서를 통해 읽은 카드의 색상을 GUI로 표시합니다.
+
+```
+> python -m e_drive cards
+```
+
+<div align="center">
+    <img src="../images/05_commandline_cards.png">
+    <p>카드 읽기 테스트</p>
 </div>
 
 
