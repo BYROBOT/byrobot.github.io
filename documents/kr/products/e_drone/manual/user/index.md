@@ -58,20 +58,34 @@ Modified : 2019.3.25
         <tr>
             <td rowspan="4"><div align="center">센서</div></td>
             <td><div align="center">Optical flow Sensor</div></td>
+        </tr>
+        <tr>
             <td><div align="center">6-Axis MEMS MotionTracking Sensor</div></td>
+        </tr>
+        <tr>
             <td><div align="center">IR Time of Flight Sensor</div></td>
+        </tr>
+        <tr>
             <td><div align="center">Barometer</div></td>
         </tr>
         <tr>
             <td rowspan="3"><div align="center">확장</div></td>
             <td><div align="center">4핀 UART 포트(RX,TX, 5V, GND) 2개</div></td>
+        </tr>
+        <tr>
             <td><div align="center">RGB LED 포트 1개</div></td>
+        </tr>
+        <tr>
             <td><div align="center">단색 LED 포트 2개 </div></td>
         </tr>
         <tr>
             <td rowspan="3"><div align="center">주요기능</div></td>
             <td><div align="center">실내 위치 인식</div></td>
+        </tr>
+        <tr>
             <td><div align="center">리턴 홈</div></td>
+        </tr>
+        <tr>
             <td><div align="center">전용 앱 또는 파이썬 드론 코딩</div></td>
         </tr>
     </table>
