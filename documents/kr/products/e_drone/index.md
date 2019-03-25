@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td><div align="center">Protocol</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_d rone/protocol/">한국어</a></div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
         </tr>
         <!-- ByBlocks -->
         <tr>
@@ -130,4 +130,4 @@
 
 ---
 
-Modified : 2019.3.12
+Modified : 2019.3.25
