@@ -24,20 +24,20 @@ Modified : 2019.3.25
 <div align="center">
     <table>
         <tr>
-            <td><div align="center">항목</div></td>
-            <td><div align="center">E-Drone</div></td>
+            <td><div align="center"><b>항목</b></div></td>
+            <td><div align="center"><b>E-Drone</b></div></td>
         </tr>
         <tr>
             <td><div align="center">모터 축간 대각선 길이</div></td>
             <td><div align="center">135 mm</div></td>
         </tr>
         <tr>
-            <td><div align="center">무게(배터리 포함)</div></td>
-            <td><div align="center">113 g</div></td>
+            <td><div align="center">무게</div></td>
+            <td><div align="center">113g<br>(배터리 포함)</div></td>
         </tr>
         <tr>
             <td><div align="center">배터리</div></td>
-            <td><div align="center">7.4V 1,000mAh Lipo 배터리</div></td>
+            <td><div align="center">7.4V<br>1,000mAh<br>LiPo(Lithium polymer) battery</div></td>
         </tr>
         <tr>
             <td><div align="center">비행시간</div></td>
@@ -49,7 +49,7 @@ Modified : 2019.3.25
         </tr>
         <tr>
             <td><div align="center">통신방식</div></td>
-            <td><div align="center">2.4Ghz RF(조종기 제공)</div></td>
+            <td><div align="center">2.4Ghz RF</div></td>
         </tr>
         <tr>
             <td><div align="center">조종 모드</div></td>
@@ -57,36 +57,36 @@ Modified : 2019.3.25
         </tr>
         <tr>
             <td rowspan="4"><div align="center">센서</div></td>
-            <td><div align="center">Optical flow Sensor</div></td>
+            <td><div align="center">Optical flow</div></td>
         </tr>
         <tr>
-            <td><div align="center">6-Axis MEMS MotionTracking Sensor</div></td>
+            <td><div align="center">6-Axis MEMS MotionTracking</div></td>
         </tr>
         <tr>
-            <td><div align="center">IR Time of Flight Sensor</div></td>
+            <td><div align="center">IR Time of Flight</div></td>
         </tr>
         <tr>
             <td><div align="center">Barometer</div></td>
         </tr>
         <tr>
             <td rowspan="3"><div align="center">확장</div></td>
-            <td><div align="center">4핀 UART 포트(RX,TX, 5V, GND) 2개</div></td>
+            <td><div align="center">4핀 UART 포트(RX, TX, 5V, GND) x 2</div></td>
         </tr>
         <tr>
-            <td><div align="center">RGB LED 포트 1개</div></td>
+            <td><div align="center">RGB LED 포트 x 1</div></td>
         </tr>
         <tr>
-            <td><div align="center">단색 LED 포트 2개 </div></td>
+            <td><div align="center">단색 LED 포트 x 2</div></td>
         </tr>
         <tr>
             <td rowspan="3"><div align="center">주요기능</div></td>
             <td><div align="center">실내 위치 인식</div></td>
         </tr>
         <tr>
-            <td><div align="center">리턴 홈</div></td>
+            <td><div align="center">Return Home</div></td>
         </tr>
         <tr>
-            <td><div align="center">전용 앱 또는 파이썬 드론 코딩</div></td>
+            <td><div align="center">앱, 파이썬 코딩</div></td>
         </tr>
     </table>
 </div>
