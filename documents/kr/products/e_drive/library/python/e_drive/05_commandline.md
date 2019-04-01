@@ -1,6 +1,6 @@
 **[*e_drive* for python](index.md)** / **Drone**
 
-Modified : 2019.3.25
+Modified : 2019.4.1
 
 ---
 
@@ -161,13 +161,32 @@ kivy 라이브러리 설치는 아래의 링크를 참고하시기 바랍니다.
 센서를 통해 읽은 카드의 색상을 GUI로 표시합니다.
 
 ```
+> python -m e_drive card
+```
+
+<div align="center">
+    <img src="../images/05_commandline_card.png">
+    <p>카드 읽기 테스트</p>
+</div>
+
+<br>
+<br>
+
+### 카드 목록 읽기 테스트
+
+센서를 통해 읽은 카드와 카드 목록을 GUI로 표시합니다.
+
+```
 > python -m e_drive cards
 ```
 
 <div align="center">
     <img src="../images/05_commandline_cards.png">
-    <p>카드 읽기 테스트</p>
+    <p>카드 목록 읽기 테스트</p>
 </div>
+
+
+
 
 
 
