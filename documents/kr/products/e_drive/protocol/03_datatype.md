@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.2.11
+Modified : 2019.4.11
 
 ---
 
@@ -40,9 +40,6 @@ namespace Protocol
             Control                     = 0x10,     // 조종
 
             Command                     = 0x11,     // 명령
-            Pairing                     = 0x12,     // 페어링
-            Rssi                        = 0x13,     // RSSI
-            TimeSync                    = 0x14,     // 시간 동기화
 
             // Light
             LightManual                 = 0x20,     // LED 수동 제어
@@ -52,13 +49,15 @@ namespace Protocol
 
             // 센서 RAW 데이터
             RawMotion                   = 0x30,     // Motion 센서 데이터 RAW 값
-            RawFlow,                                // Flow 센서 데이터 RAW 값
+            RawLineTracer,                          // 라인트레이서 데이터 RAW 값
+            RawCard,                                // 카드 데이터 RAW 값
+            RawCardList,                            // 카드 리스트 데이터
+            RawCardFunctionList,                    // 카드 함수 리스트 데이터
 
             // 상태,  센서
-            State                       = 0x40,     // 드론의 상태(비행 모드, 방위기준, 배터리량)
-            Attitude,                               // 드론의 자세(Angle)(Attitude)
+            State                       = 0x40,     // 상태(비행 모드, 방위기준, 배터리량)
+            Attitude,                               // 자세(Angle)(Attitude)
             Position,                               // 위치
-            Altitude,                               // 높이, 고도
             Motion,                                 // Motion 센서 데이터 처리한 값(IMU)
             Range,                                  // 거리센서 데이터
 
@@ -66,7 +65,6 @@ namespace Protocol
             Count                       = 0x50,     // 카운트
             Bias,                                   // 엑셀, 자이로 바이어스 값
             Trim,                                   // 트림
-            Weight,                                 // 무게 설정
             LostConnection,                         // 연결이 끊긴 후 반응 시간 설정
 
             // Devices
@@ -77,24 +75,20 @@ namespace Protocol
 
             // Input
             Button                      = 0x70,     // 버튼 입력
-            Joystick,                               // 조이스틱 입력
-                
-            // Display
-            DisplayClear                = 0x80,     // 화면 지우기
-            DisplayInvert,                          // 화면 반전
-            DisplayDrawPoint,                       // 점 그리기
-            DisplayDrawLine,                        // 선 그리기
-            DisplayDrawRect,                        // 사각형 그리기
-            DisplayDrawCircle,                      // 원 그리기
-            DisplayDrawString,                      // 문자열 쓰기
-            DisplayDrawStringAlign,                 // 문자열 쓰기
-            DisplayDrawImage,                       // 그림 그리기
 
             // Information Assembled
             InformationAssembledForController       = 0xA0,     // 데이터 모음
             InformationAssembledForEntry            = 0xA1,     // 데이터 모음
             InformationAssembledForByBlocks         = 0xA2,     // 데이터 모음
 
+            // LINK 모듈
+            LinkState                               = 0xE0,     // 링크 모듈의 상태
+            LinkEvent,                                          // 링크 모듈의 이벤트
+            LinkEventAddress,                                   // 링크 모듈의 이벤트 + 주소
+            LinkRssi,                                           // 링크와 연결된 장치의 RSSI값
+            LinkDiscoveredDevice,                               // 검색된 장치
+            LinkPasscode,                                       // 페어링 시 필요한 Passcode 설정
+            
             EndOfType
         };
     }
@@ -107,70 +101,64 @@ namespace Protocol
 
 아래는 각 DataType와 연관된 구조체들을 링크로 연결해두었습니다.
 
-| 이름                                  | 값   | 대상 | 설명                                           | 구조체  |
-|:--------------------------------------|:----:|:----:|:-----------------------------------------------|:--------|
-| None                                  | 0x00 | -    | 없음                                           | &nbsp; |
-| Ping                                  | 0x01 | A    | 통신 확인                                      | [Protocol::Ping](05_structs.md#Protocol_Ping) |
-| Ack                                   | 0x02 | A    | 데이터 수신에 대한 응답                        | [Protocol::Ack](05_structs.md#Protocol_Ack) |
-| Error                                 | 0x03 | A    | 오류                                           | [Protocol::Error](05_structs.md#Protocol_Error) |
-| Request                               | 0x04 | A    | 지정한 타입의 데이터 요청                      | [Protocol::Request](05_structs.md#Protocol_Request) |
-| Message                               | 0x05 | -    | 문자열 데이터                                  | &nbsp; |
-| Address                               | 0x06 | A    | 주소                                           | [Protocol::Address](05_structs.md#Protocol_Address) |
-| Information                           | 0x07 | A    | 펌웨어 및 장치 정보                            | [Protocol::Information](05_structs.md#Protocol_Information) |
-| Update                                | 0x08 | A    | 펌웨어 업데이트                                | &nbsp; |
-| UpdateLocation                        | 0x09 | A    | 펌웨어 업데이트 위치                           | &nbsp; |
-| Encrypt                               | 0x0A | A    | 펌웨어 암호화                                  | &nbsp; |
-| SystemCount                           | 0x0B | A    | 시스템 카운터                                  | &nbsp; |
-| SystemInformation                     | 0x0C | A    | 시스템 정보                                    | &nbsp; |
-| Registration                          | 0x0D | -    | 제품 등록                                      | &nbsp; |
-| Administrator                         | 0x0E | -    | 관리자                                         | &nbsp; |
-| Monitor                               | 0x0F | -    | 디버깅 데이터                                  | &nbsp; |
-| Control                               | 0x10 | D    | 조종                                           | [Control::Quad8](05_structs.md#Control_Quad8),<br> [Control::Quad8AndRequestData](05_structs.md#Control_Quad8AndRequestData),<br> [Control::Position](05_structs.md#Control_Position) |
-| Command                               | 0x11 | A    | 명령                                           | [Protocol::Command::Command](05_structs.md#Protocol_Command_Command),<br> [Protocol::Command::LightEvent](05_structs.md#Protocol_Command_LightEvent),<br> [Protocol::Command::LightEventColor](05_structs.md#Protocol_Command_LightEventColor),<br> [Protocol::Command::LightEventColors](05_structs.md#Protocol_Command_LightEventColors) |
-| Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
-| Rssi                                  | 0x13 | A    | RSSI                                           | [Protocol::Rssi](05_structs.md#Protocol_Rssi) |
-| TimeSync                              | 0x14 | A    | TimeSync                                       | &nbsp; |
-| LightManual                           | 0x20 | A    | LED 수동 제어                                  | [Protocol::Light::Manual](06_structs_light.md#Protocol_Light_Manual) |
-| LightMode                             | 0x21 | D    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode),<br> [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
-| LightEvent                            | 0x22 | D    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event),<br> [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor),<br> [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |
-| LightDefault                          | 0x23 | D    | LED 초기색                                     | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
-| RawMotion                             | 0x30 | D    | Motion Raw 데이터(Accel, Gyro)                 | [Protocol::RawMotion](05_structs.md#Protocol_RawMotion) |
-| RawFlow                               | 0x31 | D    | Flow Raw 데이터                                | [Protocol::RawFlow](05_structs.md#Protocol_RawFlow) |
-| State                                 | 0x40 | D    | 드론의 상태                                    | [Protocol::State](05_structs.md#Protocol_State) |
-| Attitude                              | 0x41 | D    | 드론의 자세(Angle)                             | [Protocol::Attitude](05_structs.md#Protocol_Attitude) |
-| Position                              | 0x42 | D    | 위치                                           | [Protocol::Position](05_structs.md#Protocol_Position) |
-| Altitude                              | 0x43 | D    | 높이, 고도                                     | [Protocol::Altitude](05_structs.md#Protocol_Altitude) |
-| Motion                                | 0x44 | D    | Motion 센서(Accel, Gyro, Angle)                | [Protocol::Motion](05_structs.md#Protocol_Motion) |
-| Range                                 | 0x45 | D    | Range 센서                                     | [Protocol::Range](05_structs.md#Protocol_Range) |
-| Count                                 | 0x50 | D    | 카운트                                         | [Protocol::Count](05_structs.md#Protocol_Count) |
-| Bias                                  | 0x51 | D    | Accel, Gyro 바이어스 값                        | [Protocol::Bias](05_structs.md#Protocol_Bias) |
-| Trim                                  | 0x52 | D    | Trim                                           | [Protocol::Trim](05_structs.md#Protocol_Trim) |
-| Weight                                | 0x53 | D    | 무게                                           | [Protocol::Weight](05_structs.md#Protocol_Weight) |
-| LostConnection                        | 0x54 | D    | 연결이 끊긴 후 반응 시간 설정                  | [Protocol::LostConnection](05_structs.md#Protocol_LostConnection) |
-| Motor                                 | 0x60 | D    | 모터 제어 및 현재 제어값 확인                  | [Protocol::Motor](05_structs.md#Protocol_Motor) |
-| MotorSingle                           | 0x61 | D    | 한 개의 모터 제어                              | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
-| Buzzer                                | 0x62 | C    | 버저 제어                                      | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer) |
-| Vibrator                              | 0x63 | C    | 진동 제어                                      | [Protocol::Vibrator](05_structs.md#Protocol_Vibrator) |
-| Button                                | 0x70 | A    | 버튼 입력                                      | [Protocol::Button](05_structs.md#Protocol_Button) |
-| Joystick                              | 0x71 | C    | 조이스틱 입력                                  | [Protocol::Joystick](05_structs.md#Protocol_Joystick) |
-| DisplayClear                          | 0x80 | C    | 화면 지우기                                    | [Protocol::Display::ClearAll](07_structs_display.md#Protocol_Display_ClearAll),<br> [Protocol::Display::Clear](07_structs_display.md#Protocol_Display_Clear)   |
-| DisplayInvert                         | 0x81 | C    | 화면 반전                                      | [Protocol::Display::Invert](07_structs_display.md#Protocol_Display_Invert) |
-| DisplayDrawPoint                      | 0x82 | C    | 점 그리기                                      | [Protocol::Display::DrawPoint](07_structs_display.md#Protocol_Display_DrawPoint) |
-| DisplayDrawLine                       | 0x83 | C    | 선 그리기                                      | [Protocol::Display::DrawLine](07_structs_display.md#Protocol_Display_DrawLine) |
-| DisplayDrawRect                       | 0x84 | C    | 사각형 그리기                                  | [Protocol::Display::DrawRect](07_structs_display.md#Protocol_Display_DrawRect) |
-| DisplayDrawCircle                     | 0x85 | C    | 원 그리기                                      | [Protocol::Display::DrawCircle](07_structs_display.md#Protocol_Display_DrawCircle) |
-| DisplayDrawString                     | 0x86 | C    | 문자열 쓰기                                    | [Protocol::Display::DrawString](07_structs_display.md#Protocol_Display_DrawString) |
-| DisplayDrawStringAlign                | 0x87 | C    | 문자열 정렬하여 쓰기                           | [Protocol::Display::DrawStringAlign](07_structs_display.md#Protocol_Display_DrawStringAlign) |
-| DisplayDrawImage                      | 0x88 | C    | 이미지 그리기                                  | [Protocol::Display::DrawImage](07_structs_display.md#Protocol_Display_DrawImage) |
-| InformationAssembledForController     | 0xA0 | D    | 자주 갱신되는 데이터 모음(조종기)              | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
-| InformationAssembledForEntry          | 0xA1 | D    | 자주 갱신되는 데이터 모음(엔트리)              | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |
-| InformationAssembledForByBlocks       | 0xA2 | D    | 자주 갱신되는 데이터 모음(바이블럭)            | [Protocol::InformationAssembledForByBlocks](05_structs.md#Protocol_InformationAssembledForByBlocks) |
+| 이름                                  | 값   | 대상 | 설명                                            | 구조체  |
+|:--------------------------------------|:----:|:----:|:------------------------------------------------|:--------|
+| None                                  | 0x00 | -    | 없음                                            | &nbsp; |
+| Ping                                  | 0x01 | A    | 통신 확인                                       | [Protocol::Ping](05_structs.md#Protocol_Ping) |
+| Ack                                   | 0x02 | A    | 데이터 수신에 대한 응답                         | [Protocol::Ack](05_structs.md#Protocol_Ack) |
+| Error                                 | 0x03 | A    | 오류                                            | [Protocol::Error](05_structs.md#Protocol_Error) |
+| Request                               | 0x04 | A    | 지정한 타입의 데이터 요청                       | [Protocol::Request](05_structs.md#Protocol_Request) |
+| Message                               | 0x05 | -    | 문자열 데이터                                   | &nbsp; |
+| Address                               | 0x06 | A    | 주소                                            | [Protocol::Address](05_structs.md#Protocol_Address) |
+| Information                           | 0x07 | A    | 펌웨어 및 장치 정보                             | [Protocol::Information](05_structs.md#Protocol_Information) |
+| Update                                | 0x08 | A    | 펌웨어 업데이트                                 | &nbsp; |
+| UpdateLocation                        | 0x09 | A    | 펌웨어 업데이트 위치                            | &nbsp; |
+| Encrypt                               | 0x0A | A    | 펌웨어 암호화                                   | &nbsp; |
+| SystemCount                           | 0x0B | A    | 시스템 카운터                                   | &nbsp; |
+| SystemInformation                     | 0x0C | A    | 시스템 정보                                     | &nbsp; |
+| Registration                          | 0x0D | -    | 제품 등록                                       | &nbsp; |
+| Administrator                         | 0x0E | -    | 관리자                                          | &nbsp; |
+| Monitor                               | 0x0F | -    | 디버깅 데이터                                   | &nbsp; |
+| Control                               | 0x10 | C    | 조종                                            | [Control::Quad8](05_structs.md#Control_Quad8),<br> [Control::Quad8AndRequestData](05_structs.md#Control_Quad8AndRequestData),<br> [Control::Position](05_structs.md#Control_Position) |
+| Command                               | 0x11 | A    | 명령                                            | [Protocol::Command::Command](05_structs.md#Protocol_Command_Command),<br> [Protocol::Command::LightEvent](05_structs.md#Protocol_Command_LightEvent),<br> [Protocol::Command::LightEventColor](05_structs.md#Protocol_Command_LightEventColor),<br> [Protocol::Command::LightEventColors](05_structs.md#Protocol_Command_LightEventColors) |
+| LightManual                           | 0x20 | A    | LED 수동 제어                                   | [Protocol::Light::Manual](06_structs_light.md#Protocol_Light_Manual) |
+| LightMode                             | 0x21 | C    | LED 모드 지정                                   | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode),<br> [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
+| LightEvent                            | 0x22 | C    | LED 이벤트                                      | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event),<br> [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor),<br> [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |
+| LightDefault                          | 0x23 | C    | LED 초기색                                      | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
+| RawMotion                             | 0x30 | C    | Motion Raw 데이터(Accel, Gyro)                  | [Protocol::RawMotion](05_structs.md#Protocol_RawMotion) |
+| RawLineTracer                         | 0x31 | C    | 라인트레이서 데이터 RAW 값                      | [Protocol::RawLineTracer](05_structs.md#Protocol_RawLineTracer) |
+| RawCard                               | 0x32 | C    | 카드 데이터 RAW 값                              | [Protocol::RawCard](05_structs.md#Protocol_RawCard) |
+| RawCardList                           | 0x33 | C    | 카드 리스트 데이터                              | [Protocol::RawCardList](05_structs.md#Protocol_RawCardList) |
+| RawCardFunctionList                   | 0x34 | C    | 카드 함수 리스트 데이터                         | [Protocol::RawCardFunctionList](05_structs.md#Protocol_RawCardFunctionList) |
+| State                                 | 0x40 | C    | 드론의 상태                                     | [Protocol::State](05_structs.md#Protocol_State) |
+| Attitude                              | 0x41 | C    | 드론의 자세(Angle)                              | [Protocol::Attitude](05_structs.md#Protocol_Attitude) |
+| Position                              | 0x42 | C    | 위치                                            | [Protocol::Position](05_structs.md#Protocol_Position) |
+| Motion                                | 0x43 | C    | Motion 센서(Accel, Gyro, Angle)                 | [Protocol::Motion](05_structs.md#Protocol_Motion) |
+| Range                                 | 0x44 | C    | Range 센서                                      | [Protocol::Range](05_structs.md#Protocol_Range) |
+| Count                                 | 0x50 | C    | 카운트                                          | [Protocol::Count](05_structs.md#Protocol_Count) |
+| Bias                                  | 0x51 | C    | Accel, Gyro 바이어스 값                         | [Protocol::Bias](05_structs.md#Protocol_Bias) |
+| Trim                                  | 0x52 | C    | Trim                                            | [Protocol::Trim](05_structs.md#Protocol_Trim) |
+| LostConnection                        | 0x53 | C    | 연결이 끊긴 후 반응 시간 설정                   | [Protocol::LostConnection](05_structs.md#Protocol_LostConnection) |
+| Motor                                 | 0x60 | C    | 모터 제어 및 현재 제어값 확인                   | [Protocol::Motor](05_structs.md#Protocol_Motor) |
+| MotorSingle                           | 0x61 | C    | 한 개의 모터 제어                               | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
+| Buzzer                                | 0x62 | C    | 버저 제어                                       | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer) |
+| Vibrator                              | 0x63 | C    | 진동 제어                                       | [Protocol::Vibrator](05_structs.md#Protocol_Vibrator) |
+| Button                                | 0x70 | A    | 버튼 입력                                       | [Protocol::Button](05_structs.md#Protocol_Button) |
+| InformationAssembledForController     | 0xA0 | C    | 자주 갱신되는 데이터 모음(조종기)               | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
+| InformationAssembledForEntry          | 0xA1 | C    | 자주 갱신되는 데이터 모음(엔트리)               | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |
+| InformationAssembledForByBlocks       | 0xA2 | C    | 자주 갱신되는 데이터 모음(바이블럭)             | [Protocol::InformationAssembledForByBlocks](05_structs.md#Protocol_InformationAssembledForByBlocks) |
+| LinkState                             | 0xE0 | B    | 링크 모듈의 상태                                | [Protocol::LinkState](05_structs.md#Protocol_LinkState) |
+| LinkEvent                             | 0xE1 | B    | 링크 모듈의 이벤트                              | [Protocol::LinkEvent](05_structs.md#Protocol_LinkEvent) |
+| LinkEventAddress                      | 0xE2 | B    | 링크 모듈의 이벤트 + 주소                       | [Protocol::LinkEventAddress](05_structs.md#Protocol_LinkEventAddress) |
+| LinkRssi                              | 0xE3 | B    | 링크와 연결된 장치의 RSSI값                     | [Protocol::LinkRssi](05_structs.md#Protocol_LinkRssi) |
+| LinkDiscoveredDevice                  | 0xE4 | B    | 검색된 장치                                     | [Protocol::LinkDiscoveredDevice](05_structs.md#Protocol_LinkDiscoveredDevice) |
+| LinkPasscode                          | 0xE5 | B    | 페어링 시 필요한 Passcode 설정                  | [Protocol::LinkPasscode](05_structs.md#Protocol_LinkPasscodee) |
 
 <br>
 
 - A: 모든 장치(All)
-- C: 조종기(Controller)
-- D: 드론(Drone)
+- B: 블루투스 모듈(Bluetooth)
+- C: 자동차(Car)
 
 <br>
 

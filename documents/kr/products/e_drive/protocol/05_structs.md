@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.2.26
+Modified : 2019.4.11
 
 ---
 
@@ -221,6 +221,45 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_InformationCC2541"></a>
+## Protocol::InformationCC2541
+
+BLE(Bluetooth Low Energy) 통신 칩의 펌웨어 정보
+
+```cpp
+namespace Protocol
+{
+    struct InformationCC2541
+    {
+        u8      modeUpdate;     // 업데이트 모드
+
+        u32     modelNumber;    // 모델 번호
+        u32     version;        // 현재 펌웨어의 버젼
+
+        u16     year;           // 빌드 년
+        u8      month;          // 빌드 월
+        u8      day;            // 빌드 일
+
+        u8      imageType;      // 이미지 타입
+    };
+}
+```
+
+| 변수 이름     | 형식                                                                | 크기     | 범위 | 설명                |
+|:-------------:|:-------------------------------------------------------------------:|:--------:|:----:|:--------------------|
+| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | 1 Byte   | -    | 업데이트 모드       |
+| modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)                  | 4 Byte   | -    | 모델 번호           |
+| version       | [Protocol::Version](#Protocol_Version)                              | 4 Byte   | -    | 펌웨어의 버젼       |
+| year          | uint16_t                                                            | 2 Byte   | -    | 펌웨어 빌드 년      |
+| month         | uint8_t                                                             | 1 Byte   | -    | 펌웨어 빌드 월      |
+| day           | uint8_t                                                             | 1 Byte   | -    | 펌웨어 빌드 일      |
+| imageType     | [ImageType::Type](04_definitions.md#ImageType)                      | 1 Byte   | -    | 이미지 타입         |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Version"></a>
 ## Protocol::Version
 
@@ -258,115 +297,10 @@ namespace Protocol
 <br>
 
 
-<a name="Control_Quad8"></a>
-## Control::Quad8
-
-드론
-
-```cpp
-namespace Control
-{
-    struct Quad8
-    {
-        s8      roll;       // roll
-        s8      pitch;      // pitch
-        s8      yaw;        // yaw
-        s8      throttle;   // throttle
-    };
-}
-```
-
-| 변수 이름 | 형식     | 크기     | 범위         | 설명       | 음수 값(-) | 양수 값(+)    |
-|:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
-| roll      | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
-| pitch     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
-| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 시계 방향  | 반시계 방향   |
-| throttle  | int8_t   | 1 Byte   | -100 ~ 100   | 승하강     | 하강       | 상승          |
-
-
-<br>
-<br>
-
-
-<a name="Control_Quad8AndRequestData"></a>
-## Control::Quad8AndRequestData
-
-드론 조종 및 데이터 요청
-
-조종 명령 시 응답 데이터로 Ack 대신 요청한 데이터를 응답으로 보내게 함.
-
-```cpp
-namespace Control
-{
-    struct Quad8AndRequestData
-    {
-        s8      roll;       // roll
-        s8      pitch;      // pitch
-        s8      yaw;        // yaw
-        s8      throttle;   // throttle
-
-        u8      dataType;   // DataType
-    };
-}
-```
-
-| 변수 이름 | 형식     | 크기     |범위          | 설명       | 음수 값(-) | 양수 값(+)    |
-|:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
-| roll      | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
-| pitch     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
-| yaw       | int8_t   | 1 Byte   | -100 ~ 100   | 좌우 회전  | 시계 방향  | 반시계 방향   |
-| throttle  | int8_t   | 1 Byte   | -100 ~ 100   | 승하강     | 하강       | 상승          |
-| dataType  | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType) | - | 1 Byte | 요청할 데이터 타입 | - | - |
-
-
-<br>
-<br>
-
-
-<a name="Control_Position16"></a>
-## Control::Position16
-
-드론 이동 명령
-
-추후 제거할 예정
-
-```cpp
-namespace Control
-{
-    struct Position16
-    {
-        s16     positionX;          // meter    x 10
-        s16     positionY;          // meter    x 10
-        s16     positionZ;          // meter    x 10
-        s16     velocity;           // m/s      x 10
-        
-        s16     heading;            // degree
-        s16     rotationalVelocity; // deg/s
-    };
-}
-```
-
-
-| 변수 이름             | 형식     | 크기     | 범위                       | 단위          | 설명                 |
-|:---------------------:|:--------:|:--------:|:--------------------------:|:--------------|:---------------------|
-| positionX             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
-| positionY             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
-| positionZ             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocity              | int16_t  | 2 Byte   | 0 ~ 50(0.0 ~ 5.0)          | m/s x 10      | 이동 속도            |
-| heading               | int16_t  | 2 Byte   | -360 ~ 360                 | degree        | 반시계방향(+), 시계방향(-) |
-| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 180                   | degree/s      | 좌우 회전 속도       |
-
-
-<br>
-<br>
-
-
 <a name="Control_Position"></a>
 ## Control::Position
 
-드론 이동 명령
-
-드론에 이동 명령을 내리는 경우 사용.
+이동 명령
 
 ```cpp
 namespace Control
@@ -421,10 +355,8 @@ namespace Protocol
 | 변수 이름   | 형식                                                                    | 크기     | 범위    | 설명         |
 |:-----------:|:-----------------------------------------------------------------------:|:--------:|:-------:|:-------------|
 | commandType | [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)   | 1 Byte   | -       | 명령 타입    |
-| option      | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)    | 1 Byte   | -       | 옵션         |
-|             | [System::FlightEvent::Type](04_definitions.md#FlightEvent)              |          | -       |              |
-|             | [Headless::Type](04_definitions.md#Headless)                            |          | -       |              |
-|             | [System::Trim::Type](04_definitions.md#Trim)                            |          | -       |              |
+| option      | [Mode::Drone::Type](04_definitions.md#Mode_Drone)                       | 1 Byte   | -       | 옵션         |
+|             | [System::DriveEvent::Type](04_definitions.md#DriveEvent)                |          | -       |              |
 |             | uint8_t                                                                 |          | -       |              |
 
 
@@ -523,72 +455,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Pairing"></a>
-## Protocol::Pairing
-
-페어링
-
-장치의 페어링 정보를 확인하거나 변경할 때 사용합니다.
-
-address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Pairing
-    {
-        u16     address0;
-        u16     address1;
-        u16     address2;
-        u8      scramble;
-        u8      channel;
-    };
-}
-```
-
-| 변수 이름       | 형식      | 크기     | 범위             | 설명               |
-|:---------------:|:---------:|:--------:|:----------------:|:-------------------|
-| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 0             |
-| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 1             |
-| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 2             |
-| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F      | 스크램블           |
-| channel         | uint8_t   | 1 Byte   | 0 ~ 81           | 채널               |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Rssi"></a>
-## Protocol::Rssi
-
-RSSI
-
-Received signal strength indication
-
-[http://www.metageek.com/training/resources/understanding-rssi.html](http://www.metageek.com/training/resources/understanding-rssi.html)
-
-현재 무선으로 연결된 장치의 신호 세기를 반환합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Rssi
-    {
-        s8     Rssi;
-    };
-}
-```
-
-| 변수 이름    | 형식     | 크기     | 범위      | 설명       |
-|:------------:|:--------:|:--------:|:---------:|:-----------|
-| rssi         | int8_t   | 1 Byte   | -100 ~ 0  | 신호 세기  |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_RawMotion"></a>
 ## Protocol::RawMotion
 
@@ -624,26 +490,49 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_RawFlow"></a>
-## Protocol::RawFlow
+<a name="Protocol_RawLineTracer"></a>
+## Protocol::RawLineTracer
 
-Flow 센서 RAW 데이터
+라인트레이서 RAW 데이터
 
 ```cpp
 namespace Protocol
 {
-    struct RawFlow
+    struct RawLineTracer
     {
-        f32     x;
-        f32     y;
+        s16     left;           // 바닥	좌측 IR
+        s16     right;          // 바닥 우측 IR
+        
+        s16     frontH;         // Front H 감지
+        s8      frontS;         // Front S 감지
+        s8      frontV;         // Front V 감지
+        
+        s16     rearH;          // Rear H 감지
+        s8      rearS;          // Rear S 감지
+        s8      rearV;          // Rear V 감지
+        
+        u8      leftColor;      // 왼쪽 바닥 색(흰색/검정)
+        u8      rightColor;     // 오른쪽 바닥 색(흰색/검정)
+        u8      frontColor;     // 앞부분에서 감지한 색
+        u8      rearColor;      // 뒷부분에서 감지한 색
     };
 }
 ```
 
-| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
-|:----------:|:---------:|:--------:|:-----:|:--------|
-| x          | float     | 4 Byte   | -     | X축     |
-| y          | float     | 4 Byte   | -     | Y축     |
+| 변수 이름     | 형식     | 크기     | 범위                | 설명                      |
+|:-------------:|:--------:|:--------:|:-------------------:|:--------------------------|
+| left          | Int16    | 2 Byte   |                     | 바닥 좌측 IR              |
+| right         | Int16    | 2 Byte   |                     | 바닥 우측 IR              |
+| frontH        | Int16    | 2 Byte   | 0 ~ 360             | Front H 감지              |
+| frontS        | Int8     | 1 Byte   |                     | Front S 감지              |
+| frontV        | Int8     | 1 Byte   |                     | Front V 감지              |
+| rearH         | Int16    | 2 Byte   | 0 ~ 360             | Rear H 감지               |
+| rearS         | Int8     | 1 Byte   |                     | Rear S 감지               |
+| rearV         | Int8     | 1 Byte   |                     | Rear V 감지               |
+| leftColor     | Int8     | 1 Byte   |                     | 왼쪽 바닥 색(흰색/검정)   |
+| rightColor    | Int8     | 1 Byte   |                     | 오른쪽 바닥 색(흰색/검정) |
+| frontColor    | Int8     | 1 Byte   |                     | 앞부분에서 감지한 색      |
+| rearColor     | Int8     | 1 Byte   |                     | 뒷부분에서 감지한 색      |
 
 
 <br>
@@ -660,29 +549,38 @@ namespace Protocol
 {
     struct State
     {
-        u8      modeSystem;         // 시스템 모드
-        u8      modeFlight;         // 비행 모드
-
-        u8      modeControlFlight;  // 비행 제어 모드
-        u8      modeMovement;       // 이동 상태
-        u8      headless;           // 헤드리스 모드
-        u8      controlSpeed;       // 제어 속도
-        u8      sensorOrientation;  // 센서 방향
-        u8      battery;            // 배터리량(0 ~ 100%)
+        u8      modeSystem;     // 시스템 동작 모드
+        u8      modeDrive;      // 주행 모드
+        
+        u16     irFrontLeft;    // 정면 좌측 거리센서
+        u16     irFrontRight;   // 정면 우측 거리센서
+        
+        u8      colorFront;     // 바닥 앞 부분 색상(RGB)
+        u8      colorRear;      // 바닥 뒷 부분 색상(RGB)
+        u8      colorLeft;      // 바닥 좌측 색상(BW)
+        u8      colorRight;     // 바닥 우측 색상(BW)
+        
+        u8      card;           // 식별한 카드(상위 4비트는 front, 하위 4비트는 rear 색상)
+        
+        u16     brightness;     // 주변 밝기
+        u8      battery;        // 배터리
     };
 }
 ```
 
-| 변수 이름         | 형식                                                                  | 크기     | 범위     | 설명                   |
-|:-----------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:-----------------------|
-| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | System 동작 모드       |
-| modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)                   | 1 Byte   | -        | 비행 제어기 동작 모드  |
-| modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | 1 Byte   | -        | 비행 제어 모드         |
-| modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | 1 Byte   | -        | 이동 상태              |
-| headless          | [Headless::Type](04_definitions.md#Headless)                          | 1 Byte   | -        | Headless 설정 상태     |
-| controlSpeed      | uint8_t                                                               | 1 Byte   | -        | 제어 속도(1, 2, 3)     |
-| sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | 1 Byte   | -        | 센서 방향              |
-| battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
+| 변수 이름         | 형식                                                                  | 크기     | 범위     | 설명                    |
+|:-----------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:------------------------|
+| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | 시스템 동작 모드        |
+| modeDrive         | [Mode::Drive::Type](04_definitions.md#Mode_Drive)                     | 1 Byte   | -        | 주행 모드               |
+| irFrontLeft       | uint16_t                                                              | 2 Byte   | -        | 정면 좌측 거리센서      |
+| irFrontRight      | uint16_t                                                              | 2 Byte   | -        | 정면 우측 거리센서      |
+| colorFront        | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 앞 부분 색상(RGB)  |
+| colorRear         | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 뒷 부분 색상(RGB)  |
+| colorLeft         | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 좌측 색상(BW)      |
+| colorRight        | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 우측 색상(BW)      |
+| card              | [CardNameColor::Type](04_definitions.md#CardNameColor), [CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
+| brightness        | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 주변 밝기               |
+| battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 배터리                  |
 
 
 <br>
@@ -749,36 +647,6 @@ namespace Protocol
 | x             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 앞(+), 뒤(-)         |
 | y             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 좌(+), 우(-)         |
 | z             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 위(+), 아래(-)       |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Altitude"></a>
-## Protocol::Altitude
-
-고도
-
-```cpp
-namespace Protocol
-{
-    struct Altitude
-    {
-        f32   temperature;
-        f32   pressure;
-        f32   altitude;
-        f32   rangeHeight;
-    };
-}
-```
-
-| 변수 이름     | 형식     | 크기     | 범위              | 설명                |
-|:-------------:|:--------:|:--------:|:-----------------:|:--------------------|
-| temperature   | float    | 4 Byte   | -                 | 온도                |
-| pressure      | float    | 4 Byte   | -                 | 압력                |
-| altitude      | float    | 4 Byte   | -                 | 고도                |
-| rangeHeight   | float    | 4 Byte   | -                 | 거리 센서의 높이    |
 
 
 <br>
@@ -866,7 +734,7 @@ namespace Protocol
 
 카운트
 
-비행 시간 및 관련 카운트 값을 읽을 때 사용합니다.
+주행 시간 및 관련 카운트 값을 읽을 때 사용합니다.
 
 ```cpp
 namespace Protocol
@@ -874,10 +742,10 @@ namespace Protocol
     struct Count
     {
         u32     timeSystem;             // 시스템 동작 시간
-        u32     timeFlight;             // 비행 시간
+        u32     timeDrive;              // 주행 시간
 
-        u16     countTakeOff;           // 이륙 횟수
-        u16     countLanding;           // 착륙 횟수
+        u16     countStart;             // 시작 횟수
+        u16     countStop;              // 정지 횟수
         u16     countAccident;          // 충돌 횟수
     };
 }
@@ -886,9 +754,9 @@ namespace Protocol
 | 변수 이름        | 형식       | 크기     | 범위       | 설명                  |
 |:----------------:|:----------:|:--------:|:----------:|:----------------------|
 | timeSystem       | uint32_t   | 4 Byte   | -          | 시스템 동작 시간(sec) |
-| timeFlight       | uint32_t   | 4 Byte   | -          | 비행 시간(sec)        |
-| countTakeOff     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 이륙 횟수             |
-| countLanding     | uint16_t   | 2 Byte   | 0 ~ 65,535 | 착륙 횟수             |
+| timeDrive        | uint32_t   | 4 Byte   | -          | 주행 시간(sec)        |
+| countStart       | uint16_t   | 2 Byte   | 0 ~ 65,535 | 시작 횟수             |
+| countStop        | uint16_t   | 2 Byte   | 0 ~ 65,535 | 정지 횟수             |
 | countAccident    | uint16_t   | 2 Byte   | 0 ~ 65,535 | 충돌 횟수             |
 
 
@@ -941,44 +809,14 @@ namespace Protocol
 {
     struct Trim
     {
-        s16     roll;         // Roll
-        s16     pitch;        // Pitch
-        s16     yaw;          // Yaw
-        s16     throttle;     // Throttle
+        s16     wheel;      // Wheel
     };
 }
 ```
 
 | 변수 이름 | 형식     | 크기     | 범위         | 설명       |
 |:---------:|:--------:|:--------:|:------------:|:-----------|
-| roll      | int16_t  | 2 Byte   | -200 ~ 200   | Roll       |
-| pitch     | int16_t  | 2 Byte   | -200 ~ 200   | Pitch      |
-| yaw       | int16_t  | 2 Byte   | -200 ~ 200   | Yaw        |
-| throttle  | int16_t  | 2 Byte   | -200 ~ 200   | Throttle   |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Weight"></a>
-## Protocol::Weight
-
-무게
-
-```cpp
-namespace Protocol
-{
-    struct Weight
-    {
-        f32     weight;         // Weight
-    };
-}
-```
-
-| 변수 이름 | 형식     | 크기     | 범위         | 설명    |
-|:---------:|:--------:|:--------:|:------------:|:--------|
-| weight    | float    | 4 Byte   | 100 ~ 150    | 무게    |
+| wheel     | int16_t  | 2 Byte   | -200 ~ 200   | Wheel      |
 
 
 <br>
@@ -1002,7 +840,6 @@ namespace Protocol
     struct LostConnection
     {
         u16     timeNeutral;        // 조종 중립
-        u16     timeLanding;        // 착륙
         u32     timeStop;           // 정지
     };
 }
@@ -1011,7 +848,6 @@ namespace Protocol
 | 변수 이름     | 형식      | 크기     | 범위               | 설명                                            |
 |:-------------:|:---------:|:--------:|:------------------:|:------------------------------------------------|
 | timeNeutral   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 조종 중립으로 변경할 시간    |
-| timeLanding   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 드론을 착륙할 시간           |
 | timeStop      | uint32_t  | 4 Byte   | 0 ~ 4,294,967,295  | 연결이 끊어졌을 때 드론을 정지할 시간           |
 
 
@@ -1108,36 +944,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Vibrator"></a>
-## Protocol::Vibrator
-
-진동
-
-```cpp
-namespace Protocol
-{
-    struct Vibrator
-    {
-        u8      mode;   // 모드(0은 set, 1은 reserve)
-        u16     on;     // 진동을 켠 시간(ms)
-        u16     off;    // 진동을 끈 시간(ms)
-        u16     total;  // 전체 진행 시간(ms)
-    };
-}
-```
-
-| 변수 이름  | 형식                                                    | 크기     | 범위        | 설명                |
-|:----------:|:-------------------------------------------------------:|:--------:|:-----------:|:--------------------|
-| mode       | [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode) | 1 Byte   | -           | 진동 동작 모드      |
-| on         | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
-| off        | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
-| total      | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Button"></a>
 ## Protocol::Button
 
@@ -1158,62 +964,6 @@ namespace Protocol
 |:---------:|:-----------------------------------------------------:|:--------:|:-----:|:-------------|
 | button    | uint16_t                                              | 2 Byte   | -     | 버튼 입력    |
 | event     | [Button::Event::Type](04_definitions.md#Button_Event) | 1 Byte   | -     | 버튼 이벤트  |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_JoystickBlock"></a>
-## Protocol::JoystickBlock
-
-조종기 조이스틱 한 축의 입력 값
-
-```cpp
-namespace Protocol
-{
-    struct JoystickBlock
-    {
-        s8      x;
-        s8      y;
-        u8      direction;
-        u8      event;
-    };
-}
-```
-
-| 변수 이름  | 형식                                                              | 크기     | 범위          | 설명             |
-|:----------:|:-----------------------------------------------------------------:|:--------:|:-------------:|:-----------------|
-| x          | int8_t                                                            | 1 Byte   | -100 ~ 100    | 조이스틱 가로축  |
-| y          | int8_t                                                            | 1 Byte   | -100 ~ 100    | 조이스틱 세로축  |
-| direction  | [Joystick::Direction::Type](04_definitions.md#Joystick_Direction) | 1 Byte   | -             | 조이스틱 방향    |
-| event      | [Joystick::Event::Type](04_definitions.md#Joystick_Event)         | 1 Byte   | -             | 이벤트           |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Joystick"></a>
-## Protocol::Joystick
-
-조종기 좌우 조이스틱의 입력 값
-
-```cpp
-namespace Protocol
-{
-    struct Joystick
-    {
-        Protocol::JoystickBlock     left;
-        Protocol::JoystickBlock     right;
-    };
-}
-```
-
-| 변수 이름 | 형식                                                | 크기     | 범위  | 설명            |
-|:---------:|:---------------------------------------------------:|:--------:|:-----:|:----------------|
-| left      | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | 4 Byte   | -     | 왼쪽 조이스틱   |
-| right     | [Protocol::JoystickBlock](#Protocol_JoystickBlock)  | 4 Byte   | -     | 오른쪽 조이스틱 |
 
 
 <br>

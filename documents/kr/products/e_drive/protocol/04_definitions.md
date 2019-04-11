@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.1.30
+Modified : 2019.4.11
 
 ---
 
@@ -27,21 +27,35 @@ namespace Protocol
     {
         enum Type
         {
-            None                        = 0x00,     // 이벤트 없음
+            None                    = 0x00,     // 이벤트 없음
 
-            Stop                        = 0x01,     // 정지
-            
-            ModeControlFlight           = 0x02,     // 비행 제어 모드 설정
-            Headless                    = 0x03,     // 헤드리스 모드 설정
-            ControlSpeed                = 0x04,     // 제어 속도 설정
-            
-            ClearBias                   = 0x05,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
-            ClearTrim                   = 0x06,     // 트림 초기화
+            Stop                    = 0x01,     // 정지
 
-            FlightEvent                 = 0x07,     // 비행 이벤트 실행
+            ModeControlDrive        = 0x02,     // 주행 제어 모드 설정
+            ControlSpeed            = 0x03,     // 제어 속도 설정
 
-            SetDefault                  = 0x08,     // 기본 설정으로 초기화
-            
+            ClearBias               = 0x04,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
+            ClearTrim               = 0x05,     // 트림 초기화
+
+            DriveEvent              = 0x06,     // 주행 이벤트 실행
+
+            SetDefault              = 0x0F,     // 기본 설정으로 초기화
+
+            // 관리자
+            ClearCounter            = 0xA0,     // 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
+
+            // 통신[Bluetooth]
+            BluetoothSystemEvent    = 0xB0,     // 블루투스 시스템 이벤트
+
+            // LINK
+            LinkSystemReset         = 0xE0,     // 시스템 재시작
+            LinkDiscoverStart       = 0xE1,     // 장치 검색 시작
+            LinkDiscoverStop        = 0xE2,     // 장치 검색 중단
+            LinkConnect             = 0xE3,     // 지정한 인덱스의 장치 연결
+            LinkDisconnect          = 0xE4,     // 연결 해제
+            LinkRssiPollingStart    = 0xE5,     // RSSI 수집 시작
+            LinkRssiPollingStop     = 0xE6,     // RSSI 수집 중단
+
             EndOfType
         };
     }
@@ -58,31 +72,40 @@ namespace Protocol
 
 모델 번호
 
-E-DRIVE(Drone4)부터 DeviceType을 공통으로 사용하기로 하면서, 펌웨어 업데이트 시 DeviceType 이외에 장치를 구분할 번호가 필요하게 되어 추가함.
+펌웨어 업데이트 시 제품 구분용 번호.
 
 ```cpp
 namespace ModelNumber
 {
     enum Type
     {
+        None = 0,
+
         //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
-        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1
-        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2
-        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3
-        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4
-        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5
+        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1 (Lightrone / GD65 / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2 (Soccer Drone / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3 (GD240 / HW2181 / Keil / power button / u30 flow / 3.7v / geared motor / barometer)
+        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4 (GD50N / HW2181 / Keil / power button / 3.7v / barometer)
+        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5 (GD30 / HW2181 / Keil / 3.7v / nomal binding)
+        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6 (Soccer Drone 2 / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
 
         Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
         Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
 
+        Drone_4_Drone_P4        = 0x00041004,   // Drone_4_Drone_P4
         Drone_4_Drone_P5        = 0x00041005,   // Drone_4_Drone_P5
 
-        Drone_4_Controller_P2   = 0x00042002,   // Drone_4_Controller_P2
+        Drone_4_Controller_P1   = 0x00042001,   // Drone_4_Controller_P1
+        Drone_4_Controller_P2   = 0x00042002,   // Drone_4_Controller_P2	// 진동 모터 회로 수정
 
         Drone_4_Link_P0         = 0x00043000,   // Drone_4_Link_P0
 
         Drone_4_Tester_P2       = 0x0004A002,   // Drone_4_Tester_P2
         Drone_4_Monitor_P2      = 0x0004A102,   // Drone_4_Monitor_P2
+
+        Drone_7_Drone_P0        = 0x00071000,   // Drone_7_Drone_P0
+        Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
+        Drone_7_BleServer_P0    = 0x00073300,   // Drone_7_BleServer_P0
     };
 }
 ```
@@ -110,8 +133,10 @@ namespace Protocol
 
             Controller  = 0x20,     // 조종기(Client)
 
-            Link        = 0x30,     // 링크 모듈(Client)
-            LinkServer  = 0x31,     // 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+            LinkClient  = 0x30,     // 링크 모듈(Client)
+            LinkServer  = 0x31,     // 링크 모듈(Server)
+            BleClient   = 0x32,     // BLE 클라이언트
+            BleServer   = 0x33,     // BLE 서버
 
             Range       = 0x40,     // 거리 센서 모듈
 
@@ -149,22 +174,12 @@ namespace ErrorFlagsForSensor
 {
     enum Type
     {
-        None                                    = 0x00000000,
+        None                    = 0x00000000,
 
-        Motion_NoAnswer                         = 0x00000001,   // Motion 응답 없음
-        Motion_WrongValue                       = 0x00000002,   // Motion 잘못된 값
-        Motion_NotCalibrated                    = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
-        Motion_Calibrating                      = 0x00000008,   // Gyro Bias 보정 중
-
-        Pressure_NoAnswer                       = 0x00000010,   // 압력 센서 응답 없음
-        Pressure_WrongValue                     = 0x00000020,   // 압력 센서 잘못된 값
-
-        RangeGround_NoAnswer                    = 0x00000100,   // 바닥 거리 센서 응답 없음
-        RangeGround_WrongValue                  = 0x00000200,   // 바닥 거리 센서 잘못된 값
-
-        Flow_NoAnswer                           = 0x00001000,   // Flow 응답 없음
-        Flow_WrongValue                         = 0x00002000,   // Flow 잘못된 값
-        Flow_CannotRecognizeGroundImage         = 0x00004000,   // 바닥 이미지를 인식할 수 없음
+        Motion_NoAnswer         = 0x00000001,   // Motion 응답 없음
+        Motion_WrongValue       = 0x00000002,   // Motion 잘못된 값
+        Motion_NotCalibrated    = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
+        Motion_Calibrating      = 0x00000008,   // Gyro Bias 보정 중
     };
 }
 ```
@@ -184,18 +199,11 @@ namespace ErrorFlagsForState
 {
     enum Type
     {
-        None                                    = 0x00000000,
+        None                            = 0x00000000,
 
-        NotRegistered                           = 0x00000001,   // 장치 등록이 안됨
-        FlashReadLock_UnLocked                  = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
-        BootloaderWriteLock_UnLocked            = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
-
-        TakeoffFailure_CheckPropellerAndMotor   = 0x00000010,   // 이륙 실패
-        CheckPropellerVibration                 = 0x00000020,   // 프로펠러 진동발생
-        Attitude_NotStable                      = 0x00000040,   // 자세가 많이 기울어져 있거나 뒤집어져 있을때
-
-        CanNotFlip_LowBattery                   = 0x00000100,   // 배터리가 30이하
-        CanNotFlip_TooHeavy                     = 0x00000200,   // 기체가 무거움
+        NotRegistered                   = 0x00000001,   // 장치 등록이 안됨
+        FlashReadLock_UnLocked          = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
+        BootloaderWriteLock_UnLocked    = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
     };
 }
 ```
@@ -205,29 +213,28 @@ namespace ErrorFlagsForState
 <br>
 
 
-<a name="Mode_Control_Flight"></a>
-## Mode::Control::Flight::Type
+<a name="Mode_Drone"></a>
+## Mode::Drone::Type
 
-비행 제어 모드
+드론 동작 모드
 
 ```cpp
 namespace Mode
 {
-    namespace Control
+    namespace Drone
     {
-        namespace Flight
+        enum Type
         {
-            enum Type
-            {
-                None = 0,
+            None = 0,
 
-                Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
-                Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-                Function    = 0x12, // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+            RemoteControl,  // 원격 조종
+            CardCoding,     // 카드 코딩
+            LineTracer,     // 라인 트레이서
 
-                EndOfType
-            };
-        }
+            Error,          // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
+
+            EndOfType
+        };
     }
 }
 ```
@@ -269,36 +276,32 @@ namespace Mode
 <br>
 
 
-<a name="Mode_Flight"></a>
-## Mode::Flight::Type
+<a name="Mode_Drive"></a>
+## Mode::Drive::Type
 
-비행 제어기 동작 상태
+주행 제어기 동작 상태
 
 ```cpp
 namespace Mode
 {
-    namespace Flight
+    namespace Drive
     {
         enum Type
         {
             None = 0,
             
-            Ready = 0x10,       // 준비
+            Ready           = 0x10,     // 준비
             
-            Start,              // 이륙 준비
-            TakeOff,            // 이륙 (Flight로 자동전환)
-            Flight,             // 비행
-            Landing,            // 착륙
-            Flip,               // 회전
-            Reverse,            // 뒤집기
+            Start,                      // 출발
+            Drive,                      // 주행
             
-            Stop = 0x20,        // 강제 정지
+            Stop            = 0x20,     // 강제 정지
             
-            Accident = 0x30,    // 사고 (Ready로 자동전환)
-            Error,              // 오류
+            Accident        = 0x30,     // 사고 (Ready로 자동전환)
+            Error,                      // 오류
             
-            Test = 0x40,        // 테스트 모드
-            
+            Test            = 0x40,     // 테스트 모드
+
             EndOfType
         };
     }
@@ -346,22 +349,33 @@ namespace Mode
 <br>
 
 
-<a name="SensorOrientation"></a>
-## SensorOrientation::Type
+<a name="ImageType"></a>
+## ImageType::Type
 
-센서 방향
+펌웨어 이미지 타입(현재는 BLE 통신칩에만 사용)
 
 ```cpp
-namespace SensorOrientation
+namespace ImageType
 {
     enum Type
     {
-        None = 0,
-
-        Normal,             // 정상
-        ReverseStart,       // 뒤집히기 시작
-        Reversed,           // 뒤집힘
-
+        None,
+        
+        // 현재 장치의 이미지
+        ImageSingle             = 0x10,     // 실행 이미지
+        ImageA                  = 0x11,
+        ImageB                  = 0x12,
+        
+        // 펌웨어 이미지
+        RawImageSingle          = 0x20,     // 업데이트 이미지, 헤더 포함
+        RawImageA               = 0x21,
+        RawImageB               = 0x22,
+        
+        // 암호화 된 이미지
+        EncryptedImageSingle    = 0x30,     // 업데이트 이미지, 헤더 포함
+        EncryptedImageA         = 0x31,
+        EncryptedImageB         = 0x32,
+        
         EndOfType
     };
 }
@@ -419,44 +433,10 @@ namespace Mode
             None            = 0x00,
 
             Ready           = 0x01,
-            Hovering        = 0x02,
-            Moving          = 0x03,
-            ReturnHome      = 0x04
+            Moving          = 0x02,
+            Stop            = 0x03
         };
     }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Headless"></a>
-## Headless::Type
-
-방위 기준
-
-조종 시 방향의 기준을 선택합니다.
-
-Headless는 드론이 어느 방향을 바라보더라도 <b><i>이륙할 때의 방향</i></b> 또는 <b><i>사용자가 지정한 방향</i></b>을 기준으로 움직입니다.
-
-Normal은 <b><i>드론이 현재 향하는 방향</i></b>을 기준으로 움직입니다.
-
-조종기 상에서는 Headless를 'Headless ON', Normal을 'Headless OFF'로 표현하고 있습니다. 기본 설정은 Normal입니다.
-
-```cpp
-namespace Headless
-{
-    enum Type
-    {
-        None = 0,
-
-        Headless,   // 사용자 중심 좌표
-        Normal,     // 드론 중심 좌표
-
-        EndOfType
-    };
 }
 ```
 
@@ -526,32 +506,19 @@ namespace Rotation
 <br>
 
 
-<a name="FlightEvent"></a>
-## FlightEvent::Type
+<a name="DriveEvent"></a>
+## DriveEvent::Type
 
-페트론 비행 이벤트
+주행 이벤트
 
 ```cpp
-namespace FlightEvent
+namespace DriveEvent
 {
     enum Type
     {
         None = 0,               // 없음
 
         Stop = 0x10,            // 정지
-        TakeOff,                // 이륙
-        Landing,                // 착륙
-
-        Reverse,                // 뒤집기
-
-        FlipFront,              // 회전
-        FlipRear,               // 회전
-        FlipLeft,               // 회전
-        FlipRight,              // 회전
-
-        Return,                 // 시작 위치로 돌아가기
-
-        ResetHeading = 0xA0,    // 헤딩 리셋(Headless 모드 일 때 현재 heading을 0도로 변경)
 
         EndOfType
     };
@@ -592,49 +559,6 @@ namespace Button
 <br>
 
 
-<a name="Button_Controller_ButtonType"></a>
-## Button::Controller::ButtonType::Type
-
-조종기 버튼 플래그
-
-```cpp
-namespace Button
-{
-    namespace Controller
-    {
-        namespace ButtonType
-        {
-            enum Type
-            {
-                None                = 0x0000,
-
-                // 버튼
-                FrontLeftTop        = 0x0001,
-                FrontLeftBottom     = 0x0002,
-                FrontRightTop       = 0x0004,
-                FrontRightBottom    = 0x0008,
-
-                TopLeft             = 0x0010,
-                TopRight            = 0x0020,   // POWER ON/OFF
-
-                MidUp               = 0x0040,
-                MidLeft             = 0x0080,
-                MidRight            = 0x0100,
-                MidDown             = 0x0200,
-
-                BottomLeft          = 0x0400,
-                BottomRight         = 0x0800,
-            };
-        }
-    }
-}
-```
-
-
-<br>
-<br>
-
-
 <a name="Button_Event"></a>
 ## Button::Event::Type
 
@@ -654,72 +578,6 @@ namespace Button
             Up,                 // 뗌
 
             EndContinuePress    // 연속 입력 종료
-        };
-    }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Joystick_Direction"></a>
-## Joystick::Direction::Type
-
-조이스틱 방향
-
-```cpp
-namespace Joystick
-{
-    // 조이스틱 방향
-    namespace Direction
-    {
-        enum Type
-        {
-            None    = 0,        // 정의하지 않은 영역(무시함)
-
-            VT      = 0x10,     //   위(세로)
-            VM      = 0x20,     // 중앙(세로)
-            VB      = 0x40,     // 아래(세로)
-
-            HL      = 0x01,     //   왼쪽(가로)
-            HM      = 0x02,     //   중앙(가로)
-            HR      = 0x04,     // 오른쪽(가로)
-
-            TL = 0x11,  TM = 0x12,  TR = 0x14,
-            ML = 0x21,  CN = 0x22,  MR = 0x24,
-            BL = 0x41,  BM = 0x42,  BR = 0x44
-        };
-    }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Joystick_Event"></a>
-## Joystick::Event::Type
-
-조이스틱 이벤트
-
-```cpp
-namespace Joystick
-{
-    // 조이스틱 이벤트
-    namespace Event
-    {
-        enum Type
-        {
-            None    = 0,        // 이벤트 없음
-
-            In,                 // 특정 영역에 진입
-            Stay,               // 특정 영역에서 상태 유지
-            Out,                // 특정 영역에서 벗어남
-
-            EndOfType
         };
     }
 }
@@ -799,29 +657,221 @@ namespace Buzzer
 <br>
 
 
-<a name="Vibrator_Mode"></a>
-## Vibrator::Mode::Type
+<a name="CardNameColor"></a>
+## CardNameColor::Type
 
-진동 모드
+카드 분류(색상)
 
 ```cpp
-namespace Vibrator
+// 카드 분류(색상)
+namespace CardNameColor
 {
-    namespace Mode
+    enum Type
     {
-        enum Type
-        {
-            Stop            = 0,    // 정지
+        None            = 0x00,
+        
+        RedRed          = 0x11,
+        RedGreen        = 0x12,
+        RedBlue         = 0x13,
+        RedCyan         = 0x14,
+        RedMagenta      = 0x15,
+        RedYellow       = 0x16,
+        RedBlack        = 0x17,
+        RedWhite        = 0x18,
 
-            Instantally     = 1,    // 즉시 적용
-            Continually     = 2,    // 예약
+        GreenRed        = 0x21,
+        GreenGreen      = 0x22,
+        GreenBlue       = 0x23,
+        GreenCyan       = 0x24,
+        GreenMagenta    = 0x25,
+        GreenYellow     = 0x26,
+        GreenBlack      = 0x27,
+        GreenWhite      = 0x28,
 
-            EndOfType
-        };
-    }
+        BlueRed         = 0x31,
+        BlueGreen       = 0x32,
+        BlueBlue        = 0x33,
+        BlueCyan        = 0x34,
+        BlueMagenta     = 0x35,
+        BlueYellow      = 0x36,
+        BlueBlack       = 0x37,
+        BlueWhite       = 0x38,
+
+        CyanRed         = 0x41,
+        CyanGreen       = 0x42,
+        CyanBlue        = 0x43,
+        CyanCyan        = 0x44,
+        CyanMagenta     = 0x45,
+        CyanYellow      = 0x46,
+        CyanBlack       = 0x47,
+        CyanWhite       = 0x48,
+
+        MagentaRed      = 0x51,
+        MagentaGreen    = 0x52,
+        MagentaBlue     = 0x53,
+        MagentaCyan     = 0x54,
+        MagentaMagenta  = 0x55,
+        MagentaYellow   = 0x56,
+        MagentaBlack    = 0x57,
+        MagentaWhite    = 0x58,
+
+        YellowRed       = 0x61,
+        YellowGreen     = 0x62,
+        YellowBlue      = 0x63,
+        YellowCyan      = 0x64,
+        YellowMagenta   = 0x65,
+        YellowYellow    = 0x66,
+        YellowBlack     = 0x67,
+        YellowWhite     = 0x68,
+
+        BlackRed        = 0x71,
+        BlackGreen      = 0x72,
+        BlackBlue       = 0x73,
+        BlackCyan       = 0x74,
+        BlackMagenta    = 0x75,
+        BlackYellow     = 0x76,
+        BlackBlack      = 0x77,
+        BlackWhite      = 0x78,
+
+        WhiteRed        = 0x81,
+        WhiteGreen      = 0x82,
+        WhiteBlue       = 0x83,
+        WhiteCyan       = 0x84,
+        WhiteMagenta    = 0x85,
+        WhiteYellow     = 0x86,
+        WhiteBlack      = 0x87,
+        WhiteWhite      = 0x88,
+        
+        EndOfType
+    };
 }
 ```
 
+<br>
+<br>
+
+
+<a name="CardNameFunction"></a>
+## CardNameFunction::Type
+
+카드 분류(기능)
+
+```cpp
+// 카드 분류(기능)
+namespace CardNameFunction
+{
+    enum Type
+    {
+        None                                    = CardNameColor::None,
+        
+        // Mode(Red)
+        LineCoding                              = CardNameColor::RedRed,
+        CardCodingStart                         = CardNameColor::RedWhite,      // 카드 입력 중 White Dimming
+        CardCodingEnd                           = CardNameColor::RedBlack,      // 카드 입력 완료 시 White Hold
+        FunctionStart                           = CardNameColor::RedCyan,       // 카드 입력 중 Cyan Dimming
+        FunctionEnd                             = CardNameColor::RedMagenta,    // 카드 입력 완료 시 Cyan Hold
+        
+        // Move(Green)
+        MoveForward                             = CardNameColor::GreenWhite,
+        MoveBackward                            = CardNameColor::GreenBlack,
+        MoveTurnLeft45Deg                       = CardNameColor::GreenYellow,
+        MoveTurnRight45Deg                      = CardNameColor::GreenBlue,
+        MoveTurnLeft90Deg                       = CardNameColor::GreenRed,
+        MoveTurnRight90Deg                      = CardNameColor::GreenCyan,
+        MoveTurnLeft180Deg                      = CardNameColor::GreenMagenta,
+        MoveTurnRight180Deg                     = CardNameColor::GreenGreen,
+        
+        // Preset(Blue)
+        PresetMoveForwardTurnLeftForward        = CardNameColor::BlueYellow,
+        PresetMoveForwardTurnRightForward       = CardNameColor::BlueBlue,
+        PresetMoveBackwardTurnLeftBackward      = CardNameColor::BlueRed,
+        PresetMoveBackwardTurnRightBackward     = CardNameColor::BlueCyan,
+        presetMoveForwardZigzag                 = CardNameColor::BlueMagenta,
+        presetMoveBackwardZigzag                = CardNameColor::BlueGreen,
+        presetYawing60Deg                       = CardNameColor::BlueWhite,     // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도
+        presetYawing180Deg                      = CardNameColor::BlueBlack,     // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도
+        
+        // Loop(Cyan)
+        LoopStartInfinite                       = CardNameColor::CyanWhite,
+        LoopStartTwice                          = CardNameColor::CyanCyan,
+        LoopStartFiveTimes                      = CardNameColor::CyanMagenta,
+        LoopBreakIfFindRed                      = CardNameColor::CyanRed,
+        LoopBreakIfFindGreen                    = CardNameColor::CyanGreen,
+        LoopBreakIfFindBlue                     = CardNameColor::CyanBlue,
+        LoopBreakIfFindObstacle                 = CardNameColor::CyanYellow,
+        LoopEnd                                 = CardNameColor::CyanBlack,
+        
+        // Condition(Magenta)
+        ConditionIfFindRedStop                  = CardNameColor::MagentaRed,        // Color
+        ConditionIfFindGreenMoveForward         = CardNameColor::MagentaWhite,      // Color
+        ConditionIfFindBlueMoveBackward         = CardNameColor::MagentaBlack,      // Color
+        ConditionIfFindYellowTurnLeft90         = CardNameColor::MagentaYellow,     // Color
+        ConditionIfFindCyanTurnRight90          = CardNameColor::MagentaCyan,       // Color
+        ConditionIfNotFindObstacleMoveForward   = CardNameColor::MagentaGreen,      // Obstacle
+        ConditionIfFindObstacleTurnLeft90       = CardNameColor::MagentaMagenta,    // Obstacle
+        ConditionIfFindObstacleTurnRight90      = CardNameColor::MagentaBlue,       // Obstacle
+        
+        // LightBody(Yellow)
+        LightBodyRed                            = CardNameColor::YellowRed,
+        LightBodyGreen                          = CardNameColor::YellowGreen,
+        LightBodyBlue                           = CardNameColor::YellowBlue,
+        LightBodyCyan                           = CardNameColor::YellowCyan,
+        LightBodyMagenta                        = CardNameColor::YellowMagenta,
+        LightBodyYellow                         = CardNameColor::YellowYellow,
+        LightBodyWhite                          = CardNameColor::YellowWhite,
+        LightBodyBlack                          = CardNameColor::YellowBlack,
+        
+        // Light On(White)
+        LightOnLowBeam                          = CardNameColor::WhiteRed,
+        LightOnHighBeam                         = CardNameColor::WhiteGreen,
+        LightOnTailLight                        = CardNameColor::WhiteBlue,
+        LightOnLeftTurnSignal                   = CardNameColor::WhiteCyan,
+        LightOnRightTurnSignal                  = CardNameColor::WhiteMagenta,
+        LightOnEmergencyLight                   = CardNameColor::WhiteYellow,
+        
+        // Light Off(Black)
+        LightOffLowBeam                         = CardNameColor::BlackRed,
+        LightOffHighBeam                        = CardNameColor::BlackGreen,
+        LightOffTailLight                       = CardNameColor::BlackBlue,
+        LightOffLeftTurnSignal                  = CardNameColor::BlackCyan,
+        LightOffRightTurnSignal                 = CardNameColor::BlackMagenta,
+        LightOffEmergencyLight                  = CardNameColor::BlackYellow,
+        
+        EndOfType
+    };
+}
+```
+
+<br>
+<br>
+
+
+<a name="CardColor"></a>
+## CardColor::Type
+
+카드 색 분류
+
+```cpp
+// 카드 색 분류
+namespace CardColor
+{
+    enum Type
+    {
+        Unknown     = 0x00,
+        
+        Red         = 0x01,
+        Green       = 0x02,
+        Blue        = 0x03,
+        
+        Cyan        = 0x04,
+        Magenta     = 0x05,
+        Yellow      = 0x06,
+        
+        Black       = 0x07,
+        White       = 0x08,
+    };
+}
+```
 
 <br>
 
