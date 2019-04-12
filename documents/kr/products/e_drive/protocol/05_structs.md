@@ -607,12 +607,12 @@ namespace Protocol
     class RawCard
     {
     public:
-        s16			range[2][3][2];		// [Front/Rear][R/G/B][Min/Max]		24 byte
-        s16			rgbRaw[2][3];		// [Front/Rear][R/G/B]				12 byte
-        u8			rgb[2][3];			// [Front/Rear][R/G/B]				 6 byte
-        s16			hsv[2][3];			// [Front/Rear][R/G/B]				12 byte
-        u8			color[2];			// [Front/Rear]						 2 byte
-        u8			card;				// 									 1 byte
+        s16     range[2][3][2];     // [Front/Rear][R/G/B][Min/Max]     24 byte
+        s16     rgbRaw[2][3];       // [Front/Rear][R/G/B]              12 byte
+        u8      rgb[2][3];          // [Front/Rear][R/G/B]               6 byte
+        s16     hsv[2][3];          // [Front/Rear][R/G/B]              12 byte
+        u8      color[2];           // [Front/Rear]                      2 byte
+        u8      card;               //                                   1 byte
     };
 }
 ```
@@ -624,7 +624,7 @@ namespace Protocol
 | rgb           | uint8_t  | 6 Byte   | 0 ~ 255             | rgbRaw 값의 range 범위 내에서 위치를 0 ~ 255 사이의 값으로 변환한 값  |
 | hsv           | int16_t  | 12 Byte  |                     | rgb 값을 hsv 값으로 변환한 값(카드 색상 구분에 사용)  |
 | color         | [CardColor::Type](04_definitions.md#CardColor)  | 2 Byte   |                     | 카드 위, 아래의 색상     |
-| card          | [CardNameColor::Type](04_definitions.md#CardNameColor), [CardNameFunction::Type](04_definitions.md#CardNameFunction) | 1 Byte  | - | 식별한 카드 |
+| card          | [CardNameColor::Type](04_definitions.md#CardNameColor), <br>[CardNameFunction::Type](04_definitions.md#CardNameFunction) | 1 Byte  | - | 식별한 카드 |
 
 
 <br>
@@ -670,7 +670,7 @@ namespace Protocol
 | colorRear         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 뒷 부분 색상(RGB)  |
 | colorLeft         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 좌측 색상(BW)      |
 | colorRight        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 우측 색상(BW)      |
-| card              | [CardNameColor::Type](04_definitions.md#CardNameColor), [CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
+| card              | [CardNameColor::Type](04_definitions.md#CardNameColor), <br>[CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
 | brightness        | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 주변 밝기               |
 | battery           | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 배터리                  |
 
@@ -703,7 +703,7 @@ namespace Protocol
 | yaw        | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Yaw        |
 
 
-드론의 자세를 확인할 때 값의 범위는 다음과 같습니다.
+자세를 확인할 때 값의 범위는 다음과 같습니다.
 
 |이름      | 형식     | 크기     | 범위        | 설명                |
 |:--------:|:--------:|:--------:|:-----------:|:-------------------:|
@@ -748,7 +748,7 @@ namespace Protocol
 <a name="Protocol_Motion"></a>
 ## Protocol::Motion
 
-Motion 센서 데이터와 드론의 자세
+Motion 센서 데이터와 자세
 
 ```cpp
 namespace Protocol

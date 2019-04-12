@@ -34,41 +34,51 @@ namespace Light
             {
                 None,
 
+                // Front Light
+                FrontNone           = 0x10,
+                FrontManual,                // 수동 제어
+                FrontHold,                  // 지정한 색상을 계속 켬
+                FrontFlicker,               // 깜빡임
+                FrontFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                FrontDimming,               // 밝기 제어하여 천천히 깜빡임
+                FrontSunrise,               // 꺼진 상태에서 점점 밝아짐
+                FrontSunset,                // 켜진 상태에서 점점 어두워짐
+                
                 BodyNone            = 0x20,
-                BodyManual,             // 수동 제어
-                BodyHold,               // 지정한 색상을 계속 켬
-                BodyFlicker,            // 깜빡임
-                BodyFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                BodyDimming,            // 밝기 제어하여 천천히 깜빡임
-                BodySunrise,            // 꺼진 상태에서 점점 밝아짐
-                BodySunset,             // 켜진 상태에서 점점 어두워짐
+                BodyManual,                 // 수동 제어
+                BodyHold,                   // 지정한 색상을 계속 켬
+                BodyFlicker,                // 깜빡임
+                BodyFlickerDouble,          // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                BodyDimming,                // 밝기 제어하여 천천히 깜빡임
+                BodySunrise,                // 꺼진 상태에서 점점 밝아짐
+                BodySunset,                 // 켜진 상태에서 점점 어두워짐
                 
                 HeadNone            = 0x30,
-                HeadManual,                // 수동 제어
-                HeadHold,                  // 지정한 색상을 계속 켬
-                HeadFlicker,               // 깜빡임
-                HeadFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                HeadDimming,               // 밝기 제어하여 천천히 깜빡임
-                HeadSunrise,               // 꺼진 상태에서 점점 밝아짐
-                HeadSunset,                // 켜진 상태에서 점점 어두워짐
+                HeadManual,                 // 수동 제어
+                HeadHold,                   // 지정한 색상을 계속 켬
+                HeadFlicker,                // 깜빡임
+                HeadFlickerDouble,          // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                HeadDimming,                // 밝기 제어하여 천천히 깜빡임
+                HeadSunrise,                // 꺼진 상태에서 점점 밝아짐
+                HeadSunset,                 // 켜진 상태에서 점점 어두워짐
                 
                 TailNone            = 0x40,
-                TailManual,                // 수동 제어
-                TailHold,                  // 지정한 색상을 계속 켬
-                TailFlicker,               // 깜빡임
-                TailFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                TailDimming,               // 밝기 제어하여 천천히 깜빡임
-                TailSunrise,               // 꺼진 상태에서 점점 밝아짐
-                TailSunset,                // 켜진 상태에서 점점 어두워짐
+                TailManual,                 // 수동 제어
+                TailHold,                   // 지정한 색상을 계속 켬
+                TailFlicker,                // 깜빡임
+                TailFlickerDouble,          // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                TailDimming,                // 밝기 제어하여 천천히 깜빡임
+                TailSunrise,                // 꺼진 상태에서 점점 밝아짐
+                TailSunset,                 // 켜진 상태에서 점점 어두워짐
                 
                 LeftNone            = 0x50,
-                LeftManual,                // 수동 제어
-                LeftHold,                  // 지정한 색상을 계속 켬
-                LeftFlicker,               // 깜빡임
-                LeftFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                LeftDimming,               // 밝기 제어하여 천천히 깜빡임
-                LeftSunrise,               // 꺼진 상태에서 점점 밝아짐
-                LeftSunset,                // 켜진 상태에서 점점 어두워짐
+                LeftManual,                 // 수동 제어
+                LeftHold,                   // 지정한 색상을 계속 켬
+                LeftFlicker,                // 깜빡임
+                LeftFlickerDouble,          // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                LeftDimming,                // 밝기 제어하여 천천히 깜빡임
+                LeftSunrise,                // 꺼진 상태에서 점점 밝아짐
+                LeftSunset,                 // 켜진 상태에서 점점 어두워짐
                 
                 RightNone           = 0x60,
                 RightManual,                // 수동 제어
@@ -107,14 +117,16 @@ namespace Light
             {
                 None        = 0x0000,
                 
-                BodyRed     = 0x0001,
-                BodyGreen   = 0x0002,
-                BodyBlue    = 0x0004,
+                Front       = 0x0001,
                 
-                Head        = 0x0008,
-                Tail        = 0x0010,
-                Left        = 0x0020,
-                Right       = 0x0040,
+                BodyRed     = 0x0002,
+                BodyGreen   = 0x0004,
+                BodyBlue    = 0x0008,
+                
+                Head        = 0x0010,
+                Tail        = 0x0020,
+                Left        = 0x0040,
+                Right       = 0x0080,
             };
         }
     }

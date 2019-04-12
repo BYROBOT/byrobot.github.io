@@ -30,19 +30,11 @@ namespace Protocol
             None                    = 0x00,     // 이벤트 없음
 
             Stop                    = 0x01,     // 정지
-
-            ModeControlDrive        = 0x02,     // 주행 제어 모드 설정
-            ControlSpeed            = 0x03,     // 제어 속도 설정
-
-            ClearBias               = 0x04,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
-            ClearTrim               = 0x05,     // 트림 초기화
-
-            DriveEvent              = 0x06,     // 주행 이벤트 실행
+            ClearBias               = 0x02,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
+            ClearTrim               = 0x03,     // 트림 초기화
+            DriveEvent              = 0x04,     // 주행 이벤트 실행
 
             SetDefault              = 0x0F,     // 기본 설정으로 초기화
-
-            // 관리자
-            ClearCounter            = 0xA0,     // 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
 
             // 통신[Bluetooth]
             BluetoothSystemEvent    = 0xB0,     // 블루투스 시스템 이벤트
@@ -103,7 +95,7 @@ namespace ModelNumber
         Drone_4_Tester_P2       = 0x0004A002,   // Drone_4_Tester_P2
         Drone_4_Monitor_P2      = 0x0004A102,   // Drone_4_Monitor_P2
 
-        Drone_7_Drone_P0        = 0x00071000,   // Drone_7_Drone_P0
+        Drone_7_Drone_P1        = 0x00071001,   // Drone_7_Drone_P1
         Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
         Drone_7_BleServer_P0    = 0x00073300,   // Drone_7_BleServer_P0
     };
@@ -205,37 +197,6 @@ namespace ErrorFlagsForState
         FlashReadLock_UnLocked          = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
         BootloaderWriteLock_UnLocked    = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
     };
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Mode_Drone"></a>
-## Mode::Drone::Type
-
-드론 동작 모드
-
-```cpp
-namespace Mode
-{
-    namespace Drone
-    {
-        enum Type
-        {
-            None = 0,
-
-            RemoteControl,  // 원격 조종
-            CardCoding,     // 카드 코딩
-            LineTracer,     // 라인 트레이서
-
-            Error,          // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
-
-            EndOfType
-        };
-    }
 }
 ```
 
