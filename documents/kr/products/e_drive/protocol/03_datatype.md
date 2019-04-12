@@ -65,7 +65,6 @@ namespace Protocol
             Count                       = 0x50,     // 카운트
             Bias,                                   // 엑셀, 자이로 바이어스 값
             Trim,                                   // 트림
-            LostConnection,                         // 연결이 끊긴 후 반응 시간 설정
 
             // Devices
             Motor                       = 0x60,     // 모터 제어 및 현재 제어값 확인
@@ -138,7 +137,6 @@ namespace Protocol
 | Count                                 | 0x50 | C    | 카운트                                          | [Protocol::Count](05_structs.md#Protocol_Count) |
 | Bias                                  | 0x51 | C    | Accel, Gyro 바이어스 값                         | [Protocol::Bias](05_structs.md#Protocol_Bias) |
 | Trim                                  | 0x52 | C    | Trim                                            | [Protocol::Trim](05_structs.md#Protocol_Trim) |
-| LostConnection                        | 0x53 | C    | 연결이 끊긴 후 반응 시간 설정                   | [Protocol::LostConnection](05_structs.md#Protocol_LostConnection) |
 | Motor                                 | 0x60 | C    | 모터 제어 및 현재 제어값 확인                   | [Protocol::Motor](05_structs.md#Protocol_Motor) |
 | MotorSingle                           | 0x61 | C    | 한 개의 모터 제어                               | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
 | Buzzer                                | 0x62 | C    | 버저 제어                                       | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer) |

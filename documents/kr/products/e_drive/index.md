@@ -29,15 +29,15 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">1.1.14</div></td>
+            <td><div align="center">0.0.1</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">1.1.14</div></td>
+            <td><div align="center">0.0.1</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.2.27</div></td>
+            <td colspan="2"><div align="center">2019.4.12</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
@@ -115,11 +115,11 @@
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">0.1.31</div></td>
+            <td colspan="2"><div align="center">0.0.50</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.3.13</div></td>
+            <td colspan="2"><div align="center">2019.4.12</div></td>
         </tr>
         <tr>
             <td><div align="center">Manual</div></td>
