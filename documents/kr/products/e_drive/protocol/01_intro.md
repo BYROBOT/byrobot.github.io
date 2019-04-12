@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Intro**
 
-Modified : 2019.4.11
+Modified : 2019.4.12
 
 ---
 
@@ -212,7 +212,6 @@ E-Drive는 윈도우10인 경우 자동으로 인식합니다. 그 외에 장치
 4. [Definitions](04_definitions.md)
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
-7. [Structs - Display](07_structs_display.md)
 
 <br>
 

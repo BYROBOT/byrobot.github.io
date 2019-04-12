@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs** / **Light**
 
-Modified : 2018.11.26
+Modified : 2019.4.12
 
 ---
 
@@ -21,7 +21,7 @@ Modified : 2018.11.26
 <a name="Light_Drone_Mode"></a>
 ## Light::Drone::Mode::Type
 
-드론 LED 동작 모드
+자동차 LED 동작 모드
 
 ```cpp
 namespace Light
@@ -33,17 +33,8 @@ namespace Light
             enum Type
             {
                 None,
-                
-                RearNone = 0x10,
-                RearManual,             // 수동 제어
-                RearHold,               // 지정한 색상을 계속 켬
-                RearFlicker,            // 깜빡임
-                RearFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                RearDimming,            // 밝기 제어하여 천천히 깜빡임
-                RearSunrise,            // 꺼진 상태에서 점점 밝아짐
-                RearSunset,             // 켜진 상태에서 점점 어두워짐
-                
-                BodyNone = 0x20,
+
+                BodyNone            = 0x20,
                 BodyManual,             // 수동 제어
                 BodyHold,               // 지정한 색상을 계속 켬
                 BodyFlicker,            // 깜빡임
@@ -52,32 +43,41 @@ namespace Light
                 BodySunrise,            // 꺼진 상태에서 점점 밝아짐
                 BodySunset,             // 켜진 상태에서 점점 어두워짐
                 
-                ANone = 0x30,
-                AManual,                // 수동 제어
-                AHold,                  // 지정한 색상을 계속 켬
-                AFlicker,               // 깜빡임
-                AFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                ADimming,               // 밝기 제어하여 천천히 깜빡임
-                ASunrise,               // 꺼진 상태에서 점점 밝아짐
-                ASunset,                // 켜진 상태에서 점점 어두워짐
+                HeadNone            = 0x30,
+                HeadManual,                // 수동 제어
+                HeadHold,                  // 지정한 색상을 계속 켬
+                HeadFlicker,               // 깜빡임
+                HeadFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                HeadDimming,               // 밝기 제어하여 천천히 깜빡임
+                HeadSunrise,               // 꺼진 상태에서 점점 밝아짐
+                HeadSunset,                // 켜진 상태에서 점점 어두워짐
                 
-                BNone = 0x40,
-                BManual,                // 수동 제어
-                BHold,                  // 지정한 색상을 계속 켬
-                BFlicker,               // 깜빡임
-                BFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                BDimming,               // 밝기 제어하여 천천히 깜빡임
-                BSunrise,               // 꺼진 상태에서 점점 밝아짐
-                BSunset,                // 켜진 상태에서 점점 어두워짐
+                TailNone            = 0x40,
+                TailManual,                // 수동 제어
+                TailHold,                  // 지정한 색상을 계속 켬
+                TailFlicker,               // 깜빡임
+                TailFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                TailDimming,               // 밝기 제어하여 천천히 깜빡임
+                TailSunrise,               // 꺼진 상태에서 점점 밝아짐
+                TailSunset,                // 켜진 상태에서 점점 어두워짐
                 
-                CNone = 0x50,
-                CManual,                // 수동 제어
-                CHold,                  // 지정한 색상을 계속 켬
-                CFlicker,               // 깜빡임
-                CFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                CDimming,               // 밝기 제어하여 천천히 깜빡임
-                CSunrise,               // 꺼진 상태에서 점점 밝아짐
-                CSunset,                // 켜진 상태에서 점점 어두워짐
+                LeftNone            = 0x50,
+                LeftManual,                // 수동 제어
+                LeftHold,                  // 지정한 색상을 계속 켬
+                LeftFlicker,               // 깜빡임
+                LeftFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                LeftDimming,               // 밝기 제어하여 천천히 깜빡임
+                LeftSunrise,               // 꺼진 상태에서 점점 밝아짐
+                LeftSunset,                // 켜진 상태에서 점점 어두워짐
+                
+                RightNone           = 0x60,
+                RightManual,                // 수동 제어
+                RightHold,                  // 지정한 색상을 계속 켬
+                RightFlicker,               // 깜빡임
+                RightFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
+                RightDimming,               // 밝기 제어하여 천천히 깜빡임
+                RightSunrise,               // 꺼진 상태에서 점점 밝아짐
+                RightSunset,                // 켜진 상태에서 점점 어두워짐
                 
                 EndOfType
             };
@@ -94,7 +94,7 @@ namespace Light
 <a name="Light_Drone_Flags"></a>
 ## Light::Drone::Flags::Type
 
-드론 LED Flag
+자동차 LED Flag
 
 ```cpp
 namespace Light
@@ -107,84 +107,14 @@ namespace Light
             {
                 None        = 0x0000,
                 
-                Rear        = 0x0001,
-                BodyRed     = 0x0002,
-                BodyGreen   = 0x0004,
-                BodyBlue    = 0x0008,
+                BodyRed     = 0x0001,
+                BodyGreen   = 0x0002,
+                BodyBlue    = 0x0004,
                 
-                A           = 0x0010,
-                B           = 0x0020,
-                CRed        = 0x0040,
-                CGreen      = 0x0080,
-                CBlue       = 0x0100,
-            };
-        }
-    }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Light_Controller_Mode"></a>
-## Light::Controller::Mode::Type
-
-조종기 LED 동작 모드
-
-```cpp
-namespace Light
-{
-    namespace Controller
-    {
-        namespace Mode
-        {
-            enum Type
-            {
-                None,
-                
-                // Body
-                BodyNone = 0x10,
-                BodyManual,         // 수동 제어
-                BodyHold,           // 지정한 색상을 계속 켬
-                BodyFlicker,        // 깜빡임
-                BodyFlickerDouble,  // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                BodyDimming,        // 밝기 제어하여 천천히 깜빡임
-                BodySunrise,        // 꺼진 상태에서 점점 밝아짐
-                BodySunset,         // 켜진 상태에서 점점 어두워짐
-                
-                EndOfType
-            };
-        }
-    }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Light_Controller_Flags"></a>
-## Light::Controller::Flags::Type
-
-드론 LED Flag
-
-```cpp
-namespace Light
-{
-    namespace Controller
-    {
-        namespace Flags
-        {
-            enum Type
-            {
-                None        = 0x00,
-                
-                BodyRed     = 0x01,
-                BodyGreen   = 0x02,
-                BodyBlue    = 0x04,
+                Head        = 0x0008,
+                Tail        = 0x0010,
+                Left        = 0x0020,
+                Right       = 0x0040,
             };
         }
     }
@@ -201,7 +131,7 @@ namespace Light
 
 LED 팔레트 인덱스
 
-드론과 조종기 내부에 정의된 팔레트의 색상 인덱스입니다.
+자동차과 조종기 내부에 정의된 팔레트의 색상 인덱스입니다.
 의도보다 색상이 더 밝게 표현되기 때문에 테스트 후 사용하기를 권해드립니다.
 
 ```cpp
@@ -424,8 +354,7 @@ namespace Protocol
 
 | 변수 이름   | 형식                                                 | 크기     | 범위                                      | 설명                          |
 |:-----------:|:----------------------------------------------------:|:--------:|:-----------------------------------------:|:------------------------------|
-| flags       | [Light::Drone::Flags](#Light_Drone_Flags)            | 2 Byte   | 0b0000000000000000 ~ 0b1111111111111111   | 드론 LED 선택 플래그 조합     |
-|             | [Light::Controller::Flags](#Light_Controller_Flags)  |          | 0b0000000000000000 ~ 0b1111111111111111   | 조종기 LED 선택 플래그 조합   |
+| flags       | [Light::Drone::Flags](#Light_Drone_Flags)            | 2 Byte   | 0b0000000000000000 ~ 0b1111111111111111   | 자동차 LED 선택 플래그 조합     |
 | brightness  | uint8_t                                              | 1 Byte   | 0 ~ 255                                   | 밝기                          |
 
 
@@ -454,8 +383,7 @@ namespace Protocol
 
 | 변수 이름   | 형식                                                    | 크기     | 범위       | 설명                           |
 |:-----------:|:-------------------------------------------------------:|:--------:|:----------:|:-------------------------------|
-| mode        | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte   | -          | 드론 LED 동작 모드             |
-|             | [Light::Controller::Mode::Type](#Light_Controller_Mode) |          | -          | 조종기 LED 동작 모드           |
+| mode        | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte   | -          | 자동차 LED 동작 모드             |
 | interval    | uint16_t                                                | 2 Byte   | 0 ~ 65535  | 내부 밝기 제어 함수 호출 주기  |
 
 
@@ -545,8 +473,7 @@ namespace Protocol
 
 | 변수 이름  | 형식                                                    | 크기   | 범위       | 설명                          |
 |:----------:|:-------------------------------------------------------:|:------:|:----------:|:------------------------------|
-| event      | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte | -          | 드론 LED 동작 모드            |
-|            | [Light::Controller::Mode::Type](#Light_Controller_Mode) |        | -          | 조종기 LED 동작 모드          |
+| event      | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte | -          | LED 동작 모드                 |
 | interval   | UInt16                                                  | 2 Byte | 0 ~ 65535  | 내부 색상 변화 함수 호출 주기 |
 | repeat     | UInt8                                                   | 1 Byte | 0 ~ 255    | 반복 횟수                     |
 
@@ -623,7 +550,6 @@ namespace Protocol
 4. [Definitions](04_definitions.md)
 5. [Structs](05_structs.md)
 6. ***Structs - Light***
-7. [Structs - Display](07_structs_display.md)
 
 <br>
 

@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.4.11
+Modified : 2019.4.12
 
 ---
 
@@ -274,9 +274,9 @@ namespace Protocol
     {
         struct
         {
-            u16                     build;      // Build Number
-            u8                      minor;      // Minor Number
-            u8                      major;      // Major Number
+            u16     build;      // Build Number
+            u8      minor;      // Minor Number
+            u8      major;      // Major Number
         };
 
         u32 v;
@@ -284,13 +284,70 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                           | 크기     | 범위       | 설명         |
-|:----------:|:--------------------------------------------------------------:|:--------:|:----------:|:-------------|
-| build      | uint16_t                                                       | 14 bit   | 0 ~ 65535  | 빌드 번호    |
-| minor      | uint8_t                                                        | 1 Byte   | 0 ~ 255    | 부 번호      |
-| major      | uint8_t                                                        | 1 Byte   | 0 ~ 255    | 주 번호      |
-| v          | uint32_t                                                       | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
+| 변수 이름  | 형식             | 크기     | 범위       | 설명         |
+|:----------:|:----------------:|:--------:|:----------:|:-------------|
+| build      | uint16_t         | 14 bit   | 0 ~ 65535  | 빌드 번호    |
+| minor      | uint8_t          | 1 Byte   | 0 ~ 255    | 부 번호      |
+| major      | uint8_t          | 1 Byte   | 0 ~ 255    | 주 번호      |
+| v          | uint32_t         | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
 
+
+
+<br>
+<br>
+
+
+<a name="Control_Double8"></a>
+## Control::Double8
+
+조종
+
+```cpp
+namespace Control
+{
+    struct Double8
+    {
+        s8      accel;      // accel
+        s8      wheel;      // wheel
+    };
+}
+```
+
+| 변수 이름 | 형식     | 크기     | 범위         | 설명       | 음수 값(-) | 양수 값(+)    |
+|:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
+| accel     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
+| wheel     | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
+
+
+<br>
+<br>
+
+
+<a name="Control_Double8AndRequestData"></a>
+## Control::Double8AndRequestData
+
+조종 및 데이터 요청
+
+조종 명령 시 응답 데이터로 Ack 대신 요청한 데이터를 응답으로 보내게 함.
+
+```cpp
+namespace Control
+{
+    struct Double8AndRequestData
+    {
+        s8      accel;      // accel
+        s8      wheel;      // wheel
+
+        u8      dataType;   // DataType
+    };
+}
+```
+
+| 변수 이름 | 형식     | 크기     |범위          | 설명       | 음수 값(-) | 양수 값(+)    |
+|:---------:|:--------:|:--------:|:------------:|:-----------|:----------:|:-------------:|
+| accel     | int8_t   | 1 Byte   | -100 ~ 100   | 전후       | 후방       | 전방          |
+| wheel     | int8_t   | 1 Byte   | -100 ~ 100   | 좌우       | 좌측       | 우측          |
+| dataType  | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType) | - | 1 Byte | 요청할 데이터 타입 | - | - |
 
 
 <br>
@@ -478,12 +535,12 @@ namespace Protocol
 
 | 변수 이름  | 형식     | 크기     | 범위              | 설명           |
 |:----------:|:--------:|:--------:|:-----------------:|:---------------|
-| accelX     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 X       |
-| accelY     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Y       |
-| accelZ     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Z       |
-| gyroRoll   | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Roll    |
-| gyroPitch  | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Pitch   |
-| gyroYaw    | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Yaw     |
+| accelX     | int16_t  | 2 Byte   | -32,768 ~ 32,767  | 가속도 X       |
+| accelY     | int16_t  | 2 Byte   | -32,768 ~ 32,767  | 가속도 Y       |
+| accelZ     | int16_t  | 2 Byte   | -32,768 ~ 32,767  | 가속도 Z       |
+| gyroRoll   | int16_t  | 2 Byte   | -32,768 ~ 32,767  | 자이로 Roll    |
+| gyroPitch  | int16_t  | 2 Byte   | -32,768 ~ 32,767  | 자이로 Pitch   |
+| gyroYaw    | int16_t  | 2 Byte   | -32,768 ~ 32,767  | 자이로 Yaw     |
 
 
 <br>
@@ -519,20 +576,55 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식     | 크기     | 범위                | 설명                      |
-|:-------------:|:--------:|:--------:|:-------------------:|:--------------------------|
-| left          | Int16    | 2 Byte   |                     | 바닥 좌측 IR              |
-| right         | Int16    | 2 Byte   |                     | 바닥 우측 IR              |
-| frontH        | Int16    | 2 Byte   | 0 ~ 360             | Front H 감지              |
-| frontS        | Int8     | 1 Byte   |                     | Front S 감지              |
-| frontV        | Int8     | 1 Byte   |                     | Front V 감지              |
-| rearH         | Int16    | 2 Byte   | 0 ~ 360             | Rear H 감지               |
-| rearS         | Int8     | 1 Byte   |                     | Rear S 감지               |
-| rearV         | Int8     | 1 Byte   |                     | Rear V 감지               |
-| leftColor     | Int8     | 1 Byte   |                     | 왼쪽 바닥 색(흰색/검정)   |
-| rightColor    | Int8     | 1 Byte   |                     | 오른쪽 바닥 색(흰색/검정) |
-| frontColor    | Int8     | 1 Byte   |                     | 앞부분에서 감지한 색      |
-| rearColor     | Int8     | 1 Byte   |                     | 뒷부분에서 감지한 색      |
+| 변수 이름     | 형식        | 크기     | 범위                | 설명                      |
+|:-------------:|:-----------:|:--------:|:-------------------:|:--------------------------|
+| left          | uint16_t    | 2 Byte   |                     | 바닥 좌측 IR              |
+| right         | uint16_t    | 2 Byte   |                     | 바닥 우측 IR              |
+| frontH        | uint16_t    | 2 Byte   | 0 ~ 360             | Front H 감지              |
+| frontS        | int8_t      | 1 Byte   |                     | Front S 감지              |
+| frontV        | int8_t      | 1 Byte   |                     | Front V 감지              |
+| rearH         | uint16_t    | 2 Byte   | 0 ~ 360             | Rear H 감지               |
+| rearS         | int8_t      | 1 Byte   |                     | Rear S 감지               |
+| rearV         | int8_t      | 1 Byte   |                     | Rear V 감지               |
+| leftColor     | uint8_t     | 1 Byte   |                     | 왼쪽 바닥 색(흰색/검정)   |
+| rightColor    | uint8_t     | 1 Byte   |                     | 오른쪽 바닥 색(흰색/검정) |
+| frontColor    | uint8_t     | 1 Byte   |                     | 앞부분에서 감지한 색      |
+| rearColor     | uint8_t     | 1 Byte   |                     | 뒷부분에서 감지한 색      |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_RawCard"></a>
+## Protocol::RawCard
+
+카드 리더부의 Raw 데이터
+
+```cpp
+namespace Protocol
+{
+    class RawCard
+    {
+    public:
+        s16			range[2][3][2];		// [Front/Rear][R/G/B][Min/Max]		24 byte
+        s16			rgbRaw[2][3];		// [Front/Rear][R/G/B]				12 byte
+        u8			rgb[2][3];			// [Front/Rear][R/G/B]				 6 byte
+        s16			hsv[2][3];			// [Front/Rear][R/G/B]				12 byte
+        u8			color[2];			// [Front/Rear]						 2 byte
+        u8			card;				// 									 1 byte
+    };
+}
+```
+
+| 변수 이름     | 형식     | 크기     | 범위                | 설명                                                  |
+|:-------------:|:--------:|:--------:|:-------------------:|:------------------------------------------------------|
+| range         | int16_t  | 24 Byte  | 0 ~ 4096            | 각 raw 입력 값의 최대 최소 범위                       |
+| rgbRaw        | int16_t  | 12 Byte  | 0 ~ 4096            | raw ADC 값                                            |
+| rgb           | uint8_t  | 6 Byte   | 0 ~ 255             | rgbRaw 값의 range 범위 내에서 위치를 0 ~ 255 사이의 값으로 변환한 값  |
+| hsv           | int16_t  | 12 Byte  |                     | rgb 값을 hsv 값으로 변환한 값(카드 색상 구분에 사용)  |
+| color         | [CardColor::Type](04_definitions.md#CardColor)  | 2 Byte   |                     | 카드 위, 아래의 색상     |
+| card          | [CardNameColor::Type](04_definitions.md#CardNameColor), [CardNameFunction::Type](04_definitions.md#CardNameFunction) | 1 Byte  | - | 식별한 카드 |
 
 
 <br>
@@ -568,19 +660,19 @@ namespace Protocol
 }
 ```
 
-| 변수 이름         | 형식                                                                  | 크기     | 범위     | 설명                    |
-|:-----------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:------------------------|
-| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | 시스템 동작 모드        |
-| modeDrive         | [Mode::Drive::Type](04_definitions.md#Mode_Drive)                     | 1 Byte   | -        | 주행 모드               |
-| irFrontLeft       | uint16_t                                                              | 2 Byte   | -        | 정면 좌측 거리센서      |
-| irFrontRight      | uint16_t                                                              | 2 Byte   | -        | 정면 우측 거리센서      |
-| colorFront        | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 앞 부분 색상(RGB)  |
-| colorRear         | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 뒷 부분 색상(RGB)  |
-| colorLeft         | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 좌측 색상(BW)      |
-| colorRight        | [CardColor::Type](04_definitions.md#CardColor)                        | 1 Byte   | -        | 바닥 우측 색상(BW)      |
+| 변수 이름         | 형식                                                      | 크기     | 범위       | 설명                    |
+|:-----------------:|:---------------------------------------------------------:|:--------:|:----------:|:------------------------|
+| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)       | 1 Byte   | -          | 시스템 동작 모드        |
+| modeDrive         | [Mode::Drive::Type](04_definitions.md#Mode_Drive)         | 1 Byte   | -          | 주행 모드               |
+| irFrontLeft       | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 좌측 거리센서      |
+| irFrontRight      | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 우측 거리센서      |
+| colorFront        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 앞 부분 색상(RGB)  |
+| colorRear         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 뒷 부분 색상(RGB)  |
+| colorLeft         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 좌측 색상(BW)      |
+| colorRight        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 우측 색상(BW)      |
 | card              | [CardNameColor::Type](04_definitions.md#CardNameColor), [CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
-| brightness        | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 주변 밝기               |
-| battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 배터리                  |
+| brightness        | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 주변 밝기               |
+| battery           | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 배터리                  |
 
 
 <br>
@@ -1078,7 +1170,6 @@ namespace Protocol
 4. [Definitions](04_definitions.md)
 5. ***Structs***
 6. [Structs - Light](06_structs_light.md)
-7. [Structs - Display](07_structs_display.md)
 
 <br>
 
