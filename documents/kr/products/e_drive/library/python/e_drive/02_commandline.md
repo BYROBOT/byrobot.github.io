@@ -30,13 +30,13 @@ e_drive 라이브러리는 소스 코드 작성없이 원하는 명령을 실행
 <br>
 
 
-# request
+# 1. request
 
 데이터 요청
 
 <br>
 
-### State 데이터 요청(USB/BLE)
+## 1.1. State 데이터 요청(USB/BLE)
 
 State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -52,7 +52,7 @@ State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-### Motion 데이터 요청(USB)
+## 1.2. Motion 데이터 요청(USB)
 
 Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -68,7 +68,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-### RawLineTracer 데이터 요청(USB)
+## 1.3. RawLineTracer 데이터 요청(USB)
 
 RawLineTracer 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -84,7 +84,7 @@ RawLineTracer 데이터를 10회 0.5초 주기로 요청하는 명령은 다음�
 <br>
 
 
-### RawCard 데이터 요청(USB)
+## 1.4. RawCard 데이터 요청(USB)
 
 RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -100,7 +100,7 @@ RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같
 <br>
 
 
-### RawCard 데이터 중 색상 인식 범위 출력 요청(USB)
+## 1.5. RawCard 데이터 중 색상 인식 범위 출력 요청(USB)
 
 RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -121,13 +121,15 @@ RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 �
 
 
 
-# light
+# 2. light
 
 LED 제어
 
+
 <br>
 
-### RGB LED 제어
+
+## 2.1. RGB LED 제어(USB/BLE)
 
 RGB LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
 
@@ -151,15 +153,13 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 <br>
 
-### 단색 LED 제어
+## 2.2. 단색 LED 제어(USB/BLE)
 
 단색 LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
 
 python -m e_drive light [front, head, tail, left, right] [hold, flicker, flickerdouble, dimming, sunrise, sunset] [interval]
 
 hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
-
-R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 ```
 > python -m e_drive light front hold 100
@@ -174,13 +174,13 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 <br>
 
 
-# buzzer
+# 3. buzzer
 
 버저
 
 <br>
 
-### 버저 작동(USB/BLE)
+## 3.1. 버저 작동(USB/BLE)
 
 1000Hz의 소리를 500ms 동안 내게 합니다.
 
@@ -200,14 +200,14 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 
 
-# Bluetooth Low Energy
+# 4. Bluetooth Low Energy
 
 Bluetooth Low Energy 연결을 지원하는 Link 모듈을 통해 E-Drive 장치에 연결하는 기능을 지원합니다.
 
 <br>
 <br>
 
-### 장치 연결(USB)
+## 4.1. 장치 연결(USB)
 
 마지막으로 연결한 시리얼 통신 장치에 연결한 후 가장 신호가 센 E-Drive 장치에 BLE 연결을 시도합니다.
 
@@ -218,7 +218,7 @@ Bluetooth Low Energy 연결을 지원하는 Link 모듈을 통해 E-Drive 장치
 <br>
 
 
-### 장치 연결 해제(USB)
+## 4.2. 장치 연결 해제(USB)
 
 BLE 연결된 장치가 있으면 해제합니다.
 
@@ -232,7 +232,7 @@ BLE 연결된 장치가 있으면 해제합니다.
 
 
 
-# GUI
+# 5. GUI
 
 e_drive 라이브러리에서는 시험적으로 kivy 라이브러리를 사용한 응용프로그램을 제공합니다.
 
@@ -248,10 +248,12 @@ kivy 라이브러리 설치는 아래의 링크를 참고하시기 바랍니다.
 
 [Installation on Windows](https://kivy.org/doc/stable/installation/installation-windows.html#installation)
 
+
 <br>
 <br>
 
-### 카드 읽기 테스트(USB)
+
+## 5.1. 카드 읽기 테스트(USB)
 
 센서를 통해 읽은 카드의 색상을 GUI로 표시합니다.
 
@@ -264,10 +266,12 @@ kivy 라이브러리 설치는 아래의 링크를 참고하시기 바랍니다.
     <p>카드 읽기 테스트</p>
 </div>
 
+
 <br>
 <br>
 
-### 카드 목록 읽기 테스트(USB)
+
+## 5.2. 카드 목록 읽기 테스트(USB)
 
 센서를 통해 읽은 카드와 카드 목록을 GUI로 표시합니다.
 
