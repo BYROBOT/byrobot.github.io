@@ -1,6 +1,6 @@
 **[*e_drive* for python](index.md)** / **Drone**
 
-Modified : 2019.4.16
+Modified : 2019.4.17
 
 ---
 
@@ -19,6 +19,8 @@ Modified : 2019.4.16
 e_drive 라이브러리는 소스 코드 작성없이 원하는 명령을 실행하거나 데이터를 확인할 수 있는 command line 명령어를 
 지원하고 있습니다. 아래에서 소개하는 명령어를 실행하여 간단하게 데이터를 확인하거나 작동해보시기 바랍니다.
 
+일부 명령은 데이터의 길이가 길어 USB로 연결한 상태에서만 동작합니다. BLE로 전송 가능한 데이터 길이는 헤더 4바이트 + 데이터 16바이트를 포함하여 모두 20바이트입니다. 이를 초과하는 데이터는 USB로 연결했을 때에만 송수신 가능합니다. 편의를 위해 아래의 명령어 중 USB와 BLE 송수신 가능 여부를 제목 옆에 표기하였습니다.
+
 <div align="center">
     <img src="../images/02_commandline_commandlist.png">
     <p>실행 가능한 명령 리스트</p>
@@ -34,7 +36,7 @@ e_drive 라이브러리는 소스 코드 작성없이 원하는 명령을 실행
 
 <br>
 
-### State 데이터 요청
+### State 데이터 요청(USB/BLE)
 
 State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -50,7 +52,7 @@ State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-### Motion 데이터 요청
+### Motion 데이터 요청(USB)
 
 Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -66,7 +68,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-### RawLineTracer 데이터 요청
+### RawLineTracer 데이터 요청(USB)
 
 RawLineTracer 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -82,7 +84,7 @@ RawLineTracer 데이터를 10회 0.5초 주기로 요청하는 명령은 다음�
 <br>
 
 
-### RawCard 데이터 요청
+### RawCard 데이터 요청(USB)
 
 RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -98,7 +100,7 @@ RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같
 <br>
 
 
-### RawCard 데이터 중 색상 인식 범위 출력 요청
+### RawCard 데이터 중 색상 인식 범위 출력 요청(USB)
 
 RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -117,13 +119,68 @@ RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 �
 
 
 
+
+
+# light
+
+LED 제어
+
+<br>
+
+### RGB LED 제어
+
+RGB LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
+
+python -m e_drive light body [hold, flicker, flickerdouble, dimming, sunrise, sunset, rainbow, rainbow2] [interval] [R] [G] [B]
+
+hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
+
+R, G, B 모두 값의 범위는 0 ~ 255입니다.
+
+```
+> python -m e_drive light body hold 100 50 50 10
+> python -m e_drive light body flicker 100 50 50 10
+> python -m e_drive light body flickerdouble 100 50 50 10
+> python -m e_drive light body dimming 3 50 50 10
+> python -m e_drive light body sunrise 5 50 50 10
+> python -m e_drive light body sunset 5 50 50 10
+> python -m e_drive light body rainbow 8 50 50 10
+> python -m e_drive light body rainbow2 8 50 50 10
+```
+
+
+<br>
+
+### 단색 LED 제어
+
+단색 LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
+
+python -m e_drive light [front, head, tail, left, right] [hold, flicker, flickerdouble, dimming, sunrise, sunset] [interval]
+
+hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
+
+R, G, B 모두 값의 범위는 0 ~ 255입니다.
+
+```
+> python -m e_drive light front hold 100
+> python -m e_drive light head hold 100
+> python -m e_drive light tail hold 100
+> python -m e_drive light left hold 100
+> python -m e_drive light right hold 100
+```
+
+
+<br>
+<br>
+
+
 # buzzer
 
 버저
 
 <br>
 
-### 버저 작동
+### 버저 작동(USB/BLE)
 
 1000Hz의 소리를 500ms 동안 내게 합니다.
 
@@ -150,7 +207,7 @@ Bluetooth Low Energy 연결을 지원하는 Link 모듈을 통해 E-Drive 장치
 <br>
 <br>
 
-### 장치 연결
+### 장치 연결(USB)
 
 마지막으로 연결한 시리얼 통신 장치에 연결한 후 가장 신호가 센 E-Drive 장치에 BLE 연결을 시도합니다.
 
@@ -161,7 +218,7 @@ Bluetooth Low Energy 연결을 지원하는 Link 모듈을 통해 E-Drive 장치
 <br>
 
 
-### 장치 연결 해제
+### 장치 연결 해제(USB)
 
 BLE 연결된 장치가 있으면 해제합니다.
 
@@ -194,7 +251,7 @@ kivy 라이브러리 설치는 아래의 링크를 참고하시기 바랍니다.
 <br>
 <br>
 
-### 카드 읽기 테스트
+### 카드 읽기 테스트(USB)
 
 센서를 통해 읽은 카드의 색상을 GUI로 표시합니다.
 
@@ -210,7 +267,7 @@ kivy 라이브러리 설치는 아래의 링크를 참고하시기 바랍니다.
 <br>
 <br>
 
-### 카드 목록 읽기 테스트
+### 카드 목록 읽기 테스트(USB)
 
 센서를 통해 읽은 카드와 카드 목록을 GUI로 표시합니다.
 
