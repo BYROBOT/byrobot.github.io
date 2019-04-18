@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.4.12
+Modified : 2019.4.18
 
 ---
 
@@ -656,6 +656,8 @@ namespace Protocol
         
         u16     brightness;     // 주변 밝기
         u8      battery;        // 배터리
+        
+        s8      rssi;           // RSSI
     };
 }
 ```
@@ -673,6 +675,7 @@ namespace Protocol
 | card              | [CardNameColor::Type](04_definitions.md#CardNameColor), <br>[CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
 | brightness        | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 주변 밝기               |
 | battery           | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 배터리                  |
+| rssi              | int8_t                                                    | 1 Byte   | -127 ~ 0   | 신호 세기               |
 
 
 <br>
