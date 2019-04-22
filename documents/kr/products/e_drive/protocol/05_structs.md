@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.4.18
+Modified : 2019.4.22
 
 ---
 
@@ -666,14 +666,14 @@ namespace Protocol
 |:-----------------:|:---------------------------------------------------------:|:--------:|:----------:|:------------------------|
 | modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)       | 1 Byte   | -          | 시스템 동작 모드        |
 | modeDrive         | [Mode::Drive::Type](04_definitions.md#Mode_Drive)         | 1 Byte   | -          | 주행 모드               |
-| irFrontLeft       | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 좌측 거리센서      |
-| irFrontRight      | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 우측 거리센서      |
+| irFrontLeft       | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 좌측 거리센서(Raw) |
+| irFrontRight      | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 우측 거리센서(Raw) |
 | colorFront        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 앞 부분 색상(RGB)  |
 | colorRear         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 뒷 부분 색상(RGB)  |
 | colorLeft         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 좌측 색상(BW)      |
 | colorRight        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 우측 색상(BW)      |
 | card              | [CardNameColor::Type](04_definitions.md#CardNameColor), <br>[CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
-| brightness        | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 주변 밝기               |
+| brightness        | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 주변 밝기(Raw)          |
 | battery           | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 배터리                  |
 | rssi              | int8_t                                                    | 1 Byte   | -127 ~ 0   | 신호 세기               |
 
