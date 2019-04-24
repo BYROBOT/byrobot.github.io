@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.4.22
+Modified : 2019.4.24
 
 ---
 
@@ -354,23 +354,19 @@ namespace Control
 <br>
 
 
-<a name="Control_Position"></a>
-## Control::Position
+<a name="Control_PositionDriveMove"></a>
+## Control::PositionDriveMove
 
-이동 명령
+이동
 
 ```cpp
 namespace Control
 {
-    struct Position
+    struct PositionDriveMove
     {
         float       positionX;              // meter
         float       positionY;              // meter
-        float       positionZ;              // meter
         float       velocity;               // m/s
-        
-        s16         heading;                // degree
-        s16         rotationalVelocity;     // deg/s
     };
 }
 ```
@@ -380,10 +376,34 @@ namespace Control
 |:---------------------:|:--------:|:--------:|:--------------:|:---------|:---------------------|
 | positionX             | float    | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
 | positionY             | float    | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
-| positionZ             | float    | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
 | velocity              | float    | 4 Byte   | 0.0 ~ 5.0      | m/s      | 앞뒤 이동 속도       |
-| heading               | int16_t  | 2 Byte   | -360 ~ 360     | degree   | 반시계방향(+), 시계방향(-) |
-| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 180       | degree/s | 좌우 회전 속도       |
+
+
+<br>
+<br>
+
+
+<a name="Control_PositionDriveHeading"></a>
+## Control::PositionDriveHeading
+
+제자리 회전
+
+```cpp
+namespace Control
+{
+    struct PositionDriveHeading
+    {
+        float       heading;                // degree
+        float       rotationalVelocity;     // deg/s
+    };
+}
+```
+
+
+| 변수 이름             | 형식     | 크기     | 범위           | 단위     | 설명                        |
+|:---------------------:|:--------:|:--------:|:--------------:|:---------|:----------------------------|
+| heading               | float    | 4 Byte   | -360.0 ~ 360.0 | degree   | 반시계방향(+), 시계방향(-)  |
+| rotationalVelocity    | float    | 4 Byte   | 10.0 ~ 180.0   | degree/s | 좌우 회전 속도              |
 
 
 <br>
