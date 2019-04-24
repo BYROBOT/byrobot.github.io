@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.4.12
+Modified : 2019.4.24
 
 ---
 
@@ -630,79 +630,79 @@ namespace CardNameColor
     enum Type
     {
         None            = 0x00,
-        
-        RedRed          = 0x11,
-        RedGreen        = 0x12,
-        RedBlue         = 0x13,
-        RedCyan         = 0x14,
-        RedMagenta      = 0x15,
-        RedYellow       = 0x16,
-        RedBlack        = 0x17,
-        RedWhite        = 0x18,
 
-        GreenRed        = 0x21,
-        GreenGreen      = 0x22,
-        GreenBlue       = 0x23,
-        GreenCyan       = 0x24,
-        GreenMagenta    = 0x25,
-        GreenYellow     = 0x26,
-        GreenBlack      = 0x27,
-        GreenWhite      = 0x28,
+        WhiteWhite      = 0x11,
+        WhiteRed        = 0x12,
+        WhiteYellow     = 0x13,
+        WhiteGreen      = 0x14,
+        WhiteCyan       = 0x15,
+        WhiteBlue       = 0x16,
+        WhiteMagenta    = 0x17,
+        WhiteBlack      = 0x18,
 
-        BlueRed         = 0x31,
-        BlueGreen       = 0x32,
-        BlueBlue        = 0x33,
-        BlueCyan        = 0x34,
-        BlueMagenta     = 0x35,
-        BlueYellow      = 0x36,
-        BlueBlack       = 0x37,
-        BlueWhite       = 0x38,
+        RedWhite        = 0x21,
+        RedRed          = 0x22,
+        RedYellow       = 0x23,
+        RedGreen        = 0x24,
+        RedCyan         = 0x25,
+        RedBlue         = 0x26,
+        RedMagenta      = 0x27,
+        RedBlack        = 0x28,
 
-        CyanRed         = 0x41,
-        CyanGreen       = 0x42,
-        CyanBlue        = 0x43,
-        CyanCyan        = 0x44,
-        CyanMagenta     = 0x45,
-        CyanYellow      = 0x46,
-        CyanBlack       = 0x47,
-        CyanWhite       = 0x48,
+        YellowWhite     = 0x31,
+        YellowRed       = 0x32,
+        YellowYellow    = 0x33,
+        YellowGreen     = 0x34,
+        YellowCyan      = 0x35,
+        YellowBlue      = 0x36,
+        YellowMagenta   = 0x37,
+        YellowBlack     = 0x38,
 
-        MagentaRed      = 0x51,
-        MagentaGreen    = 0x52,
-        MagentaBlue     = 0x53,
-        MagentaCyan     = 0x54,
-        MagentaMagenta  = 0x55,
-        MagentaYellow   = 0x56,
-        MagentaBlack    = 0x57,
-        MagentaWhite    = 0x58,
+        GreenWhite      = 0x41,
+        GreenRed        = 0x42,
+        GreenYellow     = 0x43,
+        GreenGreen      = 0x44,
+        GreenCyan       = 0x45,
+        GreenBlue       = 0x46,
+        GreenMagenta    = 0x47,
+        GreenBlack      = 0x48,
 
-        YellowRed       = 0x61,
-        YellowGreen     = 0x62,
-        YellowBlue      = 0x63,
-        YellowCyan      = 0x64,
-        YellowMagenta   = 0x65,
-        YellowYellow    = 0x66,
-        YellowBlack     = 0x67,
-        YellowWhite     = 0x68,
+        CyanWhite       = 0x51,
+        CyanRed         = 0x52,
+        CyanYellow      = 0x53,
+        CyanGreen       = 0x54,
+        CyanCyan        = 0x55,
+        CyanBlue        = 0x56,
+        CyanMagenta     = 0x57,
+        CyanBlack       = 0x58,
 
-        BlackRed        = 0x71,
-        BlackGreen      = 0x72,
-        BlackBlue       = 0x73,
-        BlackCyan       = 0x74,
-        BlackMagenta    = 0x75,
-        BlackYellow     = 0x76,
-        BlackBlack      = 0x77,
-        BlackWhite      = 0x78,
+        BlueWhite       = 0x61,
+        BlueRed         = 0x62,
+        BlueYellow      = 0x63,
+        BlueGreen       = 0x64,
+        BlueCyan        = 0x65,
+        BlueBlue        = 0x66,
+        BlueMagenta     = 0x67,
+        BlueBlack       = 0x68,
 
-        WhiteRed        = 0x81,
-        WhiteGreen      = 0x82,
-        WhiteBlue       = 0x83,
-        WhiteCyan       = 0x84,
-        WhiteMagenta    = 0x85,
-        WhiteYellow     = 0x86,
-        WhiteBlack      = 0x87,
-        WhiteWhite      = 0x88,
-        
+        MagentaWhite    = 0x71,
+        MagentaRed      = 0x72,
+        MagentaYellow   = 0x73,
+        MagentaGreen    = 0x74,
+        MagentaCyan     = 0x75,
+        MagentaBlue     = 0x76,
+        MagentaMagenta  = 0x77,
+        MagentaBlack    = 0x78,
+
+        BlackWhite      = 0x81,
+        BlackRed        = 0x82,
+        BlackYellow     = 0x83,
+        BlackGreen      = 0x84,
+        BlackCyan       = 0x85,
+        BlackBlue       = 0x86,
+        BlackMagenta    = 0x87,
+        BlackBlack      = 0x88,
+
         EndOfType
     };
 }
@@ -723,80 +723,64 @@ namespace CardNameFunction
 {
     enum Type
     {
-        None                                    = CardNameColor::None,
+        None                            = CardNameColor::None,
         
-        // Mode(Red)
-        LineCoding                              = CardNameColor::RedRed,
-        CardCodingStart                         = CardNameColor::RedWhite,      // 카드 입력 중 White Dimming
-        CardCodingEnd                           = CardNameColor::RedBlack,      // 카드 입력 완료 시 White Hold
-        FunctionStart                           = CardNameColor::RedCyan,       // 카드 입력 중 Cyan Dimming
-        FunctionEnd                             = CardNameColor::RedMagenta,    // 카드 입력 완료 시 Cyan Hold
+        // White - Light On
+        LightOnLowBeam                  = CardNameColor::WhiteBlack,
+        LightOnHighBeam                 = CardNameColor::WhiteWhite,
+        LightOnTailLight                = CardNameColor::WhiteRed,
+        LightOnLeftTurnSignal           = CardNameColor::WhiteGreen,
+        LightOnRightTurnSignal          = CardNameColor::WhiteBlue,
+        LightOnEmergencyLight           = CardNameColor::WhiteYellow,
         
-        // Move(Green)
-        MoveForward                             = CardNameColor::GreenWhite,
-        MoveBackward                            = CardNameColor::GreenBlack,
-        MoveTurnLeft45Deg                       = CardNameColor::GreenYellow,
-        MoveTurnRight45Deg                      = CardNameColor::GreenBlue,
-        MoveTurnLeft90Deg                       = CardNameColor::GreenRed,
-        MoveTurnRight90Deg                      = CardNameColor::GreenCyan,
-        MoveTurnLeft180Deg                      = CardNameColor::GreenMagenta,
-        MoveTurnRight180Deg                     = CardNameColor::GreenGreen,
+        // Black - Light Off
+        LightOffLowBeam                 = CardNameColor::BlackBlack,
+        LightOffHighBeam                = CardNameColor::BlackWhite,
+        LightOffTailLight               = CardNameColor::BlackRed,
+        LightOffLeftTurnSignal          = CardNameColor::BlackGreen,
+        LightOffRightTurnSignal         = CardNameColor::BlackBlue,
+        LightOffEmergencyLight          = CardNameColor::BlackYellow,
         
-        // Preset(Blue)
-        PresetMoveForwardTurnLeftForward        = CardNameColor::BlueYellow,
-        PresetMoveForwardTurnRightForward       = CardNameColor::BlueBlue,
-        PresetMoveBackwardTurnLeftBackward      = CardNameColor::BlueRed,
-        PresetMoveBackwardTurnRightBackward     = CardNameColor::BlueCyan,
-        presetMoveForwardZigzag                 = CardNameColor::BlueMagenta,
-        presetMoveBackwardZigzag                = CardNameColor::BlueGreen,
-        presetYawing60Deg                       = CardNameColor::BlueWhite,     // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도
-        presetYawing180Deg                      = CardNameColor::BlueBlack,     // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도
+        // Red - LightBody
+        LightBodyWhite                  = CardNameColor::RedWhite,
+        LightBodyRed                    = CardNameColor::RedRed,
+        LightBodyYellow                 = CardNameColor::RedYellow,
+        LightBodyGreen                  = CardNameColor::RedGreen,
+        LightBodyCyan                   = CardNameColor::RedCyan,
+        LightBodyBlue                   = CardNameColor::RedBlue,
+        LightBodyMagenta                = CardNameColor::RedMagenta,
+        LightBodyBlack                  = CardNameColor::RedBlack,
         
-        // Loop(Cyan)
-        LoopStartInfinite                       = CardNameColor::CyanWhite,
-        LoopStartTwice                          = CardNameColor::CyanCyan,
-        LoopStartFiveTimes                      = CardNameColor::CyanMagenta,
-        LoopBreakIfFindRed                      = CardNameColor::CyanRed,
-        LoopBreakIfFindGreen                    = CardNameColor::CyanGreen,
-        LoopBreakIfFindBlue                     = CardNameColor::CyanBlue,
-        LoopBreakIfFindObstacle                 = CardNameColor::CyanYellow,
-        LoopEnd                                 = CardNameColor::CyanBlack,
+        // Yellow - Mode
+        LineCoding                      = CardNameColor::YellowYellow,
+        CardCodingStart                 = CardNameColor::YellowWhite,       // 카드 입력 중 White Dimming
+        CardCodingEnd                   = CardNameColor::YellowBlack,       // 카드 입력 완료 시 White Hold
+        FunctionStart                   = CardNameColor::YellowCyan,        // 카드 입력 중 Cyan Dimming
+        FunctionEnd                     = CardNameColor::YellowBlue,        // 카드 입력 완료 시 Cyan Hold
         
-        // Condition(Magenta)
-        ConditionIfFindRedStop                  = CardNameColor::MagentaRed,        // Color
-        ConditionIfFindGreenMoveForward         = CardNameColor::MagentaWhite,      // Color
-        ConditionIfFindBlueMoveBackward         = CardNameColor::MagentaBlack,      // Color
-        ConditionIfFindYellowTurnLeft90         = CardNameColor::MagentaYellow,     // Color
-        ConditionIfFindCyanTurnRight90          = CardNameColor::MagentaCyan,       // Color
-        ConditionIfNotFindObstacleMoveForward   = CardNameColor::MagentaGreen,      // Obstacle
-        ConditionIfFindObstacleTurnLeft90       = CardNameColor::MagentaMagenta,    // Obstacle
-        ConditionIfFindObstacleTurnRight90      = CardNameColor::MagentaBlue,       // Obstacle
+        // Green - Move - Basic
+        MoveForward1Block               = CardNameColor::GreenWhite,
+        MoveBackward1Block              = CardNameColor::GreenBlack,
+        MoveTurnLeft90Deg               = CardNameColor::GreenGreen,
+        MoveTurnRight90Deg              = CardNameColor::GreenBlue,
         
-        // LightBody(Yellow)
-        LightBodyRed                            = CardNameColor::YellowRed,
-        LightBodyGreen                          = CardNameColor::YellowGreen,
-        LightBodyBlue                           = CardNameColor::YellowBlue,
-        LightBodyCyan                           = CardNameColor::YellowCyan,
-        LightBodyMagenta                        = CardNameColor::YellowMagenta,
-        LightBodyYellow                         = CardNameColor::YellowYellow,
-        LightBodyWhite                          = CardNameColor::YellowWhite,
-        LightBodyBlack                          = CardNameColor::YellowBlack,
+        // Cyan - If
+        IfFindFrontObstacle             = CardNameColor::CyanBlack,     // Front Obstacle
+        IfFindGroundRed                 = CardNameColor::CyanRed,       // Ground Color Red
+        IfFindGroundGreen               = CardNameColor::CyanGreen,     // Ground Color Green
+        IfFindGroundBlue                = CardNameColor::CyanBlue,      // Ground Color Blue
         
-        // Light On(White)
-        LightOnLowBeam                          = CardNameColor::WhiteRed,
-        LightOnHighBeam                         = CardNameColor::WhiteGreen,
-        LightOnTailLight                        = CardNameColor::WhiteBlue,
-        LightOnLeftTurnSignal                   = CardNameColor::WhiteCyan,
-        LightOnRightTurnSignal                  = CardNameColor::WhiteMagenta,
-        LightOnEmergencyLight                   = CardNameColor::WhiteYellow,
+        // Blue - Loop
+        LoopStartInfinite               = CardNameColor::BlueWhite,
+        LoopStartTwice                  = CardNameColor::BlueYellow,
+        LoopStartFiveTimes              = CardNameColor::BlueBlue,
+        LoopBreak                       = CardNameColor::BlueRed,
+        LoopEnd                         = CardNameColor::BlueBlack,
         
-        // Light Off(Black)
-        LightOffLowBeam                         = CardNameColor::BlackRed,
-        LightOffHighBeam                        = CardNameColor::BlackGreen,
-        LightOffTailLight                       = CardNameColor::BlackBlue,
-        LightOffLeftTurnSignal                  = CardNameColor::BlackCyan,
-        LightOffRightTurnSignal                 = CardNameColor::BlackMagenta,
-        LightOffEmergencyLight                  = CardNameColor::BlackYellow,
+        // Magenta - Preset
+        presetYawing60Deg               = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
+        presetYawing180Deg              = CardNameColor::MagentaBlack,      // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도 
+        
         
         EndOfType
     };
@@ -819,17 +803,14 @@ namespace CardColor
     enum Type
     {
         Unknown     = 0x00,
-        
-        Red         = 0x01,
-        Green       = 0x02,
-        Blue        = 0x03,
-        
-        Cyan        = 0x04,
-        Magenta     = 0x05,
-        Yellow      = 0x06,
-        
-        Black       = 0x07,
-        White       = 0x08,
+        White       = 0x01,
+        Red         = 0x02,
+        Yellow      = 0x03,
+        Green       = 0x04,
+        Cyan        = 0x05,
+        Blue        = 0x06,
+        Magenta     = 0x07,
+        Black       = 0x08,
     };
 }
 ```
