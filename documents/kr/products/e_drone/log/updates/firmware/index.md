@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.3.5
+Modified : 2019.5.7
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2019.3.5
 
 
 <br>
+
+
+# 2019.4.26
+
+- **Drone: 1.1.17**
+- **Controller: 1.1.16**
+
+> - 조종기에 드론 외부 LED 설정 모드 추가
+> - 조종기와 드론 모두 LED 설정 모드에서 선택할 수 있는 동작 모드에 Rainbow, Rainbow2를 추가함
+> - 이륙전 모터가 천천히 돌 때 모터의 불량을 판별하여 모터를 정지시키고 조종기에 경고 메세지 출력
+> - 외부 RGB LED 설정을 내부 플래시 메모리에 저장하게 함
+
+
+[Download](https://drive.google.com/open?id=1V_ls69gItraiXnH2Aeun7qFl7Qzcj2yd)
+
+
+<br>
+
+---
 
 
 # 2019.2.27
