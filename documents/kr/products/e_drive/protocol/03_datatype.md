@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.4.12
+Modified : 2019.5.24
 
 ---
 
@@ -70,7 +70,6 @@ namespace Protocol
             Motor                       = 0x60,     // 모터 제어 및 현재 제어값 확인
             MotorSingle,                            // 한 개의 모터 제어
             Buzzer,                                 // 부저 제어
-            Vibrator,                               // 진동 제어
 
             // Input
             Button                      = 0x70,     // 버튼 입력
@@ -140,7 +139,6 @@ namespace Protocol
 | Motor                                 | 0x60 | C    | 모터 제어 및 현재 제어값 확인                   | [Protocol::Motor](05_structs.md#Protocol_Motor) |
 | MotorSingle                           | 0x61 | C    | 한 개의 모터 제어                               | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
 | Buzzer                                | 0x62 | C    | 버저 제어                                       | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer) |
-| Vibrator                              | 0x63 | C    | 진동 제어                                       | [Protocol::Vibrator](05_structs.md#Protocol_Vibrator) |
 | Button                                | 0x70 | A    | 버튼 입력                                       | [Protocol::Button](05_structs.md#Protocol_Button) |
 | InformationAssembledForController     | 0xA0 | C    | 자주 갱신되는 데이터 모음(조종기)               | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
 | InformationAssembledForEntry          | 0xA1 | C    | 자주 갱신되는 데이터 모음(엔트리)               | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |

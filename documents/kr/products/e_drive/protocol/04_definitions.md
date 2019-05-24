@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.4.24
+Modified : 2019.5.24
 
 ---
 
@@ -97,7 +97,7 @@ namespace ModelNumber
 
         Drone_7_Drone_P1        = 0x00071001,   // Drone_7_Drone_P1
         Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
-        Drone_7_BleServer_P0    = 0x00073300,   // Drone_7_BleServer_P0
+        Drone_7_BleServer_P2    = 0x00073302,   // Drone_7_BleServer_P2
     };
 }
 ```
@@ -481,6 +481,13 @@ namespace DriveEvent
 
         Stop = 0x10,            // 정지
 
+        Zigzag,
+        Wave,
+        LeftTornado,
+        RightTornado,
+        LeftCircle,
+        RightCircle,
+
         EndOfType
     };
 }
@@ -724,68 +731,93 @@ namespace CardNameFunction
     enum Type
     {
         None                            = CardNameColor::None,
+
+        // White - Mode
+        RemoteControl               = CardNameColor::WhiteWhite,
+        CardCodingStart             = CardNameColor::WhiteRed,      // 카드 입력 시작 - 카드 입력 중 White Dimming
+        CardCodingEnd               = CardNameColor::WhiteYellow,   // 카드 입력 종료 - 카드 입력 완료 시 White Hold
+        FunctionStart               = CardNameColor::WhiteGreen,    // 함수 입력 시작 - 입력 중 Cyan Dimming
+        FunctionEnd                 = CardNameColor::WhiteCyan,     // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
+        FunctionCall                = CardNameColor::WhiteBlue,     // 함수 호출
+        LineTracer                  = CardNameColor::WhiteMagenta,  // 라인 트레이서 시작
+        Piano                       = CardNameColor::WhiteBlack,    // 피아노 모드
         
-        // White - Light On
-        LightOnLowBeam                  = CardNameColor::WhiteBlack,
-        LightOnHighBeam                 = CardNameColor::WhiteWhite,
-        LightOnTailLight                = CardNameColor::WhiteRed,
-        LightOnLeftTurnSignal           = CardNameColor::WhiteGreen,
-        LightOnRightTurnSignal          = CardNameColor::WhiteBlue,
-        LightOnEmergencyLight           = CardNameColor::WhiteYellow,
-        
-        // Black - Light Off
-        LightOffLowBeam                 = CardNameColor::BlackBlack,
-        LightOffHighBeam                = CardNameColor::BlackWhite,
-        LightOffTailLight               = CardNameColor::BlackRed,
-        LightOffLeftTurnSignal          = CardNameColor::BlackGreen,
-        LightOffRightTurnSignal         = CardNameColor::BlackBlue,
-        LightOffEmergencyLight          = CardNameColor::BlackYellow,
         
         // Red - LightBody
-        LightBodyWhite                  = CardNameColor::RedWhite,
-        LightBodyRed                    = CardNameColor::RedRed,
-        LightBodyYellow                 = CardNameColor::RedYellow,
-        LightBodyGreen                  = CardNameColor::RedGreen,
-        LightBodyCyan                   = CardNameColor::RedCyan,
-        LightBodyBlue                   = CardNameColor::RedBlue,
-        LightBodyMagenta                = CardNameColor::RedMagenta,
-        LightBodyBlack                  = CardNameColor::RedBlack,
+        LightBodyWhite              = CardNameColor::RedWhite,
+        LightBodyRed                = CardNameColor::RedRed,
+        LightBodyYellow             = CardNameColor::RedYellow,
+        LightBodyGreen              = CardNameColor::RedGreen,
+        LightBodyCyan               = CardNameColor::RedCyan,
+        LightBodyBlue               = CardNameColor::RedBlue,
+        LightBodyMagenta            = CardNameColor::RedMagenta,
+        LightBodyBlack              = CardNameColor::RedBlack,
         
-        // Yellow - Mode
-        LineCoding                      = CardNameColor::YellowYellow,
-        CardCodingStart                 = CardNameColor::YellowWhite,       // 카드 입력 중 White Dimming
-        CardCodingEnd                   = CardNameColor::YellowBlack,       // 카드 입력 완료 시 White Hold
-        FunctionStart                   = CardNameColor::YellowCyan,        // 카드 입력 중 Cyan Dimming
-        FunctionEnd                     = CardNameColor::YellowBlue,        // 카드 입력 완료 시 Cyan Hold
+        // Yellow - Light On
+        LightOnHighBeam             = CardNameColor::YellowWhite,
+        LightOnEmergencyLight       = CardNameColor::YellowRed,
+        LightOnLowBeam              = CardNameColor::YellowYellow,
+        LightOnLeftTurnSignal       = CardNameColor::YellowGreen,
+        LightOnRightTurnSignal      = CardNameColor::YellowCyan,
+        LightOnTailLight            = CardNameColor::YellowBlue,
+        LightOffTailLight           = CardNameColor::YellowMagenta,
+        LightOffLowBeam             = CardNameColor::YellowBlack,
         
         // Green - Move - Basic
-        MoveForward1Block               = CardNameColor::GreenWhite,
-        MoveBackward1Block              = CardNameColor::GreenBlack,
-        MoveTurnLeft90Deg               = CardNameColor::GreenGreen,
-        MoveTurnRight90Deg              = CardNameColor::GreenBlue,
+        MoveForward                 = CardNameColor::GreenWhite,
+        MoveForward1Block           = CardNameColor::GreenRed,
+        MoveTurnLeft180Deg          = CardNameColor::GreenYellow,
+        MoveTurnLeft90Deg           = CardNameColor::GreenGreen,
+        MoveTurnRight90Deg          = CardNameColor::GreenCyan,
+        MoveBackward1Block          = CardNameColor::GreenBlue,
+        MoveBackward                = CardNameColor::GreenMagenta,
+        MoveStop                    = CardNameColor::GreenBlack,
         
         // Cyan - If
-        IfFindFrontObstacle             = CardNameColor::CyanBlack,     // Front Obstacle
-        IfFindGroundRed                 = CardNameColor::CyanRed,       // Ground Color Red
-        IfFindGroundGreen               = CardNameColor::CyanGreen,     // Ground Color Green
-        IfFindGroundBlue                = CardNameColor::CyanBlue,      // Ground Color Blue
+        IfFindFrontObstacle         = CardNameColor::CyanWhite,         // Front Obstacle
+        IfFindGroundRed             = CardNameColor::CyanRed,           // Ground Color Red
+        IfFindGroundYellow          = CardNameColor::CyanYellow,        // Ground Color Yellow
+        IfFindGroundGreen           = CardNameColor::CyanGreen,         // Ground Color Green
+        IfFindGroundCyan            = CardNameColor::CyanCyan,          // Ground Color Cyan
+        IfFindGroundBlue            = CardNameColor::CyanBlue,          // Ground Color Blue
+        IfElse                      = CardNameColor::CyanMagenta,
+        IfEnd                       = CardNameColor::CyanBlack,
         
         // Blue - Loop
-        LoopStartInfinite               = CardNameColor::BlueWhite,
-        LoopStartTwice                  = CardNameColor::BlueYellow,
-        LoopStartFiveTimes              = CardNameColor::BlueBlue,
-        LoopBreak                       = CardNameColor::BlueRed,
-        LoopEnd                         = CardNameColor::BlueBlack,
+        LoopStartInfinite           = CardNameColor::BlueWhite,
+        LoopStart2                  = CardNameColor::BlueRed,
+        LoopStart3                  = CardNameColor::BlueYellow,
+        LoopStart4                  = CardNameColor::BlueGreen,
+        LoopStart5                  = CardNameColor::BlueCyan,
+        LoopStart10                 = CardNameColor::BlueBlue,
+        LoopBreak                   = CardNameColor::BlueMagenta,
+        LoopEnd                     = CardNameColor::BlueBlack,
         
         // Magenta - Preset
-        presetYawing60Deg               = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
-        presetYawing180Deg              = CardNameColor::MagentaBlack,      // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도 
+        presetYawing60Deg           = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
+        presetYawing180Deg          = CardNameColor::MagentaRed,        // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도 
+        presetReserved1             = CardNameColor::MagentaYellow,
+        presetReserved2             = CardNameColor::MagentaGreen,
+        presetReserved3             = CardNameColor::MagentaCyan,
+        presetReserved4             = CardNameColor::MagentaBlue,
+        presetReserved5             = CardNameColor::MagentaMagenta,
+        presetWait1Sec              = CardNameColor::MagentaBlack,      // 1초 기다림
         
+        // Black - Melody
+        Melody1                     = CardNameColor::BlackWhite,
+        Melody2                     = CardNameColor::BlackRed,
+        Melody3                     = CardNameColor::BlackYellow,
+        Melody4                     = CardNameColor::BlackGreen,
+        Melody5                     = CardNameColor::BlackCyan,
+        Melody6                     = CardNameColor::BlackBlue,
+        Melody7                     = CardNameColor::BlackMagenta,
+        Melody8                     = CardNameColor::BlackBlack,
         
         EndOfType
     };
 }
 ```
+
 
 <br>
 <br>

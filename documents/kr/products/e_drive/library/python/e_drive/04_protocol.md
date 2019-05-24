@@ -23,9 +23,9 @@ Modified : 2019.4.12
 
 ```py
 class DataType(Enum):
-    
+
     None_                       = 0x00      # 없음
-    
+
     Ping                        = 0x01      # 통신 확인
     Ack                         = 0x02      # 데이터 수신에 대한 응답
     Error                       = 0x03      # 오류(reserve, 비트 플래그는 추후에 지정)
