@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.4.24
+Modified : 2019.5.31
 
 ---
 
@@ -1053,6 +1053,34 @@ namespace Protocol
 | value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
 |            | UInt16                                                  | 2 Byte | 0 ~ 8,000   | Hz                     |
 | time       | UInt16                                                  | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_BuzzerMelody"></a>
+## Protocol::BuzzerMelody
+
+버저 멜로디
+
+버저에 예약 가능한 소리의 갯수는 64개입니다. 멜로디에 따라 짧은 멜로디는 여러번 반복이 가능하나 여러개의 음이 담긴 멜로디는 몇 회 이내에서만 정상적으로 동작합니다.
+
+```cpp
+namespace Protocol
+{
+    struct BuzzerMelody
+    {
+        u8      melody;   // 멜로디 종류
+        u8      repeat;   // 반복 횟수
+    };
+}
+```
+
+| 변수 이름  | 형식                                                      | 크기   | 범위    | 설명                                       |
+|:----------:|:---------------------------------------------------------:|:------:|:-------:|:-------------------------------------------|
+| melody     | [Buzzer::Melody::Type](04_definitions.md#Buzzer_Melody)   | 1 Byte | -       | 멜로디 종류                                |
+| repeat     | UInt8                                                     | 1 Byte | 0 ~ 10  | 소리의 길이에 따라 반복 가능한 횟수가 다름 |
 
 
 <br>

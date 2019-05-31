@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.5.24
+Modified : 2019.5.31
 
 ---
 
@@ -620,6 +620,61 @@ namespace Buzzer
     }
 }
 ```
+
+<br>
+<br>
+
+
+<a name="Buzzer_Melody"></a>
+## Buzzer::Melody::Type
+
+버저 멜로디
+
+```cpp
+namespace Buzzer
+{
+    namespace Melody
+    {
+        enum Type
+        {
+            Null,           // 무음(100ms)
+            
+            Melody1,        // 카드 코딩용 멜로디 1
+            Melody2,        // 카드 코딩용 멜로디 2
+            Melody3,        // 카드 코딩용 멜로디 3
+            Melody4,        // 카드 코딩용 멜로디 4
+            Melody5,        // 카드 코딩용 멜로디 5
+            Melody6,        // 카드 코딩용 멜로디 6
+            Melody7,        // 카드 코딩용 멜로디 7
+            Melody8,        // 카드 코딩용 멜로디 8
+            
+            DoReMi,         // 도레미
+            DoMiSol,        // 도미솔
+            SolMiDo,        // 솔미도
+            LaLa,           // 라라
+            
+            Warning1,       // 경고 1
+            Warning2,       // 경고 2
+            Warning3,       // 경고 3
+            Warning4,       // 경고 4
+            
+            Du,             // Trim -
+            DuDu,           // Trim - End
+            DiDic,          // Trim Center
+            DiDic2,         // Trim Center 2
+            Di,             // Trim +
+            DiDi,           // Trim + End
+            
+            BuzzSound1,
+            BuzzSound2,
+            BuzzSound3,
+
+            EndOfType
+        };
+    }
+}
+```
+
 
 <br>
 <br>
