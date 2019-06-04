@@ -27,7 +27,7 @@
             <td rowspan="4"><div align="center">Version</div></td>
             <td rowspan="2"><div align="center">General</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">4.5</div></td>
+            <td><div align="center">4.6</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
@@ -36,20 +36,20 @@
         <tr>
             <td rowspan="2"><div align="center">Education</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">1703</div></td>
+            <td><div align="center">1906</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">1802</div></td>
+            <td><div align="center">1906</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="3"><div align="center">2019.1.9</div></td>
+            <td colspan="3"><div align="center">2019.6.4</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="3">
-                <div align="center"><a href="https://drive.google.com/open?id=1BTupi6vghIxuyltDQqAsq0kW9-ww2tct" target="_blank">Windows</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1Wscpo3fb_MKXeeCgRX00-nGu2n38l9Cr" target="_blank">Windows</a></div>
             </td>
         </tr>
         <tr>
@@ -84,4 +84,4 @@
 
 ---
 
-Modified : 2019.1.9
+Modified : 2019.6.4

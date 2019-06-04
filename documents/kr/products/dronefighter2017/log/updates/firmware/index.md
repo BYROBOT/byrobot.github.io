@@ -1,6 +1,6 @@
 **DRONE FIGHTER update log**
 
-Modified : 2019.1.9
+Modified : 2019.6.4
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.1.9
 
 
 <br>
+
+
+# 2019.6.4
+
+- **General Drone: 4.6**
+- General Controller: 4.5
+- **Education Drone: 1906**
+- **Education Controller: 1906**
+
+> - 비행 추력 조절
+
+
+[Download](https://drive.google.com/file/d/1Wscpo3fb_MKXeeCgRX00-nGu2n38l9Cr)
+
+
+<br>
+
+---
 
 
 # 2019.1.9
