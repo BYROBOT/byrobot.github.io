@@ -111,7 +111,7 @@ Modified : 2019.6.19
 (3) 조종기 우측 상단의 빨간색 버튼을 누른 상태로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="../drone2updater/images/1_controller_1_off.jpg" alt="controller off">
+    <img src="./images/2_2_3_1_controller.png" alt="controller">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>
