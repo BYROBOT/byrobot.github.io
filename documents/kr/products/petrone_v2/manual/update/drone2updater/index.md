@@ -1,6 +1,6 @@
 **[PETRONE V2](/documents/kr/products/petrone_v2/) firmware Update**
 
-Modified : 2018.10.12
+Modified : 2019.6.19
 
 ---
 

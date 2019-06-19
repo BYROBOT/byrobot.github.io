@@ -8,7 +8,7 @@ Modified : 2019.6.19
 
 ---
 
-- [Drone2Updater](../drone2autoupdater/)
+- [Drone2Updater](../drone2updater/)
 - **Drone2AutoUpdaterLight**
 
 ---
