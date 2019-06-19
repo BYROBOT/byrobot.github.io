@@ -62,10 +62,10 @@ Modified : 2019.6.19
 
 <br>
 
-(4) 드론 측면의 버튼을 누른 채로 배터리를 밀어 넣어 전원을 켭니다. 드론이 부트로더의 펌웨어 업데이트 모드가 되면 LED가 하늘색으로 느리게 깜빡입니다.
+(4) 드론 측면의 버튼을 누른 상태로 배터리를 밀어 넣어 전원을 켭니다. 부트로더 모드일 때 LED가 하늘색으로 느리게 깜빡입니다.
 
 <div align="center">
-    <img src="../drone2updater/images/2_drone_2_side_button.jpg" alt="drone switch">
+    <img src="./images/2_1_4_1_drone.png" alt="drone">
     <p>드론 부트로더 진입 버튼</p>
 </div>
 <br>
