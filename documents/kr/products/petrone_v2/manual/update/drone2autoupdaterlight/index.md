@@ -42,7 +42,7 @@ Modified : 2019.6.19
 (1) "Drone2AutoUpdaterLight.exe"를 실행합니다.
 
 <div align="center">
-    <img src="./images/2_1_1_1_folder_drone2autoupdaterlight.jpg" alt="Drone2AutoUpdaterLight.exe">
+    <img src="./images/2_1_1_1_folder_drone2autoupdaterlight.png" alt="Drone2AutoUpdaterLight.exe">
     <p>펌웨어 업데이트 프로그램 폴더</p>
 </div>
 <br>
@@ -93,7 +93,7 @@ Modified : 2019.6.19
 (1) "Drone2AutoUpdaterLight.exe"를 실행합니다.
 
 <div align="center">
-    <img src="./images/2_1_1_1_folder_drone2autoupdaterlight.jpg" alt="Drone2AutoUpdaterLight.exe">
+    <img src="./images/2_1_1_1_folder_drone2autoupdaterlight.png" alt="Drone2AutoUpdaterLight.exe">
     <p>펌웨어 업데이트 프로그램 폴더</p>
 </div>
 <br>
