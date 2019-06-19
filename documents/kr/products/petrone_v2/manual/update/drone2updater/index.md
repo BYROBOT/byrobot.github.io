@@ -8,6 +8,11 @@ Modified : 2018.10.12
 
 ---
 
+- **Drone2Updater**
+- [Drone2AutoUpdaterLight](../drone2autoupdaterlight/)
+
+---
+
 * Kramdown table of contents
 {:toc .toc}
 
