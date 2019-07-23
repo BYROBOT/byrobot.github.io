@@ -78,6 +78,11 @@ E-Drive를 부트로더 모드로 연결하면 자동으로 펌웨어를 업데�
     <img src="./images/2_1_4_2_drone4autoupdaterlight.png" alt="Drone4AutoUpdaterLight.exe">
     <p>자동차 펌웨어 업데이트 완료 화면</p>
 </div>
+
+<div align="center">
+    <img src="./images/2_1_4_3_drone4autoupdaterlight.png" alt="Drone4AutoUpdaterLight.exe">
+    <p>자동차 펌웨어 업데이트 완료 후 재부팅 시 화면</p>
+</div>
 <br>
 
 
