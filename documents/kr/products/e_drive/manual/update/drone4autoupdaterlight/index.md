@@ -24,7 +24,7 @@ Modified : 2019.7.23
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">
-    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 점선 안의 'Windows')</p>
+    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 박스 안의 'Windows')</p>
 </div>
 <br>
 
@@ -58,11 +58,11 @@ E-Drive를 부트로더 모드로 연결하면 자동으로 펌웨어를 업데�
 
 <br>
 
-(3) 자동차 바닥 면의 버튼(아래 그림에서 빨간색 박스로 표시)을 누른 채로 스위치(아래 그림에서 노란색 박스로 표시)를 켭니다.
+(3) 자동차 바닥 면의 버튼(아래 그림의 빨간색 박스)을 누른 채로 스위치(아래 그림의 노란색 박스)를 켭니다.
 
 <div align="center">
     <img src="./images/2_1_3_e_drive_drone_bottom_bootloader_button.jpg" alt="drone bottom">
-    <p>자동차 부트로더 진입 버튼</p>
+    <p>자동차 부트로더 진입 버튼과 전원 스위치</p>
 </div>
 <br>
 
