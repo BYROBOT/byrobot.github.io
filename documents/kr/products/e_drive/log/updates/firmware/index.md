@@ -11,6 +11,22 @@ Modified : 2019.7.25
 <br>
 
 
+# 2019.7.25 - 2
+
+- E-Drive: 19.7.17
+
+> - Instant run에서 비상등 처리 부분 변경된 사항 적용
+> - State 클래스 수정(15 -> 11 byte)
+
+
+[Download](https://drive.google.com/open?id=11A2eWzCWfYtI2IzzSCF8gMwI9xyskUe7)
+
+
+<br>
+
+---
+
+
 # 2019.7.25
 
 - E-Drive: 19.7.16

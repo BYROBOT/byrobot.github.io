@@ -29,7 +29,7 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">19.7.16</div></td>
+            <td><div align="center">19.7.17</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
@@ -41,7 +41,7 @@
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1QCVqnPEv3GDhrz_sORRgYFB5lJ2tADnG" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=11A2eWzCWfYtI2IzzSCF8gMwI9xyskUe7" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
