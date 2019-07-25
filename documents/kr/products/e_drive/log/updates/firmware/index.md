@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.7.24
+Modified : 2019.7.25
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.7.24
 
 
 <br>
+
+
+# 2019.7.25
+
+- E-Drive: 19.7.16
+
+> - Low Battery 알림 추가
+> - TailLight를 끌 때 좌우 깜빡이(비상등)도 끄게 함
+> - 버저 버퍼를 64에서 128로 변경
+> - '조건이 맞지 않으면' 카드 사용 시 조건 루프를 빠져나가는 버그 수정
+
+
+[Download](https://drive.google.com/open?id=1QCVqnPEv3GDhrz_sORRgYFB5lJ2tADnG)
+
+
+<br>
+
+---
 
 
 # 2019.7.24
