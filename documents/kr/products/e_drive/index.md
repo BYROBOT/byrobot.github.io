@@ -29,7 +29,7 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">19.7.17</div></td>
+            <td><div align="center">19.7.18</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
@@ -41,7 +41,7 @@
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=11A2eWzCWfYtI2IzzSCF8gMwI9xyskUe7" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=17YawG7WzvIwktDAbe4zfEGrCq0BpCJ2S" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -130,4 +130,4 @@
 
 ---
 
-Modified : 2019.7.25
+Modified : 2019.7.26

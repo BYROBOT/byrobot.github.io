@@ -11,6 +11,23 @@ Modified : 2019.7.26
 <br>
 
 
+# 2019.7.26
+
+- E-Drive: 19.7.18
+
+> - State에서 modeSystem을 modeDrone으로 변경
+> - 제어기 수정 사항 반영
+> - RawLineTracer에서 바닥 좌우측 IR 데이터 변수 삭제
+
+
+[Download](https://drive.google.com/open?id=17YawG7WzvIwktDAbe4zfEGrCq0BpCJ2S)
+
+
+<br>
+
+---
+
+
 # 2019.7.25 - 2
 
 - E-Drive: 19.7.17
