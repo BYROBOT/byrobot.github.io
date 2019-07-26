@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.5.31
+Modified : 2019.7.26
 
 ---
 
@@ -95,9 +95,14 @@ namespace ModelNumber
         Drone_4_Tester_P2       = 0x0004A002,   // Drone_4_Tester_P2
         Drone_4_Monitor_P2      = 0x0004A102,   // Drone_4_Monitor_P2
 
-        Drone_7_Drone_P1        = 0x00071001,   // Drone_7_Drone_P1
+        Drone_7_Drone_P2        = 0x00071002,   // Drone_7_Drone_P2
         Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
         Drone_7_BleServer_P2    = 0x00073302,   // Drone_7_BleServer_P2
+
+        Drone_7_Tester_P4       = 0x0007A004,   // Drone_7_Tester_P4
+        Drone_7_Monitor_P4      = 0x0007A104,   // Drone_7_Monitor_P4
+
+        Drone_8_Drone_P0        = 0x00081000,   // Drone_8_Drone_P0
     };
 }
 ```
@@ -225,6 +230,41 @@ namespace Mode
             ReadyToReset,       // 리셋 대기(1초 뒤 리셋)
             Error,              // 오류
 
+            EndOfType
+        };
+    }
+    
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Mode_Drone"></a>
+## Mode::Drone::Type
+
+주행 제어기 동작 상태
+
+```cpp
+namespace Mode
+{
+    namespace Drive
+    {
+        enum Type
+        {
+            None,           // 없음
+            
+            Drive,          // RemoteControl - 원격 조종
+            Card,           // CardCoding - 카드 코딩
+            LineTracer,     // LineTracer - 라인 트레이서
+            Piano,          // Piano - 피아노 모드
+            
+            Link,           // Link - 중계기
+            
+            Error,          // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
+            
             EndOfType
         };
     }
@@ -652,6 +692,7 @@ namespace Buzzer
             DoMiSol,        // 도미솔
             SolMiDo,        // 솔미도
             LaLa,           // 라라
+            SiRaSiRa,       // 시라시라
             
             Warning1,       // 경고 1
             Warning2,       // 경고 2
@@ -789,10 +830,10 @@ namespace CardNameFunction
 
         // White - Mode
         RemoteControl               = CardNameColor::WhiteWhite,
-        CardCodingStart             = CardNameColor::WhiteRed,      // 카드 입력 시작 - 카드 입력 중 White Dimming
-        CardCodingEnd               = CardNameColor::WhiteYellow,   // 카드 입력 종료 - 카드 입력 완료 시 White Hold
-        FunctionStart               = CardNameColor::WhiteGreen,    // 함수 입력 시작 - 입력 중 Cyan Dimming
-        FunctionEnd                 = CardNameColor::WhiteCyan,     // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
+        CardCodingStart             = CardNameColor::WhiteRed,      // 카드 입력 시작
+        CardCodingEnd               = CardNameColor::WhiteYellow,   // 카드 입력 종료
+        FunctionStart               = CardNameColor::WhiteGreen,    // 함수 입력 시작
+        FunctionEnd                 = CardNameColor::WhiteCyan,     // 함수 입력 종료
         FunctionCall                = CardNameColor::WhiteBlue,     // 함수 호출
         LineTracer                  = CardNameColor::WhiteMagenta,  // 라인 트레이서 시작
         Piano                       = CardNameColor::WhiteBlack,    // 피아노 모드
@@ -850,12 +891,12 @@ namespace CardNameFunction
         
         // Magenta - Preset
         presetYawing60Deg           = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
-        presetYawing180Deg          = CardNameColor::MagentaRed,        // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도 
-        presetReserved1             = CardNameColor::MagentaYellow,
-        presetReserved2             = CardNameColor::MagentaGreen,
-        presetReserved3             = CardNameColor::MagentaCyan,
-        presetReserved4             = CardNameColor::MagentaBlue,
-        presetReserved5             = CardNameColor::MagentaMagenta,
+        presetZigZag                = CardNameColor::MagentaRed,        // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도 
+        presetWave                  = CardNameColor::MagentaYellow,
+        presetTornadoLeft           = CardNameColor::MagentaGreen,
+        presetTornadoRight          = CardNameColor::MagentaCyan,
+        presetCircleLeft            = CardNameColor::MagentaBlue,
+        presetCircleRight           = CardNameColor::MagentaMagenta,
         presetWait1Sec              = CardNameColor::MagentaBlack,      // 1초 기다림
         
         // Black - Melody
@@ -898,6 +939,9 @@ namespace CardColor
         Blue        = 0x06,
         Magenta     = 0x07,
         Black       = 0x08,
+        Grey        = 0x09,
+
+        EndOfType
     };
 }
 ```

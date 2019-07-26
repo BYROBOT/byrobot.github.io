@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.5.31
+Modified : 2019.7.26
 
 ---
 
@@ -661,7 +661,7 @@ namespace Protocol
 {
     struct State
     {
-        u8      modeSystem;     // 시스템 동작 모드
+        u8      modeDrone;      // 드론 동작 모드
         u8      modeDrive;      // 주행 모드
         
         u16     irFrontLeft;    // 정면 좌측 거리센서
@@ -669,14 +669,9 @@ namespace Protocol
         
         u8      colorFront;     // 바닥 앞 부분 색상(RGB)
         u8      colorRear;      // 바닥 뒷 부분 색상(RGB)
-        u8      colorLeft;      // 바닥 좌측 색상(BW)
-        u8      colorRight;     // 바닥 우측 색상(BW)
         
         u8      card;           // 식별한 카드(상위 4비트는 front, 하위 4비트는 rear 색상)
-        
-        u16     brightness;     // 주변 밝기
         u8      battery;        // 배터리
-        
         s8      rssi;           // RSSI
     };
 }
@@ -684,16 +679,13 @@ namespace Protocol
 
 | 변수 이름         | 형식                                                      | 크기     | 범위       | 설명                    |
 |:-----------------:|:---------------------------------------------------------:|:--------:|:----------:|:------------------------|
-| modeSystem        | [Mode::System::Type](04_definitions.md#Mode_System)       | 1 Byte   | -          | 시스템 동작 모드        |
+| modeDrone         | [Mode::Drone::Type](04_definitions.md#Mode_Drone)         | 1 Byte   | -          | 드론 동작 모드          |
 | modeDrive         | [Mode::Drive::Type](04_definitions.md#Mode_Drive)         | 1 Byte   | -          | 주행 모드               |
 | irFrontLeft       | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 좌측 거리센서(Raw) |
 | irFrontRight      | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 정면 우측 거리센서(Raw) |
 | colorFront        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 앞 부분 색상(RGB)  |
 | colorRear         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 뒷 부분 색상(RGB)  |
-| colorLeft         | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 좌측 색상(BW)      |
-| colorRight        | [CardColor::Type](04_definitions.md#CardColor)            | 1 Byte   | -          | 바닥 우측 색상(BW)      |
 | card              | [CardNameColor::Type](04_definitions.md#CardNameColor), <br>[CardNameFunction::Type](04_definitions.md#CardNameFunction)  | 1 Byte   | -  | 식별한 카드  |
-| brightness        | uint16_t                                                  | 2 Byte   | 0 ~ 4,096  | 주변 밝기(Raw)          |
 | battery           | uint8_t                                                   | 1 Byte   | 0 ~ 100    | 배터리                  |
 | rssi              | int8_t                                                    | 1 Byte   | -127 ~ 0   | 신호 세기               |
 
