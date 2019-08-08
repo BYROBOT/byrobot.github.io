@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.7.26
+Modified : 2019.8.8
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2019.7.26
 
 
 <br>
+
+
+# 2019.8.8
+
+- E-Drive: 19.8.1
+
+> - 배터리 알람 기준을 30%로 변경
+> - RawLineTracer에서 라인트레이서가 인식한 바닥 색상 값이 업데이트 안되는 문제 수정
+
+
+[Download](https://drive.google.com/open?id=15k5s_RM6OjIFSWm5wxgxmB8nyZnjwhQx)
+
+
+<br>
+
+---
 
 
 # 2019.7.26
