@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.8.8
+Modified : 2019.8.23
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2019.8.8
 
 
 <br>
+
+
+# 2019.8.23
+
+- E-Drive: 19.8.2
+
+> - ColorClassify 정의 추가 및 Drone7Card 프로그램에서 카드 분류 기준 값 변경가능하도록 수정함
+> - 라인 코딩시에도 CARDREADER에서 분류한 카드 값을 그대로 사용
+
+
+[Download](https://drive.google.com/open?id=19L5twy8qqK4s5LVczYZ-VNIpEEqpsQBq)
+
+
+<br>
+
+---
 
 
 # 2019.8.8
