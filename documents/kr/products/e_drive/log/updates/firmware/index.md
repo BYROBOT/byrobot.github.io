@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.8.23
+Modified : 2019.8.28
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2019.8.23
 
 
 <br>
+
+
+# 2019.8.28
+
+- E-Drive: 19.8.3
+
+> - 카드 코딩과 관련된 DataType의 위치 조정, 관련 송수신 클래스 조정
+
+
+[Download](https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH)
+
+
+<br>
+
+---
 
 
 # 2019.8.23

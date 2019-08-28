@@ -29,7 +29,7 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">19.8.2</div></td>
+            <td><div align="center">19.8.3</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
@@ -37,11 +37,11 @@
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.8.23</div></td>
+            <td colspan="2"><div align="center">2019.8.28</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=19L5twy8qqK4s5LVczYZ-VNIpEEqpsQBq" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -130,4 +130,4 @@
 
 ---
 
-Modified : 2019.8.23
+Modified : 2019.8.28
