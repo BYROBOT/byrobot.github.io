@@ -289,9 +289,9 @@ namespace Protocol
 | hRY        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계     Red-Yellow   |
 | hYG        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계  Yellow-Green    |
 | hGC        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계   Green-Cyan     |
-| hRY        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계    Cyan-Blue     |
-| hYG        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계    Blue-Magenta  |
-| hGC        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계 Magenta-Red      |
+| hCB        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계    Cyan-Blue     |
+| hBM        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계    Blue-Magenta  |
+| hMR        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계 Magenta-Red      |
 | lBlack     | float      | 4 Byte   | 0 ~ 1.0  | Black으로 인식할 Lightness    |
 | lWhite     | float      | 4 Byte   | 0 ~ 1.0  | White로 인식할 Lightness      |
 | sUnknown   | float      | 4 Byte   | 0 ~ 1.0  | Unknown으로 처리할 Saturation |
@@ -304,7 +304,7 @@ namespace Protocol
 <a name="Protocol_Card_Range"></a>
 ## Protocol::Card::Range
 
-RGB Raw 데이터의 출력 범위(검정색과 흰 색을 읽혔을 때의 출력값을 기준으로 사용)
+RGB Raw 데이터의 출력 범위(캘리브레이션 시 검정색과 흰 색을 읽혔을 때의 출력값을 기준으로 사용)
 
 ```cpp
 namespace Protocol
@@ -320,9 +320,9 @@ namespace Protocol
 }
 ```
 
-| 변수 이름       | 형식          | 크기     | 범위          | 설명                                                                              |
-|:---------------:|:-------------:|:--------:|:-------------:|:----------------------------------------------------------------------------------|
-| range[2][3][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | 앞 뒤 센서에서 흰 색과 검정 색을 읽었을 때의 adc raw 출력 값을 최소, 최대로 지정  |
+| 변수 이름       | 형식          | 크기     | 범위          | 설명                               |
+|:---------------:|:-------------:|:--------:|:-------------:|:-----------------------------------|
+| range[2][3][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | ADC RAW 출력 값의 최소, 최대 값    |
 
 
 <br>
@@ -358,7 +358,7 @@ namespace Protocol
 | rgb[2][3]     | uint8_t                                   | 6 Byte   | 0 ~ 255          | 설정된 RGB 범위를 기준으로 0 ~ 255 사이의 값으로 변경한 값       |
 | hsvl[2][4]    | int16_t                                   | 12 Byte  | 0 ~ 360, 0 ~ 100 | rgb 데이터를 Hue, Saturation, Value, Lightness 값으로 변환한 것  |
 | color[2]      | [Card::CardColor::Type](#Card_CardColor)  | 2 Byte   | -                | hsvl 값을 Classify에 설정된 기준에 따라 분류한 색                |
-| card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 앞 센서의 값을 상위 4비트, 뒤 센서의 값을 하위 4비트에 할당하여 만든 카드 값  |
+| card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 앞 센서의 색을 상위 4비트, 뒤 센서의 색을 하위 4비트에 할당하여 만든 카드 값  |
 
 
 <br>
