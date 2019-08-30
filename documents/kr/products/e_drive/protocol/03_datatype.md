@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.5.31
+Modified : 2019.8.30
 
 ---
 
@@ -50,9 +50,6 @@ namespace Protocol
             // 센서 RAW 데이터
             RawMotion                   = 0x30,     // Motion 센서 데이터 RAW 값
             RawLineTracer,                          // 라인트레이서 데이터 RAW 값
-            RawCard,                                // 카드 데이터 RAW 값
-            RawCardList,                            // 카드 리스트 데이터
-            RawCardFunctionList,                    // 카드 함수 리스트 데이터
 
             // 상태,  센서
             State                       = 0x40,     // 상태(비행 모드, 방위기준, 배터리량)
@@ -73,6 +70,14 @@ namespace Protocol
 
             // Input
             Button                      = 0x70,     // 버튼 입력
+
+            // Card
+            CardClassify                = 0x90,     // 카드 색상 분류 기준 설정
+            CardRange,                              // 카드 색 범위(RAW 데이터의 출력 범위)
+            CardRaw,                                // 카드 데이터 RAW 값(유선으로만 전송)
+            CardColor,                              // 카드 데이터
+            CardList,                               // 카드 리스트 데이터
+            CardFunctionList,                       // 카드 함수 리스트 데이터
 
             // Information Assembled
             InformationAssembledForController       = 0xA0,     // 데이터 모음
@@ -140,6 +145,12 @@ namespace Protocol
 | MotorSingle                           | 0x61 | C    | 한 개의 모터 제어                               | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
 | Buzzer                                | 0x62 | C    | 버저 제어                                       | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer),<br> [Protocol::BuzzerMelody](05_structs.md#Protocol_BuzzerMelody) |
 | Button                                | 0x70 | A    | 버튼 입력                                       | [Protocol::Button](05_structs.md#Protocol_Button) |
+| CardClassify                          | 0x90 | D    | 카드 색상 분류 기준 설정                       | [Protocol::Card::Classify](08_structs_card.md#Protocol_Card_Classify) |
+| CardRange                             | 0x91 | D    | 카드 색 범위(RAW 데이터의 출력 범위)           | [Protocol::Card::Range](08_structs_card.md#Protocol_Card_Range) |
+| CardRaw                               | 0x92 | D    | 카드 데이터 RAW 값(유선으로만 전송)            | [Protocol::Card::Raw](08_structs_card.md#Protocol_Card_Raw) |
+| CardColor                             | 0x93 | D    | 카드 데이터                                    | [Protocol::Card::Color](08_structs_card.md#Protocol_Card_Color) |
+| CardList                              | 0x94 | D    | 카드 리스트 데이터                             | [Protocol::Card::List](08_structs_card.md#Protocol_Card_List) |
+| CardFunctionList                      | 0x95 | D    | 카드 함수 리스트 데이터                        | [Protocol::Card::FunctionList](08_structs_card.md#Protocol_Card_List) |
 | InformationAssembledForController     | 0xA0 | C    | 자주 갱신되는 데이터 모음(조종기)               | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
 | InformationAssembledForEntry          | 0xA1 | C    | 자주 갱신되는 데이터 모음(엔트리)               | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |
 | InformationAssembledForByBlocks       | 0xA2 | C    | 자주 갱신되는 데이터 모음(바이블럭)             | [Protocol::InformationAssembledForByBlocks](05_structs.md#Protocol_InformationAssembledForByBlocks) |
@@ -168,6 +179,7 @@ namespace Protocol
 4. [Definitions](04_definitions.md)
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
+7. [Structs - Card](07_structs_card.md)
 
 <br>
 

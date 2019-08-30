@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.7.26
+Modified : 2019.8.30
 
 ---
 
@@ -959,6 +959,7 @@ namespace CardColor
 4. ***Definitions***
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
+7. [Structs - Card](07_structs_card.md)
 
 <br>
 

@@ -1,4 +1,4 @@
-**[E-DRONE](index.md)** / **Protocol** / **Structs** / **Card**
+**[E-DRIVE](index.md)** / **Protocol** / **Structs** / **Card**
 
 Modified : 2019.8.30
 
@@ -435,7 +435,7 @@ namespace Protocol
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>E-DRIVE</H3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
@@ -443,8 +443,7 @@ namespace Protocol
 4. [Definitions](04_definitions.md)
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
-7. [Structs - Display](07_structs_display.md)
-8. ***Structs - Card***
+7. ***Structs - Card***
 
 <br>
 

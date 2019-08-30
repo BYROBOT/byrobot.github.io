@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.7.26
+Modified : 2019.8.30
 
 ---
 
@@ -1213,6 +1213,7 @@ namespace Protocol
 4. [Definitions](04_definitions.md)
 5. ***Structs***
 6. [Structs - Light](06_structs_light.md)
+7. [Structs - Card](07_structs_card.md)
 
 <br>
 
