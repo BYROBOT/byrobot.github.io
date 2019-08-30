@@ -127,87 +127,87 @@ namespace CardNameFunction
 {
     enum Type
     {
-        None                        = CardNameColor::None,
+        None                = CardNameColor::None,
         
         // White - Mode
-        CardCoding                  = CardNameColor::WhiteWhite,    // 카드 코딩 모드
-        CardCodingStart             = CardNameColor::WhiteRed,      // 카드 입력 시작 - 카드 입력 중 White Dimming
-        CardCodingEnd               = CardNameColor::WhiteYellow,   // 카드 입력 종료 - 카드 입력 완료 시 White Hold
-        FunctionStart               = CardNameColor::WhiteGreen,    // 함수 입력 시작 - 입력 중 Cyan Dimming
-        FunctionEnd                 = CardNameColor::WhiteCyan,     // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
-        FunctionCall                = CardNameColor::WhiteBlue,     // 함수 호출
-        Speed                       = CardNameColor::WhiteMagenta,  // 속도 변경
-        Piano                       = CardNameColor::WhiteBlack,    // 피아노 모드
+        CardCoding          = CardNameColor::WhiteWhite,    // 카드 코딩 모드
+        CardCodingStart     = CardNameColor::WhiteRed,      // 카드 입력 시작 - 카드 입력 중 White Dimming
+        CardCodingEnd       = CardNameColor::WhiteYellow,   // 카드 입력 종료 - 카드 입력 완료 시 White Hold
+        FunctionStart       = CardNameColor::WhiteGreen,    // 함수 입력 시작 - 입력 중 Cyan Dimming
+        FunctionEnd         = CardNameColor::WhiteCyan,     // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
+        FunctionCall        = CardNameColor::WhiteBlue,     // 함수 호출
+        Speed               = CardNameColor::WhiteMagenta,  // 속도 변경
+        Piano               = CardNameColor::WhiteBlack,    // 피아노 모드
         
         // Red - LightBody
-        LightBodyWhite              = CardNameColor::RedWhite,
-        LightBodyRed                = CardNameColor::RedRed,
-        LightBodyYellow             = CardNameColor::RedYellow,
-        LightBodyGreen              = CardNameColor::RedGreen,
-        LightBodyCyan               = CardNameColor::RedCyan,
-        LightBodyBlue               = CardNameColor::RedBlue,
-        LightBodyMagenta            = CardNameColor::RedMagenta,
-        LightBodyBlack              = CardNameColor::RedBlack,
+        LightBodyWhite      = CardNameColor::RedWhite,
+        LightBodyRed        = CardNameColor::RedRed,
+        LightBodyYellow     = CardNameColor::RedYellow,
+        LightBodyGreen      = CardNameColor::RedGreen,
+        LightBodyCyan       = CardNameColor::RedCyan,
+        LightBodyBlue       = CardNameColor::RedBlue,
+        LightBodyMagenta    = CardNameColor::RedMagenta,
+        LightBodyBlack      = CardNameColor::RedBlack,
         
         // Yellow - Function    (이동 및 회전 기본 단위 설정, 초기 설정은 1 Meter, 90 Degree)
-        Takeoff                     = CardNameColor::YellowWhite,       // 이륙
-        Landing                     = CardNameColor::YellowRed,         // 착륙
-        Distance100                 = CardNameColor::YellowYellow,      // 10cm
-        Distance500                 = CardNameColor::YellowGreen,       // 50cm
-        Distance1000                = CardNameColor::YellowCyan,        // 1m
-        Degree10                    = CardNameColor::YellowBlue,        // 10도
-        Degree45                    = CardNameColor::YellowMagenta,     // 45도
-        Degree90                    = CardNameColor::YellowBlack,       // 90도
+        Takeoff             = CardNameColor::YellowWhite,       // 이륙
+        Landing             = CardNameColor::YellowRed,         // 착륙
+        Distance100         = CardNameColor::YellowYellow,      // 10cm
+        Distance500         = CardNameColor::YellowGreen,       // 50cm
+        Distance1000        = CardNameColor::YellowCyan,        // 1m
+        Degree10            = CardNameColor::YellowBlue,        // 10도
+        Degree45            = CardNameColor::YellowMagenta,     // 45도
+        Degree90            = CardNameColor::YellowBlack,       // 90도
         
         // Green - Move - Basic
-        MoveForward                 = CardNameColor::GreenWhite,
-        MoveBackward                = CardNameColor::GreenRed,
-        MoveLeft                    = CardNameColor::GreenYellow,
-        MoveRight                   = CardNameColor::GreenGreen,
-        MoveUp                      = CardNameColor::GreenCyan,
-        MoveDown                    = CardNameColor::GreenBlue,
-        TurnLeft                    = CardNameColor::GreenMagenta,
-        TurnRight                   = CardNameColor::GreenBlack,
+        MoveForward         = CardNameColor::GreenWhite,
+        MoveBackward        = CardNameColor::GreenRed,
+        MoveLeft            = CardNameColor::GreenYellow,
+        MoveRight           = CardNameColor::GreenGreen,
+        MoveUp              = CardNameColor::GreenCyan,
+        MoveDown            = CardNameColor::GreenBlue,
+        TurnLeft            = CardNameColor::GreenMagenta,
+        TurnRight           = CardNameColor::GreenBlack,
         
         // Cyan - If
-        IfFindFrontObstacle         = CardNameColor::CyanWhite,         // Front Obstacle
-        IfFindGroundRed             = CardNameColor::CyanRed,           // 착륙 시 사용, Ground Color Red
-        IfFindGroundYellow          = CardNameColor::CyanYellow,        // 착륙 시 사용, Ground Color Yellow
-        IfFindGroundGreen           = CardNameColor::CyanGreen,         // 착륙 시 사용, Ground Color Green
-        IfFindGroundCyan            = CardNameColor::CyanCyan,          // 착륙 시 사용, Ground Color Cyan
-        IfFindGroundBlue            = CardNameColor::CyanBlue,          // 착륙 시 사용, Ground Color Blue
-        IfElse                      = CardNameColor::CyanMagenta,
-        IfEnd                       = CardNameColor::CyanBlack,
+        IfFindFrontObstacle = CardNameColor::CyanWhite,         // Front Obstacle
+        IfFindGroundRed     = CardNameColor::CyanRed,           // 착륙 시 사용, Ground Color Red
+        IfFindGroundYellow  = CardNameColor::CyanYellow,        // 착륙 시 사용, Ground Color Yellow
+        IfFindGroundGreen   = CardNameColor::CyanGreen,         // 착륙 시 사용, Ground Color Green
+        IfFindGroundCyan    = CardNameColor::CyanCyan,          // 착륙 시 사용, Ground Color Cyan
+        IfFindGroundBlue    = CardNameColor::CyanBlue,          // 착륙 시 사용, Ground Color Blue
+        IfElse              = CardNameColor::CyanMagenta,
+        IfEnd               = CardNameColor::CyanBlack,
         
         // Blue - Loop
-        LoopStartInfinite           = CardNameColor::BlueWhite,
-        LoopStart2                  = CardNameColor::BlueRed,
-        LoopStart3                  = CardNameColor::BlueYellow,
-        LoopStart4                  = CardNameColor::BlueGreen,
-        LoopStart5                  = CardNameColor::BlueCyan,
-        LoopStart10                 = CardNameColor::BlueBlue,
-        LoopBreak                   = CardNameColor::BlueMagenta,
-        LoopEnd                     = CardNameColor::BlueBlack,
+        LoopStartInfinite   = CardNameColor::BlueWhite,
+        LoopStart2          = CardNameColor::BlueRed,
+        LoopStart3          = CardNameColor::BlueYellow,
+        LoopStart4          = CardNameColor::BlueGreen,
+        LoopStart5          = CardNameColor::BlueCyan,
+        LoopStart10         = CardNameColor::BlueBlue,
+        LoopBreak           = CardNameColor::BlueMagenta,
+        LoopEnd             = CardNameColor::BlueBlack,
         
         // Magenta - Preset
-        presetTriangle              = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
-        presetSquare                = CardNameColor::MagentaRed,
-        presetCircleLeft            = CardNameColor::MagentaYellow,
-        presetCircleRight           = CardNameColor::MagentaGreen,
-        presetPOI                   = CardNameColor::MagentaCyan,
-        presetBounce                = CardNameColor::MagentaBlue,
-        preset360Flip               = CardNameColor::MagentaMagenta,
-        presetWait1Sec              = CardNameColor::MagentaBlack,      // 1초 기다림
+        presetTriangle      = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
+        presetSquare        = CardNameColor::MagentaRed,
+        presetCircleLeft    = CardNameColor::MagentaYellow,
+        presetCircleRight   = CardNameColor::MagentaGreen,
+        presetPOI           = CardNameColor::MagentaCyan,
+        presetBounce        = CardNameColor::MagentaBlue,
+        preset360Flip       = CardNameColor::MagentaMagenta,
+        presetWait1Sec      = CardNameColor::MagentaBlack,      // 1초 기다림
         
         // Black - Melody
-        Melody1                     = CardNameColor::BlackWhite,
-        Melody2                     = CardNameColor::BlackRed,
-        Melody3                     = CardNameColor::BlackYellow,
-        Melody4                     = CardNameColor::BlackGreen,
-        Melody5                     = CardNameColor::BlackCyan,
-        Melody6                     = CardNameColor::BlackBlue,
-        Melody7                     = CardNameColor::BlackMagenta,
-        Melody8                     = CardNameColor::BlackBlack,
+        Melody1             = CardNameColor::BlackWhite,
+        Melody2             = CardNameColor::BlackRed,
+        Melody3             = CardNameColor::BlackYellow,
+        Melody4             = CardNameColor::BlackGreen,
+        Melody5             = CardNameColor::BlackCyan,
+        Melody6             = CardNameColor::BlackBlue,
+        Melody7             = CardNameColor::BlackMagenta,
+        Melody8             = CardNameColor::BlackBlack,
         
         EndOfType
     };
@@ -269,16 +269,16 @@ namespace Protocol
         class Classify
         {
         public:
-            u16                 hRY;                // Hue 경계     Red-Yellow
-            u16                 hYG;                // Hue 경계  Yellow-Green
-            u16                 hGC;                // Hue 경계   Green-Cyan
-            u16                 hCB;                // Hue 경계    Cyan-Blue
-            u16                 hBM;                // Hue 경계    Blue-Magenta
-            u16                 hMR;                // Hue 경계 Magenta-Red
+            u16     hRY;        // Hue 경계     Red-Yellow
+            u16     hYG;        // Hue 경계  Yellow-Green
+            u16     hGC;        // Hue 경계   Green-Cyan
+            u16     hCB;        // Hue 경계    Cyan-Blue
+            u16     hBM;        // Hue 경계    Blue-Magenta
+            u16     hMR;        // Hue 경계 Magenta-Red
             
-            float               lBlack;             // Black으로 인식할 Lightness
-            float               lWhite;             // White로 인식할 Lightness
-            float               sUnknown;           // Unknown으로 처리할 Saturation
+            float   lBlack;     // Black으로 인식할 Lightness
+            float   lWhite;     // White로 인식할 Lightness
+            float   sUnknown;   // Unknown으로 처리할 Saturation
         };
     }
 }
@@ -314,7 +314,7 @@ namespace Protocol
         class Range
         {
         public:
-            s16         range[2][3][2];     // [Front/Rear][R/G/B][Min/Max]     24 byte
+            s16     range[2][3][2];     // [Front/Rear][R/G/B][Min/Max]     24 byte
         };
     }
 }
@@ -342,11 +342,11 @@ namespace Protocol
         class Raw
         {
             public:
-                s16         rgbRaw[2][3];       // [Front/Rear][R/G/B]              12 byte
-                u8          rgb[2][3];          // [Front/Rear][R/G/B]               6 byte
-                s16         hsvl[2][4];         // [Front/Rear][R/G/B]              12 byte
-                u8          color[2];           // [Front/Rear]                      2 byte
-                u8          card;               //                                   1 byte
+                s16     rgbRaw[2][3];   // [Front/Rear][R/G/B]  12 byte
+                u8      rgb[2][3];      // [Front/Rear][R/G/B]   6 byte
+                s16     hsvl[2][4];     // [Front/Rear][R/G/B]  12 byte
+                u8      color[2];       // [Front/Rear]          2 byte
+                u8      card;           //                       1 byte
         };
     }
 }
@@ -378,9 +378,9 @@ namespace Protocol
         class Color
         {
             public:
-                s16         hsvl[2][4];         // [Front/Rear][R/G/B]              12 byte
-                u8          color[2];           // [Front/Rear]                      2 byte
-                u8          card;               //                                   1 byte
+                s16     hsvl[2][4];     // [Front/Rear][R/G/B]  12 byte
+                u8      color[2];       // [Front/Rear]          2 byte
+                u8      card;           //                       1 byte
         };
     }
 }
@@ -410,11 +410,11 @@ namespace Protocol
         class List
         {
             public:
-                u8          index;              // 현재 실행중인 카드의 인덱스
-                u8          size;               // 입력된 카드의 총 갯수
+                u8      index;          // 현재 실행중인 카드의 인덱스
+                u8      size;           // 입력된 카드의 총 갯수
                 
-                u8          cardIndex;          // 현재 전송하는 카드 배열의 시작 번호
-                u8          card[12];
+                u8      cardIndex;      // 현재 전송하는 카드 배열의 시작 번호
+                u8      card[12];
         };
     }
 }
