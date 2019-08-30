@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.2.11
+Modified : 2019.8.30
 
 ---
 
@@ -78,7 +78,7 @@ namespace Protocol
             // Input
             Button                      = 0x70,     // 버튼 입력
             Joystick,                               // 조이스틱 입력
-                
+            
             // Display
             DisplayClear                = 0x80,     // 화면 지우기
             DisplayInvert,                          // 화면 반전
@@ -90,6 +90,14 @@ namespace Protocol
             DisplayDrawStringAlign,                 // 문자열 쓰기
             DisplayDrawImage,                       // 그림 그리기
 
+            // Card
+            CardClassify                = 0x90,     // 카드 색상 분류 기준 설정
+            CardRange,                              // 카드 색 범위(RAW 데이터의 출력 범위)
+            CardRaw,                                // 카드 데이터 RAW 값(유선으로만 전송)
+            CardColor,                              // 카드 데이터
+            CardList,                               // 카드 리스트 데이터
+            CardFunctionList,                       // 카드 함수 리스트 데이터
+            
             // Information Assembled
             InformationAssembledForController       = 0xA0,     // 데이터 모음
             InformationAssembledForEntry            = 0xA1,     // 데이터 모음
@@ -162,6 +170,12 @@ namespace Protocol
 | DisplayDrawString                     | 0x86 | C    | 문자열 쓰기                                    | [Protocol::Display::DrawString](07_structs_display.md#Protocol_Display_DrawString) |
 | DisplayDrawStringAlign                | 0x87 | C    | 문자열 정렬하여 쓰기                           | [Protocol::Display::DrawStringAlign](07_structs_display.md#Protocol_Display_DrawStringAlign) |
 | DisplayDrawImage                      | 0x88 | C    | 이미지 그리기                                  | [Protocol::Display::DrawImage](07_structs_display.md#Protocol_Display_DrawImage) |
+| CardClassify                          | 0x90 | D    | 카드 색상 분류 기준 설정                       | [Protocol::Card::Classify](08_structs_card.md#Protocol_Card_Classify) |
+| CardRange                             | 0x91 | D    | 카드 색 범위(RAW 데이터의 출력 범위)           | [Protocol::Card::Range](08_structs_card.md#Protocol_Card_Range) |
+| CardRaw                               | 0x92 | D    | 카드 데이터 RAW 값(유선으로만 전송)            | [Protocol::Card::Raw](08_structs_card.md#Protocol_Card_Raw) |
+| CardColor                             | 0x93 | D    | 카드 데이터                                    | [Protocol::Card::Color](08_structs_card.md#Protocol_Card_Color) |
+| CardList                              | 0x94 | D    | 카드 리스트 데이터                             | [Protocol::Card::List](08_structs_card.md#Protocol_Card_List) |
+| CardFunctionList                      | 0x95 | D    | 카드 함수 리스트 데이터                        | [Protocol::Card::FunctionList](08_structs_card.md#Protocol_Card_List) |
 | InformationAssembledForController     | 0xA0 | D    | 자주 갱신되는 데이터 모음(조종기)              | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
 | InformationAssembledForEntry          | 0xA1 | D    | 자주 갱신되는 데이터 모음(엔트리)              | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |
 | InformationAssembledForByBlocks       | 0xA2 | D    | 자주 갱신되는 데이터 모음(바이블럭)            | [Protocol::InformationAssembledForByBlocks](05_structs.md#Protocol_InformationAssembledForByBlocks) |
@@ -185,6 +199,7 @@ namespace Protocol
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
 7. [Structs - Display](07_structs_display.md)
+8. [Structs - Card](08_structs_card.md)
 
 <br>
 

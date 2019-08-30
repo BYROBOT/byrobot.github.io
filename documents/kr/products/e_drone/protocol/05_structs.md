@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.2.26
+Modified : 2019.8.30
 
 ---
 
@@ -1329,6 +1329,7 @@ namespace Protocol
 5. ***Structs***
 6. [Structs - Light](06_structs_light.md)
 7. [Structs - Display](07_structs_display.md)
+8. [Structs - Card](08_structs_card.md)
 
 <br>
 

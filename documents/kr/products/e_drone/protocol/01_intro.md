@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Intro**
 
-Modified : 2018.10.15
+Modified : 2019.8.30
 
 ---
 
@@ -213,6 +213,7 @@ E-Drone 조종기는 윈도우10인 경우 자동으로 인식합니다. 그 외
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
 7. [Structs - Display](07_structs_display.md)
+8. [Structs - Card](08_structs_card.md)
 
 <br>
 

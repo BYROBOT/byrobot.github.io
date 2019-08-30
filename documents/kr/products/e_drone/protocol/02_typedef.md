@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Typedef**
 
-Modified : 2018.7.5
+Modified : 2019.8.30
 
 ---
 
@@ -44,6 +44,7 @@ typedef double    f64;
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
 7. [Structs - Display](07_structs_display.md)
+8. [Structs - Card](08_structs_card.md)
 
 <br>
 
