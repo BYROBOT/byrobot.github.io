@@ -235,9 +235,9 @@ namespace Protocol
     {
         struct
         {
-            u16                     build;      // Build Number
-            u8                      minor;      // Minor Number
-            u8                      major;      // Major Number
+            u16     build;      // Build Number
+            u8      minor;      // Minor Number
+            u8      major;      // Major Number
         };
 
         u32 v;
@@ -245,12 +245,12 @@ namespace Protocol
 }
 ```
 
-| 변수 이름  | 형식                                                           | 크기     | 범위       | 설명         |
-|:----------:|:--------------------------------------------------------------:|:--------:|:----------:|:-------------|
-| build      | uint16_t                                                       | 14 bit   | 0 ~ 65535  | 빌드 번호    |
-| minor      | uint8_t                                                        | 1 Byte   | 0 ~ 255    | 부 번호      |
-| major      | uint8_t                                                        | 1 Byte   | 0 ~ 255    | 주 번호      |
-| v          | uint32_t                                                       | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
+| 변수 이름  | 형식         | 크기     | 범위       | 설명         |
+|:----------:|:------------:|:--------:|:----------:|:-------------|
+| build      | uint16_t     | 14 bit   | 0 ~ 65535  | 빌드 번호    |
+| minor      | uint8_t      | 1 Byte   | 0 ~ 255    | 부 번호      |
+| major      | uint8_t      | 1 Byte   | 0 ~ 255    | 주 번호      |
+| v          | uint32_t     | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
 
 
 
@@ -1262,22 +1262,22 @@ namespace Protocol
 {
     struct InformationAssembledForController
     {
-        s16     angleRoll;              // 자세 Roll
-        s16     anglePitch;             // 자세 Pitch
-        s16     angleYaw;               // 자세 Yaw
+        s16     angleRoll;      // 자세 Roll
+        s16     anglePitch;     // 자세 Pitch
+        s16     angleYaw;       // 자세 Yaw
 
-        u16     rpm;                    // RPM
+        u16     rpm;            // RPM
 
-        s16     positionX;              // meter x 10
-        s16     positionY;              // meter x 10
-        s16     positionZ;              // meter x 10
+        s16     positionX;      // meter x 10
+        s16     positionY;      // meter x 10
+        s16     positionZ;      // meter x 10
 
-        s8      speedX;                 // meter x 10
-        s8      speedY;                 // meter x 10
+        s8      speedX;         // meter x 10
+        s8      speedY;         // meter x 10
 
-        u8      rangeHeight;            // meter x 100
+        u8      rangeHeight;    // meter x 100
 
-        s8      rssi;                   // RSSI
+        s8      rssi;           // RSSI
     };
 }
 ```
@@ -1326,20 +1326,20 @@ namespace Protocol
 {
     struct InformationAssembledForByBlocks
     {
-        s8          battery;            // 배터리 잔량
+        s8      battery;        // 배터리 잔량
         
-        s16         angleRoll;          // 자세 Roll
-        s16         anglePitch;         // 자세 Pitch
-        s16         angleYaw;           // 자세 Yaw
+        s16     angleRoll;      // 자세 Roll
+        s16     anglePitch;     // 자세 Pitch
+        s16     angleYaw;       // 자세 Yaw
         
-        s16         positionX;          // meter x 10
-        s16         positionY;          // meter x 10
-        s16         positionZ;          // meter x 10
+        s16     positionX;      // meter x 10
+        s16     positionY;      // meter x 10
+        s16     positionZ;      // meter x 10
         
-        s16         rangeLeft;          // meter x 1000
-        s16         rangeFront;         // meter x 1000
-        s16         rangeRight;         // meter x 1000
-        s16         rangeBottom;        // meter x 1000
+        s16     rangeLeft;      // meter x 1000
+        s16     rangeFront;     // meter x 1000
+        s16     rangeRight;     // meter x 1000
+        s16     rangeBottom;    // meter x 1000
     };
 }
 ```

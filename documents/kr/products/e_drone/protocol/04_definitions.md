@@ -27,20 +27,20 @@ namespace Protocol
     {
         enum Type
         {
-            None                        = 0x00,     // 이벤트 없음
+            None                = 0x00,     // 이벤트 없음
 
-            Stop                        = 0x01,     // 정지
+            Stop                = 0x01,     // 정지
             
-            ModeControlFlight           = 0x02,     // 비행 제어 모드 설정
-            Headless                    = 0x03,     // 헤드리스 모드 설정
-            ControlSpeed                = 0x04,     // 제어 속도 설정
+            ModeControlFlight   = 0x02,     // 비행 제어 모드 설정
+            Headless            = 0x03,     // 헤드리스 모드 설정
+            ControlSpeed        = 0x04,     // 제어 속도 설정
             
-            ClearBias                   = 0x05,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
-            ClearTrim                   = 0x06,     // 트림 초기화
+            ClearBias           = 0x05,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
+            ClearTrim           = 0x06,     // 트림 초기화
 
-            FlightEvent                 = 0x07,     // 비행 이벤트 실행
+            FlightEvent         = 0x07,     // 비행 이벤트 실행
 
-            SetDefault                  = 0x08,     // 기본 설정으로 초기화
+            SetDefault          = 0x08,     // 기본 설정으로 초기화
             
             EndOfType
         };
@@ -108,7 +108,7 @@ namespace Protocol
     {
         enum Type
         {
-            None = 0,
+            None        = 0x00,
 
             Drone       = 0x10,     // 드론(Server)
 
@@ -155,22 +155,22 @@ namespace ErrorFlagsForSensor
 {
     enum Type
     {
-        None                                    = 0x00000000,
+        None                                = 0x00000000,
 
-        Motion_NoAnswer                         = 0x00000001,   // Motion 응답 없음
-        Motion_WrongValue                       = 0x00000002,   // Motion 잘못된 값
-        Motion_NotCalibrated                    = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
-        Motion_Calibrating                      = 0x00000008,   // Gyro Bias 보정 중
+        Motion_NoAnswer                     = 0x00000001,   // Motion 응답 없음
+        Motion_WrongValue                   = 0x00000002,   // Motion 잘못된 값
+        Motion_NotCalibrated                = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
+        Motion_Calibrating                  = 0x00000008,   // Gyro Bias 보정 중
 
-        Pressure_NoAnswer                       = 0x00000010,   // 압력 센서 응답 없음
-        Pressure_WrongValue                     = 0x00000020,   // 압력 센서 잘못된 값
+        Pressure_NoAnswer                   = 0x00000010,   // 압력 센서 응답 없음
+        Pressure_WrongValue                 = 0x00000020,   // 압력 센서 잘못된 값
 
-        RangeGround_NoAnswer                    = 0x00000100,   // 바닥 거리 센서 응답 없음
-        RangeGround_WrongValue                  = 0x00000200,   // 바닥 거리 센서 잘못된 값
+        RangeGround_NoAnswer                = 0x00000100,   // 바닥 거리 센서 응답 없음
+        RangeGround_WrongValue              = 0x00000200,   // 바닥 거리 센서 잘못된 값
 
-        Flow_NoAnswer                           = 0x00001000,   // Flow 응답 없음
-        Flow_WrongValue                         = 0x00002000,   // Flow 잘못된 값
-        Flow_CannotRecognizeGroundImage         = 0x00004000,   // 바닥 이미지를 인식할 수 없음
+        Flow_NoAnswer                       = 0x00001000,   // Flow 응답 없음
+        Flow_WrongValue                     = 0x00002000,   // Flow 잘못된 값
+        Flow_CannotRecognizeGroundImage     = 0x00004000,   // 바닥 이미지를 인식할 수 없음
     };
 }
 ```
@@ -225,7 +225,7 @@ namespace Mode
         {
             enum Type
             {
-                None = 0,
+                None        = 0x00,
 
                 Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
                 Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
@@ -255,7 +255,7 @@ namespace Mode
     {
         enum Type
         {
-            None = 0,
+            None        = 0x00,
 
             Boot        = 0x10,     // 부팅
             Start,                  // 시작 코드 실행
@@ -543,7 +543,7 @@ namespace FlightEvent
 {
     enum Type
     {
-        None            = 0,        // 없음
+        None            = 0x00,     // 없음
         
         Stop            = 0x10,     // 정지
         Takeoff,                    // 이륙
@@ -683,7 +683,7 @@ namespace Joystick
     {
         enum Type
         {
-            None    = 0,        // 정의하지 않은 영역(무시함)
+            None    = 0x00,     // 정의하지 않은 영역(무시함)
 
             VT      = 0x10,     //   위(세로)
             VM      = 0x20,     // 중앙(세로)
