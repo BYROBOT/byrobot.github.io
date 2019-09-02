@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.8.30
+Modified : 2019.9.2
 
 ---
 
@@ -328,7 +328,7 @@ namespace Control
 
 드론 이동 명령
 
-추후 제거할 예정
+드론에 이동 명령을 내리는 경우 사용
 
 ```cpp
 namespace Control
@@ -366,7 +366,7 @@ namespace Control
 
 드론 이동 명령
 
-드론에 이동 명령을 내리는 경우 사용.
+드론에 이동 명령을 내리는 경우 사용
 
 ```cpp
 namespace Control
@@ -532,6 +532,10 @@ namespace Protocol
 
 address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
 
+channelArray에는 모두 4개의 채널이 들어가며, 주파수 호핑(FHSS) 동작시 지정한 모든 채널을 사용하고, 주파수 고정 동작 시 배열의 첫 번째에
+
+있는 채널을 사용합니다.
+
 ```cpp
 namespace Protocol
 {
@@ -541,7 +545,7 @@ namespace Protocol
         u16     address1;
         u16     address2;
         u8      scramble;
-        u8      channel;
+        u8      channelArray[4];
     };
 }
 ```
@@ -552,7 +556,7 @@ namespace Protocol
 | address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 1             |
 | address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 2             |
 | scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F      | 스크램블           |
-| channel         | uint8_t   | 1 Byte   | 0 ~ 81           | 채널               |
+| channelArray    | uint8_t   | 4 Byte   | 0 ~ 81           | 채널               |
 
 
 <br>
@@ -1079,6 +1083,32 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_BuzzerMelody"></a>
+## Protocol::BuzzerMelody
+
+버저
+
+```cpp
+namespace Protocol
+{
+    struct BuzzerMelody
+    {
+        u8  melody;     // 멜로디 타입
+        u8  repeat;     // 반복횟수
+    };
+}
+```
+
+| 변수 이름  | 형식                                                    | 크기   | 범위      | 설명      |
+|:----------:|:-------------------------------------------------------:|:------:|:---------:|:----------|
+| melody     | [Buzzer::Melody::Type](04_definitions.md#Buzzer_Melody)  | 1 Byte | -        | 멜로디    |
+| repeat     | uint8_t                                                  | 1 Byte | 0 ~ 255  | 반복 횟수 |
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Buzzer"></a>
 ## Protocol::Buzzer
 
@@ -1100,8 +1130,8 @@ namespace Protocol
 |:----------:|:-------------------------------------------------------:|:------:|:-----------:|:-----------------------|
 | mode       | [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)     | 1 Byte | -           | 버저 동작 모드         |
 | value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
-|            | UInt16                                                  | 2 Byte | 0 ~ 8,000   | Hz                     |
-| time       | UInt16                                                  | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
+|            | uint16_t                                                | 2 Byte | 0 ~ 8,000   | Hz                     |
+| time       | uint16_t                                                | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
 
 
 <br>
@@ -1271,13 +1301,12 @@ namespace Protocol
         s16     anglePitch;
         s16     angleYaw;
 
-        float   pressureTemperature;
-        float   pressureAltitude;
+        s16     positionX;
+        s16     positionY;
+        s16     positionZ;
 
-        float   positionX;
-        float   positionY;
-
-        float   rangeHeight;
+        s16     rangeHeight;
+        float   altitude;
     };
 }
 ```

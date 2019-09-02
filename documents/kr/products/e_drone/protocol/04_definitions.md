@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.8.30
+Modified : 2019.9.2
 
 ---
 
@@ -81,8 +81,12 @@ namespace ModelNumber
 
         Drone_4_Link_P0         = 0x00043000,   // Drone_4_Link_P0
 
-        Drone_4_Tester_P2       = 0x0004A002,   // Drone_4_Tester_P2
-        Drone_4_Monitor_P2      = 0x0004A102,   // Drone_4_Monitor_P2
+        Drone_4_Tester_P4       = 0x0004A004,   // Drone_4_Tester_P4
+        Drone_4_Monitor_P4      = 0x0004A104,   // Drone_4_Monitor_P4
+
+        Drone_7_Drone_P2        = 0x00071002,   // Drone_7_Drone_P2
+
+        Drone_8_Drone_P1        = 0x00081001,   // Drone_8_Drone_P1
     };
 }
 ```
@@ -110,8 +114,10 @@ namespace Protocol
 
             Controller  = 0x20,     // 조종기(Client)
 
-            Link        = 0x30,     // 링크 모듈(Client)
-            LinkServer  = 0x31,     // 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+            LinkClient  = 0x30,     // 링크 모듈(Client)
+            LinkServer  = 0x31,     // 링크 모듈(Server)
+            BleClient   = 0x32,     // BLE 클라이언트
+            BleServer   = 0x33,     // BLE 서버
 
             Range       = 0x40,     // 거리 센서 모듈
 
@@ -251,11 +257,12 @@ namespace Mode
         {
             None = 0,
 
-            Boot,               // 부팅
-            Start,              // 시작 코드 실행
-            Running,            // 메인 코드 동작
-            ReadyToReset,       // 리셋 대기(1초 뒤 리셋)
-            Error,              // 오류
+            Boot        = 0x10,     // 부팅
+            Start,                  // 시작 코드 실행
+            Running,                // 메인 코드 동작
+            ReadyToReset,           // 리셋 대기(1초 뒤 리셋)
+
+            Error       = 0xA0,     // 오류
 
             EndOfType
         };
@@ -281,23 +288,23 @@ namespace Mode
     {
         enum Type
         {
-            None = 0,
+            None        = 0x00,     // 없음
             
-            Ready = 0x10,       // 준비
+            Ready       = 0x10,     // 준비
             
-            Start,              // 이륙 준비
-            TakeOff,            // 이륙 (Flight로 자동전환)
-            Flight,             // 비행
-            Landing,            // 착륙
-            Flip,               // 회전
-            Reverse,            // 뒤집기
+            Start,                  // 이륙 준비
+            Takeoff,                // 이륙 (Flight로 자동전환)
+            Flight,                 // 비행
+            Landing,                // 착륙
+            Flip,                   // 회전
+            Reverse,                // 뒤집기
             
-            Stop = 0x20,        // 강제 정지
+            Stop        = 0x20,     // 강제 정지
             
-            Accident = 0x30,    // 사고 (Ready로 자동전환)
-            Error,              // 오류
+            Accident    = 0x30,     // 사고 (Ready로 자동전환)
+            Error,                  // 오류
             
-            Test = 0x40,        // 테스트 모드
+            Test        = 0x40,     // 테스트 모드
             
             EndOfType
         };
@@ -536,23 +543,23 @@ namespace FlightEvent
 {
     enum Type
     {
-        None = 0,               // 없음
-
-        Stop = 0x10,            // 정지
-        TakeOff,                // 이륙
-        Landing,                // 착륙
-
-        Reverse,                // 뒤집기
-
-        FlipFront,              // 회전
-        FlipRear,               // 회전
-        FlipLeft,               // 회전
-        FlipRight,              // 회전
-
-        Return,                 // 시작 위치로 돌아가기
-
-        ResetHeading = 0xA0,    // 헤딩 리셋(Headless 모드 일 때 현재 heading을 0도로 변경)
-
+        None            = 0,        // 없음
+        
+        Stop            = 0x10,     // 정지
+        Takeoff,                    // 이륙
+        Landing,                    // 착륙
+        
+        Reverse,                    // 뒤집기
+        
+        FlipFront,                  // 회전
+        FlipRear,                   // 회전
+        FlipLeft,                   // 회전
+        FlipRight,                  // 회전
+        
+        Return,                     // Return
+        
+        ResetHeading    = 0xA0,     // 헤딩 리셋(Headless 모드 일 때 현재 heading을 0도로 변경)
+        
         EndOfType
     };
 }
@@ -672,7 +679,6 @@ namespace Button
 ```cpp
 namespace Joystick
 {
-    // 조이스틱 방향
     namespace Direction
     {
         enum Type
@@ -708,7 +714,6 @@ namespace Joystick
 ```cpp
 namespace Joystick
 {
-    // 조이스틱 이벤트
     namespace Event
     {
         enum Type
@@ -794,6 +799,64 @@ namespace Buzzer
     }
 }
 ```
+
+<br>
+<br>
+
+
+<a name="Buzzer_Melody"></a>
+## Buzzer::Melody::Type
+
+버저 멜로디
+
+```cpp
+namespace Buzzer
+{
+    namespace Melody
+    {
+        enum Type
+        {
+            Null,           // 무음(100ms)
+            
+            Melody1,        // 카드 코딩용 멜로디 1
+            Melody2,        // 카드 코딩용 멜로디 2
+            Melody3,        // 카드 코딩용 멜로디 3
+            Melody4,        // 카드 코딩용 멜로디 4
+            Melody5,        // 카드 코딩용 멜로디 5
+            Melody6,        // 카드 코딩용 멜로디 6
+            Melody7,        // 카드 코딩용 멜로디 7
+            Melody8,        // 카드 코딩용 멜로디 8
+            
+            DoReMi,         // 도레미
+            DoMiSol,        // 도미솔
+            SolMiDo,        // 솔미도
+            LaLa,           // 라라
+            SiRaSiRa,       // 시라시라
+            
+            Warning1,       // 경고 1
+            Warning2,       // 경고 2
+            Warning3,       // 경고 3
+            Warning4,       // 경고 4
+            
+            Du,             // Trim -
+            DuDu,           // Trim - End
+            DiDic,          // Trim Center
+            DiDic2,         // Trim Center 2
+            Di,             // Trim +
+            DiDi,           // Trim + End
+            
+            BuzzSound1,     // C6
+            BuzzSound2,     // C6, D6
+            BuzzSound3,     // C6, D6, E6
+            
+            Button,         // 버튼
+
+            EndOfType
+        };
+    }
+}
+```
+
 
 <br>
 <br>

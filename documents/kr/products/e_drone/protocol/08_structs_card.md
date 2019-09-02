@@ -368,7 +368,7 @@ namespace Protocol
 <a name="Protocol_Card_Color"></a>
 ## Protocol::Card::Color
 
-카드 데이터(무선 통신에 사용하려고 크기를 Raw에서 크기를 줄임)
+카드 데이터(무선 통신에 사용하려고 Raw에서 크기를 줄임)
 
 ```cpp
 namespace Protocol

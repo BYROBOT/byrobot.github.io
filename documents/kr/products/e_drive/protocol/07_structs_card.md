@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs** / **Card**
 
-Modified : 2019.8.30
+Modified : 2019.9.2
 
 ---
 
@@ -127,87 +127,88 @@ namespace CardNameFunction
 {
     enum Type
     {
-        None                = CardNameColor::None,
-        
+        None                            = CardNameColor::None,
+
         // White - Mode
-        CardCoding          = CardNameColor::WhiteWhite,    // 카드 코딩 모드
-        CardCodingStart     = CardNameColor::WhiteRed,      // 카드 입력 시작 - 카드 입력 중 White Dimming
-        CardCodingEnd       = CardNameColor::WhiteYellow,   // 카드 입력 종료 - 카드 입력 완료 시 White Hold
-        FunctionStart       = CardNameColor::WhiteGreen,    // 함수 입력 시작 - 입력 중 Cyan Dimming
-        FunctionEnd         = CardNameColor::WhiteCyan,     // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
-        FunctionCall        = CardNameColor::WhiteBlue,     // 함수 호출
-        Speed               = CardNameColor::WhiteMagenta,  // 속도 변경
-        Piano               = CardNameColor::WhiteBlack,    // 피아노 모드
+        RemoteControl               = CardNameColor::WhiteWhite,
+        CardCodingStart             = CardNameColor::WhiteRed,      // 카드 입력 시작
+        CardCodingEnd               = CardNameColor::WhiteYellow,   // 카드 입력 종료
+        FunctionStart               = CardNameColor::WhiteGreen,    // 함수 입력 시작
+        FunctionEnd                 = CardNameColor::WhiteCyan,     // 함수 입력 종료
+        FunctionCall                = CardNameColor::WhiteBlue,     // 함수 호출
+        LineTracer                  = CardNameColor::WhiteMagenta,  // 라인 트레이서 시작
+        Piano                       = CardNameColor::WhiteBlack,    // 피아노 모드
+        
         
         // Red - LightBody
-        LightBodyWhite      = CardNameColor::RedWhite,
-        LightBodyRed        = CardNameColor::RedRed,
-        LightBodyYellow     = CardNameColor::RedYellow,
-        LightBodyGreen      = CardNameColor::RedGreen,
-        LightBodyCyan       = CardNameColor::RedCyan,
-        LightBodyBlue       = CardNameColor::RedBlue,
-        LightBodyMagenta    = CardNameColor::RedMagenta,
-        LightBodyBlack      = CardNameColor::RedBlack,
+        LightBodyWhite              = CardNameColor::RedWhite,
+        LightBodyRed                = CardNameColor::RedRed,
+        LightBodyYellow             = CardNameColor::RedYellow,
+        LightBodyGreen              = CardNameColor::RedGreen,
+        LightBodyCyan               = CardNameColor::RedCyan,
+        LightBodyBlue               = CardNameColor::RedBlue,
+        LightBodyMagenta            = CardNameColor::RedMagenta,
+        LightBodyBlack              = CardNameColor::RedBlack,
         
-        // Yellow - Function    (이동 및 회전 기본 단위 설정, 초기 설정은 1 Meter, 90 Degree)
-        Takeoff             = CardNameColor::YellowWhite,       // 이륙
-        Landing             = CardNameColor::YellowRed,         // 착륙
-        Distance100         = CardNameColor::YellowYellow,      // 10cm
-        Distance500         = CardNameColor::YellowGreen,       // 50cm
-        Distance1000        = CardNameColor::YellowCyan,        // 1m
-        Degree10            = CardNameColor::YellowBlue,        // 10도
-        Degree45            = CardNameColor::YellowMagenta,     // 45도
-        Degree90            = CardNameColor::YellowBlack,       // 90도
+        // Yellow - Light On
+        LightOnHighBeam             = CardNameColor::YellowWhite,
+        LightOnEmergencyLight       = CardNameColor::YellowRed,
+        LightOnLowBeam              = CardNameColor::YellowYellow,
+        LightOnLeftTurnSignal       = CardNameColor::YellowGreen,
+        LightOnRightTurnSignal      = CardNameColor::YellowCyan,
+        LightOnTailLight            = CardNameColor::YellowBlue,
+        LightOffTailLight           = CardNameColor::YellowMagenta,
+        LightOffLowBeam             = CardNameColor::YellowBlack,
         
         // Green - Move - Basic
-        MoveForward         = CardNameColor::GreenWhite,
-        MoveBackward        = CardNameColor::GreenRed,
-        MoveLeft            = CardNameColor::GreenYellow,
-        MoveRight           = CardNameColor::GreenGreen,
-        MoveUp              = CardNameColor::GreenCyan,
-        MoveDown            = CardNameColor::GreenBlue,
-        TurnLeft            = CardNameColor::GreenMagenta,
-        TurnRight           = CardNameColor::GreenBlack,
+        MoveForward                 = CardNameColor::GreenWhite,
+        MoveForward1Block           = CardNameColor::GreenRed,
+        MoveTurnLeft180Deg          = CardNameColor::GreenYellow,
+        MoveTurnLeft90Deg           = CardNameColor::GreenGreen,
+        MoveTurnRight90Deg          = CardNameColor::GreenCyan,
+        MoveBackward1Block          = CardNameColor::GreenBlue,
+        MoveBackward                = CardNameColor::GreenMagenta,
+        MoveStop                    = CardNameColor::GreenBlack,
         
         // Cyan - If
-        IfFindFrontObstacle = CardNameColor::CyanWhite,         // Front Obstacle
-        IfFindGroundRed     = CardNameColor::CyanRed,           // 착륙 시 사용, Ground Color Red
-        IfFindGroundYellow  = CardNameColor::CyanYellow,        // 착륙 시 사용, Ground Color Yellow
-        IfFindGroundGreen   = CardNameColor::CyanGreen,         // 착륙 시 사용, Ground Color Green
-        IfFindGroundCyan    = CardNameColor::CyanCyan,          // 착륙 시 사용, Ground Color Cyan
-        IfFindGroundBlue    = CardNameColor::CyanBlue,          // 착륙 시 사용, Ground Color Blue
-        IfElse              = CardNameColor::CyanMagenta,
-        IfEnd               = CardNameColor::CyanBlack,
+        IfFindFrontObstacle         = CardNameColor::CyanWhite,         // Front Obstacle
+        IfFindGroundRed             = CardNameColor::CyanRed,           // Ground Color Red
+        IfFindGroundYellow          = CardNameColor::CyanYellow,        // Ground Color Yellow
+        IfFindGroundGreen           = CardNameColor::CyanGreen,         // Ground Color Green
+        IfFindGroundCyan            = CardNameColor::CyanCyan,          // Ground Color Cyan
+        IfFindGroundBlue            = CardNameColor::CyanBlue,          // Ground Color Blue
+        IfElse                      = CardNameColor::CyanMagenta,
+        IfEnd                       = CardNameColor::CyanBlack,
         
         // Blue - Loop
-        LoopStartInfinite   = CardNameColor::BlueWhite,
-        LoopStart2          = CardNameColor::BlueRed,
-        LoopStart3          = CardNameColor::BlueYellow,
-        LoopStart4          = CardNameColor::BlueGreen,
-        LoopStart5          = CardNameColor::BlueCyan,
-        LoopStart10         = CardNameColor::BlueBlue,
-        LoopBreak           = CardNameColor::BlueMagenta,
-        LoopEnd             = CardNameColor::BlueBlack,
+        LoopStartInfinite           = CardNameColor::BlueWhite,
+        LoopStart2                  = CardNameColor::BlueRed,
+        LoopStart3                  = CardNameColor::BlueYellow,
+        LoopStart4                  = CardNameColor::BlueGreen,
+        LoopStart5                  = CardNameColor::BlueCyan,
+        LoopStart10                 = CardNameColor::BlueBlue,
+        LoopBreak                   = CardNameColor::BlueMagenta,
+        LoopEnd                     = CardNameColor::BlueBlack,
         
         // Magenta - Preset
-        presetTriangle      = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
-        presetSquare        = CardNameColor::MagentaRed,
-        presetCircleLeft    = CardNameColor::MagentaYellow,
-        presetCircleRight   = CardNameColor::MagentaGreen,
-        presetPOI           = CardNameColor::MagentaCyan,
-        presetBounce        = CardNameColor::MagentaBlue,
-        preset360Flip       = CardNameColor::MagentaMagenta,
-        presetWait1Sec      = CardNameColor::MagentaBlack,      // 1초 기다림
+        presetYawing60Deg           = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
+        presetZigZag                = CardNameColor::MagentaRed,        // 중앙, 왼쪽 90도, 오른쪽 180도, 왼쪽 90도 
+        presetWave                  = CardNameColor::MagentaYellow,
+        presetTornadoLeft           = CardNameColor::MagentaGreen,
+        presetTornadoRight          = CardNameColor::MagentaCyan,
+        presetCircleLeft            = CardNameColor::MagentaBlue,
+        presetCircleRight           = CardNameColor::MagentaMagenta,
+        presetWait1Sec              = CardNameColor::MagentaBlack,      // 1초 기다림
         
         // Black - Melody
-        Melody1             = CardNameColor::BlackWhite,
-        Melody2             = CardNameColor::BlackRed,
-        Melody3             = CardNameColor::BlackYellow,
-        Melody4             = CardNameColor::BlackGreen,
-        Melody5             = CardNameColor::BlackCyan,
-        Melody6             = CardNameColor::BlackBlue,
-        Melody7             = CardNameColor::BlackMagenta,
-        Melody8             = CardNameColor::BlackBlack,
+        Melody1                     = CardNameColor::BlackWhite,
+        Melody2                     = CardNameColor::BlackRed,
+        Melody3                     = CardNameColor::BlackYellow,
+        Melody4                     = CardNameColor::BlackGreen,
+        Melody5                     = CardNameColor::BlackCyan,
+        Melody6                     = CardNameColor::BlackBlue,
+        Melody7                     = CardNameColor::BlackMagenta,
+        Melody8                     = CardNameColor::BlackBlack,
         
         EndOfType
     };
@@ -368,7 +369,7 @@ namespace Protocol
 <a name="Protocol_Card_Color"></a>
 ## Protocol::Card::Color
 
-카드 데이터(무선 통신에 사용하려고 크기를 Raw에서 크기를 줄임)
+카드 데이터(무선 통신에 사용하려고 Raw에서 크기를 줄임)
 
 ```cpp
 namespace Protocol
