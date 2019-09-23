@@ -18,7 +18,8 @@
                     <a href="#Driver"><span style="color:#FF4000">Driver</span></a>&nbsp;
                     <a href="#Documents"><span style="color:#0489B1">Documents</span></a>&nbsp;
                     <a href="#ByBlocks"><span style="color:#FF4000">ByBlocks</span></a>&nbsp;
-                    <a href="#Python"><span style="color:#0489B1">Python</span></a>
+                    <a href="#Python"><span style="color:#0489B1">Python</span></a>&nbsp;
+                    <a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span style="color:#FF4000">Issues</span></a>
                 </div>
             </td>
         </tr>
@@ -130,4 +131,4 @@
 
 ---
 
-Modified : 2019.5.7
+Modified : 2019.9.23
