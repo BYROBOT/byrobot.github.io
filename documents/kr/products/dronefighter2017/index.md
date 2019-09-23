@@ -17,7 +17,7 @@
                     <a href="#Firmware"><span style="color:#088A4B">Firmware</span></a>&nbsp;
                     <a href="#Driver"><span style="color:#DF0174">Driver</span></a>&nbsp;
                     <a href="#Documents"><span style="color:#088A4B">Documents</span></a>&nbsp;
-                    <a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#DF0174">Issues</span></a>
+                    <a href="https://github.com/BYROBOT/drone0/issues/" target="_blank"><span style="color:#DF0174">Issues</span></a>
                 </div>
             </td>
         </tr>
