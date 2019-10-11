@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.8.28
+Modified : 2019.10.11
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.8.28
 
 
 <br>
+
+
+# 2019.10.11
+
+- E-Drive: 19.10.2
+- E-Drive BleServer: 19.10.14
+- E-Drive Tester: 19.9.1
+
+> - E-Drive의 BLE 통신 보드 펌웨어 업데이트 기능 추가
+> - Drone7Card.exe의 UI 개선
+
+
+[Download](https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH)
+
+
+<br>
+
+---
 
 
 # 2019.8.28

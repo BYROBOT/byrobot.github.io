@@ -30,19 +30,23 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">19.8.3</div></td>
+            <td><div align="center">19.10.2</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">BleServer</div></td>
+            <td><div align="center">19.10.14</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
-            <td><div align="center">19.7.8</div></td>
+            <td><div align="center">19.09.1</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.8.28</div></td>
+            <td colspan="2"><div align="center">2019.10.11</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1rG5oz9p1Ff_SK-llNb-6QiK7pkcznGSk" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -131,4 +135,4 @@
 
 ---
 
-Modified : 2019.9.23
+Modified : 2019.10.11
