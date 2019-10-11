@@ -28,7 +28,7 @@
             <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="2"><div align="center">Version</div></td>
+            <td rowspan="3"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
             <td><div align="center">19.10.2</div></td>
         </tr>
