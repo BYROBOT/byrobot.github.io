@@ -38,7 +38,7 @@ Modified : 2019.10.15
 > - Drone7Card.exe의 UI 개선
 
 
-[Download](https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH)
+[Download](https://drive.google.com/open?id=1rG5oz9p1Ff_SK-llNb-6QiK7pkcznGSk)
 
 
 <br>
