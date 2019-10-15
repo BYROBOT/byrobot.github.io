@@ -20,7 +20,7 @@ Modified : 2019.10.15
 > - 카드 배치 순서 변경
 
 
-[Download](https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH)
+[Download](https://drive.google.com/open?id=1k2oiprOk_ApyQJoRGRCsTo31id5ql8AV)
 
 
 <br>
