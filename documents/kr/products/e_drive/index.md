@@ -30,7 +30,7 @@
         <tr>
             <td rowspan="3"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">19.10.2</div></td>
+            <td><div align="center">19.10.3</div></td>
         </tr>
         <tr>
             <td><div align="center">BleServer</div></td>
@@ -42,11 +42,11 @@
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.10.11</div></td>
+            <td colspan="2"><div align="center">2019.10.15</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1rG5oz9p1Ff_SK-llNb-6QiK7pkcznGSk" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1k2oiprOk_ApyQJoRGRCsTo31id5ql8AV" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -135,4 +135,4 @@
 
 ---
 
-Modified : 2019.10.11
+Modified : 2019.10.15

@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.10.11
+Modified : 2019.10.15
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2019.10.11
 
 
 <br>
+
+
+# 2019.10.15
+
+- E-Drive: 19.10.3
+- E-Drive BleServer: 19.10.14
+- E-Drive Tester: 19.9.1
+
+> - 카드 배치 순서 변경
+
+
+[Download](https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH)
+
+
+<br>
+
+---
 
 
 # 2019.10.11
