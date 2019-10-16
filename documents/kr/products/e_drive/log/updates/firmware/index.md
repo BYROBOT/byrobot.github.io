@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.10.15
+Modified : 2019.10.16
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2019.10.15
 
 
 <br>
+
+
+# 2019.10.16
+
+- E-Drive: 19.10.4
+- E-Drive BleServer: 19.10.14
+- E-Drive Tester: 19.9.1
+
+> - 모션 코딩 기능 추가
+
+
+[Download](https://drive.google.com/open?id=14xPjBY8m6U9PoSZFOhTIUz-jQRjnYdnV)
+
+
+<br>
+
+---
 
 
 # 2019.10.15
