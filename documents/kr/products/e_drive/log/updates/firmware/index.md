@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.10.16
+Modified : 2019.10.17
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2019.10.16
 
 
 <br>
+
+
+# 2019.10.17
+
+- E-Drive: 19.10.5
+- E-Drive BleServer: 19.10.14
+- E-Drive Tester: 19.9.1
+
+> - 핸드팔로잉 기능 추가
+
+
+[Download](https://drive.google.com/open?id=1N7BeCWc1kBUeol5ONm2isEYV96cI0k3l)
+
+
+<br>
+
+---
 
 
 # 2019.10.16
