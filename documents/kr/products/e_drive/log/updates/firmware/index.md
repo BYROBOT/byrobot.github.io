@@ -13,14 +13,15 @@ Modified : 2019.10.17
 
 # 2019.10.17
 
-- E-Drive: 19.10.5
+- E-Drive: 19.10.6
 - E-Drive BleServer: 19.10.14
 - E-Drive Tester: 19.9.1
 
 > - 핸드팔로잉 기능 추가
+> - 모드 전환시 멜로디 알림
 
 
-[Download](https://drive.google.com/open?id=1N7BeCWc1kBUeol5ONm2isEYV96cI0k3l)
+[Download](https://drive.google.com/open?id=1oZvVE8qhCGT6SHjvWRQcoIPWul0nUz7G)
 
 
 <br>
