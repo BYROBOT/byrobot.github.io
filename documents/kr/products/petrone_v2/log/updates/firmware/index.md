@@ -1,6 +1,6 @@
 **PETRONE V2 update log**
 
-Modified : 2018.7.23
+Modified : 2018.10.18
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2018.7.23
 
 
 <br>
+
+
+# 2018.10.18
+
+- Drone: 1.3.R.2
+- **Controller: 1.4.R.1**
+
+> - 설정 화면의 **Function** 메뉴 아래에 **SET DEFAULT** 추가
+> - **SET DEFAULT** 실행 시 조종기의 설정값 초기화, 조이스틱 캘리브레이션 초기화
+> - 조이스틱 캘리브레이션 방법 수정
+
+<br>
+
+---
+
 
 
 # 2018.7.23

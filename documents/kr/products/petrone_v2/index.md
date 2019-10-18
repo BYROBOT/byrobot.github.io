@@ -40,17 +40,17 @@
                 <div align="center">Controller</div>
             </td>
             <td>
-                <div align="center">1.3.R.2</div>
+                <div align="center">1.4.R.1</div>
             </td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.6.19</div></td>
+            <td colspan="2"><div align="center">2019.10.18</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
             <td colspan="2">
-                <div align="center"><a href="https://drive.google.com/open?id=1Q6KId4GYB8x-KOautsnvucO-bKARGjkM" target="_blank">Windows</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1WdGvScBgEB1zghzayKpjDtZ70QB85COQ" target="_blank">Windows</a></div>
             </td>
         </tr>
         <tr>
@@ -129,4 +129,4 @@
 
 ---
 
-Modified : 2019.9.23
+Modified : 2019.10.18
