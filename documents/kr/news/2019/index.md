@@ -2,6 +2,8 @@
 
 ---
 
+- <a href="/documents/kr/products/petrone_v2/log/updates/firmware/#heading-20181018">페트론 V2 펌웨어 업데이트</a> <sup><i>2019.10.18</i></sup><br>
+
 - <a href="/documents/kr/products/e_drone/protocol/">E-DRONE 통신 문서 업데이트</a> <sup><i>2019.8.30</i></sup><br>
 
 - <a href="/documents/kr/products/petrone_v2/manual/update/drone2autoupdaterlight">PETRONE V2 자동 업데이트 프로그램 메뉴얼 추가</a> <sup><i>2019.6.19</i></sup><br>
@@ -45,4 +47,4 @@
 ---
 
 
-Modified : 2019.8.30
+Modified : 2019.10.18

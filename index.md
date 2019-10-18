@@ -4,9 +4,9 @@
 
 <div align="center">
     <a href="/documents/kr/news/2019"><b>News</b></a><br>
+    <a href="/documents/kr/products/petrone_v2/log/updates/firmware/#heading-20181018">페트론 V2 펌웨어 업데이트</a> <sup><i>2019.10.18</i></sup><br>
     <a href="/documents/kr/products/e_drone/protocol/">E-DRONE 통신 문서 업데이트</a> <sup><i>2019.8.30</i></sup><br>
     <a href="/documents/kr/products/petrone_v2/manual/update/drone2autoupdaterlight">PETRONE V2 자동 업데이트 프로그램 메뉴얼 추가</a> <sup><i>2019.6.19</i></sup><br>
-    <a href="/documents/kr/products/dronefighter2017/log/updates/firmware/#heading-201964">드론파이터 펌웨어 업데이트</a> <sup><i>2019.6.4</i></sup><br>
 </div>
 
 <div align="center">
@@ -54,4 +54,4 @@
 ---
 
 
-Modified : 2019.8.30
+Modified : 2019.10.18
