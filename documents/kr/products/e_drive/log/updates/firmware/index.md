@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.10.17
+Modified : 2019.10.18
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.10.17
 
 
 <br>
+
+
+# 2019.10.18
+
+- E-Drive: 19.10.6
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 통신 보드 BLE 연결이 끊어졌을 때 밝게 깜빡이는 대신 낮은 밝기로 계속 켜져있게 함
+> - 펌웨어 자동 업데이트 프로그램 수정
+
+
+[Download](https://drive.google.com/open?id=1QZizFQrSQEQisZkzl0lWl3I8sgvV1e7X)
+
+
+<br>
+
+---
 
 
 # 2019.10.17

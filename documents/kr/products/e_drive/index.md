@@ -34,7 +34,7 @@
         </tr>
         <tr>
             <td><div align="center">BleServer</div></td>
-            <td><div align="center">19.10.14</div></td>
+            <td><div align="center">19.10.16</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
@@ -46,7 +46,7 @@
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1oZvVE8qhCGT6SHjvWRQcoIPWul0nUz7G" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1QZizFQrSQEQisZkzl0lWl3I8sgvV1e7X" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -135,4 +135,4 @@
 
 ---
 
-Modified : 2019.10.17
+Modified : 2019.10.18
