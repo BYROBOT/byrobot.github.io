@@ -11,6 +11,23 @@ Modified : 2019.10.21
 <br>
 
 
+# 2019.10.21
+
+- E-Drive: 19.10.9
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 핸드 팔로잉 시 후진 속도를 낮추고 최대 속도를 제한
+
+
+[Download](https://drive.google.com/open?id=1QYiBlxExXY8rORgW9tHq0Vl6WeRY_L2X)
+
+
+<br>
+
+---
+
+
 # 2019.10.18
 
 - E-Drive: 19.10.7
