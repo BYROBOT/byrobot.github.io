@@ -13,18 +13,20 @@ Modified : 2019.10.23
 
 # 2019.10.23
 
-- **E-Drive: 19.10.11**
+- **E-Drive: 19.10.13**
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
 > - 카드 코딩에서 Tail LED(브레이크 등) 제어 기능을 제거
 > - 브레이크 등은 모터 동작 여부에 따라 제어하도록 변경
 > - LED Manual 제어에서도 Tail LED는 조작하지 못하도록 차단
+> - 전조등 밝기 조절
+> - 브레이크등 밝기 조절
 > - E-Drone과 DataType의 Motion, Range 번호 순서를 맞추기 위헤 Altitude를 앞에 추가함
 > - 앞으로 PC 프로그램의 중복 개발을 줄이려고 함. 그에 따라 대상 장치에 상관없이 Protocol을 최대한 일치하게 만들 예정
 
 
-[Download](https://drive.google.com/open?id=1dOWQ5EMcpk83Iv28T_Zyc7CRnsVRFMj3)
+[Download](https://drive.google.com/open?id=1_hwX8KkXVlJ6yJm48oj35MfZ36MY5JBc)
 
 
 <br>
