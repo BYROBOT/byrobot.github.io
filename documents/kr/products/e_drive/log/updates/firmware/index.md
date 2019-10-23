@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.10.21
+Modified : 2019.10.23
 
 ---
 
@@ -11,9 +11,30 @@ Modified : 2019.10.21
 <br>
 
 
+# 2019.10.23
+
+- **E-Drive: 19.10.11**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 카드 코딩에서 Tail LED(브레이크 등) 제어 기능을 제거
+> - 브레이크 등은 모터 동작 여부에 따라 제어하도록 변경
+> - LED Manual 제어에서도 Tail LED는 조작하지 못하도록 차단
+> - E-Drone과 DataType의 Motion, Range 번호 순서를 맞추기 위헤 Altitude를 앞에 추가함
+> - 앞으로 PC 프로그램의 중복 개발을 줄이려고 함. 그에 따라 대상 장치에 상관없이 Protocol을 최대한 일치하게 만들 예정
+
+
+[Download](https://drive.google.com/open?id=1dOWQ5EMcpk83Iv28T_Zyc7CRnsVRFMj3)
+
+
+<br>
+
+---
+
+
 # 2019.10.21
 
-- E-Drive: 19.10.9
+- **E-Drive: 19.10.9**
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
@@ -30,8 +51,8 @@ Modified : 2019.10.21
 
 # 2019.10.18
 
-- E-Drive: 19.10.7
-- E-Drive BleServer: 19.10.16
+- **E-Drive: 19.10.7**
+- **E-Drive BleServer: 19.10.16**
 - E-Drive Tester: 19.9.1
 
 > - 버튼 짧게 누름으로 인식하는 시간을 300ms 이내에서 2초 이내로 변경
@@ -55,7 +76,7 @@ Modified : 2019.10.21
 
 # 2019.10.17
 
-- E-Drive: 19.10.6
+- **E-Drive: 19.10.6**
 - E-Drive BleServer: 19.10.14
 - E-Drive Tester: 19.9.1
 
@@ -77,7 +98,7 @@ Modified : 2019.10.21
 
 # 2019.10.16
 
-- E-Drive: 19.10.4
+- **E-Drive: 19.10.4**
 - E-Drive BleServer: 19.10.14
 - E-Drive Tester: 19.9.1
 
@@ -100,7 +121,7 @@ Modified : 2019.10.21
 
 # 2019.10.15
 
-- E-Drive: 19.10.3
+- **E-Drive: 19.10.3**
 - E-Drive BleServer: 19.10.14
 - E-Drive Tester: 19.9.1
 
@@ -117,7 +138,7 @@ Modified : 2019.10.21
 
 # 2019.10.11
 
-- E-Drive: 19.10.2
+- **E-Drive: 19.10.2**
 - E-Drive BleServer: 19.10.14
 - E-Drive Tester: 19.9.1
 
@@ -135,7 +156,7 @@ Modified : 2019.10.21
 
 # 2019.8.28
 
-- E-Drive: 19.8.3
+- **E-Drive: 19.8.3**
 
 > - 카드 코딩과 관련된 DataType의 위치 조정, 관련 송수신 클래스 조정
 
@@ -150,7 +171,7 @@ Modified : 2019.10.21
 
 # 2019.8.23
 
-- E-Drive: 19.8.2
+- **E-Drive: 19.8.2**
 
 > - ColorClassify 정의 추가 및 Drone7Card 프로그램에서 카드 분류 기준 값 변경가능하도록 수정함
 > - 라인 코딩시에도 CARDREADER에서 분류한 카드 값을 그대로 사용
@@ -166,7 +187,7 @@ Modified : 2019.10.21
 
 # 2019.8.8
 
-- E-Drive: 19.8.1
+- **E-Drive: 19.8.1**
 
 > - 배터리 알람 기준을 30%로 변경
 > - RawLineTracer에서 라인트레이서가 인식한 바닥 색상 값이 업데이트 안되는 문제 수정
@@ -182,7 +203,7 @@ Modified : 2019.10.21
 
 # 2019.7.26
 
-- E-Drive: 19.7.18
+- **E-Drive: 19.7.18**
 
 > - State에서 modeSystem을 modeDrone으로 변경
 > - 제어기 수정 사항 반영
@@ -199,7 +220,7 @@ Modified : 2019.10.21
 
 # 2019.7.25 - 2
 
-- E-Drive: 19.7.17
+- **E-Drive: 19.7.17**
 
 > - Instant run에서 비상등을 브레이크 등에서 좌우 깜빡이를 동시에 작동시키는 것으로 변경(깜빡임 계속 유지)
 > - Instant run에서 TailLight를 끌 때 좌우 깜빡이(비상등)도 끄게 함
@@ -216,7 +237,7 @@ Modified : 2019.10.21
 
 # 2019.7.25
 
-- E-Drive: 19.7.16
+- **E-Drive: 19.7.16**
 
 > - Low Battery 알림 추가
 > - 카드 코딩에서 TailLight를 끌 때 좌우 깜빡이(비상등)도 끄게 함
@@ -234,7 +255,7 @@ Modified : 2019.10.21
 
 # 2019.7.24
 
-- E-Drive: 19.7.15
+- **E-Drive: 19.7.15**
 
 > - 무한루프에서 버저 사용 시 1회 재생 후 버저가 완전 중단되는 문제 수정
 > - 버튼을 길게 눌러 카드 코딩 실행을 할 때 실행 준비가 되면 Buzzer에서 소리가 나게 함
@@ -252,7 +273,7 @@ Modified : 2019.10.21
 
 # 2019.7.23
 
-- E-Drive: 19.7.14
+- **E-Drive: 19.7.14**
 
 > - 버전 구성을 (Major, Minor, Build)에서 (Year, Month, Build)로 변경함. 제품 출시 전까지 적용해보고 문제가 없을 경우 이후 출시하는 다른 제품에도 적용할 예정. 문제가 있으면 이전 구성으로 복원할 계획임
 
