@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.10.23
+Modified : 2019.11.5
 
 ---
 
@@ -9,6 +9,36 @@ Modified : 2019.10.23
 
 
 <br>
+
+
+# 2019.11.5
+
+- **E-Drive: 19.11.14**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 사용자 정의 멜로디 기능 추가
+>   - 피아노 모드에서 저장한 멜로디를 카드 코딩에서 멜로디 호출 카드를 사용하여 재생할 수 있는 기능
+> - 사용자 정의 멜로디 변경 방법
+>   - 피아노 모드 전환
+>   - 멜로디 입력 시작 카드 읽기
+>   - 멜로디 입력
+>   - 멜로디 입력 끝 카드 읽기
+> - 피아노 모드에서 사용자 정의 멜로디 실행 방법
+>   - 멜로디 실행 카드 읽기
+>   - 3초 이상 눌렀다 떼기
+> - 현재 미묘하게 수정이 필요할 것으로 보이는 사항
+>   - 저장한 멜로디가 이어서 연주됨
+>   - 같은 음을 두 번 연주할 경우 하나의 음을 길게 연주한 것처럼 들림
+
+
+
+[Download](https://drive.google.com/open?id=1_hwX8KkXVlJ6yJm48oj35MfZ36MY5JBc)
+
+
+<br>
+
+---
 
 
 # 2019.10.23
@@ -24,7 +54,6 @@ Modified : 2019.10.23
 > - 브레이크등 밝기 조절
 > - E-Drone과 DataType의 Motion, Range 번호 순서를 맞추기 위헤 Altitude를 앞에 추가함
 > - 앞으로 PC 프로그램의 중복 개발을 줄이려고 함. 그에 따라 대상 장치에 상관없이 Protocol을 최대한 일치하게 만들 예정
-
 
 [Download](https://drive.google.com/open?id=1_hwX8KkXVlJ6yJm48oj35MfZ36MY5JBc)
 
