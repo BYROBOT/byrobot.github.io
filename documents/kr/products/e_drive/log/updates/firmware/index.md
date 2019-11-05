@@ -13,7 +13,7 @@ Modified : 2019.11.5
 
 # 2019.11.5
 
-- **E-Drive: 19.11.14**
+- **E-Drive: 19.11.15**
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
@@ -33,7 +33,7 @@ Modified : 2019.11.5
 
 
 
-[Download](https://drive.google.com/open?id=1_hwX8KkXVlJ6yJm48oj35MfZ36MY5JBc)
+[Download](https://drive.google.com/open?id=1vLFJRM5Y_luuOv7mYYZ7mWleZsLl8Rvv)
 
 
 <br>
