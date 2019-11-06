@@ -4,9 +4,9 @@
 
 <div align="center">
     <a href="/documents/kr/news/2019"><b>News</b></a><br>
+    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2019116">GO CAR 펌웨어 업데이트</a> <sup><i>2019.11.6</i></sup><br>
     <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2019115">GO CAR 펌웨어 업데이트</a> <sup><i>2019.11.5</i></sup><br>
     <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191023">GO CAR 펌웨어 업데이트</a> <sup><i>2019.10.23</i></sup><br>
-    <a href="/documents/kr/products/e_drive/">Products 페이지에 GO CAR 추가</a> <sup><i>2019.10.18</i></sup><br>
 </div>
 
 <div align="center">
@@ -83,4 +83,4 @@
 ---
 
 
-Modified : 2019.11.5
+Modified : 2019.11.6
