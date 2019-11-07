@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.11.6
+Modified : 2019.11.7
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.11.6
 
 
 <br>
+
+
+# 2019.11.7
+
+- **E-Drive: 19.11.19**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 10초 이상 버튼을 눌러서 센서를 초기화 할 때 LED 이벤트 수정
+
+
+
+[Download](https://drive.google.com/open?id=1W24I85kIh-wlCbyGgQei7dc5edpgv99w)
+
+
+<br>
+
+---
 
 
 # 2019.11.6
