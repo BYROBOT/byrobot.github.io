@@ -30,7 +30,7 @@
         <tr>
             <td rowspan="3"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">19.11.20</div></td>
+            <td><div align="center">19.11.21</div></td>
         </tr>
         <tr>
             <td><div align="center">BleServer</div></td>
