@@ -17,7 +17,7 @@ Modified : 2019.11.8
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
-> - 10초 이상 버튼을 눌러서 센서를 초기화 할 때의 LED 이벤트 수정
+> - 핸드팔로잉 제어 수정
 
 
 
