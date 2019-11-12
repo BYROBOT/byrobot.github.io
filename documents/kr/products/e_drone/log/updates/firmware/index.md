@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2019.5.7
+Modified : 2019.11.12
 
 ---
 
@@ -9,6 +9,29 @@ Modified : 2019.5.7
 
 
 <br>
+
+
+# 2019.11.12
+
+- **Drone: 1.1.24**
+- **Controller: 1.1.25**
+
+> - 리턴 홈에서 착륙 기능 제거
+> - 조종 화면에서 Version 화면도 ON/OFF 선택 가능하게 함
+> - 조종 화면에 Count 화면 추가
+> - 조종 화면에 Card 화면 추가(카드 코딩이 가능한 코딩 드론용)
+> - 색상 변화 타입을 21가지에서 7가지로 변경
+> - 생명게임 동작 모드 제거
+> - 축구 드론 조종 시 착륙 상태에서만 색상 변경하게 함
+> - 비행 제어에 Manual 모드 선택 기능 추가(축구드론 용)
+
+
+[Download](https://drive.google.com/open?id=1yap7IGBC3BWZFCwXfZolURP5CUHIZS2w)
+
+
+<br>
+
+---
 
 
 # 2019.4.26

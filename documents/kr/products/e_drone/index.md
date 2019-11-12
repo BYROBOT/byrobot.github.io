@@ -30,19 +30,19 @@
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">1.1.17</div></td>
+            <td><div align="center">1.1.24</div></td>
         </tr>
         <tr>
             <td><div align="center">Controller</div></td>
-            <td><div align="center">1.1.16</div></td>
+            <td><div align="center">1.1.25</div></td>
         </tr>
         <tr>
             <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.4.26</div></td>
+            <td colspan="2"><div align="center">2019.11.12</div></td>
         </tr>
         <tr>
             <td><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1V_ls69gItraiXnH2Aeun7qFl7Qzcj2yd" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1yap7IGBC3BWZFCwXfZolURP5CUHIZS2w" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td><div align="center">Update Log</div></td>
@@ -131,4 +131,4 @@
 
 ---
 
-Modified : 2019.9.23
+Modified : 2019.11.12
