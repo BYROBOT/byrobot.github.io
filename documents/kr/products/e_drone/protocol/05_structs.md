@@ -425,6 +425,7 @@ namespace Protocol
 |             | [System::FlightEvent::Type](04_definitions.md#FlightEvent)              |          | -       |              |
 |             | [Headless::Type](04_definitions.md#Headless)                            |          | -       |              |
 |             | [System::Trim::Type](04_definitions.md#Trim)                            |          | -       |              |
+|             | [Mode::Controller::Type](04_definitions.md#Mode_Controller)             |          | -       |              |
 |             | uint8_t                                                                 |          | -       |              |
 
 

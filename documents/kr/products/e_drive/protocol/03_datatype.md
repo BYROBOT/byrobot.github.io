@@ -55,6 +55,7 @@ namespace Protocol
             State                       = 0x40,     // 상태(비행 모드, 방위기준, 배터리량)
             Attitude,                               // 자세(Angle)(Attitude)
             Position,                               // 위치
+            Altitude,                               // 고도(자동차에서는 사용하지 않음)
             Motion,                                 // Motion 센서 데이터 처리한 값(IMU)
             Range,                                  // 거리센서 데이터
 

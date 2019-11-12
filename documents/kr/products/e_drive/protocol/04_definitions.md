@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.9.2
+Modified : 2019.11.12
 
 ---
 
@@ -34,7 +34,7 @@ namespace Protocol
             ClearTrim               = 0x03,     // 트림 초기화
             DriveEvent              = 0x04,     // 주행 이벤트 실행
 
-            SetDefault              = 0x0F,     // 기본 설정으로 초기화
+            SetDefault              = 0x08,     // 기본 설정으로 초기화
 
             // 통신[Bluetooth]
             BluetoothSystemEvent    = 0xB0,     // 블루투스 시스템 이벤트
@@ -74,35 +74,36 @@ namespace ModelNumber
         None = 0,
 
         //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
-        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1 (Lightrone / GD65 / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding)
-        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2 (Soccer Drone / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
-        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3 (GD240 / HW2181 / Keil / power button / u30 flow / 3.7v / geared motor / barometer)
-        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4 (GD50N / HW2181 / Keil / power button / 3.7v / barometer)
-        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5 (GD30 / HW2181 / Keil / 3.7v / nomal binding)
-        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6 (Soccer Drone 2 / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1
+        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2
+        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3
+        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4
+        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5
+        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6
 
         Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
         Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
+        Drone_3_Controller_P3   = 0x00032003,   // Drone_3_Controller_P3 / small size + USB
 
-        Drone_4_Drone_P4        = 0x00041004,   // Drone_4_Drone_P4
         Drone_4_Drone_P5        = 0x00041005,   // Drone_4_Drone_P5
 
-        Drone_4_Controller_P1   = 0x00042001,   // Drone_4_Controller_P1
-        Drone_4_Controller_P2   = 0x00042002,   // Drone_4_Controller_P2	// 진동 모터 회로 수정
+        Drone_4_Controller_P2   = 0x00042002,   // Drone_4_Controller_P2
 
         Drone_4_Link_P0         = 0x00043000,   // Drone_4_Link_P0
 
-        Drone_4_Tester_P2       = 0x0004A002,   // Drone_4_Tester_P2
-        Drone_4_Monitor_P2      = 0x0004A102,   // Drone_4_Monitor_P2
+        Drone_4_Tester_P4       = 0x0004A004,   // Drone_4_Tester_P4
+        Drone_4_Monitor_P4      = 0x0004A104,   // Drone_4_Monitor_P4
 
         Drone_7_Drone_P2        = 0x00071002,   // Drone_7_Drone_P2
         Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
         Drone_7_BleServer_P2    = 0x00073302,   // Drone_7_BleServer_P2
 
-        Drone_7_Tester_P4       = 0x0007A004,   // Drone_7_Tester_P4
-        Drone_7_Monitor_P4      = 0x0007A104,   // Drone_7_Monitor_P4
+        Drone_7_Tester_P5       = 0x0007A005,   // Drone_7_Tester_P5
+        Drone_7_Monitor_P5      = 0x0007A105,   // Drone_7_Monitor_P5
 
-        Drone_8_Drone_P0        = 0x00081000,   // Drone_8_Drone_P0
+        Drone_8_Drone_P1        = 0x00081001,   // Drone_8_Drone_P1
+
+        Drone_8_Tester_P4       = 0x0008A004,   // Drone_8_Tester_P4
     };
 }
 ```
@@ -222,14 +223,15 @@ namespace Mode
     {
         enum Type
         {
-            None = 0,
+            None            = 0,
 
-            Boot,               // 부팅
-            Start,              // 시작 코드 실행
-            Running,            // 메인 코드 동작
-            ReadyToReset,       // 리셋 대기(1초 뒤 리셋)
-            Error,              // 오류
-
+            Boot            = 0x10,     // 부팅
+            Start,                      // 시작 코드 실행
+            Running,                    // 메인 코드 동작
+            ReadyToReset,               // 리셋 대기(1초 뒤 리셋)
+            
+            Error           = 0xA0,     // 오류
+            
             EndOfType
         };
     }
@@ -245,30 +247,33 @@ namespace Mode
 <a name="Mode_Drone"></a>
 ## Mode::Drone::Type
 
-주행 제어기 동작 상태
+드론 모드
 
 ```cpp
 namespace Mode
 {
-    namespace Drive
+    namespace Drone
     {
         enum Type
         {
-            None,           // 없음
-            
-            Drive,          // RemoteControl - 원격 조종
-            Card,           // CardCoding - 카드 코딩
-            LineTracer,     // LineTracer - 라인 트레이서
-            Piano,          // Piano - 피아노 모드
-            
-            Link,           // Link - 중계기
-            
-            Error,          // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
-            
+            None,                       // 없음
+
+            Drive           = 0x10,     // 원격 조종
+            Card,                       // 카드 코딩
+            Motion,                     // 모션 코딩
+            Maze,                       // 미로 찾기
+            Random,                     // 랜덤
+            HandFollowing,              // 핸드 팔로잉
+            LineTracer,                 // 라인 트레이서
+            Piano,                      // 피아노 모드
+
+            Link            = 0x80,     // 중계기
+
+            Error           = 0xA0,     // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
+
             EndOfType
         };
     }
-    
 }
 ```
 
@@ -280,7 +285,7 @@ namespace Mode
 <a name="Mode_Drive"></a>
 ## Mode::Drive::Type
 
-주행 제어기 동작 상태
+주행 모드
 
 ```cpp
 namespace Mode
@@ -289,24 +294,23 @@ namespace Mode
     {
         enum Type
         {
-            None = 0,
-            
-            Ready           = 0x10,     // 준비
-            
-            Start,                      // 출발
-            Drive,                      // 주행
-            
-            Stop            = 0x20,     // 강제 정지
-            
-            Accident        = 0x30,     // 사고 (Ready로 자동전환)
-            Error,                      // 오류
-            
-            Test            = 0x40,     // 테스트 모드
+            None        = 0x00,     // 없음
+
+            Ready       = 0x10,     // 준비
+
+            Start,                  // 출발
+            Drive,                  // 주행
+
+            Stop        = 0x20,     // 강제 정지
+
+            Accident    = 0x30,     // 사고 (Ready로 자동전환)
+            Error,                  // 오류
+
+            Test        = 0x40,     // 테스트 모드
 
             EndOfType
         };
     }
-    
 }
 ```
 

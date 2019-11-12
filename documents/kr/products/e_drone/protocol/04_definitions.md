@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.9.2
+Modified : 2019.11.12
 
 ---
 
@@ -30,18 +30,20 @@ namespace Protocol
             None                = 0x00,     // 이벤트 없음
 
             Stop                = 0x01,     // 정지
-            
+
             ModeControlFlight   = 0x02,     // 비행 제어 모드 설정
             Headless            = 0x03,     // 헤드리스 모드 설정
             ControlSpeed        = 0x04,     // 제어 속도 설정
-            
+
             ClearBias           = 0x05,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
             ClearTrim           = 0x06,     // 트림 초기화
 
             FlightEvent         = 0x07,     // 비행 이벤트 실행
 
             SetDefault          = 0x08,     // 기본 설정으로 초기화
-            
+            Backlight           = 0x09,     // 조종기 백라이트 설정
+            ModeController      = 0x0A,     // 조종기 동작 모드
+
             EndOfType
         };
     }
@@ -71,9 +73,11 @@ namespace ModelNumber
         Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3
         Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4
         Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5
+        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6
 
         Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
         Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
+        Drone_3_Controller_P3   = 0x00032003,   // Drone_3_Controller_P3 / small size + USB
 
         Drone_4_Drone_P5        = 0x00041005,   // Drone_4_Drone_P5
 
@@ -85,8 +89,15 @@ namespace ModelNumber
         Drone_4_Monitor_P4      = 0x0004A104,   // Drone_4_Monitor_P4
 
         Drone_7_Drone_P2        = 0x00071002,   // Drone_7_Drone_P2
+        Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
+        Drone_7_BleServer_P2    = 0x00073302,   // Drone_7_BleServer_P2
+
+        Drone_7_Tester_P5       = 0x0007A005,   // Drone_7_Tester_P5
+        Drone_7_Monitor_P5      = 0x0007A105,   // Drone_7_Monitor_P5
 
         Drone_8_Drone_P1        = 0x00081001,   // Drone_8_Drone_P1
+
+        Drone_8_Tester_P4       = 0x0008A004,   // Drone_8_Tester_P4
     };
 }
 ```
@@ -264,6 +275,73 @@ namespace Mode
 
             Error       = 0xA0,     // 오류
 
+            EndOfType
+        };
+    }
+    
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Mode_Drone"></a>
+## Mode::Drone::Type
+
+드론 모드
+
+```cpp
+namespace Mode
+{
+    namespace Drone
+    {
+        enum Type
+        {
+            None,                   // 없음
+            
+            Flight      = 0x10,     // 비행
+            Card,                   // CardCoding - 카드 코딩
+            Piano,                  // Piano - 피아노 모드
+            
+            Link        = 0x80,     // Link - 중계기
+            
+            Error       = 0xA0,     // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
+            
+            EndOfType
+        };
+    }
+    
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Mode_Controller"></a>
+## Mode::Controller::Type
+
+조종기 모드
+
+```cpp
+namespace Mode
+{
+    namespace Controller
+    {
+        enum Type
+        {
+            None,                   // 없음
+            
+            Control     = 0x10,     // 조종
+            Setup,                  // 설정
+            
+            Link        = 0x80,     // 링크
+            
+            Error       = 0xA0,     // 오류
+            
             EndOfType
         };
     }
