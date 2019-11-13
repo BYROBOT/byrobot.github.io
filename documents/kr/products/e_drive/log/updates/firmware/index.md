@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.11.8
+Modified : 2019.11.13
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2019.11.8
 
 
 <br>
+
+
+# 2019.11.13
+
+- **E-Drive: 19.11.23**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 색 분류 기준을 카드 코딩과 라인 코딩에 다르게 적용되도록 분리함
+
+
+
+[Download](https://drive.google.com/open?id=1fi1nMVQRBYUPs7IUX5c0W4l8ukZe-BWR)
+
+
+<br>
+
+---
 
 
 # 2019.11.8
