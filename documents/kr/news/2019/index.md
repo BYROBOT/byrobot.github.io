@@ -2,9 +2,9 @@
 
 ---
 
-- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191118">GO CAR 펌웨어 업데이트</a> <sup><i>2019.11.18</i></sup><b
+- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191118">GO CAR 펌웨어 업데이트</a> <sup><i>2019.11.18</i></sup><br>
 
-- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191113">GO CAR 펌웨어 업데이트</a> <sup><i>2019.11.13</i></sup><b
+- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191113">GO CAR 펌웨어 업데이트</a> <sup><i>2019.11.13</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-20191112">E-DRONE 펌웨어 업데이트</a> <sup><i>2019.11.12</i></sup><br>
 
