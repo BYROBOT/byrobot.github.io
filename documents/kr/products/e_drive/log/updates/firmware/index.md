@@ -17,8 +17,10 @@ Modified : 2019.11.19
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
-> - ColorClassify 를 Front, Rear, Line 세가지로 구분해서 사용하게 함
+> - 색상 구분 경계 값 기준을 Front, Rear, Line 세 가지로 구분해서 사용하게 함
 > - 위의 변경으로 Drone7Card 프로그램이 이전 버전의 펌웨어와 호환되지 않음
+> - 색상 구분 경계 값 측정 실행 중 자동차를 45도 이상 기울이면 동작이 중단됨
+> - 색상 구분 경계 값 측정 실행 중 지정한 색상 범위를 크게 벗어나는 경우 Error로 처리하게 함
 
 
 
