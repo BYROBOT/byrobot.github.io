@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.11.18
+Modified : 2019.11.19
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2019.11.18
 
 
 <br>
+
+
+# 2019.11.19
+
+- **E-Drive: 19.11.33**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - ColorClassify 를 Front, Rear, Line 세가지로 구분해서 사용하게 함
+> - 위의 변경으로 Drone7Card 프로그램이 이전 버전의 펌웨어와 호환되지 않음
+
+
+
+[Download](https://drive.google.com/open?id=1NRZiF2qcRCESBjZgiRyL69bK0CwmGTun)
+
+
+<br>
+
+---
 
 
 # 2019.11.18
