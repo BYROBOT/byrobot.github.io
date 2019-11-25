@@ -12,7 +12,7 @@ Modified : 2018.3.6
 
 # 1. PETRONE V2 소개
 
-**PETRONE V2**는 Petrone의 통신 모듈을 변경하고, 조종기를 붙인 버젼입니다.
+**PETRONE V2**는 Petrone의 통신 모듈을 변경하고, 조종기를 붙인 버전입니다.
 
 
 <br>

@@ -39,7 +39,7 @@ Petrone은 앱에서 펌웨어 업데이트를 진행하므로 여기에서는 *
 </div>
 <br>
 
-<b>(2) 펌웨어를 선택합니다. 여기에서는 최신 버젼인 '17b'를 선택하였습니다.</b>
+<b>(2) 펌웨어를 선택합니다. 여기에서는 최신 버전인 '17b'를 선택하였습니다.</b>
 
 <div align="center">
     <img src="./images/0_link_3_combobox.jpg" alt="combobox">

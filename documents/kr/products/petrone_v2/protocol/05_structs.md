@@ -173,7 +173,7 @@ namespace Protocol
         u8      modeUpdate;     // 현재 업데이트 모드
 
         u32     deviceType;     // 장치 타입
-        u32     imageVersion;   // 현재 펌웨어의 버젼
+        u32     imageVersion;   // 현재 펌웨어의 버전
 
         u16     year;           // 빌드 년
         u8      month;          // 빌드 월
@@ -186,7 +186,7 @@ namespace Protocol
 |:-------------:|:-------------------------------------------------------------------:|:----:|:--------:|:--------------------|
 | modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | -    | 1 Byte   | 업데이트 진행 상황  |
 | deviceType    | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType) | -    | 1 Byte   | 장치의 타입         |
-| version       | [Protocol::Version](#Protocol_Version)                              | -    | 4 Byte   | 펌웨어의 버젼       |
+| version       | [Protocol::Version](#Protocol_Version)                              | -    | 4 Byte   | 펌웨어의 버전       |
 | year          | uint16_t                                                            | -    | 2 Byte   | 펌웨어 빌드 년      |
 | month         | uint8_t                                                             | -    | 1 Byte   | 펌웨어 빌드 월      |
 | day           | uint8_t                                                             | -    | 1 Byte   | 펌웨어 빌드 일      |
@@ -199,9 +199,9 @@ namespace Protocol
 <a name="Protocol_Version"></a>
 ## Protocol::Version
 
-펌웨어 버젼
+펌웨어 버전
 
-버젼 비교 시 v 값으로 비교할 수 있도록 struct 내부의 변수 배치 순서를 다른 구조체들과 다르게 역순으로 배열하였습니다.
+버전 비교 시 v 값으로 비교할 수 있도록 struct 내부의 변수 배치 순서를 다른 구조체들과 다르게 역순으로 배열하였습니다.
 
 ```cpp
 namespace Protocol

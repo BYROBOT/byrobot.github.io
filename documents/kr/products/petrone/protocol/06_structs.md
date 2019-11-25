@@ -531,7 +531,7 @@ namespace Protocol
 
         u32     deviceType;     // 장치 Type
         u8      imageType;      // 현재 펌웨어의 이미지 타입
-        u16     imageVersion;   // 현재 펌웨어의 버젼
+        u16     imageVersion;   // 현재 펌웨어의 버전
 
         u8      year;           // 빌드 년
         u8      month;          // 빌드 월

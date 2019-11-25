@@ -331,9 +331,9 @@ class Message():
 <a name="Version"></a>
 ## Version
 
-버젼
+버전
 
-펌웨의 버젼
+펌웨의 버전
 
 ```py
 class Version(ISerializable):
@@ -343,7 +343,7 @@ class Version(ISerializable):
         self.minor          = 0
         self.major          = 0
 
-        self.v              = 0         # build, minor, major을 하나의 UInt32로 묶은 것(버젼 비교 시 사용)
+        self.v              = 0         # build, minor, major을 하나의 UInt32로 묶은 것(버전 비교 시 사용)
 ```
 
 | 변수 이름  | 형식         | 크기     | 범위       | 설명         |
@@ -408,7 +408,7 @@ class Information(ISerializable):
 |:-------------:|:-----------------------------------------:|:--------:|:----:|:--------------------|
 | modeUpdate    | [ModeUpdate](02_system.md#ModeUpdate)     | 1 Byte   | -    | 업데이트 진행 상황  |
 | modelNumber   | [ModelNumber](02_system.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
-| version       | [Version](#Version)                       | 4 Byte   | -    | 펌웨어의 버젼       |
+| version       | [Version](#Version)                       | 4 Byte   | -    | 펌웨어의 버전       |
 | year          | UInt16                                    | 2 Byte   | -    | 펌웨어 빌드 년      |
 | month         | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 월      |
 | day           | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 일      |

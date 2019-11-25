@@ -40,7 +40,7 @@ namespace Updater
         u8      month;          // 펌웨어 배포일[월 1byte]
         u8      day;            // 펌웨어 배포일[일 1byte
 
-        u16     version;        // 펌웨어 버젼[2byte]
+        u16     version;        // 펌웨어 버전[2byte]
         u8      imageType;      // 펌웨어 이미지 타입[1byte]
         u32     deviceType;     // 업데이트 대상 장치[4byte]
     };
