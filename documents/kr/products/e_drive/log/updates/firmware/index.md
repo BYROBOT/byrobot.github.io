@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.11.25
+Modified : 2019.11.27
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2019.11.25
 
 
 <br>
+
+
+# 2019.11.27
+
+- **E-Drive: 19.11.43**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - Protocol::DataType::Motor 를 받으면 제어기에서 모터 제어 중단
+> - Protocol::DataType::Control 을 받으면 제어기에서 모터 제어 재개
+> - 등록되지 않은 장치에 대한 제어기 모터 제어 중단
+> - 등록되지 않은 장치는 주기적으로 LED를 빠르게 깜빡이게 함
+
+
+
+[Download](https://drive.google.com/open?id=1bH0oQn7j-nLh9PBFTTVNLBKMjxDENAwp)
+
+
+<br>
+
+---
 
 
 # 2019.11.21
