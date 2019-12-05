@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.12.5
+Modified : 2019.12.6
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2019.12.5
 
 
 <br>
+
+
+# 2019.12.6
+
+- **E-Drive: 19.12.11**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 라인코딩 좌우 회전 속도 올림
+> - 라인코딩 길 찾았다고 판단하는 기준 값 변경
+
+
+
+[Download](https://drive.google.com/open?id=1TvyIUcWJjGU18Mf-O7ZCxJ1K-JFmCC-p)
+
+
+<br>
+
+---
 
 
 # 2019.12.5
