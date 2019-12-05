@@ -29,7 +29,7 @@
         </tr>
         <tr>
             <td rowspan="3"><div align="center">Version</div></td>
-            <td><div align="center">Drone</div></td>
+            <td><div align="center">Car</div></td>
             <td><div align="center">19.12.8</div></td>
         </tr>
         <tr>
