@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.11.27
+Modified : 2019.12.5
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2019.11.27
 
 
 <br>
+
+
+# 2019.12.5
+
+- **E-Drive: 19.12.8**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 라인코딩 좌우 회전, 유턴 동작 개선
+> - 라인코딩 처음 라인 찾기 동작 시 움직임 기준을 시간에서 각도로 변경
+> - 라인코딩 길을 잃어버렸을 때 길찾기 방법 변경
+> - 라인코딩 길을 잃어버렸다고 판단하는 기준 변경
+
+
+
+[Download](https://drive.google.com/open?id=1PYiF99FqjqVIoxtS9qY0JJuyX0ZHx0IT)
+
+
+<br>
+
+---
 
 
 # 2019.11.27
