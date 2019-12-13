@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.12.6
+Modified : 2019.12.13
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2019.12.6
 
 
 <br>
+
+
+# 2019.12.13
+
+- **E-Drive: 19.12.27**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 라인코딩 업데이트
+>   - 12mm 스티커에 최적화
+> - 핸드팔로잉 업데이트
+>   - 조향, 속도 조절 수정
+
+
+
+[Download](https://drive.google.com/open?id=11APu03pQTtA0mbimruGhu22Xi1iai0gU)
+
+
+<br>
+
+---
 
 
 # 2019.12.6
