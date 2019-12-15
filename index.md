@@ -6,7 +6,7 @@
 <br>
 <br>
 <br>
-<h1>BYROBOT</h1>
+<img src="/assets/images/products/byrobot_text.png" alt="BYROBOT">
 <br>
 <br>
 <br>
