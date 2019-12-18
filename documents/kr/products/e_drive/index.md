@@ -30,7 +30,7 @@
         <tr>
             <td rowspan="3"><div align="center">Version</div></td>
             <td><div align="center">Car</div></td>
-            <td><div align="center">19.12.35</div></td>
+            <td><div align="center">19.12.36</div></td>
         </tr>
         <tr>
             <td><div align="center">BleServer</div></td>
@@ -135,4 +135,4 @@
 
 ---
 
-Modified : 2019.12.18
+Modified : 2019.12.19

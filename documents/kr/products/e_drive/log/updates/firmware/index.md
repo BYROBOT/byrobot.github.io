@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.12.18
+Modified : 2019.12.19
 
 ---
 
@@ -13,7 +13,7 @@ Modified : 2019.12.18
 
 # 2019.12.18
 
-- **E-Drive: 19.12.35**
+- **E-Drive: 19.12.36**
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
