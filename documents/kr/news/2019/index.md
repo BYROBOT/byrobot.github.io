@@ -2,6 +2,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191218">GO CAR 펌웨어 업데이트</a> <sup><i>2019.12.18</i></sup><br>
+
 - <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-20191213">GO CAR 펌웨어 업데이트</a> <sup><i>2019.12.13</i></sup><br>
 
 - <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2019126">GO CAR 펌웨어 업데이트</a> <sup><i>2019.12.6</i></sup><br>
@@ -77,4 +79,4 @@
 ---
 
 
-Modified : 2019.12.13
+Modified : 2019.12.18
