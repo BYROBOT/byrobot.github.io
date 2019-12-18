@@ -13,7 +13,7 @@ Modified : 2019.12.18
 
 # 2019.12.18
 
-- **E-Drive: 19.12.33**
+- **E-Drive: 19.12.34**
 - E-Drive BleServer: 19.10.16
 - E-Drive Tester: 19.9.1
 
