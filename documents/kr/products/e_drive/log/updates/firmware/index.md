@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.12.19
+Modified : 2019.12.24
 
 ---
 
@@ -9,6 +9,36 @@ Modified : 2019.12.19
 
 
 <br>
+
+
+# 2019.12.24
+
+- **E-Drive: 19.12.40**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 자동 거리센서 캘리브레이션 기능 추가
+>   - White/Green 카드 사용 시 자동 거리센서 캘리브레이션 모드로 전환(임시로 부여한 기능)
+>   - 자동 거리센서 캘리브레이션 모드로 전환 후 자동차 바로 앞에 흰색의 평평한 장애물을 두고 캘리브레이션을 시작
+>   - 자동차가 뒤로 이동하면서 좌우 거리 센서의 값을 측정하여 자동으로 차이를 보정
+> - 자동 컬러 캘리브레이션 기능 추가
+>   - White/Cyan 카드 사용 시 자동 컬러 캘리브레이션 모드로 전환(임시로 부여한 기능)
+>   - White, Black, Red, Yellow, Green, Cyan, Blue, Magenta 색상을 차례로 이동하며 색상 캘리브레이션
+> - 버튼 연속 입력 시 동작하는 특수 기능 
+>   - 5번 : 모션 센서 캘리브레이션
+>   - 6번 : 자동 거리 센서 캘리브레이션
+>   - 7번 : 컬러 수동 캘리브레이션
+>   - 8번 : 자동 컬러 캘리브레이션
+>   - 9번 : 데이터 초기화
+
+
+
+[Download](https://drive.google.com/open?id=1mdhYNh9hQLwdtGzKXDECp5IzYiqKXZ7p)
+
+
+<br>
+
+---
 
 
 # 2019.12.18
