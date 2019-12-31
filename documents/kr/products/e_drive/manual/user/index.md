@@ -203,7 +203,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>카드 입력 시작</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>카드 입력 종료</td></tr>
-        <tr><td bgcolor="yellow"></td><td>함수 입력 시작</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>함수 입력 시작</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>함수 입력 종료</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>함수 호출</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>멜로디 호출</td></tr>
@@ -211,11 +211,11 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <tr><td style="background-color:#000000"></td><td>1초 기다림</td></tr>
     <tr>
         <td rowspan="8"><div align="center">RGB LED</div></td>
-        <td rowspan="8" bgcolor="yellow"></td>
+        <td rowspan="8" style="background-color:#FFFF00"></td>
         <td style="background-color:#FFFFFF"></td><td>흰색</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>빨강</td></tr>
-        <tr><td bgcolor="yellow"></td><td>노랑</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>노랑</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>초록</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>하늘</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>파랑</td></tr>
@@ -227,7 +227,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>상향등</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>비상등</td></tr>
-        <tr><td bgcolor="yellow"></td><td>전조등</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>전조등</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>좌회전 신호</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>우회전 신호</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>정지등</td></tr>
@@ -239,7 +239,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>전진</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>1 블럭 전진</td></tr>
-        <tr><td bgcolor="yellow"></td><td>유턴</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>유턴</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>좌회전</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>우회전</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>1 블럭 후진</td></tr>
@@ -251,7 +251,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>장애물 발견 시(If)</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>바닥 빨간색을 발견 시(If)</td></tr>
-        <tr><td bgcolor="yellow"></td><td>바닥 노란색을 발견 시(If)</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>바닥 노란색을 발견 시(If)</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>바닥 초록색을 발견 시(If)</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>바닥 하늘색을 발견 시(If)</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>바닥 파란색을 발견 시(If)</td></tr>
@@ -263,7 +263,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>무한 반복</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>2회 반복</td></tr>
-        <tr><td bgcolor="yellow"></td><td>3회 반복</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>3회 반복</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>4회 반복</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>5회 반복</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>10회 반복</td></tr>
@@ -275,7 +275,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>도설정값 초기화 및 모션 센서 캘리브레이션</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>레</td></tr>
-        <tr><td bgcolor="yellow"></td><td>미</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>미</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>파</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>솔</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>라</td></tr>
@@ -301,7 +301,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>사용자 정의 멜로디 입력 시작</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>사용자 정의 멜로디 입력 종료</td></tr>
-        <tr><td bgcolor="yellow"></td><td>멜로디 1</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>멜로디 1</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>멜로디 2</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>멜로디 3</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>저장한 멜로디 실행</td></tr>
@@ -309,11 +309,11 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <tr><td style="background-color:#000000"></td><td>쉼표 1초</td></tr>
     <tr>
         <td rowspan="8"><div align="center">3 Octave Sharp</div></td>
-        <td rowspan="8" bgcolor="yellow"></td>
+        <td rowspan="8" style="background-color:#FFFF00"></td>
         <td style="background-color:#FFFFFF"></td><td>C#</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>D#</td></tr>
-        <tr><td bgcolor="yellow"></td><td>-</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>-</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>F#</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>G#</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>A#</td></tr>
@@ -325,7 +325,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>C</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>D</td></tr>
-        <tr><td bgcolor="yellow"></td><td>E</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>E</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>F</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>G</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>A</td></tr>
@@ -337,7 +337,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>C#</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>D#</td></tr>
-        <tr><td bgcolor="yellow"></td><td>-</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>-</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>F#</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>G#</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>A#</td></tr>
@@ -349,7 +349,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>C</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>D</td></tr>
-        <tr><td bgcolor="yellow"></td><td>E</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>E</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>F</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>G</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>A</td></tr>
@@ -361,7 +361,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>C#</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>D#</td></tr>
-        <tr><td bgcolor="yellow"></td><td>-</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>-</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>F#</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>G#</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>A#</td></tr>
@@ -373,7 +373,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#FFFFFF"></td><td>C</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>D</td></tr>
-        <tr><td bgcolor="yellow"></td><td>E</td></tr>
+        <tr><td style="background-color:#FFFF00"></td><td>E</td></tr>
         <tr><td style="background-color:#00FF00"></td><td>F</td></tr>
         <tr><td style="background-color:#00FFFF"></td><td>G</td></tr>
         <tr><td style="background-color:#0000FF"></td><td>A</td></tr>
