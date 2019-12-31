@@ -4,7 +4,7 @@ Modified : 2019.3.11
 
 ---
 
-<h3>E-Drive 사용자 설명서</h3>
+<h3>GO CAR 사용자 설명서</h3>
 
 ---
 
@@ -14,12 +14,12 @@ Modified : 2019.3.11
 <br>
 
 
-# 1. 드론
+# 1. 자동차
 
 
 ## 1.1. 좌표계
 
-E-Drone은 오른손 좌표계를 사용하고 있습니다.
+GO CAR 는 오른손 좌표계를 사용하고 있습니다.
 
 | 좌표축  | +        | -        |
 |:-------:|:--------:|:--------:|
@@ -36,777 +36,205 @@ E-Drone은 오른손 좌표계를 사용하고 있습니다.
 
 <br>
 
+
+
+## 1.2 동작 모드
+
+GO CAR 는 여러 동작 모드를 가지고 있습니다.
+
+| 이름                          | 설명                                                                                                      |
+|------------------------------:|:----------------------------------------------------------------------------------------------------------|
+| 조종                          | 앱으로 자동차를 사용할 때 동작하는 모드입니다                                                             |
+| 카드 코딩                     | 카드 코딩 모드입니다. 자동차를 켰을 때 처음 시작하는 모드입니다                                           |
+| 모션 코딩                     | 자동차를 앞, 뒤, 좌, 우 방향으로 기울여서 코딩하는 모드입니다                                             |
+| 핸드 팔로잉                   | 자동차가 정면의 장애물과 일정 거리를 유지하면서 움직이게 하는 모드입니다                                  |
+| 라인 코딩                     | 자동차가 바닥의 두꺼운 검정 선을 따라다니며 바닥의 둥근 색깔 스티커를 인식하여 특정한 동작을 합니다       |
+| 수동 컬러 캘리브레이션        | 검정, 흰색, 빨강, 노랑, 초록, 하늘, 파랑, 자홍 색을 차례로 눌러서 카드 색상을 잘 인식할 수 있게 합니다    |
+| 자동 컬러 캘리브레이션        | 검정, 흰색, 빨강, 노랑, 초록, 하늘, 파랑, 자홍 색 영역을 차례로 이동하며 색상을 자동으로 인식합니다       |
+| 자동 거리 센서 캘리브레이션   | 장애물과 완전히 밀착한 상태에서 뒤로 이동하며 양쪽 거리 센서의 출력값 차이를 보정합니다                   |
+
+
+
 <br>
 
 
 
-# 2. 조종기
+## 1.3 버튼
 
+GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집니다.
+이 버튼을 누르는 횟수에 따라 정해진 명령을 실행합니다.
 
-## 2.1 조종기 화면 구성
-
-E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구성되어 있습니다.
-
-<div align="center">
-    <img src="./images/display_control.jpg" alt="control"><br>
-    〈조종 화면〉
-</div>
-
-조종 화면에서는 드론 조종, 트림 설정, 상태 확인 등을 할 수 있습니다.
-
-<br>
-
-<div align="center">
-    <img src="./images/display_setup.jpg" alt="setup"><br>
-    〈설정 화면〉
-</div>
-
-설정 화면에서는 드론 설정 변경, 상태 확인 등을 할 수 있습니다.
 
 <br>
 
 
-## 2.2 조종 화면 세부 구성
+### 1.3.1. 기본 동작
+
+| 횟수    | 동작                                                            |
+|:-------:|:----------------------------------------------------------------|
+| 1       | 카드 읽기                                                       |
+| 2       | 실행                                                            |
+| 3       | 흰색, 검정색 카드를 각각 읽어서 R, G, B 색 범위 캘리브레이션    |
+| 4       | 자동차 바닥 색상에 따라 동작 실행(아래에 상세 설명)             |
+| 5       | 자동 거리 센서 캘리브레이션                                     |
+| 6       | 수동 컬러 캘리브레이션                                          |
+| 7       | 자동 컬러 캘리브레이션                                          |
+| 8       | -                                                               |
+| 9       | 설정값 초기화 및 모션 센서 캘리브레이션                         |
+
 
 <br>
 
-### 2.2.1. 높이-자세-RPM
+
+### 1.3.2. 버튼을 4회 눌렀을 때 바닥 색상에 따른 동작 실행
+
+| 바탕 색상(앞/뒤)  | 동작                                      |
+|:-----------------:|:------------------------------------------|
+| 흰색 / 흰색       | 자동 컬러 캘리브레이션                    |
+| 흰색 / 검정       | 거리 센서 캘리브레이션                    |
+| 검정 / 흰색       | 설정값 초기화 및 모션 센서 캘리브레이션   |
+| 검정 / 검정       | 수동 컬러 캘리브레이션                    |
+
+<br>
+
+
+## 1.4. 카드
+
 
 <table>
     <tr>
         <td>
             <div align="center">
-                <a href="./images/drone4controller_1.png" target="_blank"><img src="./images/drone4controller_1.png"></a>
+                분류
             </div>
         </td>
         <td>
             <div align="center">
-                <a href="./images/drone4controller_1_desc.png" target="_blank"><img src="./images/drone4controller_1_desc.png"></a>
+                앞
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                뒤
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                기본 동작(1회 누름)
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                3회 누름
+            </div>
+        </td>
+        <td>
+            <div align="center">
+                4회 누름
             </div>
         </td>
     </tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="white"></td>
+        <td bgcolor="white"></td><td></td><td>카드 최대 밝기 설정</td><td>자동 컬러 캘리브레이션</td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카드 코딩</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모션 코딩</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td> - </td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td> - </td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸드 팔로잉</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라인 트레이서 모드</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피아노 모드</td><td></td><td>거리 센서 캘리브레이션</td></tr>
+    <tr>
+        <td rowspan="8">기능</td>
+        <td rowspan="8" bgcolor="red"></td>
+        <td bgcolor="white"></td><td>카드 입력 시작</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카드 입력 종료</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>함수 입력 시작</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>함수 입력 종료</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>함수 호출</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="yellow"></td>
+        <td bgcolor="white"></td><td>카</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="green"></td>
+        <td bgcolor="white"></td><td>카</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="cyan"></td>
+        <td bgcolor="white"></td><td>카</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="blue"></td>
+        <td bgcolor="white"></td><td>카</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="magenta"></td>
+        <td bgcolor="white"></td><td>카</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
+    <tr>
+        <td rowspan="8">모드</td>
+        <td rowspan="8" bgcolor="black"></td>
+        <td bgcolor="white"></td><td>카</td></td><td></td></td><td></td>
+    </tr>
+        <tr><td bgcolor="red"></td><td>카</td><td></td><td></td></tr>
+        <tr><td bgcolor="yellow"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="green"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="cyan"></td><td>모</td><td></td><td></td></tr>
+        <tr><td bgcolor="blue"></td><td>핸</td><td></td><td></td></tr>
+        <tr><td bgcolor="magenta"></td><td>라</td><td></td><td></td></tr>
+        <tr><td bgcolor="black"></td><td>피</td><td></td><td></td></tr>
 </table>
 
-
-<br>
-
-
-### 2.2.2. 높이-방향-RPM-자세-고도-위치
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_2.png" target="_blank"><img src="./images/drone4controller_2.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_2_desc.png" target="_blank"><img src="./images/drone4controller_2_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-### 2.2.3. 속도-위치-자세
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_3.png" target="_blank"><img src="./images/drone4controller_3.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_3_desc.png" target="_blank"><img src="./images/drone4controller_3_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-### 2.2.4. 자세-높이
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_4.png" target="_blank"><img src="./images/drone4controller_4.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_4_desc.png" target="_blank"><img src="./images/drone4controller_4_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-### 2.2.5. 위치-트림
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_5.png" target="_blank"><img src="./images/drone4controller_5.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_5_desc.png" target="_blank"><img src="./images/drone4controller_5_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-### 2.2.6. RF 정보 및 상태 
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_6.png" target="_blank"><img src="./images/drone4controller_6.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_6_desc.png" target="_blank"><img src="./images/drone4controller_6_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-### 2.2.7. 조이스틱 입력 값 
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_7.png" target="_blank"><img src="./images/drone4controller_7.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_7_desc.png" target="_blank"><img src="./images/drone4controller_7_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-### 2.2.8. 버전
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_8.png" target="_blank"><img src="./images/drone4controller_8.png"></a>
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                <a href="./images/drone4controller_8_desc.png" target="_blank"><img src="./images/drone4controller_8_desc.png"></a>
-            </div>
-        </td>
-    </tr>
-</table>
-
-
-<br>
-
-
-<br>
-
-
-## 2.3. 버튼 구성 및 기능
-
-<br>
-
-### 2.3.1. 조종 화면
-
-<div align="center">
-    <img src="./images/button_control_front.png" alt="조종기 전면">
-    <p>조종 화면에서 전면 버튼의 기능</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="./images/button_control_top.png" alt="조종기 상단">
-    <p>조종 화면에서 상단 버튼의 기능</p>
-</div>
-<br>
-
-<br>
-
-### 2.3.2. 설정 화면
-
-<div align="center">
-    <img src="./images/button_setup_front.png" alt="조종기 전면">
-    <p>설정 화면에서 전면 버튼의 기능</p>
-</div>
-<br>
-
-<div align="center">
-    <img src="./images/button_setup_top.png" alt="조종기 상단">
-    <p>설정 화면에서 상단 버튼의 기능</p>
-</div>
-<br>
-
-<br>
-
-
-<br>
-
-
-## 2.4. 설정 화면 메뉴 구성
-
-<table>
-    <tr>
-        <td>
-            <div align="center">
-                1단계
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                2단계
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                설명
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="7">
-            <div align="center">
-                DISPLAY
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                높이-자세-RPM
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                높이-방향-RPM-자세-고도-위치
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                속도-위치-자세
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                자세-높이
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                위치-트림
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                RF 정보 및 상태
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                조이스틱 입력 값
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="2">
-            <div align="center">
-                LIGHT
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                DRONE
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                드론 LED 기본 색 설정 변경
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                CONTROLLER
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종기 LED 기본 색 설정 변경
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="2">
-            <div align="center">
-                CONTROL
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                ATTITUDE
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                자세 제어
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                POSITION
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                위치 제어
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="4">
-            <div align="center">
-                MODE
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                MODE 1
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔ Aileron<br>
-                L↕ 앞뒤, L↔ 좌우 회전, R↕ 위아래, R↔ 좌우
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                MODE 2
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔ Aileron<br>
-                L↕ 위아래, L↔ 좌우 회전, R↕ 앞뒤, R↔ 좌우
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                MODE 3
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔ Rudder<br>
-                L↕ 앞뒤, L↔ 좌우, R↕ 위아래, R↔ 좌우 회전
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                MODE 4
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔ Rudder<br>
-                L↕ 위아래, L↔ 좌우, R↕ 앞뒤, R↔ 좌우 회전
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="2">
-            <div align="center">
-                HEADLESS
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                HEADLESS
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                헤드리스(방향 고정)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                NORMAL
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                일반(드론의 현재 방향 기준)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="3">
-            <div align="center">
-                SPEED
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                S1
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                속도 1단계(느림)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                S2
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                속도 2단계
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                S3
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                속도 3단계(빠름)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="2">
-            <div align="center">
-                FHSS
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                ON
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                채널 호핑
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                OFF
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                고정 채널
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="3">
-            <div align="center">
-                FUNCTION
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                SENSOR RESET
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                드론의 자이로 바이어스 리셋
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                PAIRING
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                페어링
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                SET DEFAULT
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                설정값 초기화(드론이 연결된 경우 드론 설정도 초기화 됨)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="10">
-            <div align="center">
-                INFORMATION
-            </div>
-        </td>
-        <td>
-            <div align="center">
-                COUNT
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                비행 시간 및 이벤트 카운트 값 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                BIAS
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                가속도, 자이로 바이어스 값 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                TRIM
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                Trim 값 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                MOTION
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                IMU 센서 데이터를 연산하여 변환한 결과 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                ALTITUDE
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                높이-고도와 관련된 센서 데이터 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                POSITION
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                위치 데이터 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                RF
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                RF 설정 데이터 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                ADDRESS
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                드론과 조종기의 고유번호 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                BOOT
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                조종기의 부트 정보 및 장치 등록 여부 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center">
-                CRC32
-            </div>
-        </td>
-        <td>
-            <div align="left">
-                드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시
-            </div>
-        </td>
-    </tr>
-</table>
-
- * Elevator : 앞뒤 이동(Pitch)
- * Rudder : 좌우 회전(Yaw)
- * Throttle : 위아래 이동(Throttle)
- * Aileron : 좌우 이동(Roll)
-
-
-<br>
-
-
-<br>
-
-
-## 2.5. MODE
-
-### 2.5.1. MODE 1
-
-<div align="center">
-    <img src="./images/mode1.png" alt="MODE 1">
-    <p>MODE 1</p>
-</div>
-<br>
-
-<br>
-
-### 2.5.2. MODE 2
-
-<div align="center">
-    <img src="./images/mode2.png" alt="MODE 2">
-    <p>MODE 2</p>
-</div>
-<br>
-
 <br>
 
 
 
-여기까지 E-Drive 조종기와 드론에 대한 간략한 설명이었습니다.
+여기까지 GO CAR 에 대한 간략한 설명이었습니다.
 
