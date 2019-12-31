@@ -272,7 +272,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
     <tr>
         <td rowspan="8"><div align="center">음계</div></td>
         <td rowspan="8" style="background-color:#000000"></td>
-        <td style="background-color:#FFFFFF"></td><td>도설정값 초기화 및 모션 센서 캘리브레이션</td>
+        <td style="background-color:#FFFFFF"></td><td>도</td>
     </tr>
         <tr><td style="background-color:#FF0000"></td><td>레</td></tr>
         <tr><td style="background-color:#FFFF00"></td><td>미</td></tr>
