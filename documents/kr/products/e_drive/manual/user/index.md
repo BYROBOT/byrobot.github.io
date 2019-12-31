@@ -111,11 +111,11 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
     </tr>
     <tr>
         <td rowspan="8"><div align="center">모드</div></td>
-        <td rowspan="8" bgcolor="white"></td>
+        <td rowspan="8" bgcolor="#FFFFFFFF"></td>
         <td bgcolor="white"></td><td>-</td>
     </tr>
         <tr><td bgcolor="red"></td><td>카드 코딩 모드(초기 모드)</td></tr>
-        <tr><td bgcolor="yellow"></td><td>모션 코딩 모드</td></tr>
+        <tr><td bgcolor="#FFFFFF00"></td><td>모션 코딩 모드</td></tr>
         <tr><td bgcolor="green"></td><td> - </td></tr>
         <tr><td bgcolor="cyan"></td><td> - </td></tr>
         <tr><td bgcolor="blue"></td><td>핸드 팔로잉</td></tr>
