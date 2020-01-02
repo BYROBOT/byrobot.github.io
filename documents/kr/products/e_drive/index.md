@@ -30,7 +30,7 @@
         <tr>
             <td rowspan="3"><div align="center">Version</div></td>
             <td><div align="center">Car</div></td>
-            <td><div align="center">20.1.1</div></td>
+            <td><div align="center">20.1.2</div></td>
         </tr>
         <tr>
             <td><div align="center">BleServer</div></td>
