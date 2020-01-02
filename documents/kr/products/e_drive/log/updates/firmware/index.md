@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2019.12.31
+Modified : 2020.1.2
 
 ---
 
@@ -9,6 +9,35 @@ Modified : 2019.12.31
 
 
 <br>
+
+
+# 2020.1.2
+
+- **E-Drive: 20.1.1**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 버튼 연속 입력 시 동작하는 특수 기능 수정
+>   - 3번 : White/Black 캘리브레이션
+>   - 4번 : 바닥 색에 따라 특수 기능 실행
+>       - White/White : 자동 컬러 캘리브레이션(흰색 바탕에서 시작해야하기 때문)
+>       - White/Black : 자동 거리 센서 캘리브레이션
+>       - Black/White : 모션 센서 캘리브레이션(자이로 바이어스 초기화)
+>       - Black/Black : 수동 컬러 캘리브레이션
+>   - 5번 : 모션 센서 캘리브레이션(자이로 바이어스 초기화)
+>   - 6번 : 자동 거리 센서 캘리브레이션
+>   - 7번 : 수동 컬러 캘리브레이션
+>   - 8번 : 자동 컬러 캘리브레이션
+>   - 9번 : 데이터 초기화
+
+
+
+[Download](https://drive.google.com/open?id=1mOKWhJ9oUCj1C14aO3CuIpph-YWxiJUR)
+
+
+<br>
+
+---
 
 
 # 2019.12.31
