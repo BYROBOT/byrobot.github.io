@@ -315,7 +315,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#FFFF00">&nbsp;</td>
     </tr>
-    </tr>
+    <tr>
         <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -345,7 +345,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#00FF00">&nbsp;</td>
     </tr>
-    </tr>
+    <tr>
         <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -412,7 +412,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#0000FF">&nbsp;</td>
     </tr>
-    </tr>
+    <tr>
         <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -449,7 +449,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#FF00FF">&nbsp;</td>
     </tr>
-    </tr>
+    <tr>
         <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -479,7 +479,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#000000">&nbsp;</td>
     </tr>
-    </tr>
+    <tr>
         <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
