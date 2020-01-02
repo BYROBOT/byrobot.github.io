@@ -542,11 +542,6 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 이 버튼을 누르는 횟수에 따라 정해진 명령을 실행합니다.
 
 
-<br>
-
-
-### 1.3.1. 기본 동작
-
 | 횟수    | 동작                                                            |
 |:-------:|:----------------------------------------------------------------|
 | 1       | 카드 읽기                                                       |
@@ -754,6 +749,9 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 
 ### 1.4.5. 피아노 모드
 
+<br>
+
+#### 1.4.5.1. 기능
 <table>
     <tr>
         <td><div align="center">분류</div></td>
@@ -773,113 +771,157 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <tr><td style="background-color:#0000FF"></td><td>저장한 멜로디 실행</td></tr>
         <tr><td style="background-color:#FF00FF"></td><td>쉼표 0.5초</td></tr>
         <tr><td style="background-color:#000000"></td><td>쉼표 1초</td></tr>
-    <tr>
-        <td rowspan="8"><div align="center">3 Octave Sharp</div></td>
-        <td rowspan="8" style="background-color:#FFFF00"></td>
-        <td style="background-color:#FFFFFF"></td><td>C#</td>
-    </tr>
-        <tr><td style="background-color:#FF0000"></td><td>D#</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>-</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>F#</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>G#</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>A#</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>-</td></tr>
-        <tr><td style="background-color:#000000"></td><td>-</td></tr>
-    <tr>
-        <td rowspan="8"><div align="center">3 Octave</div></td>
-        <td rowspan="8" style="background-color:#00FF00"></td>
-        <td style="background-color:#FFFFFF"></td><td>C</td>
-    </tr>
-        <tr><td style="background-color:#FF0000"></td><td>D</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>E</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>F</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>G</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>A</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>B</td></tr>
-        <tr><td style="background-color:#000000"></td><td>-</td></tr>
-    <tr>
-        <td rowspan="8"><div align="center">4 Octave Sharp</div></td>
-        <td rowspan="8" style="background-color:#00FFFF"></td>
-        <td style="background-color:#FFFFFF"></td><td>C#</td>
-    </tr>
-        <tr><td style="background-color:#FF0000"></td><td>D#</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>-</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>F#</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>G#</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>A#</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>-</td></tr>
-        <tr><td style="background-color:#000000"></td><td>-</td></tr>
-    <tr>
-        <td rowspan="8"><div align="center">4 Octave</div></td>
-        <td rowspan="8" style="background-color:#0000FF"></td>
-        <td style="background-color:#FFFFFF"></td><td>C</td>
-    </tr>
-        <tr><td style="background-color:#FF0000"></td><td>D</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>E</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>F</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>G</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>A</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>B</td></tr>
-        <tr><td style="background-color:#000000"></td><td>-</td></tr>
-    <tr>
-        <td rowspan="8"><div align="center">5 Octave Sharp</div></td>
-        <td rowspan="8" style="background-color:#FF00FF"></td>
-        <td style="background-color:#FFFFFF"></td><td>C#</td>
-    </tr>
-        <tr><td style="background-color:#FF0000"></td><td>D#</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>-</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>F#</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>G#</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>A#</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>-</td></tr>
-        <tr><td style="background-color:#000000"></td><td>-</td></tr>
-    <tr>
-        <td rowspan="8"><div align="center">5 Octave</div></td>
-        <td rowspan="8" style="background-color:#000000"></td>
-        <td style="background-color:#FFFFFF"></td><td>C</td>
-    </tr>
-        <tr><td style="background-color:#FF0000"></td><td>D</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>E</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>F</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>G</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>A</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>B</td></tr>
-        <tr><td style="background-color:#000000"></td><td>-</td></tr>
 </table>
 
 <br>
 
-피아노 모드 가로보기
-
+#### 1.4.5.2. 3 Octave
 
 <table>
     <tr>
+        <td></td>
         <td colspan="8"><div align="center">3 Octave Sharp</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">앞</div></td>
+        <td colspan="8" style="background-color:#FFFF00">&nbsp;</td>
+    </tr>
+    </tr>
+        <td><div align="center">뒤</div></td>
+        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><div align="center">C#</div></td>
+        <td><div align="center">D#</div></td>
+        <td><div align="center">&nbsp;</div></td>
+        <td><div align="center">F#</div></td>
+        <td><div align="center">G#</div></td>
+        <td><div align="center">A#</div></td>
+        <td><div align="center">&nbsp;</div></td>
+        <td><div align="center">&nbsp;</div></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="8"><div align="center">3 Octave</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">앞</div></td>
+        <td colspan="8" style="background-color:#00FF00">&nbsp;</td>
+    </tr>
+    </tr>
+        <td><div align="center">뒤</div></td>
+        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><div align="center">C</div></td>
+        <td><div align="center">D</div></td>
+        <td><div align="center">E</div></td>
+        <td><div align="center">F</div></td>
+        <td><div align="center">G</div></td>
+        <td><div align="center">A</div></td>
+        <td><div align="center">B</div></td>
+        <td><div align="center">&nbsp;</div></td>
+    </tr>
+</table>
+
+<br>
+
+#### 1.4.5.3. 4 Octave
+
+<table>
+    <tr>
+        <td></td>
         <td colspan="8"><div align="center">4 Octave Sharp</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">앞</div></td>
+        <td colspan="8" style="background-color:#00FFFF">&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div align="center">뒤</div></td>
+        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><div align="center">C#</div></td>
+        <td><div align="center">D#</div></td>
+        <td><div align="center">&nbsp;</div></td>
+        <td><div align="center">F#</div></td>
+        <td><div align="center">G#</div></td>
+        <td><div align="center">A#</div></td>
+        <td><div align="center">&nbsp;</div></td>
+        <td><div align="center">&nbsp;</div></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="8"><div align="center">4 Octave</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">앞</div></td>
+        <td colspan="8" style="background-color:#0000FF">&nbsp;</td>
+    </tr>
+    </tr>
+        <td><div align="center">뒤</div></td>
+        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><div align="center">C</div></td>
+        <td><div align="center">D</div></td>
+        <td><div align="center">E</div></td>
+        <td><div align="center">F</div></td>
+        <td><div align="center">G</div></td>
+        <td><div align="center">A</div></td>
+        <td><div align="center">B</div></td>
+        <td><div align="center">&nbsp;</div></td>
+    </tr>
+</table>
+
+<br>
+
+#### 1.4.5.4. 5 Octave
+
+<table>
+    <tr>
+        <td></td>
         <td colspan="8"><div align="center">5 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td colspan="8" style="background-color:#FFFF00">&nbsp;</td>
-        <td colspan="8" style="background-color:#00FFFF">&nbsp;</td>
+        <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#FF00FF">&nbsp;</td>
     </tr>
     </tr>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -890,22 +932,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td><div align="center">C#</div></td>
-        <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">F#</div></td>
-        <td><div align="center">G#</div></td>
-        <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">C#</div></td>
-        <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">F#</div></td>
-        <td><div align="center">G#</div></td>
-        <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
         <td><div align="center">&nbsp;</div></td>
@@ -916,32 +943,15 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
-        <td colspan="8"><div align="center">3 Octave</div></td>
-        <td colspan="8"><div align="center">4 Octave</div></td>
+        <td></td>
         <td colspan="8"><div align="center">5 Octave</div></td>
     </tr>
     <tr>
-        <td colspan="8" style="background-color:#00FF00">&nbsp;</td>
-        <td colspan="8" style="background-color:#0000FF">&nbsp;</td>
+        <td><div align="center">앞</div></td>
         <td colspan="8" style="background-color:#000000">&nbsp;</td>
     </tr>
     </tr>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><div align="center">뒤</div></td>
         <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
@@ -952,22 +962,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td><div align="center">C</div></td>
-        <td><div align="center">D</div></td>
-        <td><div align="center">E</div></td>
-        <td><div align="center">F</div></td>
-        <td><div align="center">G</div></td>
-        <td><div align="center">A</div></td>
-        <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">C</div></td>
-        <td><div align="center">D</div></td>
-        <td><div align="center">E</div></td>
-        <td><div align="center">F</div></td>
-        <td><div align="center">G</div></td>
-        <td><div align="center">A</div></td>
-        <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td></td>
         <td><div align="center">C</div></td>
         <td><div align="center">D</div></td>
         <td><div align="center">E</div></td>
