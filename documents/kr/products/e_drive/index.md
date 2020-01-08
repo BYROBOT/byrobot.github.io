@@ -19,9 +19,9 @@
     <br>
     <table>
         <!-- Documents -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"><a name="Documents"></a></td></tr>
+        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#F5FAFF"><div align="center">&nbsp;<br>Documents<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#F5FAFF"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td style="background-color:#F5FAFF"><div align="center">User Manual</div></td>
@@ -32,9 +32,9 @@
             <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
         </tr>
         <!-- Firmware -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"><a name="Firmware"></a></td></tr>
+        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#FFF9FA"><div align="center">&nbsp;<br>Firmware<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFF9FA"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td rowspan="3" style="background-color:#FFF9FA"><div align="center">Version</div></td>
@@ -70,9 +70,9 @@
             </td>
         </tr>
         <!-- Driver -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"><a name="Driver"></a></td></tr>
+        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#F7FFF7"><div align="center">&nbsp;<br>Driver<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#F7FFF7"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td style="background-color:#F7FFF7">
@@ -85,9 +85,9 @@
             </td>
         </tr>
         <!-- ByBlocks -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"><a name="ByBlocks"></a></td></tr>
+        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#FFFEF5"><div align="center">&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFFEF5"><div align="center">Version</div></td>
@@ -110,9 +110,9 @@
             <td colspan="2" style="background-color:#FFFEF5"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
         </tr>
         <!-- Python -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"><a name="Python"></a></td></tr>
+        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#F2FEFF"><div align="center">&nbsp;<br>Python<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#F2FEFF"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Library</div></td>
