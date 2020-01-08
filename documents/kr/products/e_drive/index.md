@@ -6,14 +6,27 @@
     <img src="/assets/images/products/e_drive.jpg" alt="e_drive">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1">Documents</span></a></td>
-            <td style="background-color:#FFF9FA"><a href="#Firmware"><span style="color:#FF4000">Firmware</span></a></td>
-            <td style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#0489B1">Driver</span></a></td>
-            <td style="background-color:#FFFEF5"><a href="#ByBlocks"><span style="color:#FF4000">ByBlocks</span></a></td>
-            <td style="background-color:#F2FEFF"><a href="#Python"><span style="color:#0489B1">Python</span></a></td>
-            <td style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000">Issues</span></a></td>
+            <td width="110" style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1"><div align="center">Documents</div></span></a></td>
+            <td width="110" style="background-color:#FFF9FA"><a href="#Firmware"><span style="color:#FF4000"><div align="center">Firmware</div></span></a></td>
+            <td width="110" style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#0489B1"><div align="center">Driver</div></span></a></td>
+            </tr><tr>
+            <td width="110" style="background-color:#FFFEF5"><a href="#ByBlocks"><span style="color:#FF4000"><div align="center">ByBlocks</div></span></a></td>
+            <td width="110" style="background-color:#F2FEFF"><a href="#Python"><span style="color:#0489B1"><div align="center">Python</div></span></a></td>
+            <td width="110" style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000"><div align="center">Issues</div></span></a></td>
         </tr>
     </table>
+    <!--
+    <table style="padding: 0px 0px 0px 0px;">
+        <tr>
+            <td width="10" style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1"><div align="center">Documents</div></span></a></td>
+            <td width="10" style="background-color:#FFF9FA"><a href="#Firmware"><span style="color:#FF4000"><div align="center">Firmware</div></span></a></td>
+            <td width="10" style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#0489B1"><div align="center">Driver</div></span></a></td>
+            <td width="10" style="background-color:#FFFEF5"><a href="#ByBlocks"><span style="color:#FF4000"><div align="center">ByBlocks</div></span></a></td>
+            <td width="10" style="background-color:#F2FEFF"><a href="#Python"><span style="color:#0489B1"><div align="center">Python</div></span></a></td>
+            <td width="10" style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000"><div align="center">Issues</div></span></a></td>
+        </tr>
+    </table>
+    -->
     <table>
         <td colspan="3" style="background-color:#FFFFFF"></td>
         <!-- Documents -->
