@@ -11,7 +11,6 @@
                 </div>
             </td>
         </tr>
-        <tr><td colspan="3"></td></tr>
         <tr>
             <td colspan="3">
                 <div align="center">
@@ -24,10 +23,9 @@
                 </div>
             </td>
         </tr>
-        <tr><td colspan="3"></td></tr>
         <!-- Documents -->
         <tr>
-            <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">User Manual</div></td>
@@ -37,10 +35,9 @@
             <td><div align="center">Protocol</div></td>
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
         </tr>
-        <tr><td colspan="3"></td></tr>
         <!-- Firmware -->
         <tr>
-            <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td rowspan="2"><div align="center">Version</div></td>
@@ -71,10 +68,9 @@
                 </div>
             </td>
         </tr>
-        <tr><td colspan="3"></td></tr>
         <!-- Driver -->
         <tr>
-            <td colspan="3"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td>
@@ -88,7 +84,7 @@
         </tr>
         <!-- ByBlocks -->
         <tr>
-            <td colspan="3"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">Version</div></td>
@@ -110,10 +106,9 @@
             <td><div align="center">Update Log</div></td>
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/byblocks/">한국어</a></div></td>
         </tr>
-        <tr><td colspan="3"></td></tr>
         <!-- Python -->
         <tr>
-            <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
+            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
         <tr>
             <td><div align="center">Library</div></td>
