@@ -12,8 +12,8 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3" style="background-color:#FFFFFF; padding: 15px 0px 0px 0px;">
-            <table>
+            <td colspan="3" style="background-color:#FFFFFF; padding: 0px 0px 0px 0px;">
+            <table style="padding: 0px 0px 0px 0px;">
                 <tr>
                     <td style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1">Documents</span></a></td>
                     <td style="background-color:#FFF9FA"><a href="#Firmware"><span style="color:#FF4000">Firmware</span></a></td>
@@ -33,9 +33,9 @@
             <td style="background-color:#F5FAFF"><div align="center">User Manual</div></td>
             <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/e_drive/manual/user/">한국어</a></div></td>
         </tr>
-        <tr style="background-color:#F5FAFF">
-            <td><div align="center">Protocol</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
+        <tr>
+            <td style="background-color:#F5FAFF"><div align="center">Protocol</div></td>
+            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr>
@@ -46,17 +46,17 @@
             <td><div align="center">Car</div></td>
             <td><div align="center">20.1.2</div></td>
         </tr>
-        <tr style="background-color:#FFF9FA">
-            <td><div align="center">BleServer</div></td>
-            <td><div align="center">19.10.16</div></td>
+        <tr>
+            <td style="background-color:#FFF9FA"><div align="center">BleServer</div></td>
+            <td style="background-color:#FFF9FA"><div align="center">19.10.16</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
             <td><div align="center">19.9.1</div></td>
         </tr>
-        <tr style="background-color:#FFF9FA">
-            <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2020.1.2</div></td>
+        <tr>
+            <td style="background-color:#FFF9FA"><div align="center">Release Date</div></td>
+            <td colspan="2" style="background-color:#FFF9FA"><div align="center">2020.1.2</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
@@ -96,9 +96,9 @@
             <td style="background-color:#FFFEF5"><div align="center">Version</div></td>
             <td colspan="2"><div align="center">1.0.19</div></td>
         </tr>
-        <tr style="background-color:#FFFEF5">
-            <td><div align="center">Release Date</div></td>
-            <td colspan="2"><div align="center">2019.2.28</div></td>
+        <tr>
+            <td style="background-color:#FFFEF5"><div align="center">Release Date</div></td>
+            <td colspan="2" style="background-color:#FFFEF5"><div align="center">2019.2.28</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFFEF5">
@@ -108,9 +108,9 @@
                 <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.19.apk" target="_blank">Android (4.4 이상)</a></div>
             </td>
         </tr>
-        <tr style="background-color:#FFFEF5">
-            <td><div align="center">Update Log</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
+        <tr>
+            <td style="background-color:#FFFEF5"><div align="center">Update Log</div></td>
+            <td colspan="2" style="background-color:#FFFEF5"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
         </tr>
         <!-- Python -->
         <tr>
@@ -120,17 +120,17 @@
             <td style="background-color:#F2FEFF"><div align="center">Library</div></td>
             <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="https://pypi.python.org/pypi/e_drive" target="_blank">e_drive</a></div></td>
         </tr>
-        <tr style="background-color:#F2FEFF">
-            <td><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">0.0.50</div></td>
+        <tr>
+            <td style="background-color:#F2FEFF"><div align="center">Version</div></td>
+            <td colspan="2" style="background-color:#F2FEFF"><div align="center">0.0.50</div></td>
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Release Date</div></td>
             <td colspan="2" style="background-color:#FFFFFF"><div align="center">2019.4.12</div></td>
         </tr>
-        <tr style="background-color:#F2FEFF">
-            <td><div align="center">Manual</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/library/python/e_drive/">한국어</a></div></td>
+        <tr>
+            <td style="background-color:#F2FEFF"><div align="center">Manual</div></td>
+            <td colspan="2" style="background-color:#F2FEFF"><div align="center"><a href="/documents/kr/products/e_drive/library/python/e_drive/">한국어</a></div></td>
         </tr>
     </table>
 </div>
