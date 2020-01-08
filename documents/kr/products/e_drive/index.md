@@ -11,18 +11,33 @@
                 </div>
             </td>
         </tr>
+        <tr><td colspan="3"></td></tr>
         <tr>
             <td colspan="3">
                 <div align="center">
-                    <a href="#Firmware"><span style="color:#0489B1">Firmware</span></a>&nbsp;
-                    <a href="#Driver"><span style="color:#FF4000">Driver</span></a>&nbsp;
                     <a href="#Documents"><span style="color:#0489B1">Documents</span></a>&nbsp;
+                    <a href="#Firmware"><span style="color:#FF4000">Firmware</span></a>&nbsp;
+                    <a href="#Driver"><span style="color:#0489B1">Driver</span></a>&nbsp;
                     <a href="#ByBlocks"><span style="color:#FF4000">ByBlocks</span></a>&nbsp;
                     <a href="#Python"><span style="color:#0489B1">Python</span></a>&nbsp;
                     <a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000">Issues</span></a>
                 </div>
             </td>
         </tr>
+        <tr><td colspan="3"></td></tr>
+        <!-- Documents -->
+        <tr>
+            <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">User Manual</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/manual/user/">한국어</a></div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Protocol</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
+        </tr>
+        <tr><td colspan="3"></td></tr>
         <!-- Firmware -->
         <tr>
             <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
@@ -74,18 +89,6 @@
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
-        <!-- Documents -->
-        <tr>
-            <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
-        </tr>
-        <tr>
-            <td><div align="center">User Manual</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/manual/user/">한국어</a></div></td>
-        </tr>
-        <tr>
-            <td><div align="center">Protocol</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
-        </tr>
         <!-- ByBlocks -->
         <tr>
             <td colspan="3"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
@@ -111,6 +114,7 @@
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
         </tr>
         <!-- Python -->
+        <tr><td colspan="3"></td></tr>
         <tr>
             <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
@@ -135,4 +139,4 @@
 
 ---
 
-Modified : 2020.1.2
+Modified : 2020.1.8

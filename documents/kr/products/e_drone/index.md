@@ -11,18 +11,33 @@
                 </div>
             </td>
         </tr>
+        <tr><td colspan="3"></td></tr>
         <tr>
             <td colspan="3">
                 <div align="center">
-                    <a href="#Firmware"><span style="color:#0489B1">Firmware</span></a>&nbsp;
-                    <a href="#Driver"><span style="color:#FF4000">Driver</span></a>&nbsp;
                     <a href="#Documents"><span style="color:#0489B1">Documents</span></a>&nbsp;
+                    <a href="#Firmware"><span style="color:#FF4000">Firmware</span></a>&nbsp;
+                    <a href="#Driver"><span style="color:#0489B1">Driver</span></a>&nbsp;
                     <a href="#ByBlocks"><span style="color:#FF4000">ByBlocks</span></a>&nbsp;
                     <a href="#Python"><span style="color:#0489B1">Python</span></a>&nbsp;
                     <a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span style="color:#FF4000">Issues</span></a>
                 </div>
             </td>
         </tr>
+        <tr><td colspan="3"></td></tr>
+        <!-- Documents -->
+        <tr>
+            <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td><div align="center">User Manual</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
+        </tr>
+        <tr>
+            <td><div align="center">Protocol</div></td>
+            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
+        </tr>
+        <tr><td colspan="3"></td></tr>
         <!-- Firmware -->
         <tr>
             <td colspan="3"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
@@ -56,6 +71,7 @@
                 </div>
             </td>
         </tr>
+        <tr><td colspan="3"></td></tr>
         <!-- Driver -->
         <tr>
             <td colspan="3"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
@@ -69,18 +85,6 @@
                 <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
-        </tr>
-        <!-- Documents -->
-        <tr>
-            <td colspan="3"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
-        </tr>
-        <tr>
-            <td><div align="center">User Manual</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
-        </tr>
-        <tr>
-            <td><div align="center">Protocol</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
         </tr>
         <!-- ByBlocks -->
         <tr>
@@ -106,6 +110,7 @@
             <td><div align="center">Update Log</div></td>
             <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/byblocks/">한국어</a></div></td>
         </tr>
+        <tr><td colspan="3"></td></tr>
         <!-- Python -->
         <tr>
             <td colspan="3"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
@@ -131,4 +136,4 @@
 
 ---
 
-Modified : 2019.11.12
+Modified : 2020.1.8
