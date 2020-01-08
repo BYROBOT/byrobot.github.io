@@ -4,7 +4,6 @@
 
 <div align="center">
     <img src="/assets/images/products/e_drive.jpg" alt="e_drive">
-    <br>
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1">Documents</span></a></td>
@@ -12,10 +11,9 @@
             <td style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#0489B1">Driver</span></a></td>
             <td style="background-color:#FFFEF5"><a href="#ByBlocks"><span style="color:#FF4000">ByBlocks</span></a></td>
             <td style="background-color:#F2FEFF"><a href="#Python"><span style="color:#0489B1">Python</span></a></td>
-            <td style="background-color:#F5FAFF"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000">Issues</span></a></td>
+            <td style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000">Issues</span></a></td>
         </tr>
     </table>
-    <br>
     <table>
         <td colspan="3" style="background-color:#FFFFFF"></td>
         <!-- Documents -->
@@ -56,9 +54,9 @@
             <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
             <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1mOKWhJ9oUCj1C14aO3CuIpph-YWxiJUR" target="_blank">Windows</a></div></td>
         </tr>
-        <tr style="background-color:#FFF9FA">
-            <td><div align="center">Update Log</div></td>
-            <td colspan="2"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
+        <tr>
+            <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
+            <td colspan="2" style="background-color:#FFF9FA"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Manual</div></td>
