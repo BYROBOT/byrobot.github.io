@@ -10,8 +10,8 @@
             <td width="130" style="background-color:#FFF9FA"><a href="#Firmware"><span style="color:#FF4000"><div align="center">Firmware</div></span></a></td>
         </tr>
         <tr>
-            <td width="130" style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#0489B1"><div align="center">Driver</div></span></a></td>
-            <td width="13" style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone0/issues/" target="_blank"><span style="color:#FF4000"><div align="center">Issues</div></span></a></td>
+            <td width="130" style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#FF4000"><div align="center">Driver</div></span></a></td>
+            <td width="13" style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone0/issues/" target="_blank"><span style="color:#0489B1"><div align="center">Issues</div></span></a></td>
         </tr>
     </table>
     <br>
