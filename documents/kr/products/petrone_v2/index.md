@@ -23,13 +23,15 @@
         <tr>
             <td colspan="3" style="background-color:#F5FAFF"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
+        <!--
         <tr>
             <td style="background-color:#F5FAFF"><div align="center">User Manual</div></td>
             <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
         </tr>
+        -->
         <tr>
             <td style="background-color:#F5FAFF"><div align="center">Protocol</div></td>
-            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/petrone_v2/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone_v2/protocol/">English</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
@@ -38,8 +40,8 @@
         </tr>
         <tr>
             <td rowspan="2" style="background-color:#FFF9FA"><div align="center">Version</div></td>
-            <td><div align="center">Drone</div></td>
-            <td><div align="center">1.3.R.2</div></td>
+            <td style="background-color:#FFFFFF"><div align="center">Drone</div></td>
+            <td style="background-color:#FFFFFF"><div align="center">1.3.R.2</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Controller</div></td>
@@ -74,7 +76,7 @@
             <td style="background-color:#F7FFF7">
                 <div align="center">Download</div>
             </td>
-            <td colspan="2">
+            <td colspan="2" style="background-color:#FFFFFF">
                 <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
                 <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
                 <div align="center"><a href="https://drive.google.com/open?id=1G6ma1HbzNSPqTcU9ir1I4lyYLobLM4K-" target="_blank">Win7, Win8 (new)</a></div>
