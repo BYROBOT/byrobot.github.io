@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Card**
 
-Modified : 2019.8.30
+Modified : 2020.1.10
 
 ---
 

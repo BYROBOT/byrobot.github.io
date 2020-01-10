@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.9.2
+Modified : 2020.1.10
 
 ---
 
@@ -207,14 +207,14 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식                                                                | 크기     | 범위 | 설명                |
-|:-------------:|:-------------------------------------------------------------------:|:--------:|:----:|:--------------------|
-| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)                 | 1 Byte   | -    | 업데이트 모드       |
-| modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)                  | 4 Byte   | -    | 모델 번호           |
-| version       | [Protocol::Version](#Protocol_Version)                              | 4 Byte   | -    | 펌웨어의 버전       |
-| year          | uint16_t                                                            | 2 Byte   | -    | 펌웨어 빌드 년      |
-| month         | uint8_t                                                             | 1 Byte   | -    | 펌웨어 빌드 월      |
-| day           | uint8_t                                                             | 1 Byte   | -    | 펌웨어 빌드 일      |
+| 변수 이름     | 형식                                                 | 크기     | 범위 | 설명                |
+|:-------------:|:-----------------------------------------------------|:--------:|:----:|:--------------------|
+| modeUpdate    | [Mode::Update::Type](04_definitions.md#Mode_Update)  | 1 Byte   | -    | 업데이트 모드       |
+| modelNumber   | [ModelNumber::Type](04_definitions.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
+| version       | [Protocol::Version](#Protocol_Version)               | 4 Byte   | -    | 펌웨어의 버전       |
+| year          | uint16_t                                             | 2 Byte   | -    | 펌웨어 빌드 년      |
+| month         | uint8_t                                              | 1 Byte   | -    | 펌웨어 빌드 월      |
+| day           | uint8_t                                              | 1 Byte   | -    | 펌웨어 빌드 일      |
 
 
 <br>
@@ -533,9 +533,7 @@ namespace Protocol
 
 address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
 
-channelArray에는 모두 4개의 채널이 들어가며, 주파수 호핑(FHSS) 동작시 지정한 모든 채널을 사용하고, 주파수 고정 동작 시 배열의 첫 번째에
-
-있는 채널을 사용합니다.
+channelArray에는 모두 4개의 채널이 들어가며, 주파수 호핑(FHSS) 동작시 지정한 모든 채널을 사용하고, 주파수 고정 동작 시 배열의 첫 번째에 있는 채널을 사용합니다.
 
 ```cpp
 namespace Protocol
@@ -551,13 +549,13 @@ namespace Protocol
 }
 ```
 
-| 변수 이름       | 형식      | 크기     | 범위             | 설명               |
-|:---------------:|:---------:|:--------:|:----------------:|:-------------------|
-| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 0             |
-| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 1             |
-| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF  | 주소 2             |
-| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F      | 스크램블           |
-| channelArray    | uint8_t   | 4 Byte   | 0 ~ 81           | 채널               |
+| 변수 이름       | 형식      | 크기     | 범위               | 설명       |
+|:---------------:|:---------:|:--------:|:------------------:|:-----------|
+| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF    | 주소 0     |
+| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF    | 주소 1     |
+| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF    | 주소 2     |
+| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F(0~127) | 스크램블   |
+| channelArray    | uint8_t   | 4 Byte   | 0 ~ 81             | 채널       |
 
 
 <br>
@@ -658,7 +656,7 @@ namespace Protocol
 <a name="Protocol_State"></a>
 ## Protocol::State
 
-현재 상태
+드론의 현재 상태
 
 ```cpp
 namespace Protocol
@@ -688,6 +686,108 @@ namespace Protocol
 | controlSpeed      | uint8_t                                                               | 1 Byte   | -        | 제어 속도(1, 2, 3)     |
 | sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | 1 Byte   | -        | 센서 방향              |
 | battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_StateController"></a>
+## Protocol::StateController
+
+조종기의 현재 상태
+
+```cpp
+namespace Protocol
+{
+    struct StateController
+    {
+        u8      modeSystem;             // 시스템 동작 모드
+        u8      modeController;         // 조종기 동작 모드
+        u8      modeConnection;         // 연결 모드
+        u8      deviceType;             // 현재 장치의 타입
+        s8      rssi;                   // RSSI
+
+        u32     systemTime;             // 시스템 시간(ms)
+        u32     timeConnected;          // 연결된 이후부터의 시간(ms)
+        u32     timeLostConnection;     // 연결이 끊어지고 나서의 시간(ms)
+
+        u8      countCycleTransferRF;       // 1초당 전송 횟수 RF
+        u8      countCycleReceiveRF;        // 1초당 수신 횟수 RF
+        u8      countCycleTransferExternal; // 1초당 전송 횟수 External
+        u8      countCycleReceiveExternal;  // 1초당 수신 횟수 External
+        u8      countCycleTransferUSB;      // 1초당 전송 횟수 USB
+        u8      countCycleReceiveUSB;       // 1초당 수신 횟수 USB
+    };
+}
+```
+
+| 변수 이름             | 형식                                                                  | 크기     | 범위     | 설명                            |
+|:---------------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:--------------------------------|
+| modeSystem            | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | System 동작 모드                |
+| modeController        | [Mode::Controller::Type](04_definitions.md#Mode_Controller)           | 1 Byte   | -        | 조종기 동작 모드                |
+| modeConnection        | [Mode::Connection::Type](04_definitions.md#Mode_Connection)           | 1 Byte   | -        | 연결 모드                       |
+| deviceType            | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)   | 1 Byte   | -        | 장치 타입                       |
+| rssi                  | int8_t                                                                | 1 Byte   | -        | RSSI                            |
+| systemTime            | uint32_t                                                              | 4 Byte   | -        | 시스템 시간(ms)                 |
+| timeConnected         | uint32_t                                                              | 4 Byte   | -        | 연결된 이후부터의 시간(ms)      |
+| timeLostConnection    | uint32_t                                                              | 4 Byte   | 0 ~ 100  | 연결이 끊어지고 나서의 시간(ms) |
+| countCycleTransferRF          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 RF              |
+| countCycleReceiveRF           | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 RF              |
+| countCycleTransferExternal    | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 External        |
+| countCycleReceiveExternal     | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 External        |
+| countCycleTransferUSB         | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 USB             |
+| countCycleReceiveUSB          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 USB             |
+
+
+<br>
+<br>
+
+
+<a name="Protocol_StateLink"></a>
+## Protocol::StateLink
+
+LINK 모듈의 현재 상태
+
+```cpp
+namespace Protocol
+{
+    struct StateLink
+    {
+        u8      modeSystem;             // 시스템 동작 모드
+        u8      modeConnection;         // 연결 모드
+        u8      deviceType;             // 현재 장치의 타입
+        s8      rssi;                   // RSSI
+
+        u32     systemTime;             // 시스템 시간(ms)
+        u32     timeConnected;          // 연결된 이후부터의 시간(ms)
+        u32     timeLostConnection;     // 연결이 끊어지고 나서의 시간(ms)
+
+        u8      countCycleTransferRF;       // 1초당 전송 횟수 RF
+        u8      countCycleReceiveRF;        // 1초당 수신 횟수 RF
+        u8      countCycleTransferExternal; // 1초당 전송 횟수 External
+        u8      countCycleReceiveExternal;  // 1초당 수신 횟수 External
+        u8      countCycleTransferUSB;      // 1초당 전송 횟수 USB
+        u8      countCycleReceiveUSB;       // 1초당 수신 횟수 USB
+    };
+}
+```
+
+| 변수 이름             | 형식                                                                  | 크기     | 범위     | 설명                            |
+|:---------------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:--------------------------------|
+| modeSystem            | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | System 동작 모드                |
+| modeConnection        | [Mode::Connection::Type](04_definitions.md#Mode_Connection)           | 1 Byte   | -        | 연결 모드                       |
+| deviceType            | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)   | 1 Byte   | -        | 장치 타입                       |
+| rssi                  | int8_t                                                                | 1 Byte   | -        | RSSI                            |
+| systemTime            | uint32_t                                                              | 4 Byte   | -        | 시스템 시간(ms)                 |
+| timeConnected         | uint32_t                                                              | 4 Byte   | -        | 연결된 이후부터의 시간(ms)      |
+| timeLostConnection    | uint32_t                                                              | 4 Byte   | 0 ~ 100  | 연결이 끊어지고 나서의 시간(ms) |
+| countCycleTransferRF          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 RF              |
+| countCycleReceiveRF           | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 RF              |
+| countCycleTransferExternal    | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 External        |
+| countCycleReceiveExternal     | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 External        |
+| countCycleTransferUSB         | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 USB             |
+| countCycleReceiveUSB          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 USB             |
 
 
 <br>

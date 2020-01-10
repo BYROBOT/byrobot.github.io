@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.8.30
+Modified : 2020.1.10
 
 ---
 
@@ -43,6 +43,8 @@ namespace Protocol
             Pairing                     = 0x12,     // 페어링
             Rssi                        = 0x13,     // RSSI
             TimeSync                    = 0x14,     // 시간 동기화
+            TransmissionPower           = 0x15,     // 전송 출력
+            Setup                       = 0x16,     // 설정
 
             // Light
             LightManual                 = 0x20,     // LED 수동 제어
@@ -97,12 +99,13 @@ namespace Protocol
             CardColor,                              // 카드 데이터
             CardList,                               // 카드 리스트 데이터
             CardFunctionList,                       // 카드 함수 리스트 데이터
+            CardClassifyRaw,                        // 카드 색상 분류(Raw)
             
             // Information Assembled
             InformationAssembledForController       = 0xA0,     // 데이터 모음
             InformationAssembledForEntry            = 0xA1,     // 데이터 모음
             InformationAssembledForByBlocks         = 0xA2,     // 데이터 모음
-
+            
             EndOfType
         };
     }
@@ -138,13 +141,15 @@ namespace Protocol
 | Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
 | Rssi                                  | 0x13 | A    | RSSI                                           | [Protocol::Rssi](05_structs.md#Protocol_Rssi) |
 | TimeSync                              | 0x14 | A    | TimeSync                                       | &nbsp; |
+| TransmissionPower                     | 0x15 | A    | RF 데이터 송신 세기                            | &nbsp; |
+| Setup                                 | 0x16 | D    | 드론 제어기 설정 값                            | &nbsp; |
 | LightManual                           | 0x20 | A    | LED 수동 제어                                  | [Protocol::Light::Manual](06_structs_light.md#Protocol_Light_Manual) |
 | LightMode                             | 0x21 | D    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode),<br> [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | LightEvent                            | 0x22 | D    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event),<br> [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor),<br> [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |
 | LightDefault                          | 0x23 | D    | LED 초기색                                     | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | RawMotion                             | 0x30 | D    | Motion Raw 데이터(Accel, Gyro)                 | [Protocol::RawMotion](05_structs.md#Protocol_RawMotion) |
 | RawFlow                               | 0x31 | D    | Flow Raw 데이터                                | [Protocol::RawFlow](05_structs.md#Protocol_RawFlow) |
-| State                                 | 0x40 | D    | 드론의 상태                                    | [Protocol::State](05_structs.md#Protocol_State) |
+| State                                 | 0x40 | D    | 장치의 상태                                    | [Protocol::State](05_structs.md#Protocol_State)[Protocol::StateController](05_structs.md#Protocol_StateController), [Protocol::StateLink](05_structs.md#Protocol_StateLink) |
 | Attitude                              | 0x41 | D    | 드론의 자세(Angle)                             | [Protocol::Attitude](05_structs.md#Protocol_Attitude) |
 | Position                              | 0x42 | D    | 위치                                           | [Protocol::Position](05_structs.md#Protocol_Position) |
 | Altitude                              | 0x43 | D    | 높이, 고도                                     | [Protocol::Altitude](05_structs.md#Protocol_Altitude) |

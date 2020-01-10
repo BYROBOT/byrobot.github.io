@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.11.12
+Modified : 2020.1.10
 
 ---
 
@@ -43,6 +43,7 @@ namespace Protocol
             SetDefault          = 0x08,     // 기본 설정으로 초기화
             Backlight           = 0x09,     // 조종기 백라이트 설정
             ModeController      = 0x0A,     // 조종기 동작 모드
+            Link                = 0x0B,     // 링크 모듈 동작 제어(0:Client Mode, 1:Server Mode, 2:Pairing Start)
 
             EndOfType
         };
@@ -68,16 +69,20 @@ namespace ModelNumber
     enum Type
     {
         //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
-        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1
-        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2
-        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3
-        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4
-        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5
-        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6
+        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1 (Lightrone / GD65 / HW2181 / 3.7v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2 (Soccer Drone / HW2181 / 7.4v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3 (GD240 / HW2181 / power button / u30 flow / 3.7v / geared motor / barometer)
+        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4 (GD50N / HW2181 / power button / 3.7v / barometer)
+        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5 (GD30 / HW2181 / 3.7v / nomal binding)
+        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6 (Soccer Drone 2 / HW2181 / 7.4v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P7        = 0x00031007,   // Drone_3_Drone_P7 (SKYKICKV2 / SPI / HW2181 / 7.4v / barometer / RGB LED / Shaking binding)
+        Drone_3_Drone_P8        = 0x00031008,   // Drone_3_Drone_P7 (GD65 / SPI / HW2181 / 3.7v / barometer / RGB LED / Shaking binding)
 
         Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
         Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
         Drone_3_Controller_P3   = 0x00032003,   // Drone_3_Controller_P3 / small size + USB
+
+        Drone_3_Link_P0         = 0x00033000,   // Drone_3_Link_P0
 
         Drone_4_Drone_P5        = 0x00041005,   // Drone_4_Drone_P5
 
@@ -145,7 +150,8 @@ namespace Protocol
 
             EndOfType,
 
-            Broadcasting = 0xFF
+            Whispering      = 0xFE, // 바로 인접한 장치까지만 전달(받은 장치는 자기 자신에게 보낸 것처럼 처리하고 타 장치에 전달하지 않음)
+            Broadcasting    = 0xFF  // 연결된 모든 장치에 전달
         };
     }
 }
@@ -238,9 +244,11 @@ namespace Mode
             {
                 None        = 0x00,
 
-                Attitude    = 0x10, // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
-                Position    = 0x11, // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-                Function    = 0x12, // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+                Attitude    = 0x10,     // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
+                Position    = 0x11,     // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+                Manual      = 0x12,     // 고도를 수동으로 조종함
+                Rate        = 0x13,     // Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
+                Function    = 0x14,     // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
 
                 EndOfType
             };
@@ -302,10 +310,12 @@ namespace Mode
             None,                   // 없음
             
             Flight      = 0x10,     // 비행
-            Card,                   // CardCoding - 카드 코딩
-            Piano,                  // Piano - 피아노 모드
+            Card,                   // 카드 코딩
+            Motion,                 // 모션 코딩
+            Piano,                  // 피아노 모드
             
-            Link        = 0x80,     // Link - 중계기
+            Link        = 0x80,     // 중계
+            Calibration,            // 컬러 캘리브레이션 모드
             
             Error       = 0xA0,     // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
             
@@ -343,6 +353,46 @@ namespace Mode
             Error       = 0xA0,     // 오류
             
             EndOfType
+        };
+    }
+    
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Mode_Connection"></a>
+## Mode::Connection::Type
+
+조종기 모드
+
+```cpp
+namespace Mode
+{
+    namespace Connection
+    {
+        enum Type
+        {
+            None,
+            
+            PairingStart,					// 페어링 시작(주소 초기화 후 대기 // 한쪽에서는 새로운 주소를 생성하여 전송)
+            PairingExchange,				// 페어링 데이터 교환
+            PairingComplete,				// 드론 페어링 완료
+            
+            Ready,							// 장치와 연결하지 않은 상태(장치와 연결 전 또는 연결 해제 완료 후 이 상태로 전환됨)
+            
+            ConnectingStart,				// 장치 연결 시작
+            Connecting,						// 장치 연결 확인
+            Connected,						// 장치 연결 완료
+            
+            LostConnection,					// 연결을 잃음(Server-Client간 통신이 되지 않는 상태)
+            
+            Disconnected,					// 장치 연결 해제 완료
+            
+            EndOfPairing
         };
     }
     
@@ -910,6 +960,8 @@ namespace Buzzer
             SolMiDo,        // 솔미도
             LaLa,           // 라라
             SiRaSiRa,       // 시라시라
+            Do5Sol5Do6,     // 도5솔5도6도5솔5도6
+            Do6Sol5Do5,     // 도6솔5도5도6솔5도5
             
             Warning1,       // 경고 1
             Warning2,       // 경고 2
@@ -928,6 +980,16 @@ namespace Buzzer
             BuzzSound3,     // C6, D6, E6
             
             Button,         // 버튼
+            Shot,
+            
+            Mode1,
+            Mode2,
+            Mode3,
+            Mode4,
+            Mode5,
+            Mode6,
+            Mode7,
+            Mode8,
 
             EndOfType
         };
