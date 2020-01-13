@@ -508,7 +508,7 @@ namespace Protocol
 | hsvl[1][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Lightness     |
 | color[0]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Front Color               |
 | color[1]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Rear Color                |
-| card          | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameCardCoding::Type](#Card_CardNameCardCoding), <br>[Card::CardNamePiano::Type](#Card_CardNamePiano)  | 1 Byte   | - | 카드 번호 |
+| card          | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameCardCoding::Type](#Card_CardNameCardCoding), <br>[Card::CardNamePiano::Type](#Card_CardNamePiano)  | 1 Byte   | - | 카드 |
 
 
 <br>
@@ -552,7 +552,7 @@ namespace Protocol
 | hsvl[1][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Lightness     |
 | color[0]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Front Color               |
 | color[1]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Rear Color                |
-| card          | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 카드 번호 |
+| card          | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 카드 |
 
 
 <br>
