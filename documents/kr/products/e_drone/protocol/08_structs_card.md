@@ -460,10 +460,10 @@ namespace Protocol
 
 카드 Raw 데이터
 
-rgbRaw : ADC에서 읽은 RGB의 RAW 데이터
-rgb : rgbRaw를 range를 기준으로 0 ~ 255 사이의 값으로 변환한 값
-hsvl : rgb를 hsv, hsl로 변환한 값
-color : hsvl 값을 Color Classify에 설정된 기준으로 판별한 색
+rgbRaw : ADC에서 읽은 RGB의 RAW 데이터<br>
+rgb : rgbRaw를 range를 기준으로 0 ~ 255 사이의 값으로 변환한 값<br>
+hsvl : rgb를 hsv, hsl로 변환한 값<br>
+color : hsvl 값을 Color Classify에 설정된 기준으로 판별한 색<br>
 card : 카드(front 상위 4비트, rear 하위 4비트)
 
 ```cpp
@@ -520,8 +520,8 @@ namespace Protocol
 
 카드 데이터(무선 통신에 사용하려고 Raw에서 크기를 줄임)
 
-hsvl : rgb를 hsv, hsl로 변환한 값
-color : hsvl 값을 Color Classify에 설정된 기준으로 판별한 색
+hsvl : rgb를 hsv, hsl로 변환한 값<br>
+color : hsvl 값을 Color Classify에 설정된 기준으로 판별한 색<br>
 card : 카드(front 상위 4비트, rear 하위 4비트)
 
 ```cpp
