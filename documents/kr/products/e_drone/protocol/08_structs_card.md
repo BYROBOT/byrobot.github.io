@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs** / **Card**
 
-Modified : 2020.1.10
+Modified : 2020.1.13
 
 ---
 
@@ -117,97 +117,189 @@ namespace CardNameColor
 <br>
 
 
-<a name="Card_CardNameFunction"></a>
-## Card::CardNameFunction::Type
+<a name="Card_CardNameCardCoding"></a>
+## Card::CardNameCardCoding::Type
 
-카드 분류(기능)
+카드 코딩 모드
 
 ```cpp
-namespace CardNameFunction
+namespace CardNameCardCoding
 {
     enum Type
     {
-        None                = CardNameColor::None,
+        None                    = CardNameColor::None,
         
         // White - Mode
-        CardCoding          = CardNameColor::WhiteWhite,    // 카드 코딩 모드
-        CardCodingStart     = CardNameColor::WhiteRed,      // 카드 입력 시작 - 카드 입력 중 White Dimming
-        CardCodingEnd       = CardNameColor::WhiteYellow,   // 카드 입력 종료 - 카드 입력 완료 시 White Hold
-        FunctionStart       = CardNameColor::WhiteGreen,    // 함수 입력 시작 - 입력 중 Cyan Dimming
-        FunctionEnd         = CardNameColor::WhiteCyan,     // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
-        FunctionCall        = CardNameColor::WhiteBlue,     // 함수 호출
-        Speed               = CardNameColor::WhiteMagenta,  // 속도 변경
-        Piano               = CardNameColor::WhiteBlack,    // 피아노 모드
+        CalibrationWhite        = CardNameColor::WhiteWhite,
+        Card                    = CardNameColor::WhiteRed,          // 카드 코딩
+        Motion                  = CardNameColor::WhiteYellow,       // 모션 코딩
+        //Reserved_01           = CardNameColor::WhiteGreen,        // 
+        //Reserved_02           = CardNameColor::WhiteCyan,         // 
+        //Reserved_03           = CardNameColor::WhiteBlue,         // 
+        //Reserved_04           = CardNameColor::WhiteMagenta,      // 
+        Piano                   = CardNameColor::WhiteBlack,        // 피아노 모드
         
-        // Red - LightBody
-        LightBodyWhite      = CardNameColor::RedWhite,
-        LightBodyRed        = CardNameColor::RedRed,
-        LightBodyYellow     = CardNameColor::RedYellow,
-        LightBodyGreen      = CardNameColor::RedGreen,
-        LightBodyCyan       = CardNameColor::RedCyan,
-        LightBodyBlue       = CardNameColor::RedBlue,
-        LightBodyMagenta    = CardNameColor::RedMagenta,
-        LightBodyBlack      = CardNameColor::RedBlack,
+        // Red - Function
+        CodingStart             = CardNameColor::RedWhite,          // 카드 입력 시작 - 카드 입력 중 White Dimming
+        CodingEnd               = CardNameColor::RedRed,            // 카드 입력 종료 - 카드 입력 완료 시 White Hold
+        FunctionStart           = CardNameColor::RedYellow,         // 함수 입력 시작 - 입력 중 Cyan Dimming
+        FunctionEnd             = CardNameColor::RedGreen,          // 함수 입력 종료 - 카드 입력 완료 시 Cyan Hold
+        FunctionCall            = CardNameColor::RedCyan,           // 함수 호출
+        PlayMelody              = CardNameColor::RedBlue,           // 멜로디 호출
+        Speed                   = CardNameColor::RedMagenta,        // 도리도리
+        Wait1Sec                = CardNameColor::RedBlack,          // 1초 기다림
         
-        // Yellow - Function    (이동 및 회전 기본 단위 설정, 초기 설정은 1 Meter, 90 Degree)
-        Takeoff             = CardNameColor::YellowWhite,       // 이륙
-        Landing             = CardNameColor::YellowRed,         // 착륙
-        Distance100         = CardNameColor::YellowYellow,      // 10cm
-        Distance500         = CardNameColor::YellowGreen,       // 50cm
-        Distance1000        = CardNameColor::YellowCyan,        // 1m
-        Degree10            = CardNameColor::YellowBlue,        // 10도
-        Degree45            = CardNameColor::YellowMagenta,     // 45도
-        Degree90            = CardNameColor::YellowBlack,       // 90도
+        // Yellow - LightBody
+        LightBodyWhite          = CardNameColor::YellowWhite,
+        LightBodyRed            = CardNameColor::YellowRed,
+        LightBodyYellow         = CardNameColor::YellowYellow,
+        LightBodyGreen          = CardNameColor::YellowGreen,
+        LightBodyCyan           = CardNameColor::YellowCyan,
+        LightBodyBlue           = CardNameColor::YellowBlue,
+        LightBodyMagenta        = CardNameColor::YellowMagenta,
+        LightBodyBlack          = CardNameColor::YellowBlack,
         
-        // Green - Move - Basic
-        MoveForward         = CardNameColor::GreenWhite,
-        MoveBackward        = CardNameColor::GreenRed,
-        MoveLeft            = CardNameColor::GreenYellow,
-        MoveRight           = CardNameColor::GreenGreen,
-        MoveUp              = CardNameColor::GreenCyan,
-        MoveDown            = CardNameColor::GreenBlue,
-        TurnLeft            = CardNameColor::GreenMagenta,
-        TurnRight           = CardNameColor::GreenBlack,
+        // Green - 이착륙 및 이동 거리, 회전 각도 설정
+        Takeoff                 = CardNameColor::GreenWhite,        // 이륙
+        Landing                 = CardNameColor::GreenRed,          // 착륙
+        Distance300             = CardNameColor::GreenYellow,       // 10cm
+        Distance500             = CardNameColor::GreenGreen,        // 50cm
+        Distance1000            = CardNameColor::GreenCyan,         // 1m
+        Degree30                = CardNameColor::GreenBlue,         // 10도
+        Degree45                = CardNameColor::GreenMagenta,      // 45도
+        Degree90                = CardNameColor::GreenBlack,        // 90도
         
-        // Cyan - If
-        IfFindFrontObstacle = CardNameColor::CyanWhite,         // Front Obstacle
-        IfFindGroundRed     = CardNameColor::CyanRed,           // 착륙 시 사용, Ground Color Red
-        IfFindGroundYellow  = CardNameColor::CyanYellow,        // 착륙 시 사용, Ground Color Yellow
-        IfFindGroundGreen   = CardNameColor::CyanGreen,         // 착륙 시 사용, Ground Color Green
-        IfFindGroundCyan    = CardNameColor::CyanCyan,          // 착륙 시 사용, Ground Color Cyan
-        IfFindGroundBlue    = CardNameColor::CyanBlue,          // 착륙 시 사용, Ground Color Blue
-        IfElse              = CardNameColor::CyanMagenta,
-        IfEnd               = CardNameColor::CyanBlack,
+        // Cyan - Move - Basic
+        MoveForward             = CardNameColor::CyanWhite,         // Front Obstacle
+        MoveBackward            = CardNameColor::CyanRed,           // 착륙 시 사용, Ground Color Red
+        MoveLeft                = CardNameColor::CyanYellow,        // 착륙 시 사용, Ground Color Yellow
+        MoveRight               = CardNameColor::CyanGreen,         // 착륙 시 사용, Ground Color Green
+        MoveUp                  = CardNameColor::CyanCyan,          // 착륙 시 사용, Ground Color Cyan
+        MoveDown                = CardNameColor::CyanBlue,          // 착륙 시 사용, Ground Color Blue
+        TurnLeft                = CardNameColor::CyanMagenta,
+        TurnRight               = CardNameColor::CyanBlack,
         
-        // Blue - Loop
-        LoopStartInfinite   = CardNameColor::BlueWhite,
-        LoopStart2          = CardNameColor::BlueRed,
-        LoopStart3          = CardNameColor::BlueYellow,
-        LoopStart4          = CardNameColor::BlueGreen,
-        LoopStart5          = CardNameColor::BlueCyan,
-        LoopStart10         = CardNameColor::BlueBlue,
-        LoopBreak           = CardNameColor::BlueMagenta,
-        LoopEnd             = CardNameColor::BlueBlack,
+        // Blue - If
+        IfFindFrontObstacle     = CardNameColor::BlueWhite,
+        IfFindGroundRed         = CardNameColor::BlueRed,
+        IfFindGroundYellow      = CardNameColor::BlueYellow,
+        IfFindGroundGreen       = CardNameColor::BlueGreen,
+        IfFindGroundCyan        = CardNameColor::BlueCyan,
+        IfFindGroundBlue        = CardNameColor::BlueBlue,
+        IfElse                  = CardNameColor::BlueMagenta,
+        IfEnd                   = CardNameColor::BlueBlack,
         
-        // Magenta - Preset
-        presetTriangle      = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
-        presetSquare        = CardNameColor::MagentaRed,
-        presetCircleLeft    = CardNameColor::MagentaYellow,
-        presetCircleRight   = CardNameColor::MagentaGreen,
-        presetPOI           = CardNameColor::MagentaCyan,
-        presetBounce        = CardNameColor::MagentaBlue,
-        preset360Flip       = CardNameColor::MagentaMagenta,
-        presetWait1Sec      = CardNameColor::MagentaBlack,      // 1초 기다림
+        // Magenta - Loop
+        LoopStartInfinite       = CardNameColor::MagentaWhite,      // 중앙, 왼쪽 30도, 오른쪽 60도, 왼쪽 30도 
+        LoopStart2              = CardNameColor::MagentaRed,
+        LoopStart3              = CardNameColor::MagentaYellow,
+        LoopStart4              = CardNameColor::MagentaGreen,
+        LoopStart5              = CardNameColor::MagentaCyan,
+        LoopStart10             = CardNameColor::MagentaBlue,
+        LoopBreak               = CardNameColor::MagentaMagenta,
+        LoopEnd                 = CardNameColor::MagentaBlack,      // 1초 기다림
         
         // Black - Melody
-        Melody1             = CardNameColor::BlackWhite,
-        Melody2             = CardNameColor::BlackRed,
-        Melody3             = CardNameColor::BlackYellow,
-        Melody4             = CardNameColor::BlackGreen,
-        Melody5             = CardNameColor::BlackCyan,
-        Melody6             = CardNameColor::BlackBlue,
-        Melody7             = CardNameColor::BlackMagenta,
-        Melody8             = CardNameColor::BlackBlack,
+        C5                      = CardNameColor::BlackWhite,
+        D5                      = CardNameColor::BlackRed,
+        E5                      = CardNameColor::BlackYellow,
+        F5                      = CardNameColor::BlackGreen,
+        G5                      = CardNameColor::BlackCyan,
+        A5                      = CardNameColor::BlackBlue,
+        B5                      = CardNameColor::BlackMagenta,
+        C6                      = CardNameColor::BlackBlack,
+        
+        EndOfType
+    };
+}
+```
+
+
+<br>
+<br>
+
+
+<a name="Card_CardNamePiano"></a>
+## Card::CardNamePiano::Type
+
+피아노 모드
+
+```cpp
+namespace CardNamePiano
+{
+    enum Type
+    {
+        None                        = CardNameColor::None,
+        
+        // Red - Function
+        RecordingStart              = CardNameColor::RedWhite,          // 사용자 정의 멜로디 입력 시작
+        RecordingEnd                = CardNameColor::RedRed,            // 사용자 정의 멜로디 입력 종료
+        Melody1                     = CardNameColor::RedYellow,         // 멜로디 1
+        Melody2                     = CardNameColor::RedGreen,          // 멜로디 2
+        Melody3                     = CardNameColor::RedCyan,           // 멜로디 3
+        Play                        = CardNameColor::RedBlue,           // 저장한 멜로디 플레이
+        MuteShort                   = CardNameColor::RedMagenta,        // 쉼표 0.5초
+        Mute                        = CardNameColor::RedBlack,          // 쉼표 1초
+        
+        // Yellow - 3 Octave Sharp
+        CS3                         = CardNameColor::YellowWhite,
+        DS3                         = CardNameColor::YellowRed,
+        //ES3                       = CardNameColor::YellowYellow,
+        FS3                         = CardNameColor::YellowGreen,
+        GS3                         = CardNameColor::YellowCyan,
+        AS3                         = CardNameColor::YellowBlue,
+        //BS3                       = CardNameColor::YellowMagenta,
+        //CS4                       = CardNameColor::YellowBlack,
+        
+        // Green - 3 Octave
+        C3                          = CardNameColor::GreenWhite,
+        D3                          = CardNameColor::GreenRed,
+        E3                          = CardNameColor::GreenYellow,
+        F3                          = CardNameColor::GreenGreen,
+        G3                          = CardNameColor::GreenCyan,
+        A3                          = CardNameColor::GreenBlue,
+        B3                          = CardNameColor::GreenMagenta,
+        //C4                        = CardNameColor::GreenBlack,
+        
+        // Cyan - 4 Octave Sharp
+        CS4                         = CardNameColor::CyanWhite,
+        DS4                         = CardNameColor::CyanRed,
+        //ES4                       = CardNameColor::CyanYellow,
+        FS4                         = CardNameColor::CyanGreen,
+        GS4                         = CardNameColor::CyanCyan,
+        AS4                         = CardNameColor::CyanBlue,
+        //BS4                       = CardNameColor::CyanMagenta,
+        //CS5                       = CardNameColor::CyanBlack,
+        
+        // Blue - 4 Octave
+        C4                          = CardNameColor::BlueWhite,
+        D4                          = CardNameColor::BlueRed,
+        E4                          = CardNameColor::BlueYellow,
+        F4                          = CardNameColor::BlueGreen,
+        G4                          = CardNameColor::BlueCyan,
+        A4                          = CardNameColor::BlueBlue,
+        B4                          = CardNameColor::BlueMagenta,
+        //C5                        = CardNameColor::BlueBlack,
+        
+        // Magenta - 5 Octave Sharp
+        CS5                         = CardNameColor::MagentaWhite,
+        DS5                         = CardNameColor::MagentaRed,
+        //ES5                       = CardNameColor::MagentaYellow,
+        FS5                         = CardNameColor::MagentaGreen,
+        GS5                         = CardNameColor::MagentaCyan,
+        AS5                         = CardNameColor::MagentaBlue,
+        //BS5                       = CardNameColor::MagentaMagenta,
+        //CS6                       = CardNameColor::MagentaBlack,
+        
+        // Black - 5 Octave
+        C5                          = CardNameColor::BlackWhite,
+        D5                          = CardNameColor::BlackRed,
+        E5                          = CardNameColor::BlackYellow,
+        F5                          = CardNameColor::BlackGreen,
+        G5                          = CardNameColor::BlackCyan,
+        A5                          = CardNameColor::BlackBlue,
+        B5                          = CardNameColor::BlackMagenta,
+        //C6                        = CardNameColor::BlackBlack,
         
         EndOfType
     };
@@ -261,6 +353,8 @@ namespace CardColor
 
 카드 색상 분류
 
+Protocol::Card::Classify 클래스를 배열로 사용(순서대로 front, rear)
+
 ```cpp
 namespace Protocol
 {       
@@ -269,32 +363,53 @@ namespace Protocol
         class Classify
         {
         public:
-            u16     hRY;        // Hue 경계     Red-Yellow
-            u16     hYG;        // Hue 경계  Yellow-Green
-            u16     hGC;        // Hue 경계   Green-Cyan
-            u16     hCB;        // Hue 경계    Cyan-Blue
-            u16     hBM;        // Hue 경계    Blue-Magenta
-            u16     hMR;        // Hue 경계 Magenta-Red
-            
-            float   lBlack;     // Black으로 인식할 Lightness
-            float   lWhite;     // White로 인식할 Lightness
-            float   sUnknown;   // Unknown으로 처리할 Saturation
+            s8  cc[6][3][2];    // [r, y, g, c, b, m][h, s, l][min, max] - h는 +-60 범위 사용. s, l은 x100을 적용하여 0~100 범위 사용
+            s8  l[2];           // [min, max] / min 이하는 black, white 이상은 white
         };
     }
 }
 ```
 
-| 변수 이름  | 형식       | 크기     | 범위     | 설명                      |
-|:----------:|:----------:|:--------:|:--------:|:--------------------------|
-| hRY        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계     Red-Yellow   |
-| hYG        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계  Yellow-Green    |
-| hGC        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계   Green-Cyan     |
-| hCB        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계    Cyan-Blue     |
-| hBM        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계    Blue-Magenta  |
-| hMR        | int16_t    | 2 Byte   | 0 ~ 360  | Hue 경계 Magenta-Red      |
-| lBlack     | float      | 4 Byte   | 0 ~ 1.0  | Black으로 인식할 Lightness    |
-| lWhite     | float      | 4 Byte   | 0 ~ 1.0  | White로 인식할 Lightness      |
-| sUnknown   | float      | 4 Byte   | 0 ~ 1.0  | Unknown으로 처리할 Saturation |
+| 변수 이름     | 형식       | 크기     | 범위      | 설명                      |
+|:-------------:|:----------:|:--------:|:---------:|:--------------------------|
+| cc[0][0][0]   | s8         | 1 Byte   | -60 ~ 60  | Red, Hue, Min             |
+| cc[0][0][1]   | s8         | 1 Byte   | -60 ~ 60  | Red, Hue, Max             |
+| cc[0][1][0]   | s8         | 1 Byte   | 0 ~ 100   | Red, Saturaton, Min       |
+| cc[0][1][1]   | s8         | 1 Byte   | 0 ~ 100   | Red, Saturaton, Max       |
+| cc[0][2][0]   | s8         | 1 Byte   | 0 ~ 100   | Red, Lightness, Min       |
+| cc[0][2][1]   | s8         | 1 Byte   | 0 ~ 100   | Red, Lightness, Max       |
+| cc[1][0][0]   | s8         | 1 Byte   | -60 ~ 60  | Yellow, Hue, Min          |
+| cc[1][0][1]   | s8         | 1 Byte   | -60 ~ 60  | Yellow, Hue, Max          |
+| cc[1][1][0]   | s8         | 1 Byte   | 0 ~ 100   | Yellow, Saturaton, Min    |
+| cc[1][1][1]   | s8         | 1 Byte   | 0 ~ 100   | Yellow, Saturaton, Max    |
+| cc[1][2][0]   | s8         | 1 Byte   | 0 ~ 100   | Yellow, Lightness, Min    |
+| cc[1][2][1]   | s8         | 1 Byte   | 0 ~ 100   | Yellow, Lightness, Max    |
+| cc[2][0][0]   | s8         | 1 Byte   | -60 ~ 60  | Green, Hue, Min           |
+| cc[2][0][1]   | s8         | 1 Byte   | -60 ~ 60  | Green, Hue, Max           |
+| cc[2][1][0]   | s8         | 1 Byte   | 0 ~ 100   | Green, Saturaton, Min     |
+| cc[2][1][1]   | s8         | 1 Byte   | 0 ~ 100   | Green, Saturaton, Max     |
+| cc[2][2][0]   | s8         | 1 Byte   | 0 ~ 100   | Green, Lightness, Min     |
+| cc[2][2][1]   | s8         | 1 Byte   | 0 ~ 100   | Green, Lightness, Max     |
+| cc[3][0][0]   | s8         | 1 Byte   | -60 ~ 60  | Cyan, Hue, Min            |
+| cc[3][0][1]   | s8         | 1 Byte   | -60 ~ 60  | Cyan, Hue, Max            |
+| cc[3][1][0]   | s8         | 1 Byte   | 0 ~ 100   | Cyan, Saturaton, Min      |
+| cc[3][1][1]   | s8         | 1 Byte   | 0 ~ 100   | Cyan, Saturaton, Max      |
+| cc[3][2][0]   | s8         | 1 Byte   | 0 ~ 100   | Cyan, Lightness, Min      |
+| cc[3][2][1]   | s8         | 1 Byte   | 0 ~ 100   | Cyan, Lightness, Max      |
+| cc[4][0][0]   | s8         | 1 Byte   | -60 ~ 60  | Blue, Hue, Min            |
+| cc[4][0][1]   | s8         | 1 Byte   | -60 ~ 60  | Blue, Hue, Max            |
+| cc[4][1][0]   | s8         | 1 Byte   | 0 ~ 100   | Blue, Saturaton, Min      |
+| cc[4][1][1]   | s8         | 1 Byte   | 0 ~ 100   | Blue, Saturaton, Max      |
+| cc[4][2][0]   | s8         | 1 Byte   | 0 ~ 100   | Blue, Lightness, Min      |
+| cc[4][2][1]   | s8         | 1 Byte   | 0 ~ 100   | Blue, Lightness, Max      |
+| cc[5][0][0]   | s8         | 1 Byte   | -60 ~ 60  | Magenta, Hue, Min         |
+| cc[5][0][1]   | s8         | 1 Byte   | -60 ~ 60  | Magenta, Hue, Max         |
+| cc[5][1][0]   | s8         | 1 Byte   | 0 ~ 100   | Magenta, Saturaton, Min   |
+| cc[5][1][1]   | s8         | 1 Byte   | 0 ~ 100   | Magenta, Saturaton, Max   |
+| cc[5][2][0]   | s8         | 1 Byte   | 0 ~ 100   | Magenta, Lightness, Min   |
+| cc[5][2][1]   | s8         | 1 Byte   | 0 ~ 100   | Magenta, Lightness, Max   |
+| l[0]          | s8         | 1 Byte   | 0 ~ 100   | Lightness Min(Black)      |
+| l[1]          | s8         | 1 Byte   | 0 ~ 100   | Lightness Max(White)      |
 
 
 <br>
@@ -320,9 +435,20 @@ namespace Protocol
 }
 ```
 
-| 변수 이름       | 형식          | 크기     | 범위          | 설명                               |
-|:---------------:|:-------------:|:--------:|:-------------:|:-----------------------------------|
-| range[2][3][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | ADC RAW 출력 값의 최소, 최대 값    |
+| 변수 이름       | 형식          | 크기     | 범위          | 설명                 |
+|:---------------:|:-------------:|:--------:|:-------------:|:---------------------|
+| range[0][0][1]  | int16_t       | 24 Byte  | 0 ~ 4095      | Front, Red, Min      |
+| range[0][0][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | Front, Red, Max      |
+| range[0][1][1]  | int16_t       | 24 Byte  | 0 ~ 4095      | Front, Green, Min    |
+| range[0][1][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | Front, Green, Max    |
+| range[0][2][1]  | int16_t       | 24 Byte  | 0 ~ 4095      | Front, Blue, Min     |
+| range[0][2][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | Front, Blue, Max     |
+| range[1][0][1]  | int16_t       | 24 Byte  | 0 ~ 4095      | Rear, Red, Min       |
+| range[1][0][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | Rear, Red, Max       |
+| range[1][1][1]  | int16_t       | 24 Byte  | 0 ~ 4095      | Rear, Green, Min     |
+| range[1][1][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | Rear, Green, Max     |
+| range[1][2][1]  | int16_t       | 24 Byte  | 0 ~ 4095      | Rear, Blue, Min      |
+| range[1][2][2]  | int16_t       | 24 Byte  | 0 ~ 4095      | Rear, Blue, Max      |
 
 
 <br>
@@ -333,6 +459,12 @@ namespace Protocol
 ## Protocol::Card::Raw
 
 카드 Raw 데이터
+
+rgbRaw : ADC에서 읽은 RGB의 RAW 데이터
+rgb : rgbRaw를 range를 기준으로 0 ~ 255 사이의 값으로 변환한 값
+hsvl : rgb를 hsv, hsl로 변환한 값
+color : hsvl 값을 Color Classify에 설정된 기준으로 판별한 색
+card : 카드(front 상위 4비트, rear 하위 4비트)
 
 ```cpp
 namespace Protocol
@@ -352,13 +484,31 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식                                      | 크기     | 범위             | 설명           |
-|:-------------:|:-----------------------------------------:|:--------:|:----------------:|:---------------|
-| rgbRaw[2][3]  | int16_t                                   | 12 Byte  | 0 ~ 4095         | RGB Raw        |
-| rgb[2][3]     | uint8_t                                   | 6 Byte   | 0 ~ 255          | 설정된 RGB 범위를 기준으로 0 ~ 255 사이의 값으로 변경한 값       |
-| hsvl[2][4]    | int16_t                                   | 12 Byte  | 0 ~ 360, 0 ~ 100 | rgb 데이터를 Hue, Saturation, Value, Lightness 값으로 변환한 것  |
-| color[2]      | [Card::CardColor::Type](#Card_CardColor)  | 2 Byte   | -                | hsvl 값을 Classify에 설정된 기준에 따라 분류한 색                |
-| card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 앞 센서의 색을 상위 4비트, 뒤 센서의 색을 하위 4비트에 할당하여 만든 카드 값  |
+| 변수 이름     | 형식       | 크기     | 범위             | 설명                |
+|:-------------:|:----------:|:--------:|:----------------:|:--------------------|
+| rgbRaw[0][0]  | int16_t    | 2 Byte   | 0 ~ 4095         | Raw, Front, Red     |
+| rgbRaw[0][1]  | int16_t    | 2 Byte   | 0 ~ 4095         | Raw, Front, Green   |
+| rgbRaw[0][2]  | int16_t    | 2 Byte   | 0 ~ 4095         | Raw, Front, Blue    |
+| rgbRaw[1][0]  | int16_t    | 2 Byte   | 0 ~ 4095         | Raw, Rear, Red      |
+| rgbRaw[1][1]  | int16_t    | 2 Byte   | 0 ~ 4095         | Raw, Rear, Green    |
+| rgbRaw[1][2]  | int16_t    | 2 Byte   | 0 ~ 4095         | Raw, Rear, Blue     |
+| rgb[0][0]     | int16_t    | 1 Byte   | 0 ~ 255          | Front, Red          |
+| rgb[0][1]     | int16_t    | 1 Byte   | 0 ~ 255          | Front, Green        |
+| rgb[0][2]     | int16_t    | 1 Byte   | 0 ~ 255          | Front, Blue         |
+| rgb[1][0]     | int16_t    | 1 Byte   | 0 ~ 255          | Rear, Red           |
+| rgb[1][1]     | int16_t    | 1 Byte   | 0 ~ 255          | Rear, Green         |
+| rgb[1][2]     | int16_t    | 1 Byte   | 0 ~ 255          | Rear, Blue          |
+| hsvl[0][0]    | int16_t    | 2 Byte   | 0 ~ 360          | Front, Hue          |
+| hsvl[0][1]    | int16_t    | 2 Byte   | 0 ~ 100          | Front, Saturation   |
+| hsvl[0][2]    | int16_t    | 2 Byte   | 0 ~ 100          | Front, Value        |
+| hsvl[0][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Front, Lightness    |
+| hsvl[1][0]    | int16_t    | 2 Byte   | 0 ~ 360          | Rear, Hue           |
+| hsvl[1][1]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Saturation    |
+| hsvl[1][2]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Value         |
+| hsvl[1][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Lightness     |
+| color[0]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Front Color               |
+| color[1]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Rear Color                |
+| card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameCardCoding::Type](#Card_CardNameCardCoding), [Card::CardNamePiano::Type](#Card_CardNamePiano)  | 1 Byte   | - | 앞 센서의 색을 상위 4비트, 뒤 센서의 색을 하위 4비트에 할당하여 만든 카드 값  |
 
 
 <br>
@@ -369,6 +519,10 @@ namespace Protocol
 ## Protocol::Card::Color
 
 카드 데이터(무선 통신에 사용하려고 Raw에서 크기를 줄임)
+
+hsvl : rgb를 hsv, hsl로 변환한 값
+color : hsvl 값을 Color Classify에 설정된 기준으로 판별한 색
+card : 카드(front 상위 4비트, rear 하위 4비트)
 
 ```cpp
 namespace Protocol
@@ -386,10 +540,18 @@ namespace Protocol
 }
 ```
 
-| 변수 이름     | 형식                                      | 크기     | 범위             | 설명                                                             |
-|:-------------:|:-----------------------------------------:|:--------:|:----------------:|:-----------------------------------------------------------------|
-| hsvl[2][4]    | int16_t                                   | 12 Byte  | 0 ~ 360, 0 ~ 100 | rgb 데이터를 Hue, Saturation, Value, Lightness 값으로 변환한 것  |
-| color[2]      | [Card::CardColor::Type](#Card_CardColor)  | 2 Byte   | -                | hsvl 값을 Classify에 설정된 기준에 따라 분류한 색                |
+| 변수 이름     | 형식       | 크기     | 범위             | 설명                |
+|:-------------:|:----------:|:--------:|:----------------:|:--------------------|
+| hsvl[0][0]    | int16_t    | 2 Byte   | 0 ~ 360          | Front, Hue          |
+| hsvl[0][1]    | int16_t    | 2 Byte   | 0 ~ 100          | Front, Saturation   |
+| hsvl[0][2]    | int16_t    | 2 Byte   | 0 ~ 100          | Front, Value        |
+| hsvl[0][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Front, Lightness    |
+| hsvl[1][0]    | int16_t    | 2 Byte   | 0 ~ 360          | Rear, Hue           |
+| hsvl[1][1]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Saturation    |
+| hsvl[1][2]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Value         |
+| hsvl[1][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Lightness     |
+| color[0]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Front Color               |
+| color[1]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Rear Color                |
 | card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 앞 센서의 값을 상위 4비트, 뒤 센서의 값을 하위 4비트에 할당하여 만든 카드 값  |
 
 
