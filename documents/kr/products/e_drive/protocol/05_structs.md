@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2019.8.30
+Modified : 2020.1.13
 
 ---
 
@@ -108,7 +108,7 @@ namespace Protocol
 
 오류
 
-드론에 문제가 생긴 경우 Error 구조체를 600ms에 한 번 RF를 통해 송신합니다.
+드론에 문제가 생긴 경우 Error 구조체를 600ms에 한 번 송신합니다.
 
 errorFlagsForSensor와 errorFlagsForState는 각각의 값에 해당하는 플래그를 조합하여 여러 오류들이 동시에 발생하는 것을 표시합니다.
 
@@ -577,74 +577,28 @@ namespace Protocol
 {
     struct RawLineTracer
     {
-        s16     left;           // 바닥	좌측 IR
-        s16     right;          // 바닥 우측 IR
+        s16         frontH;         // Front H raw data
+        s8          frontS;         // Front S raw data
+        s8          frontV;         // Front V raw data
         
-        s16     frontH;         // Front H 감지
-        s8      frontS;         // Front S 감지
-        s8      frontV;         // Front V 감지
+        u8          sequence;       // 시퀀스
+        s8          accel;          // accel
+        s8          wheel;          // wheel
         
-        s16     rearH;          // Rear H 감지
-        s8      rearS;          // Rear S 감지
-        s8      rearV;          // Rear V 감지
-        
-        u8      leftColor;      // 왼쪽 바닥 색(흰색/검정)
-        u8      rightColor;     // 오른쪽 바닥 색(흰색/검정)
-        u8      frontColor;     // 앞부분에서 감지한 색
-        u8      rearColor;      // 뒷부분에서 감지한 색
+        u8          color;          // color
     };
 }
 ```
 
 | 변수 이름     | 형식        | 크기     | 범위                | 설명                      |
 |:-------------:|:-----------:|:--------:|:-------------------:|:--------------------------|
-| left          | uint16_t    | 2 Byte   |                     | 바닥 좌측 IR              |
-| right         | uint16_t    | 2 Byte   |                     | 바닥 우측 IR              |
-| frontH        | uint16_t    | 2 Byte   | 0 ~ 360             | Front H 감지              |
-| frontS        | int8_t      | 1 Byte   |                     | Front S 감지              |
-| frontV        | int8_t      | 1 Byte   |                     | Front V 감지              |
-| rearH         | uint16_t    | 2 Byte   | 0 ~ 360             | Rear H 감지               |
-| rearS         | int8_t      | 1 Byte   |                     | Rear S 감지               |
-| rearV         | int8_t      | 1 Byte   |                     | Rear V 감지               |
-| leftColor     | uint8_t     | 1 Byte   |                     | 왼쪽 바닥 색(흰색/검정)   |
-| rightColor    | uint8_t     | 1 Byte   |                     | 오른쪽 바닥 색(흰색/검정) |
-| frontColor    | uint8_t     | 1 Byte   |                     | 앞부분에서 감지한 색      |
-| rearColor     | uint8_t     | 1 Byte   |                     | 뒷부분에서 감지한 색      |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_RawCard"></a>
-## Protocol::RawCard
-
-카드 리더부의 Raw 데이터
-
-```cpp
-namespace Protocol
-{
-    class RawCard
-    {
-    public:
-        s16     range[2][3][2];     // [Front/Rear][R/G/B][Min/Max]     24 byte
-        s16     rgbRaw[2][3];       // [Front/Rear][R/G/B]              12 byte
-        u8      rgb[2][3];          // [Front/Rear][R/G/B]               6 byte
-        s16     hsv[2][3];          // [Front/Rear][R/G/B]              12 byte
-        u8      color[2];           // [Front/Rear]                      2 byte
-        u8      card;               //                                   1 byte
-    };
-}
-```
-
-| 변수 이름     | 형식     | 크기     | 범위                | 설명                                                  |
-|:-------------:|:--------:|:--------:|:-------------------:|:------------------------------------------------------|
-| range         | int16_t  | 24 Byte  | 0 ~ 4096            | 각 raw 입력 값의 최대 최소 범위                       |
-| rgbRaw        | int16_t  | 12 Byte  | 0 ~ 4096            | raw ADC 값                                            |
-| rgb           | uint8_t  | 6 Byte   | 0 ~ 255             | rgbRaw 값의 range 범위 내에서 위치를 0 ~ 255 사이의 값으로 변환한 값  |
-| hsv           | int16_t  | 12 Byte  |                     | rgb 값을 hsv 값으로 변환한 값(카드 색상 구분에 사용)  |
-| color         | [CardColor::Type](04_definitions.md#CardColor)  | 2 Byte   |                     | 카드 위, 아래의 색상     |
-| card          | [CardNameColor::Type](04_definitions.md#CardNameColor), <br>[CardNameFunction::Type](04_definitions.md#CardNameFunction) | 1 Byte  | - | 식별한 카드 |
+| frontH        | uint16_t    | 2 Byte   | 0 ~ 360             | Front H raw data          |
+| frontS        | int8_t      | 1 Byte   |                     | Front S raw data          |
+| frontV        | int8_t      | 1 Byte   |                     | Front V raw data          |
+| sequence      | uint8_t     | 1 Byte   |                     | 시퀀스                    |
+| accel         | int8_t      | 1 Byte   |                     | accel                     |
+| wheel         | int8_t      | 1 Byte   |                     | wheel                     |
+| color         | uint8_t     | 1 Byte   |                     | color                     |
 
 
 <br>
@@ -669,8 +623,8 @@ namespace Protocol
         
         u8      colorFront;     // 바닥 앞 부분 색상(RGB)
         u8      colorRear;      // 바닥 뒷 부분 색상(RGB)
-        
         u8      card;           // 식별한 카드(상위 4비트는 front, 하위 4비트는 rear 색상)
+
         u8      battery;        // 배터리
         s8      rssi;           // RSSI
     };
@@ -930,44 +884,12 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_LostConnection"></a>
-## Protocol::LostConnection
-
-연결이 끊어졌을 때 드론 동작을 처리할 시간 설정
-
-단위는 ms, 값을 0으로 설정할 경우 해당 항목은 무시
-
-마지막으로 드론 조종 명령을 전송한 장치와의 연결이 끊어지면, 지정한 시간 후 조종 중립, 착륙, 강제 정지를 실행
-
-기본으로 연결된 장치는 Rf이며, 설정값은 플래시 메모리에 저장되지 않으므로 매번 드론을 새로 시작할 때마다 설정해야 함
-
-```cpp
-namespace Protocol
-{
-    struct LostConnection
-    {
-        u16     timeNeutral;        // 조종 중립
-        u32     timeStop;           // 정지
-    };
-}
-```
-
-| 변수 이름     | 형식      | 크기     | 범위               | 설명                                            |
-|:-------------:|:---------:|:--------:|:------------------:|:------------------------------------------------|
-| timeNeutral   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 조종 중립으로 변경할 시간    |
-| timeStop      | uint32_t  | 4 Byte   | 0 ~ 4,294,967,295  | 연결이 끊어졌을 때 드론을 정지할 시간           |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Motor"></a>
 ## Protocol::Motor
 
 모터
 
-모터를 4개를 동시에 작동시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
+모터를 동시에 작동시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
 
 아래의 구조체를 배열로 사용합니다.
 

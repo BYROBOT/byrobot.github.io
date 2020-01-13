@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **DataType**
 
-Modified : 2019.8.30
+Modified : 2020.1.13
 
 ---
 
@@ -24,7 +24,7 @@ namespace Protocol
             None                        = 0x00,     // 없음
             Ping                        = 0x01,     // 통신 확인
             Ack                         = 0x02,     // 데이터 수신에 대한 응답
-            Error                       = 0x03,     // 오류(reserve, 비트 플래그는 추후에 지정)
+            Error                       = 0x03,     // 오류
             Request                     = 0x04,     // 지정한 타입의 데이터 요청
             Message                     = 0x05,     // 문자열 데이터
             Address                     = 0x06,     // 장치 주소(MAC이 있는 경우 MAC) 혹은 고유번호(MAC이 없는 경우 UUID)
@@ -38,53 +38,61 @@ namespace Protocol
             Administrator               = 0x0E,     // 관리자 권한 획득
             Monitor                     = 0x0F,     // 디버깅용 값 배열 전송. 첫번째 바이트에 타입, 두 번째 바이트에 페이지 지정(수신 받는 데이터의 저장 경로 구분)
             Control                     = 0x10,     // 조종
-
+            
             Command                     = 0x11,     // 명령
-
+            
             // Light
             LightManual                 = 0x20,     // LED 수동 제어
             LightMode                   = 0x21,     // LED 모드 지정
             LightEvent                  = 0x22,     // LED 이벤트
             LightDefault                = 0x23,     // LED 기본 색상
-
+            
             // 센서 RAW 데이터
             RawMotion                   = 0x30,     // Motion 센서 데이터 RAW 값
             RawLineTracer,                          // 라인트레이서 데이터 RAW 값
-
+            
             // 상태,  센서
-            State                       = 0x40,     // 상태(비행 모드, 방위기준, 배터리량)
-            Attitude,                               // 자세(Angle)(Attitude)
+            State                       = 0x40,     // 드론의 상태(비행 모드, 방위기준, 배터리량)
+            Attitude,                               // 드론의 자세(Angle)(Attitude)
             Position,                               // 위치
             Altitude,                               // 고도(자동차에서는 사용하지 않음)
             Motion,                                 // Motion 센서 데이터 처리한 값(IMU)
             Range,                                  // 거리센서 데이터
-
+            
             // 설정
             Count                       = 0x50,     // 카운트
             Bias,                                   // 엑셀, 자이로 바이어스 값
             Trim,                                   // 트림
-
+            Weight,                                 // 무게 설정(자동차에서는 사용하지 않음)
+            LostConnection,                         // 연결이 끊긴 후 반응 시간 설정(자동차에서는 사용하지 않음)
+            
             // Devices
             Motor                       = 0x60,     // 모터 제어 및 현재 제어값 확인
             MotorSingle,                            // 한 개의 모터 제어
-            Buzzer,                                 // 부저 제어
-
+            Buzzer,                                 // 버저 제어
+            Vibrator,                               // 진동 제어(자동차에서는 사용하지 않음)
+            
             // Input
             Button                      = 0x70,     // 버튼 입력
-
+            Joystick,                               // 조이스틱 입력(자동차에서는 사용하지 않음)
+            
             // Card
-            CardClassify                = 0x90,     // 카드 색상 분류 기준 설정
+            CardClassify                = 0x90,     // 카드 색상 분류(+Margin)
             CardRange,                              // 카드 색 범위(RAW 데이터의 출력 범위)
             CardRaw,                                // 카드 데이터 RAW 값(유선으로만 전송)
             CardColor,                              // 카드 데이터
             CardList,                               // 카드 리스트 데이터
             CardFunctionList,                       // 카드 함수 리스트 데이터
-
+            CardClassifyRaw,                        // 카드 색상 분류(Raw)
+            
+            // HandFollowing
+            HandFollowingSetup          = 0x9A,     // 핸드팔로잉 설정
+            
             // Information Assembled
             InformationAssembledForController       = 0xA0,     // 데이터 모음
             InformationAssembledForEntry            = 0xA1,     // 데이터 모음
             InformationAssembledForByBlocks         = 0xA2,     // 데이터 모음
-
+            
             // LINK 모듈
             LinkState                               = 0xE0,     // 링크 모듈의 상태
             LinkEvent,                                          // 링크 모듈의 이벤트
@@ -131,9 +139,6 @@ namespace Protocol
 | LightDefault                          | 0x23 | C    | LED 초기색                                      | [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | RawMotion                             | 0x30 | C    | Motion Raw 데이터(Accel, Gyro)                  | [Protocol::RawMotion](05_structs.md#Protocol_RawMotion) |
 | RawLineTracer                         | 0x31 | C    | 라인트레이서 데이터 RAW 값                      | [Protocol::RawLineTracer](05_structs.md#Protocol_RawLineTracer) |
-| RawCard                               | 0x32 | C    | 카드 데이터 RAW 값                              | [Protocol::RawCard](05_structs.md#Protocol_RawCard) |
-| RawCardList                           | 0x33 | C    | 카드 리스트 데이터                              | [Protocol::RawCardList](05_structs.md#Protocol_RawCardList) |
-| RawCardFunctionList                   | 0x34 | C    | 카드 함수 리스트 데이터                         | [Protocol::RawCardFunctionList](05_structs.md#Protocol_RawCardFunctionList) |
 | State                                 | 0x40 | C    | 드론의 상태                                     | [Protocol::State](05_structs.md#Protocol_State) |
 | Attitude                              | 0x41 | C    | 드론의 자세(Angle)                              | [Protocol::Attitude](05_structs.md#Protocol_Attitude) |
 | Position                              | 0x42 | C    | 위치                                            | [Protocol::Position](05_structs.md#Protocol_Position) |
@@ -146,12 +151,14 @@ namespace Protocol
 | MotorSingle                           | 0x61 | C    | 한 개의 모터 제어                               | [Protocol::MotorSingle](05_structs.md#Protocol_MotorSingle) |
 | Buzzer                                | 0x62 | C    | 버저 제어                                       | [Protocol::Buzzer](05_structs.md#Protocol_Buzzer),<br> [Protocol::BuzzerMelody](05_structs.md#Protocol_BuzzerMelody) |
 | Button                                | 0x70 | A    | 버튼 입력                                       | [Protocol::Button](05_structs.md#Protocol_Button) |
-| CardClassify                          | 0x90 | D    | 카드 색상 분류 기준 설정                       | [Protocol::Card::Classify](08_structs_card.md#Protocol_Card_Classify) |
-| CardRange                             | 0x91 | D    | 카드 색 범위(RAW 데이터의 출력 범위)           | [Protocol::Card::Range](08_structs_card.md#Protocol_Card_Range) |
-| CardRaw                               | 0x92 | D    | 카드 데이터 RAW 값(유선으로만 전송)            | [Protocol::Card::Raw](08_structs_card.md#Protocol_Card_Raw) |
-| CardColor                             | 0x93 | D    | 카드 데이터                                    | [Protocol::Card::Color](08_structs_card.md#Protocol_Card_Color) |
-| CardList                              | 0x94 | D    | 카드 리스트 데이터                             | [Protocol::Card::List](08_structs_card.md#Protocol_Card_List) |
-| CardFunctionList                      | 0x95 | D    | 카드 함수 리스트 데이터                        | [Protocol::Card::FunctionList](08_structs_card.md#Protocol_Card_List) |
+| CardClassify                          | 0x90 | D    | 카드 색상 분류                                  | [Protocol::Card::Classify](08_structs_card.md#Protocol_Card_Classify) |
+| CardRange                             | 0x91 | D    | 카드 색 범위(RAW 데이터의 출력 범위)            | [Protocol::Card::Range](08_structs_card.md#Protocol_Card_Range) |
+| CardRaw                               | 0x92 | D    | 카드 데이터 RAW 값(유선으로만 전송)             | [Protocol::Card::Raw](08_structs_card.md#Protocol_Card_Raw) |
+| CardColor                             | 0x93 | D    | 카드 데이터                                     | [Protocol::Card::Color](08_structs_card.md#Protocol_Card_Color) |
+| CardList                              | 0x94 | D    | 카드 리스트 데이터                              | [Protocol::Card::List](08_structs_card.md#Protocol_Card_List) |
+| CardFunctionList                      | 0x95 | D    | 카드 함수 리스트 데이터                         | [Protocol::Card::FunctionList](08_structs_card.md#Protocol_Card_FunctionList) |
+| CardClassifyRaw                       | 0x96 | D    | 카드 색상 분류(Raw)                             | [Protocol::Card::Classify](08_structs_card.md#Protocol_Card_Classify) |
+| HandFollowingSetup                    | 0x9A | D    | 핸드팔로잉 설정                                 | - |
 | InformationAssembledForController     | 0xA0 | C    | 자주 갱신되는 데이터 모음(조종기)               | [Protocol::InformationAssembledForController](05_structs.md#Protocol_InformationAssembledForController) |
 | InformationAssembledForEntry          | 0xA1 | C    | 자주 갱신되는 데이터 모음(엔트리)               | [Protocol::InformationAssembledForEntry](05_structs.md#Protocol_InformationAssembledForEntry) |
 | InformationAssembledForByBlocks       | 0xA2 | C    | 자주 갱신되는 데이터 모음(바이블럭)             | [Protocol::InformationAssembledForByBlocks](05_structs.md#Protocol_InformationAssembledForByBlocks) |

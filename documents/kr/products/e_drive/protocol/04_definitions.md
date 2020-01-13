@@ -1,6 +1,6 @@
 **[E-DRIVE](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2019.11.12
+Modified : 2020.1.13
 
 ---
 
@@ -80,6 +80,8 @@ namespace ModelNumber
         Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4
         Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5
         Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6
+        Drone_3_Drone_P7        = 0x00031007,   // Drone_3_Drone_P7
+        Drone_3_Drone_P8        = 0x00031008,   // Drone_3_Drone_P8
 
         Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
         Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
@@ -151,7 +153,8 @@ namespace Protocol
 
             EndOfType,
 
-            Broadcasting = 0xFF
+            Whispering      = 0xFE,     // 바로 인접한 장치까지만 전달(받은 장치는 자기 자신에게 보낸 것처럼 처리하고 타 장치에 전달하지 않음)
+            Broadcasting    = 0xFF      // 연결된 모든 장치에 전달
         };
     }
 }
@@ -261,8 +264,8 @@ namespace Mode
             Drive           = 0x10,     // 원격 조종
             Card,                       // 카드 코딩
             Motion,                     // 모션 코딩
-            Maze,                       // 미로 찾기
-            Random,                     // 랜덤
+            Maze,                       // 미로 찾기(미구현)
+            Random,                     // 랜덤(미구현)
             HandFollowing,              // 핸드 팔로잉
             LineTracer,                 // 라인 트레이서
             Piano,                      // 피아노 모드
@@ -357,7 +360,7 @@ namespace Mode
 <a name="ImageType"></a>
 ## ImageType::Type
 
-펌웨어 이미지 타입(현재는 BLE 통신칩에만 사용)
+펌웨어 이미지 타입(BLE 통신칩에만 사용)
 
 ```cpp
 namespace ImageType
@@ -487,16 +490,14 @@ namespace Rotation
 모터 번호
 
 ```cpp
-namespace Rotation
+namespace Motor
 {
     namespace Part
     {
         enum Type
         {
-            M1,     // Front Left
-            M2,     // Front Right
-            M3,     // Rear Right
-            M4,     // Rear Left
+            Left,   // Left
+            Right,  // Right
 
             EndOfPart,
 
@@ -697,6 +698,8 @@ namespace Buzzer
             SolMiDo,        // 솔미도
             LaLa,           // 라라
             SiRaSiRa,       // 시라시라
+            Do5Sol5Do6,     // 도5솔5도6도5솔5도6
+            Do6Sol5Do5,     // 도6솔5도5도6솔5도5
             
             Warning1,       // 경고 1
             Warning2,       // 경고 2
@@ -710,10 +713,22 @@ namespace Buzzer
             Di,             // Trim +
             DiDi,           // Trim + End
             
-            BuzzSound1,
-            BuzzSound2,
-            BuzzSound3,
-
+            BuzzSound1,     // C6
+            BuzzSound2,     // C6, D6
+            BuzzSound3,     // C6, D6, E6
+            
+            Button,
+            Shot,
+            
+            Mode1,
+            Mode2,
+            Mode3,
+            Mode4,
+            Mode5,
+            Mode6,
+            Mode7,
+            Mode8,
+            
             EndOfType
         };
     }
