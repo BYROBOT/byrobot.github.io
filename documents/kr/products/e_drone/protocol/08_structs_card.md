@@ -508,7 +508,7 @@ namespace Protocol
 | hsvl[1][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Lightness     |
 | color[0]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Front Color               |
 | color[1]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Rear Color                |
-| card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameCardCoding::Type](#Card_CardNameCardCoding), [Card::CardNamePiano::Type](#Card_CardNamePiano)  | 1 Byte   | - | 앞 센서의 색을 상위 4비트, 뒤 센서의 색을 하위 4비트에 할당하여 만든 카드 값  |
+| card          | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameCardCoding::Type](#Card_CardNameCardCoding), <br>[Card::CardNamePiano::Type](#Card_CardNamePiano)  | 1 Byte   | - | 카드 번호 |
 
 
 <br>
@@ -552,7 +552,7 @@ namespace Protocol
 | hsvl[1][3]    | int16_t    | 2 Byte   | 0 ~ 100          | Rear, Lightness     |
 | color[0]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Front Color               |
 | color[1]      | [Card::CardColor::Type](#Card_CardColor) | 1 Byte   | -                | Rear Color                |
-| card          | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 앞 센서의 값을 상위 4비트, 뒤 센서의 값을 하위 4비트에 할당하여 만든 카드 값  |
+| card          | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameFunction::Type](#Card_CardNameFunction)  | 1 Byte   | - | 카드 번호 |
 
 
 <br>
@@ -587,7 +587,7 @@ namespace Protocol
 | index         | uint8_t   | 1 Byte   | 0 ~ 100  | 현재 실행중인 카드의 인덱스         |
 | size          | uint8_t   | 1 Byte   | 0 ~ 100  | 입력된 카드의 총 갯수               |
 | cardIndex     | uint8_t   | 1 Byte   | 0 ~ 100  | 현재 전송하는 카드 배열의 시작 번호 |
-| card[12]      | [Card::CardNameColor::Type](#Card_CardNameColor), [Card::CardNameFunction::Type](#Card_CardNameFunction)  | 12 Byte   | - | 앞 센서의 값을 상위 4비트, 뒤 센서의 값을 하위 4비트에 할당하여 만든 카드 값  |
+| card[12]      | [Card::CardNameColor::Type](#Card_CardNameColor), <br>[Card::CardNameFunction::Type](#Card_CardNameFunction)  | 12 Byte   | - | 카드 목록 |
 
 
 <br>
