@@ -21,8 +21,8 @@ sass:
   style: compressed
 
 # Site Data
-url: # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: # the subpath of your site, e.g. /blog
+url: http://dev.byrobot.co.kr
+baseurl: 
 title: BYROBOT.DEV
 description: "Documents for BYROBOT Products."
 keywords: 'Drone,DroneFighters,Petrone,PetroneV2'
