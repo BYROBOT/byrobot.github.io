@@ -22,7 +22,7 @@ sass:
 
 # Site Data
 url: http://dev.byrobot.co.kr
-baseurl: /product
+baseurl: /products
 title: BYROBOT.DEV
 description: "Documents for BYROBOT Products."
 keywords: 'Drone,DroneFighters,Petrone,PetroneV2'
