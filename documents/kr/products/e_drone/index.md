@@ -39,19 +39,19 @@
         <tr>
             <td rowspan="2" style="background-color:#FFF9FA"><div align="center">Version</div></td>
             <td><div align="center">Drone</div></td>
-            <td><div align="center">1.1.24</div></td>
+            <td><div align="center">20.1.5</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Controller</div></td>
-            <td style="background-color:#FFF9FA"><div align="center">1.1.25</div></td>
+            <td style="background-color:#FFF9FA"><div align="center">20.1.4</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2019.11.12</div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2020.1.16</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
-            <td colspan="2" style="background-color:#FFF9FA"><div align="center"><a href="https://drive.google.com/open?id=1yap7IGBC3BWZFCwXfZolURP5CUHIZS2w" target="_blank">Windows</a></div></td>
+            <td colspan="2" style="background-color:#FFF9FA"><div align="center"><a href="https://drive.google.com/open?id=1r9yixqL4fQOcHhPcaMo82XLKRxsG-ycU" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
@@ -132,4 +132,4 @@
 
 ---
 
-Modified : 2020.1.8
+Modified : 2020.1.16
