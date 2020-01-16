@@ -24,6 +24,7 @@ Modified : 2020.1.16
 > - "Drone4AutoSetup.exe" 프로그램 추가
 >   - 한 대 또는 여러 대의 장치 설정을 일괄적으로 변경할 때 사용
 >   - 대상 장치와 명령을 선택 후 USB에 장치를 연결하면 자동으로 해당 장치에 연결하여 명령 전달
+> - Count 화면에 누적 비행 시간 실시간 반영
 
 
 [Download](https://drive.google.com/open?id=1r9yixqL4fQOcHhPcaMo82XLKRxsG-ycU)
