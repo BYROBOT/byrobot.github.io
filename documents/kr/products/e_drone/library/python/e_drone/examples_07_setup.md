@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2019.1.11
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="ModeControlFlight">드론 비행 제어 모드를 변경 후 확인</a>
+<a name="ModeControlFlight"></a>
+## 드론 비행 제어 모드를 변경 후 확인
 
 ```py
 from time import sleep
@@ -60,7 +64,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Headless">드론 Headless 설정 변경 후 확인</a>
+<a name="Headless"></a>
+## 드론 Headless 설정 변경 후 확인
 
 ```py
 from time import sleep
@@ -113,7 +118,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="TrimIncDec">TrimIncDec 변경 테스트</a>
+<a name="TrimIncDec"></a>
+## TrimIncDec 변경 테스트
 
 * 예제가 정상적으로 동작하지 않습니다. 추후 수정하겠습니다.
 
@@ -190,7 +196,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Trim">드론 Trim 설정 변경 후 확인</a>
+<a name="Trim"></a>
+## 드론 Trim 설정 변경 후 확인
 
 ```py
 from time import sleep

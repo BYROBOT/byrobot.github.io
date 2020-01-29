@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Input**
 
-Modified : 2018.9.14
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Button">버튼 입력값 출력</a>
+<a name="Button"></a>
+## 버튼 입력값 출력
 
 ```py
 from time import sleep
@@ -46,7 +50,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Joystick">조이스틱 입력값 출력</a>
+<a name="Joystick"></a>
+## 조이스틱 입력값 출력
 
 ```py
 from time import sleep

@@ -10,7 +10,8 @@ Modified : 2020.1.29
 <br>
 
 
-## <a name="LightManual">sendLightManual() 함수를 사용하여 조종기 LED 제어하기</a>
+<a name="LightManual"></a>
+## sendLightManual() 함수를 사용하여 조종기 LED 제어하기
 
 ```py
 import random
@@ -179,7 +180,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="LightMode">sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기</a>
+<a name="LightMode"></a>
+## sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기
 
 ```py
 from time import sleep
@@ -321,7 +323,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_LightModeColor">조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)</a>
+<a name="Class_LightModeColor"></a>
+## 조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)
 
 ```py
 import random
@@ -403,7 +406,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_LightModeColors">조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)</a>
+<a name="Class_LightModeColors"></a>
+## 조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)
 
 ```py
 import random
@@ -449,7 +453,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_LightDefaultModeColor">드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / sendLightDefaultColor 함수 사용)</a>
+<a name="Class_LightDefaultModeColor"></a>
+## 드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / sendLightDefaultColor 함수 사용)
 
 ```py
 import random

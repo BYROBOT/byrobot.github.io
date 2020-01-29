@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Buzzer**
 
-Modified : 2018.9.14
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Buzzer">sendBuzzer 함수 테스트</a>
+<a name="Buzzer"></a>
+## sendBuzzer 함수 테스트
 
 ```py
 from time import sleep
@@ -62,7 +66,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="BuzzerScale">'학교 종이 땡땡땡' 일부 연주</a>
+<a name="BuzzerScale"></a>
+## '학교 종이 땡땡땡' 일부 연주
 
 ```py
 from time import sleep
@@ -98,7 +103,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_Buzzer">Buzzer 클래스 데이터를 직접 채워서 전송하기</a>
+<a name="Class_Buzzer"></a>
+## Buzzer 클래스 데이터를 직접 채워서 전송하기
 
 ```py
 from time import sleep

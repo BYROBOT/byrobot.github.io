@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Ping**
 
-Modified : 2018.9.14
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Ping">Ping 테스트</a>
+<a name="Ping"></a>
+## Ping 테스트
 
 조종기에 **Ping**을 보내고, **Ack** 응답을 받아서 화면에 출력하는 예제입니다.
 
@@ -57,7 +61,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_Ping">Ping 테스트(이벤트 함수 등록)</a>
+<a name="Class_Ping"></a>
+## Ping 테스트(이벤트 함수 등록)
 
 조종기에 **Ping**을 보내고, **Ack** 응답을 받아서 화면에 출력하는 예제입니다.
 

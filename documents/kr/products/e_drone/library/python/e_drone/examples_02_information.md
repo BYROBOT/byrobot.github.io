@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2019.1.10
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Information">조종기의 펌웨어 정보 요청</a>
+<a name="Information"></a>
+## 조종기의 펌웨어 정보 요청
 
 ```py
 from time import sleep
@@ -58,7 +62,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_Information">조종기의 펌웨어 정보 요청(이벤트 함수 등록)</a>
+<a name="Class_Information"></a>
+## 조종기의 펌웨어 정보 요청(이벤트 함수 등록)
 
 ```py
 # 조종기의 펌웨어 정보를 요청하고, 이벤트 핸들러를 통해 응답을 출력하는 예제

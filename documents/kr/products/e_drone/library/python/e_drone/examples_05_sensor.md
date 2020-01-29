@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Sensor**
 
-Modified : 2018.9.14
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Altitude">고도 데이터 확인</a>
+<a name="Altitude"></a>
+## 고도 데이터 확인
 
 ```py
 from time import sleep
@@ -46,7 +50,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Motion">Motion 센서 데이터 확인</a>
+<a name="Motion"></a>
+## Motion 센서 데이터 확인
 
 ```py
 from time import sleep
@@ -85,7 +90,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Attitude">자세 확인</a>
+<a name="Attitude"></a>
+## 자세 확인
 
 ```py
 from time import sleep

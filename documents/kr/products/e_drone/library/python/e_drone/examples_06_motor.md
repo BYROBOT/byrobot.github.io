@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Motor**
 
-Modified : 2018.1.11
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Motor">모터 동작 테스트</a>
+<a name="Motor"></a>
+## 모터 동작 테스트
 
 드론의 전체 모터를 각각 다른 속도로 동작시켰다가 정지합니다.
 
@@ -55,7 +59,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="MotorSingle">MotorSingle 동작 테스트</a>
+<a name="MotorSingle"></a>
+## MotorSingle 동작 테스트
 
 우측 앞 모터 속도를 점점 올렸다가 다시 내린 후 정지하는 명령을 차례로 실행합니다.
 

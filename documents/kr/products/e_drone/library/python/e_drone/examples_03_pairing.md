@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Pairing**
 
-Modified : 2019.1.10
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Pairing">페어링 변경 후 변경된 정보 확인</a>
+<a name="Pairing"></a>
+## 페어링 변경 후 변경된 정보 확인
 
 ```py
 # 조종기의 페어링 정보를 변경하고, 변경된 정보를 요청한 후 응답을 기다려 출력하는 예제

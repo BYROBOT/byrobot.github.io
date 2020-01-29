@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Display**
 
-Modified : 2018.9.14
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="DisplayAll">모든 디스플레이 제어 명령을 차례대로 실행</a>
+<a name="DisplayAll"></a>
+## 모든 디스플레이 제어 명령을 차례대로 실행
 
 ```py
 from time import sleep
@@ -68,7 +72,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="DisplayClear">무작위 위치와 크기의 Clear를 100회 전송 (sendDisplayClear 함수 사용)</a>
+<a name="DisplayClear"></a>
+## 무작위 위치와 크기의 Clear를 100회 전송 (sendDisplayClear 함수 사용)
 
 ```py
 import random
@@ -153,7 +158,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="DisplayDrawLine">무작위 위치와 길이의 선을 100번 그리기 (sendDisplayDrawLine 함수 사용)</a>
+<a name="DisplayDrawLine"></a>
+## 무작위 위치와 길이의 선을 100번 그리기 (sendDisplayDrawLine 함수 사용)
 
 ```py
 import random
@@ -196,7 +202,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="DisplayDrawCircle">무작위 위치와 크기의 원을 100번 출력하기 (sendDisplayDrawCircle 함수 사용)</a>
+<a name="DisplayDrawCircle"></a>
+## 무작위 위치와 크기의 원을 100번 출력하기 (sendDisplayDrawCircle 함수 사용)
 
 ```py
 import random
@@ -280,7 +287,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="DisplayDrawRect">무작위 위치와 크기의 사각형을 100번 출력하기 (sendDisplayDrawRect 함수 사용)</a>
+<a name="DisplayDrawRect"></a>
+## 무작위 위치와 크기의 사각형을 100번 출력하기 (sendDisplayDrawRect 함수 사용)
 
 ```py
 import random
@@ -369,7 +377,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="DisplayDrawString">'HELLO' 문자열을 무작위 위치에 100번 출력하기</a>
+<a name="DisplayDrawString"></a>
+## 'HELLO' 문자열을 무작위 위치에 100번 출력하기
 
 ```py
 import random
@@ -418,7 +427,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="DisplayDrawStringAlign">'LOVE' 문자열을 왼쪽, 중앙, 오른쪽 정렬을 사용하여 무작위 위치에 10번 출력하기</a>
+<a name="DisplayDrawStringAlign"></a>
+## 'LOVE' 문자열을 왼쪽, 중앙, 오른쪽 정렬을 사용하여 무작위 위치에 10번 출력하기
 
 ```py
 import random

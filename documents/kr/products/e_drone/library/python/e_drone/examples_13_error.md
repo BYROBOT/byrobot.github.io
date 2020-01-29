@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Error**
 
-Modified : 2019.1.11
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Error_MotionCalibrating">Motion 센서 보정</a>
+<a name="Error_MotionCalibrating"></a>
+## Motion 센서 보정
 
 ```py
 # 드론 센서 캘리브레이션 요청 후 에러로 나타난 캘리브레이션 진행 상태를 화면에 표시

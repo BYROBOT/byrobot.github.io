@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Vibrator**
 
-Modified : 2018.7.6
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="Vibrator">sendVibrator 함수 테스트</a>
+<a name="Vibrator"></a>
+## sendVibrator 함수 테스트
 
 ```py
 from time import sleep
@@ -34,7 +38,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="Class_Vibrator">Vibrator 클래스 데이터를 직접 채워서 전송하기</a>
+<a name="Class_Vibrator"></a>
+## Vibrator 클래스 데이터를 직접 채워서 전송하기
 
 ```py
 from time import sleep

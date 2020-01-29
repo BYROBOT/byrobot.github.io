@@ -1,13 +1,17 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Control**
 
-Modified : 2019.1.11
+Modified : 2020.1.29
 
 ---
+
+* Kramdown table of contents
+{:toc .toc}
 
 <br>
 
 
-## <a name="ControlWhileAndLanding">이륙, 호버링, 착륙 테스트</a>
+<a name="ControlWhileAndLanding"></a>
+## 이륙, 호버링, 착륙 테스트
 
 ```py
 from time import sleep
@@ -51,7 +55,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="ControlWhile">이륙, 호버링, 하강, 정지 테스트</a>
+<a name="ControlWhile"></a>
+## 이륙, 호버링, 하강, 정지 테스트
 
 ```py
 from time import sleep
@@ -94,7 +99,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="ControlPosition">이륙, 호버링, 전진, 착륙 테스트</a>
+<a name="ControlPosition"></a>
+## 이륙, 호버링, 전진, 착륙 테스트
 
 ```py
 from time import sleep
@@ -146,7 +152,8 @@ if __name__ == '__main__':
 <br>
 
 
-## <a name="ControlReturnHome">이륙, 호버링, 1미터 전진, 1미터 오른쪽 이동, 리턴 홈 테스트</a>
+<a name="ControlReturnHome"></a>
+## 이륙, 호버링, 1미터 전진, 1미터 오른쪽 이동, 리턴 홈 테스트
 
 ```py
 from time import sleep
