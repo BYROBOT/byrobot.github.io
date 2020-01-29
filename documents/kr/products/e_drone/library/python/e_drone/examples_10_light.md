@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Light**
 
-Modified : 2018.9.14
+Modified : 2020.1.29
 
 ---
 
@@ -440,6 +440,43 @@ if __name__ == '__main__':
 ```
 
 - [LightModeColors](03_protocol.md#LightModeColors)
+
+
+<br>
+<br>
+
+
+## <a name="Class_LightDefaultModeColor">드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / sendLightDefaultColor 함수 사용)</a>
+
+```py
+import random
+from time import sleep
+
+from e_drone.drone import *
+from e_drone.protocol import *
+
+
+if __name__ == '__main__':
+
+    drone = Drone(True, True, True, True, True)
+    drone.open()
+
+    for i in range(0, 10, 1):
+        
+        r    = int(random.randint(0, 255))
+        g    = int(random.randint(0, 255))
+        b    = int(random.randint(0, 255))
+
+        dataArray = drone.sendLightDefaultColor(LightModeDrone.BodyDimming, 1, r, g, b)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
+
+        sleep(2)
+    
+    drone.close()
+```
+
+- [LightModeColor](03_protocol.md#LightModeColor)
+- [sendLightDefaultColor()](04_drone.md#sendLightDefaultColor)
 
 
 <br>

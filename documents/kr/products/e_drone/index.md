@@ -116,11 +116,11 @@
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Version</div></td>
-            <td colspan="2" style="background-color:#F2FEFF"><div align="center">0.1.32</div></td>
+            <td colspan="2" style="background-color:#F2FEFF"><div align="center">0.1.33</div></td>
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2020.1.21</div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2020.1.29</div></td>
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Manual</div></td>
@@ -132,4 +132,4 @@
 
 ---
 
-Modified : 2020.1.21
+Modified : 2020.1.29

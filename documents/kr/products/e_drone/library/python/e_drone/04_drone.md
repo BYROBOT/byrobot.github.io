@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2019.1.11
+Modified : 2020.1.29
 
 ---
 
@@ -808,8 +808,6 @@ LED 모드 설정(RGB)
 
 lightMode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
 ```py
 def sendLightModeColor(self, lightMode, interval, r, g, b):
 ```
@@ -836,8 +834,6 @@ LED 모드 설정(Palette)
 
 lightMode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
 ```py
 def sendLightModeColors(self, lightMode, interval, colors):
 ```
@@ -860,8 +856,6 @@ def sendLightModeColors(self, lightMode, interval, colors):
 LED 이벤트 설정(RGB)
 
 lightEvent 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
-
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
 
 ```py
 def sendLightEventColor(self, lightEvent, interval, repeat, r, g, b):
@@ -889,8 +883,6 @@ LED 이벤트 설정(Palette)
 
 lightEvent 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
-brightness는 값은 0일 때 꺼지며 값이 커질수록 밝아집니다.
-
 ```py
 def sendLightEventColors(self, lightEvent, interval, repeat, colors):
 ```
@@ -903,6 +895,31 @@ def sendLightEventColors(self, lightEvent, interval, repeat, colors):
 | colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
 
 - e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
+
+
+<br>
+<br>
+
+
+## <a name="sendLightDefaultColor">sendLightDefaultColor</a>
+
+LED 기본 모드 설정(RGB)
+
+lightMode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
+
+```py
+def sendLightDefaultColor(self, lightMode, interval, r, g, b):
+```
+
+| 변수 이름                 | 형식 또는 범위          | 설명                                     |
+|:-------------------------:|:-----------------------:|:-----------------------------------------|
+| lightMode                 | UInt8                   | LED 동작 모드                            |
+| interval                  | 0 ~ 65535               | 내부 밝기 제어 함수 호출 주기            |
+| r                         | 0 ~ 255                 | Red                                      |
+| g                         | 0 ~ 255                 | Green                                    |
+| b                         | 0 ~ 255                 | Blue                                     |
+
+- e.g. [드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / sendLightDefaultColor 함수 사용)](examples_10_light.md#Class_LightDefaultModeColor)
 
 
 <br>
