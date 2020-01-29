@@ -155,10 +155,11 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | 이름                                                              | 설명                                        |
 |:------------------------------------------------------------------|:--------------------------------------------|
 | [sendLightManual](#sendLightManual)                               | 수동 제어                                   |
-| [sendLightModeColor](#sendLightModeColor)                         | 모드 설정(RGB)                              |
-| [sendLightModeColors](#sendLightModeColors)                       | 모드 설정(팔레트)                           |
-| [sendLightEventColor](#sendLightEventColor)                       | 이벤트 설정(RGB)                            |
-| [sendLightEventColors](#sendLightEventColors)                     | 이벤트 설정(팔레트)                         |
+| [sendLightModeColor](#sendLightModeColor)                         | 모드 설정 (RGB)                             |
+| [sendLightModeColors](#sendLightModeColors)                       | 모드 설정 (팔레트)                          |
+| [sendLightEventColor](#sendLightEventColor)                       | 이벤트 설정 (RGB)                           |
+| [sendLightEventColors](#sendLightEventColors)                     | 이벤트 설정 (팔레트)                        |
+| [sendLightDefaultColor](#sendLightDefaultColor)                   | 기본 모드 설정 (RGB)                        |
 
 <br>
 
