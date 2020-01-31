@@ -3,7 +3,7 @@
 ---
 
 <div align="center">
-    <img src="/assets/images/products/e_drone.jpg" alt="e_drone">
+    <img src="/assets/images/products/byrobot_drone_8.png" alt="e_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="110" style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1"><div align="center">Documents</div></span></a></td>
@@ -25,11 +25,11 @@
         </tr>
         <tr>
             <td style="background-color:#F5FAFF"><div align="center">User Manual</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/e_drone/manual/user/">한국어</a></div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="./manual/user/">한국어</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#F5FAFF"><div align="center">Protocol</div></td>
-            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/e_drone/protocol/">한국어</a></div></td>
+            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="./protocol/">한국어</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
