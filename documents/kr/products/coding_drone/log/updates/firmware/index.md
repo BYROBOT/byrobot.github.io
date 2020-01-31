@@ -1,4 +1,4 @@
-**[E-DRONE](/documents/kr/products/e_drone/) update log**
+**[CODING DRONE](/documents/kr/products/e_drone/) update log**
 
 Modified : 2020.1.16
 
@@ -16,7 +16,7 @@ Modified : 2020.1.16
 - **Drone: 20.1.5**
 - **Controller: 20.1.4**
 
-> - E-Drone의 펌웨어 버전도 Year.Month.BuildNumber 형식으로 변경
+> - Coding Drone의 펌웨어 버전도 Year.Month.BuildNumber 형식으로 변경
 > - LED 색 변경 순서를 [빨강 -> 노랑 -> 녹색 -> 하늘 -> 파랑 -> 자홍 -> 흰색 -> 무지개색] 순서로 변경
 > - 위에서 변경한 LED 색 변경 순서는 다른 프로젝트에서도 통일할 예정
 > - [StateController](http://dev.byrobot.co.kr/documents/kr/products/e_drone/protocol/05_structs/#heading-protocolstatecontroller) 추가

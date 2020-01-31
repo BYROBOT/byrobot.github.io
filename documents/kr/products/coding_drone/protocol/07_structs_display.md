@@ -1,4 +1,4 @@
-**[E-DRONE](index.md)** / **Protocol** / **Structs** / **Display**
+**[CODING DRONE](index.md)** / **Protocol** / **Structs** / **Display**
 
 Modified : 2019.8.30
 
@@ -507,7 +507,7 @@ namespace Protocol
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>CODING DRONE</H3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)

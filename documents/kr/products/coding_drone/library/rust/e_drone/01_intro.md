@@ -23,7 +23,7 @@ Modified : 2018.8.9
 
 # 1. **e_drone** for rust 소개
 
-***e_drone* for rust**는 rust에서 ***E-DRONE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
+***e_drone* for rust**는 rust에서 ***CODING DRONE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
 
 [https://crates.io/crates/e_drone](https://crates.io/crates/e_drone)
 

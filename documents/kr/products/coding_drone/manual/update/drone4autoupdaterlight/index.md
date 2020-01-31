@@ -1,4 +1,4 @@
-**[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
+**[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
 
 Modified : 2019.6.19
 
@@ -21,7 +21,7 @@ Modified : 2019.6.19
 
 # 1. 펌웨어 다운로드
 
-[E-DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 Coding Drone 펌웨어를 내려받습니다.
+[CODING DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 Coding Drone 펌웨어를 내려받습니다.
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">

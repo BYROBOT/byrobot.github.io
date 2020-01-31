@@ -51,7 +51,7 @@ if __name__ == '__main__':
     drone.sendDisplayDrawString(10, 10, "HELLO", DisplayFont.LiberationMono5x8, DisplayPixel.White)
     sleep(delay)
     
-    drone.sendDisplayDrawStringAlign(0, 128, 30, "E-DRONE", DisplayAlign.Center, DisplayFont.LiberationMono10x16, DisplayPixel.White)
+    drone.sendDisplayDrawStringAlign(0, 128, 30, "CODING DRONE", DisplayAlign.Center, DisplayFont.LiberationMono10x16, DisplayPixel.White)
     sleep(delay)
     
     drone.close()

@@ -1,4 +1,4 @@
-**[E-DRONE](index.md)** / **Protocol** / **Intro**
+**[CODING DRONE](index.md)** / **Protocol** / **Intro**
 
 Modified : 2019.9.2
 
@@ -10,9 +10,9 @@ Modified : 2019.9.2
 
 <br>
 
-# 1. E-DRONE 소개
+# 1. CODING DRONE 소개
 
-**E-DRONE**은 코딩 교육에 맞추어 개발된 드론입니다.
+**CODING DRONE**은 코딩 교육에 맞추어 개발된 드론입니다.
 
 
 <br>
@@ -21,7 +21,7 @@ Modified : 2019.9.2
 
 # 2. 전송 데이터 구조
 
-E-Drone은 외부 장치와 통신할 경우, 주로 조종기를 PC와 연결한 상태에서 시리얼 통신을 하게 됩니다. 이 때 송수신 데이터의 구조는 아래와 같습니다.
+Coding Drone은 외부 장치와 통신할 경우, 주로 조종기를 PC와 연결한 상태에서 시리얼 통신을 하게 됩니다. 이 때 송수신 데이터의 구조는 아래와 같습니다.
 
 <table>
     <tr>
@@ -206,7 +206,7 @@ Coding Drone 조종기는 윈도우10인 경우 자동으로 인식합니다. �
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>CODING DRONE</H3>
 
 1. **Intro**
 2. [Typedef](02_typedef.md)

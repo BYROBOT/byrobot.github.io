@@ -1,4 +1,4 @@
-**[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
+**[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
 
 Modified : 2019.3.15
 

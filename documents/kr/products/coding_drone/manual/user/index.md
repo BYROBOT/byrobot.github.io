@@ -1,4 +1,4 @@
-**[E-DRONE](/documents/kr/products/e_drone/) User Manual**
+**[CODING DRONE](/documents/kr/products/e_drone/) User Manual**
 
 Modified : 2019.3.25
 
@@ -99,7 +99,7 @@ Modified : 2019.3.25
 
 ## 1.2. 좌표계
 
-E-Drone은 오른손 좌표계를 사용하고 있습니다.
+Coding Drone은 오른손 좌표계를 사용하고 있습니다.
 
 | 좌표축  | +        | -        |
 |:-------:|:--------:|:--------:|
@@ -125,7 +125,7 @@ E-Drone은 오른손 좌표계를 사용하고 있습니다.
 
 ## 2.1 조종기 화면 구성
 
-E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구성되어 있습니다.
+Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구성되어 있습니다.
 
 <div align="center">
     <img src="./images/display_control.jpg" alt="control"><br>

@@ -1,10 +1,10 @@
-**[E-DRONE](index.md)** / **Protocol** / **Definitions**
+**[CODING DRONE](index.md)** / **Protocol** / **Definitions**
 
 Modified : 2020.1.10
 
 ---
 
-#### E-DRONE 에서 사용하고 있는 기본 정의들을 소개합니다.
+#### CODING DRONE 에서 사용하고 있는 기본 정의들을 소개합니다.
 
 ---
 
@@ -1031,7 +1031,7 @@ namespace Vibrator
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>CODING DRONE</H3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
