@@ -55,13 +55,13 @@
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="./log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Manual</div></td>
             <td colspan="2" style="background-color:#FFF9FA">
                 <div align="center">
-                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">한국어</a>
+                    <a href="./manual/update/drone4autoupdaterlight/">한국어</a>
                 </div>
             </td>
         </tr>
@@ -126,10 +126,14 @@
             <td style="background-color:#F2FEFF"><div align="center">Manual</div></td>
             <td colspan="2" style="background-color:#F2FEFF"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
         </tr>
+        <tr>
+            <td style="background-color:#F2FEFF"><div align="center">Update Log</div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/">한국어</a></div></td>
+        </tr>
         <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
     </table>
 </div>
 
 ---
 
-Modified : 2020.1.29
+Modified : 2020.1.31
