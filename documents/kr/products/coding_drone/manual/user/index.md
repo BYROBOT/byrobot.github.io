@@ -4,7 +4,7 @@ Modified : 2019.3.25
 
 ---
 
-<h3>E-Drone 사용자 설명서</h3>
+<h3>Coding Drone 사용자 설명서</h3>
 
 ---
 
@@ -26,7 +26,7 @@ Modified : 2019.3.25
     <table>
         <tr>
             <td><div align="center"><b>항목</b></div></td>
-            <td><div align="center"><b>E-Drone</b></div></td>
+            <td><div align="center"><b>Coding Drone</b></div></td>
         </tr>
         <tr>
             <td><div align="center">모터 축간 대각선 길이</div></td>
@@ -888,5 +888,5 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 
 
-여기까지 E-Drone 조종기와 드론에 대한 간략한 설명이었습니다.
+여기까지 Coding Drone 조종기와 드론에 대한 간략한 설명이었습니다.
 

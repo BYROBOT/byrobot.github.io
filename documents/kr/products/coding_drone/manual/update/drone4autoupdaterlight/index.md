@@ -4,7 +4,7 @@ Modified : 2019.6.19
 
 ---
 
-<h3>E-Drone 펌웨어 업데이트</h3>
+<h3>Coding Drone 펌웨어 업데이트</h3>
 
 ---
 
@@ -21,7 +21,7 @@ Modified : 2019.6.19
 
 # 1. 펌웨어 다운로드
 
-[E-DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 E-Drone 펌웨어를 내려받습니다.
+[E-DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 Coding Drone 펌웨어를 내려받습니다.
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">
@@ -131,5 +131,5 @@ Modified : 2019.6.19
 <br>
 
 
-여기까지 E-Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
+여기까지 Coding Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
 
