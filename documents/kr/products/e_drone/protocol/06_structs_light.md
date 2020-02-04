@@ -145,7 +145,7 @@ namespace Light
                 None,
                 
                 // Body
-                BodyNone = 0x10,
+                BodyNone = 0x20,
                 BodyManual,         // 수동 제어
                 BodyHold,           // 지정한 색상을 계속 켬
                 BodyFlicker,        // 깜빡임
@@ -153,6 +153,8 @@ namespace Light
                 BodyDimming,        // 밝기 제어하여 천천히 깜빡임
                 BodySunrise,        // 꺼진 상태에서 점점 밝아짐
                 BodySunset,         // 켜진 상태에서 점점 어두워짐
+                BodyRainbow,        // 무지개색
+                BodyRainbow2,       // 무지개색
                 
                 EndOfType
             };

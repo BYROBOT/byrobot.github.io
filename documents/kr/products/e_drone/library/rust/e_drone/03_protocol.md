@@ -672,14 +672,14 @@ class LightModeController(Enum):
     None_               = 0x00
 
     # Body
-    BodyNone            = 0x10
-    BodyManual          = 0x11      # 수동 조작
-    BodyHold            = 0x12
-    BodyFlicker         = 0x13
-    BodyFlickerDouble   = 0x14
-    BodyDimming         = 0x15
+    BodyNone            = 0x20
+    BodyManual          = 0x21      # 수동 조작
+    BodyHold            = 0x22
+    BodyFlicker         = 0x23
+    BodyFlickerDouble   = 0x24
+    BodyDimming         = 0x25
 
-    EndOfType           = 0x16
+    EndOfType           = 0x26
 ```
 
 
