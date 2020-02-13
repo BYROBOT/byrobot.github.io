@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.1.2
+Modified : 2020.2.13
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2020.1.2
 
 
 <br>
+
+
+# 2020.2.13
+
+- **E-Drive: 20.2.1**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 라인코딩 동작 튜닝
+
+
+[Download](https://drive.google.com/open?id=1YteEWNgSr8Sxl5UjFOINCoETIDBLRais)
+
+
+<br>
+
+---
 
 
 # 2020.1.2

@@ -55,7 +55,7 @@
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1mOKWhJ9oUCj1C14aO3CuIpph-YWxiJUR" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1YteEWNgSr8Sxl5UjFOINCoETIDBLRais" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
