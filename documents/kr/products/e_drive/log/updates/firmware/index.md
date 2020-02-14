@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.2.13
+Modified : 2020.2.14
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2020.2.13
 
 
 <br>
+
+
+# 2020.2.14
+
+- **E-Drive: 20.2.2**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 드론 설정 변경 프로그램 대응
+
+
+[Download](https://drive.google.com/open?id=1I1n23MPRObF4FIt9mso1CB6zKdg3Ssd6)
+
+
+<br>
+
+---
 
 
 # 2020.2.13
