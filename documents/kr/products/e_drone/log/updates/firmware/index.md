@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.1.16
+Modified : 2020.2.24
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2020.1.16
 
 
 <br>
+
+
+# 2020.2.21
+
+- Drone: 20.1.5
+- **Controller: 20.2.3**
+
+> - 조종기 Light 모드 설정 시 Body*의 시작을 **0x10**에서 **0x20**으로 변경함. 이유는 E-Drone 이후 장치들의 메인 LED를 **0x20**으로 고정하기로 했기 때문
+> - [Light::Controller::Mode::Type](http://dev.byrobot.co.kr/documents/kr/products/e_drone/protocol/06_structs_light/#heading-lightcontrollermodetype)
+> - 통신으로 조종기의 Light 설정 변경 시 상위 4비트의 값을 무시하고 무조건 Body 설정을 변경하게 함(0x10을 사용하는 기존 코드와의 호환 문제)
+
+
+[Download](https://drive.google.com/open?id=1r9yixqL4fQOcHhPcaMo82XLKRxsG-ycU)
+
+
+<br>
+
+---
 
 
 # 2020.1.16

@@ -43,15 +43,15 @@
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Controller</div></td>
-            <td style="background-color:#FFF9FA"><div align="center">20.1.4</div></td>
+            <td style="background-color:#FFF9FA"><div align="center">20.2.3</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2020.1.16</div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2020.2.21</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
-            <td colspan="2" style="background-color:#FFF9FA"><div align="center"><a href="https://drive.google.com/open?id=1r9yixqL4fQOcHhPcaMo82XLKRxsG-ycU" target="_blank">Windows</a></div></td>
+            <td colspan="2" style="background-color:#FFF9FA"><div align="center"><a href="https://drive.google.com/open?id=1XGGLOtHK6IWEacHwPjnZZggVdvRKoAU1" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
@@ -136,4 +136,4 @@
 
 ---
 
-Modified : 2020.1.31
+Modified : 2020.2.24
