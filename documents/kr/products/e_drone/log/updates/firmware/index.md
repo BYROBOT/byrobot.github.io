@@ -21,7 +21,7 @@ Modified : 2020.2.24
 > - 통신으로 조종기의 Light 설정 변경 시 상위 4비트의 값을 무시하고 무조건 Body 설정을 변경하게 함(0x10을 사용하는 기존 코드와의 호환 문제)
 
 
-[Download](https://drive.google.com/open?id=1r9yixqL4fQOcHhPcaMo82XLKRxsG-ycU)
+[Download](https://drive.google.com/open?id=1XGGLOtHK6IWEacHwPjnZZggVdvRKoAU1)
 
 
 <br>
