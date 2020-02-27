@@ -4,9 +4,9 @@
 
 <div align="center">
     <a href="/documents/kr/news/2020"><b>News</b></a><br>
+    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020227">GO CAR 펌웨어 업데이트</a> <sup><i>2020.2.27</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020221">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.2.21</i></sup><br>
     <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020214">GO CAR 펌웨어 업데이트</a> <sup><i>2020.2.14</i></sup><br>
-    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020213">GO CAR 펌웨어 업데이트</a> <sup><i>2020.2.13</i></sup><br>
 </div>
 
 <div align="center">
@@ -81,4 +81,4 @@
 ---
 
 
-Modified : 2020.2.24
+Modified : 2020.2.27
