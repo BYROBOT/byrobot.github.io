@@ -112,7 +112,7 @@
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Library</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="https://pypi.python.org/pypi/e_drone" target="_blank">e_drone</a></div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="https://pypi.org/project/e-drone/" target="_blank">e_drone</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Version</div></td>
@@ -136,4 +136,4 @@
 
 ---
 
-Modified : 2020.2.24
+Modified : 2020.3.26

@@ -1,6 +1,6 @@
 **[*e_drive* for python](index.md)** / **Intro**
 
-Modified : 2019.4.12
+Modified : 2020.3.26
 
 ---
 
@@ -25,7 +25,7 @@ Modified : 2019.4.12
 
 ***e_drive* for python**은 python에서 ***E-DRIVE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
 
-[https://pypi.python.org/pypi/e_drive](https://pypi.python.org/pypi/e_drive)
+[https://pypi.org/project/e-drive/](https://pypi.org/project/e-drive/)
 
 <br>
 <br>

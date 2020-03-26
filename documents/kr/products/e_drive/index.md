@@ -116,7 +116,7 @@
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Library</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="https://pypi.python.org/pypi/e_drive" target="_blank">e_drive</a></div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="https://pypi.org/project/e-drive/" target="_blank">e_drive</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#F2FEFF"><div align="center">Version</div></td>
@@ -136,4 +136,4 @@
 
 ---
 
-Modified : 2020.2.27
+Modified : 2020.3.26
