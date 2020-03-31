@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.2.27
+Modified : 2020.3.31
 
 ---
 
@@ -9,6 +9,29 @@ Modified : 2020.2.27
 
 
 <br>
+
+
+# 2020.3.31
+
+- **E-Drive: 20.3.19**
+- E-Drive BleServer: 19.10.16
+- E-Drive Tester: 19.9.1
+
+> - 길을 잃어버렸을 때의 효과음 제거
+> - 핸드팔로잉, 라인코딩 조향 제어 수정
+> - 라인 코딩 규칙 변경
+>   - 파란색(부스터), 하늘색(우회전) 마커 제거
+>   - 노란색 마커를 만나면 바로 우회전 하도록 변경
+>   - 녹색 마커를 만나면 바로 좌회전 하도록 변경
+> - Hue 영역을 -60 ~ 60에서 -120 ~ 120으로 확장함(일부 색상이 다른 색 경계를 넘어서 나타나는 경우가 있어 수정)
+
+
+[Download](https://drive.google.com/open?id=1tKKKJtc1dzD8Sd26GdTpwWeOhwG9ruIE)
+
+
+<br>
+
+---
 
 
 # 2020.2.27

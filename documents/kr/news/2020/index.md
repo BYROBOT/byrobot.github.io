@@ -7,6 +7,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020331">GO CAR 펌웨어 업데이트</a> <sup><i>2020.3.31</i></sup><br>
+
 - <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020227">GO CAR 펌웨어 업데이트</a> <sup><i>2020.2.27</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020221">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.2.21</i></sup><br>
@@ -26,4 +28,4 @@
 ---
 
 
-Modified : 2020.2.27
+Modified : 2020.3.31

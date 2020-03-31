@@ -39,7 +39,7 @@
         <tr>
             <td rowspan="3" style="background-color:#FFF9FA"><div align="center">Version</div></td>
             <td><div align="center">Car</div></td>
-            <td><div align="center">20.2.4</div></td>
+            <td><div align="center">20.3.19</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">BleServer</div></td>
@@ -51,11 +51,11 @@
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFF9FA"><div align="center">2020.2.27</div></td>
+            <td colspan="2" style="background-color:#FFF9FA"><div align="center">2020.3.31</div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1sOJpW6DScZTGItZk_xZDwOluepM1duXh" target="_blank">Windows</a></div></td>
+            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1tKKKJtc1dzD8Sd26GdTpwWeOhwG9ruIE" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
@@ -136,4 +136,4 @@
 
 ---
 
-Modified : 2020.3.26
+Modified : 2020.3.31
