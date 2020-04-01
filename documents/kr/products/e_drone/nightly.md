@@ -4,25 +4,25 @@
 
 <style>
 
-td.documents { background: #EEFAFA !important; }
-td.firmware  { background: #FFF9FA !important; }
-td.driver    { background: #F7FFF7 !important; }
-td.entry     { background: #FEF3FE !important; }
-td.byblocks  { background: #F5FAFF !important; }
-td.python    { background: #FFFEF5 !important; }
-td.issues    { background: #EFF1FC !important; }
-td.byrobot   { background: #FAFEFE !important; }
-td.white     { background: #FFFFFF !important; }
-td.space     { background: #FFFFFF !important; }
+    td.documents { background: #EEFAFA !important; }
+    td.firmware  { background: #FFF9FA !important; }
+    td.driver    { background: #F7FFF7 !important; }
+    td.entry     { background: #FEF3FE !important; }
+    td.byblocks  { background: #F5FAFF !important; }
+    td.python    { background: #FFFEF5 !important; }
+    td.issues    { background: #EFF1FC !important; }
+    td.byrobot   { background: #FAFEFE !important; }
+    td.white     { background: #FFFFFF !important; }
+    td.space     { background: #FFFFFF !important; }
 
-span.documents { color: #0489B1; }
-span.firmware  { color: #FF4000; }
-span.driver    { color: #0489B1; }
-span.entry     { color: #FF4000; }
-span.byblocks  { color: #0489B1; }
-span.python    { color: #FF4000; }
-span.issues    { color: #0489B1; }
-span.byrobot   { color: #CCDDEE; }
+    span.documents { color: #0489B1; }
+    span.firmware  { color: #FF4000; }
+    span.driver    { color: #0489B1; }
+    span.entry     { color: #FF4000; }
+    span.byblocks  { color: #0489B1; }
+    span.python    { color: #FF4000; }
+    span.issues    { color: #0489B1; }
+    span.byrobot   { color: #CCDDEE; }
 
 </style>
 
@@ -114,11 +114,12 @@ span.byrobot   { color: #CCDDEE; }
             <td colspan="3" class="entry"><div align="center"><a name="Entry"></a>&nbsp;<br>Entry<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="2" class="entry"><div align="center">Entry</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://playentry.org/" target="_blank">Online</a></div></td>
+            <td class="entry"><div align="center">Homepage</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://playentry.org/" target="_blank">Entry</a></div></td>
         </tr>
         <tr>
-            <td colspan="2" class="entry"><div align="center"><a href="https://playentry.org/#!/offlineEditor" target="_blank">Offline</a></div></td>
+            <td class="entry"><div align="center">Download</div></td>
+            <td colspan="2" class="entry"><div align="center"><a href="https://playentry.org/#!/offlineEditor" target="_blank">Entry Offline</a></div></td>
         </tr>
         <!-- ByBlocks -->
         <tr><td colspan="3" class="white"></td></tr>
@@ -176,4 +177,4 @@ span.byrobot   { color: #CCDDEE; }
 
 ---
 
-Modified : 2020.4.1
+Modified : 2020.4.2
