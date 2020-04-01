@@ -4,16 +4,16 @@
 
 <style>
 
-td.documents { background: #EEFAFA; !important }
-td.firmware  { background: #FFF9FA; !important }
-td.driver    { background: #F7FFF7; !important }
-td.entry     { background: #FEF3FE; !important }
-td.byblocks  { background: #F5FAFF; !important }
-td.python    { background: #FFFEF5; !important }
-td.issues    { background: #EFF1FC; !important }
-td.byrobot   { background: #FFFFFF; !important }
-td.white     { background: #FFFFFF; !important }
-td.space     { background: #FFFFFF; !important }
+td.documents { background: #EEFAFA !important; }
+td.firmware  { background: #FFF9FA !important; }
+td.driver    { background: #F7FFF7 !important; }
+td.entry     { background: #FEF3FE !important; }
+td.byblocks  { background: #F5FAFF !important; }
+td.python    { background: #FFFEF5 !important; }
+td.issues    { background: #EFF1FC !important; }
+td.byrobot   { background: #FAFEFE !important; }
+td.white     { background: #FFFFFF !important; }
+td.space     { background: #FFFFFF !important; }
 
 span.documents { color: #0489B1; }
 span.firmware  { color: #FF4000; }
