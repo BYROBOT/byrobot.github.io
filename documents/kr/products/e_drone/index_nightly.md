@@ -114,11 +114,11 @@ span.byrobot   { color: #CCDDEE; }
             <td colspan="3" class="entry"><div align="center"><a name="Entry"></a>&nbsp;<br>Entry<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="2" class="entry"><div align="center">Link</div></td>
-            <td colspan="2" class="white"><a href="https://playentry.org/" target="_blank"><span style="color:#0489B1"><div align="center">Entry</div></span></a></td>
+            <td rowspan="2" class="entry"><div align="center">Entry</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://playentry.org/" target="_blank">Online</a></div></td>
         </tr>
         <tr>
-            <td colspan="2" class="entry"><a href="https://playentry.org/#!/offlineEditor" target="_blank"><span style="color:#0489B1"><div align="center">Entry offline</div></span></a></td>
+            <td colspan="2" class="entry"><div align="center"><a href="https://playentry.org/#!/offlineEditor" target="_blank">Offline</a></div></td>
         </tr>
         <!-- ByBlocks -->
         <tr><td colspan="3" class="white"></td></tr>
