@@ -22,7 +22,7 @@ span.entry     { color: #FF4000; }
 span.byblocks  { color: #0489B1; }
 span.python    { color: #FF4000; }
 span.issues    { color: #0489B1; }
-span.byrobot   { color: #CCEEEE; }
+span.byrobot   { color: #CCDDEE; }
 
 </style>
 
@@ -37,7 +37,7 @@ span.byrobot   { color: #CCEEEE; }
         <tr>
             <td width="110" class="entry"><a href="#Entry"><span class="entry"><div align="center">Entry</div></span></a></td>
             <td width="110" class="byblocks"><a href="#ByBlocks"><span class="byblocks"><div align="center">ByBlocks</div></span></a></td>
-            <td width="110" class="python"><a href="#Python"><span class="python"><div align="center">Python</div></span></a></td>span></a></td>
+            <td width="110" class="python"><a href="#Python"><span class="python"><div align="center">Python</div></span></a></td>
         </tr>
         <tr>
             <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span class="issues"><div align="center">Issues</div></span></a></td>
