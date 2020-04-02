@@ -1,0 +1,106 @@
+### Products
+
+---
+<!-------------------------------------------------------------------------------------------------------
+
+    2020.4.2
+
+    각 index.md 파일 변경 시 사소한 링크 수정이나 펌웨어 업데이트 등은 직접 수정해도 상관없으나
+
+    디자인 변경, 테이블 구조 변경 등의 작업을 하게 되는 경우, nightly.md 파일에서 먼저 작업을 할 것.
+
+    git에 올려 화면이 정상적으로 표시되는지를 확인하고, index.md 파일을 변경하는 것을 권장함
+
+-------------------------------------------------------------------------------------------------------->
+
+<style>
+
+    td.white    { background: #FFFFFF !important; }
+
+    span.odd    { color: #0489B1; }
+    span.even   { color: #FF4000; }
+
+</style>
+
+
+<div align="center">
+    <a href="/documents/kr/news/2020"><b>News</b></a><br>
+    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020331">GO CAR 펌웨어 업데이트</a> <sup><i>2020.3.31</i></sup><br>
+    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020227">GO CAR 펌웨어 업데이트</a> <sup><i>2020.2.27</i></sup><br>
+    <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020221">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.2.21</i></sup><br>
+</div>
+
+<div align="center">
+    <table>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/coding_drone/">
+                        <span class="odd">
+                            <img src="/assets/images/products/byrobot_drone_8.png" alt="coding drone" height="240" width="240"><br>
+                            CODING DRONE
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/e_drive/">
+                        <span class="even">
+                            <img src="/assets/images/products/e_drive.jpg" alt="e_drive" height="240" width="240"><br>
+                            GO CAR
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/e_drone/">
+                        <span class="odd">
+                            <img src="/assets/images/products/e_drone.jpg" alt="e_drone" height="240" width="240"><br>
+                            E-DRONE
+                        </span>
+                    </a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/petrone_v2/">
+                        <span class="even">
+                            <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2_and_controller" height="240" width="240"><br>
+                            PETRONE V2
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/petrone/">
+                        <span class="odd">
+                            <img src="/assets/images/products/petrone.jpg" alt="petrone" height="240" width="240"><br>
+                            PETRONE<br>
+                            PETRONE 2.0
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/dronefighter2017/">
+                        <span class="even">
+                            <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="240" width="240"><br>
+                            DRONE FIGHTER
+                        </span>
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+---
+
+
+Modified : 2020.4.2
