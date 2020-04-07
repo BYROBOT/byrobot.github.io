@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2019.3.15
+Modified : 2020.4.8
 
 ---
 
@@ -8,7 +8,6 @@ Modified : 2019.3.15
 
 ---
 
-- [Drone4AutoUpdater](../drone4autoupdater/)
 - [Drone4AutoUpdaterLight](../drone4autoupdaterlight/)
 - **Python Library**
 

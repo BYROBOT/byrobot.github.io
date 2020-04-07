@@ -15,11 +15,12 @@
 
 <style>
 
-    td.white    { background: #FFFFFF !important; }
+    td.white        { background: #FFFFFF !important; }
+    td.white:hover  { background: #EEFFFF !important; }
 
-    span.odd    { color: #0489B1; }
-    span.even   { color: #FF4000; }
-    span.byrobot   { color: #CCDDEE; }
+    span.odd        { color: #0489B1; }
+    span.even       { color: #FF4000; }
+    span.byrobot    { color: #CCDDEE; }
 
 </style>
 
@@ -109,7 +110,7 @@
                     </a>
                 </div>
             </td>
-            <td width="110" class="byrobot" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
+            <td width="110" class="white" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
 </div>
@@ -117,4 +118,4 @@
 ---
 
 
-Modified : 2020.4.7
+Modified : 2020.4.8
