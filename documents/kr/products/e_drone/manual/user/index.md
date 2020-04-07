@@ -328,13 +328,13 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.3.1. 조종 화면
 
 <div align="center">
-    <img src="./images/button_control_front.png" alt="조종기 전면">
+    <img src="./images/button_control_front.jpg" alt="조종기 전면">
     <p>조종 화면에서 전면 버튼의 기능</p>
 </div>
 <br>
 
 <div align="center">
-    <img src="./images/button_control_top.png" alt="조종기 상단">
+    <img src="./images/button_control_top.jpg" alt="조종기 상단">
     <p>조종 화면에서 상단 버튼의 기능</p>
 </div>
 <br>
@@ -344,13 +344,13 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.3.2. 설정 화면
 
 <div align="center">
-    <img src="./images/button_setup_front.png" alt="조종기 전면">
+    <img src="./images/button_setup_front.jpg" alt="조종기 전면">
     <p>설정 화면에서 전면 버튼의 기능</p>
 </div>
 <br>
 
 <div align="center">
-    <img src="./images/button_setup_top.png" alt="조종기 상단">
+    <img src="./images/button_setup_top.jpg" alt="조종기 상단">
     <p>설정 화면에서 상단 버튼의 기능</p>
 </div>
 <br>
@@ -869,7 +869,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.5.1. MODE 1
 
 <div align="center">
-    <img src="./images/mode1.png" alt="MODE 1">
+    <img src="./images/mode1.jpg" alt="MODE 1">
     <p>MODE 1</p>
 </div>
 <br>
@@ -879,7 +879,7 @@ E-Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.5.2. MODE 2
 
 <div align="center">
-    <img src="./images/mode2.png" alt="MODE 2">
+    <img src="./images/mode2.jpg" alt="MODE 2">
     <p>MODE 2</p>
 </div>
 <br>
