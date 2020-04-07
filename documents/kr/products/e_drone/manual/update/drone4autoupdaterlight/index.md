@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2019.6.19
+Modified : 2020.4.7
 
 ---
 
@@ -8,7 +8,6 @@ Modified : 2019.6.19
 
 ---
 
-- [Drone4AutoUpdater](../drone4autoupdater/)
 - **Drone4AutoUpdaterLight**
 - [Python Library](../python/)
 
@@ -25,7 +24,7 @@ Modified : 2019.6.19
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">
-    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 점선 안의 'Windows')</p>
+    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 상자 안의 'Windows')</p>
 </div>
 <br>
 
