@@ -63,7 +63,7 @@
             </td>
             <td>
                 <div align="center">
-                    <a href="/documents/kr/products/dronefighter2017/">
+                    <a href="/documents/kr/products/drone_fighter/">
                         <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="240" width="240"><br>
                         DRONE FIGHTER
                     </a>

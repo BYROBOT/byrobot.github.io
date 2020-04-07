@@ -29,7 +29,7 @@
         -->
         <tr>
             <td style="background-color:#F5FAFF"><div align="center">Protocol</div></td>
-            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/dronefighter2017/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/dronefighter2017/protocol/">English</a></div></td>
+            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/drone_fighter/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/drone_fighter/protocol/">English</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
@@ -64,13 +64,13 @@
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/dronefighter2017/log/updates/firmware/">한국어</a></div></td>
+            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/drone_fighter/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td style="background-color:#FFF9FA"><div align="center">Update Manual</div></td>
             <td colspan="2" style="background-color:#FFF9FA">
                 <div align="center">
-                    <a href="/documents/kr/products/dronefighter2017/manual/update/">한국어</a>
+                    <a href="/documents/kr/products/drone_fighter/manual/update/">한국어</a>
                 </div>
             </td>
         </tr>

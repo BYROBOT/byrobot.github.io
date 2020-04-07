@@ -19,6 +19,7 @@
 
     span.odd    { color: #0489B1; }
     span.even   { color: #FF4000; }
+    span.byrobot   { color: #CCDDEE; }
 
 </style>
 
@@ -35,8 +36,18 @@
         <tr>
             <td class="white">
                 <div align="center">
-                    <a href="/documents/kr/products/coding_drone/">
+                    <a href="/documents/kr/products/battle_drone/">
                         <span class="odd">
+                            <img src="/assets/images/products/byrobot_drone_3_10.png" alt="battle_drone" height="240" width="240"><br>
+                            BATTLE DRONE
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/coding_drone/">
+                        <span class="even">
                             <img src="/assets/images/products/byrobot_drone_8.png" alt="coding drone" height="240" width="240"><br>
                             CODING DRONE
                         </span>
@@ -46,19 +57,9 @@
             <td class="white">
                 <div align="center">
                     <a href="/documents/kr/products/e_drive/">
-                        <span class="even">
+                        <span class="odd">
                             <img src="/assets/images/products/e_drive.jpg" alt="e_drive" height="240" width="240"><br>
                             GO CAR
-                        </span>
-                    </a>
-                </div>
-            </td>
-            <td class="white">
-                <div align="center">
-                    <a href="/documents/kr/products/e_drone/">
-                        <span class="odd">
-                            <img src="/assets/images/products/e_drone.jpg" alt="e_drone" height="240" width="240"><br>
-                            E-DRONE
                         </span>
                     </a>
                 </div>
@@ -67,8 +68,18 @@
         <tr>
             <td class="white">
                 <div align="center">
-                    <a href="/documents/kr/products/petrone_v2/">
+                    <a href="/documents/kr/products/e_drone/">
                         <span class="even">
+                            <img src="/assets/images/products/e_drone.jpg" alt="e_drone" height="240" width="240"><br>
+                            E-DRONE
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    <a href="/documents/kr/products/petrone_v2/">
+                        <span class="odd">
                             <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2_and_controller" height="240" width="240"><br>
                             PETRONE V2
                         </span>
@@ -78,7 +89,7 @@
             <td class="white">
                 <div align="center">
                     <a href="/documents/kr/products/petrone/">
-                        <span class="odd">
+                        <span class="even">
                             <img src="/assets/images/products/petrone.jpg" alt="petrone" height="240" width="240"><br>
                             PETRONE<br>
                             PETRONE 2.0
@@ -86,16 +97,19 @@
                     </a>
                 </div>
             </td>
+        </tr>
+        <tr>
             <td class="white">
                 <div align="center">
-                    <a href="/documents/kr/products/dronefighter2017/">
-                        <span class="even">
+                    <a href="/documents/kr/products/drone_fighter/">
+                        <span class="odd">
                             <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="240" width="240"><br>
                             DRONE FIGHTER
                         </span>
                     </a>
                 </div>
             </td>
+            <td width="110" class="byrobot" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
 </div>
@@ -103,4 +117,4 @@
 ---
 
 
-Modified : 2020.4.2
+Modified : 2020.4.7
