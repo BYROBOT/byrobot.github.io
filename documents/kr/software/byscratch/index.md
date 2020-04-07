@@ -27,7 +27,7 @@
             </td>
             <td>
                 <div align="center">
-                    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="120" width="120"><br>
+                    <img src="/assets/images/products/byrobot_dronefighter.png" alt="drone_fighter_and_controller" height="120" width="120"><br>
                     DRONE FIGHTER EDU
                 </div>
             </td>

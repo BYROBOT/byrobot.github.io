@@ -27,7 +27,7 @@ Modified : 2020.4.8
 # 1. 드론
 
 <div align="center">
-    <img src="./images/byrobot_drone_8.jpg" alt="CODING DRONE" width="600" height="600">
+    <img src="./images/byrobot_drone_8.png" alt="CODING DRONE" width="600" height="600">
     <p>E-DRONE</p>
 </div>
 

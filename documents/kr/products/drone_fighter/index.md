@@ -3,7 +3,7 @@
 ---
 
 <div align="center">
-    <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter">
+    <img src="/assets/images/products/byrobot_dronefighter.png" alt="drone_fighter">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="130" style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1"><div align="center">Documents</div></span></a></td>

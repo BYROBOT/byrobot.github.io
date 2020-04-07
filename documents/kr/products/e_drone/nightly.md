@@ -38,7 +38,7 @@
 </style>
 
 <div align="center">
-    <img src="/assets/images/products/e_drone.jpg" alt="e_drone">
+    <img src="/assets/images/products/byrobot_drone_4.png" alt="e_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="110" class="documents"><a href="#Documents"><span class="documents"><div align="center">Documents</div></span></a></td>

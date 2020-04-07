@@ -39,7 +39,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/battle_drone/">
                         <span class="odd">
-                            <img src="/assets/images/products/byrobot_drone_3_10.jpg" alt="battle_drone" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_drone_3_10.png" alt="battle_drone" height="240" width="240"><br>
                             BATTLE DRONE
                         </span>
                     </a>
@@ -49,7 +49,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/coding_drone/">
                         <span class="even">
-                            <img src="/assets/images/products/byrobot_drone_8.jpg" alt="coding drone" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_drone_8.png" alt="coding drone" height="240" width="240"><br>
                             CODING DRONE
                         </span>
                     </a>
@@ -71,7 +71,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/e_drone/">
                         <span class="even">
-                            <img src="/assets/images/products/e_drone.jpg" alt="e_drone" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_drone_4.png" alt="e_drone" height="240" width="240"><br>
                             E-DRONE
                         </span>
                     </a>
@@ -104,7 +104,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/drone_fighter/">
                         <span class="odd">
-                            <img src="/assets/images/products/drone_fighter_and_controller.jpg" alt="drone_fighter_and_controller" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_dronefighter.png" alt="drone_fighter_and_controller" height="240" width="240"><br>
                             DRONE FIGHTER
                         </span>
                     </a>

@@ -36,7 +36,7 @@
 </style>
 
 <div align="center">
-    <img src="/assets/images/products/byrobot_drone_3_10.jpg" alt="battle_drone">
+    <img src="/assets/images/products/byrobot_drone_3_10.png" alt="battle_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="110" class="documents"><a href="#Documents"><span class="documents"><div align="center">Documents</div></span></a></td>
