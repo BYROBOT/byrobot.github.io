@@ -2,7 +2,6 @@
 
     td.spec       { background: #EEFAFA !important; }
     td.coord      { background: #FFF9FA !important; }
-    td.setup      { background: #F7FFF7 !important; }
     td.setup_odd  { background: #FFFEF5 !important; }
     td.setup_even { background: #F5FAFF !important; }
     td.white      { background: #FFFFFF !important; }
@@ -403,500 +402,579 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 ## 2.4. 설정 화면 메뉴 구성
 
-<table>
-    <tr>
-        <td class="setup_even">
-            <div align="center">
-                1단계
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="center">
-                2단계
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="center">
-                설명
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd" rowspan="7">
-            <div align="center">
-                DISPLAY
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="center">
-                높이-자세-RPM
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                높이-방향-RPM-자세-고도-위치
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                속도-위치-자세
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                자세-높이
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                위치-트림
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                RF 정보 및 상태
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                조이스틱 입력 값
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even" rowspan="2">
-            <div align="center">
-                LIGHT
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="center">
-                DRONE
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                드론 LED 기본 색 설정 변경
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                CONTROLLER
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                조종기 LED 기본 색 설정 변경
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd" rowspan="2">
-            <div align="center">
-                CONTROL
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="center">
-                ATTITUDE
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                자세 제어
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                POSITION
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                위치 제어
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even" rowspan="4">
-            <div align="center">
-                MODE
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="center">
-                MODE 1
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                L↕ Elevator, L↔ Rudder, R↕ Throttle, R↔ Aileron<br>
-                L↕ 앞뒤, L↔ 좌우 회전, R↕ 위아래, R↔ 좌우
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                MODE 2
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                L↕ Throttle, L↔ Rudder, R↕ Elevator, R↔ Aileron<br>
-                L↕ 위아래, L↔ 좌우 회전, R↕ 앞뒤, R↔ 좌우
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even">
-            <div align="center">
-                MODE 3
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                L↕ Elevator, L↔ Aileron, R↕ Throttle, R↔ Rudder<br>
-                L↕ 앞뒤, L↔ 좌우, R↕ 위아래, R↔ 좌우 회전
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                MODE 4
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                L↕ Throttle, L↔ Aileron, R↕ Elevator, R↔ Rudder<br>
-                L↕ 위아래, L↔ 좌우, R↕ 앞뒤, R↔ 좌우 회전
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd" rowspan="2">
-            <div align="center">
-                HEADLESS
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="center">
-                HEADLESS
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                헤드리스(방향 고정)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                NORMAL
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                일반(드론의 현재 방향 기준)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even" rowspan="3">
-            <div align="center">
-                SPEED
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="center">
-                S1
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                속도 1단계(느림)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                S2
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                속도 2단계
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even">
-            <div align="center">
-                S3
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                속도 3단계(빠름)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd" rowspan="2">
-            <div align="center">
-                FHSS
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="center">
-                ON
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                채널 호핑
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                OFF
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                고정 채널
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even" rowspan="3">
-            <div align="center">
-                FUNCTION
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="center">
-                SENSOR RESET
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                드론의 자이로 바이어스 리셋
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                PAIRING
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                페어링
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_even">
-            <div align="center">
-                SET DEFAULT
-            </div>
-        </td>
-        <td class="setup_even">
-            <div align="left">
-                설정값 초기화(드론이 연결된 경우 드론 설정도 초기화 됨)
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd" rowspan="10">
-            <div align="center">
-                INFORMATION
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="center">
-                COUNT
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                비행 시간 및 이벤트 카운트 값 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                BIAS
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                가속도, 자이로 바이어스 값 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                TRIM
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                Trim 값 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                MOTION
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                IMU 센서 데이터를 연산하여 변환한 결과 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                ALTITUDE
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                높이-고도와 관련된 센서 데이터 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                POSITION
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                위치 데이터 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                RF
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                RF 설정 데이터 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                ADDRESS
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                드론과 조종기의 고유번호 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="setup_odd">
-            <div align="center">
-                BOOT
-            </div>
-        </td>
-        <td class="setup_odd">
-            <div align="left">
-                조종기의 부트 정보 및 장치 등록 여부 표시
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="white">
-            <div align="center">
-                CRC32
-            </div>
-        </td>
-        <td class="white">
-            <div align="left">
-                드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시
-            </div>
-        </td>
-    </tr>
-</table>
-
- * Elevator : 앞뒤 이동(Pitch)
- * Rudder : 좌우 회전(Yaw)
- * Throttle : 위아래 이동(Throttle)
- * Aileron : 좌우 이동(Roll)
-
+<div align="center">
+    <table>
+        <tr>
+            <td class="setup_even">
+                <div align="center">
+                    1단계
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    2단계
+                </div>
+            </td>
+            <td class="setup_even" colspan="4">
+                <div align="center">
+                    설명
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd" rowspan="7">
+                <div align="center">
+                    DISPLAY
+                </div>
+            </td>
+            <td class="setup_odd">
+                <div align="center">
+                    높이-자세-RPM
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    높이-방향-RPM-자세-고도-위치
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    속도-위치-자세
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    자세-높이
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    위치-트림
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    RF 정보 및 상태
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    조이스틱 입력 값
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    조종 화면에서 보여줄 것인지를 설정(SHOW / HIDE)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even" rowspan="2">
+                <div align="center">
+                    LIGHT
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    DRONE
+                </div>
+            </td>
+            <td class="setup_even" colspan="4">
+                <div align="left">
+                    드론 LED 기본 색 설정 변경
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    CONTROLLER
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    조종기 LED 기본 색 설정 변경
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd" rowspan="2">
+                <div align="center">
+                    CONTROL
+                </div>
+            </td>
+            <td class="setup_odd">
+                <div align="center">
+                    ATTITUDE
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    자세 제어
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    POSITION
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    위치 제어
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even" rowspan="5">
+                <div align="center">
+                    MODE
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    Joystick axis
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    Left ↕
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    Left ↔
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    Right ↕
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    Right ↔
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    MODE 1
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    앞뒤<br>(Elevator)
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    좌우 회전<br>(Rudder)
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    위아래<br>(Throttle)
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    좌우<br>(Aileron)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even">
+                <div align="center">
+                    MODE 2
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    위아래<br>(Throttle)
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    좌우 회전<br>(Rudder)
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    앞뒤<br>(Elevator)
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    좌우<br>(Aileron)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    MODE 3
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    앞뒤<br>(Elevator)
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    좌우<br>(Aileron)
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    위아래<br>(Throttle)
+                </div>
+            </td>
+            <td class="white">
+                <div align="center">
+                    좌우 회전<br>(Rudder)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even">
+                <div align="center">
+                    MODE 4
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    위아래<br>(Throttle)
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    좌우<br>(Aileron)
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    앞뒤<br>(Elevator)
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    좌우 회전<br>(Rudder)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd" rowspan="2">
+                <div align="center">
+                    HEADLESS
+                </div>
+            </td>
+            <td class="setup_odd">
+                <div align="center">
+                    HEADLESS
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    헤드리스(방향 고정)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    NORMAL
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    일반(드론의 현재 방향 기준)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even" rowspan="3">
+                <div align="center">
+                    SPEED
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    S1
+                </div>
+            </td>
+            <td class="setup_even" colspan="4">
+                <div align="left">
+                    속도 1단계(느림)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    S2
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    속도 2단계
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even">
+                <div align="center">
+                    S3
+                </div>
+            </td>
+            <td class="setup_even" colspan="4">
+                <div align="left">
+                    속도 3단계(빠름)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd" rowspan="2">
+                <div align="center">
+                    FHSS
+                </div>
+            </td>
+            <td class="setup_odd">
+                <div align="center">
+                    ON
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    채널 호핑
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    OFF
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    고정 채널
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even" rowspan="3">
+                <div align="center">
+                    FUNCTION
+                </div>
+            </td>
+            <td class="setup_even">
+                <div align="center">
+                    SENSOR RESET
+                </div>
+            </td>
+            <td class="setup_even" colspan="4">
+                <div align="left">
+                    드론의 자이로 바이어스 리셋
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    PAIRING
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    페어링
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_even">
+                <div align="center">
+                    SET DEFAULT
+                </div>
+            </td>
+            <td class="setup_even" colspan="4">
+                <div align="left">
+                    설정값 초기화(드론이 연결된 경우 드론 설정도 초기화 됨)
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd" rowspan="10">
+                <div align="center">
+                    INFORMATION
+                </div>
+            </td>
+            <td class="setup_odd">
+                <div align="center">
+                    COUNT
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    비행 시간 및 이벤트 카운트 값 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    BIAS
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    가속도, 자이로 바이어스 값 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    TRIM
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    Trim 값 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    MOTION
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    IMU 센서 데이터를 연산하여 변환한 결과 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    ALTITUDE
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    높이-고도와 관련된 센서 데이터 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    POSITION
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    위치 데이터 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    RF
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    RF 설정 데이터 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    ADDRESS
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    드론과 조종기의 고유번호 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="setup_odd">
+                <div align="center">
+                    BOOT
+                </div>
+            </td>
+            <td class="setup_odd" colspan="4">
+                <div align="left">
+                    조종기의 부트 정보 및 장치 등록 여부 표시
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="white">
+                <div align="center">
+                    CRC32
+                </div>
+            </td>
+            <td class="white" colspan="4">
+                <div align="left">
+                    드론과 조종기의 부트로더 및 앱 영역 CRC32 값 표시
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
 
 <br>
 
@@ -909,7 +987,7 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.5.1. MODE 1
 
 <div align="center">
-    <img src="./images/mode1.jpg" alt="MODE 1">
+    <img src="./images/mode1.jpg" alt="MODE 1" width="800">
     <p>MODE 1</p>
 </div>
 <br>
@@ -919,7 +997,7 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.5.2. MODE 2
 
 <div align="center">
-    <img src="./images/mode2.jpg" alt="MODE 2">
+    <img src="./images/mode2.jpg" alt="MODE 2" width="800">
     <p>MODE 2</p>
 </div>
 <br>
