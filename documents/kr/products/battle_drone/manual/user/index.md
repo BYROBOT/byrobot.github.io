@@ -39,6 +39,11 @@ Modified : 2020.4.7
 
 # 1. 드론
 
+<div align="center">
+    <img src="./images/byrobot_drone_3_10.jpg" alt="배틀 드론" width="600" height="600">
+    <p>배틀 드론</p>
+</div>
+
 <br>
 
 ## 1.1. 사양
@@ -156,7 +161,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 ## 2.1. 버튼 구성 및 기능
 
 <div align="center">
-    <img src="./images/byrobot_controller_3_4_button.jpg" alt="조종기 전면">
+    <img src="./images/byrobot_controller_3_4_button.jpg" alt="배틀 드론 조종기">
     <p>배틀 드론 조종기</p>
 </div>
 <br>
