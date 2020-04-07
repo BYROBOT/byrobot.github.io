@@ -2,22 +2,7 @@
 
     td.spec      { background: #EEFAFA !important; }
     td.coord     { background: #FFF9FA !important; }
-    td.entry     { background: #F7FFF7 !important; }
-    td.byblocks  { background: #FEF3FE !important; }
-    td.python    { background: #F5FAFF !important; }
-    td.issues    { background: #FFFEF5 !important; }
-    td.byrobot   { background: #FAFEFE !important; }
     td.white     { background: #FFFFFF !important; }
-    td.space     { background: #FFFFFF !important; }
-
-    span.spec      { color: #0489B1; }
-    span.firmware  { color: #FF4000; }
-    span.driver    { color: #0489B1; }
-    span.entry     { color: #FF4000; }
-    span.byblocks  { color: #0489B1; }
-    span.python    { color: #FF4000; }
-    span.issues    { color: #0489B1; }
-    span.byrobot   { color: #CCDDEE; }
 
 </style>
 
