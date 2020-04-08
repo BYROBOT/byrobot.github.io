@@ -18,6 +18,7 @@
     td.documents   { background: #EEFAFA !important; }
     td.firmware    { background: #FFF9FA !important; }
     td.driver      { background: #F7FFF7 !important; }
+    td.entry       { background: #FEF3FE !important; }
     td.issues      { background: #EFF1FC !important; }
     td.byrobot     { background: #FAFEFE !important; }
     td.white       { background: #FFFFFF !important; }
@@ -33,12 +34,14 @@
     <img src="/assets/images/products/byrobot_dronefighter.png" alt="drone_fighter">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="130" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
-            <td width="130" class="firmware"><a href="#Firmware"><span class="even"><div align="center">Firmware</div></span></a></td>
+            <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
+            <td width="110" class="firmware"><a href="#Firmware"><span class="even"><div align="center">Firmware</div></span></a></td>
+            <td width="110" class="driver"><a href="#Driver"><span class="odd"><div align="center">Driver</div></span></a></td>
         </tr>
         <tr>
-            <td width="130" class="driver"><a href="#Driver"><span class="even"><div align="center">Driver</div></span></a></td>
-            <td width="130" class="issues"><a href="https://github.com/BYROBOT/drone0/issues/" target="_blank"><span class="odd"><div align="center">Issues</div></span></a></td>
+            <td width="110" class="entry"><a href="#Entry"><span class="even"><div align="center">Entry</div></span></a></td>
+            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone0/issues/" target="_blank"><span class="odd"><div align="center">Issues</div></span></a></td>
+            <td width="110" class="byrobot"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
     <br>
@@ -114,6 +117,19 @@
                 <div align="center"><a href="https://drive.google.com/open?id=19bmT3b8a3nEqCXzXk88lMeO7gHxyGZuY" target="_blank">Win7, Win8</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
+        </tr>
+        <!-- Entry -->
+        <tr><td colspan="3" class="space"></td></tr>
+        <tr>
+            <td colspan="3" class="entry"><div align="center"><a name="Entry"></a>&nbsp;<br>Entry<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td class="entry"><div align="center">Homepage</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://playentry.org/" target="_blank">Entry</a></div></td>
+        </tr>
+        <tr>
+            <td class="entry"><div align="center">Download</div></td>
+            <td colspan="2" class="entry"><div align="center"><a href="https://playentry.org/#!/offlineEditor" target="_blank">Entry Offline</a></div></td>
         </tr>
         <tr><td colspan="3" class="white"></td></tr>
     </table>

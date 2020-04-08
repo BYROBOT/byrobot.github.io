@@ -117,6 +117,19 @@
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
+        <!-- Entry -->
+        <tr><td colspan="3" class="space"></td></tr>
+        <tr>
+            <td colspan="3" class="entry"><div align="center"><a name="Entry"></a>&nbsp;<br>Entry<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td class="entry"><div align="center">Homepage</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://playentry.org/" target="_blank">Entry</a></div></td>
+        </tr>
+        <tr>
+            <td class="entry"><div align="center">Download</div></td>
+            <td colspan="2" class="entry"><div align="center"><a href="https://playentry.org/#!/offlineEditor" target="_blank">Entry Offline</a></div></td>
+        </tr>
         <!-- Repository -->
         <tr><td colspan="3" class="space"></td></tr>
         <tr>
