@@ -29,7 +29,7 @@ Modified : 2020.4.7
 # 1. 드론
 
 <div align="center">
-    <img src="./images/byrobot_drone_3_10.jpg" alt="배틀 드론" width="600" height="600">
+    <img src="./images/byrobot_drone_3_10.jpg" alt="배틀 드론" width="600">
     <p>배틀 드론</p>
 </div>
 
@@ -150,7 +150,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 ## 2.1. 버튼 구성 및 기능
 
 <div align="center">
-    <img src="./images/byrobot_controller_3_4_button.jpg" alt="배틀 드론 조종기">
+    <img src="./images/byrobot_controller_3_4_button.jpg" alt="배틀 드론 조종기" width="600">
     <p>배틀 드론 조종기</p>
 </div>
 <br>
@@ -231,7 +231,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 ### 2.2.1. MODE 1
 
 <div align="center">
-    <img src="./images/byrobot_controller_3_4_mode1.jpg" alt="MODE 1">
+    <img src="./images/byrobot_controller_3_4_mode1.jpg" alt="MODE 1" width="600">
     <p>MODE 1</p>
 </div>
 <br>
@@ -241,7 +241,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 ### 2.2.2. MODE 2
 
 <div align="center">
-    <img src="./images/byrobot_controller_3_4_mode2.jpg" alt="MODE 2">
+    <img src="./images/byrobot_controller_3_4_mode2.jpg" alt="MODE 2" width="600">
     <p>MODE 2</p>
 </div>
 <br>
