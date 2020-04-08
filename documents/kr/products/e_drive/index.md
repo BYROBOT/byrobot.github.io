@@ -1,68 +1,98 @@
 ### GO CAR
 
 ---
+<!-------------------------------------------------------------------------------------------------------
+
+    2020.4.2
+
+    각 index.md 파일 변경 시 사소한 링크 수정이나 펌웨어 업데이트 등은 직접 수정해도 상관없으나
+
+    디자인 변경, 테이블 구조 변경 등의 작업을 하게 되는 경우, nightly.md 파일에서 먼저 작업을 할 것.
+
+    git에 올려 화면이 정상적으로 표시되는지를 확인하고, index.md 파일을 변경하는 것을 권장함
+
+-------------------------------------------------------------------------------------------------------->
+
+<style>
+
+    td.documents { background: #EEFAFA !important; }
+    td.firmware  { background: #FFF9FA !important; }
+    td.driver    { background: #F7FFF7 !important; }
+    td.entry     { background: #FEF3FE !important; }
+    td.byblocks  { background: #F5FAFF !important; }
+    td.python    { background: #FFFEF5 !important; }
+    td.issues    { background: #EFF1FC !important; }
+    td.byrobot   { background: #FAFEFE !important; }
+    td.white     { background: #FFFFFF !important; }
+    td.space     { background: #FFFFFF !important; }
+
+    span.odd 	   { color: #0489B1; }
+    span.even	   { color: #FF4000; }
+    span.byrobot   { color: #CCDDEE; }
+
+</style>
 
 <div align="center">
     <img src="/assets/images/products/e_drive.jpg" alt="e_drive">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" style="background-color:#F5FAFF"><a href="#Documents"><span style="color:#0489B1"><div align="center">Documents</div></span></a></td>
-            <td width="110" style="background-color:#FFF9FA"><a href="#Firmware"><span style="color:#FF4000"><div align="center">Firmware</div></span></a></td>
-            <td width="110" style="background-color:#F7FFF7"><a href="#Driver"><span style="color:#0489B1"><div align="center">Driver</div></span></a></td>
+            <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
+            <td width="110" class="firmware"><a href="#Firmware"><span class="even"><div align="center">Firmware</div></span></a></td>
+            <td width="110" class="driver"><a href="#Driver"><span class="odd"><div align="center">Driver</div></span></a></td>
         </tr>
         <tr>
-            <td width="110" style="background-color:#FFFEF5"><a href="#ByBlocks"><span style="color:#FF4000"><div align="center">ByBlocks</div></span></a></td>
-            <td width="110" style="background-color:#F2FEFF"><a href="#Python"><span style="color:#0489B1"><div align="center">Python</div></span></a></td>
-            <td width="110" style="background-color:#FFF7F0"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span style="color:#FF4000"><div align="center">Issues</div></span></a></td>
+            <td width="110" class="byblocks"><a href="#ByBlocks"><span class="even"><div align="center">ByBlocks</div></span></a></td>
+            <td width="110" class="python"><a href="#Python"><span class="odd"><div align="center">Python</div></span></a></td>
+            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span class="even"><div align="center">Issues</div></span></a></td>
         </tr>
     </table>
     <br>
     <table>
         <!-- Documents -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#F5FAFF"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
+            <td colspan="3" class="documents"><div align="center"><a name="Documents"></a>&nbsp;<br>Documents<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td style="background-color:#F5FAFF"><div align="center">User Manual</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="/documents/kr/products/e_drive/manual/user/">한국어</a></div></td>
+            <td class="documents"><div align="center">User Manual</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drive/manual/user/">한국어</a></div></td>
         </tr>
         <tr>
-            <td style="background-color:#F5FAFF"><div align="center">Protocol</div></td>
-            <td colspan="2" style="background-color:#F5FAFF"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
+            <td class="documents"><div align="center">Protocol</div></td>
+            <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
         </tr>
         <!-- Firmware -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#FFF9FA"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
+            <td colspan="3" class="firmware"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="3" style="background-color:#FFF9FA"><div align="center">Version</div></td>
+            <td rowspan="3" class="firmware"><div align="center">Version</div></td>
             <td><div align="center">Car</div></td>
             <td><div align="center">20.3.19</div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFF9FA"><div align="center">BleServer</div></td>
-            <td style="background-color:#FFF9FA"><div align="center">19.10.16</div></td>
+            <td class="firmware"><div align="center">BleServer</div></td>
+            <td class="firmware"><div align="center">19.10.16</div></td>
         </tr>
         <tr>
             <td><div align="center">Tester</div></td>
             <td><div align="center">19.9.1</div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFF9FA"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFF9FA"><div align="center">2020.3.31</div></td>
+            <td class="firmware"><div align="center">Release Date</div></td>
+            <td colspan="2" class="firmware"><div align="center">2020.3.31</div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFF9FA"><div align="center">Download</div></td>
+            <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1tKKKJtc1dzD8Sd26GdTpwWeOhwG9ruIE" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFF9FA"><div align="center">Update Log</div></td>
-            <td colspan="2" style="background-color:#FFF9FA"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
+            <td class="firmware"><div align="center">Update Log</div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFF9FA"><div align="center">Update Manual</div></td>
+            <td class="firmware"><div align="center">Update Manual</div></td>
             <td colspan="2">
                 <div align="center">
                     <a href="/documents/kr/products/e_drive/manual/update/drone4autoupdaterlight/">한국어</a>
@@ -70,35 +100,35 @@
             </td>
         </tr>
         <!-- Driver -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#F7FFF7"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
+            <td colspan="3" class="driver"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td style="background-color:#F7FFF7">
+            <td class="driver">
                 <div align="center">Download</div>
             </td>
-            <td colspan="2" style="background-color:#FFFFFF">
+            <td colspan="2" class="white">
                 <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
                 <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
         <!-- ByBlocks -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#FFFEF5"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
+            <td colspan="3" class="byblocks"><div align="center"><a name="ByBlocks"></a>&nbsp;<br>ByBlocks<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFFEF5"><div align="center">Version</div></td>
+            <td class="byblocks"><div align="center">Version</div></td>
             <td colspan="2"><div align="center">1.0.19</div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFFEF5"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFFEF5"><div align="center">2019.2.28</div></td>
+            <td class="byblocks"><div align="center">Release Date</div></td>
+            <td colspan="2" class="byblocks"><div align="center">2019.2.28</div></td>
         </tr>
         <tr>
-            <td style="background-color:#FFFEF5">
+            <td class="byblocks">
                 <div align="center">Download</div>
             </td>
             <td colspan="2">
@@ -106,34 +136,34 @@
             </td>
         </tr>
         <tr>
-            <td style="background-color:#FFFEF5"><div align="center">Update Log</div></td>
-            <td colspan="2" style="background-color:#FFFEF5"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
+            <td class="byblocks"><div align="center">Update Log</div></td>
+            <td colspan="2" class="byblocks"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/byblocks/">한국어</a></div></td>
         </tr>
         <!-- Python -->
-        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
         <tr>
-            <td colspan="3" style="background-color:#F2FEFF"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
+            <td colspan="3" class="python"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td style="background-color:#F2FEFF"><div align="center">Library</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center"><a href="https://pypi.org/project/e-drive/" target="_blank">e_drive</a></div></td>
+            <td class="python"><div align="center">Library</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/e-drive/" target="_blank">e_drive</a></div></td>
         </tr>
         <tr>
-            <td style="background-color:#F2FEFF"><div align="center">Version</div></td>
-            <td colspan="2" style="background-color:#F2FEFF"><div align="center">0.0.66</div></td>
+            <td class="python"><div align="center">Version</div></td>
+            <td colspan="2" class="python"><div align="center">0.0.66</div></td>
         </tr>
         <tr>
-            <td style="background-color:#F2FEFF"><div align="center">Release Date</div></td>
-            <td colspan="2" style="background-color:#FFFFFF"><div align="center">2019.4.29</div></td>
+            <td class="python"><div align="center">Release Date</div></td>
+            <td colspan="2" class="white"><div align="center">2019.4.29</div></td>
         </tr>
         <tr>
-            <td style="background-color:#F2FEFF"><div align="center">Manual</div></td>
-            <td colspan="2" style="background-color:#F2FEFF"><div align="center"><a href="/documents/kr/products/e_drive/library/python/e_drive/">한국어</a></div></td>
+            <td class="python"><div align="center">Manual</div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drive/library/python/e_drive/">한국어</a></div></td>
         </tr>
-        <tr><td colspan="3" style="background-color:#FFFFFF"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
     </table>
 </div>
 
 ---
 
-Modified : 2020.3.31
+Modified : 2020.4.8

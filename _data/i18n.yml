@@ -25,7 +25,6 @@ en: &en
   show_comments: 'Show Comments'
   show_license: 'Show License'
   products: 'Products'
-  software: 'Software'
   forum: 'Forum'
   tags: 'Tags'
   view: 'View'

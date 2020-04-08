@@ -26,13 +26,8 @@
     td.white     { background: #FFFFFF !important; }
     td.space     { background: #FFFFFF !important; }
 
-    span.documents { color: #0489B1; }
-    span.firmware  { color: #FF4000; }
-    span.driver    { color: #0489B1; }
-    span.entry     { color: #FF4000; }
-    span.byblocks  { color: #0489B1; }
-    span.python    { color: #FF4000; }
-    span.issues    { color: #0489B1; }
+    span.odd 	   { color: #0489B1; }
+    span.even	   { color: #FF4000; }
     span.byrobot   { color: #CCDDEE; }
 
 </style>
@@ -41,17 +36,17 @@
     <img src="/assets/images/products/byrobot_drone_4.png" alt="e_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" class="documents"><a href="#Documents"><span class="documents"><div align="center">Documents</div></span></a></td>
-            <td width="110" class="firmware"><a href="#Firmware"><span class="firmware"><div align="center">Firmware</div></span></a></td>
-            <td width="110" class="driver"><a href="#Driver"><span class="driver"><div align="center">Driver</div></span></a></td>
+            <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
+            <td width="110" class="firmware"><a href="#Firmware"><span class="even"><div align="center">Firmware</div></span></a></td>
+            <td width="110" class="driver"><a href="#Driver"><span class="odd"><div align="center">Driver</div></span></a></td>
         </tr>
         <tr>
-            <td width="110" class="entry"><a href="#Entry"><span class="entry"><div align="center">Entry</div></span></a></td>
-            <td width="110" class="byblocks"><a href="#ByBlocks"><span class="byblocks"><div align="center">ByBlocks</div></span></a></td>
-            <td width="110" class="python"><a href="#Python"><span class="python"><div align="center">Python</div></span></a></td>
+            <td width="110" class="entry"><a href="#Entry"><span class="even"><div align="center">Entry</div></span></a></td>
+            <td width="110" class="byblocks"><a href="#ByBlocks"><span class="odd"><div align="center">ByBlocks</div></span></a></td>
+            <td width="110" class="python"><a href="#Python"><span class="even"><div align="center">Python</div></span></a></td>
         </tr>
         <tr>
-            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span class="issues"><div align="center">Issues</div></span></a></td>
+            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span class="odd"><div align="center">Issues</div></span></a></td>
             <td width="110" class="byrobot" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
@@ -116,6 +111,7 @@
             <td colspan="2" class="white">
                 <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
                 <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1G6ma1HbzNSPqTcU9ir1I4lyYLobLM4K-" target="_blank">Win7, Win8 (new)</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
@@ -182,10 +178,10 @@
             <td class="python"><div align="center">Update Log</div></td>
             <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/">한국어</a></div></td>
         </tr>
-        <tr><td colspan="3" class="white"></td></tr>
+        <tr><td colspan="3" class="space"></td></tr>
     </table>
 </div>
 
 ---
 
-Modified : 2020.4.2
+Modified : 2020.4.8
