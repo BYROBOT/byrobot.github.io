@@ -25,7 +25,7 @@ Modified : 2020.4.7
 # 1. 드론
 
 <div align="center">
-    <img src="./images/byrobot_drone_3_10.png" alt="배틀 드론" width="600" height="600">
+    <img src="./images/byrobot_drone_3_10.jpg" alt="배틀 드론" width="600" height="600">
     <p>배틀 드론</p>
 </div>
 
