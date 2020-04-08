@@ -2,6 +2,10 @@
 
     td.spec      { background: #EEFAFA !important; }
     td.coord     { background: #FFF9FA !important; }
+    td.team      { background: #F5FFF7 !important; }
+    td.red       { background: #FFDDDD !important; }
+    td.blue      { background: #DDDDFF !important; }
+    td.magenta   { background: #FFDDFF !important; }
     td.white     { background: #FFFFFF !important; }
 
 </style>
@@ -244,6 +248,81 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 
 <br>
 
+
+<br>
+
+
+# 3. 동작
+
+
+<br>
+
+
+## 3.1. 페어링
+
+> 1. 드론에 배터리가 연결되어 있다면 제거하세요.
+> 2. 드론에 배터리를 연결합니다.
+> 3. 드론의 양 옆을 잡고, 좌우로 흔들어줍니다.
+> 4. 드론의 프로펠러 쪽 LED가 파란색-빨간색 순서로 계속해서 깜빡이면 드론의 페어링 준비가 완료된 것입니다.
+> 5. 조종기의 전원을 켭니다.
+> 6. 조종기 오른쪽 하단의 둥근 버튼(11번 버튼)을 3초 이상 길게 누르면 페어링이 완료됩니다.
+
+
+<br>
+
+## 3.2. 모드 구분
+
+4번 버튼을 누르면 차례대로 팀 색상이 **Red**, **Blue**, **Magenta**(Red,Blue 동시 켜짐)로 바뀝니다.
+
+<div align="center">
+    <table>
+        <tr>
+            <td class="team"><div align="center"><b>모드</b></div></td>
+            <td class="team"><div align="center"><b>색상</b></div></td>
+            <td class="team"><div align="center"><b>동작</b></div></td>
+            <td class="team"><div align="center"><b>2번 버튼 동작</b></div></td>
+        </tr>
+        <tr>
+            <td class="team" rowspan="2"><div align="center">배틀 모드</div></td>
+            <td class="red"><div align="center">RED</div></td>
+            <td class="red"><div align="center">전투</div></td>
+            <td class="red"><div align="center">미사일 발사</div></td>
+        </tr>
+        <tr>
+            <td class="blue"><div align="center">BLUE</div></td>
+            <td class="blue"><div align="center">전투</div></td>
+            <td class="blue"><div align="center">미사일 발사</div></td>
+        </tr>
+        <tr>
+            <td class="team"><div align="center">비행 모드</div></td>
+            <td class="magenta"><div align="center">MAGENTA</div></td>
+            <td class="magenta"><div align="center">비행</div></td>
+            <td class="magenta"><div align="center">LED 색 변경</div></td>
+        </tr>
+    </table>
+</div>
+
+
+<br>
+
+## 3.3. 배틀 모드
+
+배틀 모드는 RED 팀과 BLUE 팀이 배틀 게임을 하는 모드입니다.<br>
+기본적인 규칙은 다음과 같습니다.
+
+> 1. 사용 가능한 무기는 1종류입니다.
+> 2. 에너지는 전체 6칸이며 1회 피격을 당할 때마다 1개씩 줄어듭니다.
+> 3. 에너지가 0이 되면 비행기는 착륙합니다.
+> 4. 비행 중에는 팀 변경을 할 수 없습니다.
+> 5. 무기는 0.6초에 1개씩, 최대 6개까지 장전됩니다.
+
+
+
+
+
+<br>
+<br>
+<br>
 
 
 여기까지 BATTLE DRONE 조종기와 드론에 대한 간략한 설명이었습니다.
