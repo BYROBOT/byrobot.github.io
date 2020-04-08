@@ -63,7 +63,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/e_drive/">
                         <span class="odd">
-                            <img src="/assets/images/products/e_drive.jpg" alt="e_drive" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_drone_7.png" alt="e_drive" height="240" width="240"><br>
                             GO CAR
                         </span>
                     </a>
@@ -85,7 +85,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/petrone_v2/">
                         <span class="odd">
-                            <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2_and_controller" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_drone_2.png" alt="petrone_v2_and_controller" height="240" width="240"><br>
                             PETRONE V2
                         </span>
                     </a>
@@ -95,7 +95,7 @@
                 <div align="center">
                     <a href="/documents/kr/products/petrone/">
                         <span class="even">
-                            <img src="/assets/images/products/petrone.jpg" alt="petrone" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_drone_1.png" alt="petrone" height="240" width="240"><br>
                             PETRONE<br>
                             PETRONE 2.0
                         </span>

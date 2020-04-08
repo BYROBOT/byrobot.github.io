@@ -33,7 +33,7 @@
 </style>
 
 <div align="center">
-    <img src="/assets/images/products/petrone_v2_and_controller.jpg" alt="petrone_v2">
+    <img src="/assets/images/products/byrobot_drone_2.png" alt="petrone_v2">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
