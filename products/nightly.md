@@ -15,8 +15,12 @@
 
 <style>
 
-    td.white        { background: #FFFFFF !important; }
-    td.white:hover  { background: #EEFFFF !important; }
+    td.white_odd        { background: #FFFFFF !important; }
+    td.white_odd:hover  { background: #EEFFFF !important; }
+    td.white_even       { background: #FFFFFF !important; }
+    td.white_even:hover { background: #FFEEFF !important; }
+    td.white            { background: #FFFFFF !important; }
+    td.white:hover      { background: #FFFFEE !important; }
 
     span.odd        { color: #0489B1; }
     span.even       { color: #FF4000; }
@@ -35,7 +39,7 @@
 <div align="center">
     <table>
         <tr>
-            <td class="white">
+            <td class="white_odd">
                 <div align="center">
                     <a href="/documents/kr/products/battle_drone/">
                         <span class="odd">
@@ -45,7 +49,7 @@
                     </a>
                 </div>
             </td>
-            <td class="white">
+            <td class="white_even">
                 <div align="center">
                     <a href="/documents/kr/products/coding_drone/">
                         <span class="even">
@@ -55,7 +59,7 @@
                     </a>
                 </div>
             </td>
-            <td class="white">
+            <td class="white_odd">
                 <div align="center">
                     <a href="/documents/kr/products/e_drive/">
                         <span class="odd">
@@ -67,7 +71,7 @@
             </td>
         </tr>
         <tr>
-            <td class="white">
+            <td class="white_even">
                 <div align="center">
                     <a href="/documents/kr/products/e_drone/">
                         <span class="even">
@@ -77,7 +81,7 @@
                     </a>
                 </div>
             </td>
-            <td class="white">
+            <td class="white_odd">
                 <div align="center">
                     <a href="/documents/kr/products/petrone_v2/">
                         <span class="odd">
@@ -87,7 +91,7 @@
                     </a>
                 </div>
             </td>
-            <td class="white">
+            <td class="white_even">
                 <div align="center">
                     <a href="/documents/kr/products/petrone/">
                         <span class="even">
@@ -100,7 +104,7 @@
             </td>
         </tr>
         <tr>
-            <td class="white">
+            <td class="white_odd">
                 <div align="center">
                     <a href="/documents/kr/products/drone_fighter/">
                         <span class="odd">
@@ -110,7 +114,7 @@
                     </a>
                 </div>
             </td>
-            <td width="110" class="white" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
+            <td class="white" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
 </div>
