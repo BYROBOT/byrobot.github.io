@@ -6,6 +6,14 @@
     td.setup_even { background: #F5FAFF !important; }
     td.white      { background: #FFFFFF !important; }
 
+    td.left       { background: #FFF5F5 !important; }
+    td.right      { background: #F5F5FF !important; }
+
+    td.throttle   { background: #FFDDDD !important; }
+    td.rudder     { background: #FFFFDD !important; }
+    td.elevator   { background: #DDFFFF !important; }
+    td.aileron    { background: #DDFFDD !important; }
+
 </style>
 
 **[CODING DRONE](/documents/kr/products/e_drone/) User Manual**
@@ -576,25 +584,25 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
             </td>
             <td class="setup_even">
                 <div align="center">
-                    Joystick axis
+                    MODE
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="left">
                 <div align="center">
                     Left ↕
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="left">
                 <div align="center">
                     Left ↔
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="right">
                 <div align="center">
                     Right ↕
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="right">
                 <div align="center">
                     Right ↔
                 </div>
@@ -606,22 +614,22 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
                     MODE 1
                 </div>
             </td>
-            <td class="white">
+            <td class="elevator">
                 <div align="center">
                     앞뒤<br>(Elevator)
                 </div>
             </td>
-            <td class="white">
+            <td class="rudder">
                 <div align="center">
                     좌우 회전<br>(Rudder)
                 </div>
             </td>
-            <td class="white">
+            <td class="throttle">
                 <div align="center">
                     위아래<br>(Throttle)
                 </div>
             </td>
-            <td class="white">
+            <td class="aileron">
                 <div align="center">
                     좌우<br>(Aileron)
                 </div>
@@ -633,22 +641,22 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
                     MODE 2
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="throttle">
                 <div align="center">
                     위아래<br>(Throttle)
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="rudder">
                 <div align="center">
                     좌우 회전<br>(Rudder)
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="elevator">
                 <div align="center">
                     앞뒤<br>(Elevator)
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="aileron">
                 <div align="center">
                     좌우<br>(Aileron)
                 </div>
@@ -660,22 +668,22 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
                     MODE 3
                 </div>
             </td>
-            <td class="white">
+            <td class="elevator">
                 <div align="center">
                     앞뒤<br>(Elevator)
                 </div>
             </td>
-            <td class="white">
+            <td class="aileron">
                 <div align="center">
                     좌우<br>(Aileron)
                 </div>
             </td>
-            <td class="white">
+            <td class="throttle">
                 <div align="center">
                     위아래<br>(Throttle)
                 </div>
             </td>
-            <td class="white">
+            <td class="rudder">
                 <div align="center">
                     좌우 회전<br>(Rudder)
                 </div>
@@ -687,22 +695,22 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
                     MODE 4
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="throttle">
                 <div align="center">
                     위아래<br>(Throttle)
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="aileron">
                 <div align="center">
                     좌우<br>(Aileron)
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="elevator">
                 <div align="center">
                     앞뒤<br>(Elevator)
                 </div>
             </td>
-            <td class="setup_even">
+            <td class="rudder">
                 <div align="center">
                     좌우 회전<br>(Rudder)
                 </div>
