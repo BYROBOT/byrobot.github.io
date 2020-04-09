@@ -6,8 +6,8 @@
     td.setup_even { background: #F5FAFF !important; }
     td.white      { background: #FFFFFF !important; }
 
-    td.left       { background: #FFF5F5 !important; }
-    td.right      { background: #F5F5FF !important; }
+    td.joystick_left   { background: #FFF5F5 !important; }
+    td.joystick_right  { background: #F5F5FF !important; }
 
     td.throttle   { background: #FFDDDD !important; }
     td.rudder     { background: #FFFFDD !important; }
@@ -587,22 +587,22 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
                     MODE
                 </div>
             </td>
-            <td class="left">
+            <td class="joystick_left">
                 <div align="center">
                     Left ↕
                 </div>
             </td>
-            <td class="left">
+            <td class="joystick_left">
                 <div align="center">
                     Left ↔
                 </div>
             </td>
-            <td class="right">
+            <td class="joystick_right">
                 <div align="center">
                     Right ↕
                 </div>
             </td>
-            <td class="right">
+            <td class="joystick_right">
                 <div align="center">
                     Right ↔
                 </div>
