@@ -18,15 +18,14 @@
     td.documents { background: #EEFAFA !important; }
     td.driver    { background: #FFF9FA !important; }
     td.entry     { background: #F7FFF7 !important; }
-    td.byblocks  { background: #FEF3FE !important; }
     td.python    { background: #F5FAFF !important; }
     td.issues    { background: #FFFEF5 !important; }
     td.byrobot   { background: #FAFEFE !important; }
     td.white     { background: #FFFFFF !important; }
     td.space     { background: #FFFFFF !important; }
 
-    span.odd 	   { color: #0489B1; }
-    span.even	   { color: #FF4000; }
+    span.odd       { color: #0489B1; }
+    span.even      { color: #FF4000; }
     span.byrobot   { color: #CCDDEE; }
 
 </style>
@@ -106,11 +105,11 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/" target="_blank">한국어</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/" target="_blank">한국어(E-Drone)</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Update Log</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/" target="_blank">한국어</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/" target="_blank">한국어(E-Drone)</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
     </table>

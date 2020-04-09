@@ -25,14 +25,14 @@
     td.white     { background: #FFFFFF !important; }
     td.space     { background: #FFFFFF !important; }
 
-    span.odd 	   { color: #0489B1; }
-    span.even	   { color: #FF4000; }
+    span.odd       { color: #0489B1; }
+    span.even      { color: #FF4000; }
     span.byrobot   { color: #CCDDEE; }
 
 </style>
 
 <div align="center">
-    <img src="/assets/images/products/byrobot_drone_8.png" alt="e_drone">
+    <img src="/assets/images/products/byrobot_drone_8.png" alt="coding_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
@@ -84,13 +84,13 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/coding_drone/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Manual</div></td>
             <td colspan="2" class="firmware">
                 <div align="center">
-                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">한국어</a>
+                    <a href="/documents/kr/products/coding_drone/manual/update/drone4autoupdaterlight/">한국어</a>
                 </div>
             </td>
         </tr>
@@ -142,11 +142,11 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/" target="_blank">한국어(E-Drone)</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Update Log</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/">한국어</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/" target="_blank">한국어(E-Drone)</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
     </table>
