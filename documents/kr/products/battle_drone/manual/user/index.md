@@ -89,7 +89,7 @@ Modified : 2020.4.7
             <td class="white"><div align="center">드론 배틀 게임</div></td>
         </tr>
         <tr>
-            <td class="spec"><div align="center">앱, 파이썬 코딩</div></td>
+            <td class="spec"><div align="center">엔트리, 파이썬 코딩</div></td>
         </tr>
     </table>
 </div>

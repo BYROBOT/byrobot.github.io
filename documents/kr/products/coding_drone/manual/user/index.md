@@ -54,15 +54,15 @@ Modified : 2020.4.10
         </tr>
         <tr>
             <td class="spec"><div align="center">모터 축간 대각선 길이</div></td>
-            <td class="white"><div align="center">135 mm</div></td>
+            <td class="white"><div align="center">103 mm</div></td>
         </tr>
         <tr>
             <td class="spec"><div align="center">무게</div></td>
-            <td class="spec"><div align="center">113g<br>(배터리 포함)</div></td>
+            <td class="spec"><div align="center">55g<br>(배터리 포함)</div></td>
         </tr>
         <tr>
             <td class="spec"><div align="center">배터리</div></td>
-            <td class="white"><div align="center">7.4V<br>1,000mAh<br>LiPo(Lithium polymer) battery</div></td>
+            <td class="white"><div align="center">3.7V, 530mAh<br>LiPo battery<br>(Lithium polymer)</div></td>
         </tr>
         <tr>
             <td class="spec"><div align="center">비행시간</div></td>
@@ -94,16 +94,6 @@ Modified : 2020.4.10
             <td class="white"><div align="center">Barometer</div></td>
         </tr>
         <tr>
-            <td class="spec" rowspan="3"><div align="center">확장</div></td>
-            <td class="spec"><div align="center">4핀 UART 포트(RX, TX, 5V, GND) x 2</div></td>
-        </tr>
-        <tr>
-            <td class="white"><div align="center">RGB LED 포트 x 1</div></td>
-        </tr>
-        <tr>
-            <td class="spec"><div align="center">단색 LED 포트 x 2</div></td>
-        </tr>
-        <tr>
             <td class="spec" rowspan="3"><div align="center">주요기능</div></td>
             <td class="white"><div align="center">실내 위치 인식</div></td>
         </tr>
@@ -111,7 +101,7 @@ Modified : 2020.4.10
             <td class="spec"><div align="center">Return Home</div></td>
         </tr>
         <tr>
-            <td class="white"><div align="center">앱, 파이썬 코딩</div></td>
+            <td class="white"><div align="center">엔트리, 파이썬 코딩</div></td>
         </tr>
     </table>
 </div>
