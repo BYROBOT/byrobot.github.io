@@ -95,13 +95,13 @@ Modified : 2020.4.10
         </tr>
         <tr>
             <td class="spec" rowspan="3"><div align="center">주요기능</div></td>
-            <td class="white"><div align="center">실내 위치 인식</div></td>
+            <td class="spec"><div align="center">실내 위치 인식</div></td>
         </tr>
         <tr>
-            <td class="spec"><div align="center">Return Home</div></td>
+            <td class="white"><div align="center">Return Home</div></td>
         </tr>
         <tr>
-            <td class="white"><div align="center">엔트리, 파이썬 코딩</div></td>
+            <td class="spec"><div align="center">엔트리, 파이썬 코딩</div></td>
         </tr>
     </table>
 </div>
