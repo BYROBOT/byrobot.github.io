@@ -362,7 +362,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="white"><div align="left">
-                8. 에너지가 0이 되면 비행기는 착륙합니다.
+                8. 에너지가 0이 되면 드론이 착륙합니다.
             </div></td>
         </tr>
         <tr>
