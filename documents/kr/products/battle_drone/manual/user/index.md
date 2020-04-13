@@ -407,38 +407,38 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="coord"><div align="center">쉴드</div></td>
-            <td class="white"><div align="center">1</div></td>
-            <td class="white"><div align="center">60초</div></td>
-            <td class="white"><div align="center">오른쪽 조이스틱을 <span class="command">우-좌-우-좌</span>로 조작</div></td>
-            <td class="white"><div align="center">10초간 무적 상태가 됩니다</div></td>
+            <td class="coord"><div align="center">1</div></td>
+            <td class="coord"><div align="center">60초</div></td>
+            <td class="coord"><div align="center">오른쪽 조이스틱을 <span class="command">우-좌-우-좌</span>로 조작</div></td>
+            <td class="coord"><div align="center">10초간 무적 상태가 됩니다</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">데몬</div></td>
             <td class="white"><div align="center">1</div></td>
             <td class="white"><div align="center">60초</div></td>
-            <td class="coord"><div align="center">오른쪽 조이스틱을 <span class="command">왼쪽 방향부터 반시계 방향으로 두 바퀴 회전</span></div></td>
-            <td class="coord"><div align="center">10초 동안 적 기체의 앞뒤와 좌우를 반대로 움직이게 합니다.</div></td>
+            <td class="white"><div align="center">오른쪽 조이스틱을 <span class="command">왼쪽 방향부터 반시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="white"><div align="center">10초 동안 적 기체의 앞뒤와 좌우를 반대로 움직이게 합니다.</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">물폭탄</div></td>
-            <td class="white"><div align="center">1</div></td>
-            <td class="white"><div align="center">60초</div></td>
-            <td class="white"><div align="center">오른쪽 조이스틱을 <span class="command">오른쪽 방향부터 방향부터 시계 방향으로 두 바퀴 회전</span></div></td>
-            <td class="white"><div align="center">10초 동안 적 기체의 조작을 차단하고 미사일을 쏘기 못하게 합니다.</div></td>
+            <td class="coord"><div align="center">1</div></td>
+            <td class="coord"><div align="center">60초</div></td>
+            <td class="coord"><div align="center">오른쪽 조이스틱을 <span class="command">오른쪽 방향부터 방향부터 시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="coord"><div align="center">10초 동안 적 기체의 조작을 차단하고 미사일을 쏘기 못하게 합니다.</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">증폭</div></td>
             <td class="white"><div align="center">1</div></td>
             <td class="white"><div align="center">60초</div></td>
-            <td class="coord"><div align="center">왼쪽 조이스틱을 <span class="command">왼쪽 방향부터 반시계 방향으로 두 바퀴 회전</span></div></td>
-            <td class="coord"><div align="center">10초 동안 모든 방향의 조작을 최대값으로 만들어 세밀한 조종을 할 수 없게합니다.</div></td>
+            <td class="white"><div align="center">왼쪽 조이스틱을 <span class="command">왼쪽 방향부터 반시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="white"><div align="center">10초 동안 모든 방향의 조작을 최대값으로 만들어 세밀한 조종을 할 수 없게합니다.</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">헤딩락</div></td>
-            <td class="white"><div align="center">1</div></td>
-            <td class="white"><div align="center">60초</div></td>
-            <td class="white"><div align="center">왼쪽 조이스틱을 <span class="command">오른쪽 방향부터 방향부터 시계 방향으로 두 바퀴 회전</span></div></td>
-            <td class="white"><div align="center">10초 동안 적 기체의 좌우 회전 조작을 못하게 합니다.</div></td>
+            <td class="coord"><div align="center">1</div></td>
+            <td class="coord"><div align="center">60초</div></td>
+            <td class="coord"><div align="center">왼쪽 조이스틱을 <span class="command">오른쪽 방향부터 방향부터 시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="coord"><div align="center">10초 동안 적 기체의 좌우 회전 조작을 못하게 합니다.</div></td>
         </tr>
     </table>
 </div>
