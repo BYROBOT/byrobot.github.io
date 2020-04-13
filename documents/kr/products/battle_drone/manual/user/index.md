@@ -6,14 +6,16 @@
     td.red       { background: #FFDDDD !important; }
     td.blue      { background: #DDDDFF !important; }
     td.magenta   { background: #FFDDFF !important; }
-    td.explain   { background: #FAFFFA !important; }
+    td.explain   { background: #EAFFEA !important; }
     td.white     { background: #FFFFFF !important; }
+
+    span.command   { color: #FF2211; }
 
 </style>
 
 **[BATTLE DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2020.4.7
+Modified : 2020.4.13
 
 ---
 
@@ -245,12 +247,11 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
     <img src="./images/byrobot_controller_3_4_mode2.jpg" alt="MODE 2" width="600">
     <p>MODE 2</p>
 </div>
-<br>
 
 <br>
-
-
 <br>
+<br>
+
 
 
 # 3. 동작
@@ -311,10 +312,13 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
     </table>
 </div>
 
-
+<br>
+<br>
 <br>
 
-## 3.3. 배틀 모드
+
+
+## 4. 배틀 모드
 
 배틀 모드는 RED 팀과 BLUE 팀이 배틀 게임을 하는 모드입니다.<br>
 기본적인 규칙은 다음과 같습니다.
@@ -322,14 +326,112 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 <div align="center">
     <table>
         <tr>
-            <td class="explain"><div align="left" style="line-height:2em">
-                1. 사용 가능한 무기는 1종류입니다.<br>
-                2. 에너지는 전체 6칸이며 1회 피격을 당할 때마다 1개씩 줄어듭니다.<br>
-                3. 에너지가 0이 되면 비행기는 착륙합니다.<br>
-                4. 비행 중에는 팀 변경을 할 수 없습니다.<br>
-                5. 무기는 0.6초에 1개씩, 최대 6개까지 장전됩니다.<br>
-                6. 같은 편이 발사한 무기에 대해서는 피격되지 않습니다.<br>
+            <td class="explain"><div align="left">
+                1. 사용 가능한 무기는 6종류입니다.
             </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left">
+                2. 기본 무기는 레이저입니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left"">
+                3. 레이저 이외의 무기는 따로 장전과 발사 동작이 필요합니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left"">
+                4. 무기 장전 방법 및 효과는 <b>'4.1. 무기'</b>를 참고하시기 바랍니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left"">
+                5. 레이저 이외의 무기는 장전되면 10초 이내로 발사해야합니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left"">
+                6. 무기를 장전한 후 10초가 지나면 다시 레이저로 바뀝니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left"">
+                7. 에너지는 전체 6칸이며 <b>레이저</b>에 1회 피격을 당할 때마다 1개씩 줄어듭니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left"">
+                8. 에너지가 0이 되면 비행기는 착륙합니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left"">
+                9. 비행 중에는 팀 변경을 할 수 없습니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left"">
+                10. 같은 편이 발사한 무기에 대해서는 피격되지 않습니다.
+            </div></td>
+        </tr>
+    </table>
+</div>
+
+<br>
+
+### 4.1. 무기
+
+<div align="center">
+    <table>
+        <tr>
+            <td class="coord"><div align="center"><b>무기</b></div></td>
+            <td class="coord"><div align="center"><b>최대 장탄 수</b></div></td>
+            <td class="coord"><div align="center"><b>무기 보충 시간</b></div></td>
+            <td class="coord"><div align="center"><b>사용 방법</b></div></td>
+            <td class="coord"><div align="center"><b>효과</b></div></td>
+        </tr>
+        <tr>
+            <td class="coord"><div align="center">레이저</div></td>
+            <td class="white"><div align="center">6</div></td>
+            <td class="white"><div align="center">0.6초</div></td>
+            <td class="white"><div align="center">기본 무기</div></td>
+            <td class="white"><div align="center">피격 시 에너지가 1칸 떨어집니다.</div></td>
+        </tr>
+        <tr>
+            <td class="coord"><div align="center">쉴드</div></td>
+            <td class="white"><div align="center">1</div></td>
+            <td class="white"><div align="center">60초</div></td>
+            <td class="white"><div align="center">오른쪽 조이스틱을 <span class="command">우-좌-우-좌</span>로 조작</div></td>
+            <td class="white"><div align="center">10초간 무적 상태가 됩니다</div></td>
+        </tr>
+        <tr>
+            <td class="coord"><div align="center">데몬</div></td>
+            <td class="white"><div align="center">1</div></td>
+            <td class="white"><div align="center">60초</div></td>
+            <td class="coord"><div align="center">오른쪽 조이스틱을 <span class="command">왼쪽 방향부터 반시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="coord"><div align="center">10초 동안 적 기체의 앞뒤와 좌우를 반대로 움직이게 합니다.</div></td>
+        </tr>
+        <tr>
+            <td class="coord"><div align="center">물폭탄</div></td>
+            <td class="white"><div align="center">1</div></td>
+            <td class="white"><div align="center">60초</div></td>
+            <td class="white"><div align="center">오른쪽 조이스틱을 <span class="command">오른쪽 방향부터 방향부터 시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="white"><div align="center">10초 동안 적 기체의 조작을 차단하고 미사일을 쏘기 못하게 합니다.</div></td>
+        </tr>
+        <tr>
+            <td class="coord"><div align="center">증폭</div></td>
+            <td class="white"><div align="center">1</div></td>
+            <td class="white"><div align="center">60초</div></td>
+            <td class="coord"><div align="center">왼쪽 조이스틱을 <span class="command">왼쪽 방향부터 반시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="coord"><div align="center">10초 동안 모든 방향의 조작을 최대값으로 만들어 세밀한 조종을 할 수 없게합니다.</div></td>
+        </tr>
+        <tr>
+            <td class="coord"><div align="center">헤딩락</div></td>
+            <td class="white"><div align="center">1</div></td>
+            <td class="white"><div align="center">60초</div></td>
+            <td class="white"><div align="center">왼쪽 조이스틱을 <span class="command">오른쪽 방향부터 방향부터 시계 방향으로 두 바퀴 회전</span></div></td>
+            <td class="white"><div align="center">10초 동안 적 기체의 좌우 회전 조작을 못하게 합니다.</div></td>
         </tr>
     </table>
 </div>
