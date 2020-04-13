@@ -336,47 +336,47 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
             </div></td>
         </tr>
         <tr>
-            <td class="explain"><div align="left"">
+            <td class="explain"><div align="left">
                 3. 레이저 이외의 무기는 따로 <b>장전</b>과 <b>발사</b> 동작이 필요합니다.
             </div></td>
         </tr>
         <tr>
-            <td class="white"><div align="left"">
+            <td class="white"><div align="left">
                 4. 무기 장전 방법 및 효과는 <b>'4.1. 무기'</b>를 참고하시기 바랍니다.
             </div></td>
         </tr>
         <tr>
-            <td class="explain"><div align="left"">
+            <td class="explain"><div align="left">
                 5. 레이저 이외의 무기는 장전되면 10초 이내로 발사해야합니다.
             </div></td>
         </tr>
         <tr>
-            <td class="white"><div align="left"">
+            <td class="white"><div align="left">
                 6. 무기를 장전한 후 10초가 지나면 다시 레이저로 바뀝니다.
             </div></td>
         </tr>
         <tr>
-            <td class="explain"><div align="left"">
+            <td class="explain"><div align="left">
                 7. 에너지는 전체 6칸이며 <b>레이저</b>에 1회 피격을 당할 때마다 1개씩 줄어듭니다.
             </div></td>
         </tr>
         <tr>
-            <td class="white"><div align="left"">
+            <td class="white"><div align="left">
                 8. 에너지가 0이 되면 비행기는 착륙합니다.
             </div></td>
         </tr>
         <tr>
-            <td class="explain"><div align="left"">
+            <td class="explain"><div align="left">
                 9. 비행 중에는 팀 변경을 할 수 없습니다.
             </div></td>
         </tr>
         <tr>
-            <td class="white"><div align="left"">
+            <td class="white"><div align="left">
                 10. 같은 편이 발사한 무기에 대해서는 피격되지 않습니다.
             </div></td>
         </tr>
         <tr>
-            <td class="explain"><div align="left"">
+            <td class="explain"><div align="left">
                 11. 특수 무기에 피격된 이후 레이저로 공격받으면 조작 제한 상태가 풀립니다.
             </div></td>
         </tr>
