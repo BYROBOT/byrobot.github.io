@@ -270,12 +270,32 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
     <table>
         <tr>
             <td class="explain"><div align="left" style="line-height:2em">
-                1. 드론에 배터리가 연결되어 있다면 제거하세요.<br>
-                2. 드론에 배터리를 연결합니다.<br>
-                3. 드론의 양 옆을 잡고, 좌우로 흔들어줍니다.<br>
-                4. 드론의 프로펠러 쪽 LED가 파란색-빨간색 순서로 계속해서 깜빡이면 드론의 페어링 준비가 완료된 것입니다.<br>
-                5. 조종기의 전원을 켭니다.<br>
-                6. 조종기 오른쪽 하단의 둥근 버튼(11번 버튼)을 3초 이상 길게 누르면 페어링이 완료됩니다.
+                1. <span class="cw">드론</span>에 배터리가 연결되어 있다면 제거하세요.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left">
+                2. <span class="cw">드론</span>에 배터리를 연결합니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left">
+                3. <span class="cw">드론</span>의 양 옆을 잡고, 좌우로 흔들어줍니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left">
+                4. <span class="cw">드론</span>의 프로펠러 쪽 LED가 파란색-빨간색 순서로 계속해서 깜빡이면 드론의 페어링 준비가 완료된 것입니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left">
+                5. <span class="ccw">조종기</span>의 전원을 켭니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="left">
+                6. <span class="ccw">조종기</span> 오른쪽 하단의 둥근 버튼(11번 버튼)을 3초 이상 길게 누르면 페어링이 완료됩니다.
             </div></td>
         </tr>
     </table>
