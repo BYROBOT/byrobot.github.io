@@ -16,6 +16,7 @@
     span.ccw            { color: #1122FF; }
     span.red            { color: #FF1111; font-weight: bold; }
     span.blue           { color: #1111FF; font-weight: bold; }
+    span.magenta        { color: #FF11FF; font-weight: bold; }
 
 </style>
 
@@ -320,18 +321,18 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="team" rowspan="2"><div align="center">배틀 모드</div></td>
-            <td class="red"><div align="center">RED</div></td>
+            <td class="red"><div align="center"><span class="red">RED</span></div></td>
             <td class="red"><div align="center">전투</div></td>
             <td class="red"><div align="center">미사일 발사</div></td>
         </tr>
         <tr>
-            <td class="blue"><div align="center">BLUE</div></td>
+            <td class="blue"><div align="center"><span class="blue">BLUE</span></div></td>
             <td class="blue"><div align="center">전투</div></td>
             <td class="blue"><div align="center">미사일 발사</div></td>
         </tr>
         <tr>
             <td class="team"><div align="center">비행 모드</div></td>
-            <td class="magenta"><div align="center">MAGENTA</div></td>
+            <td class="magenta"><div align="center"><span class="magenta">MAGENTA</span></div></td>
             <td class="magenta"><div align="center">비행</div></td>
             <td class="magenta"><div align="center">LED 색 변경</div></td>
         </tr>
