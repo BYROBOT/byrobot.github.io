@@ -14,6 +14,8 @@
     span.weapon_right   { color: #FF2211; }
     span.cw             { color: #FF2211; }
     span.ccw            { color: #1122FF; }
+    span.red            { color: #FF1111; font-weight: bold; }
+    span.blue           { color: #1111FF; font-weight: bold; }
 
 </style>
 
@@ -344,69 +346,69 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 
 # 4. 배틀 모드
 
-배틀 모드는 RED 팀과 BLUE 팀이 배틀 게임을 하는 모드입니다.<br>
+배틀 모드는 <span class="red">RED</span> 팀과 <span class="blue">BLUE</span> 팀이 배틀 게임을 하는 모드입니다.<br>
 기본적인 규칙은 다음과 같습니다.
 
 <div align="center">
     <table>
         <tr>
             <td class="explain"><div align="left">
-                1. 사용 가능한 무기는 6종류입니다.
+                1. 비행 중에는 <b>팀 변경</b>을 할 수 없습니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                2. 기본 무기는 <b>레이저</b>입니다.
+                2. 사용 가능한 무기는 <b>6종류</b>입니다.
             </div></td>
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                3. 레이저 이외의 무기는 따로 <b>장전</b>과 <b>발사</b> 동작이 필요합니다.
+                3. 기본 무기는 <b>레이저</b>입니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                4. 무기 장전 방법 및 효과는 <b>'4.1. 무기'</b>를 참고하시기 바랍니다.
+                4. 레이저 이외의 무기는 따로 <b>장전</b>과 <b>발사</b> 동작이 필요합니다.
             </div></td>
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                5. 레이저 이외의 무기는 장전되면 5초 동안 장탄량 이내로 계속 발사할 수 있습니다.
+                5. 무기 장전 방법 및 효과는 <b>'4.1. 무기'</b>를 참고하시기 바랍니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                6. 무기를 장전한 후 5초가 지나면 다시 레이저로 바뀝니다.
+                6. 레이저 이외의 무기는 장전되면 <b>5초</b> 동안 장탄량 이내로 계속 발사할 수 있습니다.
             </div></td>
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                7. 에너지는 전체 6칸이며 <b>레이저</b>에 1회 피격을 당할 때마다 1개씩 줄어듭니다.
+                7. <b>실드</b>는 사용 시 바로 적용되고, 선택 무기가 레이저로 변경됩니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                8. 에너지가 0이 되면 드론이 착륙합니다.
+                8. 무기를 장전한 후 <b>5초</b>가 지나면 다시 레이저로 바뀝니다.
             </div></td>
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                9. 비행 중에는 팀 변경을 할 수 없습니다.
+                9. <b>같은 편</b>이 발사한 무기에 대해서는 피격되지 않습니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                10. 같은 편이 발사한 무기에 대해서는 피격되지 않습니다.
+                10. 에너지는 전체 6칸이며 <b>레이저</b>에 1회 피격을 당할 때마다 1개씩 줄어듭니다.
             </div></td>
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                11. 특수 무기에 피격된 이후 레이저로 공격받으면 조작 제한 상태가 풀립니다.
+                11. 특수 무기에 피격된 이후 <b>레이저</b>로 공격받으면 조작 제한 상태가 풀립니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                12. 실드는 사용 시 바로 적용되고, 선택 무기가 레이저로 변경됩니다.
+                12. 에너지가 <b>0</b>이 되면 드론이 <b>착륙</b>합니다.
             </div></td>
         </tr>
     </table>
