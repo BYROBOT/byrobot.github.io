@@ -36,14 +36,14 @@
     <img src="/assets/images/products/byrobot_drone_7.png" alt="e_drive">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
-            <td width="110" class="firmware"><a href="#Firmware"><span class="even"><div align="center">Firmware</div></span></a></td>
-            <td width="110" class="driver"><a href="#Driver"><span class="odd"><div align="center">Driver</div></span></a></td>
+            <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
+            <td width="110" class="firmware"><div align="center">&nbsp;<br><a href="#Firmware"><span class="even">Firmware</span></a><br>&nbsp;</div></td>
+            <td width="110" class="driver"><div align="center">&nbsp;<br><a href="#Driver"><span class="odd">Driver</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td width="110" class="byblocks"><a href="#ByBlocks"><span class="even"><div align="center">ByBlocks</div></span></a></td>
-            <td width="110" class="python"><a href="#Python"><span class="odd"><div align="center">Python</div></span></a></td>
-            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span class="even"><div align="center">Issues</div></span></a></td>
+            <td width="110" class="byblocks"><div align="center">&nbsp;<br><a href="#ByBlocks"><span class="even">ByBlocks</span></a><br>&nbsp;</div></td>
+            <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
+            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone7/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
@@ -166,4 +166,4 @@
 
 ---
 
-Modified : 2020.4.8
+Modified : 2020.4.20

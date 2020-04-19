@@ -34,14 +34,14 @@
     <img src="/assets/images/products/byrobot_drone_3_10.png" alt="battle_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
-            <td width="110" class="driver"><a href="#Driver"><span class="even"><div align="center">Driver</div></span></a></td>
-            <td width="110" class="entry"><a href="#Entry"><span class="odd"><div align="center">Entry</div></span></a></td>
+            <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
+            <td width="110" class="driver"><div align="center">&nbsp;<br><a href="#Driver"><span class="even">Driver</span></a><br>&nbsp;</div></td>
+            <td width="110" class="entry"><div align="center">&nbsp;<br><a href="#Entry"><span class="odd">Entry</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td width="110" class="python"><a href="#Python"><span class="even"><div align="center">Python</div></span></a></td>
-            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone3/issues/" target="_blank"><span class="odd"><div align="center">Issues</div></span></a></td>
-            <td width="110" class="byrobot"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
+            <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="even">Python</span></a><br>&nbsp;</div></td>
+            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone3/issues/" target="_blank"><span class="odd">Issues</span></a><br>&nbsp;</div></td>
+            <td width="110" class="byrobot"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
@@ -117,4 +117,4 @@
 
 ---
 
-Modified : 2020.4.8
+Modified : 2020.4.20
