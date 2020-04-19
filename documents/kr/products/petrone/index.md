@@ -36,14 +36,14 @@
     <img src="/assets/images/products/byrobot_drone_1.png" alt="petrone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" class="documents"><span class="odd"><div align="center">&nbsp;<a href="#Documents">Documents</a>&nbsp;</div></span></td>
-            <td width="110" class="firmware"><span class="even"><div align="center">&nbsp;<a href="#Firmware">Firmware</a>&nbsp;</div></span></td>
-            <td width="110" class="driver"><span class="odd"><div align="center">&nbsp;<a href="#Driver">Driver</a>&nbsp;</div></span></td>
+            <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
+            <td width="110" class="firmware"><div align="center">&nbsp;<br><a href="#Firmware"><span class="even">Firmware</span></a><br>&nbsp;</div></td>
+            <td width="110" class="driver"><div align="center">&nbsp;<br><a href="#Driver"><span class="odd">Driver</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td width="110" class="repository"><span class="even"><div align="center">&nbsp;<a href="#Repository">Repository</a>&nbsp;</div></span></td>
-            <td width="110" class="python"><span class="odd"><div align="center">&nbsp;<a href="#Python">Python</a>&nbsp;</div></span></td>
-            <td width="110" class="issues"><span class="even"><div align="center">&nbsp;<a href="https://github.com/BYROBOT/drone1/issues/" target="_blank">Issues</a>&nbsp;</div></span></td>
+            <td width="110" class="repository"><div align="center">&nbsp;<br><a href="#Repository"><span class="even">Repository</span></a><br>&nbsp;</div></td>
+            <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
+            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone1/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
