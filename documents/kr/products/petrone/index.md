@@ -26,8 +26,8 @@
     td.white       { background: #FFFFFF !important; }
     td.space       { background: #FFFFFF !important; }
 
-    span.odd 	   { color: #0489B1; }
-    span.even	   { color: #FF4000; }
+    span.odd       { color: #0489B1; }
+    span.even      { color: #FF4000; }
     span.byrobot   { color: #CCDDEE; }
 
 </style>
@@ -36,14 +36,14 @@
     <img src="/assets/images/products/byrobot_drone_1.png" alt="petrone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" class="documents"><a href="#Documents"><span class="odd"><div align="center">Documents</div></span></a></td>
-            <td width="110" class="firmware"><a href="#Firmware"><span class="even"><div align="center">Firmware</div></span></a></td>
-            <td width="110" class="driver"><a href="#Driver"><span class="odd"><div align="center">Driver</div></span></a></td>
+            <td width="110" class="documents"><span class="odd"><div align="center">&nbsp;<a href="#Documents">Documents</a>&nbsp;</div></span></td>
+            <td width="110" class="firmware"><span class="even"><div align="center">&nbsp;<a href="#Firmware">Firmware</a>&nbsp;</div></span></td>
+            <td width="110" class="driver"><span class="odd"><div align="center">&nbsp;<a href="#Driver">Driver</a>&nbsp;</div></span></td>
         </tr>
         <tr>
-            <td width="110" class="repository"><a href="#Repository"><span class="even"><div align="center">Repository</div></span></a></td>
-            <td width="110" class="python"><a href="#Python"><span class="odd"><div align="center">Python</div></span></a></td>
-            <td width="110" class="issues"><a href="https://github.com/BYROBOT/drone1/issues/" target="_blank"><span class="even"><div align="center">Issues</div></span></a></td>
+            <td width="110" class="repository"><span class="even"><div align="center">&nbsp;<a href="#Repository">Repository</a>&nbsp;</div></span></td>
+            <td width="110" class="python"><span class="odd"><div align="center">&nbsp;<a href="#Python">Python</a>&nbsp;</div></span></td>
+            <td width="110" class="issues"><span class="even"><div align="center">&nbsp;<a href="https://github.com/BYROBOT/drone1/issues/" target="_blank">Issues</a>&nbsp;</div></span></td>
         </tr>
     </table>
     <br>
@@ -164,4 +164,5 @@
 
 ---
 
-Modified : 2020.4.8
+Modified : 2020.4.20
+
