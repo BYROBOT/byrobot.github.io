@@ -14,11 +14,22 @@
     td.elevator   { background: #DDFFFF !important; }
     td.aileron    { background: #DDFFDD !important; }
 
+    td.w { background: #FFFFFF !important; }
+    td.k { background: #000000 !important; }
+    td.r { background: #FF0000 !important; }
+    td.y { background: #FFFF00 !important; }
+    td.g { background: #00FF00 !important; }
+    td.c { background: #00FFFF !important; }
+    td.b { background: #0000FF !important; }
+    td.m { background: #FF00FF !important; }
+
+    td.gray { background: #909090 !important; }
+
 </style>
 
 **[CODING DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2020.4.27
+Modified : 2020.4.28
 
 ---
 
@@ -108,7 +119,8 @@ Modified : 2020.4.27
 
 
 <br>
-
+<br>
+<br>
 
 
 ## 1.2. 좌표계
@@ -150,7 +162,8 @@ Coding Drone은 오른손 좌표계를 사용하고 있습니다.
 [http://www.physics.brocku.ca/PPLATO/h-flap/math2_5.html#section_3](http://www.physics.brocku.ca/PPLATO/h-flap/math2_5.html#section_3)
 
 
-
+<br>
+<br>
 <br>
 
 
@@ -168,7 +181,7 @@ Coding Drone은 여러 동작 모드를 가지고 있습니다.
 
 
 <br>
-
+<br>
 <br>
 
 
@@ -187,7 +200,7 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
 | 버튼 누른 횟수 | 동작                         |
 |:--------------:|:-----------------------------|
 | 1              | **카드 읽기**                |
-| 2              | **시작**                     |
+| 2              | **시작** 또는 **실행**       |
 | 4              | 모션 센서 캘리브레이션 시작  |
 | 5              | 컬러 캘리브레이션 시작       |
 | 9              | 설정값 초기화                |
@@ -210,11 +223,11 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
 
 | 버튼 누른 시간 | 동작                      |
 |:--------------:|:--------------------------|
-| 3초            | 페어링                    |
+| 3초            | **페어링**                |
 
 
 <br>
-
+<br>
 <br>
 
 
@@ -234,11 +247,11 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td rowspan="3"><div align="center">모드</div></td>
-        <td rowspan="38" style="background-color:#FFFFFF"></td>
-        <td style="background-color:#FF0000"></td><td>카드 코딩 모드(초기 모드)</td>
+        <td rowspan="38" class="w"></td>
+        <td class="r"></td><td>카드 코딩 모드(초기 모드)</td>
     </tr>
-        <tr><td style="background-color:#FFFF00"></td><td>모션 코딩 모드</td></tr>
-        <tr><td style="background-color:#000000"></td><td>피아노 모드</td></tr>
+        <tr><td class="y"></td><td>모션 코딩 모드</td></tr>
+        <tr><td class="k"></td><td>피아노 모드</td></tr>
 </table>
 
 
@@ -257,88 +270,88 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td rowspan="8"><div align="center">기능</div></td>
-        <td rowspan="8" style="background-color:#FF0000"></td>
-        <td style="background-color:#FFFFFF"></td><td>카드 입력 시작</td>
+        <td rowspan="8" class="r"></td>
+        <td class="w"></td><td>카드 입력 시작</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>카드 입력 종료</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>함수 입력 시작</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>함수 입력 종료</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>함수 호출</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>멜로디 호출</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>속도 조절(카드를 읽을 때 마다 1, 2, 3 단계가 차례로 바뀜)</td></tr>
-        <tr><td style="background-color:#000000"></td><td>1초 기다림</td></tr>
+        <tr><td class="r"></td><td>카드 입력 종료</td></tr>
+        <tr><td class="y"></td><td>함수 입력 시작</td></tr>
+        <tr><td class="g"></td><td>함수 입력 종료</td></tr>
+        <tr><td class="c"></td><td>함수 호출</td></tr>
+        <tr><td class="b"></td><td>멜로디 호출</td></tr>
+        <tr><td class="m"></td><td>속도 조절(카드를 읽을 때 마다 1, 2, 3 단계가 차례로 바뀜)</td></tr>
+        <tr><td class="k"></td><td>1초 기다림</td></tr>
     <tr>
         <td rowspan="8"><div align="center">RGB LED</div></td>
-        <td rowspan="8" style="background-color:#FFFF00"></td>
-        <td style="background-color:#FFFFFF"></td><td>흰색</td>
+        <td rowspan="8" class="y"></td>
+        <td class="w"></td><td>흰색</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>빨강</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>노랑</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>초록</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>하늘</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>파랑</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>자홍</td></tr>
-        <tr><td style="background-color:#000000"></td><td>검정(꺼짐)</td></tr>
+        <tr><td class="r"></td><td>빨강</td></tr>
+        <tr><td class="y"></td><td>노랑</td></tr>
+        <tr><td class="g"></td><td>초록</td></tr>
+        <tr><td class="c"></td><td>하늘</td></tr>
+        <tr><td class="b"></td><td>파랑</td></tr>
+        <tr><td class="m"></td><td>자홍</td></tr>
+        <tr><td class="k"></td><td>검정(꺼짐)</td></tr>
     <tr>
         <td rowspan="8"><div align="center">동작 설정</div></td>
-        <td rowspan="8" style="background-color:#00FF00"></td>
-        <td style="background-color:#FFFFFF"></td><td>이륙</td>
+        <td rowspan="8" class="g"></td>
+        <td class="w"></td><td>이륙</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>착륙</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>이동 단위를 <b>30cm</b>로 설정</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>이동 단위를 <b>50cm</b>로 설정</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>이동 단위를 <b>1m</b>로 설정</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>회전 단위를 <b>30도</b>로 설정</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>회전 단위를 <b>45도</b>로 설정</td></tr>
-        <tr><td style="background-color:#000000"></td><td>회전 단위를 <b>90도</b>로 설정</td></tr>
+        <tr><td class="r"></td><td>착륙</td></tr>
+        <tr><td class="y"></td><td>이동 단위를 <b>30cm</b>로 설정</td></tr>
+        <tr><td class="g"></td><td>이동 단위를 <b>50cm</b>로 설정</td></tr>
+        <tr><td class="c"></td><td>이동 단위를 <b>1m</b>로 설정</td></tr>
+        <tr><td class="b"></td><td>회전 단위를 <b>30도</b>로 설정</td></tr>
+        <tr><td class="m"></td><td>회전 단위를 <b>45도</b>로 설정</td></tr>
+        <tr><td class="k"></td><td>회전 단위를 <b>90도</b>로 설정</td></tr>
     <tr>
         <td rowspan="8"><div align="center">이동, 회전</div></td>
-        <td rowspan="8" style="background-color:#00FFFF"></td>
-        <td style="background-color:#FFFFFF"></td><td>앞으로 이동</td>
+        <td rowspan="8" class="c"></td>
+        <td class="w"></td><td>앞으로 이동</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>뒤로 이동</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>왼쪽으로 이동</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>오른쪽으로 이동</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>위로 이동</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>아래로 이동</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>왼쪽으로 회전</td></tr>
-        <tr><td style="background-color:#000000"></td><td>오른쪽으로 회전</td></tr>
+        <tr><td class="r"></td><td>뒤로 이동</td></tr>
+        <tr><td class="y"></td><td>왼쪽으로 이동</td></tr>
+        <tr><td class="g"></td><td>오른쪽으로 이동</td></tr>
+        <tr><td class="c"></td><td>위로 이동</td></tr>
+        <tr><td class="b"></td><td>아래로 이동</td></tr>
+        <tr><td class="m"></td><td>왼쪽으로 회전</td></tr>
+        <tr><td class="k"></td><td>오른쪽으로 회전</td></tr>
     <tr>
         <td rowspan="8"><div align="center">조건</div></td>
-        <td rowspan="8" style="background-color:#0000FF"></td>
-        <td style="background-color:#FFFFFF"></td><td>장애물 발견 시(If)</td>
+        <td rowspan="8" class="b"></td>
+        <td class="w"></td><td>장애물 발견 시(If)</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>바닥 빨간색을 발견 시(If)</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>바닥 노란색을 발견 시(If)</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>바닥 초록색을 발견 시(If)</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>바닥 하늘색을 발견 시(If)</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>바닥 파란색을 발견 시(If)</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>아니면(Else)</td></tr>
-        <tr><td style="background-color:#000000"></td><td>조건 끝(End)</td></tr>
+        <tr><td class="r"></td><td>바닥 빨간색을 발견 시(If)</td></tr>
+        <tr><td class="y"></td><td>바닥 노란색을 발견 시(If)</td></tr>
+        <tr><td class="g"></td><td>바닥 초록색을 발견 시(If)</td></tr>
+        <tr><td class="c"></td><td>바닥 하늘색을 발견 시(If)</td></tr>
+        <tr><td class="b"></td><td>바닥 파란색을 발견 시(If)</td></tr>
+        <tr><td class="m"></td><td>아니면(Else)</td></tr>
+        <tr><td class="k"></td><td>조건 끝(End)</td></tr>
     <tr>
         <td rowspan="8"><div align="center">반복</div></td>
-        <td rowspan="8" style="background-color:#FF00FF"></td>
-        <td style="background-color:#FFFFFF"></td><td>무한 반복</td>
+        <td rowspan="8" class="m"></td>
+        <td class="w"></td><td>무한 반복</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>2회 반복</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>3회 반복</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>4회 반복</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>5회 반복</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>10회 반복</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>중단(Break)</td></tr>
-        <tr><td style="background-color:#000000"></td><td>반복 끝</td></tr>
+        <tr><td class="r"></td><td>2회 반복</td></tr>
+        <tr><td class="y"></td><td>3회 반복</td></tr>
+        <tr><td class="g"></td><td>4회 반복</td></tr>
+        <tr><td class="c"></td><td>5회 반복</td></tr>
+        <tr><td class="b"></td><td>10회 반복</td></tr>
+        <tr><td class="m"></td><td>중단(Break)</td></tr>
+        <tr><td class="k"></td><td>반복 끝</td></tr>
     <tr>
         <td rowspan="8"><div align="center">음계</div></td>
-        <td rowspan="8" style="background-color:#000000"></td>
-        <td style="background-color:#FFFFFF"></td><td>도(5 옥타브)</td>
+        <td rowspan="8" class="k"></td>
+        <td class="w"></td><td>도(5 옥타브)</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>레</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>미</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>파</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>솔</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>라</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>시</td></tr>
-        <tr><td style="background-color:#000000"></td><td>도(6 옥타브)</td></tr>
+        <tr><td class="r"></td><td>레</td></tr>
+        <tr><td class="y"></td><td>미</td></tr>
+        <tr><td class="g"></td><td>파</td></tr>
+        <tr><td class="c"></td><td>솔</td></tr>
+        <tr><td class="b"></td><td>라</td></tr>
+        <tr><td class="m"></td><td>시</td></tr>
+        <tr><td class="k"></td><td>도(6 옥타브)</td></tr>
 </table>
 
 <br>
@@ -358,16 +371,16 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td rowspan="8"><div align="center">기능</div></td>
-        <td rowspan="8" style="background-color:#FF0000"></td>
-        <td style="background-color:#FFFFFF"></td><td>사용자 정의 멜로디 입력 시작</td>
+        <td rowspan="8" class="r"></td>
+        <td class="w"></td><td>사용자 정의 멜로디 입력 시작</td>
     </tr>
-        <tr><td style="background-color:#FF0000"></td><td>사용자 정의 멜로디 입력 종료</td></tr>
-        <tr><td style="background-color:#FFFF00"></td><td>멜로디 1</td></tr>
-        <tr><td style="background-color:#00FF00"></td><td>멜로디 2</td></tr>
-        <tr><td style="background-color:#00FFFF"></td><td>멜로디 3</td></tr>
-        <tr><td style="background-color:#0000FF"></td><td>저장한 멜로디 실행</td></tr>
-        <tr><td style="background-color:#FF00FF"></td><td>쉼표 0.5초</td></tr>
-        <tr><td style="background-color:#000000"></td><td>쉼표 1초</td></tr>
+        <tr><td class="r"></td><td>사용자 정의 멜로디 입력 종료</td></tr>
+        <tr><td class="y"></td><td>멜로디 1</td></tr>
+        <tr><td class="g"></td><td>멜로디 2</td></tr>
+        <tr><td class="c"></td><td>멜로디 3</td></tr>
+        <tr><td class="b"></td><td>저장한 멜로디 실행</td></tr>
+        <tr><td class="m"></td><td>쉼표 0.5초</td></tr>
+        <tr><td class="k"></td><td>쉼표 1초</td></tr>
 </table>
 
 <br>
@@ -381,18 +394,18 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" style="background-color:#FFFF00">&nbsp;</td>
+        <td colspan="8" class="y">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -411,18 +424,18 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" style="background-color:#00FF00">&nbsp;</td>
+        <td colspan="8" class="g">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -448,18 +461,18 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" style="background-color:#00FFFF">&nbsp;</td>
+        <td colspan="8" class="c">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -478,18 +491,18 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" style="background-color:#0000FF">&nbsp;</td>
+        <td colspan="8" class="b">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -515,18 +528,18 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" style="background-color:#FF00FF">&nbsp;</td>
+        <td colspan="8" class="m">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -545,18 +558,18 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" style="background-color:#000000">&nbsp;</td>
+        <td colspan="8" class="k">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td style="background-color:#FFFFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FF00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#FF00FF">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td style="background-color:#000000">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -571,13 +584,10 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
 </table>
 
-<br>
-
 
 <br>
-
 <br>
-
+<br>
 
 
 # 2. 조종기
@@ -588,7 +598,7 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
 Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구성되어 있습니다.
 
 <div align="center">
-    <img src="./images/display_control.jpg" alt="control"><br>
+    <img src="./images/display_control.png" alt="control"><br>
     〈조종 화면〉
 </div>
 
@@ -597,12 +607,14 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
 <br>
 
 <div align="center">
-    <img src="./images/display_setup.jpg" alt="setup"><br>
+    <img src="./images/display_setup.png" alt="setup"><br>
     〈설정 화면〉
 </div>
 
 설정 화면에서는 드론 설정 변경, 상태 확인 등을 할 수 있습니다.
 
+<br>
+<br>
 <br>
 
 
@@ -614,12 +626,12 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
 
 <table>
     <tr>
-        <td>
+        <td class="gray">
             <div align="center">
                 <a href="./images/drone4controller_1.png" target="_blank"><img src="./images/drone4controller_1.png"></a>
             </div>
         </td>
-        <td>
+        <td class="gray">
             <div align="center">
                 <a href="./images/drone4controller_1_desc.png" target="_blank"><img src="./images/drone4controller_1_desc.png"></a>
             </div>
@@ -776,8 +788,7 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
 
 
 <br>
-
-
+<br>
 <br>
 
 
@@ -816,8 +827,7 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
 <br>
 
 <br>
-
-
+<br>
 <br>
 
 
@@ -1397,9 +1407,9 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
     </table>
 </div>
 
+
 <br>
-
-
+<br>
 <br>
 
 
@@ -1411,8 +1421,8 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
     <img src="./images/mode1.jpg" alt="MODE 1" width="800">
     <p>MODE 1</p>
 </div>
-<br>
 
+<br>
 <br>
 
 ### 2.5.2. MODE 2

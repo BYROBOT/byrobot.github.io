@@ -18,7 +18,7 @@
 
 **[E-DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2020.4.10
+Modified : 2020.4.28
 
 ---
 
@@ -175,7 +175,7 @@ E-DRONE은 오른손 좌표계를 사용하고 있습니다.
 E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구성되어 있습니다.
 
 <div align="center">
-    <img src="./images/display_control.jpg" alt="control"><br>
+    <img src="./images/display_control.png" alt="control"><br>
     〈조종 화면〉
 </div>
 
@@ -184,7 +184,7 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 <br>
 
 <div align="center">
-    <img src="./images/display_setup.jpg" alt="setup"><br>
+    <img src="./images/display_setup.png" alt="setup"><br>
     〈설정 화면〉
 </div>
 
