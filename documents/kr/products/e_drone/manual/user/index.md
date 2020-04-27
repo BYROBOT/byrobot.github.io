@@ -13,6 +13,9 @@
     td.rudder     { background: #FFFFDD !important; }
     td.elevator   { background: #DDFFFF !important; }
     td.aileron    { background: #DDFFDD !important; }
+    
+    td.lightgrey  { background: #C9C9C9 !important; }
+    td.darkgrey   { background: #909090 !important; }
 
 </style>
 
@@ -175,7 +178,13 @@ E-DRONE은 오른손 좌표계를 사용하고 있습니다.
 E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구성되어 있습니다.
 
 <div align="center">
-    <img src="./images/display_control.png" alt="control"><br>
+    <table>
+        <tr>
+            <td class="lightgrey">
+                <img src="./images/display_control.png" alt="control">
+            </td>
+        </tr>
+    </table>
     〈조종 화면〉
 </div>
 
@@ -184,7 +193,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 <br>
 
 <div align="center">
-    <img src="./images/display_setup.png" alt="setup"><br>
+    <table>
+        <tr>
+            <td class="lightgrey">
+                <img src="./images/display_setup.png" alt="setup">
+            </td>
+        </tr>
+    </table>
     〈설정 화면〉
 </div>
 
@@ -201,12 +216,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_1.png" target="_blank"><img src="./images/drone4controller_1.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_1_desc.png" target="_blank"><img src="./images/drone4controller_1_desc.png"></a>
             </div>
@@ -222,12 +238,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_2.png" target="_blank"><img src="./images/drone4controller_2.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_2_desc.png" target="_blank"><img src="./images/drone4controller_2_desc.png"></a>
             </div>
@@ -243,12 +260,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_3.png" target="_blank"><img src="./images/drone4controller_3.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_3_desc.png" target="_blank"><img src="./images/drone4controller_3_desc.png"></a>
             </div>
@@ -264,12 +282,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_4.png" target="_blank"><img src="./images/drone4controller_4.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_4_desc.png" target="_blank"><img src="./images/drone4controller_4_desc.png"></a>
             </div>
@@ -285,12 +304,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_5.png" target="_blank"><img src="./images/drone4controller_5.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_5_desc.png" target="_blank"><img src="./images/drone4controller_5_desc.png"></a>
             </div>
@@ -306,12 +326,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_6.png" target="_blank"><img src="./images/drone4controller_6.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_6_desc.png" target="_blank"><img src="./images/drone4controller_6_desc.png"></a>
             </div>
@@ -327,12 +348,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_7.png" target="_blank"><img src="./images/drone4controller_7.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_7_desc.png" target="_blank"><img src="./images/drone4controller_7_desc.png"></a>
             </div>
@@ -348,12 +370,13 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 
 <table>
     <tr>
-        <td>
+        <td class="lightgrey">
             <div align="center">
                 <a href="./images/drone4controller_8.png" target="_blank"><img src="./images/drone4controller_8.png"></a>
             </div>
         </td>
-        <td>
+        <td></td>
+        <td class="darkgrey">
             <div align="center">
                 <a href="./images/drone4controller_8_desc.png" target="_blank"><img src="./images/drone4controller_8_desc.png"></a>
             </div>
