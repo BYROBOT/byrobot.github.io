@@ -1018,7 +1018,7 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.5.1. MODE 1
 
 <div align="center">
-    <img src="./images/mode1.jpg" alt="MODE 1" width="800">
+    <img src="./images/mode1.png" alt="MODE 1" width="800">
     <p>MODE 1</p>
 </div>
 <br>
@@ -1028,7 +1028,7 @@ E-DRONE의 조종기는 크게 ***조종***과 ***설정*** 두 화면으로 구
 ### 2.5.2. MODE 2
 
 <div align="center">
-    <img src="./images/mode2.jpg" alt="MODE 2" width="800">
+    <img src="./images/mode2.png" alt="MODE 2" width="800">
     <p>MODE 2</p>
 </div>
 <br>
