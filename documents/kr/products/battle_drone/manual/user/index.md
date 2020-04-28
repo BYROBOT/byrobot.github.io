@@ -241,7 +241,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 ### 2.2.1. MODE 1
 
 <div align="center">
-    <img src="./images/byrobot_controller_3_4_mode1.jpg" alt="MODE 1" width="600">
+    <img src="./images/mode1.png" alt="MODE 1" width="600">
     <p>MODE 1</p>
 </div>
 <br>
@@ -251,7 +251,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
 ### 2.2.2. MODE 2
 
 <div align="center">
-    <img src="./images/byrobot_controller_3_4_mode2.jpg" alt="MODE 2" width="600">
+    <img src="./images/mode2.png" alt="MODE 2" width="600">
     <p>MODE 2</p>
 </div>
 
