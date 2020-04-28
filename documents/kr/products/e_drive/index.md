@@ -67,33 +67,29 @@
             <td colspan="3" class="firmware"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="3" class="firmware"><div align="center">Version</div></td>
+            <td rowspan="2" class="firmware"><div align="center">Version</div></td>
             <td><div align="center">Car</div></td>
-            <td><div align="center">20.3.19</div></td>
+            <td><div align="center">20.4.4</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">BleServer</div></td>
             <td class="firmware"><div align="center">19.10.16</div></td>
         </tr>
         <tr>
-            <td><div align="center">Tester</div></td>
-            <td><div align="center">19.9.1</div></td>
-        </tr>
-        <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2020.3.31</div></td>
+            <td colspan="2" class="white"><div align="center">2020.4.27</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2"><div align="center"><a href="https://drive.google.com/open?id=1tKKKJtc1dzD8Sd26GdTpwWeOhwG9ruIE" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/open?id=1rSVCERLKqYWY4z7Et_KlJKl-mRU8Ojie" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drive/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
-            <td class="firmware"><div align="center">Update Manual</div></td>
-            <td colspan="2">
+            <td class="firmware" class="firmware"><div align="center">Update Manual</div></td>
+            <td colspan="2" class="firmware">
                 <div align="center">
                     <a href="/documents/kr/products/e_drive/manual/update/drone4autoupdaterlight/">한국어</a>
                 </div>
@@ -166,4 +162,4 @@
 
 ---
 
-Modified : 2020.4.20
+Modified : 2020.4.28

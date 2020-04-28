@@ -22,7 +22,7 @@
 
 **[BATTLE DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2020.4.13
+Modified : 2020.4.28
 
 ---
 

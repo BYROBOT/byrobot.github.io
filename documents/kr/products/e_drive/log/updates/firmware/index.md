@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.3.31
+Modified : 2020.4.28
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2020.3.31
 
 
 <br>
+
+
+# 2020.4.27
+
+- **E-Drive: 20.4.4**
+- E-Drive BleServer: 19.10.16
+
+> - 버튼을 3번 눌러 Black, White 색 캘리브레이션을 하던 기능을 제거
+
+
+
+[Download](https://drive.google.com/open?id=1rSVCERLKqYWY4z7Et_KlJKl-mRU8Ojie)
+
+
+<br>
+
+---
 
 
 # 2020.3.31
