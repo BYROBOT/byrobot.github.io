@@ -174,11 +174,11 @@ Coding Drone은 여러 동작 모드를 가지고 있습니다.
 
 | 이름                | 설명                                                                                                   |
 |--------------------:|:-------------------------------------------------------------------------------------------------------|
-| 조종                | 조종기로 드론을 조종할 때 사용하는 모드입니다                                                          |
-| 카드 코딩           | 카드 코딩 모드입니다. 드론을 켰을 때 처음 시작하는 모드입니다                                          |
-| 모션 코딩           | 드론를 앞, 뒤, 좌, 우 방향으로 기울여서 코딩하는 모드입니다                                            |
+| **조종**            | 조종기로 드론을 조종할 때 사용하는 모드입니다                                                          |
+| **카드 코딩**       | 카드 코딩 모드입니다. 드론을 켰을 때 처음 시작하는 모드입니다                                          |
+| **모션 코딩**       | 드론를 앞, 뒤, 좌, 우 방향으로 기울여서 코딩하는 모드입니다                                            |
+| **피아노**          | 카드를 사용하여 음악 연주를 하는 모드입니다                                                            |
 | 컬러 캘리브레이션   | 검정, 흰색, 빨강, 노랑, 초록, 하늘, 파랑, 자홍 색을 차례로 눌러서 카드를 잘 인식하도록 만들어줍니다.   |
-| 피아노              | 카드를 사용하여 음악 연주를 하는 모드입니다                                                            |
 
 
 <br>
@@ -248,7 +248,7 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td rowspan="3"><div align="center">모드</div></td>
-        <td rowspan="38" class="w"></td>
+        <td rowspan="3" class="w"></td>
         <td class="r"></td><td>카드 코딩 모드(초기 모드)</td>
     </tr>
         <tr><td class="y"></td><td>모션 코딩 모드</td></tr>
@@ -394,30 +394,37 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
         <td colspan="8"><div align="center">3 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td><div align="center">앞</div></td>
-        <td colspan="8" class="y">&nbsp;</td>
+        <td width="50"><div align="center">앞</div></td>
+        <td width="50" class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
         <td><div align="center">F#</div></td>
         <td><div align="center">G#</div></td>
         <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
         <td></td>
@@ -425,18 +432,25 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="y">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="m">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -447,7 +461,7 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
         <td><div align="center">G</div></td>
         <td><div align="center">A</div></td>
         <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
 </table>
 
@@ -461,30 +475,37 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
         <td colspan="8"><div align="center">4 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td><div align="center">앞</div></td>
-        <td colspan="8" class="c">&nbsp;</td>
+        <td width="50"><div align="center">앞</div></td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
         <td><div align="center">F#</div></td>
         <td><div align="center">G#</div></td>
         <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
         <td></td>
@@ -492,18 +513,25 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="y">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="m">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -514,7 +542,7 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
         <td><div align="center">G</div></td>
         <td><div align="center">A</div></td>
         <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
 </table>
 
@@ -528,30 +556,37 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
         <td colspan="8"><div align="center">5 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td><div align="center">앞</div></td>
-        <td colspan="8" class="m">&nbsp;</td>
+        <td width="50"><div align="center">앞</div></td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
         <td><div align="center">F#</div></td>
         <td><div align="center">G#</div></td>
         <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
         <td></td>
@@ -559,18 +594,25 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="y">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="m">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -581,7 +623,7 @@ Coding Drone은 두 개의 버튼이 있습니다. 여기에서는 편의에 따
         <td><div align="center">G</div></td>
         <td><div align="center">A</div></td>
         <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
 </table>
 

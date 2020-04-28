@@ -23,6 +23,9 @@
     td.b { background: #0000FF !important; }
     td.m { background: #FF00FF !important; }
 
+    td.lightgrey  { background: #C9C9C9 !important; }
+    td.darkgrey   { background: #909090 !important; }
+
 </style>
 
 **[E-DRIVE](/documents/kr/products/e_drive/) User Manual**
@@ -81,6 +84,7 @@ GO CAR 는 여러 동작 모드를 가지고 있습니다.
 | **모션 코딩**                 | 자동차를 앞, 뒤, 좌, 우 방향으로 기울여서 코딩하는 모드입니다                                             |
 | **핸드 팔로잉**               | 자동차가 정면의 장애물과 일정 거리를 유지하면서 움직이게 하는 모드입니다                                  |
 | **라인 코딩**                 | 자동차가 바닥의 두꺼운 검정 선을 따라다니며 바닥의 둥근 색깔 스티커를 인식하여 정해진 동작을 합니다       |
+| **피아노**                    | 카드를 사용하여 음악 연주를 하는 모드입니다                                                               |
 | **수동 컬러 캘리브레이션**    | 검정, 흰색, 빨강, 노랑, 초록, 하늘, 파랑, 자홍 색을 차례로 눌러서 카드 색상을 잘 인식할 수 있게 합니다    |
 | 자동 컬러 캘리브레이션        | 검정, 흰색, 빨강, 노랑, 초록, 하늘, 파랑, 자홍 색 영역을 차례로 이동하며 색상을 자동으로 인식합니다       |
 | 자동 거리 센서 캘리브레이션   | 장애물과 완전히 밀착한 상태에서 뒤로 이동하며 양쪽 거리 센서의 출력값 차이를 보정합니다                   |
@@ -102,7 +106,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 |:-----------------:|:----------------------------------------------------------------|
 | 1                 | **카드 읽기**                                                   |
 | 2                 | **시작** 또는 **실행**                                          |
-| 4                 | 자동차 바닥 색상에 따라 동작 실행([4.3.](#4_3_)에 상세 설명)    |
+| 4                 | 자동차 바닥 색상에 따라 동작 실행([4.2.](#4_2_)에 상세 설명)    |
 | 5                 | **모션 센서 캘리브레이션**                                      |
 | 6                 | 자동 거리 센서 캘리브레이션                                     |
 | 7                 | **수동 컬러 캘리브레이션**                                      |
@@ -148,7 +152,9 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 
 
 
-### 4.2. 색상 최대 최소 밝기 설정(버튼 3회 입력)
+<a name="4_2_"></a>
+
+### 4.2. 기능 실행(버튼 4회 입력)
 
 <table>
     <tr>
@@ -158,46 +164,16 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">동작</div></td>
     </tr>
     <tr>
-        <td ><div align="center">모드</div></td>
-        <td class="w"></td>
-        <td class="w"></td><td>색상 최대 밝기 설정</td>
-    </tr>
-    <tr>
-        <td><div align="center">음계</div></td>
-        <td class="k"></td>
-        <td class="k"></td><td>색상 최소 밝기 설정</td>
-    </tr>
-</table>
-
-
-<br>
-<br>
-<br>
-
-
-
-<a name="4_3_"></a>
-### 4.3. 기능 실행(버튼 4회 입력)
-
-<table>
-    <tr>
-        <td><div align="center">분류</div></td>
-        <td><div align="center">앞</div></td>
-        <td><div align="center">뒤</div></td>
-        <td><div align="center">동작</div></td>
-    </tr>
-    <tr>
-        <td rowspan="2"><div align="center">모드</div></td>
+        <td rowspan="4"><div align="center">기능</div></td>
         <td rowspan="2" class="w"></td>
         <td class="w"></td><td>자동 컬러 캘리브레이션</td>
     </tr>
         <tr><td class="k"></td><td>거리 센서 캘리브레이션</td></tr>
     <tr>
-        <td rowspan="2"><div align="center">음계</div></td>
         <td rowspan="2" class="k"></td>
         <td class="w"></td><td>모션 센서 캘리브레이션</td>
     </tr>
-        <tr><td class="k"></td><td>수동 컬러 캘리브레이션</td></tr>
+        <tr><td class="k"></td><td><b>수동 컬러 캘리브레이션</b></td></tr>
 </table>
 
 
@@ -207,7 +183,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 
 
 
-### 4.4. 카드 코딩
+### 4.3. 카드 코딩
 
 <table>
     <tr>
@@ -307,11 +283,11 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 <br>
 
 
-### 4.5. 피아노 모드
+### 4.4. 피아노 모드
 
 <br>
 
-#### 4.5.1. 기능
+#### 4.4.1. 기능
 <table>
     <tr>
         <td><div align="center">분류</div></td>
@@ -335,7 +311,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
 
 <br>
 
-#### 4.5.2. 3 Octave
+#### 4.4.2. 3 Octave
 
 <table>
     <tr>
@@ -343,30 +319,37 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td colspan="8"><div align="center">3 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td><div align="center">앞</div></td>
-        <td colspan="8" class="y">&nbsp;</td>
+        <td width="50"><div align="center">앞</div></td>
+        <td width="50" class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="y">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
         <td><div align="center">F#</div></td>
         <td><div align="center">G#</div></td>
         <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
         <td></td>
@@ -374,18 +357,25 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="y">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="m">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -396,13 +386,13 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">G</div></td>
         <td><div align="center">A</div></td>
         <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
 </table>
 
 <br>
 
-#### 4.5.3. 4 Octave
+#### 4.4.3. 4 Octave
 
 <table>
     <tr>
@@ -410,30 +400,37 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td colspan="8"><div align="center">4 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td><div align="center">앞</div></td>
-        <td colspan="8" class="c">&nbsp;</td>
+        <td width="50"><div align="center">앞</div></td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="c">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
         <td><div align="center">F#</div></td>
         <td><div align="center">G#</div></td>
         <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
         <td></td>
@@ -441,18 +438,25 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="y">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="m">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -463,13 +467,13 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">G</div></td>
         <td><div align="center">A</div></td>
         <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
 </table>
 
 <br>
 
-#### 4.5.4. 5 Octave
+#### 4.4.4. 5 Octave
 
 <table>
     <tr>
@@ -477,30 +481,37 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td colspan="8"><div align="center">5 Octave Sharp</div></td>
     </tr>
     <tr>
-        <td><div align="center">앞</div></td>
-        <td colspan="8" class="m">&nbsp;</td>
+        <td width="50"><div align="center">앞</div></td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="m">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
+        <td width="50" class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
         <td><div align="center">C#</div></td>
         <td><div align="center">D#</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
         <td><div align="center">F#</div></td>
         <td><div align="center">G#</div></td>
         <td><div align="center">A#</div></td>
-        <td><div align="center">&nbsp;</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
     <tr>
         <td></td>
@@ -508,18 +519,25 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
     </tr>
     <tr>
         <td><div align="center">앞</div></td>
-        <td colspan="8" class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="k">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td><div align="center">뒤</div></td>
-        <td class="w">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="r">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="y">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="g">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="c">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="m">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="k">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="w">&nbsp;</td>
+        <td class="r">&nbsp;</td>
+        <td class="y">&nbsp;</td>
+        <td class="g">&nbsp;</td>
+        <td class="c">&nbsp;</td>
+        <td class="b">&nbsp;</td>
+        <td class="m">&nbsp;</td>
+        <td class="lightgrey">&nbsp;</td>
     </tr>
     <tr>
         <td></td>
@@ -530,7 +548,7 @@ GO CAR 의 상단 LED 부분을 누르면 바닥에 있는 버튼이 눌러집�
         <td><div align="center">G</div></td>
         <td><div align="center">A</div></td>
         <td><div align="center">B</div></td>
-        <td><div align="center">&nbsp;</div></td>
+        <td class="lightgrey"><div align="center">&nbsp;</div></td>
     </tr>
 </table>
 
