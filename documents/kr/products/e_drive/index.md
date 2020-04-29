@@ -117,7 +117,7 @@
         </tr>
         <tr>
             <td class="byblocks"><div align="center">Version</div></td>
-            <td colspan="2"><div align="center">1.0.19</div></td>
+            <td colspan="2" class="white"><div align="center">1.0.19</div></td>
         </tr>
         <tr>
             <td class="byblocks"><div align="center">Release Date</div></td>
@@ -127,7 +127,7 @@
             <td class="byblocks">
                 <div align="center">Download</div>
             </td>
-            <td colspan="2">
+            <td colspan="2" class="white">
                 <div align="center"><a href="https://s3.ap-northeast-2.amazonaws.com/byrobot/byblocks-edrone_1.0.19.apk" target="_blank">Android (4.4 이상)</a></div>
             </td>
         </tr>
