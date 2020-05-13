@@ -69,7 +69,7 @@
         <tr>
             <td rowspan="2" class="firmware"><div align="center">Version</div></td>
             <td><div align="center">Car</div></td>
-            <td><div align="center">20.4.4</div></td>
+            <td><div align="center">20.5.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">BleServer</div></td>
@@ -77,11 +77,11 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2020.4.27</div></td>
+            <td colspan="2" class="white"><div align="center">2020.5.13</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/open?id=1rSVCERLKqYWY4z7Et_KlJKl-mRU8Ojie" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/open?id=1XaHhTInP9TDSz6qSEkhxto6Monh8TJw7" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>

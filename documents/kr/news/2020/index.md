@@ -7,7 +7,7 @@
 
 ---
 
-- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020427">GO CAR 펌웨어 업데이트</a> <sup><i>2020.4.27</i></sup><br>
+- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020513">GO CAR 펌웨어 업데이트</a> <sup><i>2020.5.13</i></sup><br>
 
 - <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020331">GO CAR 펌웨어 업데이트</a> <sup><i>2020.3.31</i></sup><br>
 
@@ -30,4 +30,4 @@
 ---
 
 
-Modified : 2020.4.28
+Modified : 2020.5.13

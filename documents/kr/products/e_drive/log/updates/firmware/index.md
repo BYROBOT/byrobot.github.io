@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.4.28
+Modified : 2020.5.13
 
 ---
 
@@ -11,16 +11,19 @@ Modified : 2020.4.28
 <br>
 
 
-# 2020.4.27
+# 2020.5.13
 
-- **E-Drive: 20.4.4**
+- **E-Drive: 20.5.1**
 - E-Drive BleServer: 19.10.16
 
+> - **펌웨어 업데이트 후 반드시 버튼을 9회 눌러 '장치 초기화'를 하시기 바랍니다. 하지 않으면 라인 코딩 시 U턴 동작이 정상적으로 실행되지 않습니다. 장치 초기화를 한 경우엔 거리 센서 초기화와 컬러 캘리브레이션도 다시 실행하셔야 합니다.**
 > - 버튼을 3번 눌러 Black, White 색 캘리브레이션을 하던 기능을 제거
+> - 라인 코딩에서 U턴을 만나면 150도 이상 회전한 이후에 발견하는 선을 따라 이동하도록 수정
+> - 버튼을 9회 눌러 초기화 할 때 설정값까지 초기화
 
 
 
-[Download](https://drive.google.com/open?id=1rSVCERLKqYWY4z7Et_KlJKl-mRU8Ojie)
+[Download](https://drive.google.com/open?id=1XaHhTInP9TDSz6qSEkhxto6Monh8TJw7)
 
 
 <br>
