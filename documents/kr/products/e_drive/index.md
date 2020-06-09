@@ -61,6 +61,10 @@
             <td class="documents"><div align="center">Protocol</div></td>
             <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/e_drive/protocol/">한국어</a></div></td>
         </tr>
+        <tr>
+            <td class="documents"><div align="center">Tutorial</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="http://edu.byrobot.co.kr/software/gocar/" _target="_blank">코딩카드로 자율주행해요</a></div></td>
+        </tr>
         <!-- Firmware -->
         <tr><td colspan="3" class="space"></td></tr>
         <tr>
@@ -162,4 +166,4 @@
 
 ---
 
-Modified : 2020.4.28
+Modified : 2020.6.9

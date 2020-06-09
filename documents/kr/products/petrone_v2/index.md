@@ -67,6 +67,13 @@
             <td class="documents"><div align="center">Protocol</div></td>
             <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/petrone_v2/protocol/">한국어</a>,&nbsp;<a href="/documents/en/products/petrone_v2/protocol/">English</a></div></td>
         </tr>
+        <tr>
+            <td rowspan="2" class="documents"><div align="center">Tutorial</div></td>
+            <td colspan="2" class="documents"><div align="center"><a href="http://edu.byrobot.co.kr/software/byblocks/" target="_blank">바이블럭으로 코딩해요</a></div></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="조ㅑㅅㄷ"><div align="center"><a href="http://edu.byrobot.co.kr/software/entry/" target="_blank">엔트리로 코딩해요</a></div></td>
+        </tr>
         <!-- Firmware -->
         <tr><td colspan="3" class="space"></td></tr>
         <tr>
@@ -170,4 +177,4 @@
 
 ---
 
-Modified : 2020.4.20
+Modified : 2020.6.9
