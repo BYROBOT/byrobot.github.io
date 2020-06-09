@@ -72,8 +72,8 @@
         </tr>
         <tr>
             <td rowspan="2" class="firmware"><div align="center">Version</div></td>
-            <td><div align="center">Car</div></td>
-            <td><div align="center">20.5.1</div></td>
+            <td class="white"><div align="center">Car</div></td>
+            <td class="white"><div align="center">20.5.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">BleServer</div></td>
