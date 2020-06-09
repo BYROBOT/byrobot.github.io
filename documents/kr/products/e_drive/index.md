@@ -63,7 +63,7 @@
         </tr>
         <tr>
             <td class="documents"><div align="center">Tutorial</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="http://edu.byrobot.co.kr/software/gocar/" _target="_blank">코딩카드로 자율주행해요</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="http://edu.byrobot.co.kr/software/gocar/" target="_blank">코딩카드로 자율주행해요</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr><td colspan="3" class="space"></td></tr>
