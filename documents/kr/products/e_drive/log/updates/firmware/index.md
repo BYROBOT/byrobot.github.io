@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.5.13
+Modified : 2020.7.8
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2020.5.13
 
 
 <br>
+
+
+# 2020.7.8
+
+- **E-Drive: 20.7.1**
+- E-Drive BleServer: 19.10.16
+
+
+> - 데이터 전송 중인 동안 다른 데이터 전송을 차단
+> - LED 제어 내부 구조 변경
+
+
+
+[Download](https://drive.google.com/file/d/1h8a6IJNCT82Z9z6uN9MRIS2TgX1PBtDk/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.5.13
