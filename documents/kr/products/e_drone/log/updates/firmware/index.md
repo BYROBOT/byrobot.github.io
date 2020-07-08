@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.2.24
+Modified : 2020.7.8
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2020.2.24
 
 
 <br>
+
+
+# 2020.7.8
+
+- **Drone: 20.7.2**
+- **Controller: 20.7.2**
+
+> - 드론에 Low Battery 경고 LED 동작 추가
+> - 데이터 전송 중인 동안 다른 데이터 전송을 차단
+> - 조이스틱 캘리브레이션 수정
+> - 조종기에서 드론 Low Battery 경고는 ErrorFlagsForState::LowBattery 플래그가 활성화 된 경우에만 동작하게 함(드론마다 Low Battery 기준이 다르기 때문)
+
+
+[Download](https://drive.google.com/file/d/1LFs3qp4KSw8ibRO9fEW4D32BXdS5yNPI/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.2.21
