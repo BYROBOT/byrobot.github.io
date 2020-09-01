@@ -1,4 +1,4 @@
-**[CODING DRONE](/documents/kr/products/e_drone/) update log**
+**[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
 Modified : 2020.9.1
 
