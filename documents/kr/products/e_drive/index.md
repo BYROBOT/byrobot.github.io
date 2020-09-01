@@ -73,7 +73,7 @@
         <tr>
             <td rowspan="2" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Car</div></td>
-            <td class="white"><div align="center">20.5.1</div></td>
+            <td class="white"><div align="center">20.7.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">BleServer</div></td>
@@ -81,11 +81,11 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2020.5.13</div></td>
+            <td colspan="2" class="white"><div align="center">2020.7.8</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/open?id=1XaHhTInP9TDSz6qSEkhxto6Monh8TJw7" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1h8a6IJNCT82Z9z6uN9MRIS2TgX1PBtDk/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -166,4 +166,4 @@
 
 ---
 
-Modified : 2020.6.9
+Modified : 2020.9.1

@@ -33,7 +33,7 @@
     <a href="/documents/kr/news/2020"><b>News</b></a><br>
     <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2020831">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.8.31</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020827">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.8.27</i></sup><br>
-    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020513">GO CAR 펌웨어 업데이트</a> <sup><i>2020.5.13</i></sup><br>
+    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-202078">GO CAR 펌웨어 업데이트</a> <sup><i>2020.7.8</i></sup><br>
 </div>
 
 <div align="center">
