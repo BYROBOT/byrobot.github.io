@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.1.31
+Modified : 2020.9.3
 
 ---
 
@@ -10,6 +10,20 @@ Modified : 2020.1.31
 
 <br>
 
+
+# 2020.7.29
+
+- **e_drone: 20.7.6**
+
+> - 라이브러리 버전을 Year.Month.BuildNumber 형식으로 변경
+> - 커맨드라인 명령 추가
+> - 'python -m e_drone' 실행 시 커맨드라인 명령 표시함
+> - sendClearTrim() 명령 복원
+
+
+<br>
+
+---
 
 # 2020.1.29
 
