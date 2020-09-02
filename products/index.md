@@ -31,9 +31,9 @@
 
 <div align="center">
     <a href="/documents/kr/news/2020"><b>News</b></a><br>
+    <a href="https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing">E-DRONE, CODING CAR, CODING DRONE 펌웨어 업데이트 파일을 통합하여 배포</a> <sup><i>2020.9.2</i></sup><br>
     <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2020831">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.8.31</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020827">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.8.27</i></sup><br>
-    <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-202078">GO CAR 펌웨어 업데이트</a> <sup><i>2020.7.8</i></sup><br>
 </div>
 
 <div align="center">
@@ -122,4 +122,4 @@
 ---
 
 
-Modified : 2020.9.1
+Modified : 2020.9.2

@@ -85,7 +85,7 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1_AKDj__T4RXcxfmx0PNvHu8XrU1Gdha5/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -184,4 +184,4 @@
 
 ---
 
-Modified : 2020.9.1
+Modified : 2020.9.2

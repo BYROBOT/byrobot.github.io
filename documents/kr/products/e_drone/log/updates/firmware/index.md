@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.8.31
+Modified : 2020.9.2
 
 ---
 
@@ -19,7 +19,7 @@ Modified : 2020.8.31
 > - 페어링 동작 시 페어링 이외의 데이터 전송 차단
 
 
-[Download](https://drive.google.com/file/d/1_AKDj__T4RXcxfmx0PNvHu8XrU1Gdha5/view?usp=sharing)
+[Download](https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing)
 
 
 <br>

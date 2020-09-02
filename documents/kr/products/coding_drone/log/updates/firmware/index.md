@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2020.9.1
+Modified : 2020.9.2
 
 ---
 
@@ -18,7 +18,7 @@ Modified : 2020.9.1
 > - 페어링 대기 상태 표시 오류 수정
 
 
-[Download](https://drive.google.com/file/d/1gYVmd-BM7gUeNH6QvdS85f506tTIWJ4O/view?usp=sharing)
+[Download](https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing)
 
 
 <br>

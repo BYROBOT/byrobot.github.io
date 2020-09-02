@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.7.8
+Modified : 2020.9.2
 
 ---
 
@@ -22,7 +22,7 @@ Modified : 2020.7.8
 
 
 
-[Download](https://drive.google.com/file/d/1h8a6IJNCT82Z9z6uN9MRIS2TgX1PBtDk/view?usp=sharing)
+[Download](https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing)
 
 
 <br>
