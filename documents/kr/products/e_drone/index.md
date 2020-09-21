@@ -73,7 +73,7 @@
         <tr>
             <td rowspan="2" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Drone</div></td>
-            <td class="white"><div align="center">20.7.2</div></td>
+            <td class="white"><div align="center">20.9.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Controller</div></td>
@@ -81,11 +81,11 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2020.8.27</div></td>
+            <td colspan="2" class="white"><div align="center">2020.9.18</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1Fc88sMx8qlwm8hrJbK-RKKyEmVN9g6JP/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -184,4 +184,4 @@
 
 ---
 
-Modified : 2020.9.3
+Modified : 2020.9.22
