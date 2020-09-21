@@ -16,7 +16,7 @@ Modified : 2020.9.22
 - **Drone: 20.9.1**
 - Controller: 20.8.4
 
-> - 페어링 동작 시 페어링 이외의 데이터 전송 차단
+> - 몸체 RGB LED 와 외부 RGB LED를 연동
 
 
 [Download](https://drive.google.com/file/d/1Fc88sMx8qlwm8hrJbK-RKKyEmVN9g6JP/view?usp=sharing)
