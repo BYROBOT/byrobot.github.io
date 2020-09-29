@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.9.15
+Modified : 2020.9.29
 
 ---
 
@@ -9,6 +9,29 @@ Modified : 2020.9.15
 
 
 <br>
+
+
+# 2020.9.28
+
+- **E-Drive: 20.9.4**
+- E-Drive BleServer: 19.10.16
+
+
+> - 버튼 입력 방법 변경(20.9.3 이전 상태로 복원)
+>   - 자동차를 뒤집은 상태에서 5번 버튼을 누르면 모션 캘리브레이션
+>   - 자동차를 뒤집은 상태에서 6번 버튼을 누르면 거리 센서 캘리브레이션
+>   - 자동차를 뒤집은 상태에서 7번 버튼을 누르면 수동 컬러 캘리브레이션
+>   - 자동차를 뒤집은 상태에서 9번 버튼을 누르면 초기화
+> - 자동차를 뒤집으면 '삐빅'하는 소리가 나도록 나게 함
+
+
+
+[Download](https://drive.google.com/file/d/19K9bd4jZ42m0EY82WhzmL6cpE_0p9Peo/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.9.15
