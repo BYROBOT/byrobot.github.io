@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2020.9.2
+Modified : 2020.10.13
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2020.9.2
 
 
 <br>
+
+
+# 2020.10.13
+
+- **Drone: 20.10.2**
+
+> - 카드 코딩, 모션 코딩 시 코딩 끝 카드 실행이 끝나는 시점에 종료음이 나게 함
+> - 바닥 거리 센서 데이터 오류 수정
+> - 거리 센서 범위가 넘어가면 9.999미터를 출력하게 함
+
+
+[Download](https://drive.google.com/file/d/1fycphLDtQTevxQAifxrRYTigD7XmoCem/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.8.31

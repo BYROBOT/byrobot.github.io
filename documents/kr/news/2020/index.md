@@ -7,6 +7,8 @@
 
 ---
 
+- <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-20201013">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.10.13</i></sup><br>
+
 - <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2020928">GO CAR 펌웨어 업데이트</a> <sup><i>2020.9.28</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020918">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.9.18</i></sup><br>
@@ -46,4 +48,4 @@
 ---
 
 
-Modified : 2020.9.29
+Modified : 2020.10.13

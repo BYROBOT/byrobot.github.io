@@ -1,3 +1,8 @@
 {
-    "deepscan.ignoreConfirmWarning": true
+    "deepscan.ignoreConfirmWarning": true,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#5F0620",
+        "titleBar.activeBackground": "#85092D",
+        "titleBar.activeForeground": "#FFFBFC"
+    }
 }
