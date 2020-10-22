@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.9.22
+Modified : 2020.10.22
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2020.9.22
 
 
 <br>
+
+
+# 2020.10.22
+
+- **Drone: 20.10.6**
+- **Controller: 20.10.1**
+
+> - RSSI 확인 코드 수정
+> - Low Battery 경고 시 LED를 흰색으로 짧게 켜지고 길게 꺼지는 동작을 반복하게 함
+> - 조종기에서 의도하지 않는 상황에서 FHSS 켜지는 문제 수정
+
+
+[Download](https://drive.google.com/file/d/12D9urenw4go5l0IC5By95jxcxaa4JKd5/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.9.18
