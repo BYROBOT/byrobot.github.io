@@ -1,14 +1,31 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.10.22
+Modified : 2020.10.23
 
 ---
 
 * Kramdown table of contents
 {:toc .toc}
+https://drive.google.com/file/d/19b1W4lwS7jh-OxddRczdcqWlHQZZVk6R/view?usp=sharing
+
+<br>
+
+
+# 2020.10.23
+
+- **Drone: 20.10.10**
+- **Controller: 20.10.2**
+
+> - RF 송수신 코드 수정
+> - E-Drone 4M 버전에서 거리 센서 데이터를 600ms 이상 읽지 못하는 경우 장치 초기화. 장치 초기화는 드론이 대기 상태일 때만 작동
+
+
+[Download](https://drive.google.com/file/d/12D9urenw4go5l0IC5By95jxcxaa4JKd5/view?usp=sharing)
 
 
 <br>
+
+---
 
 
 # 2020.10.22
