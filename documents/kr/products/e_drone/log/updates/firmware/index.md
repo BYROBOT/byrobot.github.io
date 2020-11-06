@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.10.23
+Modified : 2020.11.6
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2020.10.23
 
 
 <br>
+
+
+# 2020.11.5
+
+- **Drone: 20.11.1**
+- **Controller: 20.11.2**
+
+> - FHSS 성능 개선
+> - E-Drone 4M 버전 비행 튜닝
+
+
+[Download](https://drive.google.com/file/d/1qLk9_bzUfS7wz8TKu-smCD13x5vbdsjn/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.10.23

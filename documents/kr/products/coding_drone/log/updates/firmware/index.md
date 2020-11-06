@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2020.10.14
+Modified : 2020.11.6
 
 ---
 
@@ -9,6 +9,24 @@ Modified : 2020.10.14
 
 
 <br>
+
+
+# 2020.11.6
+
+- **Drone: 20.11.1**
+
+> - FHSS 성능 개선
+> - 이륙 후 고도가 1미터 이상 상승하는 문제 수정
+> - 상승 시 위아래로 떨리는 문제 수정
+> - 특정 드론에서 상승하는 문제 수정
+
+
+[Download](https://drive.google.com/file/d/1qLk9_bzUfS7wz8TKu-smCD13x5vbdsjn/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.10.13
