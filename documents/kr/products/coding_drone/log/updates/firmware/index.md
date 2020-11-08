@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2020.11.6
+Modified : 2020.11.9
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2020.11.6
 
 
 <br>
+
+
+# 2020.11.9
+
+- **Drone: 20.11.2**
+
+> - FHSS 설정 안되는 오류 수정
+
+
+[Download](https://drive.google.com/file/d/1R9zJHUYHRD7rsI3CNPQsLllReDDWvhiN/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.11.6

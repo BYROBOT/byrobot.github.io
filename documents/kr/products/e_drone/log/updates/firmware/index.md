@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.11.6
+Modified : 2020.11.9
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2020.11.6
 
 
 <br>
+
+
+# 2020.11.9
+
+- **Drone: 20.11.2**
+- **Controller: 20.11.3**
+
+> - 코딩 드론과 연결 시 fhss 설정 안되는 오류 수정
+
+
+[Download](https://drive.google.com/file/d/1R9zJHUYHRD7rsI3CNPQsLllReDDWvhiN/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.11.5

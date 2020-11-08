@@ -7,6 +7,10 @@
 
 ---
 
+- <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2020119">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.11.9</i></sup><br>
+
+- <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020119">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.11.9</i></sup><br>
+
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2020116">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.11.6</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020115">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.11.5</i></sup><br>
