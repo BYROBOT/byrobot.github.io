@@ -13,9 +13,10 @@ Modified : 2020.11.9
 
 # 2020.11.9
 
-- **Drone: 20.11.2**
+- **Drone: 20.11.3**
 
 > - FHSS 설정 안되는 오류 수정
+> - 상승할 때 높이 차가 생기면(고도에 장애물이 생기면) 급격히 상승하는 문제 수정
 
 
 [Download](https://drive.google.com/file/d/1R9zJHUYHRD7rsI3CNPQsLllReDDWvhiN/view?usp=sharing)
