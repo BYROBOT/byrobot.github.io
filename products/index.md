@@ -24,6 +24,7 @@
 
     span.odd        { color: #0489B1; }
     span.even       { color: #FF4000; }
+    span.groups     { color: #42A5F5; }
     span.byrobot    { color: #CCDDEE; }
 
 </style>
@@ -118,8 +119,8 @@
             <td class="white_even">
                 <div align="center">
                     <a href="https://groups.google.com/g/byrobot" target="_blank">
-                        <span class="even">
-                            Google Groups<br>BYROBOT
+                        <span class="groups">
+                            Forum
                         </span>
                     </a>
                 </div>
