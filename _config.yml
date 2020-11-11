@@ -42,6 +42,8 @@ author:
       url:  https://github.com/byrobot
     - name: discord
       url:  https://discord.gg/UVVJMye
+    - name: groups
+      url:  https://groups.google.com/g/byrobot
 blog:
   cc_license: https://creativecommons.org/licenses/by-sa/4.0/
   cc_license_image: /assets/images/theme/cc-by-sa.png
@@ -56,4 +58,3 @@ addthis_public_id: # AddThis sharing plugin. See http://www.addthis.com/
 paths:
   home: /
   products: /products/
-  forum: /forum/

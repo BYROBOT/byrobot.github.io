@@ -115,7 +115,16 @@
                     </a>
                 </div>
             </td>
-            <td class="white" colspan="2"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
+            <td class="white_even">
+                <div align="center">
+                    <a href="https://groups.google.com/g/byrobot" target="_blank">
+                        <span class="even">
+                            Google Groups<br>BYROBOT
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
 </div>
@@ -123,4 +132,4 @@
 ---
 
 
-Modified : 2020.11.9
+Modified : 2020.11.11

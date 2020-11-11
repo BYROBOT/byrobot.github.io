@@ -97,5 +97,11 @@ $size: 48;
 
         background-color: #7289DA;
     }
+    
+    .ico-groups {
+        @include get-ico-image(groups);
+
+        background-color: #42A5F5;
+    }
 
 }
