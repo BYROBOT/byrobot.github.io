@@ -22,7 +22,7 @@
 
 **[BATTLE DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2020.4.28
+Modified : 2020.11.25
 
 ---
 
@@ -364,12 +364,12 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                3. 기본 무기는 <b>레이저</b>입니다.
+                3. 기본 무기는 <b>레이저</b>입니다. 나머지는 특수 무기로 분류합니다.
             </div></td>
         </tr>
         <tr>
             <td class="white"><div align="left">
-                4. 레이저 이외의 무기는 따로 <b>장전</b>과 <b>발사</b> 동작이 필요합니다.
+                4. 특수 무기는 따로 <b>장전</b>과 <b>발사</b> 동작이 필요합니다.
             </div></td>
         </tr>
         <tr>
@@ -379,7 +379,7 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="white"><div align="left">
-                6. 레이저 이외의 무기는 장전되면 <b>5초</b> 동안 장탄량 이내로 계속 발사할 수 있습니다.
+                6. 특수 무기는 장전되면 <b>10초</b> 동안 장탄량 이내로 계속 발사할 수 있습니다.
             </div></td>
         </tr>
         <tr>
@@ -389,12 +389,12 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="white"><div align="left">
-                8. 무기를 장전한 후 <b>5초</b>가 지나면 다시 레이저로 바뀝니다.
+                8. 특수 무기를 장전한 후 <b>10초</b>가 지나거나 무기를 모두 사용한 경우 다시 레이저로 바뀝니다.
             </div></td>
         </tr>
         <tr>
             <td class="explain"><div align="left">
-                9. <b>같은 편</b>이 발사한 무기에 대해서는 피격되지 않습니다.
+                9. 특수 무기는 무기 보충이 없습니다.
             </div></td>
         </tr>
         <tr>
@@ -410,6 +410,11 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         <tr>
             <td class="white"><div align="left">
                 12. 에너지가 <b>0</b>이 되면 드론이 <b>착륙</b>합니다.
+            </div></td>
+        </tr>
+        <tr>
+            <td class="explain"><div align="left">
+                13. <b>같은 편</b>이 발사한 무기에 대해서는 피격되지 않습니다.
             </div></td>
         </tr>
     </table>
@@ -432,45 +437,45 @@ BATTLE DRONE은 오른손 좌표계를 사용하고 있습니다.
         </tr>
         <tr>
             <td class="coord"><div align="center">레이저</div></td>
-            <td class="white"><div align="center">12</div></td>
-            <td class="white"><div align="center">0.6초</div></td>
+            <td class="white"><div align="center">10</div></td>
+            <td class="white"><div align="center">1초</div></td>
             <td class="white"><div align="center">기본 무기</div></td>
             <td class="white"><div align="center">피격 시 에너지가 1칸 떨어집니다.</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">쉴드</div></td>
-            <td class="coord"><div align="center">12</div></td>
-            <td class="coord"><div align="center">1초</div></td>
+            <td class="coord"><div align="center">1</div></td>
+            <td class="coord"><div align="center">-</div></td>
             <td class="coord"><div align="center"><span class="weapon_right">오른쪽</span> 조이스틱을 <span class="weapon_right">오른쪽</span>-<span class="weapon_left">왼쪽</span>-<span class="weapon_right">오른쪽</span>-<span class="weapon_left">왼쪽</span>으로 조작</div></td>
-            <td class="coord"><div align="center">5초간 무적 상태가 됩니다</div></td>
+            <td class="coord"><div align="center">10초간 무적 상태가 됩니다</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">데몬</div></td>
-            <td class="white"><div align="center">12</div></td>
-            <td class="white"><div align="center">1초</div></td>
+            <td class="white"><div align="center">10</div></td>
+            <td class="white"><div align="center">-</div></td>
             <td class="white"><div align="center"><span class="weapon_right">오른쪽</span> 조이스틱을 <span class="weapon_left">왼쪽 방향</span>부터 <span class="ccw">반시계 방향</span>으로 <span class="command">두 바퀴</span> 회전</div></td>
-            <td class="white"><div align="center">5초 동안 적 기체의 앞뒤와 좌우를 반대로 움직이게 합니다.</div></td>
+            <td class="white"><div align="center">10초 동안 적 기체의 앞뒤와 좌우를 반대로 움직이게 합니다.</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">물폭탄</div></td>
-            <td class="coord"><div align="center">12</div></td>
-            <td class="coord"><div align="center">1초</div></td>
+            <td class="coord"><div align="center">10</div></td>
+            <td class="coord"><div align="center">-</div></td>
             <td class="coord"><div align="center"><span class="weapon_right">오른쪽</span> 조이스틱을 <span class="weapon_right">오른쪽 방향</span>부터 <span class="cw">시계 방향</span>으로 <span class="command">두 바퀴</span> 회전</div></td>
-            <td class="coord"><div align="center">5초 동안 무기 사용을 차단합니다.</div></td>
+            <td class="coord"><div align="center">10초 동안 무기 사용을 차단합니다.</div></td>
         </tr>
         <tr>
-            <td class="coord"><div align="center">증폭</div></td>
-            <td class="white"><div align="center">12</div></td>
-            <td class="white"><div align="center">1초</div></td>
+            <td class="coord"><div align="center">덫</div></td>
+            <td class="white"><div align="center">10</div></td>
+            <td class="white"><div align="center">-</div></td>
             <td class="white"><div align="center"><span class="weapon_left">왼쪽</span> 조이스틱을 <span class="weapon_left">왼쪽 방향</span>부터 <span class="ccw">반시계 방향</span>으로 <span class="command">두 바퀴</span> 회전</div></td>
-            <td class="white"><div align="center">5초 동안 모든 방향의 조작을 최대값으로 만들어 세밀한 조종을 할 수 없게합니다.</div></td>
+            <td class="white"><div align="center">10초 동안 모든 방향의 조작 최대 최소값의 범위를 1/4로 줄여 느리게 움직입니다.</div></td>
         </tr>
         <tr>
             <td class="coord"><div align="center">헤딩락</div></td>
-            <td class="coord"><div align="center">12</div></td>
-            <td class="coord"><div align="center">1초</div></td>
+            <td class="coord"><div align="center">10</div></td>
+            <td class="coord"><div align="center">-</div></td>
             <td class="coord"><div align="center"><span class="weapon_left">왼쪽</span> 조이스틱을 <span class="weapon_right">오른쪽 방향</span>부터 <span class="cw">시계 방향</span>으로 <span class="command">두 바퀴</span> 회전</div></td>
-            <td class="coord"><div align="center">5초 동안 적 기체의 좌우 회전 조작을 못하게 합니다.</div></td>
+            <td class="coord"><div align="center">10초 동안 적 기체의 좌우 회전 조작을 못하게 합니다.</div></td>
         </tr>
     </table>
 </div>

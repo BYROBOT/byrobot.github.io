@@ -7,6 +7,8 @@
 
 ---
 
+- <a href="/documents/kr/products/battle_drone/manual/user/#heading-4-%EB%B0%B0%ED%8B%80-%EB%AA%A8%EB%93%9C">배틀 드론 사용자 설명서 업데이트</a> <sup><i>2020.11.25</i></sup><br>
+
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2020119">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.11.9</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2020119">E-DRONE 펌웨어 업데이트</a> <sup><i>2020.11.9</i></sup><br>
@@ -56,4 +58,4 @@
 ---
 
 
-Modified : 2020.11.6
+Modified : 2020.11.25
