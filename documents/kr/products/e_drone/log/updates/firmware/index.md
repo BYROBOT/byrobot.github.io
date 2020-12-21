@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.11.9
+Modified : 2020.12.21
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2020.11.9
 
 
 <br>
+
+
+# 2020.12.21
+
+- Drone: 20.11.2
+- **Controller: 20.12.1**
+
+> - 조종기 LED 동작하지 않는 오류 수정
+> - 조종기 설정 메뉴 중 LIGHT 설정이 동작하지 않는 오류 수정
+
+
+[Download](https://drive.google.com/file/d/1r61wgTJP1pW8himwoWaae7jK7-9fHL_m/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.11.9
