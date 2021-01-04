@@ -114,7 +114,7 @@ if __name__ == '__main__':
  3. [System](03_system.md)
  4. [Protocol](04_protocol.md)
  5. [Drone](05_drone.md)
- 5. **Examples - Ping**
+ 6. **Examples - Ping**
  7. [Examples - Information](examples_02_information.md)
  8. [Examples - Pairing](examples_03_pairing.md)
  9. [Examples - Control](examples_04_control.md)

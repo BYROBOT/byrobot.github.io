@@ -127,7 +127,7 @@ if __name__ == '__main__':
  5. [Drone](05_drone.md)
  6. [Examples - Ping](examples_01_ping.md)
  7. [Examples - Information](examples_02_information.md)
- 7. **Examples - Pairing**
+ 8. **Examples - Pairing**
  9. [Examples - Control](examples_04_control.md)
 10. [Examples - Sensor](examples_05_sensor.md)
 11. [Examples - Motor](examples_06_motor.md)

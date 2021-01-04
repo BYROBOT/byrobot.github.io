@@ -497,7 +497,7 @@ if __name__ == '__main__':
 13. [Examples - Buzzer](examples_08_buzzer.md)
 14. [Examples - Vibrator](examples_09_vibrator.md)
 15. [Examples - Light](examples_10_light.md)
-15. **Examples - Display**
+16. **Examples - Display**
 17. [Examples - Input](examples_12_input.md)
 18. [Examples - Error](examples_13_error.md)
 

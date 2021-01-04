@@ -138,7 +138,7 @@ if __name__ == '__main__':
  7. [Examples - Information](examples_02_information.md)
  8. [Examples - Pairing](examples_03_pairing.md)
  9. [Examples - Control](examples_04_control.md)
- 9. **Examples - Sensor**
+10. **Examples - Sensor**
 11. [Examples - Motor](examples_06_motor.md)
 12. [Examples - Setup](examples_07_setup.md)
 13. [Examples - Buzzer](examples_08_buzzer.md)

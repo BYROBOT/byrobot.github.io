@@ -19,6 +19,9 @@ Modified : 2021.1.4
 e_drone 라이브러리는 소스 코드 작성없이 원하는 명령을 실행하거나 데이터를 확인할 수 있는 command line 명령어를 
 지원하고 있습니다. 아래에서 소개하는 명령어를 실행하여 간단하게 데이터를 확인하거나 작동해보시기 바랍니다.
 
+```
+> python -m e_drone
+```
 
 <div align="center">
     <img src="../images/02_commandline_commandlist.png">
@@ -27,49 +30,18 @@ e_drone 라이브러리는 소스 코드 작성없이 원하는 명령을 실행
 
 
 <br>
-
-
-# 1. control
-
-조종
-
-<br>
-
-## 1.1. accel, wheel
-
-최대 속도의 40% 속도로 3초간 전진하는 명령은 다음과 같습니다.
-
-
-```
-> python -m e_drone control 40 0 3000
-```
-
 <br>
 
 
-## 1.2. Position
+# 1. Firmware Upgrade
 
-자동차를 특정 위치로 이동하는 명령입니다.
-
-차례대로 x축(앞뒤, +가 앞)으로 0.1m, y축(좌우, +가 왼쪽)으로 0.1m 위치로 0.2m/s의 속도로 이동하는 명령은 다음과 같습니다.
-
-```
-> python -m e_drone position 0.1 0.1 0.2
-```
-
-<br>
-
-
-## 1.3. Heading
-
-자동차를 지정한 방향으로 회전 시킬 때 사용합니다.
-
-왼쪽으로 30도를 10deg/sec 속도로 회전하는 명령은 다음과 같습니다.
-
+파이썬 라이브러리를 사용하여 드론 펌웨어를 업데이트하는 명령입니다.
+드론 또는 조종기를 부트로더 모드로 USB에 연결하신 후 아래의 명령을 실행하시면 됩니다.
 
 ```
-> python -m e_drone heading 30 10
+> python -m e_drone upgrade
 ```
+
 
 
 <br>
@@ -77,16 +49,13 @@ e_drone 라이브러리는 소스 코드 작성없이 원하는 명령을 실행
 
 
 
-
-
-
-# 2. request
+# 2. Request Data
 
 데이터 요청
 
 <br>
 
-## 2.1. State 데이터 요청(USB/BLE)
+## 2.1. State 데이터 요청
 
 State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -102,7 +71,7 @@ State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-## 2.2. Motion 데이터 요청(USB)
+## 2.2. Motion 데이터 요청
 
 Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
 
@@ -118,50 +87,46 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-## 2.3. RawLineTracer 데이터 요청(USB)
 
-RawLineTracer 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
+<br>
+<br>
+
+
+
+# 3. Command
+
+명령
+
+<br>
+
+## 2.1. 이륙
 
 ```
-> python -m e_drone request RawLineTracer 10 0.2
+> python -m e_drone command Takeoff
 ```
 
-<div align="center">
-    <img src="../images/02_commandline_request_rawlinetracer.png">
-    <p>RawLineTracer 요청 실행 결과</p>
-</div>
 
 <br>
 
 
-## 2.4. RawCard 데이터 요청(USB)
+## 2.2. 착륙
 
-RawCard 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
 ```
-> python -m e_drone request RawCard 10 0.5
+> python -m e_drone command Landing
 ```
 
-<div align="center">
-    <img src="../images/02_commandline_request_rawcard.png">
-    <p>RawCard 요청 실행 결과</p>
-</div>
 
 <br>
 
 
-## 2.5. RawCard 데이터 중 색상 인식 범위 출력 요청(USB)
+## 2.3. 정지
 
-RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
 
 ```
-> python -m e_drone request RawCardRange 10 0.5
+> python -m e_drone command Stop
 ```
 
-<div align="center">
-    <img src="../images/02_commandline_request_rawcardrange.png">
-    <p>RawCardRange 요청 실행 결과</p>
-</div>
 
 
 <br>
@@ -169,9 +134,103 @@ RawCard 데이터 중 색상 인식 범위 데이터를 10회 0.5초 주기로 �
 
 
 
+# 3. Control
 
 
-# 3. light
+## 3.1. 조종 명령
+
+
+```
+> python -m e_drone control [roll] [pitch] [yaw] [throttle] [time(ms)]
+> python -m e_drone control 0 30 0 0 5000
+```
+
+
+<br>
+
+
+## 3.2. 조종 명령(이동, 방향)
+
+
+```
+> python -m e_drone position [x(meter)] [y(meter)] [z(meter)] [speed(m/sec)] [heading(degree)] [rotational velocity(deg/sec)]
+> python -m e_drone position 5 0 0 2 90 45
+```
+
+
+<br>
+
+## 3.3. 조종 명령(이동)
+
+
+```
+> python -m e_drone position [x(meter)] [y(meter)] [z(meter)] [speed(m/sec)]
+> python -m e_drone position 5 0 0 2
+```
+
+
+<br>
+
+## 3.4. 조종 명령(방향)
+
+
+```
+> python -m e_drone heading [heading(degree)] [rotational velocity(deg/sec)]
+> python -m e_drone heading 90 45
+```
+
+
+
+<br>
+<br>
+
+
+
+# 4. buzzer
+
+버저
+
+<br>
+
+## 4.1. 버저 작동
+
+1000Hz의 소리를 500ms 동안 내게 합니다.
+
+```
+> python -m e_drone buzzer [hz] [time(ms)]
+> python -m e_drone buzzer 400 2000
+```
+
+
+
+<br>
+<br>
+
+
+
+# 5. vibrator
+
+진동
+
+<br>
+
+## 5.1. 진동 작동
+
+500ms동안 켜고, 500ms 동안 끄는 동작을 2000ms 동안 실행
+
+```
+> python -m e_drone vibrator [on(ms)] [off(ms)] [total(ms)]
+> python -m e_drone vibrator 500 500 2000
+```
+
+
+
+<br>
+<br>
+
+
+
+# 6. light
 
 LED 제어
 
@@ -179,7 +238,25 @@ LED 제어
 <br>
 
 
-## 3.1. RGB LED 제어(USB/BLE)
+## 6.1. 단색 LED 제어
+
+단색 LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
+
+python -m e_drone light [front, head, tail, left, right] [hold, flicker, flickerdouble, dimming, sunrise, sunset] [interval]
+
+hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
+
+```
+> python -m e_drone light [part] [mode] [interval]
+> python -m e_drone light rear hold 100
+> python -m e_drone light a hold 100
+> python -m e_drone light b hold 100
+```
+
+
+<br>
+
+## 6.2. RGB LED 제어
 
 RGB LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
 
@@ -190,6 +267,7 @@ hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 2
 R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 ```
+> python -m e_drone light [part] [mode] [interval] [R] [G] [B]
 > python -m e_drone light body hold 100 50 50 10
 > python -m e_drone light body flicker 100 50 50 10
 > python -m e_drone light body flickerdouble 100 50 50 10
@@ -198,95 +276,13 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 > python -m e_drone light body sunset 5 50 50 10
 > python -m e_drone light body rainbow 8 50 50 10
 > python -m e_drone light body rainbow2 8 50 50 10
-```
-
-
-<br>
-
-## 3.2. 단색 LED 제어(USB/BLE)
-
-단색 LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
-
-python -m e_drone light [front, head, tail, left, right] [hold, flicker, flickerdouble, dimming, sunrise, sunset] [interval]
-
-hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
 
 ```
-> python -m e_drone light front hold 100
-> python -m e_drone light head hold 100
-> python -m e_drone light tail hold 100
-> python -m e_drone light left hold 100
-> python -m e_drone light right hold 100
-```
 
 
 <br>
 <br>
-
-
-# 4. buzzer
-
-버저
-
-<br>
-
-## 4.1. 버저 작동(USB/BLE)
-
-1000Hz의 소리를 500ms 동안 내게 합니다.
-
-```
-> python -m e_drone buzzer 1000 500
-```
-
-<div align="center">
-    <img src="../images/02_commandline_buzzer.png">
-    <p>Buzzer 테스트</p>
-</div>
-
-
-
-<br>
-<br>
-
-
-
-# 5. Bluetooth Low Energy
-
-Bluetooth Low Energy 연결을 지원하는 Link 모듈을 통해 E-Drive 장치에 연결하는 기능을 지원합니다.
-
-<br>
-<br>
-
-## 5.1. 장치 연결(USB)
-
-마지막으로 연결한 시리얼 통신 장치에 연결한 후 가장 신호가 센 E-Drive 장치에 BLE 연결을 시도합니다.
-
-```
-> python -m e_drone connect
-```
-
-<br>
-
-
-## 5.2. 장치 연결 해제(USB)
-
-BLE 연결된 장치가 있으면 해제합니다.
-
-```
-> python -m e_drone disconnect
-```
-
-
-<br>
-<br>
-
-
-
-
-
-<br>
-
-
++
 
 
 ---
@@ -294,7 +290,7 @@ BLE 연결된 장치가 있으면 해제합니다.
 <h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
- 2. [Command Line](02_commandline.md)
+ 2. **Command Line**
  3. [System](03_system.md)
  4. [Protocol](04_protocol.md)
  5. [Drone](05_drone.md)

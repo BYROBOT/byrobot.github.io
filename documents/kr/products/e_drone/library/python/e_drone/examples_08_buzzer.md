@@ -170,7 +170,7 @@ if __name__ == '__main__':
 10. [Examples - Sensor](examples_05_sensor.md)
 11. [Examples - Motor](examples_06_motor.md)
 12. [Examples - Setup](examples_07_setup.md)
-12. **Examples - Buzzer**
+13. **Examples - Buzzer**
 14. [Examples - Vibrator](examples_09_vibrator.md)
 15. [Examples - Light](examples_10_light.md)
 16. [Examples - Display](examples_11_display.md)

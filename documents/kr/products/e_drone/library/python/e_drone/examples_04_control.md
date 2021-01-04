@@ -223,7 +223,7 @@ if __name__ == '__main__':
  6. [Examples - Ping](examples_01_ping.md)
  7. [Examples - Information](examples_02_information.md)
  8. [Examples - Pairing](examples_03_pairing.md)
- 8. **Examples - Control**
+ 9. **Examples - Control**
 10. [Examples - Sensor](examples_05_sensor.md)
 11. [Examples - Motor](examples_06_motor.md)
 12. [Examples - Setup](examples_07_setup.md)

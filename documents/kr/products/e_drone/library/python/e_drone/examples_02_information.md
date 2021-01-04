@@ -120,7 +120,7 @@ if __name__ == '__main__':
  4. [Protocol](04_protocol.md)
  5. [Drone](05_drone.md)
  6. [Examples - Ping](examples_01_ping.md)
- 6. **Examples - Information**
+ 7. **Examples - Information**
  8. [Examples - Pairing](examples_03_pairing.md)
  9. [Examples - Control](examples_04_control.md)
 10. [Examples - Sensor](examples_05_sensor.md)
