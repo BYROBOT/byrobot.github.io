@@ -73,7 +73,7 @@
         <tr>
             <td rowspan="3" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Drone</div></td>
-            <td class="white"><div align="center">20.11.2</div></td>
+            <td class="white"><div align="center">20.12.2</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Drone(4m)</div></td>
