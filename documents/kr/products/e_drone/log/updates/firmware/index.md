@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.12.21
+Modified : 2021.1.4
 
 ---
 
@@ -9,6 +9,27 @@ Modified : 2020.12.21
 
 
 <br>
+
+
+# 2021.1.4
+
+- Drone: 20.11.2
+- **Drone(4m): 21.1.1**
+> - 거리 센서 라이브러리 업데이트
+> - 외부 RGB LED 핀 순서 변경
+> - 버튼 입력중이거나 페어링 동작 중에는 알람 작동을 멈추게 함
+> - Range 센서와 관련된 제어부 수정
+- **Controller: 20.12.2**
+> - 거리 센서 그래프 표시할 때 2미터 센서를 사용하는 드론과 4미터 거리 센서를 사용하는 드론의 최대 표시 범위를 다르게 함
+> - 거리 센서 값을 조종기 화면에 표시할 때 4m 센서에서 2.55m 범위를 넘어서는 경우 정상적으로 값을 표시하지 못하던 문제를 수정
+
+
+[Download](https://drive.google.com/file/d/1_wL9nbSL6jYS2OZiopOePfgRiQ-DJb3H/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.12.21

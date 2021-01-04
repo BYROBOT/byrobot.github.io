@@ -71,29 +71,33 @@
             <td colspan="3" class="firmware"><div align="center"><a name="Firmware"></a>&nbsp;<br>Firmware<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td rowspan="2" class="firmware"><div align="center">Version</div></td>
+            <td rowspan="3" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Drone</div></td>
             <td class="white"><div align="center">20.11.2</div></td>
         </tr>
         <tr>
-            <td class="firmware"><div align="center">Controller</div></td>
-            <td class="firmware"><div align="center">20.12.1</div></td>
+            <td class="firmware"><div align="center">Drone(4m)</div></td>
+            <td class="firmware"><div align="center">21.1.1</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">Controller</div></td>
+            <td class="white"><div align="center">20.12.2</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2020.12.21</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.1.4</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1r61wgTJP1pW8himwoWaae7jK7-9fHL_m/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1_wL9nbSL6jYS2OZiopOePfgRiQ-DJb3H/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Manual</div></td>
-            <td colspan="2" class="firmware">
+            <td colspan="2" class="white">
                 <div align="center">
                     <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">한국어</a>
                 </div>
@@ -184,4 +188,4 @@
 
 ---
 
-Modified : 2020.12.22
+Modified : 2021.1.4

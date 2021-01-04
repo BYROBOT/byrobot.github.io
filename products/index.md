@@ -31,11 +31,11 @@
 
 
 <div align="center">
-    <a href="/documents/kr/news/2020"><b>News</b></a><br>
+    <a href="/documents/kr/news/2021"><b>News</b></a><br>
 
+    <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-202114">E-DRONE(4m) 펌웨어 업데이트</a> <sup><i>2021.1.4</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-20201221">E-DRONE 조종기 펌웨어 업데이트</a> <sup><i>2020.12.21</i></sup><br>
     <a href="/documents/kr/products/battle_drone/manual/user/#heading-4-%EB%B0%B0%ED%8B%80-%EB%AA%A8%EB%93%9C">배틀 드론 사용자 설명서 업데이트</a> <sup><i>2020.11.25</i></sup><br>
-    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2020119">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.11.9</i></sup><br>
 </div>
 
 <div align="center">
@@ -133,4 +133,4 @@
 ---
 
 
-Modified : 2020.12.22
+Modified : 2021.1.4
