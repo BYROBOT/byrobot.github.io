@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2019.1.11
+Modified : 2021.1.4
 
 ---
 
@@ -183,8 +183,8 @@ class Header(ISerializable):
 |:-------------:|:---------------------------------------:|:--------:|:-------:|:---------------------------|
 | dataType      | [DataType](#DataType)                   | 1 Byte   | -       | 데이터의 타입              |
 | length        | UInt8                                   | 1 Byte   | 0 ~ 255 | 데이터의 길이              |
-| from_         | [DeviceType](02_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 전송하는 장치     |
-| to_           | [DeviceType](02_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 수신하는 장치     |
+| from_         | [DeviceType](03_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 전송하는 장치     |
+| to_           | [DeviceType](03_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 수신하는 장치     |
 
 
 <br>
@@ -272,8 +272,8 @@ class Error(ISerializable):
 | 변수 이름            | 형식                                                     | 크기     | 범위  | 설명                  |
 |:--------------------:|:--------------------------------------------------------:|:--------:|:-----:|:----------------------|
 | systemTime           | UInt64                                                   | 8 Byte   | -     | 시스템 시간           |
-| errorFlagsForSensor  | [ErrorFlagsForSensor](02_system.md#ErrorFlagsForSensor)  | 4 Byte   | -     | 센서 오류 플래그 조합 |
-| errorFlagsForState   | [ErrorFlagsForState](02_system.md#ErrorFlagsForState)    | 4 Byte   | -     | 상태 오류 플래그 조합 |
+| errorFlagsForSensor  | [ErrorFlagsForSensor](03_system.md#ErrorFlagsForSensor)  | 4 Byte   | -     | 센서 오류 플래그 조합 |
+| errorFlagsForState   | [ErrorFlagsForState](03_system.md#ErrorFlagsForState)    | 4 Byte   | -     | 상태 오류 플래그 조합 |
 
 - e.g. [IMU 센서 보정](examples_13_error.md#Error_ImuCalibrating)
 
@@ -406,8 +406,8 @@ class Information(ISerializable):
 
 | 변수 이름     | 형식                                      | 크기     | 범위 | 설명                |
 |:-------------:|:-----------------------------------------:|:--------:|:----:|:--------------------|
-| modeUpdate    | [ModeUpdate](02_system.md#ModeUpdate)     | 1 Byte   | -    | 업데이트 진행 상황  |
-| modelNumber   | [ModelNumber](02_system.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
+| modeUpdate    | [ModeUpdate](03_system.md#ModeUpdate)     | 1 Byte   | -    | 업데이트 진행 상황  |
+| modelNumber   | [ModelNumber](03_system.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
 | version       | [Version](#Version)                       | 4 Byte   | -    | 펌웨어의 버전       |
 | year          | UInt16                                    | 2 Byte   | -    | 펌웨어 빌드 년      |
 | month         | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 월      |
@@ -521,10 +521,10 @@ class Command(ISerializable):
 | 변수 이름      | 형식                                                 | 크기     | 범위   | 설명       |
 |:--------------:|:----------------------------------------------------:|:--------:|:------:|:-----------|
 | commandType    | [CommandType](#CommandType)                          | 1 Byte   | -      | 명령 타입  |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
-|                | [FlightEvent](02_system.md#FlightEvent)              | 1 Byte   | -      |            |
-|                | [Headless](02_system.md#Headless)                    | 1 Byte   | -      |            |
-|                | [TrimIncDec](02_system.md#TrimIncDec)                | 1 Byte   | -      |            |
+| option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
+|                | [FlightEvent](03_system.md#FlightEvent)              | 1 Byte   | -      |            |
+|                | [Headless](03_system.md#Headless)                    | 1 Byte   | -      |            |
+|                | [TrimIncDec](03_system.md#TrimIncDec)                | 1 Byte   | -      |            |
 |                | UInt8                                                | 1 Byte   | -      |            |
 
 
@@ -1982,12 +1982,12 @@ class State(ISerializable):
 
 | 변수 이름         | 형식                                                | 크기     | 범위     | 설명                   |
 |:-----------------:|:---------------------------------------------------:|:--------:|:--------:|:-----------------------|
-| modeSystem        | [ModeSystem](02_system.md#ModeSystem)               | 1 Byte   | -        | System 동작 모드       |
-| modeFlight        | [ModeFlight](02_system.md#ModeFlight)               | 1 Byte   | -        | 비행 제어기 동작 모드  |
-| modeControlFlight | [ModeControlFlight](02_system.md#ModeControlFlight) | 1 Byte   | -        | 비행 제어 모드         |
-| modeMovement      | [ModeMovement](02_system.md#ModeMovement)           | 1 Byte   | -        | 이동 상태              |
-| headless          | [Headless](02_system.md#Headless)                   | 1 Byte   | -        | Headless 설정 상태     |
-| sensorOrientation | [SensorOrientation](02_system.md#SensorOrientation) | 1 Byte   | -        | 센서 방향              |
+| modeSystem        | [ModeSystem](03_system.md#ModeSystem)               | 1 Byte   | -        | System 동작 모드       |
+| modeFlight        | [ModeFlight](03_system.md#ModeFlight)               | 1 Byte   | -        | 비행 제어기 동작 모드  |
+| modeControlFlight | [ModeControlFlight](03_system.md#ModeControlFlight) | 1 Byte   | -        | 비행 제어 모드         |
+| modeMovement      | [ModeMovement](03_system.md#ModeMovement)           | 1 Byte   | -        | 이동 상태              |
+| headless          | [Headless](03_system.md#Headless)                   | 1 Byte   | -        | Headless 설정 상태     |
+| sensorOrientation | [SensorOrientation](03_system.md#SensorOrientation) | 1 Byte   | -        | 센서 방향              |
 | battery           | UInt8                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
 
 - e.g. [드론 모드를 변경 후 확인](examples_07_setup.md#ModeVehicle)
@@ -2306,7 +2306,7 @@ class MotorBlock(ISerializable):
 
 | 변수 이름  | 형식                               | 크기     | 범위      | 설명           |
 |:----------:|:----------------------------------:|:--------:|:---------:|:---------------|
-| rotation   | [Rotation](02_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향 |
+| rotation   | [Rotation](03_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향 |
 | value      | UInt16                             | 2 Byte   | 0 ~ 4095  | 모터 회전 속도 |
 
 
@@ -2361,7 +2361,7 @@ class MotorSingle(ISerializable):
 | 변수 이름  | 형식                               | 크기     | 범위      | 설명            |
 |:----------:|:----------------------------------:|:--------:|:---------:|:----------------|
 | target     | UInt8                              | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
-| rotation   | [Rotation](02_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향  |
+| rotation   | [Rotation](03_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향  |
 | value      | UInt16                             | 2 Byte   | 0 ~ 4095  | 모터 회전 속도  |
 
 
@@ -2372,22 +2372,23 @@ class MotorSingle(ISerializable):
 <h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
- 2. [System](02_system.md)
- 3. **Protocol**
- 4. [Drone](04_drone.md)
- 5. [Examples - Ping](examples_01_ping.md)
- 6. [Examples - Information](examples_02_information.md)
- 7. [Examples - Pairing](examples_03_pairing.md)
- 8. [Examples - Control](examples_04_control.md)
- 9. [Examples - Sensor](examples_05_sensor.md)
-10. [Examples - Motor](examples_06_motor.md)
-11. [Examples - Setup](examples_07_setup.md)
-12. [Examples - Buzzer](examples_08_buzzer.md)
-13. [Examples - Vibrator](examples_09_vibrator.md)
-14. [Examples - Light](examples_10_light.md)
-15. [Examples - Display](examples_11_display.md)
-16. [Examples - Input](examples_12_input.md)
-17. [Examples - Error](examples_13_error.md)
+ 2. [Command Line](02_commandline.md)
+ 3. [System](03_system.md)
+ 4. **Protocol**
+ 5. [Drone](05_drone.md)
+ 6. [Examples - Ping](examples_01_ping.md)
+ 7. [Examples - Information](examples_02_information.md)
+ 8. [Examples - Pairing](examples_03_pairing.md)
+ 9. [Examples - Control](examples_04_control.md)
+10. [Examples - Sensor](examples_05_sensor.md)
+11. [Examples - Motor](examples_06_motor.md)
+12. [Examples - Setup](examples_07_setup.md)
+13. [Examples - Buzzer](examples_08_buzzer.md)
+14. [Examples - Vibrator](examples_09_vibrator.md)
+15. [Examples - Light](examples_10_light.md)
+16. [Examples - Display](examples_11_display.md)
+17. [Examples - Input](examples_12_input.md)
+18. [Examples - Error](examples_13_error.md)
 
 <br>
 

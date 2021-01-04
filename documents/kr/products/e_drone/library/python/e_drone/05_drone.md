@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2020.1.29
+Modified : 2021.1.4
 
 ---
 
@@ -227,7 +227,7 @@ def sendPing(self, deviceType):
 
 | 변수 이름                  | 형식 또는 범위                              | 설명                             |
 |:--------------------------:|:-------------------------------------------:|:---------------------------------|
-| deviceType                 | [DeviceType](02_system.md#DeviceType)       | 전송할 대상 장치                 |
+| deviceType                 | [DeviceType](03_system.md#DeviceType)       | 전송할 대상 장치                 |
 
 - e.g. [Ping 테스트](examples_01_ping.md#Ping)
 
@@ -248,7 +248,7 @@ def sendRequest(self, deviceType, dataType):
 
 | 변수 이름                  | 형식 또는 범위                              | 설명                             |
 |:--------------------------:|:-------------------------------------------:|:---------------------------------|
-| deviceType                 | [DeviceType](02_system.md#DeviceType)       | 전송할 대상 장치                 |
+| deviceType                 | [DeviceType](03_system.md#DeviceType)       | 전송할 대상 장치                 |
 | dataType                   | [DataType](#DataType)                       | 데이터의 타입                    |
 
 - e.g. [조종기의 펌웨어 정보 요청](examples_02_information.md#Information)
@@ -270,7 +270,7 @@ def sendPairing(self, deviceType, addressLocal, addressRemote, channel):
 
 | 변수 이름                  | 형식 또는 범위                            | 설명                               |
 |:--------------------------:|:-----------------------------------------:|:-----------------------------------|
-| deviceType                 | [DeviceType](02_system.md#DeviceType)     | 전송할 대상 장치                   |
+| deviceType                 | [DeviceType](03_system.md#DeviceType)     | 전송할 대상 장치                   |
 | address0                   | 0 ~ 65535                                 | 장치의 주소 0                      |
 | address1                   | 0 ~ 65535                                 | 장치의 주소 1                      |
 | address2                   | 0 ~ 65535                                 | 장치의 주소 2                      |
@@ -451,11 +451,11 @@ def sendCommand(self, commandType, option = 0):
 
 | 변수 이름      | 형식 또는 범위                                       | 설명                         |
 |:--------------:|:----------------------------------------------------:|:-----------------------------|
-| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                    |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                         |
-|                | [FlightEvent](02_system.md#FlightEvent)              |                              |
-|                | [Headless](02_system.md#Headless)                    |                              |
-|                | [Trim](02_system.md#Trim)                            |                              |
+| commandType    | [CommandType](04_protocol.md#CommandType)            | 명령 타입                    |
+| option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 옵션                         |
+|                | [FlightEvent](03_system.md#FlightEvent)              |                              |
+|                | [Headless](03_system.md#Headless)                    |                              |
+|                | [Trim](03_system.md#Trim)                            |                              |
 |                | UInt8                                                |                              |
 
 - e.g. [Motion 센서 보정](examples_13_error.md#Error_MotionCalibrating)
@@ -479,11 +479,11 @@ def sendCommandLightEvent(self, commandType, option, lightEvent, interval, repea
 
 | 변수 이름      | 형식 또는 범위                                       | 설명                          |
 |:--------------:|:----------------------------------------------------:|:------------------------------|
-| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                     |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                          |
-|                | [FlightEvent](02_system.md#FlightEvent)              |                               |
-|                | [Headless](02_system.md#Headless)                    |                               |
-|                | [Trim](02_system.md#Trim)                            |                               |
+| commandType    | [CommandType](04_protocol.md#CommandType)            | 명령 타입                     |
+| option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 옵션                          |
+|                | [FlightEvent](03_system.md#FlightEvent)              |                               |
+|                | [Headless](03_system.md#Headless)                    |                               |
+|                | [Trim](03_system.md#Trim)                            |                               |
 |                | UInt8                                                |                               |
 | lightEvent     | UInt8                                                | LED 동작 모드                 |
 | interval       | 0 ~ 65535                                            | 내부 밝기 제어 함수 호출 주기 |
@@ -508,11 +508,11 @@ def sendCommandLightEventColor(self, commandType, option, lightEvent, interval, 
 
 | 변수 이름      | 형식 또는 범위                                       | 설명                          |
 |:--------------:|:----------------------------------------------------:|:------------------------------|
-| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                     |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                          |
-|                | [FlightEvent](02_system.md#FlightEvent)              |                               |
-|                | [Headless](02_system.md#Headless)                    |                               |
-|                | [Trim](02_system.md#Trim)                            |                               |
+| commandType    | [CommandType](04_protocol.md#CommandType)            | 명령 타입                     |
+| option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 옵션                          |
+|                | [FlightEvent](03_system.md#FlightEvent)              |                               |
+|                | [Headless](03_system.md#Headless)                    |                               |
+|                | [Trim](03_system.md#Trim)                            |                               |
 |                | UInt8                                                |                               |
 | lightEvent     | UInt8                                                | LED 동작 모드                 |
 | interval       | 0 ~ 65535                                            | 내부 밝기 제어 함수 호출 주기 |
@@ -540,16 +540,16 @@ def sendCommandLightEventColors(self, commandType, option, lightEvent, interval,
 
 | 변수 이름      | 형식 또는 범위                                       | 설명                          |
 |:--------------:|:----------------------------------------------------:|:------------------------------|
-| commandType    | [CommandType](03_protocol.md#CommandType)            | 명령 타입                     |
-| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 옵션                          |
-|                | [FlightEvent](02_system.md#FlightEvent)              |                               |
-|                | [Headless](02_system.md#Headless)                    |                               |
-|                | [Trim](02_system.md#Trim)                            |                               |
+| commandType    | [CommandType](04_protocol.md#CommandType)            | 명령 타입                     |
+| option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 옵션                          |
+|                | [FlightEvent](03_system.md#FlightEvent)              |                               |
+|                | [Headless](03_system.md#Headless)                    |                               |
+|                | [Trim](03_system.md#Trim)                            |                               |
 |                | UInt8                                                |                               |
 | lightEvent     | UInt8                                                | LED 동작 모드                 |
 | interval       | 0 ~ 65535                                            | 내부 밝기 제어 함수 호출 주기 |
 | repeat         | 0 ~ 255                                              | 반복 횟수                     |
-| colors         | [Colors](03_protocol.md#Colors)                      | 색상 팔레트 인덱스            |
+| colors         | [Colors](04_protocol.md#Colors)                      | 색상 팔레트 인덱스            |
 
 
 <br>
@@ -568,7 +568,7 @@ def sendModeControlFlight(self, modeControlFlight):
 
 | 변수 이름                 | 형식 또는 범위                                        | 설명                         |
 |:-------------------------:|:-----------------------------------------------------:|:-----------------------------|
-| modeControlFlight         | [ModeControlFlight](02_system.md#ModeControlFlight)   | 비행 제어 모드               |
+| modeControlFlight         | [ModeControlFlight](03_system.md#ModeControlFlight)   | 비행 제어 모드               |
 
 - e.g. [비행 제어 모드를 변경 후 확인](examples_07_setup.md#ModeControlFlight)
 
@@ -587,7 +587,7 @@ def sendHeadless(self, headless):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                        |
 |:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| headless                  | [Headless](02_system.md#Headless)                 | Headless 설정               |
+| headless                  | [Headless](03_system.md#Headless)                 | Headless 설정               |
 
 - e.g. [드론 Headless 설정 변경 후 확인](examples_07_setup.md#Headless)
 
@@ -606,7 +606,7 @@ def sendTrimIncDec(self, trimIncDec):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                        |
 |:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| trimIncDec                | [TrimIncDec](03_protocol.md#TrimIncDec)           | 트림 설정                   |
+| trimIncDec                | [TrimIncDec](04_protocol.md#TrimIncDec)           | 트림 설정                   |
 
 - e.g. [Trim 변경 테스트](examples_07_setup.md#TrimIncDec)
 
@@ -647,7 +647,7 @@ def sendWeight(self, weight):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                        |
 |:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| weight                    | [Weight](02_system.md#Weight)                     | 무게                        |
+| weight                    | [Weight](03_system.md#Weight)                     | 무게                        |
 
 
 <br>
@@ -685,7 +685,7 @@ def sendFlightEvent(self, flightEvent):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                        |
 |:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| flightEvent               | [FlightEvent](02_system.md#FlightEvent)           | 비행 이벤트                 |
+| flightEvent               | [FlightEvent](03_system.md#FlightEvent)           | 비행 이벤트                 |
 
 
 <br>
@@ -768,7 +768,7 @@ def sendMotorSingle(self, target, rotation, value):
 | 변수 이름                 | 형식 또는 범위                                    | 설명                          |
 |:-------------------------:|:-------------------------------------------------:|:------------------------------|
 | target                    | 0 ~ 3                                             | 제어할 모터의 번호            |
-| rotation                  | [Rotation](02_system.md#Rotation)                 | 모터의 회전 방향              |
+| rotation                  | [Rotation](03_system.md#Rotation)                 | 모터의 회전 방향              |
 | value                     | 0 ~ 4095                                          | 모터의 속도                   |
 
 - e.g. [MotorSingle 동작 테스트](examples_06_motor.md#MotorSingle)
@@ -792,7 +792,7 @@ def sendLightManual(self, deviceType, flags, brightness):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                          |
 |:-------------------------:|:-------------------------------------------------:|:------------------------------|
-| deviceType                | [DeviceType](02_system.md#DeviceType)             | LED를 제어할 장치             |
+| deviceType                | [DeviceType](03_system.md#DeviceType)             | LED를 제어할 장치             |
 | flags                     | 0b00000000 ~ 0b11111111                           | LED 플래그                    |
 | brightness                | 0 ~ 255                                           | 밝기                          |
 
@@ -843,7 +843,7 @@ def sendLightModeColors(self, lightMode, interval, colors):
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
 | lightMode                 | UInt8                                             | LED 동작 모드                            |
 | interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
-| colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
+| colors                    | [Colors](04_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
 
 - e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
@@ -893,7 +893,7 @@ def sendLightEventColors(self, lightEvent, interval, repeat, colors):
 | lightEvent                | UInt8                                             | LED 동작 모드                            |
 | interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
 | repeat                    | 0 ~ 255                                           | 반복 횟수                                |
-| colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
+| colors                    | [Colors](04_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
 
 - e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
@@ -937,7 +937,7 @@ def sendDisplayClearAll(self, pixel = DisplayPixel.Black):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| pixel                     | [DisplayPixel](03_protocol.md##DisplayPixel)      | 채울 색상                                |
+| pixel                     | [DisplayPixel](04_protocol.md##DisplayPixel)      | 채울 색상                                |
 
 - e.g. [모든 디스플레이 제어 명령을 차례대로 실행](examples_11_display.md#DisplayAll)
 
@@ -960,7 +960,7 @@ def sendDisplayClear(self, x, y, width, height, pixel = DisplayPixel.Black):
 | y                         | -2000 ~ 2000                                      | Y축 시작 위치                            |
 | width                     | -2000 ~ 2000                                      | 너비                                     |
 | height                    | -2000 ~ 2000                                      | 높이                                     |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)       | 채울 색상                                |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)       | 채울 색상                                |
 
 - e.g. [무작위 위치와 크기의 Clear를 100회 전송 (sendDisplayClear 함수 사용)](examples_11_display.md#DisplayClear)
 
@@ -1003,7 +1003,7 @@ def sendDisplayDrawPoint(self, x, y, pixel = DisplayPixel.White):
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
 | x                         | -2000 ~ 2000                                      | X축 위치                                 |
 | y                         | -2000 ~ 2000                                      | Y축 위치                                 |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)       | 점 색상                                  |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)       | 점 색상                                  |
 
 - e.g. [모든 디스플레이 제어 명령을 차례대로 실행](examples_11_display.md#DisplayAll)
 
@@ -1026,8 +1026,8 @@ def sendDisplayDrawLine(self, x1, y1, x2, y2, pixel = DisplayPixel.White, line =
 | y1                        | -2000 ~ 2000                                      | Y축 시작 위치                            |
 | x2                        | -2000 ~ 2000                                      | X축 끝 위치                              |
 | y2                        | -2000 ~ 2000                                      | Y축 끝 위치                              |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)       | 선 색상                                  |
-| line                      | [DisplayLine](03_protocol.md#DisplayLine)         | 선 형태                                  |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)       | 선 색상                                  |
+| line                      | [DisplayLine](04_protocol.md#DisplayLine)         | 선 형태                                  |
 
 - e.g. [무작위 위치와 길이의 선을 100번 그리기 (sendDisplayDrawLine 함수 사용)](examples_11_display.md#DisplayDrawLine)
 
@@ -1050,9 +1050,9 @@ def sendDisplayDrawRect(self, x, y, width, height, pixel = DisplayPixel.White, f
 | y                         | -2000 ~ 2000                                      | Y축 시작 위치                            |
 | width                     | -2000 ~ 2000                                      | 너비                                     |
 | height                    | -2000 ~ 2000                                      | 높이                                     |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)       | 색상                                     |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)       | 색상                                     |
 | flagFill                  | Bool                                              | True인 경우 내부를 채움                  |
-| line                      | [DisplayLine](03_protocol.md#DisplayLine)         | 선 형태                                  |
+| line                      | [DisplayLine](04_protocol.md#DisplayLine)         | 선 형태                                  |
 
 - e.g. [무작위 위치와 크기의 사각형을 100번 출력하기 (sendDisplayDrawRect 함수 사용)](examples_11_display.md#DisplayDrawRect)
 
@@ -1074,7 +1074,7 @@ def sendDisplayDrawCircle(self, x, y, radius, pixel = DisplayPixel.White, flagFi
 | x                         | -2000 ~ 2000                                      | X축 중심점 위치                          |
 | y                         | -2000 ~ 2000                                      | Y축 중심점 위치                          |
 | radius                    | -2000 ~ 2000                                      | 반지름                                   |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)       | 색상                                     |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)       | 색상                                     |
 | flagFill                  | Bool                                              | True인 경우 내부를 채움                  |
 
 - e.g. [무작위 위치와 크기의 원을 100번 출력하기 (sendDisplayDrawCircle 함수 사용)](examples_11_display.md#DisplayDrawCircle)
@@ -1096,8 +1096,8 @@ def sendDisplayDrawString(self, x, y, message, font = DisplayFont.LiberationMono
 |:-------------------------:|:------------------------------------------------:|:-----------------------------------------|
 | x                         | -2000 ~ 2000                                     | X축 위치                                 |
 | y                         | -2000 ~ 2000                                     | Y축 위치                                 |
-| font                      | [DisplayFont](03_protocol.md#DisplayFont)        | 폰트                                     |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)      | 색상                                     |
+| font                      | [DisplayFont](04_protocol.md#DisplayFont)        | 폰트                                     |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)      | 색상                                     |
 | message                   | ASCII String(30자 이하)                          | 표시할 문자열                            |
 
 - e.g. ['HELLO' 문자열을 무작위 위치에 100번 출력하기](examples_11_display.md#DisplayDrawString)
@@ -1122,9 +1122,9 @@ def sendDisplayDrawStringAlign(self, x_start, x_end, y, message, align = Display
 | x_start                   | -2000 ~ 2000                                      | X축 시작 위치                            |
 | x_end                     | -2000 ~ 2000                                      | X축 끝 위치                              |
 | y                         | -2000 ~ 2000                                      | Y축 위치                                 |
-| align                     | [DisplayAlign](03_protocol.md#DisplayAlign)       | 정렬                                     |
-| font                      | [DisplayFont](03_protocol.md#DisplayFont)         | 폰트                                     |
-| pixel                     | [DisplayPixel](03_protocol.md#DisplayPixel)       | 색상                                     |
+| align                     | [DisplayAlign](04_protocol.md#DisplayAlign)       | 정렬                                     |
+| font                      | [DisplayFont](04_protocol.md#DisplayFont)         | 폰트                                     |
+| pixel                     | [DisplayPixel](04_protocol.md#DisplayPixel)       | 색상                                     |
 | message                   | ASCII String(30자 이하)                           | 표시할 문자열                            |
 
 - e.g. ['LOVE' 문자열을 왼쪽, 중앙, 오른쪽 정렬을 사용하여 무작위 위치에 10번 출력하기](examples_11_display.md#DisplayDrawStringAlign)
@@ -1138,7 +1138,7 @@ def sendDisplayDrawStringAlign(self, x_start, x_end, y, message, align = Display
 
 버저 작동
 
-BuzzerMode가 **BuzzerMode.Scale**이거나 **BuzzerMode.ScaleReserve**인 경우 value에는 [BuzzerScale](03_protocol.md#BuzzerScale)의 value 값을 사용하시면 됩니다.
+BuzzerMode가 **BuzzerMode.Scale**이거나 **BuzzerMode.ScaleReserve**인 경우 value에는 [BuzzerScale](04_protocol.md#BuzzerScale)의 value 값을 사용하시면 됩니다.
 
 BuzzerMode가 **BuzzerMode.Hz**이거나 **BuzzerMode.HzReserve**인 경우 value에는 Hz 값을 사용하시면 됩니다.
 
@@ -1148,7 +1148,7 @@ def sendBuzzer(self, mode, value, time):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| mode                      | [BuzzerMode](03_protocol.md#BuzzerMode)           | 버저 동작 모드                           |
+| mode                      | [BuzzerMode](04_protocol.md#BuzzerMode)           | 버저 동작 모드                           |
 | value                     | 0 ~ 8000                                          | Scale 값 또는 Hz 값                      |
 | time                      | 0 ~ 65,535                                        | 소리를 지속할 시간(ms)                   |
 
@@ -1207,7 +1207,7 @@ def sendBuzzerScale(self, scale, time):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| scale                     | [BuzzerScale](03_protocol.md#BuzzerScale)         | Scale                                    |
+| scale                     | [BuzzerScale](04_protocol.md#BuzzerScale)         | Scale                                    |
 | time                      | 0 ~ 65,535                                        | 소리를 지속할 시간(ms)                   |
 
 - e.g. ['학교 종이 땡땡땡' 일부 연주](examples_08_buzzer.md#BuzzerScale)
@@ -1227,7 +1227,7 @@ def sendBuzzerScaleReserve(self, scale, time):
 
 | 변수 이름                 | 형식 또는 범위                                    | 설명                                     |
 |:-------------------------:|:-------------------------------------------------:|:-----------------------------------------|
-| scale                     | [BuzzerScale](03_protocol.md#BuzzerScale)         | Scale                                    |
+| scale                     | [BuzzerScale](04_protocol.md#BuzzerScale)         | Scale                                    |
 | time                      | 0 ~ 65,535                                        | 소리를 지속할 시간(ms)                   |
 
 - e.g. [sendBuzzer 함수 테스트](examples_08_buzzer.md#Buzzer)
@@ -1321,22 +1321,23 @@ def sendVibratorReserve(self, on, off, total):
 <h3><i>e_drone</i> for python</H3>
 
  1. [Intro](01_intro.md)
- 2. [System](02_system.md)
- 3. [Protocol](03_protocol.md)
- 4. **Drone**
- 5. [Examples - Ping](examples_01_ping.md)
- 6. [Examples - Information](examples_02_information.md)
- 7. [Examples - Pairing](examples_03_pairing.md)
- 8. [Examples - Control](examples_04_control.md)
- 9. [Examples - Sensor](examples_05_sensor.md)
-10. [Examples - Motor](examples_06_motor.md)
-11. [Examples - Setup](examples_07_setup.md)
-12. [Examples - Buzzer](examples_08_buzzer.md)
-13. [Examples - Vibrator](examples_09_vibrator.md)
-14. [Examples - Light](examples_10_light.md)
-15. [Examples - Display](examples_11_display.md)
-16. [Examples - Input](examples_12_input.md)
-17. [Examples - Error](examples_13_error.md)
+ 2. [Command Line](02_commandline.md)
+ 3. [System](03_system.md)
+ 4. [Protocol](04_protocol.md)
+ 5. **Drone**
+ 6. [Examples - Ping](examples_01_ping.md)
+ 7. [Examples - Information](examples_02_information.md)
+ 8. [Examples - Pairing](examples_03_pairing.md)
+ 9. [Examples - Control](examples_04_control.md)
+10. [Examples - Sensor](examples_05_sensor.md)
+11. [Examples - Motor](examples_06_motor.md)
+12. [Examples - Setup](examples_07_setup.md)
+13. [Examples - Buzzer](examples_08_buzzer.md)
+14. [Examples - Vibrator](examples_09_vibrator.md)
+15. [Examples - Light](examples_10_light.md)
+16. [Examples - Display](examples_11_display.md)
+17. [Examples - Input](examples_12_input.md)
+18. [Examples - Error](examples_13_error.md)
 
 <br>
 
