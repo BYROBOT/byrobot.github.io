@@ -141,6 +141,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 <div align="center">
     <img src="../images/03_01_control.png">
+    <p>조종 명령 예시 - Roll, Pitch, Yaw, Throttle</p>
 </div>
 
 ```
@@ -151,10 +152,11 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 
-## 3.2. 조종 명령(이동, 방향)
+## 3.2. 조종 명령(위치, 방향)
 
 <div align="center">
     <img src="../images/03_02_control_position_heading.png">
+    <p>조종 명령 예시 - 위치, 방향</p>
 </div>
 
 ```
@@ -164,10 +166,11 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 <br>
 
-## 3.3. 조종 명령(이동)
+## 3.3. 조종 명령(위치)
 
 <div align="center">
     <img src="../images/03_03_control_position.png">
+    <p>조종 명령 예시 - 위치</p>
 </div>
 
 ```
@@ -181,6 +184,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 <div align="center">
     <img src="../images/03_04_control_heading.png">
+    <p>조종 명령 예시 - 방향</p>
 </div>
 
 ```
@@ -204,9 +208,10 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 <div align="center">
     <img src="../images/04_01_buzzer.png">
+    <p>버저 작동 예시</p>
 </div>
 
-1000Hz의 소리를 500ms 동안 내게 합니다.
+400Hz의 소리를 2000ms 동안 내게 합니다.
 
 ```
 > python -m e_drone buzzer 400 2000
@@ -229,6 +234,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 <div align="center">
     <img src="../images/05_01_vibrator.png">
+    <p>진동 작동 예시</p>
 </div>
 
 500ms동안 켜고, 500ms 동안 끄는 동작을 2000ms 동안 실행
@@ -262,6 +268,7 @@ hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 2
 
 <div align="center">
     <img src="../images/06_01_light_single.png">
+    <p>단색 LED 작동 예시</p>
 </div>
 
 ```
@@ -285,6 +292,7 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 <div align="center">
     <img src="../images/06_02_light_rgb.png">
+    <p>RGB LED 작동 예시</p>
 </div>
 
 ```
