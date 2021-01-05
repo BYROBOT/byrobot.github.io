@@ -102,7 +102,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 2.1. 이륙
 
 ```
-> python -m e_drone command Takeoff
+> python -m e_drone takeoff
 ```
 
 
@@ -113,7 +113,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 
 ```
-> python -m e_drone command Landing
+> python -m e_drone landing
 ```
 
 
@@ -124,7 +124,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 
 ```
-> python -m e_drone command Stop
+> python -m e_drone stop
 ```
 
 
