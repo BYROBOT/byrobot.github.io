@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **System**
 
-Modified : 2021.1.4
+Modified : 2021.1.5
 
 ---
 
@@ -26,24 +26,46 @@ class ModelNumber(Enum):
 
     None_                   = 0x00000000
 
+    #                           AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
     Drone_3_Drone_P1        = 0x00031001    # Drone_3_Drone_P1 (Lightrone / GD65 / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding)
     Drone_3_Drone_P2        = 0x00031002    # Drone_3_Drone_P2 (Soccer Drone / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
     Drone_3_Drone_P3        = 0x00031003    # Drone_3_Drone_P3 (GD240 / HW2181 / Keil / power button / u30 flow / 3.7v / geared motor / barometer)
     Drone_3_Drone_P4        = 0x00031004    # Drone_3_Drone_P4 (GD50N / HW2181 / Keil / power button / 3.7v / barometer)
     Drone_3_Drone_P5        = 0x00031005    # Drone_3_Drone_P5 (GD30 / HW2181 / Keil / 3.7v / nomal binding)
-
-    Drone_3_Controller_P1   = 0x00032001    # Drone_3_Controller_P1
-
-    Drone_4_Drone_P4        = 0x00041004    # Drone_4_Drone_P4
-    Drone_4_Drone_P5        = 0x00041005    # Drone_4_Drone_P5
-
-    Drone_4_Controlle_P1    = 0x00042001    # Drone_4_Controlle_P1
-    Drone_4_Controlle_P2    = 0x00042002    # Drone_4_Controlle_P2
-
+    Drone_3_Drone_P6        = 0x00031006    # Drone_3_Drone_P6 (Soccer Drone 2 / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
+    Drone_3_Drone_P7        = 0x00031007    # Drone_3_Drone_P7 (SKYKICKV2 / SPI / HW2181 / Keil / 7.4v / barometer / RGB LED / Shaking binding)
+    Drone_3_Drone_P8        = 0x00031008    # Drone_3_Drone_P8 (GD65 / SPI / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding)
+    Drone_3_Drone_P9        = 0x00031009    # Drone_3_Drone_P9 (GD65 / SPI / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding / BladeType Power Connector)
+    Drone_3_Drone_P10       = 0x0003100A    # Drone_3_Drone_P10 (Battle Drone / SPI / HW2181 / Keil / 3.7v / barometer / RGB LED / Shaking binding)
+    
+    Drone_3_Controller_P1   = 0x00032001    # Drone_3_Controller_P1 / GD65 Controller /small size
+    Drone_3_Controller_P2   = 0x00032002    # Drone_3_Controller_P2 / Skykick Controller /large size
+    Drone_3_Controller_P3   = 0x00032003    # Drone_3_Controller_P3 / GD65 Controller USB /small size + USB
+    Drone_3_Controller_P4   = 0x00032004    # Drone_3_Controller_P4 / Battle Drone Controller USB / small size + usb
+    Drone_3_Controller_P5   = 0x00032005    # Drone_3_Controller_P5 / E-Drone 4m Controller / USB / HW2181B / Keil
+    
+    Drone_3_Link_P0         = 0x00033000    # Drone_3_Link_P0
+    
+    Drone_4_Drone_P4        = 0x00041004    # Drone_4_Drone_P4 (obsolete)
+    Drone_4_Drone_P5        = 0x00041005    # Drone_4_Drone_P5 (HW2000, 2m range sensor)
+    Drone_4_Drone_P6        = 0x00041006    # Drone_4_Drone_P6 (HW2000B, 4m range sensor)
+    Drone_4_Drone_P7        = 0x00041007    # Drone_4_Drone_P7 (HW2000B, 4m range sensor, BLDC Motor)
+    
+    Drone_4_Controller_P1   = 0x00042001    # Drone_4_Controller_P1 (obsolete)
+    Drone_4_Controller_P2   = 0x00042002    # Drone_4_Controller_P2 (HW2000)
+    Drone_4_Controller_P3   = 0x00042003    # Drone_4_Controller_P3 (HW2000B)
+    
     Drone_4_Link_P0         = 0x00043000    # Drone_4_Link_P0
+    
+    Drone_7_Drone_P1        = 0x00071001    # Drone_7_Drone_P1 (obsolete)
+    Drone_7_Drone_P2        = 0x00071002    # Drone_7_Drone_P2 / Coding Car
 
-    Drone_4_Tester_P2       = 0x0004A002    # Drone_4_Tester_P2
-    Drone_4_Monitor_P2      = 0x0004A102    # Drone_4_Monitor_P2
+    Drone_7_BleClient_P0    = 0x00073200    # Drone_7_BleClient_P0 / Coding Car Link
+
+    Drone_7_BleServer_P2    = 0x00073302    # Drone_7_BleServer_P2 / Coding Car Ble Module
+    
+    Drone_8_Drone_P0        = 0x00081000    # Drone_8_Drone_P0 (obsolete)
+    Drone_8_Drone_P1        = 0x00081001    # Drone_8_Drone_P1 / Coding Drone
 ```
 
 
@@ -60,30 +82,33 @@ class ModelNumber(Enum):
 
 ```py
 class DeviceType(Enum):
-    
-    None_       = 0x00
 
-    Drone       = 0x10      # 드론(Server)
+    None_           = 0x00
 
-    Controller  = 0x20      # 조종기(Client)
+    Drone           = 0x10      # 드론(Server)
 
-    Link        = 0x30      # 링크 모듈(Client)
-    LinkServer  = 0x31      # 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+    Controller      = 0x20      # 조종기(Client)
 
-    Range       = 0x40      # 거리 센서 모듈
+    Link            = 0x30      # 링크 모듈(Client)
+    LinkServer      = 0x31      # 링크 모듈(Server, 링크 모듈이 서버로 동작하는 경우에만 통신 타입을 잠시 바꿈)
+    BleClient       = 0x32      # BLE 클라이언트
+    BleServer       = 0x33      # BLE 서버
 
-    Base        = 0x70      # 베이스
+    Range           = 0x40      # 거리 센서 모듈
 
-    ByScratch   = 0x80      # 바이스크래치
-    Scratch     = 0x81      # 스크래치
-    Entry       = 0x82      # 네이버 엔트리
+    Base            = 0x70      # 베이스
 
-    Tester      = 0xA0      # 테스터
-    Monitor     = 0xA1      # 모니터
-    Updater     = 0xA2      # 펌웨어 업데이트 도구
-    Encrypter   = 0xA3      # 암호화 도구
+    ByScratch       = 0x80      # 바이스크래치
+    Scratch         = 0x81      # 스크래치
+    Entry           = 0x82      # 네이버 엔트리
 
-    Broadcasting = 0xFF
+    Tester          = 0xA0      # 테스터
+    Monitor         = 0xA1      # 모니터
+    Updater         = 0xA2      # 펌웨어 업데이트 도구
+    Encrypter       = 0xA3      # 암호화 도구
+
+    Whispering      = 0xFE      # 바로 인접한 장치까지만 전달(받은 장치는 자기 자신에게 보낸 것처럼 처리하고 타 장치에 전달하지 않음)
+    Broadcasting    = 0xFF
 ```
 
 
@@ -106,10 +131,11 @@ class ModeControlFlight(Enum):
 
     Attitude            = 0x10      # 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
     Position            = 0x11      # 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-    Function            = 0x12      # 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
+    Manual              = 0x12      # 고도를 수동으로 조종함
     Rate                = 0x13      # Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
+    Function            = 0x14      # 기능
     
-    EndOfType           = 0x14
+    EndOfType           = 0x15
 ```
 
 
@@ -247,8 +273,14 @@ class ErrorFlagsForState(Enum):
     NotRegistered                           = 0x00000001    # 장치 등록이 안됨
     FlashReadLock_UnLocked                  = 0x00000002    # 플래시 메모리 읽기 Lock이 안 걸림
     BootloaderWriteLock_UnLocked            = 0x00000004    # 부트로더 영역 쓰기 Lock이 안 걸림
-
+    LowBattery                              = 0x00000008    # Low Battery
+    
     TakeoffFailure_CheckPropellerAndMotor   = 0x00000010    # 이륙 실패
+    CheckPropellerVibration                 = 0x00000020    # 프로펠러 진동발생
+    Attitude_NotStable                      = 0x00000040    # 자세가 많이 기울어져 있거나 뒤집어져 있을때
+    
+    CanNotFlip_LowBattery                   = 0x00000100    # 배터리가 30이하
+    CanNotFlip_TooHeavy                     = 0x00000200    # 기체가 무거움
 ```
 
 

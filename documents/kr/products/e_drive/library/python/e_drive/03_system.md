@@ -1,6 +1,6 @@
 **[*e_drive* for python](index.md)** / **System**
 
-Modified : 2019.4.12
+Modified : 2021.1.5
 
 ---
 
@@ -109,33 +109,6 @@ class DeviceType(Enum):
 
     Whispering      = 0xFE      # 바로 인접한 장치까지만 전달(받은 장치는 자기 자신에게 보낸 것처럼 처리하고 타 장치에 전달하지 않음)
     Broadcasting    = 0xFF
-```
-
-
-<br>
-<br>
-
-
-<a name="ModeControlFlight"></a>
-## ModeControlFlight
-
-비행 제어 모드
-
-e_drone에서는 **Attitude**와 **Position**만 지원합니다.
-다른 모드로 변경할 경우 무시합니다.
-
-```py
-class ModeControlFlight(Enum):
-    
-    None_               = 0x00
-
-    Attitude            = 0x10      # 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
-    Position            = 0x11      # 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-    Manual              = 0x12      # 고도를 수동으로 조종함
-    Rate                = 0x13      # Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
-    Function            = 0x14      # 기능
-    
-    EndOfType           = 0x15
 ```
 
 
