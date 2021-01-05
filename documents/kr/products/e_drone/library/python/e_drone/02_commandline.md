@@ -57,10 +57,10 @@ e_drone 라이브러리는 소스 코드 작성없이 원하는 명령을 실행
 
 ## 2.1. State 데이터 요청
 
-State 데이터를 10회 0.5초 주기로 요청하는 명령은 다음과 같습니다.
+State 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같습니다.
 
 ```
-> python -m e_drone request State 10 0.5
+> python -m e_drone request State 10 0.2
 ```
 
 <div align="center">
@@ -139,6 +139,9 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 ## 3.1. 조종 명령
 
+<div align="center">
+    <img src="../images/03_01_control.png">
+</div>
 
 ```
 > python -m e_drone control [roll] [pitch] [yaw] [throttle] [time(ms)]
@@ -151,6 +154,9 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 ## 3.2. 조종 명령(이동, 방향)
 
+<div align="center">
+    <img src="../images/03_02_control_position_heading.png">
+</div>
 
 ```
 > python -m e_drone position [x(meter)] [y(meter)] [z(meter)] [speed(m/sec)] [heading(degree)] [rotational velocity(deg/sec)]
@@ -162,6 +168,9 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 ## 3.3. 조종 명령(이동)
 
+<div align="center">
+    <img src="../images/03_03_control_position.png">
+</div>
 
 ```
 > python -m e_drone position [x(meter)] [y(meter)] [z(meter)] [speed(m/sec)]
@@ -173,6 +182,9 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 
 ## 3.4. 조종 명령(방향)
 
+<div align="center">
+    <img src="../images/03_04_control_heading.png">
+</div>
 
 ```
 > python -m e_drone heading [heading(degree)] [rotational velocity(deg/sec)]
@@ -193,6 +205,10 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 ## 4.1. 버저 작동
+
+<div align="center">
+    <img src="../images/04_01_buzzer.png">
+</div>
 
 1000Hz의 소리를 500ms 동안 내게 합니다.
 
@@ -215,6 +231,10 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 <br>
 
 ## 5.1. 진동 작동
+
+<div align="center">
+    <img src="../images/05_01_vibrator.png">
+</div>
 
 500ms동안 켜고, 500ms 동안 끄는 동작을 2000ms 동안 실행
 
@@ -242,9 +262,13 @@ LED 제어
 
 단색 LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
 
-python -m e_drone light [front, head, tail, left, right] [hold, flicker, flickerdouble, dimming, sunrise, sunset] [interval]
+python -m e_drone light [rear, a, b] [hold, flicker, flickerdouble, dimming, sunrise, sunset] [interval]
 
 hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
+
+<div align="center">
+    <img src="../images/06_01_light_single.png">
+</div>
 
 ```
 > python -m e_drone light [part] [mode] [interval]
@@ -260,11 +284,15 @@ hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 2
 
 RGB LED 제어 시 아래와 같은 순서로 명령을 내리면 됩니다.
 
-python -m e_drone light body [hold, flicker, flickerdouble, dimming, sunrise, sunset, rainbow, rainbow2] [interval] [R] [G] [B]
+python -m e_drone light [body] [hold, flicker, flickerdouble, dimming, sunrise, sunset, rainbow, rainbow2] [interval] [R] [G] [B]
 
 hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
 
 R, G, B 모두 값의 범위는 0 ~ 255입니다.
+
+<div align="center">
+    <img src="../images/06_02_light_rgb.png">
+</div>
 
 ```
 > python -m e_drone light [part] [mode] [interval] [R] [G] [B]
@@ -276,13 +304,12 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 > python -m e_drone light body sunset 5 50 50 10
 > python -m e_drone light body rainbow 8 50 50 10
 > python -m e_drone light body rainbow2 8 50 50 10
-
 ```
 
 
 <br>
 <br>
-+
+
 
 
 ---
