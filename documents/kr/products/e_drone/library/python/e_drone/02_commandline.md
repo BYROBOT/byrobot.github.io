@@ -144,7 +144,6 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 </div>
 
 ```
-> python -m e_drone control [roll] [pitch] [yaw] [throttle] [time(ms)]
 > python -m e_drone control 0 30 0 0 5000
 ```
 
@@ -159,7 +158,6 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 </div>
 
 ```
-> python -m e_drone position [x(meter)] [y(meter)] [z(meter)] [speed(m/sec)] [heading(degree)] [rotational velocity(deg/sec)]
 > python -m e_drone position 5 0 0 2 90 45
 ```
 
@@ -173,7 +171,6 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 </div>
 
 ```
-> python -m e_drone position [x(meter)] [y(meter)] [z(meter)] [speed(m/sec)]
 > python -m e_drone position 5 0 0 2
 ```
 
@@ -187,7 +184,6 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 </div>
 
 ```
-> python -m e_drone heading [heading(degree)] [rotational velocity(deg/sec)]
 > python -m e_drone heading 90 45
 ```
 
@@ -213,7 +209,6 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 1000Hz의 소리를 500ms 동안 내게 합니다.
 
 ```
-> python -m e_drone buzzer [hz] [time(ms)]
 > python -m e_drone buzzer 400 2000
 ```
 
@@ -239,7 +234,6 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 500ms동안 켜고, 500ms 동안 끄는 동작을 2000ms 동안 실행
 
 ```
-> python -m e_drone vibrator [on(ms)] [off(ms)] [total(ms)]
 > python -m e_drone vibrator 500 500 2000
 ```
 
@@ -271,7 +265,6 @@ hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 2
 </div>
 
 ```
-> python -m e_drone light [part] [mode] [interval]
 > python -m e_drone light rear hold 100
 > python -m e_drone light a hold 100
 > python -m e_drone light b hold 100
@@ -295,7 +288,6 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 </div>
 
 ```
-> python -m e_drone light [part] [mode] [interval] [R] [G] [B]
 > python -m e_drone light body hold 100 50 50 10
 > python -m e_drone light body flicker 100 50 50 10
 > python -m e_drone light body flickerdouble 100 50 50 10
