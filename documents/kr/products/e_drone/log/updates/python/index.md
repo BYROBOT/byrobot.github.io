@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2020.9.3
+Modified : 2021.1.5
 
 ---
 
@@ -10,6 +10,19 @@ Modified : 2020.9.3
 
 <br>
 
+
+# 2021.1.5
+
+- **e_drone: 21.1.6**
+
+> - 커맨드라인 명령, 설명 수정
+> - 커맨드라인 명령에 이륙, 착륙, 정지 추가
+> - install_requires에서 numpy 참조 제거
+
+
+<br>
+
+---
 
 # 2020.9.3
 
