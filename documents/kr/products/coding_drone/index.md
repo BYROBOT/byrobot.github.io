@@ -67,7 +67,7 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td class="white"><div align="center">20.11.3</div></td>
+            <td colspan="2" class="white"><div align="center">20.11.3</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
