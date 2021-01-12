@@ -75,7 +75,7 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1R9zJHUYHRD7rsI3CNPQsLllReDDWvhiN/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1xLSc3XtjJAsG4d5MzjAX_L6QjH-TD1JB/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
