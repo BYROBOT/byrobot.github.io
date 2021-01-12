@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2020.4.8
+Modified : 2021.1.13
 
 ---
 
@@ -9,7 +9,7 @@ Modified : 2020.4.8
 ---
 
 - **Drone4AutoUpdaterLight**
-- [Python Library](../python/)
+<!-- - [Python Library](../python/) // -->
 
 ---
 
@@ -20,7 +20,7 @@ Modified : 2020.4.8
 
 # 1. 펌웨어 다운로드
 
-[CODING DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 Coding Drone 펌웨어를 내려받습니다.
+[CODING DRONE](/documents/kr/products/coding_drone/) 페이지에서 최신 Coding Drone 펌웨어를 내려받습니다.
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">
