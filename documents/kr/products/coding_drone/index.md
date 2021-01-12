@@ -42,7 +42,7 @@
         <tr>
             <td width="110" class="entry"><div align="center">&nbsp;<br><a href="#Entry"><span class="even">Entry</span></a><br>&nbsp;</div></td>
             <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
-            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
+            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone8/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
