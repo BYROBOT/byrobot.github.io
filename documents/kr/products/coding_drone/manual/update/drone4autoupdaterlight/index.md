@@ -58,10 +58,10 @@ Modified : 2021.1.13
 
 <br>
 
-(3) 드론 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(3) 드론 바닥 면의 버튼(아래 그림에서 빨간색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/2_1_3_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
+    <img src="./images/2_1_3_drone_bottom_bootloader_button.png" alt="drone bottom">
     <p>드론 부트로더 진입 버튼</p>
 </div>
 <br>
@@ -104,10 +104,10 @@ Modified : 2021.1.13
 
 <br>
 
-(3) 조종기 왼쪽 위의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(3) 조종기 왼쪽 위의 버튼(아래 그림에서 빨간색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/2_2_3_e_drone_controller_front_bootloader_button.jpg" alt="controller top">
+    <img src="./images/2_2_3_controller_front_bootloader_button.png" alt="controller top">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>
