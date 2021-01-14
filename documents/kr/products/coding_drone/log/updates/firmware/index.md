@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.1.13
+Modified : 2021.1.14
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.1.13
 
 
 <br>
+
+
+# 2021.1.14
+
+- **Drone: 21.1.2**
+
+> - 캘리브레이션 시 에러가 30%가 넘으면(Hue 범위 벗어남) 캘리브레이션을 중단하고 경고음으로 알림(카드에 문제가 없는 경우 대체로 LED 밝기와 관련한 문제로 오류가 발생함)
+
+
+[Download](https://drive.google.com/file/d/1K_4VxCIx_D6ehzc1O_rloqTwmVKKFqkY/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.11.9

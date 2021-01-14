@@ -33,9 +33,9 @@
 <div align="center">
     <a href="/documents/kr/news/2021"><b>News</b></a><br>
 
+    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2021114">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.1.14</i></sup><br>
     <a href="/documents/kr/products/e_drone/#Python">E-DRONE 파이썬 라이브러리 업데이트</a> <sup><i>2021.1.5</i></sup><br>
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-202114">E-DRONE(4m) 펌웨어 업데이트</a> <sup><i>2021.1.4</i></sup><br>
-    <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-20201221">E-DRONE 조종기 펌웨어 업데이트</a> <sup><i>2020.12.21</i></sup><br>
 </div>
 
 <div align="center">
@@ -133,4 +133,4 @@
 ---
 
 
-Modified : 2021.1.4
+Modified : 2021.1.14
