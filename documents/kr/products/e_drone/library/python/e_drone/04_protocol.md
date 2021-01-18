@@ -308,7 +308,7 @@ class Request(ISerializable):
 <a name="Message"></a>
 ## Message
 
-요청
+메세지
 
 문자열 데이터를 전송할 때 사용합니다.
 
@@ -413,7 +413,7 @@ class Information(ISerializable):
 | month         | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 월      |
 | day           | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 일      |
 
-- e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_12_information.md#Class_Information)
+- e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_02_information.md#Class_Information)
 
 
 <br>
