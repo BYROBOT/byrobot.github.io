@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.1.14
+Modified : 2021.1.25
 
 ---
 
@@ -9,6 +9,22 @@ Modified : 2021.1.14
 
 
 <br>
+
+
+# 2021.1.22
+
+- **Drone: 21.1.10**
+
+> - 자세, 착륙, 회전 안정화
+> - 기본 회전 속도 변경
+
+
+[Download](https://drive.google.com/file/d/1CoWv12wrqrryNECuEPV4OMiHbt6RZhFa/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.1.14

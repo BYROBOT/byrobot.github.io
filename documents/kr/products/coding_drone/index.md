@@ -67,15 +67,15 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">21.1.2</div></td>
+            <td colspan="2" class="white"><div align="center">21.1.10</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.1.14</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.1.22</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1K_4VxCIx_D6ehzc1O_rloqTwmVKKFqkY/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1CoWv12wrqrryNECuEPV4OMiHbt6RZhFa/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -149,4 +149,4 @@
 
 ---
 
-Modified : 2021.1.14
+Modified : 2021.1.25
