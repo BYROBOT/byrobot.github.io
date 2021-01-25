@@ -33,9 +33,9 @@
 <div align="center">
     <a href="/documents/kr/news/2021"><b>News</b></a><br>
     
+    <a href="/documents/kr/products/e_drive/manual/user/#heading-32-세운-상태">GO CAR 사용자 설명서 업데이트</a> <sup><i>2021.1.25</i></sup><br>
     <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2021122">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.1.22</i></sup><br>
     <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2021122">GO CAR 펌웨어 업데이트</a> <sup><i>2021.1.22</i></sup><br>
-    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2021114">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.1.14</i></sup><br>
 </div>
 
 <div align="center">
