@@ -1,6 +1,6 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) update log**
 
-Modified : 2020.9.29
+Modified : 2021.1.25
 
 ---
 
@@ -9,6 +9,30 @@ Modified : 2020.9.29
 
 
 <br>
+
+
+# 2021.1.22
+
+- **E-Drive: 21.1.7**
+- E-Drive BleServer: 19.10.16
+
+
+> - 자동차의 앞 부분이 위를 향하도록 세운 상태에서 버튼을 누른 횟수에 따라 모드 변경
+>   - 1번: 라인 코딩 모드
+>   - 2번: 핸드팔로잉 모드
+>   - 3번: 모션 코딩 모드
+>   - 4번: 카드 코딩 모드
+>   - 5번: 피아노 모드
+> - 자동차를 세우거나 뒤집었을 때 '삐빅'하는 소리가 나게 함
+
+
+
+[Download](https://drive.google.com/file/d/1CoWv12wrqrryNECuEPV4OMiHbt6RZhFa/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2020.9.28
