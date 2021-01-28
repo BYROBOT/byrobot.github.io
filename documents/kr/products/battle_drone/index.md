@@ -97,11 +97,11 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Version</div></td>
-            <td colspan="2" class="python"><div align="center">20.9.1</div></td>
+            <td colspan="2" class="python"><div align="center">21.1.6</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2020.9.3</div></td>
+            <td colspan="2" class="white"><div align="center">2021.1.5</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
@@ -117,4 +117,4 @@
 
 ---
 
-Modified : 2020.9.3
+Modified : 2021.1.28
