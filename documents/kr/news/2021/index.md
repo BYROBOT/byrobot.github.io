@@ -8,6 +8,10 @@
 
 ---
 
+- <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202129">CODING DRONE 펌웨어 업데이트</a> <sup><i>2021.2.9</i></sup><br>
+
+- <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-202129">E-DRONE 펌웨어 업데이트</a> <sup><i>2021.2.9</i></sup><br>
+
 - <a href="/documents/kr/products/e_drive/manual/user/#heading-32-세운-상태">GO CAR 사용자 설명서 업데이트</a> <sup><i>2021.1.25</i></sup><br>
 
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2021122">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.1.22</i></sup><br>
@@ -23,4 +27,4 @@
 ---
 
 
-Modified : 2021.1.25
+Modified : 2021.2.16

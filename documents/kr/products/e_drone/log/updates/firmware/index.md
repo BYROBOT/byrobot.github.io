@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.1.4
+Modified : 2021.2.16
 
 ---
 
@@ -9,6 +9,28 @@ Modified : 2021.1.4
 
 
 <br>
+
+
+# 2021.2.9
+
+- **Drone: 21.2.1**
+> - RF 수신율 개선
+> - FHSS 성능 개선
+- **Drone(4m): 21.2.1**
+> - RF 수신율 개선
+> - FHSS 성능 개선
+- **Controller: 21.2.1**
+> - RF 수신율 개선
+> - FHSS 성능 개선
+> - RF 통신 상태 화면 배치 조정, 우측 하단에 응답률 그래프 추가
+
+
+[Download](https://drive.google.com/file/d/1Qgec4M5pz7yFIb0LES2fhZg9dlXwF2Fe/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.1.4

@@ -73,23 +73,23 @@
         <tr>
             <td rowspan="3" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Drone</div></td>
-            <td class="white"><div align="center">20.12.2</div></td>
+            <td class="white"><div align="center">21.2.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Drone(4m)</div></td>
-            <td class="firmware"><div align="center">21.1.1</div></td>
+            <td class="firmware"><div align="center">21.2.1</div></td>
         </tr>
         <tr>
             <td class="white"><div align="center">Controller</div></td>
-            <td class="white"><div align="center">20.12.2</div></td>
+            <td class="white"><div align="center">21.2.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.1.4</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.2.9</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1xLSc3XtjJAsG4d5MzjAX_L6QjH-TD1JB/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1Qgec4M5pz7yFIb0LES2fhZg9dlXwF2Fe/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -188,4 +188,4 @@
 
 ---
 
-Modified : 2021.1.13
+Modified : 2021.2.16

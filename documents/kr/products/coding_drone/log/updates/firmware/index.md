@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.1.25
+Modified : 2021.2.16
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2021.1.25
 
 
 <br>
+
+
+# 2021.1.22
+
+- **Drone: 21.1.10**
+
+> - RF 수신율 개선
+> - FHSS 성능 개선
+> - 카드 코딩, 모션 코딩 시작 시 비행 제어 포지션, 헤드리스 노멀 모드로 전환
+
+
+[Download](https://drive.google.com/file/d/1Qgec4M5pz7yFIb0LES2fhZg9dlXwF2Fe/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.1.22
