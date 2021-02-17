@@ -73,7 +73,7 @@
         <tr>
             <td rowspan="2" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Car</div></td>
-            <td class="white"><div align="center">21.1.7</div></td>
+            <td class="white"><div align="center">21.2.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">BleServer</div></td>
@@ -81,11 +81,11 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.1.22</div></td>
+            <td colspan="2" class="white"><div align="center">2021.2.16</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/1CoWv12wrqrryNECuEPV4OMiHbt6RZhFa/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/10cLiTKseLVerNOcG3KxDSsDG2pNLQfd7/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -166,4 +166,4 @@
 
 ---
 
-Modified : 2021.1.25
+Modified : 2021.2.17

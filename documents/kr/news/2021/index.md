@@ -8,6 +8,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2021216">GO CAR 펌웨어 업데이트</a> <sup><i>2021.2.16</i></sup><br>
+
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202129">CODING DRONE 펌웨어 업데이트</a> <sup><i>2021.2.9</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-202129">E-DRONE 펌웨어 업데이트</a> <sup><i>2021.2.9</i></sup><br>
@@ -27,4 +29,4 @@
 ---
 
 
-Modified : 2021.2.16
+Modified : 2021.2.17
