@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.2.16
+Modified : 2021.2.22
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.2.16
 
 
 <br>
+
+
+# 2021.2.19
+
+- **Drone: 21.2.2**
+
+> - 모드 버튼으로 모드 변경 시 모드 변경음이 나오게 함
+
+
+[Download](https://drive.google.com/file/d/1TFGJloAjPyw0Nd05oAOSHgJjuw_4wiQS/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.2.9
