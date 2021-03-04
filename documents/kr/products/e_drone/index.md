@@ -21,7 +21,8 @@
     td.entry     { background: #FEF3FE !important; }
     td.byblocks  { background: #F5FAFF !important; }
     td.python    { background: #FFFEF5 !important; }
-    td.issues    { background: #EFF1FC !important; }
+    td.rust      { background: #E1F7EE !important; }
+    td.issues    { background: #FEF8EA !important; }
     td.byrobot   { background: #FAFEFE !important; }
     td.white     { background: #FFFFFF !important; }
     td.space     { background: #FFFFFF !important; }
@@ -46,8 +47,9 @@
             <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="even">Python</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span class="odd">Issues</span></a><br>&nbsp;</div></td>
-            <td width="110" class="byrobot" colspan="2"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
+            <td width="110" class="rust"><div align="center">&nbsp;<br><a href="#Rust"><span class="odd">Rust</span></a><br>&nbsp;</div></td>
+            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone4/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
+            <td width="110" class="byrobot"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
@@ -183,9 +185,35 @@
             <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/">한국어</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
+        <!-- Rust -->
+        <tr>
+            <td colspan="3" class="rust"><div align="center"><a name="Rust"></a>&nbsp;<br>Rust<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td class="rust"><div align="center">Library</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone</a></div></td>
+        </tr>
+        <tr>
+            <td class="rust"><div align="center">Version</div></td>
+            <td colspan="2" class="rust"><div align="center">21.3.4</div></td>
+        </tr>
+        <tr>
+            <td class="rust"><div align="center">Release Date</div></td>
+            <td colspan="2" class="white"><div align="center">2021.3.4</div></td>
+        </tr>
+        <tr>
+            <td class="rust"><div align="center">Manual</div></td>
+            <td colspan="2" class="rust"><div align="center"><a href="https://docs.rs/e_drone/21.3.4/e_drone/" target="_blank">한국어</a></div></td>
+        </tr>
+        <tr>
+            <td class="rust"><div align="center">Repository</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://github.com/byrobot-rust/e_drone" target="_blank">github</a></div></td>
+        </tr>
+        <!-- End -->
+        <tr><td colspan="3" class="space"></td></tr>
     </table>
 </div>
 
 ---
 
-Modified : 2021.2.16
+Modified : 2021.3.4
