@@ -195,15 +195,15 @@
         </tr>
         <tr>
             <td class="rust"><div align="center">Version</div></td>
-            <td colspan="2" class="rust"><div align="center">21.3.4</div></td>
+            <td colspan="2" class="rust"><div align="center">21.3.14</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.3.4</div></td>
+            <td colspan="2" class="white"><div align="center">2021.3.11</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Manual</div></td>
-            <td colspan="2" class="rust"><div align="center"><a href="https://docs.rs/e_drone/21.3.4/e_drone/" target="_blank">한국어</a></div></td>
+            <td colspan="2" class="rust"><div align="center"><a href="https://docs.rs/e_drone/" target="_blank">한국어</a></div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Repository</div></td>
@@ -216,4 +216,4 @@
 
 ---
 
-Modified : 2021.3.4
+Modified : 2021.3.12
