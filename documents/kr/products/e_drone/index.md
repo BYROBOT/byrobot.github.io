@@ -190,16 +190,25 @@
             <td colspan="3" class="rust"><div align="center"><a name="Rust"></a>&nbsp;<br>Rust<br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td class="rust"><div align="center">Library</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone</a></div></td>
+            <td rowspan="3" class="rust"><div align="center">Library</div></td>
+            <td class="white"><div align="center">Core</div></td>
+            <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone</a></div></td>
+        </tr>
+        <tr>
+            <td class="rust"><div align="center">Windows</div></td>
+            <td class="rust"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone_sp</a></div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">Raspberry PI</div></td>
+            <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone_rpi</a></div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Version</div></td>
-            <td colspan="2" class="rust"><div align="center">21.3.14</div></td>
+            <td colspan="2" class="rust"><div align="center">21.3.19</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.3.11</div></td>
+            <td colspan="2" class="white"><div align="center">2021.3.16</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Manual</div></td>
@@ -216,4 +225,4 @@
 
 ---
 
-Modified : 2021.3.12
+Modified : 2021.3.16
