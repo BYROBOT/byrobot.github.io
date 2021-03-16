@@ -196,11 +196,11 @@
         </tr>
         <tr>
             <td class="rust"><div align="center">Windows</div></td>
-            <td class="rust"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone_sp</a></div></td>
+            <td class="rust"><div align="center"><a href="https://crates.io/crates/e_drone_sp" target="_blank">e_drone_sp</a></div></td>
         </tr>
         <tr>
             <td class="white"><div align="center">Raspberry PI</div></td>
-            <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone_rpi</a></div></td>
+            <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone_rpi" target="_blank">e_drone_rpi</a></div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Version</div></td>
