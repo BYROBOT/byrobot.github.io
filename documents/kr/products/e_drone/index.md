@@ -75,11 +75,11 @@
         <tr>
             <td rowspan="3" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Drone</div></td>
-            <td class="white"><div align="center">21.2.1</div></td>
+            <td class="white"><div align="center">21.3.2</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Drone(4m)</div></td>
-            <td class="firmware"><div align="center">21.2.1</div></td>
+            <td class="firmware"><div align="center">21.3.2</div></td>
         </tr>
         <tr>
             <td class="white"><div align="center">Controller</div></td>
@@ -87,11 +87,11 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.2.9</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.3.22</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1Qgec4M5pz7yFIb0LES2fhZg9dlXwF2Fe/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1E4qLXTYTwGTx3JovVU_SnttY32gyEr7z/view?usp=sharing" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -204,11 +204,11 @@
         </tr>
         <tr>
             <td class="rust"><div align="center">Version</div></td>
-            <td colspan="2" class="rust"><div align="center">21.3.19</div></td>
+            <td colspan="2" class="rust"><div align="center">21.3.26</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.3.16</div></td>
+            <td colspan="2" class="white"><div align="center">2021.3.24</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Manual</div></td>
@@ -225,4 +225,4 @@
 
 ---
 
-Modified : 2021.3.16
+Modified : 2021.3.24

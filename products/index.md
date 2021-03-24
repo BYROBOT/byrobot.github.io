@@ -33,9 +33,9 @@
 <div align="center">
     <a href="/documents/kr/news/2021"><b>News</b></a><br>
     
+    <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2021322">E-DRONE 펌웨어 업데이트</a> <sup><i>2021.3.22</i></sup><br>
     <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2021219">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.2.19</i></sup><br>
     <a href="/documents/kr/products/e_drive/log/updates/firmware/#heading-2021216">GO CAR 펌웨어 업데이트</a> <sup><i>2021.2.16</i></sup><br>
-    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202129">CODING DRONE 펌웨어 업데이트</a> <sup><i>2021.2.9</i></sup><br>
 </div>
 
 <div align="center">
@@ -133,4 +133,4 @@
 ---
 
 
-Modified : 2021.2.22
+Modified : 2021.3.24

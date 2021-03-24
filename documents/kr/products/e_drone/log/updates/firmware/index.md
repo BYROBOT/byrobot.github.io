@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.2.16
+Modified : 2021.3.24
 
 ---
 
@@ -9,6 +9,25 @@ Modified : 2021.2.16
 
 
 <br>
+
+
+# 2021.3.22
+
+- **Drone: 21.3.2**
+> - 페어링 대기 모드에서 본체 RGB LED를 노란색으로 깜빡이게 함
+> - 바닥 센서 응답이 없을 경우 빨간색, 바닥 이미지가 인식이 안되는 경우 노란색으로 짧게 켜졌다가 길게 꺼지는 동작을 반복하게 함
+- **Drone(4m): 21.3.2**
+> - 페어링 대기 모드에서 본체 RGB LED를 노란색으로 깜빡이게 함
+> - 바닥 센서 응답이 없을 경우 빨간색, 바닥 이미지가 인식이 안되는 경우 노란색으로 짧게 켜졌다가 길게 꺼지는 동작을 반복하게 함
+- Controller: 21.2.1
+
+
+[Download](https://drive.google.com/file/d/1E4qLXTYTwGTx3JovVU_SnttY32gyEr7z/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.2.9
