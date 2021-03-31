@@ -75,23 +75,27 @@
         <tr>
             <td rowspan="3" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Drone</div></td>
-            <td class="white"><div align="center">21.3.2</div></td>
+            <td class="white"><div align="center">21.3.3</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Drone(4m)</div></td>
-            <td class="firmware"><div align="center">21.3.2</div></td>
+            <td class="firmware"><div align="center">21.3.3</div></td>
         </tr>
         <tr>
             <td class="white"><div align="center">Controller</div></td>
-            <td class="white"><div align="center">21.2.1</div></td>
+            <td class="white"><div align="center">21.3.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.3.22</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.3.31</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://drive.google.com/file/d/1E4qLXTYTwGTx3JovVU_SnttY32gyEr7z/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="white"><div align="center">
+                <a href="https://drive.google.com/file/d/19ou4b9o8XSzDc63PrXmJBET2mjS1JPFE/view?usp=sharing" target="_blank">Windows</a><br>
+                <a href="https://drive.google.com/file/d/1lvA6yybPe184NpPz-0--EGeInvm8iS1t/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/1fJY6MN8Q4fK5q1JsYsAqz4dN5bzy3xob/view?usp=sharing" target="_blank">linux</a>
+            </div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -225,4 +229,4 @@
 
 ---
 
-Modified : 2021.3.24
+Modified : 2021.3.31
