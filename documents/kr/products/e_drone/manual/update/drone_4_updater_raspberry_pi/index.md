@@ -29,7 +29,7 @@ Modified : 2021.4.1
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">
-    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 상자 안의 'Windows')</p>
+    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 상자 안의 'Raspberry PI')</p>
 </div>
 <br>
 
