@@ -22,7 +22,7 @@ Modified : 2021.4.1
 
 <br>
 
-# 1. 펌웨어 다운로드 및 실행
+# 1. 펌웨어 다운로드 및 업데이트 프로그램 실행
 
 ## 1.1. 펌웨어 다운로드
 [E-DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 E-Drone 펌웨어를 내려받습니다.
