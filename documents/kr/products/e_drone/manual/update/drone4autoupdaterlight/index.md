@@ -47,7 +47,7 @@ Modified : 2021.4.1
 (1) "Drone4AutoUpdaterLight.exe"를 실행합니다.
 
 <div align="center">
-    <img src="./images/2_1_1_1_folder_drone4autoupdaterlight.jpg" alt="Drone4AutoUpdaterLight.exe">
+    <img src="./images/2_1_1_1_folder_drone4autoupdaterlight.png" alt="Drone4AutoUpdaterLight.exe">
     <p>펌웨어 업데이트 프로그램 폴더</p>
 </div>
 <br>
@@ -93,7 +93,7 @@ Modified : 2021.4.1
 (1) "Drone4AutoUpdaterLight.exe"를 실행합니다.
 
 <div align="center">
-    <img src="./images/2_1_1_1_folder_drone4autoupdaterlight.jpg" alt="Drone4AutoUpdaterLight.exe">
+    <img src="./images/2_1_1_1_folder_drone4autoupdaterlight.png" alt="Drone4AutoUpdaterLight.exe">
     <p>펌웨어 업데이트 프로그램 폴더</p>
 </div>
 <br>
