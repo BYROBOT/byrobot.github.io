@@ -87,15 +87,16 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.3.31</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.3.26</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.google.com/file/d/19ou4b9o8XSzDc63PrXmJBET2mjS1JPFE/view?usp=sharing" target="_blank">Windows</a><br>
-                <a href="https://drive.google.com/file/d/1lvA6yybPe184NpPz-0--EGeInvm8iS1t/view?usp=sharing" target="_blank">macOS</a><br>
-                <a href="https://drive.google.com/file/d/1fJY6MN8Q4fK5q1JsYsAqz4dN5bzy3xob/view?usp=sharing" target="_blank">Linux</a><br>
-                <a href="https://drive.google.com/file/d/135WM4n8Zmli7mnQdQm9ZaQwrvx3FBOjG/view?usp=sharing" target="_blank">Raspberry PI</a>
+                <a href="https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
+                <a href="https://drive.google.com/file/d/18dFRxM9wczPSAP06FOdhQJwf86b0Eaa_/view?usp=sharing" target="_blank">Window</a><br>
+                <a href="https://drive.google.com/file/d/11hyfeE7_N1A_V4x_7n6onNEARlWecbjT/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/1fGLzarf-bjTLsZNn-wV2_83_MtSxqmlr/view?usp=sharing" target="_blank">Linux</a><br>
+                <a href="https://drive.google.com/file/d/1k94HcjXYrfA1onXi5fDiYhDlkNbXYRsj/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
         </tr>
         <tr>
@@ -106,7 +107,11 @@
             <td class="firmware"><div align="center">Update Manual</div></td>
             <td colspan="2" class="white">
                 <div align="center">
-                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">한국어</a>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">Windows (.NET)</a><br>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_windows/">Windows</a><br>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_mac/">macOS</a><br>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_linux/">Linux</a><br>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_raspberry_pi/">Raspberry PI</a>
                 </div>
             </td>
         </tr>
