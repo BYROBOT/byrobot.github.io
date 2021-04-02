@@ -205,20 +205,25 @@
             <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone</a></div></td>
         </tr>
         <tr>
-            <td class="rust"><div align="center">Windows</div></td>
+            <td class="rust"><div align="center">
+                Windows 10<br>
+                macOS<br>
+                Linux<br>
+                Raspberry Pi OS
+            </div></td>
             <td class="rust"><div align="center"><a href="https://crates.io/crates/e_drone_sp" target="_blank">e_drone_sp</a></div></td>
         </tr>
         <tr>
-            <td class="white"><div align="center">Raspberry PI</div></td>
+            <td class="white"><div align="center">Raspberry PI OS</div></td>
             <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone_rpi" target="_blank">e_drone_rpi</a></div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Version</div></td>
-            <td colspan="2" class="rust"><div align="center">21.3.26</div></td>
+            <td colspan="2" class="rust"><div align="center">21.3.28</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.3.24</div></td>
+            <td colspan="2" class="white"><div align="center">2021.3.30</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Manual</div></td>
@@ -235,4 +240,4 @@
 
 ---
 
-Modified : 2021.3.31
+Modified : 2021.4.2
