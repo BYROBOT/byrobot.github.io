@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
     data = Vibrator()
 
-    data.mode       = VibratorMode.Instantally
+    data.mode       = VibratorMode.Instantly
     data.on         = 100
     data.off        = 200
     data.total      = 1200

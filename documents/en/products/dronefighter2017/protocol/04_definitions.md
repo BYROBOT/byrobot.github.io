@@ -472,13 +472,13 @@ namespace Buzzer
         {
             Stop                = 0,    // Stop(Use to turn off the buzzer when received from the communication, call in a set only)
 
-            MuteInstantally     = 1,    // Apply Instantly in mute
+            MuteInstantly     = 1,    // Apply Instantly in mute
             MuteContinually     = 2,    // Apply continualy in mute
 
-            ScaleInstantally    = 3,    // Instantly application of scale
+            ScaleInstantly    = 3,    // Instantly application of scale
             ScaleContinually    = 4,    // Continualy application of scale
 
-            HzInstantally       = 5,    // Instantly application of Hz
+            HzInstantly       = 5,    // Instantly application of Hz
             HzContinually       = 6,    // Continualy application of Hz
 
             EndOfType
@@ -539,7 +539,7 @@ namespace Vibrator
         {
             Stop            = 0,    // Stop
             
-            Instantally     = 1,    // Instantly vibrate.
+            Instantly     = 1,    // Instantly vibrate.
             Continually     = 2,    // Continualy vibrate.
             
             EndOfType

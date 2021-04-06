@@ -470,13 +470,13 @@ namespace Buzzer
         {
             Stop                = 0,    // 정지(Mode에서의 Stop은 통신에서 받았을 때 Buzzer를 끄는 용도로 사용, set으로만 호출)
 
-            MuteInstantally     = 1,    // 묵음 즉시 적용
+            MuteInstantly     = 1,    // 묵음 즉시 적용
             MuteContinually     = 2,    // 묵음 예약
 
-            ScaleInstantally    = 3,    // 음계 즉시 적용
+            ScaleInstantly    = 3,    // 음계 즉시 적용
             ScaleContinually    = 4,    // 음계 예약
 
-            HzInstantally       = 5,    // 주파수 즉시 적용
+            HzInstantly       = 5,    // 주파수 즉시 적용
             HzContinually       = 6,    // 주파수 예약
 
             EndOfType
@@ -537,7 +537,7 @@ namespace Vibrator
         {
             Stop            = 0,    // 정지
             
-            Instantally     = 1,    // 즉시 적용
+            Instantly     = 1,    // 즉시 적용
             Continually     = 2,    // 예약
             
             EndOfType

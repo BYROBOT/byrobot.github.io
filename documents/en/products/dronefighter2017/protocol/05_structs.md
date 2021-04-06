@@ -510,7 +510,7 @@ namespace Protocol
 }
 ```
 - mode : [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)
-- value : ScaleInstantally or ScaleContinually mode use [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale), HzInstantally or HzContinually mode use 0 ~ 8000(Hz)
+- value : ScaleInstantly or ScaleContinually mode use [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale), HzInstantly or HzContinually mode use 0 ~ 8000(Hz)
 - time : 0 ~ 65535(ms)
 
 

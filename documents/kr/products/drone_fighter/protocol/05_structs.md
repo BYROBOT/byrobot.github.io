@@ -502,7 +502,7 @@ namespace Protocol
 }
 ```
 - mode : [Buzzer::Mode::Type](04_definitions.md#Buzzer_Mode)
-- value : mode에서 ScaleInstantally 또는 ScaleContinually를 선택한 경우 [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale), HzInstantally 또는 HzContinually를 선택한 경우 0 ~ 8000(Hz)
+- value : mode에서 ScaleInstantly 또는 ScaleContinually를 선택한 경우 [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale), HzInstantly 또는 HzContinually를 선택한 경우 0 ~ 8000(Hz)
 - time : 0 ~ 65535(ms)
 
 

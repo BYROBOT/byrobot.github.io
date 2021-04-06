@@ -1787,7 +1787,7 @@ class VibratorMode(Enum):
 
     Stop                = 0     # 정지
 
-    Instantally         = 1     # 즉시 적용
+    Instantly         = 1     # 즉시 적용
     Continually         = 2     # 예약
 
     EndOfType           = 3

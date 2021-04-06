@@ -657,13 +657,13 @@ namespace Buzzer
         {
             Stop                = 0,    // Stop in Mode is used to turn off the buzzer when received from communication, call in a set only
 
-            MuteInstantally     = 1,    // Mute Instantally
+            MuteInstantly     = 1,    // Mute Instantly
             MuteContinually     = 2,    // Mute Continually
 
-            ScaleInstantally    = 3,    // Scale Instantally
+            ScaleInstantly    = 3,    // Scale Instantly
             ScaleContinually    = 4,    // Scale Continually
 
-            HzInstantally       = 5,    // Hz Instantally
+            HzInstantly       = 5,    // Hz Instantly
             HzContinually       = 6,    // Hz Continually
 
             EndOfType
@@ -724,7 +724,7 @@ namespace Vibrator
         {
             Stop            = 0,    // Stop
             
-            Instantally     = 1,    // Instantly vibrate.
+            Instantly     = 1,    // Instantly vibrate.
             Continually     = 2,    // Continualy vibrate.
             
             EndOfType
