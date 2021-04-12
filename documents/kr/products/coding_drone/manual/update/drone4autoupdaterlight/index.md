@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2021.1.13
+Modified : 2021.4.13
 
 ---
 
@@ -9,7 +9,11 @@ Modified : 2021.1.13
 ---
 
 - **Drone4AutoUpdaterLight**
-<!-- - [Python Library](../python/) // -->
+- [drone_4_updater_windows](../drone_4_updater_windows/)
+- [drone_4_updater_mac](../drone_4_updater_mac/)
+- [drone_4_updater_linux](../drone_4_updater_linux/)
+- [drone_4_updater_raspberry_pi](../drone_4_updater_raspberry_pi/)
+- [Python Library](../python/)
 
 ---
 
@@ -107,7 +111,7 @@ Modified : 2021.1.13
 (3) 조종기 왼쪽 위의 버튼(아래 그림에서 빨간색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/2_2_3_controller_front_bootloader_button.png" alt="controller top">
+    <img src="./images/2_2_3_e_drone_controller_front_bootloader_button.png" alt="controller top">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>

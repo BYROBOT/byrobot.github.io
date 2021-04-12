@@ -73,7 +73,7 @@
         <tr>
             <td rowspan="2" class="firmware"><div align="center">Version</div></td>
             <td class="white"><div align="center">Car</div></td>
-            <td class="white"><div align="center">21.2.1</div></td>
+            <td class="white"><div align="center">21.3.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">BleServer</div></td>
@@ -81,11 +81,17 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.2.16</div></td>
+            <td colspan="2" class="white"><div align="center">2021.3.26</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/file/d/10cLiTKseLVerNOcG3KxDSsDG2pNLQfd7/view?usp=sharing" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center">
+                <a href="https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
+                <a href="https://drive.google.com/file/d/18dFRxM9wczPSAP06FOdhQJwf86b0Eaa_/view?usp=sharing" target="_blank">Windows</a><br>
+                <a href="https://drive.google.com/file/d/11hyfeE7_N1A_V4x_7n6onNEARlWecbjT/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/1fGLzarf-bjTLsZNn-wV2_83_MtSxqmlr/view?usp=sharing" target="_blank">Linux</a><br>
+                <a href="https://drive.google.com/file/d/1k94HcjXYrfA1onXi5fDiYhDlkNbXYRsj/view?usp=sharing" target="_blank">Raspberry PI</a>
+            </div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -95,7 +101,11 @@
             <td class="firmware" class="firmware"><div align="center">Update Manual</div></td>
             <td colspan="2" class="firmware">
                 <div align="center">
-                    <a href="/documents/kr/products/e_drive/manual/update/drone4autoupdaterlight/">한국어</a>
+                    <a href="/documents/kr/products/e_drive/manual/update/drone4autoupdaterlight/">Windows (.NET)</a><br>
+                    <a href="/documents/kr/products/e_drive/manual/update/drone_4_updater_windows/">Windows</a><br>
+                    <a href="/documents/kr/products/e_drive/manual/update/drone_4_updater_mac/">macOS</a><br>
+                    <a href="/documents/kr/products/e_drive/manual/update/drone_4_updater_linux/">Linux</a><br>
+                    <a href="/documents/kr/products/e_drive/manual/update/drone_4_updater_raspberry_pi/">Raspberry PI</a>
                 </div>
             </td>
         </tr>
@@ -111,6 +121,7 @@
             <td colspan="2" class="white">
                 <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
                 <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
+                <div align="center"><a href="https://drive.google.com/open?id=1G6ma1HbzNSPqTcU9ir1I4lyYLobLM4K-" target="_blank">Win7, Win8 (new)</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
@@ -166,4 +177,4 @@
 
 ---
 
-Modified : 2021.2.17
+Modified : 2021.4.13

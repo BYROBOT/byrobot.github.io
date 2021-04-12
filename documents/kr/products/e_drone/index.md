@@ -27,8 +27,8 @@
     td.white     { background: #FFFFFF !important; }
     td.space     { background: #FFFFFF !important; }
 
-    span.odd 	   { color: #0489B1; }
-    span.even	   { color: #FF4000; }
+    span.odd       { color: #0489B1; }
+    span.even      { color: #FF4000; }
     span.byrobot   { color: #CCDDEE; }
 
 </style>

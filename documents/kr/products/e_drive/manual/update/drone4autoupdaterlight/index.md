@@ -1,14 +1,18 @@
 **[E-DRIVE](/documents/kr/products/e_drive/) firmware Update**
 
-Modified : 2019.7.23
+Modified : 2021.4.13
 
 ---
 
-<h3>E-Drive 펌웨어 업데이트</h3>
+<h3>GO CAR 펌웨어 업데이트</h3>
 
 ---
 
 - **Drone4AutoUpdaterLight**
+- [drone_4_updater_windows](../drone_4_updater_windows/)
+- [drone_4_updater_mac](../drone_4_updater_mac/)
+- [drone_4_updater_linux](../drone_4_updater_linux/)
+- [drone_4_updater_raspberry_pi](../drone_4_updater_raspberry_pi/)
 - [Python Library](../python/)
 
 ---
@@ -20,11 +24,11 @@ Modified : 2019.7.23
 
 # 1. 펌웨어 다운로드
 
-[E-DRIVE](/documents/kr/products/e_drive/) 페이지에서 최신 E-Drive 펌웨어를 내려받습니다.
+[GO CAR](/documents/kr/products/e_drive/) 페이지에서 최신 GO CAR 펌웨어를 내려받습니다.
 
 <div align="center">
     <img src="./images/1_download.png" alt="Download">
-    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 박스 안의 'Windows')</p>
+    <p>펌웨어 업데이트 프로그램 다운로드 링크 [빨간색 상자 안의 'Windows (.NET)']</p>
 </div>
 <br>
 
@@ -34,7 +38,7 @@ Modified : 2019.7.23
 
 # 2. 펌웨어 자동 업데이트
 
-E-Drive를 부트로더 모드로 연결하면 자동으로 펌웨어를 업데이트해 주는 프로그램입니다.
+GO CAR를 부트로더 모드로 연결하면 자동으로 펌웨어를 업데이트해 주는 프로그램입니다.
 
 <br>
 
@@ -90,5 +94,5 @@ E-Drive를 부트로더 모드로 연결하면 자동으로 펌웨어를 업데�
 <br>
 
 
-여기까지 E-Drive 자동차 펌웨어 업데이트를 완료하였습니다.
+여기까지 GO CAR 펌웨어 업데이트를 완료하였습니다.
 
