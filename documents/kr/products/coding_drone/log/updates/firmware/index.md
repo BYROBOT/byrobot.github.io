@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.2.22
+Modified : 2021.4.13
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.2.22
 
 
 <br>
+
+
+# 2021.3.26
+
+- **Drone: 21.3.1**
+
+> - 버저 주파수 오류 수정
+
+
+[Download](https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.2.19

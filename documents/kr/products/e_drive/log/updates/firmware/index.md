@@ -1,6 +1,6 @@
-**[E-DRIVE](/documents/kr/products/e_drive/) update log**
+**[GO CAR](/documents/kr/products/e_drive/) update log**
 
-Modified : 2021.2.17
+Modified : 2021.4.13
 
 ---
 
@@ -11,10 +11,28 @@ Modified : 2021.2.17
 <br>
 
 
+# 2021.3.26
+
+- **Go Car: 21.3.1**
+- Go Car BleServer: 19.10.16
+
+
+> - 버저 주파수 오류 수정
+
+
+
+[Download](https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing)
+
+
+<br>
+
+---
+
+
 # 2021.2.16
 
-- **E-Drive: 21.2.1**
-- E-Drive BleServer: 19.10.16
+- **Go Car: 21.2.1**
+- Go Car BleServer: 19.10.16
 
 
 > - 라인 코딩 모드에서 컬러 캘리브레이션을 실행할 경우 라인 코딩용 컬러 캘리브레이션 데이터만 변경되었으나 이번 버전부터는 자동차의 현재 모드와 상관없이 항상 전체 컬러 캘리브레이션 데이터가 변경됨
@@ -36,8 +54,8 @@ Modified : 2021.2.17
 
 # 2021.1.22
 
-- **E-Drive: 21.1.7**
-- E-Drive BleServer: 19.10.16
+- **Go Car: 21.1.7**
+- Go Car BleServer: 19.10.16
 
 
 > - 자동차의 앞 부분이 위를 향하도록 세운 상태에서 버튼을 누른 횟수에 따라 모드 변경
@@ -60,8 +78,8 @@ Modified : 2021.2.17
 
 # 2020.9.28
 
-- **E-Drive: 20.9.4**
-- E-Drive BleServer: 19.10.16
+- **Go Car: 20.9.4**
+- Go Car BleServer: 19.10.16
 
 
 > - 버튼 입력 방법 변경(20.9.3 이전 상태로 복원)
@@ -83,8 +101,8 @@ Modified : 2021.2.17
 
 # 2020.9.15
 
-- **E-Drive: 20.9.3**
-- E-Drive BleServer: 19.10.16
+- **Go Car: 20.9.3**
+- Go Car BleServer: 19.10.16
 
 
 > - 버튼 입력 방법 변경
@@ -110,8 +128,8 @@ Modified : 2021.2.17
 
 # 2020.7.8
 
-- **E-Drive: 20.7.1**
-- E-Drive BleServer: 19.10.16
+- **Go Car: 20.7.1**
+- Go Car BleServer: 19.10.16
 
 
 > - 데이터 전송 중인 동안 다른 데이터 전송을 차단
@@ -129,8 +147,8 @@ Modified : 2021.2.17
 
 # 2020.5.13
 
-- **E-Drive: 20.5.1**
-- E-Drive BleServer: 19.10.16
+- **Go Car: 20.5.1**
+- Go Car BleServer: 19.10.16
 
 > - 버튼을 3번 눌러 Black, White 색 캘리브레이션을 하던 기능을 제거
 > - 라인 코딩에서 U턴을 만나면 150도 이상 회전한 이후에 발견하는 선을 따라 이동하도록 수정
@@ -148,9 +166,9 @@ Modified : 2021.2.17
 
 # 2020.3.31
 
-- **E-Drive: 20.3.19**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 20.3.19**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 길을 잃어버렸을 때의 효과음 제거
 > - 핸드팔로잉, 라인코딩 조향 제어 수정
@@ -171,9 +189,9 @@ Modified : 2021.2.17
 
 # 2020.2.27
 
-- **E-Drive: 20.2.4**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 20.2.4**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - **펌웨어 업데이트 후 반드시 '컬러 캘리브레이션'을 하시기 바랍니다. 하지 않으면 카드를 정상적으로 읽지 못합니다**
 >   - 기존에는 컬러 캘리브레이션 원본 데이터를 저장하고 읽은 다음 색 판별 시 Margin을 적용하여 색을 판별하였으나, 현재는 캘리브레이션 후 Margin을 적용한 값을 저장하고 읽어서 색 판별 시 바로 사용합니다.
@@ -198,9 +216,9 @@ Modified : 2021.2.17
 
 # 2020.2.14
 
-- **E-Drive: 20.2.2**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 20.2.2**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 드론 설정 변경 프로그램 대응
 
@@ -215,9 +233,9 @@ Modified : 2021.2.17
 
 # 2020.2.13
 
-- **E-Drive: 20.2.1**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 20.2.1**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 라인코딩 동작 튜닝
 
@@ -232,9 +250,9 @@ Modified : 2021.2.17
 
 # 2020.1.2
 
-- **E-Drive: 20.1.2**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 20.1.2**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - **펌웨어 업데이트 후 '데이터 초기화'를 하는 경우, 반드시 '컬러 캘리브레이션'을 하시기 바랍니다. 하지 않으면 카드를 정상적으로 읽지 못합니다**
 > - 버튼 연속 입력 시 동작하는 특수 기능 수정
@@ -262,9 +280,9 @@ Modified : 2021.2.17
 
 # 2019.12.31
 
-- **E-Drive: 19.12.53**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.12.53**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 카드 색상을 읽는 시간을 변경
 > - 거리 센서 캘리브레이션 변경
@@ -300,9 +318,9 @@ Modified : 2021.2.17
 
 # 2019.12.24
 
-- **E-Drive: 19.12.41**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.12.41**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 이전 버전에서 현재 버전으로 업데이트 시 사용자 데이터 전체 초기화 됨(컬러 센서, 거리 센서, 모션 센서 캘리브레이션 데이터, 카드 코딩 등 전체 초기화)
 > - 자동 거리 센서 캘리브레이션 기능 추가
@@ -331,9 +349,9 @@ Modified : 2021.2.17
 
 # 2019.12.18
 
-- **E-Drive: 19.12.36**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.12.36**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 카드 코딩 용지와 라인 코딩 용지가 다른 경우 별도 컬러 캘리브레이션 지원
 >   - 카드 코딩 상태에서 컬러 캘리브레이션 시 앞, 뒤, 앞(라인코딩) 캘리브레이션 값이 갱신됨
@@ -362,9 +380,9 @@ Modified : 2021.2.17
 
 # 2019.12.13
 
-- **E-Drive: 19.12.27**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.12.27**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 라인코딩 업데이트
 >   - 12mm 스티커에 최적화
@@ -383,9 +401,9 @@ Modified : 2021.2.17
 
 # 2019.12.6
 
-- **E-Drive: 19.12.14**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.12.14**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 라인코딩 업데이트
 >   - 좌우 회전 속도 올림
@@ -409,9 +427,9 @@ Modified : 2021.2.17
 
 # 2019.12.5
 
-- **E-Drive: 19.12.8**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.12.8**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 라인코딩 업데이트
 >   - 좌우 회전, 유턴 동작 개선
@@ -431,9 +449,9 @@ Modified : 2021.2.17
 
 # 2019.11.27
 
-- **E-Drive: 19.11.43**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.43**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - Protocol::DataType::Motor 를 받으면 제어기에서 모터 제어 중단
 > - Protocol::DataType::Control 을 받으면 제어기에서 모터 제어 재개
@@ -452,9 +470,9 @@ Modified : 2021.2.17
 
 # 2019.11.21
 
-- **E-Drive: 19.11.38**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.38**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - ***이전 버전에서 펌웨어 업그레이드 할 수 없음. 부트로더 교체 필요***
 > - ***부트로더 교체 이후에는 이전 버전으로 다운그레이드 불가능***
@@ -474,9 +492,9 @@ Modified : 2021.2.17
 
 # 2019.11.19
 
-- **E-Drive: 19.11.33**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.33**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 색상 구분 경계 값 기준을 Front, Rear, Line 세 가지로 구분해서 사용하게 함
 > - 위의 변경으로 Drone7Card 프로그램이 이전 버전의 펌웨어와 호환되지 않음
@@ -496,9 +514,9 @@ Modified : 2021.2.17
 
 # 2019.11.18
 
-- **E-Drive: 19.11.29**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.29**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 버튼을 7회 연속으로 누르면 색상 구분 경계값을 측정하는 모드로 동작함
 >   - 버튼을 7회 연속으로 누르면 흰색 깜빡이는 상태가 됨
@@ -520,9 +538,9 @@ Modified : 2021.2.17
 
 # 2019.11.13
 
-- **E-Drive: 19.11.23**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.23**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 색 분류 기준을 카드 코딩과 라인 코딩에 다르게 적용되도록 분리함
 
@@ -538,9 +556,9 @@ Modified : 2021.2.17
 
 # 2019.11.8
 
-- **E-Drive: 19.11.21**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.21**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 핸드팔로잉 제어 수정
 > - 버튼을 3초 이상 눌러 동작 실행 기능 제거(버튼 두 번 연속 누르기만 사용함, 피아노 모드에서는 멜로디 실행 카드 사용)
@@ -561,9 +579,9 @@ Modified : 2021.2.17
 
 # 2019.11.7
 
-- **E-Drive: 19.11.19**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.19**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 10초 이상 버튼을 눌러서 센서를 초기화 할 때의 LED 이벤트 수정
 
@@ -579,9 +597,9 @@ Modified : 2021.2.17
 
 # 2019.11.6
 
-- **E-Drive: 19.11.17**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.17**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 모션 코딩, 라인 코딩 시작이 안되는 문제 수정
 > - 블루투스 연결 이벤트를 받으면 드라이브 모드로 전환
@@ -598,9 +616,9 @@ Modified : 2021.2.17
 
 # 2019.11.5
 
-- **E-Drive: 19.11.15**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.11.15**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - ***이전 버전에서 펌웨어 업그레이드 할 수 없음. 부트로더 교체 필요***
 > - ***부트로더 교체 이후에는 이전 버전으로 다운그레이드 불가능***
@@ -634,9 +652,9 @@ Modified : 2021.2.17
 
 # 2019.10.23
 
-- **E-Drive: 19.10.13**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.13**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 카드 코딩에서 Tail LED(브레이크 등) 제어 기능을 제거
 > - 브레이크 등은 모터 동작 여부에 따라 제어하도록 변경
@@ -656,9 +674,9 @@ Modified : 2021.2.17
 
 # 2019.10.21
 
-- **E-Drive: 19.10.9**
-- E-Drive BleServer: 19.10.16
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.9**
+- Go Car BleServer: 19.10.16
+- Go Car Tester: 19.9.1
 
 > - 핸드 팔로잉 시 후진 속도를 낮추고 최대 속도를 제한
 
@@ -673,9 +691,9 @@ Modified : 2021.2.17
 
 # 2019.10.18
 
-- **E-Drive: 19.10.7**
-- **E-Drive BleServer: 19.10.16**
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.7**
+- **Go Car BleServer: 19.10.16**
+- Go Car Tester: 19.9.1
 
 > - 버튼 짧게 누름으로 인식하는 시간을 300ms 이내에서 2초 이내로 변경
 > - 버튼 길게 누름으로 인식하는 시간을 1.2초 이상에서 3초 이상으로 변경
@@ -698,9 +716,9 @@ Modified : 2021.2.17
 
 # 2019.10.17
 
-- **E-Drive: 19.10.6**
-- E-Drive BleServer: 19.10.14
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.6**
+- Go Car BleServer: 19.10.14
+- Go Car Tester: 19.9.1
 
 > - 모드 전환시 멜로디 알림
 > - 핸드팔로잉 기능 추가
@@ -720,9 +738,9 @@ Modified : 2021.2.17
 
 # 2019.10.16
 
-- **E-Drive: 19.10.4**
-- E-Drive BleServer: 19.10.14
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.4**
+- Go Car BleServer: 19.10.14
+- Go Car Tester: 19.9.1
 
 > - 모션 코딩 기능 추가
 >   - 모션 코딩 카드를 읽으면 모션 코딩 모드로 전환
@@ -743,9 +761,9 @@ Modified : 2021.2.17
 
 # 2019.10.15
 
-- **E-Drive: 19.10.3**
-- E-Drive BleServer: 19.10.14
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.3**
+- Go Car BleServer: 19.10.14
+- Go Car Tester: 19.9.1
 
 > - 카드 배치 순서 변경
 
@@ -760,11 +778,11 @@ Modified : 2021.2.17
 
 # 2019.10.11
 
-- **E-Drive: 19.10.2**
-- E-Drive BleServer: 19.10.14
-- E-Drive Tester: 19.9.1
+- **Go Car: 19.10.2**
+- Go Car BleServer: 19.10.14
+- Go Car Tester: 19.9.1
 
-> - E-Drive의 BLE 통신 보드 펌웨어 업데이트 기능 추가
+> - Go Car의 BLE 통신 보드 펌웨어 업데이트 기능 추가
 > - Drone7Card.exe의 UI 개선
 
 
@@ -778,7 +796,7 @@ Modified : 2021.2.17
 
 # 2019.8.28
 
-- **E-Drive: 19.8.3**
+- **Go Car: 19.8.3**
 
 > - 카드 코딩과 관련된 DataType의 위치 조정, 관련 송수신 클래스 조정
 
@@ -793,7 +811,7 @@ Modified : 2021.2.17
 
 # 2019.8.23
 
-- **E-Drive: 19.8.2**
+- **Go Car: 19.8.2**
 
 > - ColorClassify 정의 추가 및 Drone7Card 프로그램에서 카드 분류 기준 값 변경가능하도록 수정함
 > - 라인 코딩시에도 CARDREADER에서 분류한 카드 값을 그대로 사용
@@ -809,7 +827,7 @@ Modified : 2021.2.17
 
 # 2019.8.8
 
-- **E-Drive: 19.8.1**
+- **Go Car: 19.8.1**
 
 > - 배터리 알람 기준을 30%로 변경
 > - RawLineTracer에서 라인트레이서가 인식한 바닥 색상 값이 업데이트 안되는 문제 수정
@@ -825,7 +843,7 @@ Modified : 2021.2.17
 
 # 2019.7.26
 
-- **E-Drive: 19.7.18**
+- **Go Car: 19.7.18**
 
 > - State에서 modeSystem을 modeDrone으로 변경
 > - 제어기 수정 사항 반영
@@ -842,7 +860,7 @@ Modified : 2021.2.17
 
 # 2019.7.25 - 2
 
-- **E-Drive: 19.7.17**
+- **Go Car: 19.7.17**
 
 > - Instant run에서 비상등을 브레이크 등에서 좌우 깜빡이를 동시에 작동시키는 것으로 변경(깜빡임 계속 유지)
 > - Instant run에서 TailLight를 끌 때 좌우 깜빡이(비상등)도 끄게 함
@@ -859,7 +877,7 @@ Modified : 2021.2.17
 
 # 2019.7.25
 
-- **E-Drive: 19.7.16**
+- **Go Car: 19.7.16**
 
 > - Low Battery 알림 추가
 > - 카드 코딩에서 TailLight를 끌 때 좌우 깜빡이(비상등)도 끄게 함
@@ -877,7 +895,7 @@ Modified : 2021.2.17
 
 # 2019.7.24
 
-- **E-Drive: 19.7.15**
+- **Go Car: 19.7.15**
 
 > - 무한루프에서 버저 사용 시 1회 재생 후 버저가 완전 중단되는 문제 수정
 > - 버튼을 길게 눌러 카드 코딩 실행을 할 때 실행 준비가 되면 Buzzer에서 소리가 나게 함
@@ -895,7 +913,7 @@ Modified : 2021.2.17
 
 # 2019.7.23
 
-- **E-Drive: 19.7.14**
+- **Go Car: 19.7.14**
 
 > - 버전 구성을 (Major, Minor, Build)에서 (Year, Month, Build)로 변경함. 제품 출시 전까지 적용해보고 문제가 없을 경우 이후 출시하는 다른 제품에도 적용할 예정. 문제가 있으면 이전 구성으로 복원할 계획임
 
