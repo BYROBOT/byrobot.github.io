@@ -65,7 +65,7 @@ GO CAR를 부트로더 모드로 연결하면 자동으로 펌웨어를 업데�
 (3) 자동차 바닥 면의 버튼(아래 그림의 빨간색 박스)을 누른 채로 스위치(아래 그림의 노란색 박스)를 켭니다.
 
 <div align="center">
-    <img src="./images/2_1_3_e_drive_drone_bottom_bootloader_button.jpg" alt="drone bottom">
+    <img src="../images/bootloader_button_drone.jpg" alt="bootloader button">
     <p>자동차 부트로더 진입 버튼과 전원 스위치</p>
 </div>
 <br>
