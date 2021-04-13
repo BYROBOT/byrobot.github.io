@@ -1,4 +1,4 @@
-**[E-DRIVE](/documents/kr/products/e_drive/) firmware Update**
+**[GO CAR](/documents/kr/products/e_drone/) firmware Update**
 
 Modified : 2021.4.13
 

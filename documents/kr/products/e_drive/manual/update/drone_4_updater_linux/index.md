@@ -1,6 +1,6 @@
 **[GO CAR](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2021.4.1
+Modified : 2021.4.13
 
 ---
 
@@ -95,7 +95,7 @@ chmod 755 drone_4_updater
 <br>
 
 
-# 2. 드론 업데이트
+# 2. 자동차 업데이트
 
 (1) "drone_4_updater"를 실행합니다.
 
@@ -105,29 +105,29 @@ chmod 755 drone_4_updater
 </div>
 <br>
 
-(2) 드론에 배터리가 연결되어 있다면 제거합니다.
+(2) 자동차의 전원이 켜져 있다면 전원을 꺼주세요.
 
 <br>
 
-(3) 드론 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(3) 자동차 바닥 면의 버튼(아래 그림의 빨간색 박스)을 누른 채로 스위치(아래 그림의 노란색 박스)를 켭니다.
 
 <div align="center">
-    <img src="../images/bootloader_button_drone.png" alt="drone">
-    <p>드론 부트로더 진입 버튼</p>
+    <img src="../images/bootloader_button_drone.jpg" alt="bootloader button">
+    <p>자동차 부트로더 진입 버튼과 전원 스위치</p>
 </div>
 <br>
 
-(4) 드론의 전원이 켜지고 자동으로 업데이트를 진행합니다.
+(4) 자동차의 전원이 켜지고 자동으로 업데이트를 진행합니다.
 
 <div align="center">
     <img src="./images/2_1_4_1_drone_4_updater.png" alt="drone_4_updater.exe">
-    <p>드론 펌웨어 업데이트 진행 화면</p>
+    <p>자동차 펌웨어 업데이트 진행 화면</p>
 </div>
 <br>
 
 <div align="center">
     <img src="./images/2_1_4_2_drone_4_updater.png" alt="drone_4_updater.exe">
-    <p>드론 펌웨어 업데이트 완료 화면</p>
+    <p>자동차 펌웨어 업데이트 완료 화면</p>
 </div>
 <br>
 

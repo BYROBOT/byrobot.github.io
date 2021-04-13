@@ -45,17 +45,17 @@ Modified : 2019.3.15
 
 
 
-## 3.1. 드론 업그레이드
+## 3.1. 자동차 업그레이드
 
-(1) 드론에 배터리가 연결되어 있다면 제거합니다.
+(1) 자동차에 배터리가 연결되어 있다면 제거합니다.
 
 <br>
 
-(2) 드론 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(2) 자동차 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
     <img src="./images/1_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
-    <p>드론 부트로더 진입 버튼</p>
+    <p>자동차 부트로더 진입 버튼</p>
 </div>
 
 <br>
@@ -76,7 +76,7 @@ Modified : 2019.3.15
 
 <div align="center">
     <img src="./images/2_drone_upgrade_complete.png" alt="drone upgrade complete">
-    <p>드론 펌웨어 업데이트 완료 화면</p>
+    <p>자동차 펌웨어 업데이트 완료 화면</p>
 </div>
 <br>
 
@@ -123,5 +123,5 @@ Modified : 2019.3.15
 <br>
 
 
-여기까지 E-Drive 드론과 조종기의 펌웨어 업그레이드를 완료하였습니다.
+여기까지 GO CAR 펌웨어 업데이트를 완료하였습니다.
 
