@@ -50,10 +50,10 @@ Modified : 2020.4.7
 
 <br>
 
-(2) 드론 바닥 면의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(2) 드론 바닥 면의 버튼(아래 그림에서 빨간색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/1_e_drone_drone_bottom_bootloader_button.jpg" alt="drone bottom">
+    <img src="../images/bootloader_button_drone.png" alt="drone">
     <p>드론 부트로더 진입 버튼</p>
 </div>
 
@@ -89,10 +89,10 @@ Modified : 2020.4.7
 
 <br>
 
-(2) 조종기 왼쪽 위의 버튼(아래 그림에서 노란색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
+(2) 조종기 왼쪽 위의 버튼(아래 그림에서 빨간색 원으로 표시)을 누른 채로 USB 커넥터를 연결합니다.
 
 <div align="center">
-    <img src="./images/3_e_drone_controller_top_bootloader_button.jpg" alt="controller top">
+    <img src="../images/bootloader_button_controller.png" alt="controller">
     <p>조종기 부트로더 진입 버튼</p>
 </div>
 <br>
@@ -122,5 +122,5 @@ Modified : 2020.4.7
 <br>
 
 
-여기까지 E-Drone 드론과 조종기의 펌웨어 업그레이드를 완료하였습니다.
+여기까지 E-Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
 

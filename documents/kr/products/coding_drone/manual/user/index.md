@@ -1,6 +1,9 @@
 <style>
 
     td.spec       { background: #EEFAFA !important; }
+    td.error      { background: #FAF5EE !important; }
+    td.error_odd  { background: #FAEEEE !important; }
+    td.error_even { background: #EAFAEF !important; }
     td.coord      { background: #FFF9FA !important; }
     td.setup_odd  { background: #FFFEF5 !important; }
     td.setup_even { background: #F5FAFF !important; }
@@ -30,7 +33,7 @@
 
 **[CODING DRONE](/documents/kr/products/e_drone/) User Manual**
 
-Modified : 2020.4.28
+Modified : 2021.4.13
 
 ---
 
@@ -1508,6 +1511,176 @@ Coding Drone의 조종기는 크게 ***조종***과 ***설정*** 두 화면으�
 
 <br>
 
+
+<br>
+
+
+## 2.6. 오류 메세지
+
+Coding Drone의 오류 메세지는 여러 오류가 동시에 발생하는 경우 우선 순위가 가장 높은 오류 하나만 표시합니다.
+
+<br>
+
+
+<div align="center">
+    <table>
+        <tr>
+            <td class="error"><div align="center"><b>분류</b></div></td>
+            <td class="error"><div align="center"><b>우선 순위</b></div></td>
+            <td class="error"><div align="center"><b>오류 메세지</b></div></td>
+            <td class="error"><div align="center"><b>설명</b></div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_even"><div align="center">BATTERY</div></td>
+            <td class="error_even"><div align="center">1</div></td>
+            <td class="error_even"><div align="center">CONTROLLER<br>LOW BATTERY</div></td>
+            <td class="error_even"><div align="center">조종기 배터리 잔량 낮음</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_odd"><div align="center">RF</div></td>
+            <td class="error_odd"><div align="center">2</div></td>
+            <td class="error_odd"><div align="center">DISCONNECTED</div></td>
+            <td class="error_odd"><div align="center">드론과의 RF연결이 끊어짐</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_even" rowspan="3"><div align="center">MOTION</div></td>
+            <td class="error_even"><div align="center">3</div></td>
+            <td class="error_even"><div align="center">[MOTION]<br>NO ANSWER</div></td>
+            <td class="error_even"><div align="center">Motion 센서 응답 없음</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">4</div></td>
+            <td class="white"><div align="center">[MOTION]<br>WRONG VALUE</div></td>
+            <td class="white"><div align="center">Motion 센서 값 오류</div></td>
+        </tr>
+        <tr>
+            <td class="error_even"><div align="center">5</div></td>
+            <td class="error_even"><div align="center">[MOTION]<br>CALIBRATING<br>PLACE ON A FLAT SURFACE</div></td>
+            <td class="error_even"><div align="center">Motion 센서 캘리브레이션 중</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_odd" rowspan="2"><div align="center">PRESSURE</div></td>
+            <td class="error_odd"><div align="center">6</div></td>
+            <td class="error_odd"><div align="center">[PRESSURE]<br>NO ANSWER</div></td>
+            <td class="error_odd"><div align="center">압력 센서 응답 없음</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">7</div></td>
+            <td class="white"><div align="center">[PRESSURE]<br>WRONG VALUE</div></td>
+            <td class="white"><div align="center">압력 센서 값 오류</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_even" rowspan="2"><div align="center">RANGE GROUND</div></td>
+            <td class="error_even"><div align="center">8</div></td>
+            <td class="error_even"><div align="center">[RANGE GROUND]<br>NO ANSWER</div></td>
+            <td class="error_even"><div align="center">거리 센서 응답 없음</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">9</div></td>
+            <td class="white"><div align="center">[RANGE GROUND]<br>WRONG VALUE</div></td>
+            <td class="white"><div align="center">거리 센서 값 오류</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_odd" rowspan="3"><div align="center">FLOW</div></td>
+            <td class="error_odd"><div align="center">10</div></td>
+            <td class="error_odd"><div align="center">[FLOW]<br>NO ANSWER</div></td>
+            <td class="error_odd"><div align="center">Flow 센서 응답 없음</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">11</div></td>
+            <td class="white"><div align="center">[FLOW]<br>WRONG VALUE</div></td>
+            <td class="white"><div align="center">Flow 센서 값 오류</div></td>
+        </tr>
+        <tr>
+            <td class="error_odd"><div align="center">12</div></td>
+            <td class="error_odd"><div align="center">[FLOW]<br>CANNOT RECOGNIZE<br>GROUND IMAGE</div></td>
+            <td class="error_odd"><div align="center">Flow 센서 바닥 이미지를 인식할 수 없음</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_even"><div align="center">MOTOR</div></td>
+            <td class="error_even"><div align="center">13</div></td>
+            <td class="error_even"><div align="center">CHECK<br>PROPELLER<br>AND MOTOR</div></td>
+            <td class="error_even"><div align="center">프로펠러나 모터에 문제가 있음</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_odd"><div align="center">PROPELLER</div></td>
+            <td class="error_odd"><div align="center">14</div></td>
+            <td class="error_odd"><div align="center">REPLACE<br>VIBRATION<br>PROPELLER</div></td>
+            <td class="error_odd"><div align="center">프로펠러를 교체하세요<br>(프로펠러 진동이 심함)</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_even"><div align="center">BATTERY</div></td>
+            <td class="error_even"><div align="center">15</div></td>
+            <td class="error_even"><div align="center">DRONE<br>LOW BATTERY</div></td>
+            <td class="error_even"><div align="center">드론 배터리 잔량 낮음</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_odd" rowspan="2"><div align="center">FLIP</div></td>
+            <td class="error_odd"><div align="center">16</div></td>
+            <td class="error_odd"><div align="center">CANNOT FLIP<br>BATTERY IS UNDER 50%</div></td>
+            <td class="error_odd"><div align="center">배터리 잔량이 낮아서 플립 불가능</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">17</div></td>
+            <td class="white"><div align="center">CANNOT FLIP<br>TOO HEAVY</div></td>
+            <td class="white"><div align="center">기체가 무거워 플립 불가능</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+        <tr>
+            <td class="error_even" rowspan="2"><div align="center">REGISTRATION</div></td>
+            <td class="error_even"><div align="center">18</div></td>
+            <td class="error_even"><div align="center">DRONE IS<br>NOT REGISTERED</div></td>
+            <td class="error_even"><div align="center">드론이 등록되지 않음</div></td>
+        </tr>
+        <tr>
+            <td class="white"><div align="center">19</div></td>
+            <td class="white"><div align="center">CONTROLLER IS<br>NOT REGISTERED</div></td>
+            <td class="white"><div align="center">조종기가 등록되지 않음</div></td>
+        </tr>
+        <tr>
+            <td class="white" colspan="4"></td>
+        </tr>
+    </table>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
 
 
 여기까지 Coding Drone 조종기와 드론에 대한 간략한 설명이었습니다.
