@@ -1,4 +1,4 @@
-**[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
+**[CODING DRONE](/documents/kr/products/coding_drone/) firmware Update**
 
 Modified : 2020.4.8
 
@@ -122,5 +122,5 @@ Modified : 2020.4.8
 <br>
 
 
-여기까지 E-Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
+여기까지 Coding Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.
 

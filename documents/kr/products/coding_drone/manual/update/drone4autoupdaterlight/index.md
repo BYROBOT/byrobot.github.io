@@ -1,4 +1,4 @@
-**[CODING DRONE](/documents/kr/products/e_drone/) firmware Update**
+**[CODING DRONE](/documents/kr/products/coding_drone/) firmware Update**
 
 Modified : 2021.4.13
 
@@ -13,7 +13,7 @@ Modified : 2021.4.13
 - [drone_4_updater_mac](../drone_4_updater_mac/)
 - [drone_4_updater_linux](../drone_4_updater_linux/)
 - [drone_4_updater_raspberry_pi](../drone_4_updater_raspberry_pi/)
-- [Python Library](../python/)
+<!--- [Python Library](../python/)-->
 
 ---
 
