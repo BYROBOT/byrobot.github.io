@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Protocol**
 
-Modified : 2021.1.4
+Modified : 2021.4.26
 
 ---
 
@@ -524,7 +524,6 @@ class Command(ISerializable):
 | option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
 |                | [FlightEvent](03_system.md#FlightEvent)              | 1 Byte   | -      |            |
 |                | [Headless](03_system.md#Headless)                    | 1 Byte   | -      |            |
-|                | [TrimIncDec](03_system.md#TrimIncDec)                | 1 Byte   | -      |            |
 |                | UInt8                                                | 1 Byte   | -      |            |
 
 

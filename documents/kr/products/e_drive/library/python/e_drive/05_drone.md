@@ -128,7 +128,6 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | [sendCommandLightEventColors](#sendCommandLightEventColors)       | 명령 전송 + LED 이벤트(팔레트)              |
 | [sendModeControlFlight](#sendModeControlFlight)                   | 비행 제어 모드 변경                         |
 | [sendHeadless](#sendHeadless)                                     | 헤드리스 설정                               |
-| [sendTrimIncDec](#sendTrimIncDec)                                 | Trim 한 단계씩 변경                         |
 | [sendTrim](#sendTrim)                                             | Trim 값을 지정하여 변경                     |
 | [sendWeight](#sendWeight)                                         | Weight 설정                                 |
 | [sendLostConnection](#sendLostConnection)                         | 연결이 끊긴 후 반응 시간 설정               |
@@ -589,25 +588,6 @@ def sendHeadless(self, headless):
 | headless                  | [Headless](02_system.md#Headless)                 | Headless 설정               |
 
 - e.g. [드론 Headless 설정 변경 후 확인](examples_07_setup.md#Headless)
-
-
-<br>
-<br>
-
-
-## <a name="sendTrimIncDec">sendTrimIncDec</a>
-
-Trim 설정
-
-```py
-def sendTrimIncDec(self, trimIncDec):
-```
-
-| 변수 이름                 | 형식 또는 범위                                    | 설명                        |
-|:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| trimIncDec                | [TrimIncDec](03_protocol.md#TrimIncDec)           | 트림 설정                   |
-
-- e.g. [Trim 변경 테스트](examples_07_setup.md#TrimIncDec)
 
 
 <br>

@@ -524,7 +524,6 @@ class Command(ISerializable):
 | option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
 |                | [FlightEvent](02_system.md#FlightEvent)              | 1 Byte   | -      |            |
 |                | [Headless](02_system.md#Headless)                    | 1 Byte   | -      |            |
-|                | [TrimIncDec](02_system.md#TrimIncDec)                | 1 Byte   | -      |            |
 |                | UInt8                                                | 1 Byte   | -      |            |
 
 

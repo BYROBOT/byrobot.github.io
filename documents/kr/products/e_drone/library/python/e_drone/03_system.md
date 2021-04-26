@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **System**
 
-Modified : 2021.1.5
+Modified : 2021.4.26
 
 ---
 
@@ -56,13 +56,6 @@ class ModelNumber(Enum):
     Drone_4_Controller_P3   = 0x00042003    # Drone_4_Controller_P3 (HW2000B)
     
     Drone_4_Link_P0         = 0x00043000    # Drone_4_Link_P0
-    
-    Drone_7_Drone_P1        = 0x00071001    # Drone_7_Drone_P1 (obsolete)
-    Drone_7_Drone_P2        = 0x00071002    # Drone_7_Drone_P2 / Coding Car
-
-    Drone_7_BleClient_P0    = 0x00073200    # Drone_7_BleClient_P0 / Coding Car Link
-
-    Drone_7_BleServer_P2    = 0x00073302    # Drone_7_BleServer_P2 / Coding Car Ble Module
     
     Drone_8_Drone_P0        = 0x00081000    # Drone_8_Drone_P0 (obsolete)
     Drone_8_Drone_P1        = 0x00081001    # Drone_8_Drone_P1 / Coding Drone
@@ -153,17 +146,18 @@ class ModeSystem(Enum):
     
     None_               = 0x00
 
-    Boot                = 0x01
-    Start               = 0x02
-    Running             = 0x03
-    ReadyToReset        = 0x04
-    Error               = 0x05
+    Boot                = 0x10
+    Start               = 0x11
+    Running             = 0x12
+    ReadyToReset        = 0x13
 
-    EndOfType           = 0x06
+    Error               = 0xA0
+
+    EndOfType           = 0xA1
 ```
 
 
-<br>
+<br> 
 <br>
 
 
@@ -419,38 +413,7 @@ class Headless(Enum):
     Headless            = 0x01      # Headless
     Normal              = 0x02      # Normal
 
-    EndOfType           = 0x04
-```
-
-
-<br>
-<br>
-
-
-<a name="TrimIncDec"></a>
-## TrimIncDec
-
-트림
-
-트림 설정 값을 한 단계씩 올리거나 낮출 때 사용합니다.
-
-```py
-class TrimIncDec(Enum):
-    
-    None_               = 0x00      # 없음
-
-    RollIncrease        = 0x01      # Roll 증가
-    RollDecrease        = 0x02      # Roll 감소
-    PitchIncrease       = 0x03      # Pitch 증가
-    PitchDecrease       = 0x04      # Pitch 감소
-    YawIncrease         = 0x05      # Yaw 증가
-    YawDecrease         = 0x06      # Yaw 감소
-    ThrottleIncrease    = 0x07      # Throttle 증가
-    ThrottleDecrease    = 0x08      # Throttle 감소
-
-    Reset               = 0x09      # 전체 트림 리셋
-
-    EndOfType           = 0x0A
+    EndOfType           = 0x03
 ```
 
 

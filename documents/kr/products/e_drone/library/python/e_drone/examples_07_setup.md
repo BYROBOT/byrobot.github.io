@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2021.1.4
+Modified : 2021.4.26
 
 ---
 
@@ -111,84 +111,6 @@ if __name__ == '__main__':
 
 - [State](04_protocol.md#State)
 - [sendHeadless()](05_drone.md#sendHeadless)
-- [sendRequest()](05_drone.md#sendRequest)
-
-
-<br>
-<br>
-
-
-<a name="TrimIncDec"></a>
-## TrimIncDec 변경 테스트
-
-* 예제가 정상적으로 동작하지 않습니다. 추후 수정하겠습니다.
-
-```py
-from time import sleep
-
-from e_drone.drone import *
-from e_drone.protocol import *
-
-
-def eventTrim(trim):
-    print("{0}, {1}, {2}, {3}".format(trim.roll, trim.pitch, trim.yaw, trim.throttle))
-
-
-if __name__ == '__main__':
-
-    drone = Drone()
-    drone.open()
-
-
-    # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Trim, eventTrim)
-
-
-    # 트림 설정 변경
-    print("Roll Increase")
-    drone.sendTrimIncDec(TrimIncDec.RollIncrease)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.Trim)
-    sleep(0.2)
-
-
-    # 트림 설정 변경
-    print("Pitch Increase")
-    drone.sendTrimIncDec(TrimIncDec.PitchIncrease)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.Trim)
-    sleep(0.2)
-
-
-    # 트림 설정 변경
-    print("Pitch Decrease")
-    drone.sendTrimIncDec(TrimIncDec.PitchDecrease)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.Trim)
-    sleep(0.2)
-
-
-    # 트림 설정 변경
-    print("Trim Reset")
-    drone.sendTrimIncDec(TrimIncDec.Reset)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.Trim)
-    sleep(0.2)
-
-
-    drone.close()
-```
-
-- [Trim](03_system.md#Trim)
-- [sendTrim()](05_drone.md#sendTrim)
 - [sendRequest()](05_drone.md#sendRequest)
 
 

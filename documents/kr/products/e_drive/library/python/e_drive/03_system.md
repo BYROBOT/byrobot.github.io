@@ -404,37 +404,6 @@ class Headless(Enum):
 <br>
 
 
-<a name="TrimIncDec"></a>
-## TrimIncDec
-
-트림
-
-트림 설정 값을 한 단계씩 올리거나 낮출 때 사용합니다.
-
-```py
-class TrimIncDec(Enum):
-    
-    None_               = 0x00      # 없음
-
-    RollIncrease        = 0x01      # Roll 증가
-    RollDecrease        = 0x02      # Roll 감소
-    PitchIncrease       = 0x03      # Pitch 증가
-    PitchDecrease       = 0x04      # Pitch 감소
-    YawIncrease         = 0x05      # Yaw 증가
-    YawDecrease         = 0x06      # Yaw 감소
-    ThrottleIncrease    = 0x07      # Throttle 증가
-    ThrottleDecrease    = 0x08      # Throttle 감소
-
-    Reset               = 0x09      # 전체 트림 리셋
-
-    EndOfType           = 0x0A
-```
-
-
-<br>
-<br>
-
-
 <a name="ModeMovement"></a>
 ## ModeMovement
 
