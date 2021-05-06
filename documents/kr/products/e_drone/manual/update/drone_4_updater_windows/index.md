@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2021.4.13
+Modified : 2021.5.6
 
 ---
 
@@ -13,7 +13,11 @@ Modified : 2021.4.13
 - [drone_4_updater_mac](../drone_4_updater_mac/)
 - [drone_4_updater_linux](../drone_4_updater_linux/)
 - [drone_4_updater_raspberry_pi](../drone_4_updater_raspberry_pi/)
-- [Python Library](../python/)
+- [drone_4_updater_cli_windows](../drone_4_updater_cli_windows/)
+- [drone_4_updater_cli_mac](../drone_4_updater_cli_mac/)
+- [drone_4_updater_cli_linux](../drone_4_updater_cli_linux/)
+- [drone_4_updater_cli_raspberry_pi](../drone_4_updater_cli_raspberry_pi/)
+<!-- - [Python Library](../python/) -->
 
 ---
 
