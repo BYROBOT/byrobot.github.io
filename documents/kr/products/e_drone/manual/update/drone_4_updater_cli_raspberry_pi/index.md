@@ -101,7 +101,7 @@ chmod 755 drone_4_updater_cli
 
 # 2. 드론 업데이트
 
-(1) "drone_4_updater"를 실행합니다.
+(1) "drone_4_updater_cli"를 실행합니다.
 
 <div align="center">
     <img src="./images/2_1_1_2_drone_4_updater_cli.png" alt="drone_4_updater_cli">
