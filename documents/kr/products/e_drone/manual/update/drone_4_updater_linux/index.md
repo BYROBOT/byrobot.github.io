@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2021.5.6
+Modified : 2021.5.7
 
 ---
 
@@ -24,7 +24,11 @@ Modified : 2021.5.6
 * Kramdown table of contents
 {:toc .toc}
 
+
 <br>
+<br>
+<br>
+
 
 # 1. 펌웨어 다운로드 및 업데이트 프로그램 실행
 
@@ -93,9 +97,9 @@ chmod 755 drone_4_updater
 ./drone_4_updater
 ```
 
+
 <br>
-
-
+<br>
 <br>
 
 
@@ -133,9 +137,10 @@ chmod 755 drone_4_updater
     <img src="./images/2_1_4_2_drone_4_updater.png" alt="drone_4_updater.exe">
     <p>드론 펌웨어 업데이트 완료 화면</p>
 </div>
+
+
 <br>
-
-
+<br>
 <br>
 
 
@@ -177,6 +182,9 @@ chmod 755 drone_4_updater
 
 
 <br>
+<br>
+<br>
+
 
 
 여기까지 E-Drone 드론과 조종기의 펌웨어 업데이트를 완료하였습니다.

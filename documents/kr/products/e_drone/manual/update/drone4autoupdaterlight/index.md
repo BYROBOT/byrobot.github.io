@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2021.5.6
+Modified : 2021.5.7
 
 ---
 
@@ -24,7 +24,11 @@ Modified : 2021.5.6
 * Kramdown table of contents
 {:toc .toc}
 
+
 <br>
+<br>
+<br>
+
 
 # 1. 펌웨어 다운로드
 
@@ -34,9 +38,10 @@ Modified : 2021.5.6
     <img src="./images/1_download.png" alt="Download">
     <p>펌웨어 업데이트 프로그램 다운로드 링크 [빨간색 상자 안의 'Windows (.NET)']</p>
 </div>
+
+
 <br>
-
-
+<br>
 <br>
 
 
@@ -86,9 +91,10 @@ Modified : 2021.5.6
     <img src="./images/2_1_4_2_drone4autoupdaterlight.png" alt="Drone4AutoUpdaterLight.exe">
     <p>드론 펌웨어 업데이트 완료 화면</p>
 </div>
+
+
 <br>
-
-
+<br>
 <br>
 
 
@@ -132,9 +138,10 @@ Modified : 2021.5.6
     <img src="./images/2_2_4_2_drone4autoupdaterlight.png" alt="Drone4AutoUpdaterLight.exe">
     <p>조종기 펌웨어 업데이트 완료 화면</p>
 </div>
+
+
 <br>
-
-
+<br>
 <br>
 
 
