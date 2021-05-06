@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) firmware Update**
 
-Modified : 2021.5.6
+Modified : 2021.5.7
 
 ---
 
@@ -14,9 +14,9 @@ Modified : 2021.5.6
 - [drone_4_updater_linux](../drone_4_updater_linux/)
 - [drone_4_updater_raspberry_pi](../drone_4_updater_raspberry_pi/)
 - [drone_4_updater_cli_windows](../drone_4_updater_cli_windows/)
-- [drone_4_updater_cli_mac](../drone_4_updater_cli_mac/)
+- **drone_4_updater_cli_mac**
 - [drone_4_updater_cli_linux](../drone_4_updater_cli_linux/)
-- **drone_4_updater_cli_raspberry_pi**
+- [drone_4_updater_cli_raspberry_pi](../drone_4_updater_cli_raspberry_pi/)
 <!-- - [Python Library](../python/) -->
 
 ---
@@ -25,6 +25,8 @@ Modified : 2021.5.6
 {:toc .toc}
 
 <br>
+<br>
+<br>
 
 # 1. 펌웨어 다운로드 및 업데이트 프로그램 실행
 
@@ -32,8 +34,8 @@ Modified : 2021.5.6
 [E-DRONE](/documents/kr/products/e_drone/) 페이지에서 최신 E-Drone 펌웨어를 내려받습니다.
 
 <div align="center">
-    <img src="./images/1_download.png" alt="Download">
-    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 상자 안의 'Raspberry PI')</p>
+    <img src="./images/1_1_download.png" alt="Download">
+    <p>펌웨어 업데이트 프로그램 다운로드 링크(빨간색 상자 안의 'macOS')</p>
 </div>
 <br>
 
@@ -51,7 +53,7 @@ Modified : 2021.5.6
 
 <br>
 
-### 1.2.2. Download 폴더로 이동합니다.
+### 1.2.2. 다운로드 폴더로 이동합니다.
 
 ```
 cd Downloads/
@@ -64,7 +66,7 @@ cd Downloads/
 파일명을 입력하실 때 처음 몇 글자를 입력한 후 'Tab' 키를 누르면 자동으로 남은 이름을 채워줍니다.
 
 ```
-unzip drone_4_updater_raspberry_pi_linux_arm_20210506.zip
+unzip drone_4_updater_mac_20210507.zip
 ```
 
 <br>
@@ -74,7 +76,7 @@ unzip drone_4_updater_raspberry_pi_linux_arm_20210506.zip
 폴더명을 입력할 때에도 처음 몇 글자를 입력한 후 'Tab' 키를 누르면 자동으로 남은 이름을 채워줍니다.
 
 ```
-cd drone_4_updater_raspberry_pi_linux_arm_20210506
+cd drone_4_updater_mac
 ```
 
 <br>
@@ -182,6 +184,8 @@ chmod 755 drone_4_updater_cli
 (5) 펌웨어 업데이트 완료 후 아무키나 누르면 프로그램을 종료합니다. 이어서 펌웨어 업데이트를 진행하시려면 다음 장치를 부트로더 모드로 연결하시면 됩니다.
 
 
+<br>
+<br>
 <br>
 
 
