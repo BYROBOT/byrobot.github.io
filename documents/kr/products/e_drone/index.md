@@ -94,7 +94,7 @@
             <td colspan="2" class="white"><div align="center">
                 <a href="https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1VKdxKr7CEeJLdbyGWj1_I7TUxCmHYzPw/view?usp=sharing" target="_blank">Windows</a><br>-->
-                <a href="https://drive.google.com/file/d/11hyfeE7_N1A_V4x_7n6onNEARlWecbjT/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/1ve9Oj0JX4Y574pYhn2kAmNuKIQF_Ec54/view?usp=sharing" target="_blank">macOS</a><br>
                 <a href="https://drive.google.com/file/d/1V9ri2SqhMQqgitjF2mOLv5kGbxMBm-Ae/view?usp=sharing" target="_blank">Linux</a><br>
                 <a href="https://drive.google.com/file/d/1F7Yrjw3oOl78w4A2jPoTm9CEzwg534qz/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
