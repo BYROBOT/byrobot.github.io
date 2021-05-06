@@ -93,10 +93,10 @@
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
                 <a href="https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
-                <!--<a href="https://drive.google.com/file/d/18dFRxM9wczPSAP06FOdhQJwf86b0Eaa_/view?usp=sharing" target="_blank">Windows</a><br>-->
+                <!--<a href="https://drive.google.com/file/d/1VKdxKr7CEeJLdbyGWj1_I7TUxCmHYzPw/view?usp=sharing" target="_blank">Windows</a><br>-->
                 <a href="https://drive.google.com/file/d/11hyfeE7_N1A_V4x_7n6onNEARlWecbjT/view?usp=sharing" target="_blank">macOS</a><br>
-                <a href="https://drive.google.com/file/d/1fGLzarf-bjTLsZNn-wV2_83_MtSxqmlr/view?usp=sharing" target="_blank">Linux</a><br>
-                <a href="https://drive.google.com/file/d/1k94HcjXYrfA1onXi5fDiYhDlkNbXYRsj/view?usp=sharing" target="_blank">Raspberry PI</a>
+                <a href="https://drive.google.com/file/d/1V9ri2SqhMQqgitjF2mOLv5kGbxMBm-Ae/view?usp=sharing" target="_blank">Linux</a><br>
+                <a href="https://drive.google.com/file/d/1F7Yrjw3oOl78w4A2jPoTm9CEzwg534qz/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
         </tr>
         <tr>
@@ -240,4 +240,4 @@
 
 ---
 
-Modified : 2021.4.2
+Modified : 2021.5.6
