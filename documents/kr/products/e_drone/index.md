@@ -90,8 +90,12 @@
             <td colspan="2" class="firmware"><div align="center">2021.3.26</div></td>
         </tr>
         <tr>
+            <td class="firmware"><div align="center">Update Log</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
+        </tr>
+        <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="white"><div align="center">
+            <td colspan="2" class="firmware"><div align="center">
                 <a href="https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1wmIOCRX2Vn06QJb8zus15krbJjZx8jWm/view?usp=sharing" target="_blank">Windows</a><br>-->
                 <a href="https://drive.google.com/file/d/1ve9Oj0JX4Y574pYhn2kAmNuKIQF_Ec54/view?usp=sharing" target="_blank">macOS</a><br>
@@ -100,18 +104,31 @@
             </div></td>
         </tr>
         <tr>
-            <td class="firmware"><div align="center">Update Log</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/firmware/">한국어</a></div></td>
+            <td rowspan="2" class="firmware"><div align="center">Update Manual</div></td>
+            <td class="white">
+                <div align="center">GUI</div>
+            </td>
+            <td class="white">
+                <div align="center">Terminal</div>
+            </td>
         </tr>
         <tr>
-            <td class="firmware"><div align="center">Update Manual</div></td>
-            <td colspan="2" class="white">
+            <td class="firmware">
                 <div align="center">
                     <a href="/documents/kr/products/e_drone/manual/update/drone4autoupdaterlight/">Windows (.NET)</a><br>
                     <!--<a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_windows/">Windows</a><br>-->
                     <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_mac/">macOS</a><br>
                     <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_linux/">Linux</a><br>
                     <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_raspberry_pi/">Raspberry PI</a>
+                </div>
+            </td>
+            <td class="firmware">
+                <div align="center">
+                    &nbsp;<br>
+                    <!--<a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_cli_windows/">Windows</a><br>-->
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_cli_mac/">macOS</a><br>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_cli_linux/">Linux</a><br>
+                    <a href="/documents/kr/products/e_drone/manual/update/drone_4_updater_cli_raspberry_pi/">Raspberry PI</a>
                 </div>
             </td>
         </tr>
@@ -240,4 +257,4 @@
 
 ---
 
-Modified : 2021.5.7
+Modified : 2021.5.11
