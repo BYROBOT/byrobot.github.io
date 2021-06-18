@@ -46,7 +46,8 @@
                     <a href="/documents/kr/products/battle_drone/">
                         <span class="odd">
                             <img src="/assets/images/products/byrobot_drone_3_10.png" alt="battle_drone" height="240" width="240"><br>
-                            BATTLE DRONE
+                            BATTLE DRONE<br>
+                            (BRB-95)
                         </span>
                     </a>
                 </div>
@@ -56,7 +57,8 @@
                     <a href="/documents/kr/products/coding_drone/">
                         <span class="even">
                             <img src="/assets/images/products/byrobot_drone_8.png" alt="coding drone" height="240" width="240"><br>
-                            CODING DRONE
+                            CODING DRONE<br>
+                            (BRC-105)
                         </span>
                     </a>
                 </div>
@@ -133,4 +135,4 @@
 ---
 
 
-Modified : 2021.4.13
+Modified : 2021.6.18
