@@ -1,6 +1,6 @@
-**[E-DRIVE](index.md)** / **Protocol** / **Intro**
+**[CODING CAR](index.md)** / **Protocol** / **Intro**
 
-Modified : 2019.8.30
+Modified : 2021.6.29
 
 ---
 
@@ -10,18 +10,22 @@ Modified : 2019.8.30
 
 <br>
 
-# 1. E-DRIVE 소개
+# 1. CODING CAR 소개
 
-**E-DRIVE**은 코딩 교육용 자동차 로봇입니다.
+**CODING CAR**은 코딩 교육용 자동차 로봇입니다.
 
 
 <br>
 <br>
+<br>
 
 
-# 2. 전송 데이터 구조
+# 2. 시리얼 통신
 
-E-Drive은 외부 장치와 통신할 경우, 주로 조종기를 PC와 연결한 상태에서 시리얼 통신을 하게 됩니다. 이 때 송수신 데이터의 구조는 아래와 같습니다.
+
+## 2.1. 전송 데이터 구조
+
+CODING CAR를 USB와 연결해서 통신하는 경우 송수신 데이터의 구조는 아래와 같습니다.
 
 <table>
     <tr>
@@ -164,7 +168,7 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 <br>
 
 
-# 3. 사용 시 주의사항
+## 2.2. 사용 시 주의사항
 
 - 모든 장치는 데이터를 요청했을 경우에만 관련된 데이터를 응답으로 전송합니다.
 
@@ -181,7 +185,7 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 <br>
 
 
-# 4. 시리얼 통신 설정
+## 2.3. 시리얼 통신 설정
 
 
 |영역       | 설정값 |
@@ -196,15 +200,123 @@ Data 영역과 CRC16 영역 모두 Little Endian을 사용하고 있습니다. L
 <br>
 
 
-# 5. 드라이버 설치
+## 2.4. 드라이버 설치
 
-E-Drive는 윈도우10인 경우 자동으로 인식합니다. 그 외에 장치를 인식하지 못하는 경우 별도의 드라이버를 설치하셔야 합니다.
+CODING CAR는 USB로 PC와 연결할 때 윈도우10인 경우 자동으로 인식합니다. 그 외에 장치를 인식하지 못하는 경우 별도의 드라이버를 설치하셔야 합니다.
+
+
+<br>
+<br>
+<br>
+
+
+
+# 3. Bluetooth Low Energy(Bluetooth SMART)
+
+**CODING CAR**는 무선 연결에 Bluetooth Low Energy(이하 BLE)를 사용합니다.
+<br>
+**CODING CAR**에서 사용하는 **Service**와 **Characteristic**은 다음과 같습니다.
+
+<br>
+
+| Service       | Characteristic | UUID                                   | 데이터 이동 방향       |
+|:-------------:|:--------------:|:--------------------------------------:|:----------------------:|
+| DRONE_SERVICE |                | *C320DF00-7891-11E5-8BCF-FEFF819CDC9F* |                        |
+|       ├       | DRONE_DATA     | *C320DF01-7891-11E5-8BCF-FEFF819CDC9F* | 자동차 → 앱 (*Notify*) |
+|       └       | DRONE_CONF     | *C320DF02-7891-11E5-8BCF-FEFF819CDC9F* | 앱 → 자동차 (*Write*)  |
+
+<br>
+<br>
+
+## 3.1. 전송 데이터 구조
+
+<table>
+    <tr>
+        <td><div align="center">0</div></td>
+        <td><div align="center">1</div></td>
+        <td><div align="center">2</div></td>
+        <td><div align="center">3</div></td>
+        <td><div align="center">...</div></td>
+        <td><div align="center">N-1</div></td>
+        <td><div align="center">N</div></td>
+    </tr>
+    <tr>
+        <td colspan="4"><div align="center">Header</div></td>
+        <td colspan="3" rowspan="2"><div align="center">Data</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">DataType</div></td>
+        <td><div align="center">Length</div></td>
+        <td><div align="center">From</div></td>
+        <td><div align="center">To</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">-</div></td>
+        <td><div align="center">-</div></td>
+        <td><div align="center">-</div></td>
+        <td><div align="center">-</div></td>
+        <td><div align="center">-</div></td>
+        <td><div align="center">-</div></td>
+        <td><div align="center">-</div></td>
+    </tr>
+</table>
+
+<br>
+
+각 항목에 대한 설명은 다음과 같습니다.
+
+<br>
+
+<table>
+    <tr>
+        <td colspan="2"><div align="center">영역</div></td>
+        <td><div align="center">설명</div></td>
+    </tr>
+    <tr>
+        <td rowspan="4"><div align="center">Header</div></td>
+        <td><div align="center">DataType</div></td>
+        <td><div align="left">데이터의 형식</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">Length</div></td>
+        <td><div align="left">데이터의 길이</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">From</div></td>
+        <td><div align="left">데이터를 전송하는 장치의 DeviceType</div></td>
+    </tr>
+    <tr>
+        <td><div align="center">To</div></td>
+        <td><div align="left">데이터를 수신 받는 장치의 DeviceType</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"><div align="center">Data</div></td>
+        <td><div align="left">전송할 데이터</div></td>
+    </tr>
+</table>
+
+
+전체 길이는 최대 20byte 이하로만 사용 가능합니다.
+
+<br>
+<br>
+
+## 3.2. 데이터 송수신 규칙
+
+- 데이터를 전송하는 주기는 **Android**인 경우 *50ms*, **iOS**인 경우 *100ms*를 권장
+- CODING CAR에 데이터를 요청한 경우엔 요청한 데이터를 응답으로 보냄. 이외의 경우에는 Ack를 응답. Control 명령은 Ack 및 어떤 응답도 보내지 않음
+- **앱**에서 **CODING CAR**에 명령 시에는 *DRONE_CONF*에 전달할 데이터를 **Write**
+- **CODING CAR**이 **앱**으로 데이터를 보내는 경우엔 *DRONE_DATA*로 **Notify**를 전송
+
+
+<br>
+<br>
 
 <br>
 
 ---
 
-<h3>E-DRIVE</H3>
+<h3>CODING CAR</H3>
 
 1. **Intro**
 2. [Typedef](02_typedef.md)
