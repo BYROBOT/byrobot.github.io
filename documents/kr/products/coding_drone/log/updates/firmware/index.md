@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.4.13
+Modified : 2021.7.7
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.4.13
 
 
 <br>
+
+
+# 2021.6.24
+
+- **Drone: 21.6.1**
+
+> - 정면 거리 센서와 바닥 거리 센서 오류를 분리함
+
+
+[Download](https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.3.26
