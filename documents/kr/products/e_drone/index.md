@@ -83,11 +83,11 @@
         </tr>
         <tr>
             <td class="white"><div align="center">Controller</div></td>
-            <td class="white"><div align="center">21.3.1</div></td>
+            <td class="white"><div align="center">21.7.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.3.26</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.7.20</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
@@ -96,11 +96,11 @@
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="firmware"><div align="center">
-                <a href="https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
-                <!--<a href="https://drive.google.com/file/d/1wmIOCRX2Vn06QJb8zus15krbJjZx8jWm/view?usp=sharing" target="_blank">Windows</a><br>-->
-                <a href="https://drive.google.com/file/d/1ve9Oj0JX4Y574pYhn2kAmNuKIQF_Ec54/view?usp=sharing" target="_blank">macOS</a><br>
-                <a href="https://drive.google.com/file/d/1xUOds-TFACrc0P8oZB8WiID6jndeNkmg/view?usp=sharing" target="_blank">Linux</a><br>
-                <a href="https://drive.google.com/file/d/1W7BWyoYGHjdHdVKfflKASZER1DtGSnXp/view?usp=sharing" target="_blank">Raspberry PI</a>
+                <a href="https://drive.google.com/file/d/1Xv0jNkbaAVosx1SOOOfmZSEO0VhBtRy6/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
+                <!--<a href="https://drive.google.com/file/d/1x5FmiXGk2bWe5AZp9rVqmcj8-ereA7MN/view?usp=sharing" target="_blank">Windows</a><br>-->
+                <a href="https://drive.google.com/file/d/1I3dXCQIFWJSu6YLsCy5pTlsSopiQUUnP/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/1sLholIVlzZq8opjGpYkh1hGKCs1hEbEJ/view?usp=sharing" target="_blank">Linux</a><br>
+                <a href="https://drive.google.com/file/d/1vKmwjCdSJVx1zaJjss7aZLligLtC4qmi/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
         </tr>
         <tr>
@@ -257,4 +257,4 @@
 
 ---
 
-Modified : 2021.5.11
+Modified : 2021.7.20

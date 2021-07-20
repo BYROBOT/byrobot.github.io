@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.7.7
+Modified : 2021.7.20
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.7.7
 
 
 <br>
+
+
+# 2021.7.20
+
+- **Drone: 21.7.2**
+
+> - 배터리 레벨 조정
+
+
+[Download](https://drive.google.com/file/d/1Xv0jNkbaAVosx1SOOOfmZSEO0VhBtRy6/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.6.24

@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.4.13
+Modified : 2021.7.20
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2021.4.13
 
 
 <br>
+
+
+# 2021.7.20
+
+- Drone: 21.3.2
+- Drone(4m): 21.3.3
+- **Controller: 21.7.1**
+> - 드론 배터리가 15% 이하이거나 Low Battry 오류가 활성화 된 경우 조종기에서 드론 배터리 잔량 경고를 표시하게 함
+
+
+
+[Download](https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.3.26
