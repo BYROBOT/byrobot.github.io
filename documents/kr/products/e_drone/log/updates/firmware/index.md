@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.7.20
+Modified : 2021.7.30
 
 ---
 
@@ -20,7 +20,7 @@ Modified : 2021.7.20
 
 
 
-[Download](https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing)
+[Download](https://drive.google.com/file/d/1Xv0jNkbaAVosx1SOOOfmZSEO0VhBtRy6/view?usp=sharing)
 
 
 <br>
