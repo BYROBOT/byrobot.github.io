@@ -8,6 +8,8 @@
 
 ---
 
+- <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-202183">E-DRONE 조종기 펌웨어 업데이트</a> <sup><i>2021.8.3</i></sup><br>
+
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2021720">CODING DRONE 펌웨어 업데이트</a> <sup><i>2020.7.20</i></sup><br>
 
 - <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-2021720">E-DRONE 조종기 펌웨어 업데이트</a> <sup><i>2021.7.20</i></sup><br>
@@ -45,4 +47,4 @@
 ---
 
 
-Modified : 2021.7.20
+Modified : 2021.8.3

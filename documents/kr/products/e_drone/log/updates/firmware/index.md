@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.7.30
+Modified : 2021.8.3
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2021.7.30
 
 
 <br>
+
+
+# 2021.8.3
+
+- Drone: 21.3.2
+- Drone(4m): 21.3.3
+- **Controller: 21.8.1**
+> - 페어링 시 조종기가 페어링 데이터에 대해 응답만 하던 것을 일정한 주기로 전송하도록 변경
+
+
+
+[Download](https://drive.google.com/file/d/1KAM4_VVC3r3njiZWqNGQ5YS_thLdAagm/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.7.20
