@@ -79,7 +79,7 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Drone(4m)</div></td>
-            <td class="firmware"><div align="center">21.8.1</div></td>
+            <td class="firmware"><div align="center">21.9.1</div></td>
         </tr>
         <tr>
             <td class="white"><div align="center">Controller</div></td>
@@ -87,7 +87,7 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.8.3</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.9.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
