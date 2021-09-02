@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.8.3
+Modified : 2021.9.2
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2021.8.3
 
 
 <br>
+
+
+# 2021.9.1
+
+- Drone: 21.8.1
+- **Drone(4m): 21.9.1**
+> - 드론 외부 연결 UART의 속도를 Drone4Link 프로그램에서 변경할 수 있게 함
+- Controller: 21.8.1
+
+
+
+[Download](https://drive.google.com/file/d/1l_zuPRWYpwJX83lwizzxs05m7hsXHcGe/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.8.3

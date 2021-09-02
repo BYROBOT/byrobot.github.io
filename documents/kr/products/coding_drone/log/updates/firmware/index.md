@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.7.20
+Modified : 2021.9.2
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.7.20
 
 
 <br>
+
+
+# 2021.8.24
+
+- **Drone: 21.8.2**
+
+> - 드론 재부팅 문제 수정
+
+
+[Download](https://drive.google.com/file/d/1l_zuPRWYpwJX83lwizzxs05m7hsXHcGe/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.7.20
