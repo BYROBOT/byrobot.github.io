@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.9.2
+Modified : 2021.12.9
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.9.2
 
 
 <br>
+
+
+# 2021.12.9
+
+- Drone: 21.8.2
+
+> - E-DRONE 조종기 통신 문제 수정
+
+
+[Download](https://drive.google.com/file/d/19P9mzzhSsGklYN4qO06KTCx7J9rY9d4B/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.8.24
