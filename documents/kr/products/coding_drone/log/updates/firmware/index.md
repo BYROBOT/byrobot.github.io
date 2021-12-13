@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2021.12.9
+Modified : 2021.12.13
 
 ---
 
@@ -9,6 +9,21 @@ Modified : 2021.12.9
 
 
 <br>
+
+
+# 2021.12.13
+
+- **Drone: 21.12.1**
+
+> - 코딩 드론의 'CONTROL' 항목에서 'MANUAL' 선택 시 'ATTITUDE'가 선택되게 함(코딩 드론에는 MANUAL 모드가 없음)
+
+
+[Download](https://drive.google.com/file/d/1ttvauYvkOiejqBgYqvTuqxlFHvEpU3XI/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.12.9

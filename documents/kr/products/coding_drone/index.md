@@ -72,20 +72,20 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">21.8.2</div></td>
+            <td colspan="2" class="white"><div align="center">21.12.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.12.9</div></td>
+            <td colspan="2" class="firmware"><div align="center">2021.12.13</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.google.com/file/d/19P9mzzhSsGklYN4qO06KTCx7J9rY9d4B/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
-                <!--<a href="https://drive.google.com/file/d/1P667XSjHZF3wOhp3mDTS4plaKzVRqmSb/view?usp=sharing" target="_blank">Windows</a><br>-->
-                <a href="https://drive.google.com/file/d/1ZsLRX8PMGMHh8zWow3eTyFQncIsCG5sM/view?usp=sharing" target="_blank">macOS</a><br>
-                <a href="https://drive.google.com/file/d/1ric5Q1Boyb9KfvpArCn9FYcZ2IX1MNaA/view?usp=sharing" target="_blank">Linux</a><br>
-                <a href="https://drive.google.com/file/d/11dMMygER25ZuXGW-MR_1LBXM0jfB001h/view?usp=sharing" target="_blank">Raspberry PI</a>
+                <a href="https://drive.google.com/file/d/1ttvauYvkOiejqBgYqvTuqxlFHvEpU3XI/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
+                <!--<a href="https://drive.google.com/file/d/1Yu-yuC9fP7tdM7XKVDNVgpBJhWzmryIJ/view?usp=sharing" target="_blank">Windows</a><br>-->
+                <a href="https://drive.google.com/file/d/1se5jMAidU1L3k0cfIlQ7DetApJglVBS0/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/125g83OFXJU-09q0_4efEPtWjDXkuQ7Uq/view?usp=sharing" target="_blank">Linux</a><br>
+                <a href="https://drive.google.com/file/d/1ElGWjlCrRHjV80iI8kDGFw64kXi6GpjC/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
         </tr>
         <tr>
@@ -204,4 +204,4 @@
 
 ---
 
-Modified : 2021.12.9
+Modified : 2021.12.13
