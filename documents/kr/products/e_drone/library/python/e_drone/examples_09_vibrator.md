@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Vibrator**
 
-Modified : 2021.1.4
+Modified : 2021.12.29
 
 ---
 
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
 
-    drone.sendVibrator(100, 200, 1200)
+    drone.send_vibrator(100, 200, 1200)
     sleep(1)
 
     drone.close()
@@ -56,17 +56,17 @@ if __name__ == '__main__':
 
     header = Header()
     
-    header.dataType = DataType.Vibrator
-    header.length   = Vibrator.getSize()
-    header.from_    = DeviceType.Tester
-    header.to_      = DeviceType.Controller
+    header.data_type = DataType.VIBRATOR
+    header.length    = Vibrator.get_size()
+    header.from_     = DeviceType.BASE
+    header.to_       = DeviceType.CONTROLLER
 
     data = Vibrator()
 
-    data.mode       = VibratorMode.Instantly
-    data.on         = 100
-    data.off        = 200
-    data.total      = 1200
+    data.mode        = VibratorMode.INSTANTLY
+    data.on          = 100
+    data.off         = 200
+    data.total       = 1200
 
     drone.transfer(header, data)
     sleep(1)
