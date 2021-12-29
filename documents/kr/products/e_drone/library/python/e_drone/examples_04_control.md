@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Control**
 
-Modified : 2021.1.4
+Modified : 2021.12.29
 
 ---
 
@@ -10,10 +10,11 @@ Modified : 2021.1.4
 <br>
 
 
-<a name="ControlWhileAndLanding"></a>
+<a name="ControlTimeAndLanding"></a>
 ## 이륙, 호버링, 착륙 테스트
 
 ```py
+# 이륙, 호버링, 착륙 테스트
 from time import sleep
 
 from e_drone.drone import *
@@ -26,7 +27,7 @@ if __name__ == '__main__':
     drone.open()
 
     print("TakeOff")
-    drone.sendTakeOff()
+    drone.send_takeoff()
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
@@ -34,11 +35,11 @@ if __name__ == '__main__':
     print("Hovering")
     for i in range(3, 0, -1):
         print("{0}".format(i))
-        drone.sendControlWhile(0, 0, 0, 0, 1000)
+        drone.send_control_time(0, 0, 0, 0, 1000)
         sleep(0.01)
 
     print("Landing")
-    drone.sendLanding()
+    drone.send_landing()
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
@@ -47,7 +48,7 @@ if __name__ == '__main__':
 ```
 
 - [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlWhile()](05_drone.md#sendControlWhile)
+- [sendControlTime()](05_drone.md#sendControlTime)
 - [sendLanding()](05_drone.md#sendLanding)
 
 
@@ -55,10 +56,11 @@ if __name__ == '__main__':
 <br>
 
 
-<a name="ControlWhile"></a>
+<a name="ControlTime"></a>
 ## 이륙, 호버링, 하강, 정지 테스트
 
 ```py
+# 이륙, 호버링, 하강, 정지 테스트
 from time import sleep
 
 from e_drone.drone import *
@@ -70,20 +72,21 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
 
+
     print("TakeOff")
-    drone.sendTakeOff()
+    drone.send_takeoff()
     sleep(0.01)
 
     print("Hovering")
-    drone.sendControlWhile(0, 0, 0, 0, 6400)
+    drone.send_control_time(0, 0, 0, 0, 6400)
     sleep(0.01)
 
     print("Throttle down")
-    drone.sendControlWhile(0, 0, 0, -25, 3600)
+    drone.send_control_time(0, 0, 0, -25, 3600)
     sleep(0.01)
 
     print("Stop")
-    drone.sendStop()
+    drone.send_stop()
     sleep(0.01)
 
 
@@ -91,7 +94,7 @@ if __name__ == '__main__':
 ```
 
 - [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlWhile()](05_drone.md#sendControlWhile)
+- [sendControlTime()](05_drone.md#sendControlTime)
 - [sendStop()](05_drone.md#sendStop)
 
 
@@ -103,6 +106,7 @@ if __name__ == '__main__':
 ## 이륙, 호버링, 전진, 착륙 테스트
 
 ```py
+# 이륙, 호버링, 전진, 착륙 테스트
 from time import sleep
 
 from e_drone.drone import *
@@ -114,26 +118,27 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
 
+
     print("TakeOff")
-    drone.sendTakeOff()
+    drone.send_takeoff()
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Hovering")
-    drone.sendControlWhile(0, 0, 0, 0, 3600)
+    drone.send_control_time(0, 0, 0, 0, 3600)
     for i in range(3, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Go Front 1 meter")
-    drone.sendControlPosition16(10, 0, 0, 5, 0, 0)
+    drone.send_control_position_short(10, 0, 0, 5, 0, 0)
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
 
     print("Landing")
-    drone.sendLanding()
+    drone.send_landing()
     for i in range(5, 0, -1):
         print("{0}".format(i))
         sleep(1)
@@ -143,7 +148,7 @@ if __name__ == '__main__':
 ```
 
 - [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlWhile()](05_drone.md#sendControlWhile)
+- [sendControlTime()](05_drone.md#sendControlTime)
 - [sendControlPosition()](05_drone.md#sendControlPosition)
 - [sendLanding()](05_drone.md#sendLanding)
 
@@ -156,10 +161,19 @@ if __name__ == '__main__':
 ## 이륙, 호버링, 1미터 전진, 1미터 오른쪽 이동, 리턴 홈 테스트
 
 ```py
+# 이륙, 호버링, 1미터 전진, 1미터 오른쪽 이동, 리턴 홈 테스트
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
+
+
+def wait(message, time):
+    print("{0} / ".format(message), end="")
+    for i in range(time, 0, -1):
+        print("{0} ".format(i), end="")
+        sleep(1)
+    print("")
 
 
 if __name__ == '__main__':
@@ -167,42 +181,32 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
 
-    print("TakeOff")
-    drone.sendTakeOff()
-    for i in range(5, 0, -1):
-        print("{0}".format(i))
-        sleep(1)
 
-    print("Hovering")
-    drone.sendControlWhile(0, 0, 0, 0, 3600)
-    for i in range(3, 0, -1):
-        print("{0}".format(i))
-        sleep(1)
+    drone.send_takeoff()
+    wait("TakeOff", 5)
 
-    print("Go Front 1 meter")
-    drone.sendControlPosition(1.0, 0, 0, 0.5, 0, 0)
-    for i in range(5, 0, -1):
-        print("{0}".format(i))
-        sleep(1)
+    drone.send_control(0, 0, 0, 0)
+    wait("Hovering", 3)
 
-    print("Go Right 1 meter")
-    drone.sendControlPosition(0, -1.0, 0, 0.5, 0, 0)
-    for i in range(5, 0, -1):
-        print("{0}".format(i))
-        sleep(1)
+    drone.send_control_position(1.0, 0, 0, 0.5, 0, 0)
+    wait("Go Front 1 meter", 5)
 
-    print("Return Home")
-    drone.sendFlightEvent(FlightEvent.Return)
-    for i in range(5, 0, -1):
-        print("{0}".format(i))
-        sleep(1)
+    drone.send_control_position(0, -1.0, 0, 0.5, 0, 0)
+    wait("Go Right 1 meter", 5)
+
+    drone.send_flight_event(FlightEvent.RETURN_HOME)
+    wait("Return Home", 5)
+
+    drone.send_landing()
+    wait("Landing", 5)
 
 
     drone.close()
+
 ```
 
 - [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlWhile()](05_drone.md#sendControlWhile)
+- [sendControlTime()](05_drone.md#sendControlTime)
 - [sendControlPosition()](05_drone.md#sendControlPosition)
 - [sendFlightEvent()](05_drone.md#sendFlightEvent)
 - [sendLanding()](05_drone.md#sendLanding)

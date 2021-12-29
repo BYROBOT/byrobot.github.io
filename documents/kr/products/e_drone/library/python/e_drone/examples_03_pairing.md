@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Pairing**
 
-Modified : 2021.1.4
+Modified : 2021.12.29
 
 ---
 
@@ -27,33 +27,39 @@ if __name__ == '__main__':
     drone.open()
 
     # 페어링 설정
-    drone.sendPairing(DeviceType.Controller, 0x0001, 0x0002, 0x0003, 0x04, 0x05)
+    drone.send_pairing(DeviceType.CONTROLLER, 0x0001, 0x0002, 0x0003, 0x04, 0x05, 0x06, 0x07, 0x08)
     sleep(0.01)
 
     # 페어링데이터 요청
-    drone.sendRequest(DeviceType.Controller, DataType.Pairing)
-    
-    timeStart = time.time()
+    drone.send_request(DeviceType.CONTROLLER, DataType.PAIRING)
+
+    time_start = time.time()
 
     while True:
         sleep(0.01)
         dataType = drone.check()
         
-        if    dataType == DataType.Pairing:
-            pairing = drone.getData(DataType.Pairing)
+        if dataType == DataType.PAIRING:
+            pairing = drone.get_data(DataType.PAIRING)
 
             print("Address: 0x{0:04X}{1:04X}{2:04X} / {0}.{1}.{2}".format(
-                pairing.address0, 
-                pairing.address1, 
-                pairing.address2))
+                pairing.address_0, 
+                pairing.address_1, 
+                pairing.address_2))
 
             print("Scramble: {0}".format(pairing.scramble))
-            print("Channel: {0}".format(pairing.channel))
+
+            print("Channel: {0} / {1} / {2} / {3}".format(
+                pairing.channel_0,
+                pairing.channel_1,
+                pairing.channel_2,
+                pairing.channel_3))
+
             break
 
-        if time.time() > timeStart + 1:
+        if time.time() > time_start + 1:
             break
-    
+
     drone.close()
 ```
 
@@ -77,16 +83,21 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventPairing(pairing):
-    print("eventPairing()")
+def event_pairing(pairing):
+    print("event_pairing()")
 
     print("Address: 0x{0:04X}{1:04X}{2:04X} / {0}.{1}.{2}".format(
-        pairing.address0, 
-        pairing.address1, 
-        pairing.address2))
+        pairing.address_0, 
+        pairing.address_1, 
+        pairing.address_2))
 
     print("Scramble: {0}".format(pairing.scramble))
-    print("Channel: {0}".format(pairing.channel))
+
+    print("Channel: {0} / {1} / {2} / {3}".format(
+        pairing.channel_0,
+        pairing.channel_1,
+        pairing.channel_2,
+        pairing.channel_3))
 
 
 if __name__ == '__main__':
@@ -95,14 +106,14 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Pairing, eventPairing)
+    drone.set_event_handler(DataType.PAIRING, event_pairing)
 
     # 페어링 설정
-    drone.sendPairing(DeviceType.Controller, 0x0005, 0x0006, 0x0007, 0x08, 0x09)
+    drone.send_pairing(DeviceType.CONTROLLER, 0x0001, 0x0002, 0x0003, 0x04, 0x05, 0x06, 0x07, 0x08)
     sleep(0.01)
 
     # 페어링데이터 요청
-    drone.sendRequest(DeviceType.Controller, DataType.Pairing)
+    drone.send_request(DeviceType.CONTROLLER, DataType.PAIRING)
     sleep(0.1)
     
     drone.close()
