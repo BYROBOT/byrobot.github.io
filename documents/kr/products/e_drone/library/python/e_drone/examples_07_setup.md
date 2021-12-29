@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2021.4.26
+Modified : 2021.12.29
 
 ---
 
@@ -20,8 +20,8 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventState(state):
-    print("{0}".format(state.modeControlFlight))
+def event_state(state):
+    print("{0}".format(state.mode_control_flight))
 
 
 if __name__ == '__main__':
@@ -31,24 +31,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.State, eventState)
+    drone.set_event_handler(DataType.STATE, event_state)
 
 
-    # 비행 제어 모드를 ModeControlFlight.Position 으로 변경
-    drone.sendModeControlFlight(ModeControlFlight.Position)
+    # 비행 제어 모드를 ModeControlFlight.POSITION 으로 변경
+    drone.send_mode_control_flight(ModeControlFlight.POSITION)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.State)
+    drone.send_request(DeviceType.DRONE, DataType.STATE)
     sleep(0.1)
 
 
     # 비행 제어 모드를 ModeControlFlight.Attitude 으로 변경
-    drone.sendModeControlFlight(ModeControlFlight.Attitude)
+    drone.send_mode_control_flight(ModeControlFlight.ATTITUDE)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.State)
+    drone.send_request(DeviceType.DRONE, DataType.STATE)
     sleep(0.1)
 
 
@@ -74,7 +74,7 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventState(state):
+def event_state(state):
     print("{0}".format(state.headless))
 
 
@@ -85,24 +85,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.State, eventState)
+    drone.set_event_handler(DataType.STATE, event_state)
 
 
     # 드론을 Headless 설정을 Headless 모드로 변경
-    drone.sendHeadless(Headless.Headless)
+    drone.send_headless(Headless.HEADLESS)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.State)
+    drone.send_request(DeviceType.DRONE, DataType.STATE)
     sleep(0.1)
 
 
     # 드론을 Headless 설정을 Normal 모드로 변경
-    drone.sendHeadless(Headless.Normal)
+    drone.send_headless(Headless.NORMAL)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.State)
+    drone.send_request(DeviceType.DRONE, DataType.STATE)
     sleep(0.1)
 
 
@@ -128,7 +128,7 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventTrim(trim):
+def event_trim(trim):
     print("{0}, {1}, {2}, {3}".format(trim.roll, trim.pitch, trim.yaw, trim.throttle))
 
 
@@ -139,24 +139,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Trim, eventTrim)
+    drone.set_event_handler(DataType.TRIM, event_trim)
 
 
     # 드론 비행 트림 설정 변경
-    drone.sendTrim(10, 20, 30, 40)
+    drone.send_trim(10, 20, 30, 40)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.Trim)
+    drone.send_request(DeviceType.DRONE, DataType.TRIM)
     sleep(0.1)
 
 
     # 드론 비행 트림 설정 변경
-    drone.sendTrim(0, 0, 0, 0)
+    drone.send_trim(0, 0, 0, 0)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.sendRequest(DeviceType.Drone, DataType.Trim)
+    drone.send_request(DeviceType.DRONE, DataType.TRIM)
     sleep(0.1)
 
 
