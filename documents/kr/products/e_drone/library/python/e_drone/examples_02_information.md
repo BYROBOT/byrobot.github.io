@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2021.1.4
+Modified : 2021.12.29
 
 ---
 
@@ -25,18 +25,18 @@ if __name__ == '__main__':
     drone = Drone(False)
     drone.open()
 
-    drone.sendRequest(DeviceType.Controller, DataType.Information)
+    drone.send_request(DeviceType.CONTROLLER, DataType.INFORMATION)
 
-    timeStart = time.time()
+    time_start = time.time()
 
     while True:
         sleep(0.01)
         dataType = drone.check()
         
-        if dataType == DataType.Information:
-            information = drone.getData(DataType.Information)
-            print("ModeUpdate: {0}".format(information.modeUpdate))
-            print("ModelNumber: {0}".format(information.modelNumber))
+        if dataType == DataType.INFORMATION:
+            information = drone.get_data(DataType.INFORMATION)
+            print("ModeUpdate: {0}".format(information.mode_update))
+            print("ModelNumber: {0}".format(information.model_number))
             print("Version: {0}.{1}.{2} / {3} / 0x{3:08X}".format(
                 information.version.major,
                 information.version.minor,
@@ -48,7 +48,7 @@ if __name__ == '__main__':
                 information.day))
             break
 
-        if time.time() > timeStart + 1:
+        if time.time() > time_start + 1:
             break
 
     drone.close()
@@ -73,10 +73,10 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventInformation(information):
-    print("eventInformation()")
-    print("ModeUpdate: {0}".format(information.modeUpdate))
-    print("ModelNumber: {0}".format(information.modelNumber))
+def event_information(information):
+    print("event_information()")
+    print("ModeUpdate: {0}".format(information.mode_update))
+    print("ModelNumber: {0}".format(information.model_number))
     print("Version: {0}.{1}.{2} / {3} / 0x{3:08X}".format(
         information.version.major,
         information.version.minor,
@@ -94,10 +94,10 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Information, eventInformation)
+    drone.set_event_handler(DataType.INFORMATION, event_information)
 
     # Information 정보 요청
-    drone.sendRequest(DeviceType.Controller, DataType.Information)
+    drone.send_request(DeviceType.CONTROLLER, DataType.INFORMATION)
     sleep(0.1)
 
     drone.close()

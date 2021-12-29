@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Intro**
 
-Modified : 2021.4.26
+Modified : 2021.12.29
 
 ---
 
@@ -166,7 +166,7 @@ if __name__ == '__main__':
     drone = Drone()       # 드론 객체 생성
     drone.open("COM22")   # 시리얼 포트 연결
 
-    drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
+    drone.send_buzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
     sleep(1)              # 1초간 sleep
 
     drone.close()         # 시리얼 포트 닫기 및 내부 데이터 수신 스레드 종료
@@ -187,7 +187,7 @@ if __name__ == '__main__':
     drone = Drone()       # 드론 객체 생성
     drone.open()          # 시리얼 포트 연결(내부에서 시리얼 포트 리스트를 읽어서 마지막 장치에 연결)
 
-    drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
+    drone.send_buzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
     sleep(1)              # 1초간 sleep
 
     drone.close()         # 시리얼 포트 닫기 및 내부 데이터 수신 스레드 종료
