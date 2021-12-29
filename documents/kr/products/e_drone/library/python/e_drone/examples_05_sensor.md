@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Sensor**
 
-Modified : 2021.1.4
+Modified : 2021.12.29
 
 ---
 
@@ -14,18 +14,20 @@ Modified : 2021.1.4
 ## 고도 데이터 확인
 
 ```py
+# 고도 데이터 확인
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventAltitude(altitude):
-    print("eventAltitude()")
+def event_altitude(altitude):
+    print("event_altitude()")
     print("-  Temperature: {0:.3f}".format(altitude.temperature))
     print("-     Pressure: {0:.3f}".format(altitude.pressure))
     print("-     Altitude: {0:.3f}".format(altitude.altitude))
-    print("- Range Height: {0:.3f}".format(altitude.rangeHeight))
+    print("- Range Height: {0:.3f}".format(altitude.range_height))
+
 
 if __name__ == '__main__':
 
@@ -33,10 +35,10 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Altitude, eventAltitude)
+    drone.set_event_handler(DataType.ALTITUDE, event_altitude)
 
     # Altitude 정보 요청
-    drone.sendRequest(DeviceType.Drone, DataType.Altitude)
+    drone.send_request(DeviceType.DRONE, DataType.ALTITUDE)
     sleep(0.1)
 
     drone.close()
@@ -54,17 +56,18 @@ if __name__ == '__main__':
 ## Motion 센서 데이터 확인
 
 ```py
+# Motion 센서 데이터 확인
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventMotion(motion):
-    print("eventMotion()")
-    print("- Accel: {0:5}, {1:5}, {2:5}".format(motion.accelX, motion.accelY, motion.accelZ))
-    print("-  Gyro: {0:5}, {1:5}, {2:5}".format(motion.gyroRoll, motion.gyroPitch, motion.gyroYaw))
-    print("- Angle: {0:5}, {1:5}, {2:5}".format(motion.angleRoll, motion.anglePitch, motion.angleYaw))
+def event_motion(motion):
+    print("event_motion()")
+    print("- Accel: {0:5}, {1:5}, {2:5}".format(motion.accel_x, motion.accel_y, motion.accel_z))
+    print("-  Gyro: {0:5}, {1:5}, {2:5}".format(motion.gyro_roll, motion.gyro_pitch, motion.gyro_yaw))
+    print("- Angle: {0:5}, {1:5}, {2:5}".format(motion.angle_roll, motion.angle_pitch, motion.angle_yaw))
 
 
 if __name__ == '__main__':
@@ -73,10 +76,10 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Motion, eventMotion)
+    drone.set_event_handler(DataType.MOTION, event_motion)
 
     # Range 정보 요청
-    drone.sendRequest(DeviceType.Drone, DataType.Motion)
+    drone.send_request(DeviceType.DRONE, DataType.MOTION)
     sleep(0.1)
 
     drone.close()
@@ -94,14 +97,15 @@ if __name__ == '__main__':
 ## 자세 확인
 
 ```py
+# 자세 확인
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def eventAttitude(attitude):
-    print("eventAttitude() / {0:0.1f}, {1:0.1f}, {2:0.1f}".format(attitude.roll, attitude.pitch, attitude.yaw))
+def event_attitude(attitude):
+    print("event_attitude() / {0:0.1f}, {1:0.1f}, {2:0.1f}".format(attitude.roll, attitude.pitch, attitude.yaw))
 
 
 if __name__ == '__main__':
@@ -110,10 +114,10 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Attitude, eventAttitude)
+    drone.set_event_handler(DataType.ATTITUDE, event_attitude)
 
     # Range 정보 요청
-    drone.sendRequest(DeviceType.Drone, DataType.Attitude)
+    drone.send_request(DeviceType.DRONE, DataType.ATTITUDE)
     sleep(0.1)
 
     drone.close()
