@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Buzzer**
 
-Modified : 2021.1.4
+Modified : 2021.12.29
 
 ---
 
@@ -11,7 +11,7 @@ Modified : 2021.1.4
 
 
 <a name="Buzzer"></a>
-## sendBuzzer 함수 테스트
+## send_buzzer 함수 테스트
 
 ```py
 from time import sleep
@@ -26,40 +26,40 @@ if __name__ == '__main__':
     drone.open()
     
 
-    drone.sendBuzzer(BuzzerMode.Mute, BuzzerScale.Mute.value, 500)
+    drone.send_buzzer(BuzzerMode.MUTE, BuzzerScale.MUTE.value, 500)
     sleep(1)
 
-    drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)
+    drone.send_buzzer(BuzzerMode.SCALE, BuzzerScale.C4.value, 500)
     sleep(1)
 
-    drone.sendBuzzer(BuzzerMode.Hz, 500, 500)
+    drone.send_buzzer(BuzzerMode.HZ, 500, 500)
     sleep(1)
 
 
-    drone.sendBuzzerMute(100)
-    drone.sendBuzzerMuteReserve(100)
+    drone.send_buzzer_mute(100)
+    drone.send_buzzer_mute_reserve(100)
     sleep(1.2)
 
 
-    drone.sendBuzzerScale(BuzzerScale.C5, 500)
-    drone.sendBuzzerScaleReserve(BuzzerScale.D5, 500)
+    drone.send_buzzer_scale(BuzzerScale.C5, 500)
+    drone.send_buzzer_scale_reserve(BuzzerScale.D5, 500)
     sleep(1.2)
 
 
-    drone.sendBuzzerHz(1000, 500)
-    drone.sendBuzzerHzReserve(1200, 500)
+    drone.send_buzzer_hz(1000, 500)
+    drone.send_buzzer_hz_reserve(1200, 500)
     sleep(1.2)
     
 
     drone.close()
 ```
 
-- [sendBuzzer()](05_drone.md#sendBuzzer)
-- [sendBuzzerMute()](05_drone.md#sendBuzzerMute)
-- [sendBuzzerScale()](05_drone.md#sendBuzzerScale)
-- [sendBuzzerScaleReserve()](05_drone.md#sendBuzzerScaleReserve)
-- [sendBuzzerHz()](05_drone.md#sendBuzzerHz)
-- [sendBuzzerHzReserve()](05_drone.md#sendBuzzerHzReserve)
+- [send_buzzer()](05_drone.md#send_buzzer)
+- [send_buzzer_mute()](05_drone.md#send_buzzer_mute)
+- [send_buzzer_scale()](05_drone.md#send_buzzer_scale)
+- [send_buzzer_scale_reserve()](05_drone.md#send_buzzer_scale_reserve)
+- [send_buzzer_hz()](05_drone.md#send_buzzer_hz)
+- [send_buzzer_hz_reserve()](05_drone.md#send_buzzer_hz_reserve)
 
 
 <br>
@@ -81,22 +81,22 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
     
-    drone.sendBuzzer(BuzzerMode.Mute, BuzzerScale.Mute.value, 100)
+    drone.send_buzzer(BuzzerMode.MUTE, BuzzerScale.MUTE.value, 100)
     sleep(0.2);
     
-    drone.sendBuzzerScale(BuzzerScale.G4, 300);     sleep(0.4);
-    drone.sendBuzzerScale(BuzzerScale.G4, 300);     sleep(0.4);
-    drone.sendBuzzerScale(BuzzerScale.A4, 300);     sleep(0.4);
-    drone.sendBuzzerScale(BuzzerScale.A4, 300);     sleep(0.4);
-    drone.sendBuzzerScale(BuzzerScale.G4, 300);     sleep(0.4);
-    drone.sendBuzzerScale(BuzzerScale.G4, 300);     sleep(0.4);
-    drone.sendBuzzerScale(BuzzerScale.E4, 300);     sleep(0.4);
+    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(BuzzerScale.A4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(BuzzerScale.A4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(BuzzerScale.E4, 500);     sleep(0.5);
 
     drone.close()
 ```
 
-- [sendBuzzer()](05_drone.md#sendBuzzer)
-- [sendBuzzerScale()](05_drone.md#sendBuzzerScale)
+- [send_buzzer()](05_drone.md#send_buzzer)
+- [send_buzzer_scale()](05_drone.md#send_buzzer_scale)
 
 
 <br>
@@ -121,15 +121,15 @@ if __name__ == '__main__':
 
     header = Header()
     
-    header.dataType = DataType.Buzzer
-    header.length   = Buzzer.getSize()
-    header.from_    = DeviceType.Tester
-    header.to_      = DeviceType.Controller
+    header.data_type = DataType.BUZZER
+    header.length    = Buzzer.get_size()
+    header.from_     = DeviceType.BASE
+    header.to_       = DeviceType.CONTROLLER
 
 
     data = Buzzer()
 
-    data.mode       = BuzzerMode.Scale
+    data.mode       = BuzzerMode.SCALE
     data.value      = BuzzerScale.C5.value
     data.time       = 500
 
@@ -137,7 +137,7 @@ if __name__ == '__main__':
     sleep(1)
 
 
-    data.mode       = BuzzerMode.Hz
+    data.mode       = BuzzerMode.HZ
     data.value      = 1200
     data.time       = 500
 
