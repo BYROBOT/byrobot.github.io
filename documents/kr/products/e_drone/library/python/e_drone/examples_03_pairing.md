@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Pairing**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -63,8 +63,8 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [sendPairing()](05_drone.md#sendPairing)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_pairing()](05_drone.md#send_pairing)
+- [send_request()](05_drone.md#send_request)
 - [Pairing](04_protocol.md#Pairing)
 
 
@@ -119,8 +119,8 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [sendPairing()](05_drone.md#sendPairing)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_pairing()](05_drone.md#send_pairing)
+- [send_request()](05_drone.md#send_request)
 - [Pairing](04_protocol.md#Pairing)
 
 

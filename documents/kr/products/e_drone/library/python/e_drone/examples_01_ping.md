@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Ping**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -15,7 +15,7 @@ Modified : 2021.12.29
 
 조종기에 **Ping**을 보내고, **Ack** 응답을 받아서 화면에 출력하는 예제입니다.
 
-**sendPing()** 함수를 호출하고 응답을 받을 때까지 기다리는 시간이 필요하기 때문에 **sleep()** 함수를 사용했습니다.
+**send_ping()** 함수를 호출하고 응답을 받을 때까지 기다리는 시간이 필요하기 때문에 **sleep()** 함수를 사용했습니다.
 
 데이터 송수신 과정에서 문제가 생겨 **Ack**를 받지 못하는 경우가 있을 수 있으므로 1초 동안 응답이 없으면 수신처리를 종료하게 하였습니다.
 
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 ```
 
 - [Ack](04_protocol.md#Ack)
-- [sendPing()](05_drone.md#sendPing)
+- [send_ping()](05_drone.md#send_ping)
 
 
 <br>
@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
 조종기에 **Ping**을 보내고, **Ack** 응답을 받아서 화면에 출력하는 예제입니다.
 
-수신 받을 데이터를 처리하는 함수를 만들어 **setEventHandler(DataType, function)**를 사용하여 등록하면 해당 데이터를 받았을 때 미리 연결한 함수를 호출합니다.
+수신 받을 데이터를 처리하는 함수를 만들어 **set_event_handler(DataType, function)**를 사용하여 등록하면 해당 데이터를 받았을 때 미리 연결한 함수를 호출합니다.
 
 마지막 **sleep(0.1)**은 **Ping** 전송 후 **Ack** 응답이 들어올 때까지 기다리기 위해 사용하였습니다.
 
@@ -99,7 +99,7 @@ if __name__ == '__main__':
 ```
 
 - [Ack](04_protocol.md#Ack)
-- [sendPing()](05_drone.md#sendPing)
+- [send_ping()](05_drone.md#send_ping)
 
 
 <br>

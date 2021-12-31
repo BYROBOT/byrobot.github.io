@@ -45,7 +45,7 @@ if __name__ == '__main__':
 ```
 
 - [Altitude](04_protocol.md#Altitude)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_request()](05_drone.md#send_request)
 
 
 <br>
@@ -86,7 +86,7 @@ if __name__ == '__main__':
 ```
 
 - [Motion](04_protocol.md#Motion)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_request()](05_drone.md#send_request)
 
 
 <br>
@@ -124,7 +124,7 @@ if __name__ == '__main__':
 ```
 
 - [Attitude](04_protocol.md#Attitude)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_request()](05_drone.md#send_request)
 
 
 <br>

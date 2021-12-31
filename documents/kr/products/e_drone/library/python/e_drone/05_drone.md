@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -49,20 +49,20 @@ Drone 클래스 생성자 호출 시 인자를 입력하지 않으면 **flag_che
 
 Drone 클래스의 외부에서 접근할 수 있는 함수 목록입니다.
 
-|                    이름                    |                                설명                                |
-| :----------------------------------------- | :----------------------------------------------------------------- |
-| is_open()                                  | 시리얼 포트가 열린 경우 True 반환                                  |
-| open(port_name)                            | 시리얼 포트 열기. 포트가 열린 경우 True 반환                       |
-| close()                                    | 시리얼 포트 닫기                                                   |
-| make_transfer_data_array(header, data)     | 전송할 데이터 바이트 배열 생성                                     |
-| transfer(header, data)                     | 데이터 전송(내부에서 make_transfer_data_array 함수를 실행함)       |
-| check()                                    | 수신 받은 데이터 확인. 데이터를 받은 경우 DataType을 반환          |
-| check_detail()                             | 수신 받은 데이터 확인. Header와 Data를 튜플로 반환                 |
-| set_event_handler(dataType, event_handler) | 특정 타입의 데이터를 수신했을 때 호출할 사용자 지정 함수 등록      |
-| get_header(dataType)                       | 지정한 타입의 데이터와 함께 받은 헤더 반환                         |
-| get_data(dataType)                         | 지정한 타입의 데이터 반환(데이터가 없으면 None 반환)               |
-| get_count(dataType)                        | 지정한 타입의 데이터를 받은 횟수를 반환(데이터가 없으면 None 반환) |
-| convert_byte_array_to_string(data_array)   | 바이트 배열을 Hex 문자열로 변경하여 반환                           |
+|                    이름                     |                                설명                                |
+| :------------------------------------------ | :----------------------------------------------------------------- |
+| is_open()                                   | 시리얼 포트가 열린 경우 True 반환                                  |
+| open(port_name)                             | 시리얼 포트 열기. 포트가 열린 경우 True 반환                       |
+| close()                                     | 시리얼 포트 닫기                                                   |
+| make_transfer_data_array(header, data)      | 전송할 데이터 바이트 배열 생성                                     |
+| transfer(header, data)                      | 데이터 전송(내부에서 make_transfer_data_array 함수를 실행함)       |
+| check()                                     | 수신 받은 데이터 확인. 데이터를 받은 경우 DataType을 반환          |
+| check_detail()                              | 수신 받은 데이터 확인. Header와 Data를 튜플로 반환                 |
+| set_event_handler(data_type, event_handler) | 특정 타입의 데이터를 수신했을 때 호출할 사용자 지정 함수 등록      |
+| get_header(data_type)                       | 지정한 타입의 데이터와 함께 받은 헤더 반환                         |
+| get_data(data_type)                         | 지정한 타입의 데이터 반환(데이터가 없으면 None 반환)               |
+| get_count(data_type)                        | 지정한 타입의 데이터를 받은 횟수를 반환(데이터가 없으면 None 반환) |
+| convert_byte_array_to_string(data_array)    | 바이트 배열을 Hex 문자열로 변경하여 반환                           |
 
 
 <br>
@@ -448,17 +448,18 @@ def send_control_position(self, position_x, position_y, position_z, velocity, he
 option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
 
 ```py
-def send_command(self, command_type, option = 0):
+def send_command(self, device_type, command_type, option = 0):
 ```
 
-|  변수 이름   |                   형식 또는 범위                    |   설명    |
-| :----------: | :-------------------------------------------------: | :-------- |
-| command_type |      [CommandType](04_protocol.md#CommandType)      | 명령 타입 |
-|    option    | [ModeControlFlight](03_system.md#ModeControlFlight) | 옵션      |
-|              |       [FlightEvent](03_system.md#FlightEvent)       |           |
-|              |          [Headless](03_system.md#Headless)          |           |
-|              |              [Trim](03_system.md#Trim)              |           |
-|              |                        UInt8                        |           |
+|  변수 이름   |                   형식 또는 범위                    |       설명       |
+| :----------: | :-------------------------------------------------: | :--------------- |
+| device_type  |        [DeviceType](03_system.md#DeviceType)        | 전송할 대상 장치 |
+| command_type |      [CommandType](04_protocol.md#CommandType)      | 명령 타입        |
+|    option    | [ModeControlFlight](03_system.md#ModeControlFlight) | 옵션             |
+|              |       [FlightEvent](03_system.md#FlightEvent)       |                  |
+|              |          [Headless](03_system.md#Headless)          |                  |
+|              |              [Trim](03_system.md#Trim)              |                  |
+|              |                        UInt8                        |                  |
 
 - e.g. [Motion 센서 보정](examples_13_error.md#Error_MotionCalibrating)
 
@@ -476,11 +477,12 @@ def send_command(self, command_type, option = 0):
 option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
 
 ```py
-def send_command_light_event(self, command_type, option, light_event, interval, repeat):
+def send_command_light_event(self, device_type, command_type, option, light_event, interval, repeat):
 ```
 
 |  변수 이름   |                   형식 또는 범위                    |             설명              |
 | :----------: | :-------------------------------------------------: | :---------------------------- |
+| device_type  |        [DeviceType](03_system.md#DeviceType)        | 전송할 대상 장치              |
 | command_type |      [CommandType](04_protocol.md#CommandType)      | 명령 타입                     |
 |    option    | [ModeControlFlight](03_system.md#ModeControlFlight) | 옵션                          |
 |              |       [FlightEvent](03_system.md#FlightEvent)       |                               |
@@ -505,11 +507,12 @@ def send_command_light_event(self, command_type, option, light_event, interval, 
 option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
 
 ```py
-def send_command_light_event_color(self, command_type, option, light_event, interval, repeat, r, g, b):
+def send_command_light_event_color(self, device_type, command_type, option, light_event, interval, repeat, r, g, b):
 ```
 
 |  변수 이름   |                   형식 또는 범위                    |             설명              |
 | :----------: | :-------------------------------------------------: | :---------------------------- |
+| device_type  |        [DeviceType](03_system.md#DeviceType)        | 전송할 대상 장치              |
 | command_type |      [CommandType](04_protocol.md#CommandType)      | 명령 타입                     |
 |    option    | [ModeControlFlight](03_system.md#ModeControlFlight) | 옵션                          |
 |              |       [FlightEvent](03_system.md#FlightEvent)       |                               |
@@ -537,11 +540,12 @@ def send_command_light_event_color(self, command_type, option, light_event, inte
 option에는 각 형식의 value 값 또는 숫자 값을 넣으셔야 합니다.
 
 ```py
-def send_command_light_event_colors(self, command_type, option, light_event, interval, repeat, colors):
+def send_command_light_event_colors(self, device_type, command_type, option, light_event, interval, repeat, colors):
 ```
 
 |  변수 이름   |                   형식 또는 범위                    |             설명              |
 | :----------: | :-------------------------------------------------: | :---------------------------- |
+| device_type  |        [DeviceType](03_system.md#DeviceType)        | 전송할 대상 장치              |
 | command_type |      [CommandType](04_protocol.md#CommandType)      | 명령 타입                     |
 |    option    | [ModeControlFlight](03_system.md#ModeControlFlight) | 옵션                          |
 |              |       [FlightEvent](03_system.md#FlightEvent)       |                               |
@@ -716,6 +720,32 @@ def send_set_default(self, deviceType):
 <br>
 
 
+## <a name="send_backlight_on">send_backlight_on</a>
+
+조종기 백라이트 켜기 
+
+```py
+def send_backlight_on(self):
+```
+
+
+<br>
+<br>
+
+
+## <a name="send_backlight_off">send_backlight_off</a>
+
+조종기 백라이트 끄기 
+
+```py
+def send_backlight_off(self):
+```
+
+
+<br>
+<br>
+
+
 ## <a name="send_motor">send_motor</a>
 
 4개의 모터를 미리 지정된 방향으로 회전
@@ -760,27 +790,6 @@ def send_motor_single(self, target, value):
 <br>
 
 
-## <a name="send_motor_single_rotation">send_motor_single_rotation</a>
-
-1개의 모터를 회전 방향을 지정하여 동작
-
-target에 들어가는 값은 0~3입니다. 모터의 순서는 왼쪽 앞 모터부터 시계방향입니다.
-
-```py
-def send_motor_single_rotation(self, target, rotation, value):
-```
-
-| 변수 이름 |          형식 또는 범위           |        설명        |
-| :-------: | :-------------------------------: | :----------------- |
-|  target   |               0 ~ 3               | 제어할 모터의 번호 |
-| rotation  | [Rotation](03_system.md#Rotation) | 모터의 회전 방향   |
-|   value   |             0 ~ 4095              | 모터의 속도        |
-
-
-<br>
-<br>
-
-
 ## <a name="send_light_manual">send_light_manual</a>
 
 LED 수동 제어
@@ -813,18 +822,19 @@ LED 모드 설정(RGB)
 light_mode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
 ```py
-def send_light_mode_color(self, light_mode, interval, r, g, b):
+def send_light_mode_color(self, device_type, light_mode, interval, r, g, b):
 ```
 
-| 변수 이름  | 형식 또는 범위 |             설명              |
-| :--------: | :------------: | :---------------------------- |
-| light_mode |     UInt8      | LED 동작 모드                 |
-|  interval  |   0 ~ 65535    | 내부 밝기 제어 함수 호출 주기 |
-|     r      |    0 ~ 255     | Red                           |
-|     g      |    0 ~ 255     | Green                         |
-|     b      |    0 ~ 255     | Blue                          |
+|  변수 이름  |            형식 또는 범위             |             설명              |
+| :---------: | :-----------------------------------: | :---------------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | LED를 제어할 장치             |
+| light_mode  |                 UInt8                 | LED 동작 모드                 |
+|  interval   |               0 ~ 65535               | 내부 밝기 제어 함수 호출 주기 |
+|      r      |                0 ~ 255                | Red                           |
+|      g      |                0 ~ 255                | Green                         |
+|      b      |                0 ~ 255                | Blue                          |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
+- e.g. [Light 모드, 이벤트 함수를 사용하여 드론과 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
 
 <br>
@@ -839,16 +849,17 @@ LED 모드 설정(Palette)
 light_mode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
 ```py
-def send_light_mode_colors(self, light_mode, interval, colors):
+def send_light_mode_colors(self, device_type, light_mode, interval, colors):
 ```
 
-| 변수 이름  |         형식 또는 범위          |             설명              |
-| :--------: | :-----------------------------: | :---------------------------- |
-| light_mode |              UInt8              | LED 동작 모드                 |
-|  interval  |            0 ~ 65535            | 내부 밝기 제어 함수 호출 주기 |
-|   colors   | [Colors](04_protocol.md#Colors) | 색상 팔레트 인덱스            |
+|  변수 이름  |            형식 또는 범위             |             설명              |
+| :---------: | :-----------------------------------: | :---------------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | LED를 제어할 장치             |
+| light_mode  |                 UInt8                 | LED 동작 모드                 |
+|  interval   |               0 ~ 65535               | 내부 밝기 제어 함수 호출 주기 |
+|   colors    |    [Colors](04_protocol.md#Colors)    | 색상 팔레트 인덱스            |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
+- e.g. [Light 모드, 이벤트 함수를 사용하여 드론과 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
 
 <br>
@@ -862,19 +873,20 @@ LED 이벤트 설정(RGB)
 light_event 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
 ```py
-def send_light_event_color(self, light_event, interval, repeat, r, g, b):
+def send_light_event_color(self, device_type, light_event, interval, repeat, r, g, b):
 ```
 
-|  변수 이름  | 형식 또는 범위 |             설명              |
-| :---------: | :------------: | :---------------------------- |
-| light_event |     UInt8      | LED 동작 모드                 |
-|  interval   |   0 ~ 65535    | 내부 밝기 제어 함수 호출 주기 |
-|   repeat    |    0 ~ 255     | 반복 횟수                     |
-|      r      |    0 ~ 255     | Red                           |
-|      g      |    0 ~ 255     | Green                         |
-|      b      |    0 ~ 255     | Blue                          |
+|  변수 이름  |            형식 또는 범위             |             설명              |
+| :---------: | :-----------------------------------: | :---------------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | LED를 제어할 장치             |
+| light_event |                 UInt8                 | LED 동작 모드                 |
+|  interval   |               0 ~ 65535               | 내부 밝기 제어 함수 호출 주기 |
+|   repeat    |                0 ~ 255                | 반복 횟수                     |
+|      r      |                0 ~ 255                | Red                           |
+|      g      |                0 ~ 255                | Green                         |
+|      b      |                0 ~ 255                | Blue                          |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
+- e.g. [Light 모드, 이벤트 함수를 사용하여 드론과 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
 
 <br>
@@ -888,17 +900,18 @@ LED 이벤트 설정(Palette)
 light_event 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
 ```py
-def send_light_event_colors(self, light_event, interval, repeat, colors):
+def send_light_event_colors(self, device_type, light_event, interval, repeat, colors):
 ```
 
-|  변수 이름  |         형식 또는 범위          |             설명              |
-| :---------: | :-----------------------------: | :---------------------------- |
-| light_event |              UInt8              | LED 동작 모드                 |
-|  interval   |            0 ~ 65535            | 내부 밝기 제어 함수 호출 주기 |
-|   repeat    |             0 ~ 255             | 반복 횟수                     |
-|   colors    | [Colors](04_protocol.md#Colors) | 색상 팔레트 인덱스            |
+|  변수 이름  |            형식 또는 범위             |             설명              |
+| :---------: | :-----------------------------------: | :---------------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | LED를 제어할 장치             |
+| light_event |                 UInt8                 | LED 동작 모드                 |
+|  interval   |               0 ~ 65535               | 내부 밝기 제어 함수 호출 주기 |
+|   repeat    |                0 ~ 255                | 반복 횟수                     |
+|   colors    |    [Colors](04_protocol.md#Colors)    | 색상 팔레트 인덱스            |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기](examples_10_light.md#LightMode)
+- e.g. [Light 모드, 이벤트 함수를 사용하여 드론과 조종기 LED 제어하기](examples_10_light.md#LightMode)
 
 
 <br>
@@ -912,16 +925,17 @@ LED 기본 모드 설정(RGB)
 light_mode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
 
 ```py
-def send_light_default_color(self, light_mode, interval, r, g, b):
+def send_light_default_color(self, device_type, light_mode, interval, r, g, b):
 ```
 
-| 변수 이름  | 형식 또는 범위 |             설명              |
-| :--------: | :------------: | :---------------------------- |
-| light_mode |     UInt8      | LED 동작 모드                 |
-|  interval  |   0 ~ 65535    | 내부 밝기 제어 함수 호출 주기 |
-|     r      |    0 ~ 255     | Red                           |
-|     g      |    0 ~ 255     | Green                         |
-|     b      |    0 ~ 255     | Blue                          |
+|  변수 이름  |            형식 또는 범위             |             설명              |
+| :---------: | :-----------------------------------: | :---------------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | LED를 제어할 장치             |
+| light_mode  |                 UInt8                 | LED 동작 모드                 |
+|  interval   |               0 ~ 65535               | 내부 밝기 제어 함수 호출 주기 |
+|      r      |                0 ~ 255                | Red                           |
+|      g      |                0 ~ 255                | Green                         |
+|      b      |                0 ~ 255                | Blue                          |
 
 - e.g. [드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / send_light_default_color 함수 사용)](examples_10_light.md#Class_LightDefaultModeColor)
 
@@ -1167,12 +1181,13 @@ def send_buzzer(self, mode, value, time):
 버저 무음
 
 ```py
-def send_buzzer_mute(self, time):
+def send_buzzer_mute(self, device_type, time):
 ```
 
-| 변수 이름 | 형식 또는 범위 |          설명          |
-| :-------: | :------------: | :--------------------- |
-|   time    |   0 ~ 65,535   | 소리를 지속할 시간(ms) |
+|  변수 이름  |            형식 또는 범위             |          설명          |
+| :---------: | :-----------------------------------: | :--------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | 전송할 대상 장치       |
+|    time     |              0 ~ 65,535               | 소리를 지속할 시간(ms) |
 
 - e.g. [send_buzzer 함수 테스트](examples_08_buzzer.md#Buzzer)
 
@@ -1186,12 +1201,13 @@ def send_buzzer_mute(self, time):
 버저 무음 예약
 
 ```py
-def send_buzzer_mute_reserve(self, time):
+def send_buzzer_mute_reserve(self, device_type, time):
 ```
 
-| 변수 이름 | 형식 또는 범위 |          설명          |
-| :-------: | :------------: | :--------------------- |
-|   time    |   0 ~ 65,535   | 소리를 지속할 시간(ms) |
+|  변수 이름  |            형식 또는 범위             |          설명          |
+| :---------: | :-----------------------------------: | :--------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | 전송할 대상 장치       |
+|    time     |              0 ~ 65,535               | 소리를 지속할 시간(ms) |
 
 - e.g. [send_buzzer 함수 테스트](examples_08_buzzer.md#Buzzer)
 
@@ -1205,13 +1221,14 @@ def send_buzzer_mute_reserve(self, time):
 버저 음계 사용하여 소리내기
 
 ```py
-def send_buzzer_scale(self, scale, time):
+def send_buzzer_scale(self, device_type, scale, time):
 ```
 
-| 변수 이름 |              형식 또는 범위               |          설명          |
-| :-------: | :---------------------------------------: | :--------------------- |
-|   scale   | [BuzzerScale](04_protocol.md#BuzzerScale) | Scale                  |
-|   time    |                0 ~ 65,535                 | 소리를 지속할 시간(ms) |
+|  변수 이름  |              형식 또는 범위               |          설명          |
+| :---------: | :---------------------------------------: | :--------------------- |
+| device_type |   [DeviceType](03_system.md#DeviceType)   | 전송할 대상 장치       |
+|    scale    | [BuzzerScale](04_protocol.md#BuzzerScale) | Scale                  |
+|    time     |                0 ~ 65,535                 | 소리를 지속할 시간(ms) |
 
 - e.g. ['학교 종이 땡땡땡' 일부 연주](examples_08_buzzer.md#BuzzerScale)
 
@@ -1225,13 +1242,14 @@ def send_buzzer_scale(self, scale, time):
 버저 음계 사용하여 소리내기 예약
 
 ```py
-def send_buzzer_scale_reserve(self, scale, time):
+def send_buzzer_scale_reserve(self, device_type, scale, time):
 ```
 
-| 변수 이름 |              형식 또는 범위               |          설명          |
-| :-------: | :---------------------------------------: | :--------------------- |
-|   scale   | [BuzzerScale](04_protocol.md#BuzzerScale) | Scale                  |
-|   time    |                0 ~ 65,535                 | 소리를 지속할 시간(ms) |
+|  변수 이름  |              형식 또는 범위               |          설명          |
+| :---------: | :---------------------------------------: | :--------------------- |
+| device_type |   [DeviceType](03_system.md#DeviceType)   | 전송할 대상 장치       |
+|    scale    | [BuzzerScale](04_protocol.md#BuzzerScale) | Scale                  |
+|    time     |                0 ~ 65,535                 | 소리를 지속할 시간(ms) |
 
 - e.g. [send_buzzer 함수 테스트](examples_08_buzzer.md#Buzzer)
 
@@ -1245,13 +1263,14 @@ def send_buzzer_scale_reserve(self, scale, time):
 버저 주파수 사용하여 소리내기
 
 ```py
-def send_buzzer_hz(self, hz, time):
+def send_buzzer_hz(self, device_type, hz, time):
 ```
 
-| 변수 이름 | 형식 또는 범위 |          설명          |
-| :-------: | :------------: | :--------------------- |
-|    hz     |   0 ~ 8,000    | 주파수 값              |
-|   time    |   0 ~ 65,535   | 소리를 지속할 시간(ms) |
+|  변수 이름  |            형식 또는 범위             |          설명          |
+| :---------: | :-----------------------------------: | :--------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | 전송할 대상 장치       |
+|     hz      |               0 ~ 8,000               | 주파수 값              |
+|    time     |              0 ~ 65,535               | 소리를 지속할 시간(ms) |
 
 - e.g. [send_buzzer 함수 테스트](examples_08_buzzer.md#Buzzer)
 
@@ -1265,13 +1284,14 @@ def send_buzzer_hz(self, hz, time):
 버저 주파수 사용하여 소리내기 예약
 
 ```py
-def send_buzzer_hz_reserve(self, hz, time):
+def send_buzzer_hz_reserve(self, device_type, hz, time):
 ```
 
-| 변수 이름 | 형식 또는 범위 |          설명          |
-| :-------: | :------------: | :--------------------- |
-|    hz     |   0 ~ 8,000    | 주파수 값              |
-|   time    |   0 ~ 65,535   | 소리를 지속할 시간(ms) |
+|  변수 이름  |            형식 또는 범위             |          설명          |
+| :---------: | :-----------------------------------: | :--------------------- |
+| device_type | [DeviceType](03_system.md#DeviceType) | 전송할 대상 장치       |
+|     hz      |               0 ~ 8,000               | 주파수 값              |
+|    time     |              0 ~ 65,535               | 소리를 지속할 시간(ms) |
 
 - e.g. [send_buzzer 함수 테스트](examples_08_buzzer.md#Buzzer)
 

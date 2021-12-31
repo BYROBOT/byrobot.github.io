@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Information**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -55,7 +55,7 @@ if __name__ == '__main__':
 ```
 
 - [Information](04_protocol.md#Information)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_request()](05_drone.md#send_request)
 
 
 <br>
@@ -104,7 +104,7 @@ if __name__ == '__main__':
 ```
 
 - [Information](04_protocol.md#Information)
-- [sendRequest()](05_drone.md#sendRequest)
+- [send_request()](05_drone.md#send_request)
 
 
 <br>

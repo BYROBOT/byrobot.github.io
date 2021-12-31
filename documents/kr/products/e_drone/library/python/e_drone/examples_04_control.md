@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Control**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -47,9 +47,9 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlTime()](05_drone.md#sendControlTime)
-- [sendLanding()](05_drone.md#sendLanding)
+- [send_takeoff()](05_drone.md#send_takeoff)
+- [send_control_time()](05_drone.md#send_control_time)
+- [send_landing()](05_drone.md#send_landing)
 
 
 <br>
@@ -93,9 +93,9 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlTime()](05_drone.md#sendControlTime)
-- [sendStop()](05_drone.md#sendStop)
+- [send_takeoff()](05_drone.md#send_takeoff)
+- [send_control_time()](05_drone.md#send_control_time)
+- [send_stop()](05_drone.md#send_stop)
 
 
 <br>
@@ -147,10 +147,10 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlTime()](05_drone.md#sendControlTime)
-- [sendControlPosition()](05_drone.md#sendControlPosition)
-- [sendLanding()](05_drone.md#sendLanding)
+- [send_takeoff()](05_drone.md#send_takeoff)
+- [send_control_time()](05_drone.md#send_control_time)
+- [send_control_position_short()](05_drone.md#send_control_position_short)
+- [send_landing()](05_drone.md#send_landing)
 
 
 <br>
@@ -205,11 +205,11 @@ if __name__ == '__main__':
 
 ```
 
-- [sendTakeOff()](05_drone.md#sendTakeOff)
-- [sendControlTime()](05_drone.md#sendControlTime)
-- [sendControlPosition()](05_drone.md#sendControlPosition)
-- [sendFlightEvent()](05_drone.md#sendFlightEvent)
-- [sendLanding()](05_drone.md#sendLanding)
+- [send_takeoff()](05_drone.md#send_takeoff)
+- [send_control_time()](05_drone.md#send_control_time)
+- [send_control_position_short()](05_drone.md#send_control_position_short)
+- [send_flight_event()](05_drone.md#send_flight_event)
+- [send_landing()](05_drone.md#send_landing)
 
 
 <br>

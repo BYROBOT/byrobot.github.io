@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Buzzer**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -26,28 +26,28 @@ if __name__ == '__main__':
     drone.open()
     
 
-    drone.send_buzzer(BuzzerMode.MUTE, BuzzerScale.MUTE.value, 500)
+    drone.send_buzzer(DeviceType.DRONE, BuzzerMode.MUTE, BuzzerScale.MUTE.value, 500)
     sleep(1)
 
-    drone.send_buzzer(BuzzerMode.SCALE, BuzzerScale.C4.value, 500)
+    drone.send_buzzer(DeviceType.DRONE, BuzzerMode.SCALE, BuzzerScale.C4.value, 500)
     sleep(1)
 
-    drone.send_buzzer(BuzzerMode.HZ, 500, 500)
+    drone.send_buzzer(DeviceType.DRONE, BuzzerMode.HZ, 500, 500)
     sleep(1)
 
 
-    drone.send_buzzer_mute(100)
-    drone.send_buzzer_mute_reserve(100)
+    drone.send_buzzer_mute(DeviceType.CONTROLLER, 100)
+    drone.send_buzzer_mute_reserve(DeviceType.CONTROLLER, 100)
     sleep(1.2)
 
 
-    drone.send_buzzer_scale(BuzzerScale.C5, 500)
-    drone.send_buzzer_scale_reserve(BuzzerScale.D5, 500)
+    drone.send_buzzer_scale(DeviceType.CONTROLLER, BuzzerScale.C5, 500)
+    drone.send_buzzer_scale_reserve(DeviceType.CONTROLLER, BuzzerScale.D5, 500)
     sleep(1.2)
 
 
-    drone.send_buzzer_hz(1000, 500)
-    drone.send_buzzer_hz_reserve(1200, 500)
+    drone.send_buzzer_hz(DeviceType.CONTROLLER, 1000, 500)
+    drone.send_buzzer_hz_reserve(DeviceType.CONTROLLER, 1200, 500)
     sleep(1.2)
     
 
@@ -81,16 +81,16 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
     
-    drone.send_buzzer(BuzzerMode.MUTE, BuzzerScale.MUTE.value, 100)
-    sleep(0.2);
+    drone.send_buzzer(DeviceType.DRONE, BuzzerMode.MUTE, BuzzerScale.MUTE.value, 100)
+    sleep(0.2)
     
-    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
-    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
-    drone.send_buzzer_scale(BuzzerScale.A4, 500);     sleep(0.5);
-    drone.send_buzzer_scale(BuzzerScale.A4, 500);     sleep(0.5);
-    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
-    drone.send_buzzer_scale(BuzzerScale.G4, 500);     sleep(0.5);
-    drone.send_buzzer_scale(BuzzerScale.E4, 500);     sleep(0.5);
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.G4, 500);     sleep(0.5)
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.G4, 500);     sleep(0.5)
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.A4, 500);     sleep(0.5)
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.A4, 500);     sleep(0.5)
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.G4, 500);     sleep(0.5)
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.G4, 500);     sleep(0.5)
+    drone.send_buzzer_scale(DeviceType.DRONE, BuzzerScale.E4, 500);     sleep(0.5)
 
     drone.close()
 ```
