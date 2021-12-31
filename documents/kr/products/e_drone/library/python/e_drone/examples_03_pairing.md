@@ -37,9 +37,9 @@ if __name__ == '__main__':
 
     while True:
         sleep(0.01)
-        dataType = drone.check()
+        data_type = drone.check()
         
-        if dataType == DataType.PAIRING:
+        if data_type == DataType.PAIRING:
             pairing = drone.get_data(DataType.PAIRING)
 
             print("Address: 0x{0:04X}{1:04X}{2:04X} / {0}.{1}.{2}".format(

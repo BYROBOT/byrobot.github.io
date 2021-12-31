@@ -37,9 +37,9 @@ if __name__ == '__main__':
 
     while True:
         sleep(0.01)
-        dataType = drone.check()
+        data_type = drone.check()
 
-        if dataType == DataType.ACK:
+        if data_type == DataType.ACK:
             ack = drone.get_data(DataType.ACK)
             print("{0} / {1} / {2:04X}".format(ack.data_type.name, ack.system_time, ack.crc16))
             print("T: {0}".format(time.time() - time_start))

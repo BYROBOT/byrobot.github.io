@@ -201,8 +201,8 @@ if __name__ == '__main__':
         g    = int(random.randint(0, 255))
         b    = int(random.randint(0, 255))
 
-        dataArray = drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, r, g, b)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, r, g, b)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     
@@ -250,8 +250,8 @@ if __name__ == '__main__':
         data.color.g    = int(random.randint(0, 255))
         data.color.b    = int(random.randint(0, 255))
 
-        dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     
@@ -284,8 +284,8 @@ if __name__ == '__main__':
         
         colors = Colors(random.randint(0, Colors.END_OF_TYPE.value))
 
-        dataArray = drone.send_light_mode_colors(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, colors)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.send_light_mode_colors(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, colors)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     
@@ -331,8 +331,8 @@ if __name__ == '__main__':
         
         data.colors    = Colors(random.randint(0, Colors.END_OF_TYPE.value))
 
-        dataArray = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(dataArray)))
+        data_array = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(0.6)
     
@@ -348,9 +348,6 @@ if __name__ == '__main__':
 
 <a name="Class_LightDefaultModeColor"></a>
 ## 드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / sendLightDefaultColor 함수 사용)
-
-다른 LED 제어 명령을 사용하기 전에만 정상적으로 동작합니다. 이 예제를 실행하기 전에 드론의 배터리를 제거했다가 다시 연결한 후 실행하시기 바랍니다.
-
 
 ```py
 import random
@@ -371,8 +368,8 @@ if __name__ == '__main__':
         g    = int(random.randint(0, 255))
         b    = int(random.randint(0, 255))
 
-        dataArray = drone.sendLightDefaultColor(LightModeDrone.BodyDimming, 1, r, g, b)
-        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
+        data_array = drone.sendLightDefaultColor(LightModeDrone.BodyDimming, 1, r, g, b)
+        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
 
         sleep(2)
     

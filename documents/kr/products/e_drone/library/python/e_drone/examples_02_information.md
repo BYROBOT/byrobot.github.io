@@ -31,9 +31,9 @@ if __name__ == '__main__':
 
     while True:
         sleep(0.01)
-        dataType = drone.check()
+        data_type = drone.check()
         
-        if dataType == DataType.INFORMATION:
+        if data_type == DataType.INFORMATION:
             information = drone.get_data(DataType.INFORMATION)
             print("ModeUpdate: {0}".format(information.mode_update))
             print("ModelNumber: {0}".format(information.model_number))
