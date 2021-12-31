@@ -143,20 +143,28 @@
             <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/e-drone/" target="_blank">e_drone</a></div></td>
         </tr>
         <tr>
+            <td class="python"><div align="center">Repository</div></td>
+            <td colspan="2" class="python"><div align="center"><a href="https://github.com/byrobot-python/e_drone" target="_blank">e_drone (github)</a></div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Examples</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://github.com/byrobot-python/e_drone_examples" target="_blank">e_drone_examples (github)</a></div></td>
+        </tr>
+        <tr>
             <td class="python"><div align="center">Version</div></td>
-            <td colspan="2" class="python"><div align="center">21.1.6</div></td>
+            <td colspan="2" class="python"><div align="center">22.1.15</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.1.5</div></td>
+            <td colspan="2" class="white"><div align="center">2021.12.31</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/" target="_blank">한국어(E-Drone)</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Update Log</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/" target="_blank">한국어(E-Drone)</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/">한국어</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
         <!-- Rust -->
@@ -204,4 +212,4 @@
 
 ---
 
-Modified : 2021.12.13
+Modified : 2021.12.31

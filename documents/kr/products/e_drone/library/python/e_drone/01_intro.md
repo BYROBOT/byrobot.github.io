@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Intro**
 
-Modified : 2021.12.29
+Modified : 2021.12.31
 
 ---
 
@@ -25,7 +25,17 @@ Modified : 2021.12.29
 
 ***e_drone* for python**은 python에서 ***E-DRONE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
 
-[https://pypi.org/project/e-drone/](https://pypi.org/project/e-drone/)
+<br>
+
+* The Python Package Index (PyPI)<br>
+  [https://pypi.org/project/e-drone/](https://pypi.org/project/e-drone/)
+
+* 라이브러리 저장소<br>
+  [https://github.com/byrobot-python/e_drone](https://github.com/byrobot-python/e_drone)
+
+* 예제 저장소<br>
+  [https://github.com/byrobot-python/e_drone_examples](https://github.com/byrobot-python/e_drone_examples)
+
 
 <br>
 <br>
