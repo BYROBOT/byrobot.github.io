@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Error**
 
-Modified : 2021.1.4
+Modified : 2022.1.3
 
 ---
 
@@ -11,7 +11,7 @@ Modified : 2021.1.4
 
 
 <a name="Error_MotionCalibrating"></a>
-## Motion 센서 보정
+## Motion 센서 캘리브레이션
 
 ```py
 # 드론 센서 캘리브레이션 요청 후 에러로 나타난 캘리브레이션 진행 상태를 화면에 표시
@@ -21,18 +21,18 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def checkError(error, flag):
+def check_error(error, flag):
     if error & flag.value != 0:
         return True
     else:
         return False
 
-def eventError(error):
+def event_error(error):
     
-    print("* eventError() / SystemTime({0:10}) / ErrorFlagsForSensor({1:032b}) / ErrorFlagsForState({2:032b})".format(error.systemTime, error.errorFlagsForSensor, error.errorFlagsForState))
+    print("* eventError() / SystemTime({0:10}) / ErrorFlagsForSensor({1:032b}) / ErrorFlagsForState({2:032b})".format(error.system_time, error.error_flags_for_sensor, error.error_flags_for_state))
 
-    if checkError(error.errorFlagsForSensor, ErrorFlagsForSensor.Motion_Calibrating):
-        print("    - MOTION 센서를 보정 중입니다.")
+    if check_error(error.error_flags_for_sensor, ErrorFlagsForSensor.MOTION_CALIBRATING):
+        print("    - The Motion Sensor is being calibrated.")
 
 
 if __name__ == '__main__':
@@ -41,28 +41,28 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.setEventHandler(DataType.Error, eventError)
+    drone.set_event_handler(DataType.ERROR, event_error)
 
-    drone.sendPing(DeviceType.Controller)
+    drone.send_ping(DeviceType.CONTROLLER)
     sleep(0.1)
 
-    drone.sendCommand(CommandType.ClearBias)
+    drone.send_command(DeviceType.DRONE, CommandType.CLEAR_BIAS)
     sleep(0.1)
 
     for i in range(30, 0, -1):
         print(i)
         sleep(1)
 
-        error = drone.getData(DataType.Error)
-        if error and not checkError(error.errorFlagsForSensor, ErrorFlagsForSensor.Motion_Calibrating):
-            print("* MOTION 센서 보정이 완료되었습니다.")
+        error = drone.get_data(DataType.ERROR)
+        if error and not check_error(error.error_flags_for_sensor, ErrorFlagsForSensor.MOTION_CALIBRATING):
+            print("* The Motion Sensor Calibration is completed.")
             break
 
     drone.close()
 ```
 
 - [Error](04_protocol.md#Error)
-- [sendPing()](05_drone.md#sendPing)
+- [send_ping()](05_drone.md#send_ping)
 
 
 <br>
