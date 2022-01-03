@@ -31,7 +31,7 @@
 
 
 <div align="center">
-    <a href="/documents/kr/news/2021"><b>News</b></a><br>
+    <a href="/documents/kr/news/2022"><b>News</b></a><br>
     
     <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202213">CODING DRONE 펌웨어 업데이트</a> <sup><i>2022.1.3</i></sup><br>
 
@@ -137,4 +137,4 @@
 ---
 
 
-Modified : 2021.12.13
+Modified : 2022.1.4
