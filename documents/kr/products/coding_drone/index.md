@@ -72,20 +72,20 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">21.12.1</div></td>
+            <td colspan="2" class="white"><div align="center">22.1.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2021.12.13</div></td>
+            <td colspan="2" class="firmware"><div align="center">2022.1.3</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.google.com/file/d/1ttvauYvkOiejqBgYqvTuqxlFHvEpU3XI/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
-                <!--<a href="https://drive.google.com/file/d/1Yu-yuC9fP7tdM7XKVDNVgpBJhWzmryIJ/view?usp=sharing" target="_blank">Windows</a><br>-->
-                <a href="https://drive.google.com/file/d/1se5jMAidU1L3k0cfIlQ7DetApJglVBS0/view?usp=sharing" target="_blank">macOS</a><br>
-                <a href="https://drive.google.com/file/d/125g83OFXJU-09q0_4efEPtWjDXkuQ7Uq/view?usp=sharing" target="_blank">Linux</a><br>
-                <a href="https://drive.google.com/file/d/1ElGWjlCrRHjV80iI8kDGFw64kXi6GpjC/view?usp=sharing" target="_blank">Raspberry PI</a>
+                <a href="https://drive.google.com/file/d/1GUSfp692Aqo55MDlEr0i7kBo_li3kWYk/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
+                <!--<a href="https://drive.google.com/file/d/11Qt34c9wPmYVG0BpQHaLm-kE69IUPW4c/view?usp=sharing" target="_blank">Windows</a><br>-->
+                <a href="https://drive.google.com/file/d/1iH35WkEpBcXBaJN0OY9oQ1misLv6cmTr/view?usp=sharing" target="_blank">macOS</a><br>
+                <a href="https://drive.google.com/file/d/1AXBpl4ih2rVJ-9ryvhUm68aIyoNJi9NY/view?usp=sharing" target="_blank">Linux</a><br>
+                <a href="https://drive.google.com/file/d/1OBQLWYTjZcrfcNM7HVJbGnRqGuQXc-QJ/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
         </tr>
         <tr>
@@ -152,11 +152,11 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Version</div></td>
-            <td colspan="2" class="python"><div align="center">22.1.15</div></td>
+            <td colspan="2" class="python"><div align="center">22.1.16</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.12.31</div></td>
+            <td colspan="2" class="white"><div align="center">2022.1.3</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
@@ -191,11 +191,11 @@
         </tr>
         <tr>
             <td class="rust"><div align="center">Version</div></td>
-            <td colspan="2" class="rust"><div align="center">21.3.28</div></td>
+            <td colspan="2" class="rust"><div align="center">21.9.2</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.3.30</div></td>
+            <td colspan="2" class="white"><div align="center">2021.9.15</div></td>
         </tr>
         <tr>
             <td class="rust"><div align="center">Manual</div></td>
@@ -212,4 +212,4 @@
 
 ---
 
-Modified : 2021.12.31
+Modified : 2022.1.4

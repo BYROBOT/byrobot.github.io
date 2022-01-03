@@ -1,6 +1,6 @@
 **[E-DRONE](/documents/kr/products/e_drone/) update log**
 
-Modified : 2021.12.9
+Modified : 2022.1.4
 
 ---
 
@@ -9,6 +9,23 @@ Modified : 2021.12.9
 
 
 <br>
+
+
+# 2022.1.3
+
+- Drone: 21.8.1
+- Drone(4m): 21.9.1
+- **Controller: 22.1.1**
+> - 드론 이외의 장치에서 LED 제어 명령을 전송하면 LED 외부 제어 모드로 변경되고, 드론에서 전송하는 LED 제어 명령과 내부에서 발생하는 LED 제어 명령을 무시함. 재시작 시 원래 상태로 복귀(파이썬, 엔트리 등에서 LED 조작 명령을 내렸을 때 내부 LED 제어 명령 때문에 원하는 동작이 되지 않는 경우를 막기 위해 수정함)
+
+
+
+[Download](https://drive.google.com/file/d/1GUSfp692Aqo55MDlEr0i7kBo_li3kWYk/view?usp=sharing)
+
+
+<br>
+
+---
 
 
 # 2021.12.9
