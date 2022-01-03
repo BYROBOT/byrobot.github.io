@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Drone**
 
-Modified : 2021.12.29
+Modified : 2022.1.3
 
 ---
 
@@ -145,7 +145,8 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 </div>
 
 ```
-> python -m e_drone control 0 30 0 0 5000
+> python -m e_drone control 0 30 0 0 3000
+> python -m e_drone control 0 -30 0 0 3000
 ```
 
 
@@ -160,7 +161,10 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 </div>
 
 ```
-> python -m e_drone position 5 0 0 2 90 45
+> python -m e_drone position 2 0 0 1 0 0
+> python -m e_drone position -2 0 0 1 0 0
+> python -m e_drone position 0 0 0 0 90 45
+> python -m e_drone position 0 0 0 0 -90 45
 ```
 
 
@@ -297,13 +301,13 @@ R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 ```
 > python -m e_drone light body hold 100 50 50 10
-> python -m e_drone light body flicker 100 50 50 10
+> python -m e_drone light body flicker 120 50 50 10
 > python -m e_drone light body flickerdouble 100 50 50 10
-> python -m e_drone light body dimming 3 50 50 10
-> python -m e_drone light body sunrise 5 50 50 10
-> python -m e_drone light body sunset 5 50 50 10
-> python -m e_drone light body rainbow 8 50 50 10
-> python -m e_drone light body rainbow2 8 50 50 10
+> python -m e_drone light body dimming 3 200 200 20
+> python -m e_drone light body sunrise 5 20 200 200
+> python -m e_drone light body sunset 5 200 20 200
+> python -m e_drone light body rainbow 4 0 0 0
+> python -m e_drone light body rainbow2 4 0 0 0
 ```
 
 
