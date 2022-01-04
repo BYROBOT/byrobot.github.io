@@ -11,9 +11,9 @@ Modified : 2022.1.4
 <br>
 
 
-# 2022.1.3
+# 2022.1.4
 
-- **Drone: 22.1.1**
+- **Drone: 22.1.2**
 
 > - 드론에 USB 연결된 상태일 때 '시동', '이륙' 차단
 > - 시동, 이륙 시 자세 조건 변경하여 지나치게 기울어지거나 뒤집힌 상태에서 '시동', '이륙' 동작을 차단.(roll, pitch 모두 -20 ~ 20 사이이고, accel.z 값이 70 이상일 때 이륙 가능)
@@ -21,7 +21,7 @@ Modified : 2022.1.4
 > - 조종기 이외의 장치에서 LED 제어 명령을 전송하면 LED 외부 제어 모드로 변경되고, 조종기에서 전송하는 LED 제어 명령과 내부에서 발생하는 LED 제어 명령을 무시함. 재시작 시 원래 상태로 복귀(파이썬, 엔트리 등에서 LED 조작 명령을 내렸을 때 내부 LED 제어 명령 때문에 원하는 동작이 되지 않는 경우를 막기 위해 수정함)
 
 
-[Download](https://drive.google.com/file/d/1GUSfp692Aqo55MDlEr0i7kBo_li3kWYk/view?usp=sharing)
+[Download](https://drive.google.com/file/d/1lSOF1ro_jGrwLt4BLirGc6k9uzYmGE-V/view?usp=sharing)
 
 
 <br>

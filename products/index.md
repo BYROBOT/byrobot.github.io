@@ -33,7 +33,7 @@
 <div align="center">
     <a href="/documents/kr/news/2022"><b>News</b></a><br>
     
-    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202213">CODING DRONE 펌웨어 업데이트</a> <sup><i>2022.1.3</i></sup><br>
+    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202214">CODING DRONE 펌웨어 업데이트</a> <sup><i>2022.1.4</i></sup><br>
 
     <a href="/documents/kr/products/e_drone/log/updates/firmware/#heading-202213">E-DRONE 조종기 펌웨어 업데이트</a> <sup><i>2021.1.3</i></sup><br>
 

@@ -70,6 +70,7 @@ class DataType(Enum):
     ALTITUDE                    = 0x43      # 높이, 고도
     MOTION                      = 0x44      # Motion 센서 데이터 처리한 값(IMU)
     RANGE                       = 0x45      # 거리센서 데이터
+    FLOW                        = 0x46      # optical flow 센서 데이터
 
     # 설정
     COUNT                       = 0x50      # 카운트
@@ -2080,7 +2081,7 @@ class Position(ISerializable):
 | :-------: | :-----: | :----: | :---: | :----- |
 |     x     | Float32 | 4 Byte |   -   | X축(m) |
 |     y     | Float32 | 4 Byte |   -   | Y축(m) |
-|     z     | Float32 | 4 Byte |   -   | Y축(m) |
+|     z     | Float32 | 4 Byte |   -   | Z축(m) |
 
 
 <br>
@@ -2154,6 +2155,32 @@ class Motion(ISerializable):
 
 - e.g. [Motion 센서 데이터 확인](examples_05_sensor.md#Imu)
 
+
+<br>
+<br>
+
+
+<a name="Flow"></a>
+## Flow
+
+Flow 센서에서 연산한 위치 + 거리 센서의 값
+
+```py
+class Flow(ISerializable):
+
+    def __init__(self):
+        self.x     = 0
+        self.y     = 0
+        self.z     = 0
+```
+
+| 변수 이름 |  형식   |  크기  | 범위  |          설명           |
+| :-------: | :-----: | :----: | :---: | :---------------------- |
+|     x     | Float32 | 4 Byte |   -   | X축(m)                  |
+|     y     | Float32 | 4 Byte |   -   | Y축(m)                  |
+|     z     | Float32 | 4 Byte |   -   | Z축(m) / 거리 센서의 값 |
+
+- e.g. [Flow 센서 데이터 확인](examples_05_sensor.md#Flow)
 
 <br>
 <br>

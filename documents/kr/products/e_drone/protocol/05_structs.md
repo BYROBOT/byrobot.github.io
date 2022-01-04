@@ -1,6 +1,6 @@
 **[E-DRONE](index.md)** / **Protocol** / **Structs**
 
-Modified : 2020.1.10
+Modified : 2022.1.4
 
 ---
 
@@ -964,6 +964,34 @@ namespace Protocol
 
 <br>
 <br>
+
+
+<a name="Protocol_Flow"></a>
+## Protocol::Flow
+
+위치
+
+```cpp
+namespace Protocol
+{
+    struct Flow
+    {
+        float       x;      // meter
+        float       y;      // meter
+        float       z;      // meter
+    };
+}
+```
+
+
+| 변수 이름 | 형식  |  크기  |      범위      | 단위  |      설명      |
+| :-------: | :---: | :----: | :------------: | :---- | :------------- |
+|     x     | float | 4 Byte | -100.0 ~ 100.0 | meter | 앞(+), 뒤(-)   |
+|     y     | float | 4 Byte | -100.0 ~ 100.0 | meter | 좌(+), 우(-)   |
+|     z     | float | 4 Byte |   0 ~ 100.0    | meter | 거리 센서의 값 |
+
+
+
 
 
 <a name="Protocol_Count"></a>
