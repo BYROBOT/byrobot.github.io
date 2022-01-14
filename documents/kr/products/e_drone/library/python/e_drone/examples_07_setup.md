@@ -119,7 +119,7 @@ if __name__ == '__main__':
 ```
 
 - [State](04_protocol.md#State)
-- [send_headless()](05_drone.md#send_command)
+- [send_command()](05_drone.md#send_command)
 - [send_request()](05_drone.md#send_request)
 
 
