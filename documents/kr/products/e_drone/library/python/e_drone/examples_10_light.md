@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Light**
 
-Modified : 2021.12.31
+Modified : 2021.1.4
 
 ---
 
@@ -11,7 +11,7 @@ Modified : 2021.12.31
 
 
 <a name="LightManual"></a>
-## send_light_manual() 함수를 사용하여 조종기와 드론 LED 제어하기
+## sendLightManual() 함수를 사용하여 조종기 LED 제어하기
 
 ```py
 import random
@@ -27,46 +27,77 @@ if __name__ == '__main__':
     drone.open()
 
 
-    drone.send_light_manual(DeviceType.CONTROLLER, 0xFF, 0)
-    sleep(1)
-
-
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000011, 10);     sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000011, 100);    sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000011, 0);      sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000110, 10);     sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000110, 100);    sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000110, 0);      sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000101, 10);     sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000101, 100);    sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, 0b00000101, 0);      sleep(1)
-
-    drone.send_light_manual(DeviceType.DRONE, 0b00000110, 10);     sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00000110, 100);    sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00000110, 0);      sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00001100, 10);     sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00001100, 100);    sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00001100, 0);      sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00001010, 10);     sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00001010, 100);    sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, 0b00001010, 0);      sleep(1)
+    drone.sendLightManual(DeviceType.Controller, 0xFF, 0)
+    sleep(1);
+    
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyRed.value, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyRed.value, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyRed.value, 0)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyGreen.value, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyGreen.value, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyGreen.value, 0)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyBlue.value, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyBlue.value, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, LightFlagsController.BodyBlue.value, 0)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000011, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000011, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000011, 0)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000110, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000110, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000110, 0)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000101, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000101, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Controller, 0b00000101, 0)
+    sleep(1);
 
 
     drone.close()
 ```
 
-- [send_light_manual()](05_drone.md#send_light_manual)
+- [sendLightManual()](05_drone.md#sendLightManual)
 
 
 <br>
 <br>
 
-
-<a name="LightManualColorFlag"></a>
-## send_light_manual() 함수를 사용하여 조종기와 드론 LED 제어하기
+## sendLightManual() 함수를 사용하여 드론 LED 제어하기
 
 ```py
-import random
 from time import sleep
 
 from e_drone.drone import *
@@ -79,36 +110,70 @@ if __name__ == '__main__':
     drone.open()
 
 
-    drone.send_light_manual(DeviceType.CONTROLLER, 0xFF, 0)
-    sleep(1)
+    drone.sendLightManual(DeviceType.Drone, 0xFF, 0)
+    sleep(1);
 
 
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_RED.value, 10);        sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_RED.value, 100);       sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_RED.value, 0);         sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_GREEN.value, 10);      sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_GREEN.value, 100);     sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_GREEN.value, 0);       sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_BLUE.value, 10);       sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_BLUE.value, 100);      sleep(1)
-    drone.send_light_manual(DeviceType.CONTROLLER, LightFlagsController.BODY_BLUE.value, 0);        sleep(1)
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyRed.value, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyRed.value, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyRed.value, 0)
+    sleep(1);
+
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyGreen.value, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyGreen.value, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyGreen.value, 0)
+    sleep(1);
+
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyBlue.value, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyBlue.value, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, LightFlagsDrone.BodyBlue.value, 0)
+    sleep(1);
 
 
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_RED.value, 10);        sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_RED.value, 100);       sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_RED.value, 0);         sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_GREEN.value, 10);      sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_GREEN.value, 100);     sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_GREEN.value, 0);       sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_BLUE.value, 10);       sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_BLUE.value, 100);      sleep(1)
-    drone.send_light_manual(DeviceType.DRONE, LightFlagsDrone.BODY_BLUE.value, 0);        sleep(1)
+    drone.sendLightManual(DeviceType.Drone, 0x06, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, 0x06, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, 0x06, 0)
+    sleep(1);
+
+    drone.sendLightManual(DeviceType.Drone, 0x0A, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, 0x0A, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, 0x0A, 0)
+    sleep(1);
+
+    drone.sendLightManual(DeviceType.Drone, 0x0C, 10)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, 0x0C, 100)
+    sleep(1);
+    
+    drone.sendLightManual(DeviceType.Drone, 0x0C, 0)
+    sleep(1);
 
 
     drone.close()
 ```
 
-- [send_light_manual()](05_drone.md#send_light_manual)
+- [sendLightManual()](05_drone.md#sendLightManual)
 
 
 <br>
@@ -116,7 +181,7 @@ if __name__ == '__main__':
 
 
 <a name="LightMode"></a>
-## Light 모드, 이벤트 함수를 사용하여 드론과 조종기 LED 제어하기
+## sendLightMode, sendLightEvent 함수를 사용하여 조종기 LED 제어하기
 
 ```py
 from time import sleep
@@ -130,57 +195,99 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
 
-    print("BODY_HOLD - Turn off")
-    drone.send_light_mode_color(DeviceType.DRONE, LightModeDrone.BODY_HOLD, 255, 0, 0, 0)
-    drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_HOLD, 255, 0, 0, 0)
-    sleep(2)
 
-    print("BODY_HOLD - Yellow")
-    drone.send_light_mode_color(DeviceType.DRONE, LightModeDrone.BODY_HOLD, 255, 200, 200, 0)
-    drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_HOLD, 200, 200, 200, 0)
-    sleep(2)
+    print("BodyHold")
+    drone.sendLightModeColor(LightModeController.BodyHold, 200, 200, 200, 0)
+    sleep(2); 
+    
 
+    #sendLightModeColor
+    print("BodyDimming 1")
+    drone.sendLightModeColor(LightModeController.BodyDimming, 3, 200, 0, 200)
+    sleep(3);
+    
+    #sendLightModeColors
+    print("BodyDimming 2")
+    drone.sendLightModeColors(LightModeController.BodyDimming, 3, Colors.Cyan)
+    sleep(3);
+    
 
-    # send_light_event_color*
-    print("BODY_DIMMING 3 - White")
-    drone.send_light_event_color(DeviceType.DRONE, LightModeDrone.BODY_DIMMING, 3, 3, 200, 200, 200)
-    drone.send_light_event_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 3, 3, 200, 200, 200)
-    sleep(3)
-
-    # send_light_event_colors*
-    print("BODY_DIMMING 4 - Cyan")
-    drone.send_light_event_colors(DeviceType.DRONE, LightModeDrone.BODY_DIMMING, 3, 3, Colors.CYAN)
-    drone.send_light_event_colors(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 3, 3, Colors.CYAN)
-    sleep(3)
-
-
-    #send_light_mode_color
-    print("BODY_DIMMING 1 - Magenta")
-    drone.send_light_mode_color(DeviceType.DRONE, LightModeDrone.BODY_DIMMING, 3, 200, 0, 200)
-    drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 3, 200, 0, 200)
-    sleep(3)
-
-    #send_light_mode_colors
-    print("BODY_DIMMING 2 - GreenYellow")
-    drone.send_light_mode_colors(DeviceType.DRONE, LightModeDrone.BODY_DIMMING, 3, Colors.GREENYELLOW)
-    drone.send_light_mode_colors(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 3, Colors.GREENYELLOW)
-    sleep(3)
-
+    # sendLightEventColor*
+    print("BodyDimming 3")
+    drone.sendLightEventColor(LightModeController.BodyDimming, 3, 3, 200, 200, 200)
+    sleep(3);
+    
+    # sendLightEventColors*
+    print("BodyDimming 4")
+    drone.sendLightEventColors(LightModeController.BodyDimming, 3, 3, Colors.Magenta)
+    sleep(3);
+    
 
     drone.close()
 ```
 
-- [send_light_mode_color()](05_drone.md#send_light_mode_color)
-- [send_light_mode_colors()](05_drone.md#send_light_mode_colors)
-- [send_light_event_color()](05_drone.md#send_light_event_color)
-- [send_light_event_colors()](05_drone.md#send_light_event_colors)
+- [sendLightModeColor()](05_drone.md#sendLightModeColor)
+- [sendLightModeColors()](05_drone.md#sendLightModeColors)
+- [sendLightEventColor()](05_drone.md#sendLightEventColor)
+- [sendLightEventColors()](05_drone.md#sendLightEventColors)
 
 
 <br>
 <br>
 
 
-## 조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / send_light_mode_color 함수 사용)
+## sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기
+
+
+```py
+from time import sleep
+
+from e_drone.drone import *
+from e_drone.protocol import *
+
+
+if __name__ == '__main__':
+
+    drone = Drone()
+    drone.open()
+
+
+    drone.sendLightModeColor(LightModeDrone.BodyHold, 200, 0, 200, 200)
+    sleep(1);
+
+
+    # sendLightModeColor*
+    drone.sendLightModeColor(LightModeDrone.BodyDimming, 3, 0, 0, 200)
+    sleep(3);
+    
+    # sendLightModeColors*
+    drone.sendLightModeColors(LightModeDrone.BodyDimming, 3, Colors.Cyan)
+    sleep(3);
+    
+
+    # sendLightEventColor*
+    drone.sendLightEventColor(LightModeDrone.BodyDimming, 3, 5, 200, 200, 200)
+    sleep(3);
+    
+    # sendLightEventColors*
+    drone.sendLightEventColors(LightModeDrone.BodyDimming, 3, 3, Colors.Magenta)
+    sleep(3);
+    
+
+    drone.close()
+```
+
+- [sendLightModeColor()](05_drone.md#sendLightModeColor)
+- [sendLightModeColors()](05_drone.md#sendLightModeColors)
+- [sendLightEventColor()](05_drone.md#sendLightEventColor)
+- [sendLightEventColors()](05_drone.md#sendLightEventColors)
+
+
+<br>
+<br>
+
+
+## 조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / sendLightModeColor 함수 사용)
 
 ```py
 import random
@@ -201,15 +308,15 @@ if __name__ == '__main__':
         g    = int(random.randint(0, 255))
         b    = int(random.randint(0, 255))
 
-        data_array = drone.send_light_mode_color(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, r, g, b)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.sendLightModeColor(LightModeController.BodyDimming, 1, r, g, b)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.6)
     
     drone.close()
 ```
 
-- [send_light_mode_color()](05_drone.md#send_light_mode_color)
+- [sendLightModeColor()](05_drone.md#sendLightModeColor)
 
 
 <br>
@@ -234,14 +341,14 @@ if __name__ == '__main__':
 
     header = Header()
     
-    header.data_type = DataType.LIGHT_MODE
-    header.length    = LightModeColor.get_size()
-    header.from_     = DeviceType.BASE
-    header.to_       = DeviceType.CONTROLLER
+    header.dataType = DataType.LightMode
+    header.length   = LightModeColor.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = LightModeColor()
 
-    data.mode.mode      = LightModeController.BODY_DIMMING.value
+    data.mode.mode      = LightModeController.BodyDimming.value
     data.mode.interval  = 1
 
     for i in range(0, 10, 1):
@@ -250,8 +357,8 @@ if __name__ == '__main__':
         data.color.g    = int(random.randint(0, 255))
         data.color.b    = int(random.randint(0, 255))
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.6)
     
@@ -265,7 +372,7 @@ if __name__ == '__main__':
 <br>
 
 
-## 조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / send_light_mode_colors 함수 사용)
+## 조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / sendLightModeColors 함수 사용)
 
 ```py
 import random
@@ -282,17 +389,17 @@ if __name__ == '__main__':
 
     for i in range(0, 10, 1):
         
-        colors = Colors(random.randint(0, Colors.END_OF_TYPE.value))
+        colors = Colors(random.randint(0, Colors.EndOfType.value))
 
-        data_array = drone.send_light_mode_colors(DeviceType.CONTROLLER, LightModeController.BODY_DIMMING, 1, colors)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.sendLightModeColors(LightModeController.BodyDimming, 1, colors)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.6)
     
     drone.close()
 ```
 
-- [send_light_mode_colors()](05_drone.md#send_light_mode_colors)
+- [sendLightModeColors()](05_drone.md#sendLightModeColors)
 
 
 <br>
@@ -317,22 +424,22 @@ if __name__ == '__main__':
 
     header = Header()
     
-    header.data_type = DataType.LIGHT_MODE
-    header.length    = LightModeColors.get_size()
-    header.from_     = DeviceType.BASE
-    header.to_       = DeviceType.CONTROLLER
+    header.dataType = DataType.LightMode
+    header.length   = LightModeColors.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = LightModeColors()
 
-    data.mode.mode      = LightModeController.BODY_DIMMING.value
+    data.mode.mode      = LightModeController.BodyDimming.value
     data.mode.interval  = 1
 
     for i in range(0, 10, 1):
         
-        data.colors    = Colors(random.randint(0, Colors.END_OF_TYPE.value))
+        data.colors    = Colors(random.randint(0, Colors.EndOfType.value))
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.6)
     
@@ -368,8 +475,8 @@ if __name__ == '__main__':
         g    = int(random.randint(0, 255))
         b    = int(random.randint(0, 255))
 
-        data_array = drone.sendLightDefaultColor(LightModeDrone.BodyDimming, 1, r, g, b)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.sendLightDefaultColor(LightModeDrone.BodyDimming, 1, r, g, b)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(2)
     

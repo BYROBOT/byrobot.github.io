@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Display**
 
-Modified : 2021.12.31
+Modified : 2021.1.4
 
 ---
 
@@ -27,45 +27,45 @@ if __name__ == '__main__':
 
     delay = 0.5
     
-    drone.send_display_clear_all(DisplayPixel.BLACK)
+    drone.sendDisplayClearAll(DisplayPixel.Black)
     sleep(delay)
 
-    drone.send_display_clear(59, 27, 10, 10, DisplayPixel.WHITE)
+    drone.sendDisplayClear(59, 27, 10, 10, DisplayPixel.White)
     sleep(delay)
 
-    drone.send_display_invert(54, 22, 20, 20)
+    drone.sendDisplayInvert(54, 22, 20, 20)
     sleep(delay)
 
-    drone.send_display_draw_point(64, 32, DisplayPixel.WHITE)
+    drone.sendDisplayDrawPoint(64, 32, DisplayPixel.White)
     sleep(delay)
 
-    drone.send_display_draw_line(10, 10, 118, 54, DisplayPixel.WHITE, DisplayLine.DOTTED)
+    drone.sendDisplayDrawLine(10, 10, 118, 54, DisplayPixel.White, DisplayLine.Dotted)
     sleep(delay)
 
-    drone.send_display_draw_rect(44, 12, 40, 40, DisplayPixel.WHITE, False, DisplayLine.DASHED)
+    drone.sendDisplayDrawRect(44, 12, 40, 40, DisplayPixel.White, False, DisplayLine.Dashed)
     sleep(delay)
 
-    drone.send_display_draw_circle(64, 32, 20, DisplayPixel.WHITE, True)
+    drone.sendDisplayDrawCircle(64, 32, 20, DisplayPixel.White, True)
     sleep(delay)
     
-    drone.send_display_draw_string(10, 10, "HELLO", DisplayFont.LIBERATION_MONO_5X8, DisplayPixel.WHITE)
+    drone.sendDisplayDrawString(10, 10, "HELLO", DisplayFont.LiberationMono5x8, DisplayPixel.White)
     sleep(delay)
     
-    drone.send_display_draw_string_align(0, 128, 30, "E-DRONE", DisplayAlign.CENTER, DisplayFont.LIBERATION_MONO_10X16, DisplayPixel.WHITE)
+    drone.sendDisplayDrawStringAlign(0, 128, 30, "E-DRONE", DisplayAlign.Center, DisplayFont.LiberationMono10x16, DisplayPixel.White)
     sleep(delay)
     
     drone.close()
 ```
 
-- [send_display_clear_all()](05_drone.md#send_display_clear_all)
-- [send_display_clear()](05_drone.md#send_display_clear)
-- [send_display_invert()](05_drone.md#send_display_invert)
-- [send_display_draw_point()](05_drone.md#send_display_draw_point)
-- [send_display_draw_line()](05_drone.md#send_display_draw_line)
-- [send_display_draw_rect()](05_drone.md#send_display_draw_rect)
-- [send_display_draw_circle()](05_drone.md#send_display_draw_circle)
-- [send_display_draw_string()](05_drone.md#send_display_draw_string)
-- [send_display_draw_string_align()](05_drone.md#send_display_draw_string_align)
+- [sendDisplayClearAll()](05_drone.md#sendDisplayClearAll)
+- [sendDisplayClear()](05_drone.md#sendDisplayClear)
+- [sendDisplayInvert()](05_drone.md#sendDisplayInvert)
+- [sendDisplayDrawPoint()](05_drone.md#sendDisplayDrawPoint)
+- [sendDisplayDrawLine()](05_drone.md#sendDisplayDrawLine)
+- [sendDisplayDrawRect()](05_drone.md#sendDisplayDrawRect)
+- [sendDisplayDrawCircle()](05_drone.md#sendDisplayDrawCircle)
+- [sendDisplayDrawString()](05_drone.md#sendDisplayDrawString)
+- [sendDisplayDrawStringAlign()](05_drone.md#sendDisplayDrawStringAlign)
 
 
 <br>
@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
 
 <a name="DisplayClear"></a>
-## 무작위 위치와 크기의 Clear를 100회 전송 (send_display_clear 함수 사용)
+## 무작위 위치와 크기의 Clear를 100회 전송 (sendDisplayClear 함수 사용)
 
 ```py
 import random
@@ -96,15 +96,15 @@ if __name__ == '__main__':
         y          = int(random.randint(0, 63) - height / 2)
         pixel      = DisplayPixel(int(random.randint(0, 1)))
 
-        data_array = drone.send_display_clear(x, y, width, height, pixel)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.sendDisplayClear(x, y, width, height, pixel)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
     drone.close()
 ```
 
-- [send_display_clear()](05_drone.md#send_display_clear)
+- [sendDisplayClear()](05_drone.md#sendDisplayClear)
 
 
 <br>
@@ -128,10 +128,10 @@ if __name__ == '__main__':
 
     header = Header()
     
-    header.data_type = DataType.DISPLAY_CLEAR
-    header.length    = DisplayClear.get_size()
-    header.from_     = DeviceType.BASE
-    header.to_       = DeviceType.CONTROLLER
+    header.dataType = DataType.DisplayClear
+    header.length   = DisplayClear.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = DisplayClear()
 
@@ -143,8 +143,8 @@ if __name__ == '__main__':
         data.y          = int(random.randint(0, 63) - data.height / 2)
         data.pixel      = DisplayPixel(int(random.randint(0, 1)))
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -159,7 +159,7 @@ if __name__ == '__main__':
 
 
 <a name="DisplayDrawLine"></a>
-## 무작위 위치와 길이의 선을 100번 그리기 (send_display_draw_line 함수 사용)
+## 무작위 위치와 길이의 선을 100번 그리기 (sendDisplayDrawLine 함수 사용)
 
 ```py
 import random
@@ -174,7 +174,7 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
     
-    drone.send_display_clear_all(DisplayPixel(int(random.randint(0, 1))))
+    drone.sendDisplayClearAll(DisplayPixel(int(random.randint(0, 1))))
     sleep(0.1)
 
     for i in range(0, 100, 1):
@@ -186,16 +186,16 @@ if __name__ == '__main__':
         pixel       = DisplayPixel(int(random.randint(0, 1)))
         line        = DisplayLine(int(random.randint(0, 2)))
 
-        data_array = drone.send_display_draw_line(x1, y1, x2, y2, pixel, line)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.sendDisplayDrawLine(x1, y1, x2, y2, pixel, line)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.02)
     
     drone.close()
 ```
 
-- [send_display_clear_all()](05_drone.md#send_display_clear_all)
-- [send_display_draw_line()](05_drone.md#send_display_draw_line)
+- [sendDisplayClearAll()](05_drone.md#sendDisplayClearAll)
+- [sendDisplayDrawLine()](05_drone.md#sendDisplayDrawLine)
 
 
 <br>
@@ -203,7 +203,7 @@ if __name__ == '__main__':
 
 
 <a name="DisplayDrawCircle"></a>
-## 무작위 위치와 크기의 원을 100번 출력하기 (send_display_draw_circle 함수 사용)
+## 무작위 위치와 크기의 원을 100번 출력하기 (sendDisplayDrawCircle 함수 사용)
 
 ```py
 import random
@@ -224,15 +224,15 @@ if __name__ == '__main__':
         y          = int(random.randint(0, 63))
         radius     = int(random.randint(0, 63))
         pixel      = DisplayPixel(int(random.randint(0, 1)))
-        flag_fill  = bool(random.randint(0, 1))
+        flagFill   = bool(random.randint(0, 1))
 
-        drone.send_display_draw_circle(x, y, radius, pixel, flag_fill)
+        drone.sendDisplayDrawCircle(x, y, radius, pixel, flagFill)
         sleep(0.05)
 
     drone.close()
 ```
 
-- [send_display_draw_circle()](05_drone.md#send_display_draw_circle)
+- [sendDisplayDrawCircle()](05_drone.md#sendDisplayDrawCircle)
 
 
 <br>
@@ -256,10 +256,10 @@ if __name__ == '__main__':
 
     header = Header()
 
-    header.data_type = DataType.DISPLAY_DRAW_CIRCLE
-    header.length    = DisplayDrawCircle.get_size()
-    header.from_     = DeviceType.BASE
-    header.to_       = DeviceType.CONTROLLER
+    header.dataType = DataType.DisplayDrawCircle
+    header.length   = DisplayDrawCircle.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = DisplayDrawCircle()
 
@@ -269,10 +269,10 @@ if __name__ == '__main__':
         data.y          = int(random.randint(0, 63))
         data.radius     = int(random.randint(0, 63))
         data.pixel      = DisplayPixel(int(random.randint(0, 1)))
-        data.flag_fill   = bool(random.randint(0, 1))
+        data.flagFill   = bool(random.randint(0, 1))
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -288,7 +288,7 @@ if __name__ == '__main__':
 
 
 <a name="DisplayDrawRect"></a>
-## 무작위 위치와 크기의 사각형을 100번 출력하기 (send_display_draw_rect 함수 사용)
+## 무작위 위치와 크기의 사각형을 100번 출력하기 (sendDisplayDrawRect 함수 사용)
 
 ```py
 import random
@@ -310,18 +310,18 @@ if __name__ == '__main__':
         x          = int(random.randint(0, 127) - width / 2)
         y          = int(random.randint(0, 63) - height / 2)
         pixel      = DisplayPixel(int(random.randint(0, 1)))
-        flag_fill  = bool(random.randint(0, 1))
+        flagFill   = bool(random.randint(0, 1))
         line       = DisplayLine(int(random.randint(0, 2)))
 
-        data_array = drone.send_display_draw_rect(x, y, width, height, pixel, flag_fill, line)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.sendDisplayDrawRect(x, y, width, height, pixel, flagFill, line)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
     drone.close()
 ```
 
-- [send_display_draw_rect()](05_drone.md#send_display_draw_rect)
+- [sendDisplayDrawRect()](05_drone.md#sendDisplayDrawRect)
 
 
 <br>
@@ -345,10 +345,10 @@ if __name__ == '__main__':
 
     header = Header()
     
-    header.data_type = DataType.DISPLAY_DRAW_RECT
-    header.length    = DisplayDrawRect.get_size()
-    header.from_     = DeviceType.BASE
-    header.to_       = DeviceType.CONTROLLER
+    header.dataType = DataType.DisplayDrawRect
+    header.length   = DisplayDrawRect.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = DisplayDrawRect()
 
@@ -359,11 +359,11 @@ if __name__ == '__main__':
         data.x          = int(random.randint(0, 127) - data.width / 2)
         data.y          = int(random.randint(0, 63) - data.height / 2)
         data.pixel      = DisplayPixel(int(random.randint(0, 1)))
-        data.flag_fill  = bool(random.randint(0, 1))
+        data.flagFill   = bool(random.randint(0, 1))
         data.line       = DisplayLine(int(random.randint(0, 2)))
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -395,10 +395,10 @@ if __name__ == '__main__':
 
     header = Header()
 
-    header.data_type = DataType.DISPLAY_DRAW_STRING
-    header.length   = DisplayDrawString.get_size()
-    header.from_    = DeviceType.BASE
-    header.to_      = DeviceType.CONTROLLER
+    header.dataType = DataType.DisplayDrawString
+    header.length   = DisplayDrawString.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = DisplayDrawString()
 
@@ -410,10 +410,10 @@ if __name__ == '__main__':
         data.pixel      = DisplayPixel(int(random.randint(0, 1)))
         data.message    = "HELLO"
         
-        header.length   = DisplayDrawString.get_size() + len(data.message)
+        header.length   = DisplayDrawString.getSize() + len(data.message)
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
     
@@ -428,7 +428,7 @@ if __name__ == '__main__':
 
 
 <a name="DisplayDrawStringAlign"></a>
-## 'LOVE' 문자열을 왼쪽, 중앙, 오른쪽 정렬을 사용하여 무작위 위치에 100번 출력하기
+## 'LOVE' 문자열을 왼쪽, 중앙, 오른쪽 정렬을 사용하여 무작위 위치에 10번 출력하기
 
 ```py
 import random
@@ -445,14 +445,14 @@ if __name__ == '__main__':
 
     header = Header()
 
-    header.data_type = DataType.DISPLAY_DRAW_STRING_ALIGN
-    header.length    = DisplayDrawStringAlign.get_size()
-    header.from_     = DeviceType.BASE
-    header.to_       = DeviceType.CONTROLLER
+    header.dataType = DataType.DisplayDrawStringAlign
+    header.length   = DisplayDrawStringAlign.getSize()
+    header.from_    = DeviceType.Tester
+    header.to_      = DeviceType.Controller
 
     data = DisplayDrawStringAlign()
 
-    for i in range(0, 100, 1):
+    for i in range(0, 10, 1):
 
         data.x_start    = 0
         data.x_end      = 127
@@ -462,10 +462,10 @@ if __name__ == '__main__':
         data.pixel      = DisplayPixel(int(random.randint(0, 1)))
         data.message    = "LOVE"
 
-        header.length   = DisplayDrawStringAlign.get_size() + len(data.message)
+        header.length   = DisplayDrawStringAlign.getSize() + len(data.message)
 
-        data_array = drone.transfer(header, data)
-        print("{0} / {1}".format(i, convert_byte_array_to_string(data_array)))
+        dataArray = drone.transfer(header, data)
+        print("{0} / {1}".format(i, convertByteArrayToString(dataArray)))
 
         sleep(0.03)
 

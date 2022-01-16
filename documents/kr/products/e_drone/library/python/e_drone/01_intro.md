@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Intro**
 
-Modified : 2021.12.31
+Modified : 2021.1.4
 
 ---
 
@@ -25,17 +25,7 @@ Modified : 2021.12.31
 
 ***e_drone* for python**은 python에서 ***E-DRONE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
 
-<br>
-
-* The Python Package Index (PyPI)<br>
-  [https://pypi.org/project/e-drone/](https://pypi.org/project/e-drone/)
-
-* 라이브러리 저장소<br>
-  [https://github.com/byrobot-python/e_drone](https://github.com/byrobot-python/e_drone)
-
-* 예제 저장소<br>
-  [https://github.com/byrobot-python/e_drone_examples](https://github.com/byrobot-python/e_drone_examples)
-
+[https://pypi.org/project/e-drone/](https://pypi.org/project/e-drone/)
 
 <br>
 <br>
@@ -114,7 +104,32 @@ Modified : 2021.12.31
 
 
 
-# 5. 시리얼 포트 검색
+# 5. 드론, 조종기 펌웨어 업그레이드
+
+펌웨어를 최신 버전으로 업그레이드 하시려면 드론 또는 조종기를 부트로더 모드로 USB에 연결한 후 아래의 명령을 실행하시면 됩니다.
+
+
+```
+> python -m e_drone upgrade
+```
+
+**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
+
+```
+> python3 -m e_drone upgrade
+```
+
+상세한 설명은 아래의 문서를 참고하시기 바랍니다.
+
+
+[e_drone 파이썬 라이브러리를 사용한 펌웨어 업데이트](/documents/kr/products/e_drone/manual/update/python/)
+
+<br>
+<br>
+
+
+
+# 6. 시리얼 포트 검색
 
 
 Drone 클래스 내부에서 pyserial을 사용하여 시리얼 포트에 연결합니다. 시리얼 포트에 연결하려면 장치 이름을 알고 있어야 합니다. 이 때 필요한 것이 컴퓨터에 연결된 시리얼 통신 장치들을 검색할 수 있는 명령입니다. 이 명령은 **pyserial**에서 제공하고 있습니다.
@@ -159,7 +174,7 @@ for node in nodes:
 
 
 
-# 6. 응용 프로젝트 예제
+# 7. 응용 프로젝트 예제
 
 아래는 응용 프로젝트 예제입니다.
 
@@ -176,7 +191,7 @@ if __name__ == '__main__':
     drone = Drone()       # 드론 객체 생성
     drone.open("COM22")   # 시리얼 포트 연결
 
-    drone.send_buzzer(BuzzerMode.SCALE, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
+    drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
     sleep(1)              # 1초간 sleep
 
     drone.close()         # 시리얼 포트 닫기 및 내부 데이터 수신 스레드 종료
@@ -197,7 +212,7 @@ if __name__ == '__main__':
     drone = Drone()       # 드론 객체 생성
     drone.open()          # 시리얼 포트 연결(내부에서 시리얼 포트 리스트를 읽어서 마지막 장치에 연결)
 
-    drone.send_buzzer(BuzzerMode.SCALE, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
+    drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
     sleep(1)              # 1초간 sleep
 
     drone.close()         # 시리얼 포트 닫기 및 내부 데이터 수신 스레드 종료

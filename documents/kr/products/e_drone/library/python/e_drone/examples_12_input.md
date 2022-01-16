@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Input**
 
-Modified : 2022.1.3
+Modified : 2021.1.4
 
 ---
 
@@ -31,9 +31,9 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.BUTTON, eventButton)
+    drone.setEventHandler(DataType.Button, eventButton)
 
-    drone.send_ping(DeviceType.CONTROLLER)
+    drone.sendPing(DeviceType.Controller)
 
     for i in range(10, 0, -1):
         print(i)
@@ -43,7 +43,7 @@ if __name__ == '__main__':
 ```
 
 - [Button](04_protocol.md#Button)
-- [send_ping()](05_drone.md#send_ping)
+- [sendPing()](05_drone.md#sendPing)
 
 
 <br>
@@ -60,8 +60,8 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_joystick(joystick):
-    print("event_joystick() / " +
+def eventJoystick(joystick):
+    print("eventJoystick() / " +
         "L: ({0:4}, {1:4}), {2:5}, {3:5} / ".format(joystick.left.x, joystick.left.y, joystick.left.direction.name, joystick.left.event.name) +
         "R: ({0:4}, {1:4}), {2:5}, {3:5}".format(joystick.right.x, joystick.right.y, joystick.right.direction.name, joystick.right.event.name))
 
@@ -72,9 +72,9 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.JOYSTICK, event_joystick)
+    drone.setEventHandler(DataType.Joystick, eventJoystick)
 
-    drone.send_ping(DeviceType.CONTROLLER)
+    drone.sendPing(DeviceType.Controller)
 
     for i in range(10, 0, -1):
         print(i)
@@ -84,7 +84,7 @@ if __name__ == '__main__':
 ```
 
 - [Joystick](04_protocol.md#Joystick)
-- [send_ping()](05_drone.md#send_ping)
+- [sendPing()](05_drone.md#sendPing)
 
 
 <br>

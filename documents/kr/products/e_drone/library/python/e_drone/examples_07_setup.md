@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Setup**
 
-Modified : 2022.1.14
+Modified : 2021.1.4
 
 ---
 
@@ -20,8 +20,8 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_state(state):
-    print("{0}".format(state.mode_control_flight))
+def eventState(state):
+    print("{0}".format(state.modeControlFlight))
 
 
 if __name__ == '__main__':
@@ -31,24 +31,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.STATE, event_state)
+    drone.setEventHandler(DataType.State, eventState)
+
+
+    # 비행 제어 모드를 ModeControlFlight.Position 으로 변경
+    drone.sendModeControlFlight(ModeControlFlight.Position)
+    sleep(0.01)
+
+    # 변경 사항을 확인
+    drone.sendRequest(DeviceType.Drone, DataType.State)
+    sleep(0.1)
 
 
     # 비행 제어 모드를 ModeControlFlight.Attitude 으로 변경
-    drone.send_mode_control_flight(ModeControlFlight.ATTITUDE)
+    drone.sendModeControlFlight(ModeControlFlight.Attitude)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
-    sleep(0.1)
-
-
-    # 비행 제어 모드를 ModeControlFlight.POSITION 으로 변경
-    drone.send_mode_control_flight(ModeControlFlight.POSITION)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
+    drone.sendRequest(DeviceType.Drone, DataType.State)
     sleep(0.1)
 
 
@@ -56,74 +56,12 @@ if __name__ == '__main__':
 ```
 
 - [State](04_protocol.md#State)
-- [send_mode_control_flight()](05_drone.md#send_mode_control_flight)
-- [send_request()](05_drone.md#send_request)
+- [sendModeControlFlight()](05_drone.md#sendModeControlFlight)
+- [sendRequest()](05_drone.md#sendRequest)
 
 
 <br>
 <br>
-
-
-<a name="Speed"></a>
-## 드론 Speed 설정 변경 후 확인
-
-```py
-from time import sleep
-
-from e_drone.drone import *
-from e_drone.protocol import *
-
-
-def event_state(state):
-    print("Speed: {0}".format(state.control_speed))
-
-
-if __name__ == '__main__':
-
-    drone = Drone()
-    drone.open()
-
-
-    # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.STATE, event_state)
-
-
-    # 제어 속도를 1로 변경(1, 2, 3 중에 선택)
-    drone.send_command(DeviceType.DRONE, CommandType.CONTROL_SPEED, 1)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
-    sleep(0.1)
-
-
-    # 제어 속도를 2로 변경(1, 2, 3 중에 선택)
-    drone.send_command(DeviceType.DRONE, CommandType.CONTROL_SPEED, 2)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
-    sleep(0.1)
-
-
-    # 제어 속도를 3으로 변경(1, 2, 3 중에 선택)
-    drone.send_command(DeviceType.DRONE, CommandType.CONTROL_SPEED, 3)
-    sleep(0.01)
-
-    # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
-    sleep(0.1)
-
-
-    drone.close()
-```
-
-- [State](04_protocol.md#State)
-- [send_command()](05_drone.md#send_command)
-- [send_request()](05_drone.md#send_request)
-
-
-
 
 
 <a name="Headless"></a>
@@ -136,7 +74,7 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_state(state):
+def eventState(state):
     print("{0}".format(state.headless))
 
 
@@ -147,24 +85,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.STATE, event_state)
+    drone.setEventHandler(DataType.State, eventState)
 
 
     # 드론을 Headless 설정을 Headless 모드로 변경
-    drone.send_headless(Headless.HEADLESS)
+    drone.sendHeadless(Headless.Headless)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
+    drone.sendRequest(DeviceType.Drone, DataType.State)
     sleep(0.1)
 
 
     # 드론을 Headless 설정을 Normal 모드로 변경
-    drone.send_headless(Headless.NORMAL)
+    drone.sendHeadless(Headless.Normal)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.STATE)
+    drone.sendRequest(DeviceType.Drone, DataType.State)
     sleep(0.1)
 
 
@@ -172,8 +110,86 @@ if __name__ == '__main__':
 ```
 
 - [State](04_protocol.md#State)
-- [send_headless()](05_drone.md#send_headless)
-- [send_request()](05_drone.md#send_request)
+- [sendHeadless()](05_drone.md#sendHeadless)
+- [sendRequest()](05_drone.md#sendRequest)
+
+
+<br>
+<br>
+
+
+<a name="TrimIncDec"></a>
+## TrimIncDec 변경 테스트
+
+* 예제가 정상적으로 동작하지 않습니다. 추후 수정하겠습니다.
+
+```py
+from time import sleep
+
+from e_drone.drone import *
+from e_drone.protocol import *
+
+
+def eventTrim(trim):
+    print("{0}, {1}, {2}, {3}".format(trim.roll, trim.pitch, trim.yaw, trim.throttle))
+
+
+if __name__ == '__main__':
+
+    drone = Drone()
+    drone.open()
+
+
+    # 이벤트 핸들링 함수 등록
+    drone.setEventHandler(DataType.Trim, eventTrim)
+
+
+    # 트림 설정 변경
+    print("Roll Increase")
+    drone.sendTrimIncDec(TrimIncDec.RollIncrease)
+    sleep(0.01)
+
+    # 변경 사항을 확인
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
+    sleep(0.2)
+
+
+    # 트림 설정 변경
+    print("Pitch Increase")
+    drone.sendTrimIncDec(TrimIncDec.PitchIncrease)
+    sleep(0.01)
+
+    # 변경 사항을 확인
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
+    sleep(0.2)
+
+
+    # 트림 설정 변경
+    print("Pitch Decrease")
+    drone.sendTrimIncDec(TrimIncDec.PitchDecrease)
+    sleep(0.01)
+
+    # 변경 사항을 확인
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
+    sleep(0.2)
+
+
+    # 트림 설정 변경
+    print("Trim Reset")
+    drone.sendTrimIncDec(TrimIncDec.Reset)
+    sleep(0.01)
+
+    # 변경 사항을 확인
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
+    sleep(0.2)
+
+
+    drone.close()
+```
+
+- [Trim](03_system.md#Trim)
+- [sendTrim()](05_drone.md#sendTrim)
+- [sendRequest()](05_drone.md#sendRequest)
 
 
 <br>
@@ -190,7 +206,7 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_trim(trim):
+def eventTrim(trim):
     print("{0}, {1}, {2}, {3}".format(trim.roll, trim.pitch, trim.yaw, trim.throttle))
 
 
@@ -201,24 +217,24 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.TRIM, event_trim)
+    drone.setEventHandler(DataType.Trim, eventTrim)
 
 
     # 드론 비행 트림 설정 변경
-    drone.send_trim(10, 20, 30, 40)
+    drone.sendTrim(10, 20, 30, 40)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.TRIM)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.1)
 
 
     # 드론 비행 트림 설정 변경
-    drone.send_trim(0, 0, 0, 0)
+    drone.sendTrim(0, 0, 0, 0)
     sleep(0.01)
 
     # 변경 사항을 확인
-    drone.send_request(DeviceType.DRONE, DataType.TRIM)
+    drone.sendRequest(DeviceType.Drone, DataType.Trim)
     sleep(0.1)
 
 
@@ -227,7 +243,7 @@ if __name__ == '__main__':
 
 - [TrimFlight](04_protocol.md#TrimFlight)
 - [sendTrimFlight()](05_drone.md#sendTrimFlight)
-- [send_request()](05_drone.md#send_request)
+- [sendRequest()](05_drone.md#sendRequest)
 
 
 <br>

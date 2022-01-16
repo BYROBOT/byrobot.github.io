@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Sensor**
 
-Modified : 2022.1.4
+Modified : 2021.1.4
 
 ---
 
@@ -14,20 +14,18 @@ Modified : 2022.1.4
 ## 고도 데이터 확인
 
 ```py
-# 고도 데이터 확인
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_altitude(altitude):
-    print("event_altitude()")
+def eventAltitude(altitude):
+    print("eventAltitude()")
     print("-  Temperature: {0:.3f}".format(altitude.temperature))
     print("-     Pressure: {0:.3f}".format(altitude.pressure))
     print("-     Altitude: {0:.3f}".format(altitude.altitude))
-    print("- Range Height: {0:.3f}".format(altitude.range_height))
-
+    print("- Range Height: {0:.3f}".format(altitude.rangeHeight))
 
 if __name__ == '__main__':
 
@@ -35,17 +33,17 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.ALTITUDE, event_altitude)
+    drone.setEventHandler(DataType.Altitude, eventAltitude)
 
     # Altitude 정보 요청
-    drone.send_request(DeviceType.DRONE, DataType.ALTITUDE)
+    drone.sendRequest(DeviceType.Drone, DataType.Altitude)
     sleep(0.1)
 
     drone.close()
 ```
 
 - [Altitude](04_protocol.md#Altitude)
-- [send_request()](05_drone.md#send_request)
+- [sendRequest()](05_drone.md#sendRequest)
 
 
 <br>
@@ -56,18 +54,17 @@ if __name__ == '__main__':
 ## Motion 센서 데이터 확인
 
 ```py
-# Motion 센서 데이터 확인
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_motion(motion):
-    print("event_motion()")
-    print("- Accel: {0:5}, {1:5}, {2:5}".format(motion.accel_x, motion.accel_y, motion.accel_z))
-    print("-  Gyro: {0:5}, {1:5}, {2:5}".format(motion.gyro_roll, motion.gyro_pitch, motion.gyro_yaw))
-    print("- Angle: {0:5}, {1:5}, {2:5}".format(motion.angle_roll, motion.angle_pitch, motion.angle_yaw))
+def eventMotion(motion):
+    print("eventMotion()")
+    print("- Accel: {0:5}, {1:5}, {2:5}".format(motion.accelX, motion.accelY, motion.accelZ))
+    print("-  Gyro: {0:5}, {1:5}, {2:5}".format(motion.gyroRoll, motion.gyroPitch, motion.gyroYaw))
+    print("- Angle: {0:5}, {1:5}, {2:5}".format(motion.angleRoll, motion.anglePitch, motion.angleYaw))
 
 
 if __name__ == '__main__':
@@ -76,17 +73,17 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.MOTION, event_motion)
+    drone.setEventHandler(DataType.Motion, eventMotion)
 
     # Range 정보 요청
-    drone.send_request(DeviceType.DRONE, DataType.MOTION)
+    drone.sendRequest(DeviceType.Drone, DataType.Motion)
     sleep(0.1)
 
     drone.close()
 ```
 
 - [Motion](04_protocol.md#Motion)
-- [send_request()](05_drone.md#send_request)
+- [sendRequest()](05_drone.md#sendRequest)
 
 
 <br>
@@ -97,15 +94,14 @@ if __name__ == '__main__':
 ## 자세 확인
 
 ```py
-# 자세 확인
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_attitude(attitude):
-    print("event_attitude() / {0:0.1f}, {1:0.1f}, {2:0.1f}".format(attitude.roll, attitude.pitch, attitude.yaw))
+def eventAttitude(attitude):
+    print("eventAttitude() / {0:0.1f}, {1:0.1f}, {2:0.1f}".format(attitude.roll, attitude.pitch, attitude.yaw))
 
 
 if __name__ == '__main__':
@@ -114,56 +110,17 @@ if __name__ == '__main__':
     drone.open()
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.ATTITUDE, event_attitude)
+    drone.setEventHandler(DataType.Attitude, eventAttitude)
 
     # Range 정보 요청
-    drone.send_request(DeviceType.DRONE, DataType.ATTITUDE)
+    drone.sendRequest(DeviceType.Drone, DataType.Attitude)
     sleep(0.1)
 
     drone.close()
 ```
 
 - [Attitude](04_protocol.md#Attitude)
-- [send_request()](05_drone.md#send_request)
-
-
-<br>
-<br>
-
-
-<a name="Flow"></a>
-## Flow 센서 데이터 확인
-
-```py
-# Flow 센서 데이터 확인
-from time import sleep
-
-from e_drone.drone import *
-from e_drone.protocol import *
-
-
-def event_flow(flow):
-    print("event_flow() / {0:0.1f}, {1:0.1f}, {2:0.1f}".format(flow.x, flow.y, flow.z))
-
-
-if __name__ == '__main__':
-
-    drone = Drone()
-    drone.open()
-
-    # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.FLOW, event_flow)
-
-    for i in range(100, 0, -1):
-        # Range 정보 요청
-        drone.send_request(DeviceType.DRONE, DataType.FLOW)
-        sleep(0.1)
-
-    drone.close()
-```
-
-- [Flow](04_protocol.md#Flow)
-- [send_request()](05_drone.md#send_request)
+- [sendRequest()](05_drone.md#sendRequest)
 
 
 <br>

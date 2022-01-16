@@ -1,6 +1,6 @@
 **[*e_drone* for python](index.md)** / **Examples** / **Motor**
 
-Modified : 2021.12.29
+Modified : 2021.1.4
 
 ---
 
@@ -17,6 +17,8 @@ Modified : 2021.12.29
 
 통신 과정에서 문제가 생겨 모터 제어 명령이 전달되지 않을 수도 있으니 드론을 잘 잡은 채로 시도하시기 바랍니다.
 
+* 예제가 정상적으로 동작하지 않습니다. 추후 수정하겠습니다.
+
 ```py
 from time import sleep
 
@@ -24,8 +26,8 @@ from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_ack(ack):
-    print("event_ack() / {0} / 0x{1:04X} / {2}".format(ack.data_type.name, ack.crc16, ack.system_time))
+def eventAck(ack):
+    print("eventAck() / {0} / 0x{1:04X} / {2}".format(ack.dataType.name, ack.crc16, ack.systemTime))
 
 
 if __name__ == '__main__':
@@ -35,23 +37,14 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.ACK, event_ack)
+    drone.setEventHandler(DataType.Ack, eventAck)
     sleep(0.01)
 
 
-    drone.send_motor(100, 0, 0, 0)
-    sleep(3)
+    drone.sendMotor(1000, 1200, 1300, 1400)
+    sleep(1)
 
-    drone.send_motor(0, 100, 0, 0)
-    sleep(3)
-    
-    drone.send_motor(0, 0, 100, 0)
-    sleep(3)
-    
-    drone.send_motor(0, 0, 0, 100)
-    sleep(3)
-
-    drone.send_motor(0, 0, 0, 0)
+    drone.sendMotor(0, 0, 0, 0)
     sleep(0.1)
 
 
@@ -73,19 +66,20 @@ if __name__ == '__main__':
 
 통신 과정에서 문제가 생겨 모터 제어 명령이 전달되지 않을 수도 있으니 드론을 잘 잡은 채로 시도하시기 바랍니다.
 
+* 예제가 정상적으로 동작하지 않습니다. 추후 수정하겠습니다.
+
 ```py
-# MotorSingle 동작 테스트
 from time import sleep
 
 from e_drone.drone import *
 from e_drone.protocol import *
 
 
-def event_ack(ack):
-    print("event_ack()")
-    print("-   DataType: {0}".format(ack.data_type.name))
+def eventAck(ack):
+    print("eventAck()")
+    print("-   DataType: {0}".format(ack.dataType.name))
     print("-      CRC16: 0x{0:04X}".format(ack.crc16))
-    print("- SystemTime: {0}".format(ack.system_time))
+    print("- SystemTime: {0}".format(ack.systemTime))
 
 
 if __name__ == '__main__':
@@ -95,33 +89,27 @@ if __name__ == '__main__':
 
 
     # 이벤트 핸들링 함수 등록
-    drone.set_event_handler(DataType.ACK, event_ack)
+    drone.setEventHandler(DataType.Ack, eventAck)
     sleep(0.01)
 
 
-    drone.send_motor_single(0, 200)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
     sleep(2)
 
-    drone.send_motor_single(0, 0)
-    sleep(1)
-
-    drone.send_motor_single(1, 200)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
     sleep(2)
 
-    drone.send_motor_single(1, 0)
-    sleep(1)
-
-    drone.send_motor_single(2, 200)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 3000)
     sleep(2)
 
-    drone.send_motor_single(2, 0)
-    sleep(1)
-
-    drone.send_motor_single(3, 200)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
     sleep(2)
 
-    drone.send_motor_single(3, 0)
-    sleep(1)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
+    sleep(2)
+
+    drone.sendStop()
+    sleep(0.1)
 
 
     drone.close()
