@@ -15,7 +15,7 @@ Modified : 2021.4.13
 
 > - [카드코딩] 계속 전진 / 계속 후진 동작 안되는 오류 수정
 
-[Download](https://drive.byrobot.co.kr/d/s/pNwLsntlHBXKQz8bwq2DdxqNCFgHas7L/vPpsnKgOeeJqRPBHaEY9aO31pwK8BoOz-8b6ghZBVpwk)
+[Download](https://drive.byrobot.co.kr/d/s/pO3OoEiH34gTSwGxsxkCcJ11UCcmtTMy/YPZtBREV0QYhOArgKVBpAqL5_5zOmWdS-zruANiJspwk)
 
 <br>
 

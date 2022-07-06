@@ -15,7 +15,7 @@ Modified : 2022.7.6
 
 > - 드론의 안정/비안정 상태 관계없이 카드 읽기 동작으로 변경
 
-[Download](https://drive.byrobot.co.kr/d/s/pNwBnqiWAw9FlS2CrTBYsb7z5TtZxgrO/uXyauMpxi-UuCt4V00ok5WN_hxMkJhHh-tr0g2g1Vpwk)
+[Download](https://drive.byrobot.co.kr/d/s/pO3R0R37cegS0IBLWKhtyiJpO7ZTCdFZ/l_thhyElfe8Ccb5MjM2Ax6-kLi1J_Ch3-XLwg5D5spwk)
 
 <br>
 
