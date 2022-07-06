@@ -6,6 +6,7 @@ Modified : 2022.7.6
 
 - Kramdown table of contents
   {:toc .toc}
+  {::options auto_ids="false" /}
 
 <br>
 
