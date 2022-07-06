@@ -8,7 +8,6 @@ Modified : 2022.7.6
   {:toc .toc}
 
 <br>
-<br>
 
 # 2022.7.6
 
