@@ -1,6 +1,7 @@
 ### Coding Drone
 
 ---
+
 <!-------------------------------------------------------------------------------------------------------
 
     2020.4.2
@@ -72,16 +73,16 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">22.1.2</div></td>
+            <td colspan="2" class="white"><div align="center">22.7.1</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2022.1.4</div></td>
+            <td colspan="2" class="firmware"><div align="center">2022.7.6</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.google.com/file/d/1lSOF1ro_jGrwLt4BLirGc6k9uzYmGE-V/view?usp=sharing" target="_blank">Windows (.NET)</a><br>
+                <a href="https://drive.byrobot.co.kr/d/s/pNwBnqiWAw9FlS2CrTBYsb7z5TtZxgrO/uXyauMpxi-UuCt4V00ok5WN_hxMkJhHh-tr0g2g1Vpwk" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1jAjTFP5vV-TTkje84rUCLWgV5X48szv3/view?usp=sharing" target="_blank">Windows</a><br>-->
                 <a href="https://drive.google.com/file/d/1rTgmDCANkKpIsb5kpfSQUO56dsmf2Qlq/view?usp=sharing" target="_blank">macOS</a><br>
                 <a href="https://drive.google.com/file/d/17R1ugKODlnYxwrqkuQ6U-YIB-K1eZ6cI/view?usp=sharing" target="_blank">Linux</a><br>

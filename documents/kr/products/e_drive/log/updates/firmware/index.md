@@ -4,36 +4,43 @@ Modified : 2021.4.13
 
 ---
 
-* Kramdown table of contents
-{:toc .toc}
-
+- Kramdown table of contents
+  {:toc .toc}
 
 <br>
 
+# 2022.7.6
+
+- **Go Car: 22.7.1**
+- Go Car BleServer: 19.10.16
+
+> - [카드코딩] 계속 전진 / 계속 후진 동작 안되는 오류 수정
+
+[Download](https://drive.byrobot.co.kr/d/s/pNwLsntlHBXKQz8bwq2DdxqNCFgHas7L/vPpsnKgOeeJqRPBHaEY9aO31pwK8BoOz-8b6ghZBVpwk)
+
+<br>
+
+---
+
+<br>
 
 # 2021.3.26
 
 - **Go Car: 21.3.1**
 - Go Car BleServer: 19.10.16
 
-
 > - 버저 주파수 오류 수정
 
-
-
 [Download](https://drive.google.com/file/d/1XqAkc3gxe6HrqKQh8uQREdvZm23YRYbl/view?usp=sharing)
-
 
 <br>
 
 ---
 
-
 # 2021.2.16
 
 - **Go Car: 21.2.1**
 - Go Car BleServer: 19.10.16
-
 
 > - 라인 코딩 모드에서 컬러 캘리브레이션을 실행할 경우 라인 코딩용 컬러 캘리브레이션 데이터만 변경되었으나 이번 버전부터는 자동차의 현재 모드와 상관없이 항상 전체 컬러 캘리브레이션 데이터가 변경됨
 > - 위의 변경으로 라인 코딩용 컬러 캘리브레이션만 변경하는 기능에 대한 접근 방법이 사라져서 대신 뒤집어서 버튼을 9번 누르는 것을 라인 컬러 캘리브레이션으로 변경함(원래 9회는 시스템 초기화였으나 11회로 변경)
@@ -42,21 +49,16 @@ Modified : 2021.4.13
 >   - 9번: 라인 컬러 캘리브레이션
 >   - 11번: 시스템 초기화
 
-
-
 [Download](https://drive.google.com/file/d/10cLiTKseLVerNOcG3KxDSsDG2pNLQfd7/view?usp=sharing)
-
 
 <br>
 
 ---
 
-
 # 2021.1.22
 
 - **Go Car: 21.1.7**
 - Go Car BleServer: 19.10.16
-
 
 > - 자동차의 앞 부분이 위를 향하도록 세운 상태에서 버튼을 누른 횟수에 따라 모드 변경
 >   - 1번: 라인 코딩 모드
@@ -66,21 +68,16 @@ Modified : 2021.4.13
 >   - 5번: 피아노 모드
 > - 자동차를 세우거나 뒤집었을 때 '삐빅'하는 소리가 나게 함
 
-
-
 [Download](https://drive.google.com/file/d/1CoWv12wrqrryNECuEPV4OMiHbt6RZhFa/view?usp=sharing)
-
 
 <br>
 
 ---
 
-
 # 2020.9.28
 
 - **Go Car: 20.9.4**
 - Go Car BleServer: 19.10.16
-
 
 > - 버튼 입력 방법 변경(20.9.3 이전 상태로 복원)
 >   - 자동차를 뒤집은 상태에서 5번 버튼을 누르면 모션 캘리브레이션
@@ -89,21 +86,16 @@ Modified : 2021.4.13
 >   - 자동차를 뒤집은 상태에서 9번 버튼을 누르면 초기화
 > - 자동차를 뒤집으면 '삐빅'하는 소리가 나게 함
 
-
-
 [Download](https://drive.google.com/file/d/19K9bd4jZ42m0EY82WhzmL6cpE_0p9Peo/view?usp=sharing)
-
 
 <br>
 
 ---
 
-
 # 2020.9.15
 
 - **Go Car: 20.9.3**
 - Go Car BleServer: 19.10.16
-
 
 > - 버튼 입력 방법 변경
 >   - 정상 상태에서 버튼을 1회 누르면 카드 읽기(길게 누르는 경우에도 카드 읽기로 처리)
@@ -116,34 +108,25 @@ Modified : 2021.4.13
 > - 초기화 시작음 변경
 > - 모션 캘리브레이션 시작음 변경
 
-
-
 [Download](https://drive.google.com/file/d/1FhMP3Oae6wE9PsWiUpd2cd46wresmdW6/view?usp=sharing)
-
 
 <br>
 
 ---
-
 
 # 2020.7.8
 
 - **Go Car: 20.7.1**
 - Go Car BleServer: 19.10.16
 
-
 > - 데이터 전송 중인 동안 다른 데이터 전송을 차단
 > - LED 제어 내부 구조 변경
 
-
-
 [Download](https://drive.google.com/file/d/1MuDs2D2BXMRhCa9VdTC_WrRIm0YV2TVO/view?usp=sharing)
-
 
 <br>
 
 ---
-
 
 # 2020.5.13
 
@@ -154,15 +137,11 @@ Modified : 2021.4.13
 > - 라인 코딩에서 U턴을 만나면 150도 이상 회전한 이후에 발견하는 선을 따라 이동하도록 수정
 > - 버튼을 9회 눌러 초기화 할 때 설정값까지 초기화
 
-
-
 [Download](https://drive.google.com/open?id=1XaHhTInP9TDSz6qSEkhxto6Monh8TJw7)
-
 
 <br>
 
 ---
-
 
 # 2020.3.31
 
@@ -178,14 +157,11 @@ Modified : 2021.4.13
 >   - 녹색 마커를 만나면 바로 좌회전 하도록 변경
 > - Hue 영역을 -60 ~ 60에서 -120 ~ 120으로 확장함(일부 색상이 다른 색 경계를 넘어서 나타나는 경우가 있어 수정)
 
-
 [Download](https://drive.google.com/open?id=1tKKKJtc1dzD8Sd26GdTpwWeOhwG9ruIE)
-
 
 <br>
 
 ---
-
 
 # 2020.2.27
 
@@ -205,14 +181,11 @@ Modified : 2021.4.13
 > - Drone7Setup 프로그램에서 라인 코딩과 관련된 설정값을 변경하실 수 있습니다.
 >   - 색상 마커 발견 시 해당 색으로 판별하는 기준값을 색상별로 다르게 설정할 수 있게 하였습니다.
 
-
 [Download](https://drive.google.com/open?id=1sOJpW6DScZTGItZk_xZDwOluepM1duXh)
-
 
 <br>
 
 ---
-
 
 # 2020.2.14
 
@@ -222,14 +195,11 @@ Modified : 2021.4.13
 
 > - 드론 설정 변경 프로그램 대응
 
-
 [Download](https://drive.google.com/open?id=1I1n23MPRObF4FIt9mso1CB6zKdg3Ssd6)
-
 
 <br>
 
 ---
-
 
 # 2020.2.13
 
@@ -239,14 +209,11 @@ Modified : 2021.4.13
 
 > - 라인코딩 동작 튜닝
 
-
 [Download](https://drive.google.com/open?id=1YteEWNgSr8Sxl5UjFOINCoETIDBLRais)
-
 
 <br>
 
 ---
-
 
 # 2020.1.2
 
@@ -258,10 +225,10 @@ Modified : 2021.4.13
 > - 버튼 연속 입력 시 동작하는 특수 기능 수정
 >   - 3번 : White/Black 캘리브레이션
 >   - 4번 : 바닥 색에 따라 특수 기능 실행
->       - White/White : 자동 컬러 캘리브레이션(흰색 바탕에서 시작해야 하기 때문)
->       - White/Black : 자동 거리 센서 캘리브레이션
->       - Black/White : 모션 센서 캘리브레이션(자이로 바이어스 초기화)
->       - Black/Black : 수동 컬러 캘리브레이션
+>     - White/White : 자동 컬러 캘리브레이션(흰색 바탕에서 시작해야 하기 때문)
+>     - White/Black : 자동 거리 센서 캘리브레이션
+>     - Black/White : 모션 센서 캘리브레이션(자이로 바이어스 초기화)
+>     - Black/Black : 수동 컬러 캘리브레이션
 >   - 5번 : 모션 센서 캘리브레이션(자이로 바이어스 초기화)
 >   - 6번 : 자동 거리 센서 캘리브레이션
 >   - 7번 : 수동 컬러 캘리브레이션
@@ -269,14 +236,11 @@ Modified : 2021.4.13
 >   - 9번 : 데이터 초기화
 > - 거리 센서 캘리브레이션이 되지 않은 상태에서 핸드팔로잉을 시작하면 경고음 출력. 핸드팔로잉은 작동
 
-
 [Download](https://drive.google.com/open?id=1mOKWhJ9oUCj1C14aO3CuIpph-YWxiJUR)
-
 
 <br>
 
 ---
-
 
 # 2019.12.31
 
@@ -297,24 +261,20 @@ Modified : 2021.4.13
 > - 버튼 연속 입력 시 동작하는 특수 기능 수정
 >   - 3번 : White/Black 캘리브레이션
 >   - 4번 : 바닥 색에 따라 특수 기능 실행
->       - White/White : 자동 컬러 캘리브레이션(흰색 바탕에서 시작해야하기 때문)
->       - White/Black : 자동 거리 센서 캘리브레이션
->       - Black/White : 리셋
->       - Black/Black : 수동 컬러 캘리브레이션
+>     - White/White : 자동 컬러 캘리브레이션(흰색 바탕에서 시작해야하기 때문)
+>     - White/Black : 자동 거리 센서 캘리브레이션
+>     - Black/White : 리셋
+>     - Black/Black : 수동 컬러 캘리브레이션
 >   - 5번 : 자동 거리 센서 캘리브레이션
 >   - 6번 : 수동 컬러 캘리브레이션
 >   - 7번 : 자동 컬러 캘리브레이션
 >   - 9번 : 데이터 초기화, 모션 센서 캘리브레이션
 
-
-
 [Download](https://drive.google.com/open?id=1tWWAswZHqxXfCVIhcKw9Lg-mT5M2j-7l)
-
 
 <br>
 
 ---
-
 
 # 2019.12.24
 
@@ -330,22 +290,18 @@ Modified : 2021.4.13
 > - 자동 컬러 캘리브레이션 기능 추가
 >   - White/Cyan 카드 사용 시 자동 컬러 캘리브레이션 모드로 전환(임시)
 >   - White, Black, Red, Yellow, Green, Cyan, Blue, Magenta 색상을 차례로 이동하며 색상 캘리브레이션
-> - 버튼 연속 입력 시 동작하는 특수 기능 
+> - 버튼 연속 입력 시 동작하는 특수 기능
 >   - 5번 : 모션 센서 캘리브레이션
 >   - 6번 : 자동 거리 센서 캘리브레이션
 >   - 7번 : 수동 컬러 캘리브레이션
 >   - 8번 : 자동 컬러 캘리브레이션
 >   - 9번 : 데이터 초기화
 
-
-
 [Download](https://drive.google.com/open?id=1mdhYNh9hQLwdtGzKXDECp5IzYiqKXZ7p)
-
 
 <br>
 
 ---
-
 
 # 2019.12.18
 
@@ -368,15 +324,11 @@ Modified : 2021.4.13
 > - 컬러 캘리브레이션과 색상 인식 방법이 모두 변경된 관계로 그에 맞추어 라인 코딩 튜닝
 > - 색상 인식 중 두 가지 이상 색상 범위에 모두 포함되는 경우, 범위의 중간값에서 오차가 가장 적은 색상을 선택하게 함
 
-
-
 [Download](https://drive.google.com/open?id=1cbBe_Bw_YBDlbEZhDGR1j4Em_IDMyMhZ)
-
 
 <br>
 
 ---
-
 
 # 2019.12.13
 
@@ -389,15 +341,11 @@ Modified : 2021.4.13
 > - 핸드팔로잉 업데이트
 >   - 조향, 속도 조절 수정
 
-
-
 [Download](https://drive.google.com/open?id=11APu03pQTtA0mbimruGhu22Xi1iai0gU)
-
 
 <br>
 
 ---
-
 
 # 2019.12.6
 
@@ -415,15 +363,11 @@ Modified : 2021.4.13
 >   - 처음 라인 찾는 동작에서 비상등 사용
 >   - 라인을 잃어버린 후 라인을 찾는 좌, 우 회전 동작에서 비상등 사용
 
-
-
 [Download](https://drive.google.com/open?id=1TvyIUcWJjGU18Mf-O7ZCxJ1K-JFmCC-p)
-
 
 <br>
 
 ---
-
 
 # 2019.12.5
 
@@ -437,15 +381,11 @@ Modified : 2021.4.13
 >   - 길을 잃어버렸을 때 길찾기 방법 변경
 >   - 길을 잃어버렸다고 판단하는 기준 변경
 
-
-
 [Download](https://drive.google.com/open?id=1PYiF99FqjqVIoxtS9qY0JJuyX0ZHx0IT)
-
 
 <br>
 
 ---
-
 
 # 2019.11.27
 
@@ -458,15 +398,11 @@ Modified : 2021.4.13
 > - 등록되지 않은 장치에 대한 제어기 모터 제어 중단
 > - 등록되지 않은 장치는 주기적으로 LED를 빠르게 깜빡이게 함
 
-
-
 [Download](https://drive.google.com/open?id=1bH0oQn7j-nLh9PBFTTVNLBKMjxDENAwp)
-
 
 <br>
 
 ---
-
 
 # 2019.11.21
 
@@ -474,21 +410,17 @@ Modified : 2021.4.13
 - Go Car BleServer: 19.10.16
 - Go Car Tester: 19.9.1
 
-> - ***이전 버전에서 펌웨어 업그레이드 할 수 없음. 부트로더 교체 필요***
-> - ***부트로더 교체 이후에는 이전 버전으로 다운그레이드 불가능***
+> - **_이전 버전에서 펌웨어 업그레이드 할 수 없음. 부트로더 교체 필요_**
+> - **_부트로더 교체 이후에는 이전 버전으로 다운그레이드 불가능_**
 > - 사용자 데이터 저장 단위를 512byte에서 **1Kbyte**로 변경
 > - 카드 코딩, 함수 데이터를 항상 플래시 메모리에 저장(각각 최대 120장)
 > - 카드, 동작 등을 더 이상 입력할 수 없는 경우 경고음으로 알림
 
-
-
 [Download](https://drive.google.com/open?id=1Dd96z9nYzwmJaoaHoJKZQfsw4dD0KoXT)
-
 
 <br>
 
 ---
-
 
 # 2019.11.19
 
@@ -502,15 +434,11 @@ Modified : 2021.4.13
 > - 색상 구분 경계 값 측정 실행 중 지정한 색상 범위를 크게 벗어나는 경우 Error로 처리하게 함
 > - 색상 구분 경계 값 측정 실행 완료 시 Front와 Line은 같은 값으로 설정됨
 
-
-
 [Download](https://drive.google.com/open?id=1NRZiF2qcRCESBjZgiRyL69bK0CwmGTun)
-
 
 <br>
 
 ---
-
 
 # 2019.11.18
 
@@ -526,15 +454,11 @@ Modified : 2021.4.13
 >   - 이 때 자동차를 들어올리면 다음 측정할 색상을 표시
 >   - 위의 색상 측정 과정을 6회 반복하면 마지막에 색상 경계값을 계산하여 저장하고 LED가 흰색으로 계속 켜진 상태 유지
 
-
-
 [Download](https://drive.google.com/open?id=1xsLlMUNzzB40erjz5GXowvOFTMgQVNqq)
-
 
 <br>
 
 ---
-
 
 # 2019.11.13
 
@@ -544,15 +468,11 @@ Modified : 2021.4.13
 
 > - 색 분류 기준을 카드 코딩과 라인 코딩에 다르게 적용되도록 분리함
 
-
-
 [Download](https://drive.google.com/open?id=1fi1nMVQRBYUPs7IUX5c0W4l8ukZe-BWR)
-
 
 <br>
 
 ---
-
 
 # 2019.11.8
 
@@ -567,15 +487,11 @@ Modified : 2021.4.13
 > - 모션 모딩 중 코딩 완료 또는 대기 상태일 때에만 실행이 가능하도록 수정
 > - 사용자 멜로디 저장 완료 후에만 멜로디 재생이 동작하도록 수정
 
-
-
 [Download](https://drive.google.com/open?id=1LRgtF2L9rU9JUHZRxaVP9vobhtPbUibC)
-
 
 <br>
 
 ---
-
 
 # 2019.11.7
 
@@ -585,15 +501,11 @@ Modified : 2021.4.13
 
 > - 10초 이상 버튼을 눌러서 센서를 초기화 할 때의 LED 이벤트 수정
 
-
-
 [Download](https://drive.google.com/open?id=1W24I85kIh-wlCbyGgQei7dc5edpgv99w)
-
 
 <br>
 
 ---
-
 
 # 2019.11.6
 
@@ -604,15 +516,11 @@ Modified : 2021.4.13
 > - 모션 코딩, 라인 코딩 시작이 안되는 문제 수정
 > - 블루투스 연결 이벤트를 받으면 드라이브 모드로 전환
 
-
-
 [Download](https://drive.google.com/open?id=14F86mkJE4WppJg6UGgEv0uGnNssZB3g2)
-
 
 <br>
 
 ---
-
 
 # 2019.11.5
 
@@ -620,8 +528,8 @@ Modified : 2021.4.13
 - Go Car BleServer: 19.10.16
 - Go Car Tester: 19.9.1
 
-> - ***이전 버전에서 펌웨어 업그레이드 할 수 없음. 부트로더 교체 필요***
-> - ***부트로더 교체 이후에는 이전 버전으로 다운그레이드 불가능***
+> - **_이전 버전에서 펌웨어 업그레이드 할 수 없음. 부트로더 교체 필요_**
+> - **_부트로더 교체 이후에는 이전 버전으로 다운그레이드 불가능_**
 > - 사용자 데이터 저장 단위를 256byte에서 **512Kbyte**로 변경
 > - 사용자 정의 멜로디 기능 추가
 >   - 피아노 모드에서 저장한 멜로디를 카드 코딩에서 멜로디 호출 카드를 사용하여 재생할 수 있는 기능
@@ -640,15 +548,11 @@ Modified : 2021.4.13
 > - 버튼을 5회 연속으로 누르거나 10초 이상 누르면 '도레미파솔라시도' 연주와 함께 센서 리셋
 > - 사용자 정의 멜로디를 저장하려고 데이터 저장 단위를 변경함. 부트로더 또한 수정되었기 때문에 이전 버전과 호환이 안됨.
 
-
-
 [Download](https://drive.google.com/open?id=1vLFJRM5Y_luuOv7mYYZ7mWleZsLl8Rvv)
-
 
 <br>
 
 ---
-
 
 # 2019.10.23
 
@@ -666,11 +570,9 @@ Modified : 2021.4.13
 
 [Download](https://drive.google.com/open?id=1_hwX8KkXVlJ6yJm48oj35MfZ36MY5JBc)
 
-
 <br>
 
 ---
-
 
 # 2019.10.21
 
@@ -680,14 +582,11 @@ Modified : 2021.4.13
 
 > - 핸드 팔로잉 시 후진 속도를 낮추고 최대 속도를 제한
 
-
 [Download](https://drive.google.com/open?id=1QYiBlxExXY8rORgW9tHq0Vl6WeRY_L2X)
-
 
 <br>
 
 ---
-
 
 # 2019.10.18
 
@@ -705,14 +604,11 @@ Modified : 2021.4.13
 > - 통신 보드 BLE 연결이 끊어졌을 때 밝게 깜빡이는 대신 낮은 밝기로 계속 켜져있게 함
 > - 펌웨어 자동 업데이트 프로그램 수정
 
-
 [Download](https://drive.google.com/open?id=1QZizFQrSQEQisZkzl0lWl3I8sgvV1e7X)
-
 
 <br>
 
 ---
-
 
 # 2019.10.17
 
@@ -727,14 +623,11 @@ Modified : 2021.4.13
 >   - 손 또는 장애물을 자동차 정면 일정 거리 안에 두면 그것과 일정한 거리를 유지하려고 이동 시작
 >   - 장애물이 일정거리 이상 멀어지거나 센서 범위를 벗어나면 노란색으로 깜빡이며 정지
 
-
 [Download](https://drive.google.com/open?id=1oZvVE8qhCGT6SHjvWRQcoIPWul0nUz7G)
-
 
 <br>
 
 ---
-
 
 # 2019.10.16
 
@@ -750,14 +643,11 @@ Modified : 2021.4.13
 >   - 동작 입력이 끝나면 **코딩 종료 카드**를 읽어서 입력을 끝냄
 >   - 바닥에 자동차를 내려놓고 버튼을 **2회 연속** 누르거나 **3초 이상** 누르면 모션 코딩 동작 시작
 
-
 [Download](https://drive.google.com/open?id=14xPjBY8m6U9PoSZFOhTIUz-jQRjnYdnV)
-
 
 <br>
 
 ---
-
 
 # 2019.10.15
 
@@ -767,14 +657,11 @@ Modified : 2021.4.13
 
 > - 카드 배치 순서 변경
 
-
 [Download](https://drive.google.com/open?id=1k2oiprOk_ApyQJoRGRCsTo31id5ql8AV)
-
 
 <br>
 
 ---
-
 
 # 2019.10.11
 
@@ -785,14 +672,11 @@ Modified : 2021.4.13
 > - Go Car의 BLE 통신 보드 펌웨어 업데이트 기능 추가
 > - Drone7Card.exe의 UI 개선
 
-
 [Download](https://drive.google.com/open?id=1rG5oz9p1Ff_SK-llNb-6QiK7pkcznGSk)
-
 
 <br>
 
 ---
-
 
 # 2019.8.28
 
@@ -800,14 +684,11 @@ Modified : 2021.4.13
 
 > - 카드 코딩과 관련된 DataType의 위치 조정, 관련 송수신 클래스 조정
 
-
 [Download](https://drive.google.com/open?id=1L8Swy8QvJfmzowGek9T79n6KOj4pkXEH)
-
 
 <br>
 
 ---
-
 
 # 2019.8.23
 
@@ -816,14 +697,11 @@ Modified : 2021.4.13
 > - ColorClassify 정의 추가 및 Drone7Card 프로그램에서 카드 분류 기준 값 변경가능하도록 수정함
 > - 라인 코딩시에도 CARDREADER에서 분류한 카드 값을 그대로 사용
 
-
 [Download](https://drive.google.com/open?id=19L5twy8qqK4s5LVczYZ-VNIpEEqpsQBq)
-
 
 <br>
 
 ---
-
 
 # 2019.8.8
 
@@ -832,14 +710,11 @@ Modified : 2021.4.13
 > - 배터리 알람 기준을 30%로 변경
 > - RawLineTracer에서 라인트레이서가 인식한 바닥 색상 값이 업데이트 안되는 문제 수정
 
-
 [Download](https://drive.google.com/open?id=15k5s_RM6OjIFSWm5wxgxmB8nyZnjwhQx)
-
 
 <br>
 
 ---
-
 
 # 2019.7.26
 
@@ -849,14 +724,11 @@ Modified : 2021.4.13
 > - 제어기 수정 사항 반영
 > - RawLineTracer에서 바닥 좌우측 IR 데이터 변수 삭제
 
-
 [Download](https://drive.google.com/open?id=17YawG7WzvIwktDAbe4zfEGrCq0BpCJ2S)
-
 
 <br>
 
 ---
-
 
 # 2019.7.25 - 2
 
@@ -866,14 +738,11 @@ Modified : 2021.4.13
 > - Instant run에서 TailLight를 끌 때 좌우 깜빡이(비상등)도 끄게 함
 > - State 클래스 수정(15 -> 11 byte)
 
-
 [Download](https://drive.google.com/open?id=11A2eWzCWfYtI2IzzSCF8gMwI9xyskUe7)
-
 
 <br>
 
 ---
-
 
 # 2019.7.25
 
@@ -884,14 +753,11 @@ Modified : 2021.4.13
 > - 버저 버퍼를 64에서 128로 변경
 > - '조건이 맞지 않으면' 카드 사용 시 조건 루프를 빠져나가는 버그 수정
 
-
 [Download](https://drive.google.com/open?id=1QCVqnPEv3GDhrz_sORRgYFB5lJ2tADnG)
-
 
 <br>
 
 ---
-
 
 # 2019.7.24
 
@@ -902,14 +768,11 @@ Modified : 2021.4.13
 > - 카드 코딩에서 비상등을 브레이크 등에서 좌우 깜빡이를 동시에 작동시키는 것으로 변경(깜빡임 계속 유지)
 > - 버저에 멜로디 예약 시 멜로디 전체가 들어갈 공간이 충분한 경우에만 예약하게 함
 
-
 [Download](https://drive.google.com/open?id=1t7tcTjQexSAdlIIJr4DMqA9H2muomQ5M)
-
 
 <br>
 
 ---
-
 
 # 2019.7.23
 
