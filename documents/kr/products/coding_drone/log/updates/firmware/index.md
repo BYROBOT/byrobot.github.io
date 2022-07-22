@@ -9,6 +9,24 @@ Modified : 2022.7.6
 
 <br>
 
+# 2022.7.22
+
+- **Drone: 22.7.2**
+
+> - 바닥 버튼 4번 눌러 호버링 테스트 기능 추가.
+
+- **Controller: 22.7.2**
+
+> - 조종모드 3 / 4 오류 수정.
+
+[Download](https://drive.byrobot.co.kr/d/s/pbCElfe4xVQpkTkwdkIZmhnSO8XD0Ihl/2VSCR4R3YmVF3Al_4dv7rr8GbOM6R966-fb5gGQCesQk)
+
+<br>
+
+---
+
+<br>
+
 # 2022.7.6
 
 - **Drone: 22.7.1**

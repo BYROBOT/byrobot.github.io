@@ -73,16 +73,16 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">22.7.1</div></td>
+            <td colspan="2" class="white"><div align="center">22.7.2</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2022.7.6</div></td>
+            <td colspan="2" class="firmware"><div align="center">2022.7.22</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.byrobot.co.kr/d/s/pO3R0R37cegS0IBLWKhtyiJpO7ZTCdFZ/l_thhyElfe8Ccb5MjM2Ax6-kLi1J_Ch3-XLwg5D5spwk" target="_blank">Windows (.NET)</a><br>
+                <a href="https://drive.byrobot.co.kr/d/s/pbCElfe4xVQpkTkwdkIZmhnSO8XD0Ihl/2VSCR4R3YmVF3Al_4dv7rr8GbOM6R966-fb5gGQCesQk" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1jAjTFP5vV-TTkje84rUCLWgV5X48szv3/view?usp=sharing" target="_blank">Windows</a><br>-->
                 <a href="https://drive.google.com/file/d/1rTgmDCANkKpIsb5kpfSQUO56dsmf2Qlq/view?usp=sharing" target="_blank">macOS</a><br>
                 <a href="https://drive.google.com/file/d/17R1ugKODlnYxwrqkuQ6U-YIB-K1eZ6cI/view?usp=sharing" target="_blank">Linux</a><br>
@@ -213,4 +213,4 @@
 
 ---
 
-Modified : 2022.7.6
+Modified : 2022.7.22
