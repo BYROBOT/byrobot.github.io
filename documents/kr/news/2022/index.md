@@ -9,6 +9,8 @@
 
 ---
 
+- <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202276">BRC-105 펌웨어 업데이트</a> <sup><i>2022.7.22</i></sup><br>
+
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202276">GOCAR 펌웨어 업데이트</a> <sup><i>2022.7.6</i></sup><br>
 
 - <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-202276">BRC-105 펌웨어 업데이트</a> <sup><i>2022.7.6</i></sup><br>
@@ -21,4 +23,4 @@
 
 ---
 
-Modified : 2022.7.6
+Modified : 2022.7.22
