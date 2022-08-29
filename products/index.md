@@ -32,8 +32,7 @@
 
 <div align="center">
     <a href="/documents/kr/news/2022"><b>News</b></a><br>
-    
-    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2022722">BRC-105 펌웨어 업데이트</a> <sup><i>2022.7.22</i></sup><br>
+    <a href="/documents/kr/products/coding_drone/log/updates/firmware/#heading-2022829">BRC-105 펌웨어 업데이트</a> <sup><i>2022.8.29</i></sup><br>
 
 </div>
 
@@ -133,4 +132,4 @@
 
 ---
 
-Modified : 2022.7.6
+Modified : 2022.8.29

@@ -1,11 +1,25 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2022.7.22
+Modified : 2022.8.29
 
 ---
 
 - Kramdown table of contents
   {:toc .toc}
+
+<br>
+
+# 2022.8.29
+
+- **Drone & Controller : 22.8.1**
+
+> - 안테나 표기 안정화.
+
+[Download](https://drive.byrobot.co.kr/d/s/q6vG1ao8TOIBilC6B5fyEEDEbt0pnRk6/oRs4jKGdUU5OeYOc4_yoDYolnlALJeze-YL_AbSQ6ygk)
+
+<br>
+
+---
 
 <br>
 
