@@ -116,6 +116,16 @@
                     </a>
                 </div>
             </td>
+            <td class="white_odd">
+                <div align="center">
+                    <a href="/documents/kr/products/skykick_evo/">
+                        <span class="odd">
+                            <img src="/assets/images/products/byrobot_skykick.png" alt="Skykick Evolution" height="240" width="240"><br>
+                            SKYKICK EVOLUTION
+                        </span>
+                    </a>
+                </div>
+            </td>            
             <td class="white_even">
                 <div align="center">
                     <a href="https://groups.google.com/g/byrobot" target="_blank">
@@ -125,7 +135,6 @@
                     </a>
                 </div>
             </td>
-            <td class="white"><span class="byrobot"><div align="center">BYROBOT</div></span></td>
         </tr>
     </table>
 </div>
