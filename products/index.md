@@ -118,9 +118,9 @@
             </td>
             <td class="white_odd">
                 <div align="center">
-                    <a href="/documents/kr/products/skykick_evo/">
+                    <a href="/documents/kr/products/skykick_evolution/">
                         <span class="odd">
-                            <img src="/assets/images/products/byrobot_skykick.png" alt="Skykick Evolution" height="240" width="240"><br>
+                            <img src="/assets/images/products/byrobot_skykick.png" alt="skykick_evolution" height="240" width="240"><br>
                             SKYKICK EVOLUTION
                         </span>
                     </a>
