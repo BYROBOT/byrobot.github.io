@@ -21,91 +21,56 @@ namespace Protocol
     {
         enum Type
         {
-            None                        = 0x00,     // 없음
-            Ping                        = 0x01,     // 통신 확인
-            Ack                         = 0x02,     // 데이터 수신에 대한 응답
-            Error                       = 0x03,     // 오류(reserve, 비트 플래그는 추후에 지정)
-            Request                     = 0x04,     // 지정한 타입의 데이터 요청
-            Message                     = 0x05,     // 문자열 데이터
-            Address                     = 0x06,     // 장치 주소(MAC이 있는 경우 MAC) 혹은 고유번호(MAC이 없는 경우 UUID)
-            Information                 = 0x07,     // 펌웨어 및 장치 정보
-            Update                      = 0x08,     // 펌웨어 업데이트
-            UpdateLocation              = 0x09,     // 펌웨어 업데이트 위치 정정
-            Encrypt                     = 0x0A,     // 펌웨어 암호화
-            SystemCount                 = 0x0B,     // 시스템 카운트
-            SystemInformation           = 0x0C,     // 시스템 정보
-            Registration                = 0x0D,     // 제품 등록(암호화 데이터 및 등록 데이터를 데이터 길이로 구분)
-            Administrator               = 0x0E,     // 관리자 권한 획득
-            Monitor                     = 0x0F,     // 디버깅용 값 배열 전송. 첫번째 바이트에 타입, 두 번째 바이트에 페이지 지정(수신 받는 데이터의 저장 경로 구분)
-            Control                     = 0x10,     // 조종
-
-            Command                     = 0x11,     // 명령
-            Pairing                     = 0x12,     // 페어링
-            Rssi                        = 0x13,     // RSSI
-            TimeSync                    = 0x14,     // 시간 동기화
-            TransmissionPower           = 0x15,     // 전송 출력
-            Setup                       = 0x16,     // 설정
-
-            // Light
-            LightManual                 = 0x20,     // LED 수동 제어
-            LightMode                   = 0x21,     // LED 모드 지정
-            LightEvent                  = 0x22,     // LED 이벤트
-            LightDefault                = 0x23,     // LED 기본 색상
-
-            // 센서 RAW 데이터
-            RawMotion                   = 0x30,     // Motion 센서 데이터 RAW 값
-            RawFlow,                                // Flow 센서 데이터 RAW 값
-
-            // 상태,  센서
-            State                       = 0x40,     // 드론의 상태(비행 모드, 방위기준, 배터리량)
-            Attitude,                               // 드론의 자세(Angle)(Attitude)
-            Position,                               // 위치
-            Altitude,                               // 높이, 고도
-            Motion,                                 // Motion 센서 데이터 처리한 값(IMU)
-            Range,                                  // 거리센서 데이터
-            Flow,                                   // Optical Flow 센서 데이터
-
-            // 설정
-            Count                       = 0x50,     // 카운트
-            Bias,                                   // 엑셀, 자이로 바이어스 값
-            Trim,                                   // 트림
-            Weight,                                 // 무게 설정
-            LostConnection,                         // 연결이 끊긴 후 반응 시간 설정
-
-            // Devices
-            Motor                       = 0x60,     // 모터 제어 및 현재 제어값 확인
-            MotorSingle,                            // 한 개의 모터 제어
-            Buzzer,                                 // 부저 제어
-            Vibrator,                               // 진동 제어
-
-            // Input
-            Button                      = 0x70,     // 버튼 입력
-            Joystick,                               // 조이스틱 입력
+            None						= 0x00,		// 없음
+            Ping						= 0x01,		// 통신 확인
+            Ack							= 0x02,		// 데이터 수신에 대한 응답
+            Error						= 0x03,		// 오류
+            Request						= 0x04,		// 지정한 타입의 데이터 요청
+            Information					= 0x07,		// 펌웨어 및 장치 정보
+            Control						= 0x10,		// 조종
             
-            // Display
-            DisplayClear                = 0x80,     // 화면 지우기
-            DisplayInvert,                          // 화면 반전
-            DisplayDrawPoint,                       // 점 그리기
-            DisplayDrawLine,                        // 선 그리기
-            DisplayDrawRect,                        // 사각형 그리기
-            DisplayDrawCircle,                      // 원 그리기
-            DisplayDrawString,                      // 문자열 쓰기
-            DisplayDrawStringAlign,                 // 문자열 쓰기
-            DisplayDrawImage,                       // 그림 그리기
-
-            // Card
-            CardClassify                = 0x90,     // 카드 색상 분류 기준 설정
-            CardRange,                              // 카드 색 범위(RAW 데이터의 출력 범위)
-            CardRaw,                                // 카드 데이터 RAW 값(유선으로만 전송)
-            CardColor,                              // 카드 데이터
-            CardList,                               // 카드 리스트 데이터
-            CardFunctionList,                       // 카드 함수 리스트 데이터
-            CardClassifyRaw,                        // 카드 색상 분류(Raw)
+            Command						= 0x11,		// 명령
+            Pairing						= 0x12,		// 페어링
+            ResponseRate				= 0x13,		// ResponseRate
+            TimeSync					= 0x14,		// 시간 동기화
+            TransmissionPower			= 0x15,		// 전송 출력
+            Configuration				= 0x16,		// 설정
+            
+            Battle						= 0x1F,		// 전투
+            
+            // Light
+            LightManual					= 0x20,		// LED 수동 제어
+            LightMode					= 0x21,		// LED 모드 지정
+            LightEvent					= 0x22,		// LED 이벤트
+            LightDefault				= 0x23,		// LED 기본 색상
+            
+            // 센서 RAW 데이터
+            RawMotion					= 0x30,		// Motion 센서 데이터 RAW 값
+            
+            // 상태,  센서
+            State						= 0x40,		// 드론의 상태(비행 모드, 방위기준, 배터리량)
+            Position					= 0x42,		// 위치
+            Altitude					= 0x43,		// 높이, 고도
+            Motion						= 0x44,		// Motion 센서 데이터 처리한 값(IMU)
+            VisionSensor				= 0x47,		// Vision Sensor X, Y, Z
+            
+            // 설정
+            Count						= 0x50,		// 카운트
+            Bias						= 0x51,		// 엑셀, 자이로 바이어스 값
+            Trim						= 0x52,		// 트림
+            LostConnection				= 0x54,		// 연결이 끊긴 후 반응 시간 설정
+            
+            // Device
+            Motor						= 0x60,		// 모터 제어 및 현재 제어값 확인
+            Buzzer						= 0x62,		// 버저 제어
+            Battery						= 0x64,		// 배터리
+            
+            // Input
+            Button						= 0x70,		// 버튼
+            Joystick,								// 조이스틱
             
             // Information Assembled
-            InformationAssembledForController       = 0xA0,     // 데이터 모음
-            InformationAssembledForEntry            = 0xA1,     // 데이터 모음
-            InformationAssembledForByBlocks         = 0xA2,     // 데이터 모음
+            InformationAssembledForController		= 0xA0,		// 데이터 모음
             
             EndOfType
         };
