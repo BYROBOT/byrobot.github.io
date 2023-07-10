@@ -1,6 +1,6 @@
-**[E-DRONE](index.md)** / **Protocol** / **DataType**
+**[SKYKICK EVOLUTION](index.md)** / **Protocol** / **DataType**
 
-Modified : 2022.1.4
+Modified : 2023.7.1
 
 ---
 
@@ -162,7 +162,7 @@ namespace Protocol
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>SKYKICK EVOLUTION</H3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)

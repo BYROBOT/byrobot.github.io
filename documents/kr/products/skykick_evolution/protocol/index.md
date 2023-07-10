@@ -1,5 +1,5 @@
 
-# E-DRONE
+# SKYKICK EVOLUTION
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)

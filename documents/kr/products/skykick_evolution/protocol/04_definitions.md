@@ -1,10 +1,10 @@
-**[E-DRONE](index.md)** / **Protocol** / **Definitions**
+**[SKYKICK EVOLUTION](index.md)** / **Protocol** / **Definitions**
 
-Modified : 2020.1.10
+Modified : 2023.7.1
 
 ---
 
-#### E-DRONE 에서 사용하고 있는 기본 정의들을 소개합니다.
+#### SKYKICK EVOLUTION 에서 사용하고 있는 기본 정의들을 소개합니다.
 
 ---
 
@@ -27,24 +27,28 @@ namespace Protocol
     {
         enum Type
         {
-            None                = 0x00,     // 이벤트 없음
-
-            Stop                = 0x01,     // 정지
-
-            ModeControlFlight   = 0x02,     // 비행 제어 모드 설정
-            Headless            = 0x03,     // 헤드리스 모드 설정
-            ControlSpeed        = 0x04,     // 제어 속도 설정
-
-            ClearBias           = 0x05,     // 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
-            ClearTrim           = 0x06,     // 트림 초기화
-
-            FlightEvent         = 0x07,     // 비행 이벤트 실행
-
-            SetDefault          = 0x08,     // 기본 설정으로 초기화
-            Backlight           = 0x09,     // 조종기 백라이트 설정
-            ModeController      = 0x0A,     // 조종기 동작 모드
-            Link                = 0x0B,     // 링크 모듈 동작 제어(0:Client Mode, 1:Server Mode, 2:Pairing Start)
-
+            None						= 0x00,		// 이벤트 없음
+            
+            Stop						= 0x01,		// 정지
+            
+            ModeControlFlight			= 0x02,		// 비행 제어 모드 설정
+            Escape						= 0x03,		// 이스케이프 모드 설정
+            ControlSpeed				= 0x04,		// 제어 속도 설정
+            
+            ClearBias					= 0x05,		// 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
+            ClearTrim					= 0x06,		// 트림 초기화
+            
+            FlightEvent					= 0x07,		// 비행 이벤트 실행
+            
+            SetDefault					= 0x08,		// 기본 설정으로 초기화
+            ModeController				= 0x0A,		// 조종기 동작 모드(0x10:조종, 0x80:링크)
+            Link						= 0x0B,		// 링크 제어(0:Client Mode, 1:Server Mode, 2:Pairing Start)
+            LoadDefaultColor			= 0x0C,		// 기본 색상으로 변경
+            
+            Trim						= 0x0D,		// 트림
+            
+            ModeTest					= 0xF0,		// 테스트 락(테스트를 완료하기 전까진 사용 불가 / 27:활성화, 11:해제))
+            
             EndOfType
         };
     }
@@ -61,7 +65,7 @@ namespace Protocol
 
 모델 번호
 
-E-DRONE(Drone4)부터 DeviceType을 공통으로 사용하기로 하면서, 펌웨어 업데이트 시 DeviceType 이외에 장치를 구분할 번호가 필요하게 되어 추가함.
+기능에 따른 모델 분류
 
 ```cpp
 namespace ModelNumber
@@ -69,40 +73,45 @@ namespace ModelNumber
     enum Type
     {
         //                          AAAABBCC, AAAA(Project Number), BB(Device Type), CC(Revision)
-        Drone_3_Drone_P1        = 0x00031001,   // Drone_3_Drone_P1 (Lightrone / GD65 / HW2181 / 3.7v / barometer / RGB LED / Shaking binding)
-        Drone_3_Drone_P2        = 0x00031002,   // Drone_3_Drone_P2 (Soccer Drone / HW2181 / 7.4v / barometer / RGB LED / Shaking binding)
-        Drone_3_Drone_P3        = 0x00031003,   // Drone_3_Drone_P3 (GD240 / HW2181 / power button / u30 flow / 3.7v / geared motor / barometer)
-        Drone_3_Drone_P4        = 0x00031004,   // Drone_3_Drone_P4 (GD50N / HW2181 / power button / 3.7v / barometer)
-        Drone_3_Drone_P5        = 0x00031005,   // Drone_3_Drone_P5 (GD30 / HW2181 / 3.7v / nomal binding)
-        Drone_3_Drone_P6        = 0x00031006,   // Drone_3_Drone_P6 (Soccer Drone 2 / HW2181 / 7.4v / barometer / RGB LED / Shaking binding)
-        Drone_3_Drone_P7        = 0x00031007,   // Drone_3_Drone_P7 (SKYKICKV2 / SPI / HW2181 / 7.4v / barometer / RGB LED / Shaking binding)
-        Drone_3_Drone_P8        = 0x00031008,   // Drone_3_Drone_P7 (GD65 / SPI / HW2181 / 3.7v / barometer / RGB LED / Shaking binding)
-
-        Drone_3_Controller_P1   = 0x00032001,   // Drone_3_Controller_P1 / small size
-        Drone_3_Controller_P2   = 0x00032002,   // Drone_3_Controller_P2 / large size
-        Drone_3_Controller_P3   = 0x00032003,   // Drone_3_Controller_P3 / small size + USB
-
-        Drone_3_Link_P0         = 0x00033000,   // Drone_3_Link_P0
-
-        Drone_4_Drone_P5        = 0x00041005,   // Drone_4_Drone_P5
-
-        Drone_4_Controller_P2   = 0x00042002,   // Drone_4_Controller_P2
-
-        Drone_4_Link_P0         = 0x00043000,   // Drone_4_Link_P0
-
-        Drone_4_Tester_P4       = 0x0004A004,   // Drone_4_Tester_P4
-        Drone_4_Monitor_P4      = 0x0004A104,   // Drone_4_Monitor_P4
-
-        Drone_7_Drone_P2        = 0x00071002,   // Drone_7_Drone_P2
-        Drone_7_BleClient_P0    = 0x00073200,   // Drone_7_BleClient_P0
-        Drone_7_BleServer_P2    = 0x00073302,   // Drone_7_BleServer_P2
-
-        Drone_7_Tester_P5       = 0x0007A005,   // Drone_7_Tester_P5
-        Drone_7_Monitor_P5      = 0x0007A105,   // Drone_7_Monitor_P5
-
-        Drone_8_Drone_P1        = 0x00081001,   // Drone_8_Drone_P1
-
-        Drone_8_Tester_P4       = 0x0008A004,   // Drone_8_Tester_P4
+        Drone_11_Drone_P0		= 0x000B1000,	// reserve
+        Drone_11_Drone_P1		= 0x000B1001,	// 65 no coding
+        Drone_11_Drone_P2		= 0x000B1002,	// fixWing
+        Drone_11_Drone_P3		= 0x000B1003,	// 65 coding
+        Drone_11_Drone_P4		= 0x000B1004,	// 95 battle drone
+        Drone_11_Drone_P5		= 0x000B1005,	// skykick evolution drone
+        Drone_11_Drone_P6		= 0x000B1006,	// reserve
+        Drone_11_Drone_P7		= 0x000B1007,	// reserve
+        Drone_11_Drone_P8		= 0x000B1008,	// reserve
+        Drone_11_Drone_P9		= 0x000B1009,	// reserve
+        
+        Drone_11_Controller_P0	= 0x000B2000,	// 65 Drone, No USB, Fixed Wing, Return
+        Drone_11_Controller_P1	= 0x000B2001,	// 65 drone, USB
+        Drone_11_Controller_P2	= 0x000B2002,	// 65 drone, No USB
+        Drone_11_Controller_P3	= 0x000B2003,	// Bird Wing, Fixed Wing, NoReturn
+        Drone_11_Controller_P4	= 0x000B2004,	//  Battle drone, USB
+        Drone_11_Controller_P5	= 0x000B2005,	// skykick evolution controller
+        Drone_11_Controller_P6	= 0x000B2006,	// reserve
+        Drone_11_Controller_P7	= 0x000B2007,	// reserve
+        Drone_11_Controller_P8	= 0x000B2008,	// reserve
+        Drone_11_Controller_P9	= 0x000B2009,	// reserve
+        
+        Drone_11_Link_P0		= 0x000B3000,	// Drone_11_Link_P0 RoboRobo
+        Drone_11_Link_P1		= 0x000B3001,	// reserve
+        
+        // Drone_12  chip
+        Drone_12_Drone_P0		= 0x000C1000,	// coding drone stm32f401rc + xn297
+        Drone_12_Drone_P1		= 0x000C1001,	// coding drone STM32F407VE + nrf24l01
+        Drone_12_Drone_P2		= 0x000C1002,	// reserve
+        
+        Drone_12_Controller_P0	= 0x000C2000,	// coding drone stm32f401rc + xn297
+        Drone_12_Controller_P1	= 0x000C2001,	// coding drone STM32F407VE + nrf24l01
+        Drone_12_Controller_P2	= 0x000C2002,	// reserve
+            
+        Drone_12_Link_P0		= 0x000C3000,	// Drone_12_Link_P0
+        Drone_12_Link_P1		= 0x000C3001,	// 	reserve		
+        
+        Drone_12_Tester_P0		= 0x000CA000,	// Drone All Tester
+        Drone_12_Tester_P1		= 0x000CA001,	// reserve
     };
 }
 ```
@@ -605,11 +614,11 @@ namespace Headless
 
 모터 회전 방향
 
-E-DRONE에는 총 4개의 모터가 있으며, 왼쪽 앞 모터부터 각각 0, 1, 2, 3번으로 번호가 부여되어 있습니다.
+SKYKICK EVOLUTION에는 총 4개의 모터가 있으며, 왼쪽 앞 모터부터 각각 0, 1, 2, 3번으로 번호가 부여되어 있습니다.
 
 드론 비행 시에 0번과 2번 모터는 시계 방향(Clockwise), 1번과 3번 모터는 반시계 방향(Counterclockwise)으로 회전합니다.
 
-E-DRONE의 모터는 정해진 한 방향으로만 회전합니다.
+SKYKICK EVOLUTION의 모터는 정해진 한 방향으로만 회전합니다.
 
 ```cpp
 namespace Rotation
@@ -1031,7 +1040,7 @@ namespace Vibrator
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>SKYKICK EVOLUTION</H3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
