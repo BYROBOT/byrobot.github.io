@@ -131,7 +131,7 @@ namespace Protocol
 
 ---
 
-<h3>E-DRONE</H3>
+<h3>SKYKICK EVOLUTION</H3>
 
 1. [Intro](01_intro.md)
 2. [Typedef](02_typedef.md)
