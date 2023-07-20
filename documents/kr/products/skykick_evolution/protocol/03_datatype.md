@@ -32,6 +32,11 @@ namespace Protocol
             Command						= 0x11,		// 명령
             Pairing						= 0x12,		// 페어링
             ResponseRate				= 0x13,		// ResponseRate
+            TimeSync					= 0x14,		// 시간 동기화
+            TransmissionPower			= 0x15,		// 전송 출력
+            Configuration				= 0x16,		// 설정
+            
+            Battle						= 0x1F,		// 전투
             
             // Light
             LightManual					= 0x20,		// LED 수동 제어
@@ -91,6 +96,10 @@ namespace Protocol
 | Command                               | 0x11 | A    | 명령                                           | [Protocol::Command::Command](05_structs.md#Protocol_Command_Command),<br> [Protocol::Command::LightEvent](05_structs.md#Protocol_Command_LightEvent),<br> [Protocol::Command::LightEventColor](05_structs.md#Protocol_Command_LightEventColor),<br> [Protocol::Command::LightEventColors](05_structs.md#Protocol_Command_LightEventColors) |
 | Pairing                               | 0x12 | A    | 페어링                                         | [Protocol::Pairing](05_structs.md#Protocol_Pairing) |
 | ResponseRate                          | 0x13 | A    | ResponseRate                                   | &nbsp; |
+| TimeSync                              | 0x14 | A    | TimeSync                                       | &nbsp; |
+| TransmissionPower                     | 0x15 | A    | RF 데이터 송신 세기                            | &nbsp; |
+| Configuration                         | 0x16 | D    | 설정                                          | &nbsp; |
+| Battle                                | 0x1F | D    | 전투                                          | &nbsp; |
 | LightManual                           | 0x20 | A    | LED 수동 제어                                  | [Protocol::Light::Manual](06_structs_light.md#Protocol_Light_Manual) |
 | LightMode                             | 0x21 | D    | LED 모드 지정                                  | [Protocol::Light::Mode](06_structs_light.md#Protocol_Light_Mode),<br> [Protocol::Light::ModeColor](06_structs_light.md#Protocol_Light_ModeColor),<br> [Protocol::Light::ModeColors](06_structs_light.md#Protocol_Light_ModeColors) |
 | LightEvent                            | 0x22 | D    | LED 이벤트                                     | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event),<br> [Protocol::Light::EventColor](06_structs_light.md#Protocol_Light_EventColor),<br> [Protocol::Light::EventColors](06_structs_light.md#Protocol_Light_EventColors) |
