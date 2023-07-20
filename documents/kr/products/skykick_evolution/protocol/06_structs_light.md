@@ -1,6 +1,6 @@
 **[SKYKICK EVOLUTION](index.md)** / **Protocol** / **Structs** / **Light**
 
-Modified : 2018.11.26
+Modified : 2023.7.10
 
 ---
 
@@ -33,51 +33,15 @@ namespace Light
             enum Type
             {
                 None,
-                
-                RearNone = 0x10,
-                RearManual,             // 수동 제어
-                RearHold,               // 지정한 색상을 계속 켬
-                RearFlicker,            // 깜빡임
-                RearFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                RearDimming,            // 밝기 제어하여 천천히 깜빡임
-                RearSunrise,            // 꺼진 상태에서 점점 밝아짐
-                RearSunset,             // 켜진 상태에서 점점 어두워짐
-                
-                BodyNone = 0x20,
-                BodyManual,             // 수동 제어
-                BodyHold,               // 지정한 색상을 계속 켬
-                BodyFlicker,            // 깜빡임
-                BodyFlickerDouble,      // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                BodyDimming,            // 밝기 제어하여 천천히 깜빡임
-                BodySunrise,            // 꺼진 상태에서 점점 밝아짐
-                BodySunset,             // 켜진 상태에서 점점 어두워짐
-                
-                ANone = 0x30,
-                AManual,                // 수동 제어
-                AHold,                  // 지정한 색상을 계속 켬
-                AFlicker,               // 깜빡임
-                AFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                ADimming,               // 밝기 제어하여 천천히 깜빡임
-                ASunrise,               // 꺼진 상태에서 점점 밝아짐
-                ASunset,                // 켜진 상태에서 점점 어두워짐
-                
-                BNone = 0x40,
-                BManual,                // 수동 제어
-                BHold,                  // 지정한 색상을 계속 켬
-                BFlicker,               // 깜빡임
-                BFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                BDimming,               // 밝기 제어하여 천천히 깜빡임
-                BSunrise,               // 꺼진 상태에서 점점 밝아짐
-                BSunset,                // 켜진 상태에서 점점 어두워짐
-                
-                CNone = 0x50,
-                CManual,                // 수동 제어
-                CHold,                  // 지정한 색상을 계속 켬
-                CFlicker,               // 깜빡임
-                CFlickerDouble,         // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                CDimming,               // 밝기 제어하여 천천히 깜빡임
-                CSunrise,               // 꺼진 상태에서 점점 밝아짐
-                CSunset,                // 켜진 상태에서 점점 어두워짐
+
+                BodyNone			= 0x20,
+                BodyManual			= 0x21,			// 수동 제어
+                BodyHold			= 0x22,			// 지정한 색상을 계속 켬
+                BodyFlicker			= 0x23,			// 깜빡임			
+                BodyFlickerDouble	= 0x24,			// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+                BodyDimming			= 0x25,			// 밝기 제어하여 천천히 깜빡임
+                BodyRainbow2		= 0x29,			// 무지개색
+                BodyPairing			= 0x2A,			// Pairing
                 
                 EndOfType
             };
@@ -105,18 +69,11 @@ namespace Light
         {
             enum Type
             {
-                None        = 0x0000,
+                None			= 0x0000,
                 
-                Rear        = 0x0001,
-                BodyRed     = 0x0002,
-                BodyGreen   = 0x0004,
-                BodyBlue    = 0x0008,
-                
-                A           = 0x0010,
-                B           = 0x0020,
-                CRed        = 0x0040,
-                CGreen      = 0x0080,
-                CBlue       = 0x0100,
+                BodyRed			= 0x0001,
+                BodyGreen		= 0x0002,
+                BodyBlue		= 0x0004,
             };
         }
     }
@@ -144,17 +101,12 @@ namespace Light
             {
                 None,
                 
-                // Body
-                BodyNone = 0x20,
-                BodyManual,         // 수동 제어
-                BodyHold,           // 지정한 색상을 계속 켬
-                BodyFlicker,        // 깜빡임
-                BodyFlickerDouble,  // 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-                BodyDimming,        // 밝기 제어하여 천천히 깜빡임
-                BodySunrise,        // 꺼진 상태에서 점점 밝아짐
-                BodySunset,         // 켜진 상태에서 점점 어두워짐
-                BodyRainbow,        // 무지개색
-                BodyRainbow2,       // 무지개색
+                BodyNone			= 0x20,			
+                BodyManual,					// 수동 제어
+                BodyHold,					// 지정한 색상을 계속 켬
+                BodyFlicker,				// 깜빡임			
+                BodyFlickerDouble,			// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+                BodyDimming,				// 밝기 제어하여 천천히 깜빡임
                 
                 EndOfType
             };
@@ -182,11 +134,9 @@ namespace Light
         {
             enum Type
             {
-                None        = 0x00,
+                None		= 0x0000,
                 
-                BodyRed     = 0x01,
-                BodyGreen   = 0x02,
-                BodyBlue    = 0x04,
+                Body		= 0x0001,
             };
         }
     }

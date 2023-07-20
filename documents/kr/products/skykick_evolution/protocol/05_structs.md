@@ -103,40 +103,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Error"></a>
-## Protocol::Error
-
-오류
-
-드론에 문제가 생긴 경우 Error 구조체를 600ms에 한 번 RF를 통해 송신합니다.
-
-errorFlagsForSensor와 errorFlagsForState는 각각의 값에 해당하는 플래그를 조합하여 여러 오류들이 동시에 발생하는 것을 표시합니다.
-
-문제가 완전히 없어진 경우 Error 플래그를 0으로 초기화하여 추가로 5회 전송 후 전송을 중단합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Error
-    {
-        u64     systemTime;             // 에러 메세지 송신 시각
-        u32     errorFlagsForSensor;    // 센서 오류 플래그
-        u32     errorFlagsForState;     // 상태 오류 플래그
-    };
-}
-```
-
-| 변수 이름            | 형식                                                                | 크기     | 범위   | 설명                    |
-|:--------------------:|:-------------------------------------------------------------------:|:--------:|:------:|:------------------------|
-| systemTime           | uint64_t                                                            | 8 Byte   | -      | 시스템 시간             |
-| errorFlagsForSensor  | [ErrorFlagsForSensor::Type](04_definitions.md#ErrorFlagsForSensor)  | 4 Byte   | -      | 센서 오류 플래그 조합   |
-| errorFlagsForState   | [ErrorFlagsForState::Type](04_definitions.md#ErrorFlagsForState)    | 4 Byte   | -      | 상태 오류 플래그 조합   |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Request"></a>
 ## Protocol::Request
 
@@ -155,30 +121,6 @@ namespace Protocol
 | 변수 이름     | 형식                                                          | 크기     | 범위  | 설명                  |
 |:-------------:|:-------------------------------------------------------------:|:--------:|:-----:|:----------------------|
 | dataType      | [Protocol::DataType::Type](03_datatype.md#Protocol_DataType)  | 1 Byte   | -     | 요청할 데이터 타입    |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Address"></a>
-## Protocol::Address
-
-장치 주소(고유번호)
-
-```cpp
-namespace Protocol
-{
-    struct Address
-    {
-        u8   address[16];
-    };
-}
-```
-
-| 변수 이름  | 형식            | 크기     | 범위  | 설명         |
-|:----------:|:---------------:|:--------:|:-----:|:-------------|
-| address    | uint8_t Array   | 16 Byte  | -     | 장치 주소    |
 
 
 <br>
@@ -323,44 +265,6 @@ namespace Control
 <br>
 
 
-<a name="Control_Position16"></a>
-## Control::Position16
-
-드론 이동 명령
-
-드론에 이동 명령을 내리는 경우 사용
-
-```cpp
-namespace Control
-{
-    struct Position16
-    {
-        s16     positionX;          // meter    x 10
-        s16     positionY;          // meter    x 10
-        s16     positionZ;          // meter    x 10
-        s16     velocity;           // m/s      x 10
-        
-        s16     heading;            // degree
-        s16     rotationalVelocity; // deg/s
-    };
-}
-```
-
-
-| 변수 이름             | 형식     | 크기     | 범위                       | 단위          | 설명                 |
-|:---------------------:|:--------:|:--------:|:--------------------------:|:--------------|:---------------------|
-| positionX             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
-| positionY             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
-| positionZ             | int16_t  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocity              | int16_t  | 2 Byte   | 0 ~ 50(0.0 ~ 5.0)          | m/s x 10      | 이동 속도            |
-| heading               | int16_t  | 2 Byte   | -360 ~ 360                 | degree        | 반시계방향(+), 시계방향(-) |
-| rotationalVelocity    | int16_t  | 2 Byte   | 10 ~ 180                   | degree/s      | 좌우 회전 속도       |
-
-
-<br>
-<br>
-
-
 <a name="Control_Position"></a>
 ## Control::Position
 
@@ -422,8 +326,8 @@ namespace Protocol
 |:-----------:|:-----------------------------------------------------------------------:|:--------:|:-------:|:-------------|
 | commandType | [Protocol::CommandType::Type](04_definitions.md#Protocol_CommandType)   | 1 Byte   | -       | 명령 타입    |
 | option      | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)    | 1 Byte   | -       | 옵션         |
+|             | [Escape::Type](04_definitions.md#Escape)                                |          | -       |              |
 |             | [System::FlightEvent::Type](04_definitions.md#FlightEvent)              |          | -       |              |
-|             | [Headless::Type](04_definitions.md#Headless)                            |          | -       |              |
 |             | [System::Trim::Type](04_definitions.md#Trim)                            |          | -       |              |
 |             | [Mode::Controller::Type](04_definitions.md#Mode_Controller)             |          | -       |              |
 |             | uint8_t                                                                 |          | -       |              |
@@ -524,74 +428,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Pairing"></a>
-## Protocol::Pairing
-
-페어링
-
-장치의 페어링 정보를 확인하거나 변경할 때 사용합니다.
-
-address0, address1, address2를 모두 0으로 설정한 경우 RF 데이터 송신을 실행하지 않으며, 데이터 수신 시에도 해당 데이터를 무시합니다.
-
-channelArray에는 모두 4개의 채널이 들어가며, 주파수 호핑(FHSS) 동작시 지정한 모든 채널을 사용하고, 주파수 고정 동작 시 배열의 첫 번째에 있는 채널을 사용합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Pairing
-    {
-        u16     address0;
-        u16     address1;
-        u16     address2;
-        u8      scramble;
-        u8      channelArray[4];
-    };
-}
-```
-
-| 변수 이름       | 형식      | 크기     | 범위               | 설명       |
-|:---------------:|:---------:|:--------:|:------------------:|:-----------|
-| address0        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF    | 주소 0     |
-| address1        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF    | 주소 1     |
-| address2        | uint16_t  | 2 Byte   | 0x0000 ~ 0xFFFF    | 주소 2     |
-| scramble        | uint8_t   | 1 Byte   | 0x00 ~ 0x7F(0~127) | 스크램블   |
-| channelArray    | uint8_t   | 4 Byte   | 0 ~ 81             | 채널       |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Rssi"></a>
-## Protocol::Rssi
-
-RSSI
-
-Received signal strength indication
-
-[http://www.metageek.com/training/resources/understanding-rssi.html](http://www.metageek.com/training/resources/understanding-rssi.html)
-
-현재 무선으로 연결된 장치의 신호 세기를 반환합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Rssi
-    {
-        s8     Rssi;
-    };
-}
-```
-
-| 변수 이름    | 형식     | 크기     | 범위      | 설명       |
-|:------------:|:--------:|:--------:|:---------:|:-----------|
-| rssi         | int8_t   | 1 Byte   | -100 ~ 0  | 신호 세기  |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_RawMotion"></a>
 ## Protocol::RawMotion
 
@@ -627,32 +463,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_RawFlow"></a>
-## Protocol::RawFlow
-
-Flow 센서 RAW 데이터
-
-```cpp
-namespace Protocol
-{
-    struct RawFlow
-    {
-        f32     x;
-        f32     y;
-    };
-}
-```
-
-| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
-|:----------:|:---------:|:--------:|:-----:|:--------|
-| x          | float     | 4 Byte   | -     | X축     |
-| y          | float     | 4 Byte   | -     | Y축     |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_State"></a>
 ## Protocol::State
 
@@ -682,7 +492,7 @@ namespace Protocol
 | modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)                   | 1 Byte   | -        | 비행 제어기 동작 모드  |
 | modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | 1 Byte   | -        | 비행 제어 모드         |
 | modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | 1 Byte   | -        | 이동 상태              |
-| headless          | [Headless::Type](04_definitions.md#Headless)                          | 1 Byte   | -        | Headless 설정 상태     |
+| escape              | [Headless::Type](04_definitions.md#escape)                          | 1 Byte   | -        | escape 설정 상태       |
 | controlSpeed      | uint8_t                                                               | 1 Byte   | -        | 제어 속도(1, 2, 3)     |
 | sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | 1 Byte   | -        | 센서 방향              |
 | battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
@@ -706,7 +516,7 @@ namespace Protocol
         u8      modeController;         // 조종기 동작 모드
         u8      modeConnection;         // 연결 모드
         u8      deviceType;             // 현재 장치의 타입
-        s8      rssi;                   // RSSI
+        s8      responseRate;           // 송수신 응답률
 
         u32     systemTime;             // 시스템 시간(ms)
         u32     timeConnected;          // 연결된 이후부터의 시간(ms)
@@ -728,7 +538,7 @@ namespace Protocol
 | modeController        | [Mode::Controller::Type](04_definitions.md#Mode_Controller)           | 1 Byte   | -        | 조종기 동작 모드                |
 | modeConnection        | [Mode::Connection::Type](04_definitions.md#Mode_Connection)           | 1 Byte   | -        | 연결 모드                       |
 | deviceType            | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)   | 1 Byte   | -        | 장치 타입                       |
-| rssi                  | int8_t                                                                | 1 Byte   | -        | RSSI                            |
+| responseRate          | int8_t                                                                | 1 Byte   | -        | responseRate                    |
 | systemTime            | uint32_t                                                              | 4 Byte   | -        | 시스템 시간(ms)                 |
 | timeConnected         | uint32_t                                                              | 4 Byte   | -        | 연결된 이후부터의 시간(ms)      |
 | timeLostConnection    | uint32_t                                                              | 4 Byte   | 0 ~ 100  | 연결이 끊어지고 나서의 시간(ms) |
@@ -757,7 +567,7 @@ namespace Protocol
         u8      modeSystem;             // 시스템 동작 모드
         u8      modeConnection;         // 연결 모드
         u8      deviceType;             // 현재 장치의 타입
-        s8      rssi;                   // RSSI
+        u8      responseRate;           // 송수신 응답률
 
         u32     systemTime;             // 시스템 시간(ms)
         u32     timeConnected;          // 연결된 이후부터의 시간(ms)
@@ -778,7 +588,7 @@ namespace Protocol
 | modeSystem            | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | System 동작 모드                |
 | modeConnection        | [Mode::Connection::Type](04_definitions.md#Mode_Connection)           | 1 Byte   | -        | 연결 모드                       |
 | deviceType            | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)   | 1 Byte   | -        | 장치 타입                       |
-| rssi                  | int8_t                                                                | 1 Byte   | -        | RSSI                            |
+| responseRate          | uint8_t                                                               | 1 Byte   | -        | 송수신 응답률   0 ~ 100         |
 | systemTime            | uint32_t                                                              | 4 Byte   | -        | 시스템 시간(ms)                 |
 | timeConnected         | uint32_t                                                              | 4 Byte   | -        | 연결된 이후부터의 시간(ms)      |
 | timeLostConnection    | uint32_t                                                              | 4 Byte   | 0 ~ 100  | 연결이 끊어지고 나서의 시간(ms) |
@@ -810,14 +620,6 @@ namespace Protocol
     };
 }
 ```
-
-| 변수 이름  | 형식       | 크기     | 범위              | 설명       |
-|:----------:|:----------:|:--------:|:-----------------:|:-----------|
-| roll       | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Roll       |
-| pitch      | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Pitch      |
-| yaw        | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Yaw        |
-
-
 드론의 자세를 확인할 때 값의 범위는 다음과 같습니다.
 
 |이름      | 형식     | 크기     | 범위        | 설명                |
@@ -932,49 +734,15 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Range"></a>
-## Protocol::Range
-
-Range 센서 데이터 출력
-
-```cpp
-namespace Protocol
-{
-    struct Range
-    {
-        s16     left;
-        s16     front;
-        s16     right;
-        s16     rear;
-        s16     top;
-        s16     bottom;
-    };
-}
-```
-
-| 변수 이름  | 형식     | 크기    | 범위            | 단위      | 설명                                      |
-|:----------:|:--------:|:-------:|:---------------:|:---------:|:------------------------------------------|
-| left       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 왼쪽을 바라보는 거리 센서의 출력 값       |
-| front      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 정면을 바라보는 거리 센서의 출력 값       |
-| right      | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 오른쪽을 바라보는 거리 센서의 출력 값     |
-| rear       | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 뒤를 바라보는 거리 센서의 출력 값         |
-| top        | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 위쪽를 바라보는 거리 센서의 출력 값       |
-| bottom     | int16_t  | 2 Byte  | 0 ~ 2,000       | mm        | 아래쪽을 바라보는 거리 센서의 출력 값     |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Flow"></a>
-## Protocol::Flow
+<a name="Protocol_VisionSensor"></a>
+## Protocol::VisionSensor
 
 위치
 
 ```cpp
 namespace Protocol
 {
-    struct Flow
+    struct VisionSensor
     {
         float       x;      // meter
         float       y;      // meter
@@ -988,7 +756,7 @@ namespace Protocol
 | :-------: | :---: | :----: | :------------: | :---- | :------------- |
 |     x     | float | 4 Byte | -100.0 ~ 100.0 | meter | 앞(+), 뒤(-)   |
 |     y     | float | 4 Byte | -100.0 ~ 100.0 | meter | 좌(+), 우(-)   |
-|     z     | float | 4 Byte |   0 ~ 100.0    | meter | 거리 센서의 값 |
+|     z     | float | 4 Byte |   0 ~ 4.0      | meter | 거리 센서의 값 |
 
 
 
@@ -1094,30 +862,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Weight"></a>
-## Protocol::Weight
-
-무게
-
-```cpp
-namespace Protocol
-{
-    struct Weight
-    {
-        f32     weight;         // Weight
-    };
-}
-```
-
-| 변수 이름 | 형식     | 크기     | 범위         | 설명    |
-|:---------:|:--------:|:--------:|:------------:|:--------|
-| weight    | float    | 4 Byte   | 100 ~ 150    | 무게    |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_LostConnection"></a>
 ## Protocol::LostConnection
 
@@ -1146,66 +890,6 @@ namespace Protocol
 | timeNeutral   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 조종 중립으로 변경할 시간    |
 | timeLanding   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 드론을 착륙할 시간           |
 | timeStop      | uint32_t  | 4 Byte   | 0 ~ 4,294,967,295  | 연결이 끊어졌을 때 드론을 정지할 시간           |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Motor"></a>
-## Protocol::Motor
-
-모터
-
-모터를 4개를 동시에 작동시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
-
-아래의 구조체를 배열로 사용합니다.
-
-```cpp
-namespace Protocol
-{
-    struct Motor
-    {
-        u8      rotation;
-        s16     value;
-    };
-}
-```
-
-| 변수 이름  | 형식                                          | 크기     | 범위      | 설명      |
-|:----------:|:---------------------------------------------:|:--------:|:---------:|:----------|
-| rotation   | [Rotation::Type](04_definitions.md#Rotation)  | 1 Byte   | -         | 회전 방향 |
-| value      | uint16_t                                      | 2 Byte   | 0 ~ 4,095 | 회전 속도 |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_MotorSingle"></a>
-## Protocol::MotorSingle
-
-한 개의 모터 제어
-
-하나의 모터를 동작시키거나, 현재 모터에 입력된 값을 확인할 때 사용합니다.
-
-```cpp
-namespace Protocol
-{
-    struct MotorSingle
-    {
-        u8      target;
-        u8      rotation;
-        s16     value;
-    };
-}
-```
-
-| 변수 이름  | 형식                                               | 크기     | 범위      | 설명            |
-|:----------:|:--------------------------------------------------:|:--------:|:---------:|:----------------|
-| target     | [Motor::Part::Type](04_definitions.md#Motor_Part)  | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
-| rotation   | [Rotation::Type](04_definitions.md#Rotation)       | 1 Byte   | -         | 회전 방향       |
-| value      | uint16_t                                           | 2 Byte   | 0 ~ 4,095 | 회전 속도       |
 
 
 <br>
@@ -1261,36 +945,6 @@ namespace Protocol
 | value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
 |            | uint16_t                                                | 2 Byte | 0 ~ 8,000   | Hz                     |
 | time       | uint16_t                                                | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Vibrator"></a>
-## Protocol::Vibrator
-
-진동
-
-```cpp
-namespace Protocol
-{
-    struct Vibrator
-    {
-        u8      mode;   // 모드(0은 set, 1은 reserve)
-        u16     on;     // 진동을 켠 시간(ms)
-        u16     off;    // 진동을 끈 시간(ms)
-        u16     total;  // 전체 진행 시간(ms)
-    };
-}
-```
-
-| 변수 이름  | 형식                                                    | 크기     | 범위        | 설명                |
-|:----------:|:-------------------------------------------------------:|:--------:|:-----------:|:--------------------|
-| mode       | [Vibrator::Mode::Type](04_definitions.md#Vibrator_Mode) | 1 Byte   | -           | 진동 동작 모드      |
-| on         | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
-| off        | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
-| total      | uint16_t                                                | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
 
 
 <br>
@@ -1406,69 +1060,7 @@ namespace Protocol
 
         u8      rangeHeight;    // meter x 100
 
-        s8      rssi;           // RSSI
-    };
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Protocol_InformationAssembledForEntry"></a>
-## Protocol::InformationAssembledForEntry
-
-자주 갱신되는 데이터 모음(엔트리)
-
-```cpp
-namespace Protocol
-{
-    struct InformationAssembledForEntry
-    {
-        s16     angleRoll;
-        s16     anglePitch;
-        s16     angleYaw;
-
-        s16     positionX;
-        s16     positionY;
-        s16     positionZ;
-
-        s16     rangeHeight;
-        float   altitude;
-    };
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Protocol_InformationAssembledForByBlocks"></a>
-## Protocol::InformationAssembledForByBlocks
-
-자주 갱신되는 데이터 모음(바이블럭)
-
-```cpp
-namespace Protocol
-{
-    struct InformationAssembledForByBlocks
-    {
-        s8      battery;        // 배터리 잔량
-        
-        s16     angleRoll;      // 자세 Roll
-        s16     anglePitch;     // 자세 Pitch
-        s16     angleYaw;       // 자세 Yaw
-        
-        s16     positionX;      // meter x 10
-        s16     positionY;      // meter x 10
-        s16     positionZ;      // meter x 10
-        
-        s16     rangeLeft;      // meter x 1000
-        s16     rangeFront;     // meter x 1000
-        s16     rangeRight;     // meter x 1000
-        s16     rangeBottom;    // meter x 1000
+        s8      responseRate;   // 송수신 응답률
     };
 }
 ```

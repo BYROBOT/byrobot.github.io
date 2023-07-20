@@ -171,72 +171,6 @@ namespace Protocol
 <br>
 
 
-<a name="ErrorFlagsForSensor"></a>
-## ErrorFlagsForSensor::Type
-
-센서 오류 flag
-
-```cpp
-namespace ErrorFlagsForSensor
-{
-    enum Type
-    {
-        None                                = 0x00000000,
-
-        Motion_NoAnswer                     = 0x00000001,   // Motion 응답 없음
-        Motion_WrongValue                   = 0x00000002,   // Motion 잘못된 값
-        Motion_NotCalibrated                = 0x00000004,   // Gyro Bias 보정이 완료되지 않음
-        Motion_Calibrating                  = 0x00000008,   // Gyro Bias 보정 중
-
-        Pressure_NoAnswer                   = 0x00000010,   // 압력 센서 응답 없음
-        Pressure_WrongValue                 = 0x00000020,   // 압력 센서 잘못된 값
-
-        RangeGround_NoAnswer                = 0x00000100,   // 바닥 거리 센서 응답 없음
-        RangeGround_WrongValue              = 0x00000200,   // 바닥 거리 센서 잘못된 값
-
-        Flow_NoAnswer                       = 0x00001000,   // Flow 응답 없음
-        Flow_WrongValue                     = 0x00002000,   // Flow 잘못된 값
-        Flow_CannotRecognizeGroundImage     = 0x00004000,   // 바닥 이미지를 인식할 수 없음
-    };
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="ErrorFlagsForState"></a>
-## ErrorFlagsForState::Type
-
-상태 오류 flag
-
-```cpp
-namespace ErrorFlagsForState
-{
-    enum Type
-    {
-        None                                    = 0x00000000,
-
-        NotRegistered                           = 0x00000001,   // 장치 등록이 안됨
-        FlashReadLock_UnLocked                  = 0x00000002,   // 플래시 메모리 읽기 Lock이 안 걸림
-        BootloaderWriteLock_UnLocked            = 0x00000004,   // 부트로더 영역 쓰기 Lock이 안 걸림
-
-        TakeoffFailure_CheckPropellerAndMotor   = 0x00000010,   // 이륙 실패
-        CheckPropellerVibration                 = 0x00000020,   // 프로펠러 진동발생
-        Attitude_NotStable                      = 0x00000040,   // 자세가 많이 기울어져 있거나 뒤집어져 있을때
-
-        CanNotFlip_LowBattery                   = 0x00000100,   // 배터리가 30이하
-        CanNotFlip_TooHeavy                     = 0x00000200,   // 기체가 무거움
-    };
-}
-```
-
-
-<br>
-<br>
-
-
 <a name="Mode_Control_Flight"></a>
 ## Mode::Control::Flight::Type
 
@@ -255,47 +189,11 @@ namespace Mode
 
                 Attitude    = 0x10,     // 자세 - X,Y는 각도(deg)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
                 Position    = 0x11,     // 위치 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
-                Manual      = 0x12,     // 고도를 수동으로 조종함
-                Rate        = 0x13,     // Rate - X,Y는 각속도(deg/s)로 입력받음, Z,Yaw는 속도(m/s)로 입력 받음
-                Function    = 0x14,     // 기능 - X,Y,Z,Yaw는 속도(m/s)로 입력 받음
 
                 EndOfType
             };
         }
     }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Mode_System"></a>
-## Mode::System::Type
-
-시스템 동작 상태
-
-```cpp
-namespace Mode
-{
-    namespace System
-    {
-        enum Type
-        {
-            None        = 0x00,
-
-            Boot        = 0x10,     // 부팅
-            Start,                  // 시작 코드 실행
-            Running,                // 메인 코드 동작
-            ReadyToReset,           // 리셋 대기(1초 뒤 리셋)
-
-            Error       = 0xA0,     // 오류
-
-            EndOfType
-        };
-    }
-    
 }
 ```
 
@@ -319,12 +217,8 @@ namespace Mode
             None,                   // 없음
             
             Flight      = 0x10,     // 비행
-            Card,                   // 카드 코딩
-            Motion,                 // 모션 코딩
-            Piano,                  // 피아노 모드
             
             Link        = 0x80,     // 중계
-            Calibration,            // 컬러 캘리브레이션 모드
             
             Error       = 0xA0,     // 오류(문제로 인해 정상적인 동작을 할 수 없는 경우)
             
@@ -455,99 +349,6 @@ namespace Mode
 <br>
 
 
-<a name="Mode_Update"></a>
-## Mode::Update::Type
-
-업데이트 상태
-
-```cpp
-namespace Mode
-{
-    namespace Update
-    {
-        enum Type
-        {
-            None,
-
-            Ready,              // 업데이트 가능 상태
-            Update,             // 업데이트 중
-            Complete,           // 업데이트 완료
-
-            Failed,             // 업데이트 실패(업데이트 완료까지 갔으나 body의 CRC16이 일치하지 않는 경우 등)
-
-            NotAvailable,       // 업데이트 불가능 상태(Debug 모드 등)
-            RunApplication,     // 어플리케이션 동작 중
-            NotRegistered,      // 등록되지 않은 장치
-
-            EndOfType
-        };
-    }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="SensorOrientation"></a>
-## SensorOrientation::Type
-
-센서 방향
-
-```cpp
-namespace SensorOrientation
-{
-    enum Type
-    {
-        None = 0,
-
-        Normal,             // 정상
-        ReverseStart,       // 뒤집히기 시작
-        Reversed,           // 뒤집힘
-
-        EndOfType
-    };
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Direction"></a>
-## Direction::Type
-
-방향
-
-```cpp
-namespace Direction
-{
-    enum Type
-    {
-        None = 0,
-
-        Left,
-        Front,
-        Right,
-        Rear,
-
-        Top,
-        Bottom,
-
-        Center,
-
-        EndOfType
-    };
-}
-```
-
-
-<br>
-<br>
-
-
 <a name="Mode_Movement"></a>
 ## Mode::Movement::Type
 
@@ -576,27 +377,25 @@ namespace Mode
 <br>
 
 
-<a name="Headless"></a>
-## Headless::Type
+<a name="Escape"></a>
+## Escape::Type
 
 방위 기준
 
 조종 시 방향의 기준을 선택합니다.
 
-Headless는 드론이 어느 방향을 바라보더라도 <b><i>이륙할 때의 방향</i></b> 또는 <b><i>사용자가 지정한 방향</i></b>을 기준으로 움직입니다.
+Escape 드론이 어느 방향을 바라보더라도 <b><i>이륙할 때의 방향</i></b> 또는 <b><i>사용자가 지정한 방향</i></b>을 기준으로 움직입니다.
 
-Normal은 <b><i>드론이 현재 향하는 방향</i></b>을 기준으로 움직입니다.
-
-조종기 상에서는 Headless를 'Headless ON', Normal을 'Headless OFF'로 표현하고 있습니다. 기본 설정은 Normal입니다.
+Normal은 <b><i>드론이 현재 향하는 방향</i></b>을 기준으로 움직입니다. 기본 설정은 Normal입니다.
 
 ```cpp
-namespace Headless
+namespace Escape
 {
     enum Type
     {
         None = 0,
 
-        Headless,   // 사용자 중심 좌표
+        Escape,     // 사용자 중심 좌표
         Normal,     // 드론 중심 좌표
 
         EndOfType
@@ -607,35 +406,6 @@ namespace Headless
 
 <br>
 <br>
-
-
-<a name="Rotation"></a>
-## Rotation::Type
-
-모터 회전 방향
-
-SKYKICK EVOLUTION에는 총 4개의 모터가 있으며, 왼쪽 앞 모터부터 각각 0, 1, 2, 3번으로 번호가 부여되어 있습니다.
-
-드론 비행 시에 0번과 2번 모터는 시계 방향(Clockwise), 1번과 3번 모터는 반시계 방향(Counterclockwise)으로 회전합니다.
-
-SKYKICK EVOLUTION의 모터는 정해진 한 방향으로만 회전합니다.
-
-```cpp
-namespace Rotation
-{
-    enum Type
-    {
-        None = 0,
-
-        Clockwise,              // 시계 방향
-        Counterclockwise,       // 반시계 방향
-
-        EndOfType
-    };
-}
-```
-
-
 <br>
 <br>
 
@@ -707,35 +477,6 @@ namespace FlightEvent
 <br>
 
 
-<a name="Button_Drone_ButtonType"></a>
-## Button::Drone::ButtonType::Type
-
-드론 버튼 플래그
-
-```cpp
-namespace Button
-{
-    namespace Drone
-    {
-        namespace ButtonType
-        {
-            enum Type
-            {
-                None        = 0x0000,
-
-                // 버튼
-                Reset       = 0x0001
-            };
-        }
-    }
-}
-```
-
-
-<br>
-<br>
-
-
 <a name="Button_Controller_ButtonType"></a>
 ## Button::Controller::ButtonType::Type
 
@@ -750,24 +491,22 @@ namespace Button
         {
             enum Type
             {
-                None                = 0x0000,
-
+                None				= 0x0000,
+                
                 // 버튼
-                FrontLeftTop        = 0x0001,
-                FrontLeftBottom     = 0x0002,
-                FrontRightTop       = 0x0004,
-                FrontRightBottom    = 0x0008,
-
-                TopLeft             = 0x0010,
-                TopRight            = 0x0020,   // POWER ON/OFF
-
-                MidUp               = 0x0040,
-                MidLeft             = 0x0080,
-                MidRight            = 0x0100,
-                MidDown             = 0x0200,
-
-                BottomLeft          = 0x0400,
-                BottomRight         = 0x0800,
+                FrontLeft			= 0x0001,
+                FrontRight			= 0x0002,
+                
+                MidUpLeft			= 0x0004,
+                MidUpRight			= 0x0008,
+                
+                MidUp				= 0x0010,
+                MidLeft				= 0x0020,
+                MidRight			= 0x0040,
+                MidDown				= 0x0080,
+                
+                BottomLeft			= 0x0100,
+                BottomRight			= 0x0200,
             };
         }
     }
@@ -843,35 +582,6 @@ namespace Joystick
 <br>
 
 
-<a name="Joystick_Event"></a>
-## Joystick::Event::Type
-
-조이스틱 이벤트
-
-```cpp
-namespace Joystick
-{
-    namespace Event
-    {
-        enum Type
-        {
-            None    = 0,        // 이벤트 없음
-
-            In,                 // 특정 영역에 진입
-            Stay,               // 특정 영역에서 상태 유지
-            Out,                // 특정 영역에서 벗어남
-
-            EndOfType
-        };
-    }
-}
-```
-
-
-<br>
-<br>
-
-
 <a name="Buzzer_Mode"></a>
 ## Buzzer::Mode::Type
 
@@ -886,13 +596,13 @@ namespace Buzzer
         {
             Stop                = 0,    // 정지(Mode에서의 Stop은 통신에서 받았을 때 Buzzer를 끄는 용도로 사용, set으로만 호출)
 
-            MuteInstantly     = 1,    // 묵음 즉시 적용
+            MuteInstantly       = 1,    // 묵음 즉시 적용
             MuteContinually     = 2,    // 묵음 예약
 
-            ScaleInstantly    = 3,    // 음계 즉시 적용
+            ScaleInstantly      = 3,    // 음계 즉시 적용
             ScaleContinually    = 4,    // 음계 예약
 
-            HzInstantly       = 5,    // 주파수 즉시 적용
+            HzInstantly         = 5,    // 주파수 즉시 적용
             HzContinually       = 6,    // 주파수 예약
 
             EndOfType
@@ -953,81 +663,31 @@ namespace Buzzer
     {
         enum Type
         {
-            Null,           // 무음(100ms)
+            DoMiSol,		// 도미솔
+            SolMiDo,		// 솔미도
+            LaLa,			// 라라
+            SiRaSiRa,		// 시라시라
             
-            Melody1,        // 카드 코딩용 멜로디 1
-            Melody2,        // 카드 코딩용 멜로디 2
-            Melody3,        // 카드 코딩용 멜로디 3
-            Melody4,        // 카드 코딩용 멜로디 4
-            Melody5,        // 카드 코딩용 멜로디 5
-            Melody6,        // 카드 코딩용 멜로디 6
-            Melody7,        // 카드 코딩용 멜로디 7
-            Melody8,        // 카드 코딩용 멜로디 8
+            Warning1,		// 경고 1
+            Warning2,		// 경고 2
+            Warning3,		// 경고 3
+            Warning4,		// 경고 4
             
-            DoReMi,         // 도레미
-            DoMiSol,        // 도미솔
-            SolMiDo,        // 솔미도
-            LaLa,           // 라라
-            SiRaSiRa,       // 시라시라
-            Do5Sol5Do6,     // 도5솔5도6도5솔5도6
-            Do6Sol5Do5,     // 도6솔5도5도6솔5도5
+            Du,				// Trim -
+            DuDu,			// Trim - End
+            DiDic,			// Trim Center
+            DiDic2,			// Trim Center 2
+            Di,				// Trim +
+            DiDi,			// Trim + End
             
-            Warning1,       // 경고 1
-            Warning2,       // 경고 2
-            Warning3,       // 경고 3
-            Warning4,       // 경고 4
+            BuzzSound1,
+            BuzzSound2,
+            BuzzSound3,
+            BuzzSound4,
             
-            Du,             // Trim -
-            DuDu,           // Trim - End
-            DiDic,          // Trim Center
-            DiDic2,         // Trim Center 2
-            Di,             // Trim +
-            DiDi,           // Trim + End
-            
-            BuzzSound1,     // C6
-            BuzzSound2,     // C6, D6
-            BuzzSound3,     // C6, D6, E6
-            
-            Button,         // 버튼
+            Button,
             Shot,
             
-            Mode1,
-            Mode2,
-            Mode3,
-            Mode4,
-            Mode5,
-            Mode6,
-            Mode7,
-            Mode8,
-
-            EndOfType
-        };
-    }
-}
-```
-
-
-<br>
-<br>
-
-
-<a name="Vibrator_Mode"></a>
-## Vibrator::Mode::Type
-
-진동 모드
-
-```cpp
-namespace Vibrator
-{
-    namespace Mode
-    {
-        enum Type
-        {
-            Stop            = 0,    // 정지
-
-            Instantly     = 1,    // 즉시 적용
-            Continually     = 2,    // 예약
-
             EndOfType
         };
     }
