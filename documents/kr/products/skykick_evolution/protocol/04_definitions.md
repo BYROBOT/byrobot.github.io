@@ -347,6 +347,32 @@ namespace Mode
 
 <br>
 <br>
+
+
+<a name="Mode_Movement"></a>
+## Mode::Movement::Type
+
+이동 상태
+
+```cpp
+namespace Mode
+{
+    namespace Movement
+    {
+        enum Type
+        {
+            None            = 0x00,
+
+            Ready           = 0x01,
+            Hovering        = 0x02,
+            Moving          = 0x03,
+            ReturnHome      = 0x04
+        };
+    }
+}
+```
+
+
 <br>
 <br>
 
@@ -380,29 +406,6 @@ namespace Escape
 
 <br>
 <br>
-
-
-<a name="ControlSpeed"></a>
-## ControlSpeed::Type
-
-모터 번호
-
-```cpp
-namespace ControlSpeed
-{
-    enum Type
-    {
-        Speed1  = 1,
-        Speed2  = 2, 
-        Speed3  = 3, 
-        Turbo   = 4, 
-
-        EndOfPart
-    };
-}
-```
-
-
 <br>
 <br>
 
