@@ -478,7 +478,7 @@ namespace Protocol
 
         u8      modeControlFlight;  // 비행 제어 모드
         u8      modeMovement;       // 이동 상태
-        u8      headless;           // 헤드리스 모드
+        u8      Escape;             // Escape 모드
         u8      controlSpeed;       // 제어 속도
         u8      sensorOrientation;  // 센서 방향
         u8      battery;            // 배터리량(0 ~ 100%)
@@ -492,7 +492,7 @@ namespace Protocol
 | modeFlight        | [Mode::Flight::Type](04_definitions.md#Mode_Flight)                   | 1 Byte   | -        | 비행 제어기 동작 모드  |
 | modeControlFlight | [Mode::Control::Flight::Type](04_definitions.md#Mode_Control_Flight)  | 1 Byte   | -        | 비행 제어 모드         |
 | modeMovement      | [Mode::Movement::Type](04_definitions.md#Mode_Movement)               | 1 Byte   | -        | 이동 상태              |
-| escape              | [Headless::Type](04_definitions.md#escape)                          | 1 Byte   | -        | escape 설정 상태       |
+| escape              | [Escape::Type](04_definitions.md#escape)                          | 1 Byte   | -        | escape 설정 상태       |
 | controlSpeed      | uint8_t                                                               | 1 Byte   | -        | 제어 속도(1, 2, 3)     |
 | sensorOrientation | [SensorOrientation::Type](04_definitions.md#SensorOrientation)        | 1 Byte   | -        | 센서 방향              |
 | battery           | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
@@ -538,7 +538,7 @@ namespace Protocol
 | modeController        | [Mode::Controller::Type](04_definitions.md#Mode_Controller)           | 1 Byte   | -        | 조종기 동작 모드                |
 | modeConnection        | [Mode::Connection::Type](04_definitions.md#Mode_Connection)           | 1 Byte   | -        | 연결 모드                       |
 | deviceType            | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)   | 1 Byte   | -        | 장치 타입                       |
-| responseRate          | int8_t                                                                | 1 Byte   | -        | responseRate                    |
+| responseRate          | int8_t                                                                | 1 Byte   | -        | 송수신 응답률                    |
 | systemTime            | uint32_t                                                              | 4 Byte   | -        | 시스템 시간(ms)                 |
 | timeConnected         | uint32_t                                                              | 4 Byte   | -        | 연결된 이후부터의 시간(ms)      |
 | timeLostConnection    | uint32_t                                                              | 4 Byte   | 0 ~ 100  | 연결이 끊어지고 나서의 시간(ms) |

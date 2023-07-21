@@ -465,7 +465,7 @@ namespace FlightEvent
         
         Return,                     // Return
         
-        ResetHeading    = 0xA0,     // 헤딩 리셋(Headless 모드 일 때 현재 heading을 0도로 변경)
+        ResetHeading    = 0xA0,     // 헤딩 리셋(Escape 모드 일 때 현재 heading을 0도로 변경)
         
         EndOfType
     };
