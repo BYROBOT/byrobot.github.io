@@ -603,36 +603,6 @@ namespace Protocol
 <br>
 <br>
 
-
-<a name="Protocol_Attitude"></a>
-## Protocol::Attitude
-
-자세
-
-```cpp
-namespace Protocol
-{
-    struct Attitude
-    {
-        s16     roll;         // Roll
-        s16     pitch;        // Pitch
-        s16     yaw;          // Yaw
-    };
-}
-```
-드론의 자세를 확인할 때 값의 범위는 다음과 같습니다.
-
-|이름      | 형식     | 크기     | 범위        | 설명                |
-|:--------:|:--------:|:--------:|:-----------:|:-------------------:|
-| roll     | int16_t  | 2 Byte   |  -90 ~  90  | 좌우 기울기 각도    |
-| pitch    | int16_t  | 2 Byte   |  -90 ~  90  | 전후 기울기 각도    |
-| yaw      | int16_t  | 2 Byte   | -180 ~ 180  | 좌우 회전 시 각도   |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Position"></a>
 ## Protocol::Position
 
