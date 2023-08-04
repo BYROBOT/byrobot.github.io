@@ -44,7 +44,6 @@ namespace Protocol
             
             // 상태,  센서
             State						= 0x40,		// 드론의 상태(비행 모드, 방위기준, 배터리량)
-            Position						= 0x42,		// 위치
             Altitude						= 0x43,		// 높이, 고도
             Motion						= 0x44,		// Motion 센서 데이터 처리한 값(IMU)
             VisionSensor					= 0x47,		// Vision Sensor X, Y, Z
