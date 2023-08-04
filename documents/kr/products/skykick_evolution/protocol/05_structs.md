@@ -337,91 +337,24 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Command_LightEvent"></a>
-## Protocol::Command::LightEvent
+<a name="Protocol_ResponseRate"></a>
+## Protocol::ResponseRate
 
-설정 변경 + LED 이벤트
-
-```cpp
-namespace Protocol
-{
-    namespace Command
-    {
-        struct LightEvent
-        {
-            Protocol::Command::Command      command;
-            Protocol::Light::Event          event;
-        };
-    }
-}
-```
-
-| 변수 이름   | 형식                                                                  | 크기     | 범위    | 설명         |
-|:-----------:|:---------------------------------------------------------------------:|:--------:|:-------:|:-------------|
-| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | 2 Byte   | -       | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | 4 Byte   | -       | LED 이벤트   |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Command_LightEventColor"></a>
-## Protocol::Command::LightEventColor
-
-설정 변경 + LED 이벤트(RGB)
+RF 송수신 응답률 (조종기에서만 받을수 있음)
 
 ```cpp
 namespace Protocol
 {
-    namespace Command
+    struct ResponseRate
     {
-        struct LightEventColor
-        {
-            Protocol::Command::Command      command;
-            Protocol::Light::Event          event;
-            Light::Color                    color;
-        };
-    }
+        u8	responseRate;
+    };
 }
 ```
 
-| 변수 이름   | 형식                                                                  | 크기     | 범위    | 설명         |
-|:-----------:|:---------------------------------------------------------------------:|:--------:|:-------:|:-------------|
-| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | 2 Byte   | -       | 명령         |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | 4 Byte   | -       | LED 이벤트   |
-| color       | [Light::Color](06_structs_light.md#Light_Color)                       | 3 Byte   | -       | LED RGB 색상 |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Command_LightEventColors"></a>
-## Protocol::Command::LightEventColors
-
-설정 변경 + LED 이벤트(Palette)
-
-```cpp
-namespace Protocol
-{
-    namespace Command
-    {
-        struct LightEventColors
-        {
-            Protocol::Command::Command      command;
-            Protocol::Light::Event          event;
-            u8                              colors;
-        };
-    }
-}
-```
-
-| 변수 이름   | 형식                                                                  | 크기     | 범위    | 설명              |
-|:-----------:|:---------------------------------------------------------------------:|:--------:|:-------:|:------------------|
-| command     | [Protocol::Command::Command](#Protocol_Command_Command)               | 2 Byte   | -       | 명령              |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event)    | 4 Byte   | -       | LED 이벤트        |
-| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)               | 1 Byte   | -       | LED 팔레트 인덱스 |
+| 변수 이름         | 형식                                                                  | 크기     | 범위     | 설명                   |
+|:-----------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:-----------------------|
+| responseRate      | uint8_t                                                               | 1 Byte   | 0 ~ 100  | 송수신 응답률          |
 
 
 <br>
@@ -548,84 +481,6 @@ namespace Protocol
 | countCycleReceiveExternal     | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 External        |
 | countCycleTransferUSB         | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 USB             |
 | countCycleReceiveUSB          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 USB             |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_StateLink"></a>
-## Protocol::StateLink
-
-LINK 모듈의 현재 상태
-
-```cpp
-namespace Protocol
-{
-    struct StateLink
-    {
-        u8      modeSystem;             // 시스템 동작 모드
-        u8      modeConnection;         // 연결 모드
-        u8      deviceType;             // 현재 장치의 타입
-        u8      responseRate;           // 송수신 응답률
-
-        u32     systemTime;             // 시스템 시간(ms)
-        u32     timeConnected;          // 연결된 이후부터의 시간(ms)
-        u32     timeLostConnection;     // 연결이 끊어지고 나서의 시간(ms)
-
-        u8      countCycleTransferRF;       // 1초당 전송 횟수 RF
-        u8      countCycleReceiveRF;        // 1초당 수신 횟수 RF
-        u8      countCycleTransferExternal; // 1초당 전송 횟수 External
-        u8      countCycleReceiveExternal;  // 1초당 수신 횟수 External
-        u8      countCycleTransferUSB;      // 1초당 전송 횟수 USB
-        u8      countCycleReceiveUSB;       // 1초당 수신 횟수 USB
-    };
-}
-```
-
-| 변수 이름             | 형식                                                                  | 크기     | 범위     | 설명                            |
-|:---------------------:|:---------------------------------------------------------------------:|:--------:|:--------:|:--------------------------------|
-| modeSystem            | [Mode::System::Type](04_definitions.md#Mode_System)                   | 1 Byte   | -        | System 동작 모드                |
-| modeConnection        | [Mode::Connection::Type](04_definitions.md#Mode_Connection)           | 1 Byte   | -        | 연결 모드                       |
-| deviceType            | [Protocol::DeviceType::Type](04_definitions.md#Protocol_DeviceType)   | 1 Byte   | -        | 장치 타입                       |
-| responseRate          | uint8_t                                                               | 1 Byte   | -        | 송수신 응답률   0 ~ 100         |
-| systemTime            | uint32_t                                                              | 4 Byte   | -        | 시스템 시간(ms)                 |
-| timeConnected         | uint32_t                                                              | 4 Byte   | -        | 연결된 이후부터의 시간(ms)      |
-| timeLostConnection    | uint32_t                                                              | 4 Byte   | 0 ~ 100  | 연결이 끊어지고 나서의 시간(ms) |
-| countCycleTransferRF          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 RF              |
-| countCycleReceiveRF           | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 RF              |
-| countCycleTransferExternal    | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 External        |
-| countCycleReceiveExternal     | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 External        |
-| countCycleTransferUSB         | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 전송 횟수 USB             |
-| countCycleReceiveUSB          | uint8_t                                                       | 1 Byte   | 0 ~ 255  | 1초당 수신 횟수 USB             |
-
-
-<br>
-<br>
-
-<a name="Protocol_Position"></a>
-## Protocol::Position
-
-위치
-
-```cpp
-namespace Protocol
-{
-    struct Position
-    {
-        float       x;      // meter
-        float       y;      // meter
-        float       z;      // meter
-    };
-}
-```
-
-
-| 변수 이름     | 형식   | 크기     | 범위             | 단위     | 설명                 |
-|:-------------:|:------:|:--------:|:----------------:|:---------|:---------------------|
-| x             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 앞(+), 뒤(-)         |
-| y             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 좌(+), 우(-)         |
-| z             | float  | 4 Byte   | -100.0 ~ 100.0   | meter    | 위(+), 아래(-)       |
 
 
 <br>
@@ -767,41 +622,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Bias"></a>
-## Protocol::Bias
-
-바이어스
-
-```cpp
-namespace Protocol
-{
-    struct Bias
-    {
-        s16     accelX;         // X
-        s16     accelY;         // Y
-        s16     accelZ;         // Z
-
-        s16     gyroRoll;       // Roll
-        s16     gyroPitch;      // Pitch
-        s16     gyroYaw;        // Yaw
-    };
-}
-```
-
-| 변수 이름  | 형식       | 크기     | 범위              | 설명        |
-|:----------:|:----------:|:--------:|:-----------------:|:------------|
-| accelX     | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Accel X     |
-| accelY     | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Accel Y     |
-| accelZ     | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Accel Z     |
-| gyroRoll   | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Gyro Roll   |
-| gyroPitch  | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Gyro Pitch  |
-| gyroYaw    | int16_t    | 2 Byte   | -32,768 ~ 32,767  | Gyro Yaw    |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Trim"></a>
 ## Protocol::Trim
 
@@ -832,66 +652,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_LostConnection"></a>
-## Protocol::LostConnection
-
-연결이 끊어졌을 때 드론 동작을 처리할 시간 설정
-
-단위는 ms, 값을 0으로 설정할 경우 해당 항목은 무시
-
-마지막으로 드론 조종 명령을 전송한 장치와의 연결이 끊어지면, 지정한 시간 후 조종 중립, 착륙, 강제 정지를 실행
-
-기본으로 연결된 장치는 Rf이며, 설정값은 플래시 메모리에 저장되지 않으므로 매번 드론을 새로 시작할 때마다 설정해야 함
-
-```cpp
-namespace Protocol
-{
-    struct LostConnection
-    {
-        u16     timeNeutral;        // 조종 중립
-        u16     timeLanding;        // 착륙
-        u32     timeStop;           // 정지
-    };
-}
-```
-
-| 변수 이름     | 형식      | 크기     | 범위               | 설명                                            |
-|:-------------:|:---------:|:--------:|:------------------:|:------------------------------------------------|
-| timeNeutral   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 조종 중립으로 변경할 시간    |
-| timeLanding   | uint16_t  | 2 Byte   | 0 ~ 65,535         | 연결이 끊어졌을 때 드론을 착륙할 시간           |
-| timeStop      | uint32_t  | 4 Byte   | 0 ~ 4,294,967,295  | 연결이 끊어졌을 때 드론을 정지할 시간           |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_BuzzerMelody"></a>
-## Protocol::BuzzerMelody
-
-버저
-
-```cpp
-namespace Protocol
-{
-    struct BuzzerMelody
-    {
-        u8  melody;     // 멜로디 타입
-        u8  repeat;     // 반복횟수
-    };
-}
-```
-
-| 변수 이름  | 형식                                                    | 크기   | 범위      | 설명      |
-|:----------:|:-------------------------------------------------------:|:------:|:---------:|:----------|
-| melody     | [Buzzer::Melody::Type](04_definitions.md#Buzzer_Melody)  | 1 Byte | -        | 멜로디    |
-| repeat     | uint8_t                                                  | 1 Byte | 0 ~ 255  | 반복 횟수 |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Buzzer"></a>
 ## Protocol::Buzzer
 
@@ -915,62 +675,6 @@ namespace Protocol
 | value      | [Buzzer::Scale::Type](04_definitions.md#Buzzer_Scale)   | 2 Byte | -           | Scale                  |
 |            | uint16_t                                                | 2 Byte | 0 ~ 8,000   | Hz                     |
 | time       | uint16_t                                                | 2 Byte | 0 ~ 65,535  | 소리를 지속할 시간(ms) |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Button"></a>
-## Protocol::Button
-
-버튼
-
-```cpp
-namespace Protocol
-{
-    struct Button
-    {
-        u16     button;
-        u8      event;
-    };
-}
-```
-
-| 변수 이름 | 형식                                                  | 크기     | 범위  | 설명         |
-|:---------:|:-----------------------------------------------------:|:--------:|:-----:|:-------------|
-| button    | uint16_t                                              | 2 Byte   | -     | 버튼 입력    |
-| event     | [Button::Event::Type](04_definitions.md#Button_Event) | 1 Byte   | -     | 버튼 이벤트  |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_JoystickBlock"></a>
-## Protocol::JoystickBlock
-
-조종기 조이스틱 한 축의 입력 값
-
-```cpp
-namespace Protocol
-{
-    struct JoystickBlock
-    {
-        s8      x;
-        s8      y;
-        u8      direction;
-        u8      event;
-    };
-}
-```
-
-| 변수 이름  | 형식                                                              | 크기     | 범위          | 설명             |
-|:----------:|:-----------------------------------------------------------------:|:--------:|:-------------:|:-----------------|
-| x          | int8_t                                                            | 1 Byte   | -100 ~ 100    | 조이스틱 가로축  |
-| y          | int8_t                                                            | 1 Byte   | -100 ~ 100    | 조이스틱 세로축  |
-| direction  | [Joystick::Direction::Type](04_definitions.md#Joystick_Direction) | 1 Byte   | -             | 조이스틱 방향    |
-| event      | [Joystick::Event::Type](04_definitions.md#Joystick_Event)         | 1 Byte   | -             | 이벤트           |
 
 
 <br>

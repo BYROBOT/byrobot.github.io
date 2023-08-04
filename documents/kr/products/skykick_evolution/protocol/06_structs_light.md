@@ -385,36 +385,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Light_Mode"></a>
-## Protocol::Light::Mode
-
-LED 모드 변경
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct Mode
-        {
-            u8      mode;       // LED 모드
-            u16     interval;   // LED 모드의 갱신 주기
-        };
-    }
-}
-```
-
-| 변수 이름   | 형식                                                    | 크기     | 범위       | 설명                           |
-|:-----------:|:-------------------------------------------------------:|:--------:|:----------:|:-------------------------------|
-| mode        | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte   | -          | 드론 LED 동작 모드             |
-|             | [Light::Controller::Mode::Type](#Light_Controller_Mode) |          | -          | 조종기 LED 동작 모드           |
-| interval    | uint16_t                                                | 2 Byte   | 0 ~ 65535  | 내부 밝기 제어 함수 호출 주기  |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Light_ModeColor"></a>
 ## Protocol::Light::ModeColor
 
@@ -446,67 +416,6 @@ namespace Protocol
 <br>
 
 
-<a name="Protocol_Light_ModeColors"></a>
-## Protocol::Light::ModeColors
-
-LED 모드 변경(Palette)
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct ModeColors
-        {
-            Protocol::Light::Mode   mode;
-            u8                      colors;
-        };
-    }
-}
-```
-
-| 변수 이름   | 형식                                           | 크기     | 범위   | 설명                |
-|:-----------:|:----------------------------------------------:|:--------:|:------:|:--------------------|
-| mode        | [Protocol::Light::Mode](#Protocol_Light_Mode)  | 3 Byte   | -      | LED 동작 모드       |
-| colors      | [Light::Colors::Type](#Light_Colors)           | 1 Byte   | -      | LED 팔레트 인덱스   |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Light_Event"></a>
-## Protocol::Light::Event
-
-LED 이벤트
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct Event
-        {
-            u8      event;      // LED 이벤트
-            u16     interval;   // LED 이벤트 갱신 주기
-            u8      repeat;     // LED 이벤트 반복 횟수
-        };
-    }
-}
-```
-
-| 변수 이름  | 형식                                                    | 크기   | 범위       | 설명                          |
-|:----------:|:-------------------------------------------------------:|:------:|:----------:|:------------------------------|
-| event      | [Light::Drone::Mode::Type](#Light_Drone_Mode)           | 1 Byte | -          | 드론 LED 동작 모드            |
-|            | [Light::Controller::Mode::Type](#Light_Controller_Mode) |        | -          | 조종기 LED 동작 모드          |
-| interval   | UInt16                                                  | 2 Byte | 0 ~ 65535  | 내부 색상 변화 함수 호출 주기 |
-| repeat     | UInt8                                                   | 1 Byte | 0 ~ 255    | 반복 횟수                     |
-
-
-<br>
-<br>
-
-
 <a name="Protocol_Light_EventColor"></a>
 ## Protocol::Light::EventColor
 
@@ -530,35 +439,6 @@ namespace Protocol
 |:-----------:|:-----------------------------------------------:|:--------:|:-----:|:---------------|
 | event       | [Protocol::Light::Event](#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
 | color       | [Light::Color](#Light_Color)                    | 3 Byte   | -     | LED RGB 색상   |
-
-
-<br>
-<br>
-
-
-<a name="Protocol_Light_EventColors"></a>
-## Protocol::Light::EventColors
-
-LED 이벤트(Palette)
-
-```cpp
-namespace Protocol
-{
-    namespace Light
-    {
-        struct EventColors
-        {
-            Protocol::Light::Event  event;
-            u8                      colors;
-        };
-    }
-}
-```
-
-| 변수 이름 | 형식                                             | 크기     | 범위  | 설명              |
-|:---------:|:------------------------------------------------:|:--------:|:-----:|:------------------|
-| event     | [Protocol::Light::Event](#Protocol_Light_Event)  | 4 Byte   | -     | LED 이벤트        |
-| colors    | [Light::Colors::Type](#Light_Colors)             | 1 Byte   | -     | LED 팔레트 인덱스 |
 
 
 <br>
