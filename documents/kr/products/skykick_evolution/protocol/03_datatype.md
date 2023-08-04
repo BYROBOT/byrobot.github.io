@@ -26,34 +26,34 @@ namespace Protocol
             Ack							= 0x02,		// 데이터 수신에 대한 응답
             Error						= 0x03,		// 오류
             Request						= 0x04,		// 지정한 타입의 데이터 요청
-            Information					= 0x07,		// 펌웨어 및 장치 정보
+            Information						= 0x07,		// 펌웨어 및 장치 정보
             Control						= 0x10,		// 조종
             
             Command						= 0x11,		// 명령
             Pairing						= 0x12,		// 페어링
-            ResponseRate				= 0x13,		// ResponseRate
+            ResponseRate					= 0x13,		// ResponseRate
             
             // Light
-            LightManual					= 0x20,		// LED 수동 제어
-            LightMode					= 0x21,		// LED 모드 지정
-            LightEvent					= 0x22,		// LED 이벤트
-            LightDefault				= 0x23,		// LED 기본 색상
+            LightManual						= 0x20,		// LED 수동 제어
+            LightMode						= 0x21,		// LED 모드 지정
+            LightEvent						= 0x22,		// LED 이벤트
+            LightDefault					= 0x23,		// LED 기본 색상
             
             // 센서 RAW 데이터
-            RawMotion					= 0x30,		// Motion 센서 데이터 RAW 값
+            RawMotion						= 0x30,		// Motion 센서 데이터 RAW 값
             
             // 상태,  센서
             State						= 0x40,		// 드론의 상태(비행 모드, 방위기준, 배터리량)
-            Position					= 0x42,		// 위치
-            Altitude					= 0x43,		// 높이, 고도
+            Position						= 0x42,		// 위치
+            Altitude						= 0x43,		// 높이, 고도
             Motion						= 0x44,		// Motion 센서 데이터 처리한 값(IMU)
-            VisionSensor				= 0x47,		// Vision Sensor X, Y, Z
+            VisionSensor					= 0x47,		// Vision Sensor X, Y, Z
             
             // 설정
             Count						= 0x50,		// 카운트
             Bias						= 0x51,		// 엑셀, 자이로 바이어스 값
             Trim						= 0x52,		// 트림
-            LostConnection				= 0x54,		// 연결이 끊긴 후 반응 시간 설정
+            LostConnection					= 0x54,		// 연결이 끊긴 후 반응 시간 설정
             
             // Device
             Motor						= 0x60,		// 모터 제어 및 현재 제어값 확인
@@ -65,7 +65,7 @@ namespace Protocol
             Joystick,								// 조이스틱
             
             // Information Assembled
-            InformationAssembledForController		= 0xA0,		// 데이터 모음
+            InformationAssembledForController			= 0xA0,		// 데이터 모음
             
             EndOfType
         };
