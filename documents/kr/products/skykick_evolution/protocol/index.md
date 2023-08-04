@@ -7,11 +7,9 @@
 4. [Definitions](04_definitions.md)
 5. [Structs](05_structs.md)
 6. [Structs - Light](06_structs_light.md)
-7. [Structs - Display](07_structs_display.md)
-8. [Structs - Card](08_structs_card.md)
 
 
 
 ---
 
-Modified : 2023.7.10
+Modified : 2023.8.4
