@@ -11,15 +11,12 @@ Modified : 2023.8.24
 
 # 2023.8.24
 
-- **Drone : 23.4.2**
+- **Drone & Controller : 23.4.2**
 
 > - 코딩시 스킵되는 문제 수정
+> - usb연결시 조종기 화면 깨짐 문제 수정
 
-- **Controller : 23.4.3**
-
-> - 코딩시 스킵되는 문제 수정
-
-[Download](https://drive.byrobot.co.kr/d/s/uvhQNGZ7mqkfmN0SXirhG1M6JY8YHviI/DxxIGH7Y_x4WPhuaVnJmqpdjz7oCRrXi-cLGA91j9sQo)
+[Download](https://drive.byrobot.co.kr/d/s/uvijJ05PTlsEs0RyPYVYcfvg956s0WSp/afhKv3GBWG01Tx_Ic4GYA0Tbm6-3lvCT-XbVgKCoBsgo)
 
 <br>
 
