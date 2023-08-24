@@ -73,16 +73,16 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">22.8.1</div></td>
+            <td colspan="2" class="white"><div align="center">23.4.2/23.4.3</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2022.8.29</div></td>
+            <td colspan="2" class="firmware"><div align="center">2023.8.24</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.byrobot.co.kr/d/s/q6vG1ao8TOIBilC6B5fyEEDEbt0pnRk6/oRs4jKGdUU5OeYOc4_yoDYolnlALJeze-YL_AbSQ6ygk" target="_blank">Windows (.NET)</a><br>
+                <a href="https://drive.byrobot.co.kr/d/s/uvhQNGZ7mqkfmN0SXirhG1M6JY8YHviI/DxxIGH7Y_x4WPhuaVnJmqpdjz7oCRrXi-cLGA91j9sQo" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1jAjTFP5vV-TTkje84rUCLWgV5X48szv3/view?usp=sharing" target="_blank">Windows</a><br>-->
                 <a href="https://drive.google.com/file/d/1rTgmDCANkKpIsb5kpfSQUO56dsmf2Qlq/view?usp=sharing" target="_blank">macOS</a><br>
                 <a href="https://drive.google.com/file/d/17R1ugKODlnYxwrqkuQ6U-YIB-K1eZ6cI/view?usp=sharing" target="_blank">Linux</a><br>

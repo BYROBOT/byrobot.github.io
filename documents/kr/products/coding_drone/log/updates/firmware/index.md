@@ -9,6 +9,24 @@ Modified : 2022.8.29
 
 <br>
 
+# 2023.8.24
+
+- **Drone : 23.4.2**
+
+> - 코딩시 스킵되는 문제 수정
+
+- **Controller : 23.4.3**
+
+> - 코딩시 스킵되는 문제 수정
+
+[Download](https://drive.byrobot.co.kr/d/s/uvhQNGZ7mqkfmN0SXirhG1M6JY8YHviI/DxxIGH7Y_x4WPhuaVnJmqpdjz7oCRrXi-cLGA91j9sQo)
+
+<br>
+
+---
+
+<br>
+
 # 2022.8.29
 
 - **Drone & Controller : 22.8.1**
