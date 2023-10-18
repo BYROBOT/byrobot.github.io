@@ -103,6 +103,29 @@ namespace Protocol
 <br>
 
 
+<a name="Protocol_Error"></a>
+## Protocol::Error
+
+오류
+
+```cpp
+namespace Protocol
+{
+    struct Error
+    {
+
+    };
+}
+```
+
+| 변수 이름     | 형식                                                          | 크기     | 범위  | 설명                  |
+|:-------------:|:-------------------------------------------------------------:|:--------:|:-----:|:----------------------|
+
+
+<br>
+<br>
+
+
 <a name="Protocol_Request"></a>
 ## Protocol::Request
 
