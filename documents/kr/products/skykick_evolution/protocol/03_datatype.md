@@ -37,7 +37,6 @@ namespace Protocol
             LightManual						= 0x20,		// LED 수동 제어
             LightMode						= 0x21,		// LED 모드 지정
             LightEvent						= 0x22,		// LED 이벤트
-            LightDefault					= 0x23,		// LED 기본 색상
             
             // 센서 RAW 데이터
             RawMotion						= 0x30,		// Motion 센서 데이터 RAW 값
