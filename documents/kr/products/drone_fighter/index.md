@@ -90,7 +90,7 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
-            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.google.com/open?id=1Wscpo3fb_MKXeeCgRX00-nGu2n38l9Cr" target="_blank">Windows</a></div></td>
+            <td colspan="2" class="firmware"><div align="center"><a href="https://drive.byrobot.co.kr/d/s/w8ySN4V5RkjWWVRUVEnBxrQMNucfACzD/Rs9Xmz09VbRyvCaJy9jd1fGFlP2AOKiu-SbRgTvtg7Ao" target="_blank">Windows</a></div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Update Log</div></td>
