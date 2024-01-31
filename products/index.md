@@ -128,9 +128,10 @@
             </td>            
             <td class="white_even">
                 <div align="center">
-                    <a href="https://groups.google.com/g/byrobot" target="_blank">
-                        <span class="groups">
-                            Forum
+                    <a href="/documents/kr/products/codingrider/">
+                        <span class="odd">
+                            <img src="/assets/images/products/byrobot_codingrider.png" alt="codingrider" height="240" width="240"><br>
+                            CODING RIDER
                         </span>
                     </a>
                 </div>
@@ -141,4 +142,4 @@
 
 ---
 
-Modified : 2023.8.24
+Modified : 2024.1.31
