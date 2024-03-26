@@ -9,6 +9,16 @@ Modified : 2021.4.13
 
 <br>
 
+# 2024.3.26
+
+- **Go Car: 24.3.1**
+
+> - 이동거리 설정 (5.5cm / 10cm / 13cm) 기능 추가 (애플리케이션 내에서 설정 - 기본 10cm)
+
+[Download](https://drive.byrobot.co.kr/d/s/xo1AszeeRlTbbA7BDe0bjbm8ENkYak2Q/vSMpVTrPRhd8OW3_E9zwMn4XQD_VxWLh-NLEA21VPPAs)
+
+<br>
+
 # 2022.7.6
 
 - **Go Car: 22.7.1**
