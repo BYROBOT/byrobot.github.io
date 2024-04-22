@@ -15,7 +15,7 @@ Modified : 2021.4.13
 
 > - 이동거리 설정 (5.5cm / 10cm / 13cm) 기능 추가 (애플리케이션 내에서 설정 - 기본 10cm)
 
-[Download](https://alux1004-my.sharepoint.com/:f:/g/personal/skji_aluxonline_com/EhOp7HA9RlpMnZw96QwPFB0BY4h_RinLMVk4TiDikxEuGQ?e=GGTQWe)
+[Download](https://alux1004-my.sharepoint.com/:u:/g/personal/skji_aluxonline_com/EY6mRpbqKPVNvQ8-xAoIg0gBfuYtM183y1L2GLJ6Qqkgjg?e=ri1EXP)
 
 <br>
 
