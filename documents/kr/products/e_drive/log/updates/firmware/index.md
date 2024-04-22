@@ -15,7 +15,7 @@ Modified : 2021.4.13
 
 > - 이동거리 설정 (5.5cm / 10cm / 13cm) 기능 추가 (애플리케이션 내에서 설정 - 기본 10cm)
 
-[Download](https://drive.byrobot.co.kr/d/s/xo1AszeeRlTbbA7BDe0bjbm8ENkYak2Q/vSMpVTrPRhd8OW3_E9zwMn4XQD_VxWLh-NLEA21VPPAs)
+[Download](https://alux1004-my.sharepoint.com/:f:/g/personal/skji_aluxonline_com/EhOp7HA9RlpMnZw96QwPFB0BY4h_RinLMVk4TiDikxEuGQ?e=GGTQWe)
 
 <br>
 
