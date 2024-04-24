@@ -33,15 +33,47 @@ namespace Light
             enum Type
             {
                 None,
-
-                BodyNone			= 0x20,
-                BodyManual			= 0x21,			// 수동 제어
-                BodyHold			= 0x22,			// 지정한 색상을 계속 켬
-                BodyFlicker			= 0x23,			// 깜빡임			
-                BodyFlickerDouble	= 0x24,			// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
-                BodyDimming			= 0x25,			// 밝기 제어하여 천천히 깜빡임
-                BodyRainbow2		= 0x29,			// 무지개색
-                BodyPairing			= 0x2A,			// Pairing
+                
+                // Team (Forward, Rear를 동시에 제어)
+                TeamRgbNone				= 0x10,
+                TeamRgbManual			= 0x11,		// 수동 제어
+                TeamRgbHold				= 0x12,		// 지정한 색상을 계속 켬
+                TeamRgbFlicker			= 0x13,		// 깜빡임			
+                TeamRgbFlickerDouble	= 0x14,		// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+                TeamRgbDimming			= 0x15,		// 밝기 제어하여 천천히 깜빡임
+                TeamRgbSunrise			= 0x16,		// 꺼진 상태에서 점점 밝아짐
+                TeamRgbSunset			= 0x17,		// 켜진 상태에서 점점 어두워짐
+                TeamRgbRainbow			= 0x18,		// 무지개색
+                TeamRgbRainbow2			= 0x19,		// 무지개색
+                TeamRgbRedBlue			= 0x1A,		// Red-Blue
+                
+                TeamFlowForward			= 0x1E,		// 앞으로 흐름 
+                TeamWarning				= 0x1F,		// 경고
+                
+                // Body
+                BodyNone				= 0x20,		
+                BodyManual				= 0x21,		// 수동 제어
+                BodyHold				= 0x22,		// 지정한 색상을 계속 켬
+                BodyFlicker				= 0x23,		// 깜빡임			
+                BodyFlickerDouble		= 0x24,		// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+                BodyDimming				= 0x25,		// 밝기 제어하여 천천히 깜빡임
+                BodySunrise				= 0x26,		// 꺼진 상태에서 점점 밝아짐
+                BodySunset				= 0x27,		// 켜진 상태에서 점점 어두워짐
+                BodyRainbow				= 0x28,		// 무지개색
+                BodyRainbow2			= 0x29,		// 무지개색
+                BodyRedBlue				= 0x2A,		// Red-Blue
+                BodyCard				= 0x2B,		// 카드 색상 표시(이벤트용)
+                BodyWarning				= 0x2F,		// 경고
+                
+                // Link
+                LinkNone				= 0x30,		
+                LinkManual				= 0x31,		// 수동 제어
+                LinkHold				= 0x32,		// 지정한 색상을 계속 켬
+                LinkFlicker				= 0x33,		// 깜빡임			
+                LinkFlickerDouble		= 0x34,		// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+                LinkDimming				= 0x35,		// 밝기 제어하여 천천히 깜빡임
+                LinkSunrise				= 0x36,		// 꺼진 상태에서 점점 밝아짐
+                LinkSunset				= 0x37,		// 켜진 상태에서 점점 어두워짐
                 
                 EndOfType
             };
@@ -74,6 +106,11 @@ namespace Light
                 BodyRed			= 0x0001,
                 BodyGreen		= 0x0002,
                 BodyBlue		= 0x0004,
+                
+                TeamRed			= 0x0008,
+                TeamBlue		= 0x0010,
+                
+                Link			= 0x0080,
             };
         }
     }
@@ -101,12 +138,43 @@ namespace Light
             {
                 None,
                 
-                BodyNone			= 0x20,			
-                BodyManual,					// 수동 제어
-                BodyHold,					// 지정한 색상을 계속 켬
-                BodyFlicker,				// 깜빡임			
-                BodyFlickerDouble,			// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
-                BodyDimming,				// 밝기 제어하여 천천히 깜빡임
+                // Team
+                TeamNone						= 0x10,
+                TeamManual						= 0x11,		// 수동 제어
+                TeamHold						= 0x12,		// 지정한 색상을 계속 켬
+                TeamFlicker						= 0x13,		// 깜빡임			
+                TeamFlickerDouble				= 0x14,		// 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+                TeamDimming						= 0x15,		// 밝기 제어하여 천천히 깜빡임
+                TeamSunrise						= 0x16,		// 꺼진 상태에서 점점 밝아짐
+                TeamSunset						= 0x17,		// 켜진 상태에서 점점 어두워짐
+                TeamRedBlue						= 0x1A,		// Red-Blue
+                
+                // Array 6
+                Array6None						= 0x30,
+                Array6Manual					= 0x31,		// 수동 제어
+                Array6Hold						= 0x32,		// [전체] 지정한 색상을 계속 켬
+                Array6Flicker					= 0x33,		// [전체] 깜빡임			
+                Array6FlickerDouble				= 0x34,		// [전체] 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)		
+                Array6Dimming					= 0x35,		// [전체] 밝기 제어하여 천천히 깜빡임
+                
+                // Array 6 Value
+                Array6ValueNone					= 0x40,		// [개별] 0 ~ 255 사이의 값 표시
+                Array6ValueHold					= 0x42,		// [개별] 0 ~ 255 사이의 값 표시
+                Array6ValueFlicker				= 0x43,		// [개별] 0 ~ 255 사이의 값 표시
+                Array6ValueFlickerDouble		= 0x44,		// [개별] 0 ~ 255 사이의 값 표시
+                Array6ValueDimming				= 0x45,		// [개별] 0 ~ 255 사이의 값 표시
+                
+                // Array 6 Function
+                Array6FunctionNone				= 0x50,
+                Array6Pendulum					= 0x51,
+                Array6FlowLeft					= 0x52,		// [개별] 왼쪽으로 흐름
+                Array6FlowRight					= 0x53,		// [개별] 오른쪽으로 흐름
+                /*
+                Array6StackLeftIncrease			= 0x54,		// [개별] 
+                Array6StackLeftDecrease			= 0x55,		// [개별] 
+                Array6StackRightIncrease		= 0x56,		// [개별] 
+                Array6StackRightDecrease		= 0x57,		// [개별] 
+                // */
                 
                 EndOfType
             };
@@ -136,7 +204,15 @@ namespace Light
             {
                 None		= 0x0000,
                 
-                Body		= 0x0001,
+                TeamRed		= 0x0001,
+                TeamBlue	= 0x0002,
+                
+                E0			= 0x0004,
+                E1			= 0x0008,
+                E2			= 0x0010,
+                E3			= 0x0020,
+                E4			= 0x0040,
+                E5			= 0x0080,
             };
         }
     }
