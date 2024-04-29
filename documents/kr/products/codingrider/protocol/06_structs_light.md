@@ -21,7 +21,7 @@ Modified : 2023.7.10
 <a name="Light_Drone_Mode"></a>
 ## Light::Drone::Mode::Type
 
-드론 LED 동작 모드
+드론 LED 동작 모드 123
 
 ```cpp
 namespace Light
