@@ -95,7 +95,7 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/codingrider/">한국어</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/codingrider/library/python/codingrider/">한국어</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Update Log</div></td>
