@@ -1,6 +1,6 @@
-**[*e_drone* for python](index.md)** / **Protocol**
+**[*CodingRider* for python](index.md)** / **Protocol**
 
-Modified : 2021.1.4
+Modified : 2024.5.17
 
 ---
 
@@ -24,47 +24,51 @@ Modified : 2021.1.4
 ```py
 class DataType(Enum):
     
-    None_                       = 0x00      # 없음
+    None_						= 0x00		# 없음
+    Ping						= 0x01		# 통신 확인
+    Ack							= 0x02		# 데이터 수신에 대한 응답
+    Error						= 0x03		# 오류
+    Request						= 0x04		# 지정한 타입의 데이터 요청
+    Information					= 0x07		# 펌웨어 및 장치 정보
+    Control						= 0x10		# 조종
     
-    Ping                        = 0x01      # 통신 확인
-    Ack                         = 0x02      # 데이터 수신에 대한 응답
-    Error                       = 0x03      # 오류(reserve, 비트 플래그는 추후에 지정)
-    Request                     = 0x04      # 지정한 타입의 데이터 요청
-    Information                 = 0x07      # 펌웨어 및 장치 정보
-    Control                     = 0x10      # 조종
-
-    Command                     = 0x11      # 명령
-    Pairing                     = 0x12      # 페어링
-    ResponseRate                = 0x13      # RF 응답률
-
+    Command						= 0x11		# 명령
+    Pairing						= 0x12		# 페어링
+    ResponseRate				= 0x13		# 응답률
+    
     # Light
-    LightManual                 = 0x20      # LED 수동 제어
-    LightMode                   = 0x21      # LED 모드
-    LightEvent                  = 0x22      # LED 이벤트
-    LightDefault                = 0x23      # LED 초기 모드
-
-    # 상태, 센서
-    State                       = 0x40      # 드론의 상태(비행 모드 방위기준 배터리량)
-    Altitude                    = 0x43      # 높이, 고도
-    Motion                      = 0x44      # Motion 센서 데이터(IMU)
-    VisionSensor                = 0x47      # Vision X, Y, Z 데이터
-
+    LightManual					= 0x20		# LED 수동 제어
+    LightMode					= 0x21		# LED 모드 지정
+    LightEvent					= 0x22		# LED 이벤트
+    
+    # 센서 RAW 데이터
+    RawMotion					= 0x30		# Motion 센서 데이터 RAW 값
+    
+    # 상태,  센서
+    State						= 0x40		# 드론의 상태(비행 모드, 방위기준, 배터리량)
+    Altitude					= 0x43		# 높이, 고도
+    Motion						= 0x44		# Motion 센서 데이터 처리한 값(IMU)
+    VisionSensor				= 0x47		# Vision Sensor X, Y, Z
+    
     # 설정
-    Count                       = 0x50      # 카운트
-    Trim                        = 0x52      # 트림
-
-    # Devices
-    Motor                       = 0x60      # 모터 제어 및 현재 제어값 확인
-    Buzzer                      = 0x62      # 부저 제어
-
+    Count						= 0x50		# 카운트
+    Bias						= 0x51		# 엑셀, 자이로 바이어스 값
+    Trim						= 0x52		# 트림
+    LostConnection				= 0x54		# 연결이 끊긴 후 반응 시간 설정
+    
+    # Device
+    Motor						= 0x60		# 모터 제어 및 현재 제어값 확인
+    Buzzer						= 0x62		# 버저 제어
+    Battery						= 0x64		# 배터리
+    
     # Input
-    Button                      = 0x70      # 버튼 입력
-    Joystick                    = 0x71      # 조이스틱 입력
-
+    Button						= 0x70		# 버튼
+    Joystick					= 0x71		# 조이스틱
+    
     # Information Assembled
-    InformationAssembledForController   = 0xA0      # 자주 갱신되는 비행 데이터 모음
-
-    EndOfType                           = 0xDC
+    InformationAssembledForController		= 0xA0		# 데이터 모음
+    
+    EndOfType                               = 0xDC
 ```
 
 
@@ -82,23 +86,29 @@ class DataType(Enum):
 ```py
 class CommandType(Enum):
     
-    None_                   = 0x00      # 없음
-
-    Stop                    = 0x01      # 정지
-
-    # 설정
-    ModeControlFlight       = 0x02      # 비행 제어 모드 설정
-    Headless                = 0x03      # 헤드리스 모드 선택
-    Trim                    = 0x04      # 트림 변경
-
-    ClearBias               = 0x05      # 자이로 바이어스 리셋(트림도 같이 초기화 됨)
-    ClearTrim               = 0x06      # 트림 초기화
-
-    FlightEvent             = 0x07      # 비행 이벤트 실행
-
-    SetDefault              = 0x08      # 기본 설정으로 초기화
-
-    EndOfType               = 0xEC
+    None_						= 0x00		# 이벤트 없음
+    
+    Stop						= 0x01		# 정지
+    
+    ModeControlFlight			= 0x02		# 비행 제어 모드 설정
+    Headless					= 0x03		# 헤드리스 모드 설정
+    ControlSpeed				= 0x04		# 제어 속도 설정
+    
+    ClearBias					= 0x05		# 자이로/엑셀 바이어스 리셋(트림도 같이 초기화 됨)
+    ClearTrim					= 0x06		# 트림 초기화
+    
+    FlightEvent					= 0x07		# 비행 이벤트 실행
+    
+    SetDefault					= 0x08		# 기본 설정으로 초기화
+    ModeController				= 0x0A		# 조종기 동작 모드(0x10:조종, 0x80:링크)
+    Link						= 0x0B		# 링크 제어(0:Client Mode, 1:Server Mode, 2:Pairing Start)
+    LoadDefaultColor			= 0x0C		# 기본 색상으로 변경
+    
+    Trim						= 0x0D		# 트림
+    
+    ModeTest					= 0xF0		# 테스트 락(테스트를 완료하기 전까진 사용 불가 / 27:활성화, 11:해제))
+    
+    EndOfType                   = 0xEC
 ```
 
 
@@ -127,8 +137,8 @@ class Header(ISerializable):
 |:-------------:|:---------------------------------------:|:--------:|:-------:|:---------------------------|
 | dataType      | [DataType](#DataType)                   | 1 Byte   | -       | 데이터의 타입              |
 | length        | UInt8                                   | 1 Byte   | 0 ~ 255 | 데이터의 길이              |
-| from_         | [DeviceType](03_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 전송하는 장치     |
-| to_           | [DeviceType](03_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 수신하는 장치     |
+| from_         | [DeviceType](02_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 전송하는 장치     |
+| to_           | [DeviceType](02_system.md#DeviceType)   | 1 Byte   | -       | 데이터를 수신하는 장치     |
 
 
 <br>
@@ -155,7 +165,6 @@ class Ping(ISerializable):
 |:------------:|:---------------:|:--------:|:------:|:------------------|
 | systemTime   | UInt64          | 8 Byte   | -      | 시스템 시간       |
 
-- e.g. [Ping 테스트(이벤트 함수 등록)](examples_01_ping.md#Class_Ping)
 
 
 <br>
@@ -186,7 +195,6 @@ class Ack(ISerializable):
 | dataType       | [DataType](#DataType)   | 1 Byte   | -     | 수신 받은 데이터 타입                    |
 | crc16          | UInt16                  | 2 Byte   | -     | 수신 받은 헤더와 데이터의 CRC16 값       |
 
-- e.g. [Ping 테스트(이벤트 함수 등록)](examples_01_ping.md#Class_Ping)
 
 
 <br>
@@ -216,10 +224,8 @@ class Error(ISerializable):
 | 변수 이름            | 형식                                                     | 크기     | 범위  | 설명                  |
 |:--------------------:|:--------------------------------------------------------:|:--------:|:-----:|:----------------------|
 | systemTime           | UInt64                                                   | 8 Byte   | -     | 시스템 시간           |
-| errorFlagsForSensor  | [ErrorFlagsForSensor](03_system.md#ErrorFlagsForSensor)  | 4 Byte   | -     | 센서 오류 플래그 조합 |
-| errorFlagsForState   | [ErrorFlagsForState](03_system.md#ErrorFlagsForState)    | 4 Byte   | -     | 상태 오류 플래그 조합 |
-
-- e.g. [IMU 센서 보정](examples_13_error.md#Error_ImuCalibrating)
+| errorFlagsForSensor  | [ErrorFlagsForSensor](02_system.md#ErrorFlagsForSensor)  | 4 Byte   | -     | 센서 오류 플래그 조합 |
+| errorFlagsForState   | [ErrorFlagsForState](02_system.md#ErrorFlagsForState)    | 4 Byte   | -     | 상태 오류 플래그 조합 |
 
 
 <br>
@@ -249,6 +255,84 @@ class Request(ISerializable):
 <br>
 
 
+<a name="Message"></a>
+## Message
+
+요청
+
+문자열 데이터를 전송할 때 사용합니다.
+
+```py
+class Message():
+
+    def __init__(self):
+        self.message    = ""
+```
+
+| 변수 이름    | 형식            | 크기               | 범위  | 설명     |
+|:------------:|:---------------:|:------------------:|:-----:|:---------|
+| message      | ASCII String    | 장치에 따라 다름   | -     | 메세지   |
+
+
+<br>
+<br>
+
+
+<a name="Version"></a>
+## Version
+
+버전
+
+펌웨어의 버전
+
+```py
+class Version(ISerializable):
+
+    def __init__(self):
+        self.build          = 0
+        self.minor          = 0
+        self.major          = 0
+
+        self.v              = 0         # build, minor, major을 하나의 UInt32로 묶은 것(버젼 비교 시 사용)
+```
+
+| 변수 이름  | 형식         | 크기     | 범위       | 설명         |
+|:----------:|:------------:|:--------:|:----------:|:-------------|
+| build      | UInt16       | 2 Byte   | 0 ~ 65535  | 빌드 번호    |
+| minor      | UInt8        | 1 Byte   | 0 ~ 255    | 부 번호      |
+| major      | UInt8        | 1 Byte   | 0 ~ 255    | 주 번호      |
+| v          | UInt32       | 4 Byte   | -          | build, minor, major를 하나로 묶은 것  |
+
+
+<br>
+<br>
+
+
+<a name="SystemInformation"></a>
+## SystemInformation
+
+시스템 정보
+
+드론과 조종기 간 장치 정보를 교환하는데 사용합니다. 추후에 계속 변경될 가능성이 있습니다.
+
+```py
+class SystemInformation(ISerializable):
+
+    def __init__(self):
+        self.crc32bootloader    = 0
+        self.crc32application   = 0
+```
+
+| 변수 이름         | 형식       | 크기    | 범위  | 설명                         |
+|:-----------------:|:----------:|:-------:|:-----:|:-----------------------------|
+| crc32bootloader   | UInt32     | 4 Byte  | -     | Bootloader 영역의 CRC32      |
+| crc32application  | UInt32     | 4 Byte  | -     | Application 영역의 CRC32     |
+
+
+<br>
+<br>
+
+
 <a name="Information"></a>
 ## Information
 
@@ -272,14 +356,36 @@ class Information(ISerializable):
 
 | 변수 이름     | 형식                                      | 크기     | 범위 | 설명                |
 |:-------------:|:-----------------------------------------:|:--------:|:----:|:--------------------|
-| modeUpdate    | [ModeUpdate](03_system.md#ModeUpdate)     | 1 Byte   | -    | 업데이트 진행 상황  |
-| modelNumber   | [ModelNumber](03_system.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
+| modeUpdate    | [ModeUpdate](02_system.md#ModeUpdate)     | 1 Byte   | -    | 업데이트 진행 상황  |
+| modelNumber   | [ModelNumber](02_system.md#ModelNumber)   | 4 Byte   | -    | 모델 번호           |
 | version       | [Version](#Version)                       | 4 Byte   | -    | 펌웨어의 버전       |
 | year          | UInt16                                    | 2 Byte   | -    | 펌웨어 빌드 년      |
 | month         | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 월      |
 | day           | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 일      |
 
-- e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_12_information.md#Class_Information)
+- e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_08_information.md#Class_Information)
+
+<br>
+<br>
+
+
+<a name="Address"></a>
+## Address
+
+장치 주소
+
+장치에 부여되는 고유 번호입니다.
+
+```py
+class Address(ISerializable):
+
+    def __init__(self):
+        self.address    = bytearray()
+```
+
+| 변수 이름  | 형식          | 크기     | 범위  | 설명         |
+|:----------:|:-------------:|:--------:|:-----:|:-------------|
+| address    | UInt8 Array   | 16 Byte  | -     | 장치 주소    |
 
 
 <br>
@@ -302,42 +408,44 @@ class Pairing(ISerializable):
         self.address2       = 0
         self.address3       = 0
         self.address4       = 0
+        self.channel0       = 0
 ```
 
-| 변수 이름       | 형식      | 크기     | 범위       | 설명               |
+| 변수 이름        | 형식      | 크기     | 범위       | 설명               |
 |:---------------:|:---------:|:--------:|:----------:|:-------------------|
-| address0        | UInt8     | 1 Byte   | 0 ~ 127    | 장치의 주소 0      |
-| address1        | UInt8     | 1 Byte   | 0 ~ 127    | 장치의 주소 1      |
-| address2        | UInt8     | 1 Byte   | 0 ~ 127    | 장치의 주소 2      |
-| address3        | UInt8     | 1 Byte   | 0 ~ 127    | 장치의 주소 3      |
-| address4        | UInt8     | 1 Byte   | 0 ~ 127    | 장치의 주소 4      |
+| address0        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 0      |
+| address1        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 1      |
+| address2        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 2      |
+| address3        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 3      |
+| address4        | UInt16    | 2 Byte   | 0 ~ 65535  | 장치의 주소 4      |
+| channel0        | UInt8     | 1 Byte   | 0 ~ 81     | 채널      0        |
 
 
 <br>
 <br>
 
 
-<a name="ResponseRate"></a>
+<a name="Rssi"></a>
 ## Rssi
 
 RSSI
 
-Signal response rate
+Received signal strength indication
 
-[http://www.metageek.com/training/resources/understanding-response_rate.html](http://www.metageek.com/training/resources/understanding-responseRate.html)
+[http://www.metageek.com/training/resources/understanding-rssi.html](http://www.metageek.com/training/resources/understanding-rssi.html)
 
-현재 무선으로 연결된 장치의 데이터 응답률을 반환합니다.
+현재 무선으로 연결된 장치의 신호 세기를 반환합니다.
 
 ```py
 class Rssi(ISerializable):
 
     def __init__(self):
-        self.responseRate       = 0
+        self.rssi       = 0
 ```
 
-| 변수 이름    | 형식     | 범위      | 크기     | 설명        |
-|:------------:|:--------:|:---------:|:--------:|:------------|
-| responseRate | Int8     | 0 ~ 100   | 1 Byte   | 신호 응답률 |
+| 변수 이름    | 형식     | 범위      | 크기     | 설명       |
+|:------------:|:--------:|:---------:|:--------:|:-----------|
+| rssi         | Int8     | -100 ~ 0  | 1 Byte   | 신호 세기  |
 
 
 <br>
@@ -358,17 +466,96 @@ class Command(ISerializable):
 
     def __init__(self):
         self.commandType    = CommandType.None_
-        self.option         = 0
+        self.option         = ModeControlFlight.None_
 ```
 
 | 변수 이름      | 형식                                                 | 크기     | 범위   | 설명       |
 |:--------------:|:----------------------------------------------------:|:--------:|:------:|:-----------|
 | commandType    | [CommandType](#CommandType)                          | 1 Byte   | -      | 명령 타입  |
-| option         | [ModeControlFlight](03_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
-|                | [FlightEvent](03_system.md#FlightEvent)              | 1 Byte   | -      |            |
-|                | [Headless](03_system.md#Headless)                    | 1 Byte   | -      |            |
-|                | [TrimIncDec](03_system.md#TrimIncDec)                | 1 Byte   | -      |            |
+| option         | [ModeControlFlight](02_system.md#ModeControlFlight)  | 1 Byte   | -      | 옵션       |
+|                | [FlightEvent](02_system.md#FlightEvent)              | 1 Byte   | -      |            |
+|                | [Headless](02_system.md#Headless)                    | 1 Byte   | -      |            |
+|                | [TrimDirection](02_system.md#TrimDirection)          | 1 Byte   | -      |            |
 |                | UInt8                                                | 1 Byte   | -      |            |
+
+
+<br>
+<br>
+
+
+<a name="CommandLightEvent"></a>
+## CommandLightEvent
+
+명령 + LED 이벤트
+
+드론 또는 조종기에 명령과 함께 LED 이벤트를 전달할 때 사용합니다.
+
+```py
+class CommandLightEvent(ISerializable):
+
+    def __init__(self):
+        self.command    = Command()
+        self.event      = LightEvent()
+```
+
+| 변수 이름   | 형식                                                               | 크기     | 범위  | 설명           |
+|:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:---------------|
+| command     | [Command](#Command)                                                | 2 Byte   | -     | 명령           |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
+
+
+<br>
+<br>
+
+
+<a name="CommandLightEventColor"></a>
+## CommandLightEventColor
+
+명령 + LED 이벤트(RGB)
+
+드론 또는 조종기에 명령과 함께 LED 이벤트(RGB)를 전달할 때 사용합니다.
+
+```py
+class CommandLightEventColor(ISerializable):
+
+    def __init__(self):
+        self.command    = Command()
+        self.event      = LightEvent()
+        self.color      = Color()
+```
+
+| 변수 이름   | 형식                                                               | 크기     | 범위  | 설명           |
+|:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:---------------|
+| command     | [Command](#Command)                                                | 2 Byte   | -     | 명령           |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
+| color       | [Light::Color](06_structs_light.md##Light_Color)                   | 3 Byte   | -     | LED RGB 색상   |
+
+
+<br>
+<br>
+
+
+<a name="CommandLightEventColors"></a>
+## CommandLightEventColors
+
+명령 + LED 이벤트(Palette)
+
+드론 또는 조종기에 명령과 함께 LED 이벤트(Palette)를 전달할 때 사용합니다.
+
+```py
+class CommandLightEventColors(ISerializable):
+
+    def __init__(self):
+        self.command    = Command()
+        self.event      = LightEvent()
+        self.colors     = Colors.Black
+```
+
+| 변수 이름   | 형식                                                               | 크기     | 범위  | 설명              |
+|:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:------------------|
+| command     | [Command](#Command)                                                | 2 Byte   | -     | 명령              |
+| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트        |
+| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)            | 1 Byte   | -     | LED 팔레트 인덱스 |
 
 
 <br>
@@ -446,8 +633,8 @@ class ControlPosition16(ISerializable):
         self.positionY          = 0
         self.positionZ          = 0
 
-        self.velocity          = 0
-
+        self.velocity           = 0
+        
         self.heading            = 0
         self.rotationalVelocity = 0
 ```
@@ -457,9 +644,9 @@ class ControlPosition16(ISerializable):
 | positionX             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 앞(+), 뒤(-)         |
 | positionY             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 좌(+), 우(-)         |
 | positionZ             | Int16  | 2 Byte   | -100 ~ 100(-10.0 ~ 10.0)   | meter x 10    | 위(+), 아래(-)       |
-| velocity              | Int16  | 2 Byte   | 5 ~ 20(0.5 ~ 2.0)          | m/s x 10      | 위치 이동 속도       |
+| velocity              | Int16  | 2 Byte   | 0 ~ 50(0.0 ~ 5.0)          | m/s x 10      | 위치 이동 속도       |
 | heading               | Int16  | 2 Byte   | -360 ~ 360                 | degree        | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 360                   | degree/s      | 좌우 회전 속도       |
+| rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 180                   | degree/s      | 좌우 회전 속도       |
 
 
 <br>
@@ -492,9 +679,9 @@ class ControlPosition(ISerializable):
 | positionX             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 앞(+), 뒤(-)         |
 | positionY             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 좌(+), 우(-)         |
 | positionZ             | float  | 4 Byte   | -10.0 ~ 10.0   | meter    | 위(+), 아래(-)       |
-| velocity              | float  | 4 Byte   | 0.5 ~ 2.0      | m/s      | 위치 이동 속도       |
+| velocity              | float  | 4 Byte   | 0.0 ~ 5.0      | m/s      | 위치 이동 속도       |
 | heading               | Int16  | 2 Byte   | -360 ~ 360     | degree   | 좌회전(+), 우회전(-) |
-| rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 360       | degree/s | 좌우 회전 속도       |
+| rotationalVelocity    | Int16  | 2 Byte   | 10 ~ 180       | degree/s | 좌우 회전 속도       |
 
 
 <br>
@@ -510,43 +697,49 @@ class ControlPosition(ISerializable):
 class LightModeDrone(Enum):
     
     None_                   = 0x00
-
-    RearNone                = 0x10
-    RearManual              = 0x11      # 수동 제어
-    RearHold                = 0x12      # 지정한 색상을 계속 켬
-    RearFlicker             = 0x13      # 깜빡임
-    RearFlickerDouble       = 0x14      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    RearDimming             = 0x15      # 밝기 제어하여 천천히 깜빡임
-
-    BodyNone                = 0x20
-    BodyManual              = 0x21      # 수동 제어
-    BodyHold                = 0x22      # 지정한 색상을 계속 켬
-    BodyFlicker             = 0x23      # 깜빡임
-    BodyFlickerDouble       = 0x24      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    BodyDimming             = 0x25      # 밝기 제어하여 천천히 깜빡임
-
-    ANone                   = 0x30
-    AManual                 = 0x31      # 수동 제어
-    AHold                   = 0x32      # 지정한 색상을 계속 켬
-    AFlicker                = 0x33      # 깜빡임
-    AFlickerDouble          = 0x34      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    ADimming                = 0x35      # 밝기 제어하여 천천히 깜빡임
-
-    BNone                   = 0x40
-    BManual                 = 0x41      # 수동 제어
-    BHold                   = 0x42      # 지정한 색상을 계속 켬
-    BFlicker                = 0x43      # 깜빡임
-    BFlickerDouble          = 0x44      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    BDimming                = 0x45      # 밝기 제어하여 천천히 깜빡임
-
-    CNone                   = 0x50
-    CManual                 = 0x51      # 수동 제어
-    CHold                   = 0x52      # 지정한 색상을 계속 켬
-    CFlicker                = 0x53      # 깜빡임
-    CFlickerDouble          = 0x54      # 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)
-    CDimming                = 0x55      # 밝기 제어하여 천천히 깜빡임
-
-    EndOfType               = 0x56
+    
+    # Team (Forward, Rear를 동시에 제어)
+    TeamRgbNone				= 0x10
+    TeamRgbManual			= 0x11		# 수동 제어
+    TeamRgbHold				= 0x12		# 지정한 색상을 계속 켬
+    TeamRgbFlicker			= 0x13		# 깜빡임			
+    TeamRgbFlickerDouble	= 0x14		# 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+    TeamRgbDimming			= 0x15		# 밝기 제어하여 천천히 깜빡임
+    TeamRgbSunrise			= 0x16		# 꺼진 상태에서 점점 밝아짐
+    TeamRgbSunset			= 0x17		# 켜진 상태에서 점점 어두워짐
+    TeamRgbRainbow			= 0x18		# 무지개색
+    TeamRgbRainbow2			= 0x19		# 무지개색
+    TeamRgbRedBlue			= 0x1A		# Red-Blue
+    
+    TeamFlowForward			= 0x1E		# 앞으로 흐름 
+    TeamWarning				= 0x1F		# 경고
+    
+    # Body
+    BodyNone				= 0x20		
+    BodyManual				= 0x21		# 수동 제어
+    BodyHold				= 0x22		# 지정한 색상을 계속 켬
+    BodyFlicker				= 0x23		# 깜빡임			
+    BodyFlickerDouble		= 0x24		# 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+    BodyDimming				= 0x25		# 밝기 제어하여 천천히 깜빡임
+    BodySunrise				= 0x26		# 꺼진 상태에서 점점 밝아짐
+    BodySunset				= 0x27		# 켜진 상태에서 점점 어두워짐
+    BodyRainbow				= 0x28		# 무지개색
+    BodyRainbow2			= 0x29		# 무지개색
+    BodyRedBlue				= 0x2A		# Red-Blue
+    BodyCard				= 0x2B		# 카드 색상 표시(이벤트용)
+    BodyWarning				= 0x2F		# 경고
+    
+    # Link
+    LinkNone				= 0x30		
+    LinkManual				= 0x31		# 수동 제어
+    LinkHold				= 0x32		# 지정한 색상을 계속 켬
+    LinkFlicker				= 0x33		# 깜빡임			
+    LinkFlickerDouble		= 0x34		# 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+    LinkDimming				= 0x35		# 밝기 제어하여 천천히 깜빡임
+    LinkSunrise				= 0x36		# 꺼진 상태에서 점점 밝아짐
+    LinkSunset				= 0x37		# 켜진 상태에서 점점 어두워짐
+    
+    EndOfType               = 0x60
 ```
 
 
@@ -562,18 +755,16 @@ class LightModeDrone(Enum):
 ```py
 class LightFlagsDrone(Enum):
     
-    None_               = 0x0000
-
-    Rear                = 0x0001
-    BodyRed             = 0x0002
-    BodyGreen           = 0x0004
-    BodyBlue            = 0x0008
-
-    A                   = 0x0010
-    B                   = 0x0020
-    CRed                = 0x0040
-    CGreen              = 0x0080
-    CBlue               = 0x0100
+    None_			= 0x0000
+    
+    BodyRed			= 0x0001
+    BodyGreen		= 0x0002
+    BodyBlue		= 0x0004
+    
+    TeamRed			= 0x0008
+    TeamBlue		= 0x0010
+    
+    Link			= 0x0080
 ```
 
 
@@ -589,17 +780,39 @@ class LightFlagsDrone(Enum):
 ```py
 class LightModeController(Enum):
     
-    None_               = 0x00
-
-    # Body
-    BodyNone            = 0x20
-    BodyManual          = 0x21      # 수동 조작
-    BodyHold            = 0x22
-    BodyFlicker         = 0x23
-    BodyFlickerDouble   = 0x24
-    BodyDimming         = 0x25
-
-    EndOfType           = 0x26
+    # Team
+    TeamNone						= 0x10
+    TeamManual						= 0x11		# 수동 제어
+    TeamHold						= 0x12		# 지정한 색상을 계속 켬
+    TeamFlicker						= 0x13		# 깜빡임			
+    TeamFlickerDouble				= 0x14		# 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)			
+    TeamDimming						= 0x15		# 밝기 제어하여 천천히 깜빡임
+    TeamSunrise						= 0x16		# 꺼진 상태에서 점점 밝아짐
+    TeamSunset						= 0x17		# 켜진 상태에서 점점 어두워짐
+    TeamRedBlue						= 0x1A		# Red-Blue
+    
+    # Array 6
+    Array6None						= 0x30
+    Array6Manual					= 0x31		# 수동 제어
+    Array6Hold						= 0x32		# [전체] 지정한 색상을 계속 켬
+    Array6Flicker					= 0x33		# [전체] 깜빡임			
+    Array6FlickerDouble				= 0x34		# [전체] 깜빡임(두 번 깜빡이고 깜빡인 시간만큼 꺼짐)		
+    Array6Dimming					= 0x35		# [전체] 밝기 제어하여 천천히 깜빡임
+    
+    # Array 6 Value
+    Array6ValueNone					= 0x40		# [개별] 0 ~ 255 사이의 값 표시
+    Array6ValueHold					= 0x42		# [개별] 0 ~ 255 사이의 값 표시
+    Array6ValueFlicker				= 0x43		# [개별] 0 ~ 255 사이의 값 표시
+    Array6ValueFlickerDouble		= 0x44		# [개별] 0 ~ 255 사이의 값 표시
+    Array6ValueDimming				= 0x45		# [개별] 0 ~ 255 사이의 값 표시
+    
+    # Array 6 Function
+    Array6FunctionNone				= 0x50
+    Array6Pendulum					= 0x51
+    Array6FlowLeft					= 0x52		# [개별] 왼쪽으로 흐름
+    Array6FlowRight					= 0x53		# [개별] 오른쪽으로 흐름
+    
+    EndOfType                       = 0x60
 ```
 
 
@@ -615,11 +828,17 @@ class LightModeController(Enum):
 ```py
 class LightFlagsController(Enum):
     
-    None_               = 0x00
+    None_               = 0x0000
 
-    BodyRed             = 0x80
-    BodyGreen           = 0x40
-    BodyBlue            = 0x20
+    TeamRed		        = 0x0001
+    TeamBlue	        = 0x0002
+            
+    E0			        = 0x0004
+    E1			        = 0x0008
+    E2			        = 0x0010
+    E3			        = 0x0020
+    E4			        = 0x0040
+    E5			        = 0x0080
 ```
 
 
@@ -888,7 +1107,7 @@ class LightModeColor(ISerializable):
 | mode        | [LightMode](#LightMode)  | 3 Byte   | -      | LED 동작 모드  |
 | color       | [Color](#Color)          | 3 Byte   | -      | LED RGB 색상   |
 
-- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)](examples_10_light.md#Class_LightModeColor)
+- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)](examples_06_light.md#Class_LightModeColor)
 
 
 <br>
@@ -915,7 +1134,7 @@ class LightModeColors(ISerializable):
 | mode       | [LightMode](#LightMode)   | 3 Byte   | -     | LED 동작 모드      |
 | colors     | [Colors](#Colors)         | 1 Byte   | -     | LED 팔레트 인덱스  |
 
-- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)](examples_10_light.md#Class_LightModeColors)
+- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)](examples_06_light.md#Class_LightModeColors)
 
 
 <br>
@@ -1003,337 +1222,6 @@ class LightEventColors(ISerializable):
 <br>
 
 
-<a name="DisplayPixel"></a>
-## DisplayPixel
-
-픽셀 색상
-
-```py
-class DisplayPixel(Enum):
-    
-    Black               = 0x00
-    White               = 0x01
-    Inverse             = 0x02
-```
-
-
-<br>
-<br>
-
-
-<a name="DisplayFont"></a>
-## DisplayFont
-
-폰트
-
-```py
-class DisplayFont(Enum):
-    
-    LiberationMono5x8   = 0x00
-    LiberationMono10x16 = 0x01
-```
-
-
-<br>
-<br>
-
-
-<a name="DisplayAlign"></a>
-## DisplayAlign
-
-문자열 정렬
-
-```py
-class DisplayAlign(Enum):
-    
-    Left                = 0x00
-    Center              = 0x01
-    Right               = 0x02
-```
-
-
-<br>
-<br>
-
-
-<a name="DisplayLine"></a>
-## DisplayLine
-
-선
-
-```py
-class DisplayLine(Enum):
-    
-    Solid               = 0x00
-    Dotted              = 0x01
-    Dashed              = 0x02
-```
-
-
-<br>
-<br>
-
-
-<a name="DisplayClearAll"></a>
-## DisplayClearAll
-
-화면 전체 지우기
-
-```py
-class DisplayClearAll(ISerializable):
-
-    def __init__(self):
-        self.pixel       = DisplayPixel.White
-```
-
-| 변수 이름   | 형식                           | 크기     | 범위 | 설명        |
-|:-----------:|:------------------------------:|:--------:|:----:|:------------|
-| pixel       | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -    | 채울 색상   |
-
-
-<br>
-<br>
-
-
-<a name="DisplayClear"></a>
-## DisplayClear
-
-선택 영역 지우기
-
-```py
-class DisplayClear(ISerializable):
-
-    def __init__(self):
-        self.x           = 0
-        self.y           = 0
-        self.width       = 0
-        self.height      = 0
-        self.pixel       = DisplayPixel.White
-```
-
-| 변수 이름  | 형식                            | 크기     | 범위          | 설명            |
-|:----------:|:-------------------------------:|:--------:|:-------------:|:----------------|
-| x          | Int16                           | 2 Byte   | -2000 ~ 2000  | X축 시작 위치   |
-| y          | Int16                           | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치   |
-| width      | Int16                           | 2 Byte   | -2000 ~ 2000  | 너비            |
-| height     | Int16                           | 2 Byte   | -2000 ~ 2000  | 높이            |
-| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte   | -             | 채울 색상       |
-
-
-<br>
-<br>
-
-
-<a name="DisplayClear"></a>
-## DisplayClear
-
-선택 영역 반전
-
-```py
-class DisplayInvert(ISerializable):
-
-    def __init__(self):
-        self.x           = 0
-        self.y           = 0
-        self.width       = 0
-        self.height      = 0
-```
-
-| 변수 이름   | 형식    | 크기     | 범위          | 설명           |
-|:-----------:|:-------:|:--------:|:-------------:|:---------------|
-| x           | Int16   | 2 Byte   | -2000 ~ 2000  | X축 시작 위치  |
-| y           | Int16   | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치  |
-| width       | Int16   | 2 Byte   | -2000 ~ 2000  | 너비           |
-| height      | Int16   | 2 Byte   | -2000 ~ 2000  | 높이           |
-
-
-<br>
-<br>
-
-
-<a name="DisplayDrawPoint"></a>
-## DisplayDrawPoint
-
-점 찍기
-
-```py
-class DisplayDrawPoint(ISerializable):
-
-    def __init__(self):
-        self.x           = 0
-        self.y           = 0
-        self.pixel       = DisplayPixel.White
-```
-
-| 변수 이름  | 형식                           | 크기     | 범위          | 설명       |
-|:----------:|:------------------------------:|:--------:|:-------------:|:-----------|
-| x          | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 위치   |
-| y          | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 위치   |
-| pixel      | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -             | 점 색상    |
-
-
-<br>
-<br>
-
-
-<a name="DisplayDrawLine"></a>
-## DisplayDrawLine
-
-선 그리기
-
-```py
-class DisplayDrawLine(ISerializable):
-
-    def __init__(self):
-        self.x1          = 0
-        self.y1          = 0
-        self.x2          = 0
-        self.y2          = 0
-        self.pixel       = DisplayPixel.White
-        self.line        = DisplayLine.Solid
-```
-
-| 변수 이름  | 형식                           | 크기     | 범위          | 설명           |
-|:----------:|:------------------------------:|:--------:|:-------------:|:---------------|
-| x1         | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 시작 위치  |
-| y1         | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치  |
-| x2         | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 끝 위치    |
-| y2         | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 끝 위치    |
-| pixel      | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -             | 선 색상        |
-| line       | [DisplayLine](#DisplayLine)    | 1 Byte   | -             | 선 형태        |
-
-
-<br>
-<br>
-
-
-<a name="DisplayDrawRect"></a>
-## DisplayDrawRect
-
-사각형 그리기
-
-```py
-class DisplayDrawRect(ISerializable):
-
-    def __init__(self):
-        self.x           = 0
-        self.y           = 0
-        self.width       = 0
-        self.height      = 0
-        self.pixel       = DisplayPixel.White
-        self.flagFill    = True
-        self.line        = DisplayLine.Solid
-```
-
-| 변수 이름  | 형식                            | 크기     | 범위          | 설명                     |
-|:----------:|:-------------------------------:|:--------:|:-------------:|:-------------------------|
-| x          | Int16                           | 2 Byte   | -2000 ~ 2000  | X축 시작 위치            |
-| y          | Int16                           | 2 Byte   | -2000 ~ 2000  | Y축 시작 위치            |
-| width      | Int16                           | 2 Byte   | -2000 ~ 2000  | 너비                     |
-| height     | Int16                           | 2 Byte   | -2000 ~ 2000  | 높이                     |
-| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte   | -             | 색상                     |
-| flagFill   | Bool                            | 1 Byte   | -             | True인 경우 내부를 채움  |
-| line       | [DisplayLine](#DisplayLine)     | 1 Byte   | -             | 선 형태                  |
-
-
-<br>
-<br>
-
-
-<a name="DisplayDrawCircle"></a>
-## DisplayDrawCircle
-
-원 그리기
-
-```py
-class DisplayDrawCircle(ISerializable):
-
-    def __init__(self):
-        self.x          = 0
-        self.y          = 0
-        self.radius     = 0
-        self.pixel      = DisplayPixel.White
-        self.flagFill   = True
-```
-
-| 변수 이름 | 형식                           | 크기     | 범위          | 설명                    |
-|:---------:|:------------------------------:|:--------:|:-------------:|:------------------------|
-| x         | Int16                          | 2 Byte   | -2000 ~ 2000  | X축 중심점 위치         |
-| y         | Int16                          | 2 Byte   | -2000 ~ 2000  | Y축 중심점 위치         |
-| radius    | Int16                          | 2 Byte   | 1 ~ 2000      | 반지름                  |
-| pixel     | [DisplayPixel](#DisplayPixel)  | 1 Byte   | -             | 색상                    |
-| flagFill  | Bool                           | 1 Byte   | -             | True인 경우 내부를 채움 |
-
-
-<br>
-<br>
-
-
-<a name="DisplayDrawString"></a>
-## DisplayDrawString
-
-문자열 그리기
-
-```py
-class DisplayDrawString(ISerializable):
-
-    def __init__(self):
-        self.x          = 0
-        self.y          = 0
-        self.font       = DisplayFont.LiberationMono5x8
-        self.pixel      = DisplayPixel.White
-        self.message    = ""
-```
-
-| 변수 이름  | 형식                            | 크기          | 범위          | 설명           |
-|:----------:|:-------------------------------:|:-------------:|:-------------:|:---------------|
-| x          | Int16                           | 2 Byte        | -2000 ~ 2000  | X축 위치       |
-| y          | Int16                           | 2 Byte        | -2000 ~ 2000  | Y축 위치       |
-| font       | [DisplayFont](#DisplayFont)     | 1 Byte        | -             | 폰트           |
-| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte        | -             | 색상           |
-| message    | ASCII String                    | 12 Byte 이하  | -             | 표시할 문자열  |
-
-
-<br>
-<br>
-
-
-<a name="DisplayDrawStringAlign"></a>
-## DisplayDrawStringAlign
-
-문자열 정렬하여 그리기
-
-***x_start***와 ***x_end*** 사이에 지정한 위치로 문자열을 정렬하여 표시합니다.
-
-```py
-class DisplayDrawStringAlign(ISerializable):
-
-    def __init__(self):
-        
-        self.x_start    = 0
-        self.x_end      = 0
-        self.y          = 0
-        self.align      = DisplayAlign.Center
-        self.font       = DisplayFont.LiberationMono5x8
-        self.pixel      = DisplayPixel.White
-        self.message    = ""
-```
-
-| 변수 이름  | 형식                            | 크기          | 범위          | 설명           |
-|:----------:|:-------------------------------:|:-------------:|:-------------:|:---------------|
-| x_start    | Int16                           | 2 Byte        | -2000 ~ 2000  | X축 시작 위치  |
-| x_end      | Int16                           | 2 Byte        | -2000 ~ 2000  | X축 끝 위치    |
-| y          | Int16                           | 2 Byte        | -2000 ~ 2000  | Y축 위치       |
-| align      | [DisplayAlign](#DisplayAlign)   | 1 Byte        | -             | 정렬           |
-| font       | [DisplayFont](#DisplayFont)     | 1 Byte        | -             | 폰트           |
-| pixel      | [DisplayPixel](#DisplayPixel)   | 1 Byte        | -             | 색상           |
-| message    | ASCII String                    | 12 Byte 이하  | -             | 표시할 문자열  |
-
-
-<br>
-<br>
-
-
 <a name="BuzzerMode"></a>
 ## BuzzerMode
 
@@ -1342,16 +1230,16 @@ class DisplayDrawStringAlign(ISerializable):
 ```py
 class BuzzerMode(Enum):
 
-    Stop                = 0     # 정지(Mode에서의 Stop은 통신에서 받았을 때 Buzzer를 끄는 용도로 사용, set으로만 호출)
+    Stop                = 0    # 정지(Mode에서의 Stop은 통신에서 받았을 때 Buzzer를 끄는 용도로 사용, set으로만 호출)
 
-    Mute                = 1     # 묵음 즉시 적용
-    MuteReserve         = 2     # 묵음 예약
+    MuteInstantly       = 1    # 묵음 즉시 적용
+    MuteContinually     = 2    # 묵음 예약
 
-    Scale               = 3     # 음계 즉시 적용
-    ScaleReserve        = 4     # 음계 예약
+    ScaleInstantly      = 3    # 음계 즉시 적용
+    ScaleContinually    = 4    # 음계 예약
 
-    Hz                  = 5     # 주파수 즉시 적용
-    HzReserve           = 6     # 주파수 예약
+    HzInstantly         = 5    # 주파수 즉시 적용
+    HzContinually       = 6    # 주파수 예약
 
     EndOfType           = 7
 ```
@@ -1369,15 +1257,15 @@ class BuzzerMode(Enum):
 ```py
 class BuzzerScale(Enum):
 
-    C1 = 0x00; CS1 = 0x01; D1 = 0x02; DS1 = 0x03; E1 = 0x04; F1 = 0x05; FS1 = 0x06; G1 = 0x07; GS1 = 0x08; A1 = 0x09; AS1 = 0x0A; B1 = 0x0B;
-    C2 = 0x0C; CS2 = 0x0D; D2 = 0x0E; DS2 = 0x0F; E2 = 0x10; F2 = 0x11; FS2 = 0x12; G2 = 0x13; GS2 = 0x14; A2 = 0x15; AS2 = 0x16; B2 = 0x17;
-    C3 = 0x18; CS3 = 0x19; D3 = 0x1A; DS3 = 0x1B; E3 = 0x1C; F3 = 0x1D; FS3 = 0x1E; G3 = 0x1F; GS3 = 0x20; A3 = 0x21; AS3 = 0x22; B3 = 0x23;
-    C4 = 0x24; CS4 = 0x25; D4 = 0x26; DS4 = 0x27; E4 = 0x28; F4 = 0x29; FS4 = 0x2A; G4 = 0x2B; GS4 = 0x2C; A4 = 0x2D; AS4 = 0x2E; B4 = 0x2F;
+    C1 = 0x00; CS1 = 0x01; D1 = 0x02; DS1 = 0x03; E1 = 0x04; F1 = 0x05; FS1 = 0x06; G1 = 0x07; GS1 = 0x08; A1 = 0x09; AS1 = 0x0A; B1 = 0x0B
+    C2 = 0x0C; CS2 = 0x0D; D2 = 0x0E; DS2 = 0x0F; E2 = 0x10; F2 = 0x11; FS2 = 0x12; G2 = 0x13; GS2 = 0x14; A2 = 0x15; AS2 = 0x16; B2 = 0x17
+    C3 = 0x18; CS3 = 0x19; D3 = 0x1A; DS3 = 0x1B; E3 = 0x1C; F3 = 0x1D; FS3 = 0x1E; G3 = 0x1F; GS3 = 0x20; A3 = 0x21; AS3 = 0x22; B3 = 0x23
+    C4 = 0x24; CS4 = 0x25; D4 = 0x26; DS4 = 0x27; E4 = 0x28; F4 = 0x29; FS4 = 0x2A; G4 = 0x2B; GS4 = 0x2C; A4 = 0x2D; AS4 = 0x2E; B4 = 0x2F
 
-    C5 = 0x30; CS5 = 0x31; D5 = 0x32; DS5 = 0x33; E5 = 0x34; F5 = 0x35; FS5 = 0x36; G5 = 0x37; GS5 = 0x38; A5 = 0x39; AS5 = 0x3A; B5 = 0x3B;
-    C6 = 0x3C; CS6 = 0x3D; D6 = 0x3E; DS6 = 0x3F; E6 = 0x40; F6 = 0x41; FS6 = 0x42; G6 = 0x43; GS6 = 0x44; A6 = 0x45; AS6 = 0x46; B6 = 0x47;
-    C7 = 0x48; CS7 = 0x49; D7 = 0x4A; DS7 = 0x4B; E7 = 0x4C; F7 = 0x4D; FS7 = 0x4E; G7 = 0x4F; GS7 = 0x50; A7 = 0x51; AS7 = 0x52; B7 = 0x53;
-    C8 = 0x54; CS8 = 0x55; D8 = 0x56; DS8 = 0x57; E8 = 0x58; F8 = 0x59; FS8 = 0x5A; G8 = 0x5B; GS8 = 0x5C; A8 = 0x5D; AS8 = 0x5E; B8 = 0x5F;
+    C5 = 0x30; CS5 = 0x31; D5 = 0x32; DS5 = 0x33; E5 = 0x34; F5 = 0x35; FS5 = 0x36; G5 = 0x37; GS5 = 0x38; A5 = 0x39; AS5 = 0x3A; B5 = 0x3B
+    C6 = 0x3C; CS6 = 0x3D; D6 = 0x3E; DS6 = 0x3F; E6 = 0x40; F6 = 0x41; FS6 = 0x42; G6 = 0x43; GS6 = 0x44; A6 = 0x45; AS6 = 0x46; B6 = 0x47
+    C7 = 0x48; CS7 = 0x49; D7 = 0x4A; DS7 = 0x4B; E7 = 0x4C; F7 = 0x4D; FS7 = 0x4E; G7 = 0x4F; GS7 = 0x50; A7 = 0x51; AS7 = 0x52; B7 = 0x53
+    C8 = 0x54; CS8 = 0x55; D8 = 0x56; DS8 = 0x57; E8 = 0x58; F8 = 0x59; FS8 = 0x5A; G8 = 0x5B; GS8 = 0x5C; A8 = 0x5D; AS8 = 0x5E; B8 = 0x5F
 
     EndOfType   = 0x60
 
@@ -1389,6 +1277,44 @@ class BuzzerScale(Enum):
 <br>
 <br>
 
+<a name="BuzzerMelody"></a>
+## BuzzerMelody
+
+버저 멜로디
+
+```py
+class BuzzerMelody(Enum):
+    
+    DoMiSol     = 0x00		# 도미솔
+    SolMiDo     = 0x01		# 솔미도
+    LaLa        = 0x02		# 라라
+    SiRaSiRa    = 0x03		# 시라시라
+    
+    Warning1    = 0x04		# 경고 1
+    Warning2    = 0x05		# 경고 2
+    Warning3    = 0x06		# 경고 3
+    Warning4    = 0x07		# 경고 4
+    
+    Du          = 0x08		# Trim -
+    DuDu        = 0x09		# Trim - End
+    DiDic       = 0x0A		# Trim Center
+    DiDic2      = 0x0B		# Trim Center 2
+    Di          = 0x0C		# Trim +
+    DiDi        = 0x0D		# Trim + End
+    
+    BuzzSound1   = 0x0E
+    BuzzSound2   = 0x0F
+    BuzzSound3   = 0x10
+    BuzzSound4   = 0x11
+    
+    Button       = 0x12
+    Shot         = 0x13
+    
+    EndOfType    = 0x14
+```
+
+<br>
+<br>
 
 <a name="Buzzer"></a>
 ## Buzzer
@@ -1414,10 +1340,11 @@ class Buzzer(ISerializable):
 | value      | UInt16                    | 2 Byte | 0 ~ 8000   | Scale 값 또는 Hz 값    |
 | time       | UInt16                    | 2 Byte | 0 ~ 65,535 | 소리를 지속할 시간(ms) |
 
-- e.g. [Buzzer 클래스 데이터를 직접 채워서 전송하기](examples_08_buzzer.md#Class_Buzzer)
+- e.g. [Buzzer 클래스 데이터를 직접 채워서 전송하기](examples_04_buzzer.md#Class_Buzzer)
 
 <br>
 <br>
+
 
 
 <a name="VibratorMode"></a>
@@ -1463,7 +1390,7 @@ class Vibrator(ISerializable):
 | off        | UInt16                        | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
 | total      | UInt16                        | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
 
-- e.g. [Vibrator 클래스 데이터를 직접 채워서 전송하기](examples_09_vibrator.md#Class_Vibrator)
+- e.g. [Vibrator 클래스 데이터를 직접 채워서 전송하기](examples_05_vibrator.md#Class_Vibrator)
 
 
 <br>
@@ -1478,23 +1405,22 @@ class Vibrator(ISerializable):
 ```py
 class ButtonFlagController(Enum):
 
-    None_               = 0x0000
-    
-    FrontLeftTop        = 0x0001
-    FrontLeftBottom     = 0x0002
-    FrontRightTop       = 0x0004
-    FrontRightBottom    = 0x0008
-    
-    TopLeft             = 0x0010
-    TopRight            = 0x0020    # POWER ON/OFF
-    
-    MidUp               = 0x0040
-    MidLeft             = 0x0080
-    MidRight            = 0x0100
-    MidDown             = 0x0200
-    
-    BottomLeft          = 0x0400
-    BottomRight         = 0x0800
+    None_   			= 0x0000
+                
+    # 버튼
+    FrontLeft			= 0x0001
+    FrontRight			= 0x0002
+
+    MidUpLeft			= 0x0004
+    MidUpRight			= 0x0008
+
+    MidUp				= 0x0010
+    MidLeft				= 0x0020
+    MidRight			= 0x0040
+    MidDown				= 0x0080
+
+    BottomLeft			= 0x0100
+    BottomRight			= 0x0200
 ```
 
 
@@ -1510,9 +1436,9 @@ class ButtonFlagController(Enum):
 ```py
 class ButtonFlagDrone(Enum):
 
-    None_           = 0x0000
+    None_               = 0x0000
     
-    Reset           = 0x0001
+    Reset               = 0x0001
 ```
 
 
@@ -1528,13 +1454,13 @@ class ButtonFlagDrone(Enum):
 ```py
 class ButtonEvent(Enum):
 
-    None_             = 0x0000
+    None_               = 0x00
     
-    Down              = 0x0001  # 누르기 시작
-    Press             = 0x0002  # 누르는 중
-    Up                = 0x0003  # 뗌
+    Down                = 0x01  # 누르기 시작
+    Press               = 0x02  # 누르는 중
+    Up                  = 0x03  # 뗌
     
-    EndContinuePress  = 0x0004  # 연속 입력 종료
+    EndContinuePress    = 0x04  # 연속 입력 종료
 ```
 
 
@@ -1562,7 +1488,7 @@ class Button(ISerializable):
 | button    | UInt16                      | 2 Byte   | -     | 버튼 입력    |
 | event     | [ButtonEvent](#ButtonEvent) | 1 Byte   | -     | 버튼 이벤트  |
 
-- e.g. [버튼 입력값 출력](examples_12_input.md#Button)
+- e.g. [버튼 입력값 출력](examples_07_input.md#Button)
 
 
 <br>
@@ -1577,7 +1503,7 @@ class Button(ISerializable):
 ```py
 class JoystickDirection(Enum):
 
-    None_   = 0         # 정의하지 않은 영역(무시함)
+    None_   = 0x00      # 정의하지 않은 영역(무시함)
 
     VT      = 0x10      #   위(세로)
     VM      = 0x20      # 중앙(세로)
@@ -1664,35 +1590,42 @@ class Joystick(ISerializable):
 | left      | [JoystickBlock](#JoystickBlock)  | 4 Byte   | -     | 왼쪽 조이스틱   |
 | right     | [JoystickBlock](#JoystickBlock)  | 4 Byte   | -     | 오른쪽 조이스틱 |
 
-- e.g. [조이스틱 입력값 출력](examples_12_input.md#Joystick)
+- e.g. [조이스틱 입력값 출력](examples_07_input.md#Joystick)
 
 
 <br>
 <br>
 
 
-<a name="RawFlow"></a>
-## RawFlow
+<a name="RawMotion"></a>
+## RawMotion
 
-옵티컬 플로우로 계산한 상대 위치 값
+Motion 센서 데이터 RAW 값
 
 ```py
-class Flow(ISerializable):
+class RawMotion(ISerializable):
 
     def __init__(self):
-        self.x     = 0
-        self.y     = 0
+        self.accelX     = 0
+        self.accelY     = 0
+        self.accelZ     = 0
+        self.gyroRoll   = 0
+        self.gyroPitch  = 0
+        self.gyroYaw    = 0
 ```
 
-| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
-|:----------:|:---------:|:--------:|:-----:|:--------|
-| x          | Float32   | 4 Byte   | -     | X축(m)  |
-| y          | Float32   | 4 Byte   | -     | Y축(m)  |
+| 변수 이름  | 형식     | 크기     | 범위              | 설명           |
+|:----------:|:--------:|:--------:|:-----------------:|:---------------|
+| accelX     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 X       |
+| accelY     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Y       |
+| accelZ     | Int16    | 2 Byte   | -32,768 ~ 32,767  | 가속도 Z       |
+| gyroRoll   | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Roll    |
+| gyroPitch  | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Pitch   |
+| gyroYaw    | Int16    | 2 Byte   | -32,768 ~ 32,767  | 자이로 Yaw     |
 
 
 <br>
 <br>
-
 
 <a name="State"></a>
 ## State
@@ -1705,25 +1638,51 @@ class State(ISerializable):
     def __init__(self):
         self.modeSystem         = ModeSystem.None_
         self.modeFlight         = ModeFlight.None_
-
         self.modeControlFlight  = ModeControlFlight.None_
         self.modeMovement       = ModeMovement.None_
         self.headless           = Headless.None_
+        self.controlSpeed       = 0
         self.sensorOrientation  = SensorOrientation.None_
         self.battery            = 0
 ```
 
 | 변수 이름         | 형식                                                | 크기     | 범위     | 설명                   |
 |:-----------------:|:---------------------------------------------------:|:--------:|:--------:|:-----------------------|
-| modeSystem        | [ModeSystem](03_system.md#ModeSystem)               | 1 Byte   | -        | System 동작 모드       |
-| modeFlight        | [ModeFlight](03_system.md#ModeFlight)               | 1 Byte   | -        | 비행 제어기 동작 모드  |
-| modeControlFlight | [ModeControlFlight](03_system.md#ModeControlFlight) | 1 Byte   | -        | 비행 제어 모드         |
-| modeMovement      | [ModeMovement](03_system.md#ModeMovement)           | 1 Byte   | -        | 이동 상태              |
-| headless          | [Headless](03_system.md#Headless)                   | 1 Byte   | -        | Headless 설정 상태     |
-| sensorOrientation | [SensorOrientation](03_system.md#SensorOrientation) | 1 Byte   | -        | 센서 방향              |
+| modeSystem        | [ModeSystem](02_system.md#ModeSystem)               | 1 Byte   | -        | System 동작 모드       |
+| modeFlight        | [ModeFlight](02_system.md#ModeFlight)               | 1 Byte   | -        | 비행 제어기 동작 모드  |
+| modeControlFlight | [ModeControlFlight](02_system.md#ModeControlFlight) | 1 Byte   | -        | 비행 제어 모드         |
+| modeMovement      | [ModeMovement](02_system.md#ModeMovement)           | 1 Byte   | -        | 이동 상태              |
+| headless          | [Headless](02_system.md#Headless)                   | 1 Byte   | -        | Headless 설정 상태     |
+| ControlSpeed      | [ControlSpeed](02_system.md#ControlSpeed)           | 1 Byte   | -        | 제어 속도 설정 상태     |
+| sensorOrientation | [SensorOrientation](02_system.md#SensorOrientation) | 1 Byte   | -        | 센서 방향              |
 | battery           | UInt8                                               | 1 Byte   | 0 ~ 100  | 드론 배터리 잔량       |
 
-- e.g. [드론 모드를 변경 후 확인](examples_07_setup.md#ModeVehicle)
+- e.g. [드론 모드를 변경 후 확인](examples_03_setup.md#ModeVehicle)
+
+
+<br>
+<br>
+
+
+<a name="Position"></a>
+## Position
+
+드론의 위치
+
+```py
+class Position(ISerializable):
+
+    def __init__(self):
+        self.x      = 0
+        self.y      = 0
+        self.z      = 0
+```
+
+| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
+|:----------:|:---------:|:--------:|:-----:|:--------|
+| x          | Float32   | 4 Byte   | -     | X축(m)  |
+| y          | Float32   | 4 Byte   | -     | Y축(m)  |
+| z          | Float32   | 4 Byte   | -     | Y축(m)  |
 
 
 <br>
@@ -1752,7 +1711,7 @@ class Altitude(ISerializable):
 | altitude    | Float32  | 4 Byte   | -    | 압력을 해발고도로 변환한 값(m)  |
 | rangeHeight | Float32  | 4 Byte   | -    | 거리센서에서 출력한 높이 값(m)  |
 
-- e.g. [고도 데이터 확인](examples_05_sensor.md#Altitude)
+- e.g. [고도 데이터 확인](examples_02_sensor.md#Altitude)
 
 
 <br>
@@ -1795,32 +1754,7 @@ class Motion(ISerializable):
 | anglePitch | Int16  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Pitch    |
 | angleYaw   | Int16  | 2 Byte  | -180 ~ 180                        | degree               | 자세 Yaw      |
 
-- e.g. [Motion 센서 데이터 확인](examples_05_sensor.md#Imu)
-
-
-<br>
-<br>
-
-
-<a name="Vector"></a>
-## Vector
-
-벡터
-
-```py
-class Vector(ISerializable):
-
-    def __init__(self):
-        self.x      = 0
-        self.y      = 0
-        self.z      = 0
-```
-
-| 변수 이름  | 형식    | 크기     | 범위              | 설명    |
-|:----------:|:-------:|:--------:|:-----------------:|:--------|
-| x          | Int16   | 2 Byte   | -32,768 ~ 32,767  | X       |
-| y          | Int16   | 2 Byte   | -32,768 ~ 32,767  | Y       |
-| z          | Int16   | 2 Byte   | -32,768 ~ 32,767  | Z       |
+- e.g. [Motion 센서 데이터 확인](examples_02_sensor.md#Imu)
 
 
 <br>
@@ -1838,8 +1772,8 @@ class Vector(ISerializable):
 class Count(ISerializable):
 
     def __init__(self):
-        self.timeSystem     = 0
         self.timeFlight     = 0
+
         self.countTakeOff   = 0
         self.countLanding   = 0
         self.countAccident  = 0
@@ -1847,11 +1781,44 @@ class Count(ISerializable):
 
 | 변수 이름        | 형식       | 크기     | 범위       | 설명             |
 |:----------------:|:----------:|:--------:|:----------:|:-----------------|
-| timeSystem       | UInt32     | 4 Byte   | -          | 사용 시간(ms)   |
-| timeFlight       | UInt32     | 4 Byte   | -          | 비행 시간(ms)    |
+| timeFlight       | UInt64     | 8 Byte   | -          | 비행 시간(ms)    |
 | countTakeOff     | UInt16     | 2 Byte   | 0 ~ 65535  | 이륙 횟수        |
 | countLanding     | UInt16     | 2 Byte   | 0 ~ 65535  | 착륙 횟수        |
 | countAccident    | UInt16     | 2 Byte   | 0 ~ 65535  | 충돌 횟수        |
+
+
+<br>
+<br>
+
+
+<a name="Bias"></a>
+## Bias
+
+바이어스
+
+가속도, 자이로에 대한 바이어스 설정값입니다.
+읽기만 가능합니다.
+
+```py
+class Bias(ISerializable):
+    
+    def __init__(self):
+        self.accelX     = 0
+        self.accelY     = 0
+        self.accelZ     = 0
+        self.gyroRoll   = 0
+        self.gyroPitch  = 0
+        self.gyroYaw    = 0
+```
+
+| 변수 이름   | 형식    | 크기     | 범위              | 설명         |
+|:-----------:|:-------:|:--------:|:-----------------:|:-------------|
+| accelX      | Int16   | 2 Byte   | -32,768 ~ 32,767  | Accel X      |
+| accelY      | Int16   | 2 Byte   | -32,768 ~ 32,767  | Accel Y      |
+| accelZ      | Int16   | 2 Byte   | -32,768 ~ 32,767  | Accel Z      |
+| gyroRoll    | Int16   | 2 Byte   | -32,768 ~ 32,767  | Gyro Roll    |
+| gyroPitch   | Int16   | 2 Byte   | -32,768 ~ 32,767  | Gyro Pitch   |
+| gyroYaw     | Int16   | 2 Byte   | -32,768 ~ 32,767  | Gyro Yaw     |
 
 
 <br>
@@ -1882,7 +1849,57 @@ class Trim(ISerializable):
 | yaw       | Int16    | 2 Byte   | -200 ~ 200   | Yaw        |
 | throttle  | Int16    | 2 Byte   | -200 ~ 200   | Throttle   |
 
-- e.g. [드론 Trim 설정 변경 후 확인](examples_07_setup.md#Trim)
+- e.g. [드론 Trim 설정 변경 후 확인](examples_03_setup.md#Trim)
+
+
+<br>
+<br>
+
+
+<a name="Weight"></a>
+## Weight
+
+무게
+
+드론 + 적재물의 무게입니다. 단위는 그램(g)입니다.
+
+```py
+class Weight(ISerializable):
+
+    def __init__(self):
+        self.weight     = 0
+```
+
+| 변수 이름  | 형식      | 크기     | 범위  | 설명    |
+|:----------:|:---------:|:--------:|:-----:|:--------|
+| weight     | Float32   | 4 Byte   | -     | 무게    |
+
+
+<br>
+<br>
+
+
+<a name="LostConnection"></a>
+## LostConnection
+
+통신 연결이 끊긴 후 반응 시간 설정
+
+마지막으로 비행 이벤트 또는 조종 명령을 보냈던 장치와의 연결이 끊어진 후에 지정한 시간이 경과하면 해당 명령을 실행. 시간을 0으로 설정한 경우 해당 명령은 실행하지 않음. 시간 단위는 ms
+
+```py
+class LostConnection(ISerializable):
+
+    def __init__(self):
+        self.timeNeutral    = 0
+        self.timeLanding    = 0
+        self.timeStop       = 0
+```
+
+| 변수 이름     | 형식      | 크기     | 범위               | 설명      |
+|:-------------:|:---------:|:--------:|:------------------:|:----------|
+| timeNeutral   | UInt16    | 2 Byte   | 0 ~ 65,535         | 조종 중립 |
+| timeLanding   | UInt16    | 2 Byte   | 0 ~ 65,535         | 착륙      |
+| timeStop      | UInt32    | 4 Byte   | 0 ~ 4,294,967,295  | 정지      |
 
 
 <br>
@@ -1904,7 +1921,7 @@ class MotorBlock(ISerializable):
 
 | 변수 이름  | 형식                               | 크기     | 범위      | 설명           |
 |:----------:|:----------------------------------:|:--------:|:---------:|:---------------|
-| rotation   | [Rotation](03_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향 |
+| rotation   | [Rotation](02_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향 |
 | value      | UInt16                             | 2 Byte   | 0 ~ 4095  | 모터 회전 속도 |
 
 
@@ -1939,29 +1956,48 @@ class Motor(ISerializable):
 
 
 <br>
+<br>
+
+
+<a name="MotorSingle"></a>
+## MotorSingle
+
+한 개의 모터 제어
+
+```py
+class MotorSingle(ISerializable):
+
+    def __init__(self):
+        self.target     = 0
+        self.rotation   = Rotation.None_
+        self.value      = 0
+```
+
+| 변수 이름  | 형식                               | 크기     | 범위      | 설명            |
+|:----------:|:----------------------------------:|:--------:|:---------:|:----------------|
+| target     | UInt8                              | 1 Byte   | 0 ~ 3     | 동작 대상 모터  |
+| rotation   | [Rotation](02_system.md#Rotation)  | 1 Byte   | -         | 모터 회전 방향  |
+| value      | UInt16                             | 2 Byte   | 0 ~ 4095  | 모터 회전 속도  |
+
+
+<br>
 
 ---
 
-<h3><i>skykick</i> for python</H3>
+<h3><i>CodingRider</i> for python</H3>
 
  1. [Intro](01_intro.md)
- 2. [Command Line](02_commandline.md)
- 3. [System](03_system.md)
- 4. **Protocol**
- 5. [Drone](05_drone.md)
- 6. [Examples - Ping](examples_01_ping.md)
- 7. [Examples - Information](examples_02_information.md)
- 8. [Examples - Pairing](examples_03_pairing.md)
- 9. [Examples - Control](examples_04_control.md)
-10. [Examples - Sensor](examples_05_sensor.md)
-11. [Examples - Motor](examples_06_motor.md)
-12. [Examples - Setup](examples_07_setup.md)
-13. [Examples - Buzzer](examples_08_buzzer.md)
-14. [Examples - Vibrator](examples_09_vibrator.md)
-15. [Examples - Light](examples_10_light.md)
-16. [Examples - Input](examples_12_input.md)
-17. [Examples - Error](examples_13_error.md)
-
+ 2. [System](02_system.md)
+ 3. **Protocol**
+ 4. [Drone](04_drone.md)
+ 5. [Examples - Control](examples_01_control.md)
+ 6. [Examples - Sensor](examples_02_sensor.md)
+ 7. [Examples - Setup](examples_03_setup.md)
+ 8. [Examples - Buzzer](examples_04_buzzer.md)
+ 9. [Examples - Vibrator](examples_05_vibrator.md)
+10. [Examples - Light](examples_06_light.md)
+11. [Examples - Input](examples_07_input.md)
+12. [Examples - Information](examples_08_information.md)
 <br>
 
 [Index](index.md)

@@ -1,6 +1,6 @@
-**[*e_drone* for python](index.md)** / **Examples** / **Input**
+**[*CodingRider* for python](index.md)** / **Examples** / **Input**
 
-Modified : 2021.1.4
+Modified : 2024.5.17
 
 ---
 
@@ -16,8 +16,8 @@ Modified : 2021.1.4
 ```py
 from time import sleep
 
-from e_drone.drone import *
-from e_drone.protocol import *
+from CodingRider.drone import *
+from CodingRider.protocol import *
 
 
 def eventButton(button):
@@ -42,8 +42,8 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [Button](04_protocol.md#Button)
-- [sendPing()](05_drone.md#sendPing)
+- [Button](03_protocol.md#Button)
+- [sendPing()](04_drone.md#sendPing)
 
 
 <br>
@@ -56,8 +56,8 @@ if __name__ == '__main__':
 ```py
 from time import sleep
 
-from e_drone.drone import *
-from e_drone.protocol import *
+from CodingRider.drone import *
+from CodingRider.protocol import *
 
 
 def eventJoystick(joystick):
@@ -83,8 +83,8 @@ if __name__ == '__main__':
     drone.close()
 ```
 
-- [Joystick](04_protocol.md#Joystick)
-- [sendPing()](05_drone.md#sendPing)
+- [Joystick](03_protocol.md#Joystick)
+- [sendPing()](04_drone.md#sendPing)
 
 
 <br>
@@ -92,27 +92,20 @@ if __name__ == '__main__':
 
 ---
 
-<h3><i>e_drone</i> for python</H3>
+<h3><i>CodingRider</i> for python</H3>
 
  1. [Intro](01_intro.md)
- 2. [Command Line](02_commandline.md)
- 3. [System](03_system.md)
- 4. [Protocol](04_protocol.md)
- 5. [Drone](05_drone.md)
- 6. [Examples - Ping](examples_01_ping.md)
- 7. [Examples - Information](examples_02_information.md)
- 8. [Examples - Pairing](examples_03_pairing.md)
- 9. [Examples - Control](examples_04_control.md)
-10. [Examples - Sensor](examples_05_sensor.md)
-11. [Examples - Motor](examples_06_motor.md)
-12. [Examples - Setup](examples_07_setup.md)
-13. [Examples - Buzzer](examples_08_buzzer.md)
-14. [Examples - Vibrator](examples_09_vibrator.md)
-15. [Examples - Light](examples_10_light.md)
-16. [Examples - Display](examples_11_display.md)
-17. **Examples - Input**
-18. [Examples - Error](examples_13_error.md)
-
+ 2. [System](02_system.md)
+ 3. [Protocol](03_protocol.md)
+ 4. [Drone](04_drone.md)
+ 5. [Examples - Control](examples_01_control.md)
+ 6. [Examples - Sensor](examples_02_sensor.md)
+ 7. [Examples - Setup](examples_03_setup.md)
+ 8. [Examples - Buzzer](examples_04_buzzer.md)
+ 9. [Examples - Vibrator](examples_05_vibrator.md)
+10. [Examples - Light](examples_06_light.md)
+11. **Examples - Input**
+12. [Examples - Information](examples_08_information.md)
 <br>
 
 [Index](index.md)

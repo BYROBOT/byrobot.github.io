@@ -1,6 +1,7 @@
-**[*e_drone* for python](index.md)** / **Intro**
 
-Modified : 2021.1.4
+**[*CodingRider* for python](index.md)** / **Intro**
+
+Modified : 2024.5.17
 
 ---
 
@@ -21,11 +22,11 @@ Modified : 2021.1.4
 
 
 
-# 1. *e_drone* for python 소개
+# 1. *CodingRider* for python 소개
 
-***e_drone* for python**은 python에서 ***E-DRONE***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
+***CodingRider* for python**은 python에서 ***CodingRider***을 쉽게 사용할 수 있도록 도와주는 라이브러리입니다.
 
-[https://pypi.org/project/e-drone/](https://pypi.org/project/e-drone/)
+[https://pypi.org/project/CodingRider/](https://pypi.org/project/CodingRider/)
 
 <br>
 <br>
@@ -34,16 +35,16 @@ Modified : 2021.1.4
 
 # 2. 설치
 
-아래의 명령을 실행하시면 *e_drone*이 설치됩니다.
+아래의 명령을 실행하시면 *CodingRider*가 설치됩니다.
 
 ```
-> pip install e_drone
+> pip install CodingRider
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> pip3 install e_drone
+> pip3 install CodingRider
 ```
 
 
@@ -52,13 +53,13 @@ Modified : 2021.1.4
 최신 버전이 설치되지 않는다면 아래의 명령을 사용하시기 바랍니다.
 
 ```
-> pip --no-cache-dir install e_drone
+> pip --no-cache-dir install CodingRider
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> pip3 --no-cache-dir install e_drone
+> pip3 --no-cache-dir install CodingRider
 ```
 
 <br>
@@ -71,13 +72,13 @@ Modified : 2021.1.4
 최신 버전으로 업그레이드 하시려면 아래의 명령을 실행하시면 됩니다.
 
 ```
-> pip install --upgrade e_drone
+> pip install --upgrade CodingRider
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> pip3 install --upgrade e_drone
+> pip3 install --upgrade CodingRider
 ```
 
 <br>
@@ -87,54 +88,29 @@ Modified : 2021.1.4
 
 # 4. 삭제
 
-아래의 명령을 실행하시면 *e_drone*이 삭제됩니다.
+아래의 명령을 실행하시면 *CodingRider*이 삭제됩니다.
 
 ```
-> pip uninstall e_drone
-```
-
-**macOS** 에서는 아래와 같이 실행하시기 바랍니다.
-
-```
-> pip3 uninstall e_drone
-```
-
-<br>
-<br>
-
-
-
-# 5. 드론, 조종기 펌웨어 업그레이드
-
-펌웨어를 최신 버전으로 업그레이드 하시려면 드론 또는 조종기를 부트로더 모드로 USB에 연결한 후 아래의 명령을 실행하시면 됩니다.
-
-
-```
-> python -m e_drone upgrade
+> pip uninstall CodingRider
 ```
 
 **macOS** 에서는 아래와 같이 실행하시기 바랍니다.
 
 ```
-> python3 -m e_drone upgrade
+> pip3 uninstall CodingRider
 ```
 
-상세한 설명은 아래의 문서를 참고하시기 바랍니다.
-
-
-[e_drone 파이썬 라이브러리를 사용한 펌웨어 업데이트](/documents/kr/products/e_drone/manual/update/python/)
-
 <br>
 <br>
 
 
 
-# 6. 시리얼 포트 검색
+# 5. 시리얼 포트 검색
 
 
 Drone 클래스 내부에서 pyserial을 사용하여 시리얼 포트에 연결합니다. 시리얼 포트에 연결하려면 장치 이름을 알고 있어야 합니다. 이 때 필요한 것이 컴퓨터에 연결된 시리얼 통신 장치들을 검색할 수 있는 명령입니다. 이 명령은 **pyserial**에서 제공하고 있습니다.
 
-(**pyserial**은 *e_drone*을 설치한 경우 함께 설치됩니다.)
+(**pyserial**은 *CodingRider*을 설치한 경우 함께 설치됩니다.)
 
 <br>
 
@@ -156,7 +132,7 @@ from serial.tools.list_ports import comports
 
 nodes = comports()
 
-count = 0;
+count = 0
 for node in nodes:
     print("[{0}]".format(count))
     print("         device: ", node.device)
@@ -174,7 +150,7 @@ for node in nodes:
 
 
 
-# 7. 응용 프로젝트 예제
+# 6. 응용 프로젝트 예제
 
 아래는 응용 프로젝트 예제입니다.
 
@@ -183,13 +159,13 @@ for node in nodes:
 ```py
 from time import sleep
 
-from e_drone.drone import *
-from e_drone.protocol import *
+from CodingRider.drone import *
+from CodingRider.protocol import *
 
 if __name__ == '__main__':
 
     drone = Drone()       # 드론 객체 생성
-    drone.open("COM22")   # 시리얼 포트 연결
+    drone.open()   # 시리얼 포트 연결
 
     drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)   # 버저에 4옥타브 도 소리를 500ms 동안 내라고 명령하기
     sleep(1)              # 1초간 sleep
@@ -204,8 +180,8 @@ open() 함수 사용 시 인자를 넣지 않으면, 내부에서 시리얼 포�
 ```py
 from time import sleep
 
-from e_drone.drone import *
-from e_drone.protocol import *
+from CodingRider.drone import *
+from CodingRider.protocol import *
 
 if __name__ == '__main__':
 
@@ -223,27 +199,20 @@ if __name__ == '__main__':
 
 ---
 
-<h3><i>e_drone</i> for python</H3>
+<h3><i>CodingRider</i> for python</H3>
 
  1. **Intro**
- 2. [Command Line](02_commandline.md)
- 3. [System](03_system.md)
- 4. [Protocol](04_protocol.md)
- 5. [Drone](05_drone.md)
- 6. [Examples - Ping](examples_01_ping.md)
- 7. [Examples - Information](examples_02_information.md)
- 8. [Examples - Pairing](examples_03_pairing.md)
- 9. [Examples - Control](examples_04_control.md)
-10. [Examples - Sensor](examples_05_sensor.md)
-11. [Examples - Motor](examples_06_motor.md)
-12. [Examples - Setup](examples_07_setup.md)
-13. [Examples - Buzzer](examples_08_buzzer.md)
-14. [Examples - Vibrator](examples_09_vibrator.md)
-15. [Examples - Light](examples_10_light.md)
-16. [Examples - Display](examples_11_display.md)
-17. [Examples - Input](examples_12_input.md)
-18. [Examples - Error](examples_13_error.md)
-
+ 2. [System](02_system.md)
+ 3. [Protocol](03_protocol.md)
+ 4. [Drone](04_drone.md)
+ 5. [Examples - Control](examples_01_control.md)
+ 6. [Examples - Sensor](examples_02_sensor.md)
+ 7. [Examples - Setup](examples_03_setup.md)
+ 8. [Examples - Buzzer](examples_04_buzzer.md)
+ 9. [Examples - Vibrator](examples_05_vibrator.md)
+10. [Examples - Light](examples_06_light.md)
+11. [Examples - Input](examples_07_input.md)
+12. [Examples - Information](examples_08_information.md)
 <br>
 
 [Index](index.md)

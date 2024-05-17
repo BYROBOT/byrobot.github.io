@@ -38,7 +38,7 @@
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
             <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
-            <td width="110" class="byrobot"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td> 
+            <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="even">Python</span></a><br>&nbsp;</div></td>
             <td width="110" class="byrobot"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td> 
         </tr>
         <tr>
@@ -68,9 +68,43 @@
             <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/codingrider/protocol/">한국어</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
+                <!-- Python -->
+        <tr><td colspan="3" class="space"></td></tr>
+        <tr>
+            <td colspan="3" class="python"><div align="center"><a name="Python"></a>&nbsp;<br>Python<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Library</div></td>
+            <td colspan="2" class="white"><div align="center">-</div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Repository</div></td>
+            <td colspan="2" class="python"><div align="center">-</div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Examples</div></td>
+            <td colspan="2" class="white"><div align="center">-</div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Version</div></td>
+            <td colspan="2" class="python"><div align="center">-</div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Release Date</div></td>
+            <td colspan="2" class="white"><div align="center">-</div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Manual</div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/codingrider/">한국어</a></div></td>
+        </tr>
+        <tr>
+            <td class="python"><div align="center">Update Log</div></td>
+            <td colspan="2" class="white"><div align="center">-</div></td>
+        </tr>
+        <tr><td colspan="3" class="space"></td></tr>
     </table>
 </div>
 
 ---
 
-Modified : 2024.1.31
+Modified : 2024.5.17
