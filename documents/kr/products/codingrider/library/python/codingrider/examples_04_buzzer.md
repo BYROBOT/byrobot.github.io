@@ -1,6 +1,6 @@
 **[*CodingRider* for python](index.md)** / **Examples** / **Buzzer**
 
-Modified : 2024.5.17
+Modified : 2024.5.23
 
 ---
 
@@ -25,17 +25,17 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
     
-
-    drone.sendBuzzer(BuzzerMode.Mute, BuzzerScale.Mute.value, 500)
+    #묵음
+    drone.sendBuzzer(BuzzerMode.MuteInstantly, BuzzerScale.Mute.value, 500)
     sleep(1)
 
-    drone.sendBuzzer(BuzzerMode.Scale, BuzzerScale.C4.value, 500)
+    drone.sendBuzzer(BuzzerMode.ScaleInstantly, BuzzerScale.C4.value, 500)
     sleep(1)
 
-    drone.sendBuzzer(BuzzerMode.Hz, 500, 500)
+    drone.sendBuzzer(BuzzerMode.HzInstantly, 500, 500)
     sleep(1)
 
-
+    #묵음
     drone.sendBuzzerMute(100)
     drone.sendBuzzerMuteReserve(100)
     sleep(1.2)
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     drone = Drone()
     drone.open()
     
-    drone.sendBuzzer(BuzzerMode.Mute, BuzzerScale.Mute.value, 100)
+    drone.sendBuzzer(BuzzerMode.MuteInstantly, BuzzerScale.Mute.value, 100)
     sleep(0.2)
     
     drone.sendBuzzerScale(BuzzerScale.G4, 300)     
@@ -136,7 +136,7 @@ if __name__ == '__main__':
 
     data = Buzzer()
 
-    data.mode       = BuzzerMode.Scale
+    data.mode       = BuzzerMode.ScaleInstantly
     data.value      = BuzzerScale.C5.value
     data.time       = 500
 
@@ -144,7 +144,7 @@ if __name__ == '__main__':
     sleep(1)
 
 
-    data.mode       = BuzzerMode.Hz
+    data.mode       = BuzzerMode.HzInstantly
     data.value      = 1200
     data.time       = 500
 
@@ -173,10 +173,9 @@ if __name__ == '__main__':
  6. [Examples - Sensor](examples_02_sensor.md)
  7. [Examples - Setup](examples_03_setup.md)
  8. **Examples - Buzzer**
- 9. [Examples - Vibrator](examples_05_vibrator.md)
-10. [Examples - Light](examples_06_light.md)
-11. [Examples - Input](examples_07_input.md)
-12. [Examples - Information](examples_08_information.md)
+ 9. [Examples - Light](examples_05_light.md)
+10. [Examples - Input](examples_06_input.md)
+11. [Examples - Information](examples_07_information.md)
 <br>
 
 [Index](index.md)

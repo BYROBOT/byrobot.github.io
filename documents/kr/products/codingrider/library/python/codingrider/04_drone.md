@@ -1,6 +1,6 @@
 **[*CodingRider* for python](index.md)** / **Drone**
 
-Modified : 2024.5.17
+Modified : 2024.5.23
 
 ---
 
@@ -129,7 +129,6 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | [sendModeControlFlight](#sendModeControlFlight)                   | 비행 제어 모드 변경                         |
 | [sendHeadless](#sendHeadless)                                     | 헤드리스 설정                               |
 | [sendTrim](#sendTrim)                                             | Trim 값을 지정하여 변경                     |
-| [sendWeight](#sendWeight)                                         | Weight 설정                                 |
 | [sendLostConnection](#sendLostConnection)                         | 연결이 끊긴 후 반응 시간 설정               |
 | [sendFlightEvent](#sendFlightEvent)                               | 비행 이벤트 실행                            |
 | [sendClearBias](#sendClearBias)                                   | 바이어스 초기화                             |
@@ -144,8 +143,6 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | 이름                                                              | 설명                                        |
 |:------------------------------------------------------------------|:--------------------------------------------|
 | [sendMotor](#sendMotor)                                           | 모터 동작 제어                              |
-| [sendMotorSingle](#sendMotorSingle)                               | 단일 모터 동작 제어                         |
-
 <br>
 
 
@@ -158,7 +155,6 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 | [sendLightModeColors](#sendLightModeColors)                       | 모드 설정 (팔레트)                          |
 | [sendLightEventColor](#sendLightEventColor)                       | 이벤트 설정 (RGB)                           |
 | [sendLightEventColors](#sendLightEventColors)                     | 이벤트 설정 (팔레트)                        |
-| [sendLightDefaultColor](#sendLightDefaultColor)                   | 기본 모드 설정 (RGB)                        |
 
 <br>
 
@@ -177,17 +173,6 @@ Drone 클래스의 데이터 수신 처리부는 아래와 같이 구성되어 �
 
 <br>
 
-
-## 조종기 진동
-
-| 이름                                                              | 설명                                        |
-|:------------------------------------------------------------------|:--------------------------------------------|
-| [sendVibrator](#sendVibrator)                                     | 진동 설정                                   |
-| [sendVibratorReserve](#sendVibratorReserve)                       | 진동 예약                                   |
-
-
-<br>
-<br>
 
 
 # 함수 정의
@@ -231,7 +216,7 @@ def sendRequest(self, deviceType, dataType):
 | deviceType                 | [DeviceType](02_system.md#DeviceType)       | 전송할 대상 장치                 |
 | dataType                   | [DataType](#DataType)                       | 데이터의 타입                    |
 
-- e.g. [조종기의 펌웨어 정보 요청](examples_08_information.md#Information)
+- e.g. [조종기의 펌웨어 정보 요청](examples_07_information.md#Information)
 
 <br>
 <br>
@@ -597,23 +582,6 @@ def sendTrim(self, roll, pitch, yaw, throttle):
 <br>
 
 
-## <a name="sendWeight">sendWeight</a>
-
-무게
-
-```py
-def sendWeight(self, weight):
-```
-
-| 변수 이름                 | 형식 또는 범위                                    | 설명                        |
-|:-------------------------:|:-------------------------------------------------:|:----------------------------|
-| weight                    | [Weight](02_system.md#Weight)                     | 무게                        |
-
-
-<br>
-<br>
-
-
 ## <a name="sendLostConnection">sendLostConnection</a>
 
 통신 연결이 끊긴 후 반응 시간 설정
@@ -713,26 +681,6 @@ def sendMotor(self, motor0, motor1, motor2, motor3):
 <br>
 
 
-## <a name="sendMotorSingle">sendMotorSingle</a>
-
-1개의 모터를 회전 방향을 지정하여 동작
-
-target에 들어가는 값은 0~3입니다. 모터의 순서는 왼쪽 앞 모터부터 시계방향입니다.
-
-```py
-def sendMotorSingle(self, target, rotation, value):
-```
-
-| 변수 이름                 | 형식 또는 범위                                    | 설명                          |
-|:-------------------------:|:-------------------------------------------------:|:------------------------------|
-| target                    | 0 ~ 3                                             | 제어할 모터의 번호            |
-| rotation                  | [Rotation](02_system.md#Rotation)                 | 모터의 회전 방향              |
-| value                     | 0 ~ 4095                                          | 모터의 속도                   |
-
-
-<br>
-<br>
-
 
 ## <a name="sendLightManual">sendLightManual</a>
 
@@ -752,7 +700,7 @@ def sendLightManual(self, deviceType, flags, brightness):
 | flags                     | 0b00000000 ~ 0b11111111                           | LED 플래그                    |
 | brightness                | 0 ~ 255                                           | 밝기                          |
 
-- e.g. [sendLightManual() 함수를 사용하여 조종기 LED 제어하기](examples_06_light.md#LightManual)
+- e.g. [sendLightManual() 함수를 사용하여 조종기 LED 제어하기](examples_05_light.md#LightManual)
 
 
 <br>
@@ -777,7 +725,7 @@ def sendLightModeColor(self, lightMode, interval, r, g, b):
 | g                         | 0 ~ 255                 | Green                                    |
 | b                         | 0 ~ 255                 | Blue                                     |
 
-- e.g. [드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (sendLightModeColor 함수 사용)](examples_06_light.md#LightMode)
+- e.g. [드론의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (sendLightModeColor 함수 사용)](examples_05_light.md#LightMode)
 
 
 <br>
@@ -801,7 +749,7 @@ def sendLightModeColors(self, lightMode, interval, colors):
 | interval                  | 0 ~ 65535                                         | 내부 밝기 제어 함수 호출 주기            |
 | colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기](examples_06_light.md#LightMode)
+- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기](examples_05_light.md#LightMode)
 
 
 <br>
@@ -827,7 +775,7 @@ def sendLightEventColor(self, lightEvent, interval, repeat, r, g, b):
 | g                         | 0 ~ 255                                           | Green                                    |
 | b                         | 0 ~ 255                                           | Blue                                     |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기](examples_06_light.md#LightMode)
+- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기](examples_05_light.md#LightMode)
 
 
 <br>
@@ -851,34 +799,11 @@ def sendLightEventColors(self, lightEvent, interval, repeat, colors):
 | repeat                    | 0 ~ 255                                           | 반복 횟수                                |
 | colors                    | [Colors](03_protocol.md#Colors)                   | 색상 팔레트 인덱스                       |
 
-- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기](examples_06_light.md#LightMode)
+- e.g. [sendLightMode, sendLightEvent 함수를 사용하여 드론 LED 제어하기](examples_05_light.md#LightMode)
 
 
 <br>
 <br>
-
-
-## <a name="sendLightDefaultColor">sendLightDefaultColor</a>
-
-LED 기본 모드 설정(RGB)
-
-lightMode 변수에는 [LightModeDrone](#LightModeDrone), [LightModeController](#LightModeController)의 value 값을 사용합니다.
-
-```py
-def sendLightDefaultColor(self, lightMode, interval, r, g, b):
-```
-
-| 변수 이름                 | 형식 또는 범위          | 설명                                     |
-|:-------------------------:|:-----------------------:|:-----------------------------------------|
-| lightMode                 | UInt8                   | LED 동작 모드                            |
-| interval                  | 0 ~ 65535               | 내부 밝기 제어 함수 호출 주기            |
-| r                         | 0 ~ 255                 | Red                                      |
-| g                         | 0 ~ 255                 | Green                                    |
-| b                         | 0 ~ 255                 | Blue                                     |
-
-<br>
-<br>
-
 
 ## <a name="sendBuzzer">sendBuzzer</a>
 
@@ -1018,47 +943,6 @@ def sendBuzzerHzReserve(self, hz, time):
 
 - e.g. [sendBuzzer 함수 테스트](examples_04_buzzer.md#Buzzer)
 
-
-<br>
-<br>
-
-
-## <a name="sendVibrator">sendVibrator</a>
-
-진동
-
-```py
-def sendVibrator(self, on, off, total):
-```
-
-| 변수 이름                 | 형식 또는 범위    | 설명                                     |
-|:-------------------------:|:-----------------:|:-----------------------------------------|
-| on                        | 0 ~ 65,535        | 진동을 켠 시간                           |
-| off                       | 0 ~ 65,535        | 진동을 끈 시간                           |
-| total                     | 0 ~ 65,535        | 전체 동작 시간                           |
-
-- e.g. [sendVibrator 함수 테스트](examples_05_vibrator.md#Vibrator)
-
-
-<br>
-<br>
-
-
-## <a name="sendVibratorReserve">sendVibratorReserve</a>
-
-진동 예약
-
-```py
-def sendVibratorReserve(self, on, off, total):
-```
-
-| 변수 이름                 | 형식 또는 범위    | 설명                                     |
-|:-------------------------:|:-----------------:|:-----------------------------------------|
-| on                        | 0 ~ 65,535        | 진동을 켠 시간                           |
-| off                       | 0 ~ 65,535        | 진동을 끈 시간                           |
-| total                     | 0 ~ 65,535        | 전체 동작 시간                           |
-
-
 <br>
 
 
@@ -1074,10 +958,9 @@ def sendVibratorReserve(self, on, off, total):
  6. [Examples - Sensor](examples_02_sensor.md)
  7. [Examples - Setup](examples_03_setup.md)
  8. [Examples - Buzzer](examples_04_buzzer.md)
- 9. [Examples - Vibrator](examples_05_vibrator.md)
-10. [Examples - Light](examples_06_light.md)
-11. [Examples - Input](examples_07_input.md)
-12. [Examples - Information](examples_08_information.md)
+ 9. [Examples - Light](examples_05_light.md)
+10. [Examples - Input](examples_06_input.md)
+11. [Examples - Information](examples_07_information.md)
 <br>
 
 [Index](index.md)

@@ -1,6 +1,6 @@
 **[*CodingRider* for python](index.md)** / **Examples** / **Control**
 
-Modified : 2024.5.17
+Modified : 2024.5.23
 
 ---
 
@@ -223,10 +223,9 @@ if __name__ == '__main__':
  6. [Examples - Sensor](examples_02_sensor.md)
  7. [Examples - Setup](examples_03_setup.md)
  8. [Examples - Buzzer](examples_04_buzzer.md)
- 9. [Examples - Vibrator](examples_05_vibrator.md)
-10. [Examples - Light](examples_06_light.md)
-11. [Examples - Input](examples_07_input.md)
-12. [Examples - Information](examples_08_information.md)
+ 9. [Examples - Light](examples_05_light.md)
+10. [Examples - Input](examples_06_input.md)
+11. [Examples - Information](examples_07_information.md)
 <br>
 
 [Index](index.md)

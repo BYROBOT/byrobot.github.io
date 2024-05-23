@@ -1,6 +1,6 @@
 **[*CodingRider* for python](index.md)** / **Protocol**
 
-Modified : 2024.5.17
+Modified : 2024.5.23
 
 ---
 
@@ -104,7 +104,7 @@ class CommandType(Enum):
     Link						= 0x0B		# 링크 제어(0:Client Mode, 1:Server Mode, 2:Pairing Start)
     LoadDefaultColor			= 0x0C		# 기본 색상으로 변경
     
-    Trim						= 0x0D		# 트림
+    Trim						= 0x0D		# 트림  
     
     ModeTest					= 0xF0		# 테스트 락(테스트를 완료하기 전까진 사용 불가 / 27:활성화, 11:해제))
     
@@ -255,6 +255,20 @@ class Request(ISerializable):
 <br>
 
 
+<a name="RequestOption"></a>
+## RequestOption
+
+```py
+class Request(ISerializable):
+
+    def __init__(self):
+        self.dataType   = DataType.None_
+        self.option     = 0
+```
+
+<br>
+<br>
+
 <a name="Message"></a>
 ## Message
 
@@ -363,7 +377,7 @@ class Information(ISerializable):
 | month         | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 월      |
 | day           | UInt8                                     | 1 Byte   | -    | 펌웨어 빌드 일      |
 
-- e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_08_information.md#Class_Information)
+- e.g. [조종기의 펌웨어 정보 요청(이벤트 함수 등록)](examples_07_information.md#Class_Information)
 
 <br>
 <br>
@@ -424,6 +438,28 @@ class Pairing(ISerializable):
 <br>
 <br>
 
+
+<a name="ResponseRate"></a>
+## ResponseRate
+
+응답률
+
+```py
+class ResponseRate(ISerializable):
+
+    def __init__(self):
+        self.responseRate = 0
+
+```
+
+| 변수 이름        | 형식      | 크기     | 범위       | 설명               |
+|:---------------:|:---------:|:--------:|:----------:|:-------------------|
+| responseRate    | UInt8    | 1 Byte   | 0 ~ 100  | 응답률      |
+
+
+
+<br>
+<br>
 
 <a name="Rssi"></a>
 ## Rssi
@@ -1107,7 +1143,7 @@ class LightModeColor(ISerializable):
 | mode        | [LightMode](#LightMode)  | 3 Byte   | -      | LED 동작 모드  |
 | color       | [Color](#Color)          | 3 Byte   | -      | LED RGB 색상   |
 
-- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)](examples_06_light.md#Class_LightModeColor)
+- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColor / 클래스 데이터를 채워서 전송)](examples_05_light.md#Class_LightModeColor)
 
 
 <br>
@@ -1134,7 +1170,7 @@ class LightModeColors(ISerializable):
 | mode       | [LightMode](#LightMode)   | 3 Byte   | -     | LED 동작 모드      |
 | colors     | [Colors](#Colors)         | 1 Byte   | -     | LED 팔레트 인덱스  |
 
-- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)](examples_06_light.md#Class_LightModeColors)
+- e.g. [조종기의 LED를 랜덤한 색으로 점점 밝아졌다 어두워지게 하는 명령을 10회 실행 (LightModeColors / 클래스 데이터를 채워서 전송)](examples_05_light.md#Class_LightModeColors)
 
 
 <br>
@@ -1345,58 +1381,6 @@ class Buzzer(ISerializable):
 <br>
 <br>
 
-
-
-<a name="VibratorMode"></a>
-## VibratorMode
-
-진동 모드
-
-```py
-class VibratorMode(Enum):
-
-    Stop                = 0     # 정지
-
-    Instantally         = 1     # 즉시 적용
-    Continually         = 2     # 예약
-
-    EndOfType           = 3
-```
-
-
-<br>
-<br>
-
-
-<a name="Vibrator"></a>
-## Vibrator
-
-진동
-
-```py
-class Vibrator(ISerializable):
-
-    def __init__(self):
-        self.mode       = VibratorMode.Stop
-        self.on         = 0
-        self.off        = 0
-        self.total      = 0
-```
-
-| 변수 이름  | 형식                          | 크기     | 범위        | 설명                |
-|:----------:|:-----------------------------:|:--------:|:-----------:|:--------------------|
-| mode       | [VibratorMode](#VibratorMode) | 1 Byte   | -           | 진동 동작 모드      |
-| on         | UInt16                        | 2 Byte   | 0 ~ 65,535  | 진동을 켠 시간(ms)  |
-| off        | UInt16                        | 2 Byte   | 0 ~ 65,535  | 진동을 끈 시간(ms)  |
-| total      | UInt16                        | 2 Byte   | 0 ~ 65,535  | 전체 동작 시간(ms)  |
-
-- e.g. [Vibrator 클래스 데이터를 직접 채워서 전송하기](examples_05_vibrator.md#Class_Vibrator)
-
-
-<br>
-<br>
-
-
 <a name="ButtonFlagController"></a>
 ## ButtonFlagController
 
@@ -1488,7 +1472,7 @@ class Button(ISerializable):
 | button    | UInt16                      | 2 Byte   | -     | 버튼 입력    |
 | event     | [ButtonEvent](#ButtonEvent) | 1 Byte   | -     | 버튼 이벤트  |
 
-- e.g. [버튼 입력값 출력](examples_07_input.md#Button)
+- e.g. [버튼 입력값 출력](examples_06_input.md#Button)
 
 
 <br>
@@ -1513,9 +1497,15 @@ class JoystickDirection(Enum):
     HM      = 0x02      #   중앙(가로)
     HR      = 0x04      # 오른쪽(가로)
 
-    TL = 0x11;  TM = 0x12;  TR = 0x14
-    ML = 0x21;  CN = 0x22;  MR = 0x24
-    BL = 0x41;  BM = 0x42;  BR = 0x44
+    TL = 0x11  
+    TM = 0x12  
+    TR = 0x14
+    ML = 0x21  
+    CN = 0x22  
+    MR = 0x24
+    BL = 0x41  
+    BM = 0x42  
+    BR = 0x44
 ```
 
 
@@ -1590,7 +1580,7 @@ class Joystick(ISerializable):
 | left      | [JoystickBlock](#JoystickBlock)  | 4 Byte   | -     | 왼쪽 조이스틱   |
 | right     | [JoystickBlock](#JoystickBlock)  | 4 Byte   | -     | 오른쪽 조이스틱 |
 
-- e.g. [조이스틱 입력값 출력](examples_07_input.md#Joystick)
+- e.g. [조이스틱 입력값 출력](examples_06_input.md#Joystick)
 
 
 <br>
@@ -1994,10 +1984,9 @@ class MotorSingle(ISerializable):
  6. [Examples - Sensor](examples_02_sensor.md)
  7. [Examples - Setup](examples_03_setup.md)
  8. [Examples - Buzzer](examples_04_buzzer.md)
- 9. [Examples - Vibrator](examples_05_vibrator.md)
-10. [Examples - Light](examples_06_light.md)
-11. [Examples - Input](examples_07_input.md)
-12. [Examples - Information](examples_08_information.md)
+ 9. [Examples - Light](examples_05_light.md)
+10. [Examples - Input](examples_06_input.md)
+11. [Examples - Information](examples_07_information.md)
 <br>
 
 [Index](index.md)
