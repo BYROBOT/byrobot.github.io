@@ -1,0 +1,5545 @@
+[33mcommit 6ffe599d99dc9bd3b6f913c5f760781bdd03c811[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: f13acc5 fe3a321
+Author: aluxshyeo <swyeo4238@gmail.com>
+Date:   Thu May 23 13:56:42 2024 +0900
+
+    Merge branch 'master' of https://github.com/BYROBOT/byrobot.github.io
+
+[33mcommit f13acc5ff3e88b956727d81be40206c6392d3e7c[m
+Author: aluxshyeo <swyeo4238@gmail.com>
+Date:   Thu May 23 13:50:43 2024 +0900
+
+    20240523 CodingRider 2.9 update
+
+[33mcommit fe3a321d6657a2262aa99567a211b7819dced4a4[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Fri May 17 13:23:49 2024 +0900
+
+    코딩라이더 파이썬 매뉴얼 경로 링크 수정
+
+[33mcommit 4a7065394454d49ef7ce792efec502c2f175db95[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Fri May 17 13:19:09 2024 +0900
+
+    코딩라이더 파이썬 매뉴얼 정리 및 추가
+
+[33mcommit ca4e76064def44c3408ebf1d391a6818f680952d[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Fri May 17 11:09:15 2024 +0900
+
+    CODING RIDER/Protocol/Structs >Protocol::StateController 부분 제거
+
+[33mcommit 554782d0bfe49d8a9aa9753eecdc501110053ab2[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Mon Apr 29 16:37:41 2024 +0900
+
+    코딩라이더 최신 코드 업데이트 (LED 다리 포함)
+
+[33mcommit fb15a41d4c8dc855a7f02a0a8a3b1d5cda92fd94[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Mon Apr 29 16:35:10 2024 +0900
+
+    1
+
+[33mcommit b43756261dcb3aa7d606dfc67461aa524181b3f4[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Wed Apr 24 14:36:23 2024 +0900
+
+    코딩라이더 라이트 코드 추가
+
+[33mcommit 21b9171492780f632ea70d6d12e6eaee02dae58f[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Mon Apr 22 16:31:03 2024 +0900
+
+    링크 주소 재수정
+
+[33mcommit 8e7c35ae6f1a352f2826ffc319d65d218f52c51b[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Mon Apr 22 13:21:42 2024 +0900
+
+    GOCAR 최신 펌웨어 다운로드 링크 수정
+
+[33mcommit 56b897cc35372b191498f39c5b82510fd9dcd3ea[m
+Author: shmo <shmo@aluxonline.com>
+Date:   Tue Mar 26 13:43:47 2024 +0900
+
+    고카 및 고카 주니어 펌웨어 통합 업데이트 및 앱내에서 이동거리 설정기능 추가
+
+[33mcommit 7be13b58bd5ce622b18e18d02f1d20b11b95eefb[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Jan 31 16:33:39 2024 +0900
+
+    CodingRider 항목 추가 - 2024.01.31
+
+[33mcommit 2a2c1e7f026fc8cfea865180de90dab726fd269c[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Nov 23 09:35:10 2023 +0900
+
+    드론파이터 펌웨어 링크 URL 변경
+    기존 구글드라이브링크 -> 나스 서버 링크
+
+[33mcommit 3e519079fde03b8eca64f0af92a7493571279619[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Oct 18 12:24:02 2023 +0900
+
+    라인 정리
+
+[33mcommit 507f4668b0c64770b8c14229c77381e73c562508[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Oct 18 12:12:56 2023 +0900
+
+    LightDefault 삭제
+    Error 항목 생성
+
+[33mcommit 5e74efa39b6303a374b1c4cc0d6850ee0c22daba[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Mon Sep 4 18:01:09 2023 +0900
+
+    BRC-105 최신 펌웨어 링크 수정
+
+[33mcommit f05920dd4fe724707a7e503d189534cc14d03e14[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Aug 24 17:18:02 2023 +0900
+
+    BRC-105 펌웨어 파일 변경 및 버전 정리
+    
+    드론 23.4.2  조종기 23.4.2
+
+[33mcommit 9b874ee5cb866e8b84e8cf5ee487830421bce3f1[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Aug 24 16:53:58 2023 +0900
+
+    수정
+
+[33mcommit d09043717326751f66e7b143c5a550633ff10db5[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Aug 24 16:43:56 2023 +0900
+
+    페이지 업데이트 최신날짜로 수정
+
+[33mcommit 3f6d103dd0977b9ed97b133f83d70e417bb92417[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Aug 24 16:41:59 2023 +0900
+
+    BRC-105 펌웨어 업데이트
+
+[33mcommit 6beac63b21d05a8676e79e5ff52e97ba578b1926[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Fri Aug 4 17:23:57 2023 +0900
+
+    position 줄 삭제
+
+[33mcommit 4919846bd553b43861a228254253770da79dc545[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Aug 4 17:10:48 2023 +0900
+
+    프로토콜 정리
+
+[33mcommit 1be1695955bb117014c77eb68b59618389e8fb29[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Fri Aug 4 15:09:48 2023 +0900
+
+    Attitude protocol 삭제
+
+[33mcommit 3dfa493b70f1a3b820128cc90287da247554d572[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Fri Aug 4 14:52:29 2023 +0900
+
+    첫페이지 목록 업데이트
+    비전센서 텍스르 수정
+
+[33mcommit 3ab6634afdebbc4d8e5548a2e4f927add787ba06[m
+Merge: 03f5550 b9fdc66
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Aug 4 14:23:31 2023 +0900
+
+    Merge branch 'master' of https://github.com/BYROBOT/byrobot.github.io
+
+[33mcommit 03f5550e0edfa788479116a505b6b28b692eaef8[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Aug 4 14:22:41 2023 +0900
+
+    Protocol_VisionSensor 추가
+
+[33mcommit b9fdc66916541722befe6dde7f634fb3d1c71828[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Fri Jul 21 12:03:10 2023 +0900
+
+    줄맞춤3
+
+[33mcommit ba7df204876fd00f81726eb48e14105e2a480612[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Fri Jul 21 11:58:52 2023 +0900
+
+    줄맞춤 테스트2
+
+[33mcommit fec25125bb5906e5b92143ffcc2ffb915cb91b07[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Fri Jul 21 11:36:35 2023 +0900
+
+    줄맞춤 테스트
+
+[33mcommit baadcdced5b002ebb3f276bbc86c5ac45af7015b[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Jul 21 09:17:06 2023 +0900
+
+    코드 수정
+
+[33mcommit eac7c964ee9b5c81de01c4adfdc13e06c695cfa6[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Jul 21 07:47:48 2023 +0900
+
+    코드정리
+
+[33mcommit bdfe89140957e27452211c1d9841c91fb865433b[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Jul 21 07:45:51 2023 +0900
+
+    코드정리
+
+[33mcommit cbd6ec13e8f37c5f9e365d3566698a504b6f161f[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Fri Jul 21 07:39:04 2023 +0900
+
+    스피드 삭제
+
+[33mcommit 5dca99fb79a604f89c6d137937894938742168d4[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Jul 20 18:00:22 2023 +0900
+
+    목록에서
+    
+    7.Structs - Display
+    8. Structs - Card
+    
+    항목 삭제
+
+[33mcommit da394ca15b65d69d6ca11e0b8f687d7ea3dab2be[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Thu Jul 20 17:55:18 2023 +0900
+
+    SK-Evo 첫 페이지 링크목록 정리
+    3. datatpye 내용 삭제 (TimeSync/TransmissionPower/Configuration/Battl)
+
+[33mcommit cd92e1e618b48e5b6469a256f61423d1778077d4[m
+Merge: 41d596a 3e1a022
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 12 14:21:51 2023 +0900
+
+    Merge branch 'master' of https://github.com/BYROBOT/byrobot.github.io
+
+[33mcommit 41d596a07fe98500676ece60532563a2c1d085fe[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 12 14:21:45 2023 +0900
+
+    Datetype 정리 1차
+
+[33mcommit 3e1a0227c43d62edb49bd12d9054f03513c4535f[m
+Merge: f30c3fd 01c567f
+Author: gautsang <jisangki@gmail.com>
+Date:   Mon Jul 10 17:34:18 2023 +0900
+
+    Merge branch 'master' of https://github.com/BYROBOT/byrobot.github.io
+
+[33mcommit f30c3fdf7d6aa23a291321638cca2a3d8c71bfb5[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Mon Jul 10 17:34:13 2023 +0900
+
+    이름 수정
+
+[33mcommit 01c567f45e93d9fea03303c6a91d2d479421b868[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Mon Jul 10 17:28:19 2023 +0900
+
+    스카이킥에보 이미지 크기 변경 (2000x2000 -> 500x500)
+
+[33mcommit eb997df9cd9f2e21a528ee597838c3fcc4fe8539[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Mon Jul 10 17:14:34 2023 +0900
+
+    스카이킥 프로토콜 정리
+
+[33mcommit 08ffacb3bc706aa7a96d0b2b7056386f246c1329[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Wed Apr 26 13:56:19 2023 +0900
+
+    skykick 추가중
+
+[33mcommit 642c7f446e98aafd2d0c76f7ea603040fdfd7410[m
+Author: gautsang <jisangki@gmail.com>
+Date:   Wed Apr 26 09:22:01 2023 +0900
+
+    skykick evo 추가중
+
+[33mcommit 46425d0eb377a476fa00161fc3a41a15654cdd05[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Feb 8 16:59:07 2023 +0900
+
+    확인
+
+[33mcommit 8be581382721a7cf44be12abdd41b71798f0be51[m
+Author: seungho-mo <shmo@byrobot.co.kr>
+Date:   Wed Feb 8 16:57:06 2023 +0900
+
+    업데이트 변경
+
+[33mcommit 0e3ab3bc37a50ea79edf1eebd218d5d5291452b6[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Mon Aug 29 15:59:56 2022 +0900
+
+    20220829 BRC-105 펌웨어 업데이트 8.1
+
+[33mcommit 7f79aba5da6eae40dc32d9c5aecab992374bcc74[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Fri Jul 22 10:30:27 2022 +0900
+
+    ㅇㅇ
+
+[33mcommit 934f484c5b4dbcf6b90105b8d76ae6cb1d7ed835[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Fri Jul 22 10:27:24 2022 +0900
+
+    7월 펌웨어 업데이트 7.2
+
+[33mcommit 4bce0bb2dd9f3ce6e67e18e899597e3771b51870[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 14:20:01 2022 +0900
+
+    r
+
+[33mcommit 3fcb5d111bba7afaec611fc07716f78580a02e03[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 12:08:46 2022 +0900
+
+    r
+
+[33mcommit 4b97984105a7ba5c1956517f7a875129de5f1e78[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 12:02:50 2022 +0900
+
+    r
+
+[33mcommit 844a8f7d2f4b913e36203ab0374dac0bee8ed99d[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 12:01:39 2022 +0900
+
+    메인화면 업데이트
+
+[33mcommit 9cb620049d3036971905b9fab9e4e045412ea229[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 11:58:29 2022 +0900
+
+    r
+
+[33mcommit aa57309fa397931f7fc076c926b5add0b357579a[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 11:54:29 2022 +0900
+
+    r
+
+[33mcommit b96e54aae0fbd2d3ab09464903fa6ac7d56d0143[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 11:50:08 2022 +0900
+
+    r
+
+[33mcommit 3228d113ef3997e80351c8fee1ec94017aeadb9f[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 11:36:04 2022 +0900
+
+    r
+
+[33mcommit 514138bac6ea02dca9b6546bee0546e627bbc42a[m
+Author: Seungho_Mo <shmo@byrobot.co.kr>
+Date:   Wed Jul 6 11:05:18 2022 +0900
+
+    GOCAR 및 BRC-105 펌웨어 업데이트 로그
+
+[33mcommit f74e0a007f2372982451c5aa60ba8f048be8c2a4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 17 08:01:52 2022 +0900
+
+    파이썬 라이브러리 문서를 기존 상태로 복원(교재 문제)
+
+[33mcommit 0a49c3368fb8f650d4c63728def794ddb5419bfc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 14 12:20:20 2022 +0900
+
+    잘못된 곳 수정
+
+[33mcommit 257dd950a8768e4e250331be758e039130b11c33[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 14 12:12:26 2022 +0900
+
+    드론 Speed 설정 변경 예제 추가
+
+[33mcommit 511518e59ddff47c46e02386a2db0ba5cef8d079[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 4 14:29:32 2022 +0900
+
+    Flow 정의를 코딩 드론 펌웨어와 파이썬 라이브러리에 업데이트 함
+
+[33mcommit 939185f516b62345590d9f5d1daffb5f0794b7df[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 4 08:34:43 2022 +0900
+
+    메인 페이지 링크 수정
+
+[33mcommit 1ebe393640a1121aaf0c7a08de9b1f26b9a30098[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 4 08:04:54 2022 +0900
+
+    파이썬 라이브러리 업데이트. 코딩 드론, E-Drone 조종기 펌웨어 업데이트
+
+[33mcommit 855196e3789c0be9248941e79a3075d005d85891[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 3 09:39:39 2022 +0900
+
+    command line 예제 수정
+
+[33mcommit 319211fba413ade1429a0231881018ded6532754[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 3 08:55:24 2022 +0900
+
+    input, error 예제 수정 및 동작 확인 완료
+
+[33mcommit 155d0bc8bbb74ea312d0cdb22f6aef804fd2be55[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 31 14:36:17 2021 +0900
+
+    display 예제 완료
+
+[33mcommit bc0a1e7712d144493fc2b1f0ef0ced18feccf225[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 31 12:43:45 2021 +0900
+
+    라이브러리와 예제의 저장소 추가
+
+[33mcommit 3f379fb58e6083b7f068d5fd7db290c50ab2449c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 31 12:31:06 2021 +0900
+
+    라이브러리 수정 사항 적용(Light, Buzzer 함수 호출 시 대상 지정
+
+[33mcommit ff006c74ca9f78123f9342039bad5864d561de11[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 15:18:42 2021 +0900
+
+    진동 예제 수정
+
+[33mcommit 1b393114a54e34acd6201db8b8319ea461e93b81[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 14:30:18 2021 +0900
+
+    설정 변경 예제 업데이트
+
+[33mcommit 8dab60e63552f7205d7e6e1a36ffedbe5b9fd016[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 12:21:39 2021 +0900
+
+    버저 예제 수정
+
+[33mcommit 7265ffee2cbc65eb065f12f4454e3c9558a1ae9f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 12:14:24 2021 +0900
+
+    모터 동작 예제 추가
+
+[33mcommit 17a160dac854a34e39cb6850eca8b1ea6d56f07d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 12:14:11 2021 +0900
+
+    센서 예제 추가
+
+[33mcommit 5a11126b3ec62b05b4091451e3cf7795f6a2b414[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 11:07:53 2021 +0900
+
+    페어링, 조종 예제 추가
+
+[33mcommit 279481e938f30bea6853397154d5fced8a13b94c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 29 09:55:45 2021 +0900
+
+    라이브러리 변경 사항 문서에 적용 중
+
+[33mcommit 139fa119bb135dff43d34e019c6b0e5209feb6ea[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 13 12:32:49 2021 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit 1be4d33cf9ec05dcdb214c90984bca05c1d6e317[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 9 15:30:06 2021 +0900
+
+    메인페이지와 로그 페이지에 펌웨어 업데이트 기록 추가
+
+[33mcommit 0e360f02facd21c42446bde3a88f3dbd4e43a9d7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 9 15:07:25 2021 +0900
+
+    E-Drone 조종기 펌웨어 업데이트
+
+[33mcommit 38d934c59dd3fb324e1ccc69acaf868d6bade422[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 2 14:36:58 2021 +0900
+
+    날짜, 버전 수정 빠진 부분 수정
+
+[33mcommit c72988d2958794efe2943a4007373b59e5101f0e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 2 14:25:28 2021 +0900
+
+    E-Drone, 코딩 드론 펌웨어 업데이트
+
+[33mcommit 83ff9f1fd20f4d35b4f3f3e29dd6283b18655bc0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Aug 3 15:35:20 2021 +0900
+
+    E-Drone 펌웨어 업데이트 버전 기록
+
+[33mcommit a056d165bc6d42337159146497e872a2b4e93f04[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Aug 3 14:46:25 2021 +0900
+
+    E-Drone 조종기 펌웨어 업데이트
+
+[33mcommit d48c76c62dbb919c1a2062eb558f14aadf3cedb7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 30 07:29:34 2021 +0900
+
+    로그 파일 다운로드 경로 수정
+
+[33mcommit 12d7cf37328b125af72f8b31c47c2aab17e2667c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 20 09:30:20 2021 +0900
+
+    E-Drone 조종기, 코딩 드론 펌웨어 업데이트
+
+[33mcommit 805b921b933daafcec1827c27820ecaa0e568541[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jul 7 08:44:35 2021 +0900
+
+    로그 버전 잘못 기입한 것 수정
+
+[33mcommit f3598b9dcdf035453d2ea9565e58b8895d2ef7cf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jul 7 07:53:55 2021 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit dc3a51c519388981b780c54b6bcafbde8eeeca12[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jun 29 10:49:16 2021 +0900
+
+    CODING CAR 메뉴얼에 블루투스 통신 관련 설명 추가
+
+[33mcommit 161318c10e15acfb59fd6123379a3ba1d61d2492[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jun 18 09:39:11 2021 +0900
+
+    드론 이름 수정
+
+[33mcommit 105b4c99598611b9e0a3b6f86265248710710ba4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue May 11 09:04:44 2021 +0900
+
+    펌웨어 업데이트 메뉴얼 분리
+
+[33mcommit 7947827c754529dc9b151d216cdff08a66e6c152[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon May 10 07:24:05 2021 +0900
+
+    drone_4_updater_cli_mac 이미지 잘못 들어간 것 수정
+
+[33mcommit 610176503505a572c367bcf0d1a0d2f8046d7a52[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 7 08:28:17 2021 +0900
+
+    drone_4_updater_cli_linux 문서 추가
+
+[33mcommit 45afd5412c5c701ecefddc4925b92a4980055e68[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 7 08:12:39 2021 +0900
+
+    펌웨어 업데이트 프로그램 변경(cli)
+
+[33mcommit d286daf48d0d3bd0ddafd76799332a17d0b6592a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 7 07:56:05 2021 +0900
+
+    drone_4_updater_cli_raspberry_pi 이미지 변경
+
+[33mcommit 35c480462f9f7122adb71538a44b9bd9eee16017[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 7 07:39:47 2021 +0900
+
+    drone_4_updater_cli 윈도우 버전 이미지를 수정된 것으로 변경
+
+[33mcommit c0ba1fc57e11bb17ae4cb36cabe2ca682553d9c8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 7 07:33:13 2021 +0900
+
+    drone_4_updater_cli_mac 에 대한 문서 추가
+
+[33mcommit b71fdcbd533e2939571002173f18ef6c990344a1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 7 07:10:18 2021 +0900
+
+    macOS용 drone_4_updater_cli tui-rs 사용한 버전 업데이트함
+
+[33mcommit adedfa7debe6ddb9b386155e473a5d791fa4f45e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu May 6 15:37:12 2021 +0900
+
+    프로그램 이름 잘못 표시한 부분 수정
+
+[33mcommit d0e57239f5183d91fcdec98be3bd793fe8277e21[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu May 6 15:34:07 2021 +0900
+
+    drone_4_updater_cli_raspberry_pi 문서 추가
+
+[33mcommit c9d103d5cf11ace1d395909dcc116954b0b5ebe7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu May 6 15:16:01 2021 +0900
+
+    drone_4_updater_cli_windows에 대한 문서 추가
+
+[33mcommit c0da09ed4659fb9df4f0ebccea7b3250d5339e8e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu May 6 14:49:31 2021 +0900
+
+    코딩드론, E-Drone drone_4_updater_cli 프로그램을 tui-rs 라이브러리를 사용한 버전으로 교체(Windows, Linux x64, Raspberry PI OS arm32)
+
+[33mcommit 4209e2917514e12bec23ccf8a3f04fee7940194f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 26 11:35:34 2021 +0900
+
+    TrimIncDec 정의 및 예제 제거
+
+[33mcommit ac7db0fc9ebcde95b7d5a9d554cc652fa7ff0e48[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 15:22:15 2021 +0900
+
+    코딩 드론, E-Drone, 코딩 카 펌웨어 업데이트 기록
+
+[33mcommit aee39e2eb1ab543a89eb6ef09376acdb7201bcd7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 14:23:05 2021 +0900
+
+    코딩카 펌웨어 업데이트 문서 1차 완료
+
+[33mcommit cc8a3121888682e1cd55e585378655523d795e75[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 14:11:04 2021 +0900
+
+    코딩 드론 펌웨어 다운로드 위치 이미지를 교체(Windows 버전 빠진 것)
+
+[33mcommit a0ea126d9b75e8e5defdf21ae519a3aa25612629[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 14:10:38 2021 +0900
+
+    코딩카 drone4autoupdaterlight 프로그램 이미지를 최신 버전으로 교체
+
+[33mcommit 717922d9fa411c56d47b72ff0a13bd8fcd038559[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 13:47:52 2021 +0900
+
+    코딩 드론 펌웨어 업데이트 메뉴얼 1차 수정, 모든 펌웨어 다운로드에서 drone_4_updater 윈도우 버전은 주석처리
+
+[33mcommit d7c81d5927cbb50ad859f86613b3c6e2c31cd907[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 13:34:25 2021 +0900
+
+    코딩 드론, 코딩 카 리눅스 펌웨어 업데이트 이미지 추가
+
+[33mcommit 1b7845dc21f62f48c42abdf2a1ef0f4d00562c57[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 12:12:59 2021 +0900
+
+    코딩 드론, 코딩 카 맥 펌웨어 업데이트 이미지 추가
+
+[33mcommit e3992fcaa02c102b111b9a08a600cea8e396d383[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 11:24:12 2021 +0900
+
+    코딩드론, 코딩 카 라즈베리파이 업데이트 이미지 수정
+
+[33mcommit f7ea3c553d0466893c94be169a6a9ea641324eaf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 10:16:37 2021 +0900
+
+    코딩카, 코딩 드론 윈도우 업데이트 화면 추가
+
+[33mcommit 6efd4b676c6ecda74b06a8931898170856f605f0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 10:10:03 2021 +0900
+
+    e_drive 다운로드 화면 이미지 변경
+
+[33mcommit abdc81509764b3967096cce7e7a170ef738d040e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 10:02:15 2021 +0900
+
+    펌웨어 업데이트 메뉴얼에 공통으로 사용하는 파일 추가
+
+[33mcommit bafa1693864e439291c1aebba680d254318161ce[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 13 08:37:59 2021 +0900
+
+    코딩 카, 코딩 드론 펌웨어 업데이트 메뉴얼 작성 시작
+
+[33mcommit 9de2de05a9d154a921e9d30000625c1a49c2d21a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 6 13:49:50 2021 +0900
+
+    Instantly 오타 수정
+
+[33mcommit f5c52ab0d243877559eb06b37aeb17f944e466bc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 2 09:20:42 2021 +0900
+
+    rust 라이브러리에 대한 정보 업데이트
+
+[33mcommit c46a7ea6b8edfd533dc691ddfce3dba6216398aa[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 2 07:29:33 2021 +0900
+
+    문서 날짜 수정
+
+[33mcommit 67302c0ee53cb8d71431e3117222ce35a3c7afe6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 2 07:28:22 2021 +0900
+
+    macOS에 대한 펌웨어 업데이트 메뉴얼 추가
+
+[33mcommit b4bd29589ce0457f1174043c64768bda2385d86d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 14:05:42 2021 +0900
+
+    linux에서 펌웨어 업데이트하는 메뉴얼 추가
+
+[33mcommit c442b621baf3fc29900a16e08c8b3ee80356d03f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 12:17:38 2021 +0900
+
+    drone4autoupdaterlight의 폴더 이미지 변경
+
+[33mcommit 383db0cddba3c190cee445224e7c2138dd3eb026[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 12:10:39 2021 +0900
+
+    잘못된 설명 수정
+
+[33mcommit 769922dc9d7d2913ae83567ea4ebb9145df57f4c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 12:10:00 2021 +0900
+
+    내부 제목 수정
+
+[33mcommit 5f78dcd29783e354f62f45b8925be89acdca92b0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 12:08:04 2021 +0900
+
+    펌웨어 업데이트 프로그램의 라즈베리파이 버전 문서 추가
+
+[33mcommit 6bf959abb7708e2fe14488d2e7bd195b5ba462b9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 11:11:49 2021 +0900
+
+    drone_4_updater_windows 펌웨어 업데이트 문서 추가
+
+[33mcommit dc9c22c8c9d4fa4d74a39d33b18d2d485d4c7c2a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 10:59:48 2021 +0900
+
+    E-Drone drone4autoupdaterlight 문서 업데이트
+
+[33mcommit be1491c1b6addcf95ed4f1f3e1908e7161768a9a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 10:53:56 2021 +0900
+
+    s가 빠져서 수정
+
+[33mcommit 174f35a1533890e7933a3513588eef2e475730d1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 1 10:34:27 2021 +0900
+
+    새로운 펌웨어 업데이트 프로그램에 대한 링크와 설명에 대한 링크 추가
+
+[33mcommit 30f13ea77d36ca4a90df5c322915dd7482005e5a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 31 15:09:10 2021 +0900
+
+    라즈베리파이 펌웨어 업데이트 프로그램 GUI 추가
+
+[33mcommit fbc6ab32cb6f920c185ff35aad8f619aca05a05a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 31 14:33:07 2021 +0900
+
+    E-Drone 페이지에 macOS, linux 용 펌웨어 업데이트 프로그램을 추가
+
+[33mcommit e72b73a5c72ea629f33bc6a53d0dd8ee1fd43c1c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 24 11:39:31 2021 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit 82b3f20d75b2f84b8d32398e393adb26571a2a6d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 16 12:36:39 2021 +0900
+
+    rust crates 링크 수정
+
+[33mcommit 1fc89991d1652654c2a11886b85f2d733c58fce8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 16 11:43:57 2021 +0900
+
+    rust 라이브러리에 대한 내용 업데이트
+
+[33mcommit ea570bcc12bcbe0f134b11f51b63e56c33c50961[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 15 13:57:40 2021 +0900
+
+    에러 분류 사이사이에 구분 선을 넣음
+
+[33mcommit 539b36e009cfe8ffcb51b3b58ee4bd111c3e81fd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 15 08:56:14 2021 +0900
+
+    E-Drone 오류 메세지 정보 추가
+
+[33mcommit 6a78cedf5236660eb3c4e2280a8782cf4f13dc57[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 12 09:25:58 2021 +0900
+
+    e_drone rust 라이브러리 업데이트
+
+[33mcommit e89643317e64e345d80fd6afc1bbd87354e89847[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Mar 4 15:24:28 2021 +0900
+
+    e_drone 페이지에 rust 라이브러리 항목 추가
+
+[33mcommit 59f352032ad37c5b165a8b390b810170ef63606c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Feb 22 07:24:33 2021 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit 5959b93103208900b3dfc5be63065c7b89e16355[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 17 15:01:46 2021 +0900
+
+    코딩카 펌웨어 업데이트
+
+[33mcommit 80a1d3418178afbb32cebc4556432fd2d9626cf8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 16 08:04:24 2021 +0900
+
+    날짜 수정 빠졌던 부분 확인하여 변경
+
+[33mcommit 69ae1ed2c2af186fb11229f0c1142c56bd742c9c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 16 07:56:33 2021 +0900
+
+    E-Drone, 코딩 드론 펌웨어 업데이트
+
+[33mcommit e1d9592bd7ebf07eefa4877973b95b5e79467b48[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 28 09:27:49 2021 +0900
+
+    코딩 드론, 배틀 드론의 파이썬 라이브러리에 대한 정보 수정
+
+[33mcommit 19f9ba8d83a384d3a54f663245727f81f2c23fd9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 25 13:32:31 2021 +0900
+
+    오류 수정
+
+[33mcommit a551ffbf63b47e5ab130fccd0b764edf43950d78[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 25 12:35:10 2021 +0900
+
+    e_drive 사용자 설명서 업데이트
+
+[33mcommit 84788a8251a77b3f02f80c5dbf288fb27697abdd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 25 11:49:04 2021 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit 740a2e7f1882294978ca7f414dced6082b4d3e91[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 25 11:32:24 2021 +0900
+
+    코딩카 펌웨어 업데이트
+
+[33mcommit 0c066b5adaf731fe36623e5e0da9400a39f3c28b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 18 13:58:36 2021 +0900
+
+    파이썬 라이브러리 메뉴얼 링크 오류 수정
+
+[33mcommit 99020e524cee395fd334b2bfed94f44705fc092e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 14 14:54:24 2021 +0900
+
+    파이썬 업데이트 링크 수정
+
+[33mcommit 653890f01a4a3bd6502d2e9d5630b74c0a974894[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 14 14:52:18 2021 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit 5da808de77b60c1ba8ff6d87fb1843e6ceeeb50d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 10:21:37 2021 +0900
+
+    코딩 드론 펌웨어 업데이트 이미지 변경
+
+[33mcommit 5d54f7e68ac61a151c0647fb3cbaf7c4508d4424[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 07:41:54 2021 +0900
+
+    코딩 드론 이슈 페이지 링크 수정
+
+[33mcommit 2d7770a2ede6f806ba4fb9e5426f8f8e91d4279d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 07:33:32 2021 +0900
+
+    e_drone, coding car도 가장 최신 버전 펌웨어 링크를 변경
+
+[33mcommit 4ef79d621235fed3a8f7e3464c6784eee512d7ad[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 07:29:11 2021 +0900
+
+    문서 날짜 수정, 파이썬으로 펌웨어 업데이트 하는 문서에 대한 링크 주석 처리
+
+[33mcommit a2c5f2a1906f2f2449a3ec81f52af407dc7e584f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 07:23:46 2021 +0900
+
+    펌웨어 업데이트 프로그램 변경(화면의 label을 모두 textbox로 교체)으로 코딩 최신 펌웨어 링크도 변경
+
+[33mcommit 70cc7ac23b3ef0b4cbcd8d784fb51301fe449dbb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 07:16:24 2021 +0900
+
+    코딩 드론 업데이트 메뉴얼 이미지 변경
+
+[33mcommit 07420deaeefc0c6c9e5194954015624066d4afed[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 13 06:33:34 2021 +0900
+
+    코딩 드론 페이지 펌웨어 업데이트 부분 수정
+
+[33mcommit 95cfd81593e81c6095aac1ff0cae945befa6ff75[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 5 15:35:50 2021 +0900
+
+    e_drone 파이썬 라이브러리 commandline 설명 수정
+
+[33mcommit 7ca538783853e77dba621e1c68b18214f7d60d96[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 5 14:18:23 2021 +0900
+
+    e_drone 라이브러리 수정 사항을 라이브러리 메뉴얼에 반영 중
+
+[33mcommit 2eaaf19e3b52c32b38bb02565d52fedb1b9dda82[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 5 14:00:22 2021 +0900
+
+    파이썬 라이브러리 업데이트 로그 작성, 파이썬 라이브러리 메뉴얼 수정 중
+
+[33mcommit 304c32d879ba9d76b460e2a5dd30d0a3d601fb6b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 5 12:27:17 2021 +0900
+
+    중복된 설명 제거
+
+[33mcommit 55e50f58e336f11995fcce3deb1657427b4fbca0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 5 12:24:32 2021 +0900
+
+    e_drone python 라이브러리 command line 설명에 이미지를 추가함
+
+[33mcommit 1536530e01cc8cfcef552c0312429b063e9b085d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 5 11:54:54 2021 +0900
+
+    파이썬 라이브러리 업데이트
+
+[33mcommit 0d3a189295d6f67d7ae872ee015e562937d81ac2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 4 15:18:50 2021 +0900
+
+    e_drone 파이썬 라이브러리 커맨드라인 명령 문서 수정 작업 중
+
+[33mcommit df79d0c0d880fd21b78da165344fe7f2a09cd258[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 4 11:43:55 2021 +0900
+
+    e_drone 파이썬 라이브러리 문서 수정 중
+
+[33mcommit 43eccbb408fc8e3f9274d3b0b59bb2ca8f930463[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 4 11:14:43 2021 +0900
+
+    E-Drone 업데이트 내역 수정
+
+[33mcommit 2fab88c93b8b20181137f87beaf5cb540e0fc0ac[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 4 11:10:53 2021 +0900
+
+    E-Drone 펌웨어 업데이트 내역 추가
+
+[33mcommit 56488dc5edad899b6394cb5479d5eba95622ee3e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 4 10:50:43 2021 +0900
+
+    E-Drone(4m) 펌웨어 업데이트
+
+[33mcommit 7d1e30ac4a533d51af8f0c7bacb416056409d345[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 22 10:58:06 2020 +0900
+
+    E-Drone 조종기 펌웨어 업데이트
+
+[33mcommit 205897c82321266ffd47c966d140a7bbc6216088[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 21 14:26:46 2020 +0900
+
+    E-Drone 조종기 LED 제어관련 문제 수정하여 업데이트
+
+[33mcommit 12293206cfdf2d0c172f0bc67b386cab6010f455[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 25 07:27:18 2020 +0900
+
+    배틀 드론 사용자 설명서 수정
+
+[33mcommit 6d2e2b3ca5a336501823dd96256cbafd5e6fc482[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 11 09:36:34 2020 +0900
+
+    구글 그룹스 아이콘 변경, forum/index.md 파일 제거
+
+[33mcommit cd7cbaa46437ec070d3e88408adc68c063b6fea6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 11 09:17:14 2020 +0900
+
+    Google Groups BYROBOT을 Forum으로 바꾸고 폰트 색상 변경
+
+[33mcommit 454e8e7889d7652732ced7c11dafb879638cddb6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 11 09:14:42 2020 +0900
+
+    아이콘 색상 변경
+
+[33mcommit 96ae48f4ac369d7c71cb34e0bd8b0f4a8d2c55c0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 11 09:06:42 2020 +0900
+
+    구글 그룹스 정책 변경으로 창 내부에 삽입이 안되도록 변경된다고 함. 그래서 미리 제거하고 제품 페이지에 링크를 추가하고 페이지 하단에도 연결 가능한 아이콘 추가
+
+[33mcommit b1154ab70a9dea59f6312ce6cf10dd432c8b7940[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 9 11:28:36 2020 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit 1ff116e038164e704bf31e97036906d09326623c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 9 08:20:47 2020 +0900
+
+    E-Drone, Coding Drone fhss 업데이트
+
+[33mcommit b2a8e8175452ac9b620ff2bab07f8661ab048263[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Nov 6 12:00:52 2020 +0900
+
+    E-Drone, Coding Drone 펌웨어 업데이트
+
+[33mcommit 0aab3eba2b4552c2a733886d194bc4e51618ce6e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 23 15:03:13 2020 +0900
+
+    펌웨어 업데이트 링크 수정
+
+[33mcommit 1251d2419ab2e5e673f6b8c0e14c0f953f0c518f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 23 15:01:22 2020 +0900
+
+    E-Drone, 코딩 드론 펌웨어 업데이트
+
+[33mcommit fac93f53ccca1924e5bd66e457d493427b7b1cd2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Oct 22 13:54:35 2020 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 2ce19fbb90f215c5e871ef00270fe123f9c0fd42[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 14 08:19:52 2020 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit 98f743f7871ad936fef2482ec2d8314d751b965c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 13 14:08:34 2020 +0900
+
+    코딩 드론 펌웨어 업데이트
+
+[33mcommit 7238a26fa3f5a80f1e4c9b5b3750d5a3826e6d94[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 29 11:31:45 2020 +0900
+
+    오타 수정
+
+[33mcommit a50b865e4b38cf7a49b245fa2e080f220b9c1c34[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 29 11:27:41 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 345cc639db180803e9d460ab599d19b62ab6b0bc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 22 07:00:44 2020 +0900
+
+    업데이트 내용 수정
+
+[33mcommit 5d6de45c9d84dbd736dc09e52df3ad8f2f7cc68e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 22 06:45:13 2020 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit d5eba895e3071f811fa060ec5e90092fcd6ffb58[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 15 15:24:19 2020 +0900
+
+    변경된 버튼 누르기에 대한 설명 적용
+
+[33mcommit 4764a7b52f422b9b0d0c0e7f6d4f56c9df7b31b6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 15 15:14:10 2020 +0900
+
+    코딩카 펌웨어 업데이트
+
+[33mcommit 9568b0a146b7d86e163ec964975844c188f7ec30[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 3 08:36:21 2020 +0900
+
+    e_drone 파이썬 라이브러리 업데이트
+
+[33mcommit 09d0c4ad0abf1b240f2c7837c765de3be48b4c3d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 3 07:32:53 2020 +0900
+
+    파이썬 라이브러리 업데이트 내용 추가
+
+[33mcommit ce2103f1127e49f17aec5eb6738c4eea4e8c0a02[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 2 10:26:14 2020 +0900
+
+    E-DRONE, CODING CAR, CODING DRONE 펌웨어 업데이트 파일을 통합하여 배포
+
+[33mcommit 1c6ef80364dfa7bc94df1733ddb998fedecdb40d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 1 14:24:30 2020 +0900
+
+    제품 페이지에 업데이트 사항 반영
+
+[33mcommit ab319d2b7313362766fc816b432ffb223775be73[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 1 14:15:03 2020 +0900
+
+    링크 잘못된 것 수정
+
+[33mcommit 43b2a9c8f79d0d1b3fc376714482c5a8f68f2f08[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 1 14:10:08 2020 +0900
+
+    코딩드론 펌웨어 업데이트
+
+[33mcommit 788e63f47057797ae51302d768020745de674304[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Aug 31 10:31:38 2020 +0900
+
+    E-Drone 조종기 펌웨어 업데이트
+
+[33mcommit ba904ee33a9c93d907b48b5ae0b07a3e1d80e307[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jul 8 15:30:45 2020 +0900
+
+    코딩카 펌웨어 업데이트
+
+[33mcommit 1f46362ce7daf802b3558cb09afbb2eaa0422109[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jul 8 12:02:22 2020 +0900
+
+    E-Drone, 조종기 펌웨어 업데이트
+
+[33mcommit 272ef992186747280d9271c8e6866130a287c02a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jun 9 11:57:55 2020 +0900
+
+    셀 클래스 지정 빠진 곳을 확인하여 수정
+
+[33mcommit dda8ef9d9ee37015b977239217b8c611ad2a00b8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jun 9 11:49:06 2020 +0900
+
+    링크 오류 수정
+
+[33mcommit 8fe11e43209aef6485eab9c118bde2088399db3a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jun 9 11:22:48 2020 +0900
+
+    edu 페이지를 tutorial로 링크
+
+[33mcommit 7026a6cfaff45403de92ead996eee7ff729bc453[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed May 13 15:11:50 2020 +0900
+
+    업데이트 뉴스 링크 수정
+
+[33mcommit fbfa3116b90ece281774360f35677a1d1765c1b1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed May 13 13:28:40 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit e9d2a4b5846eacf8052c41f8d7ee82cb386088ce[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed May 13 09:29:21 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 6f84bf210298b4eee8e9a4a26ae119e91c235559[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 29 15:47:16 2020 +0900
+
+    테이블 바탕색의 회색으로 표시되는 부분 수정
+
+[33mcommit 04cfdbaf48ccc50b9a127753c97c4ffdf07d5f74[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 15:11:43 2020 +0900
+
+    코딩카 펌웨어 업데이트
+
+[33mcommit 8fb63ee7841ea58188f1d19e4a2702ef890b507c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 14:46:37 2020 +0900
+
+    배틀 드론 조종기 모드 이미지 변경
+
+[33mcommit fa7388a52e8ed38b08f2c826f6fb3cb34574b3de[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 14:30:21 2020 +0900
+
+    E-Drone 조종기 mode 이미지 변경
+
+[33mcommit fa223597f0e3caaaf3d8e84ba96b8cc33825c882[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 11:08:17 2020 +0900
+
+    텍스트와 테이블 사이에 공간을 띄우지 않으면 테이블이 깨져서 출력되는 것을 확인함
+
+[33mcommit b62aa1baf8d085d498f8ed3d628fd8d2416c1ad3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 11:05:58 2020 +0900
+
+    설명에서 캘리브레이션 항목을 분리
+
+[33mcommit 0dab453a7b3a4b2f7d821d13ed4f784eca619414[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 09:57:51 2020 +0900
+
+    코딩카, 코딩 드론 피아노 카드 테이블 수정
+
+[33mcommit 3f619900091ef1724b212fc491d6b5fe67db4c23[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 08:36:18 2020 +0900
+
+    조종기 화면이 들어간 셀에 배경색을 넣음
+
+[33mcommit 7cdfbcc263622b17d1a6f7422ae83d5f096354c8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 28 08:25:48 2020 +0900
+
+    조종기 화면 이미지의 바탕색을 밝은 색으로 변경
+
+[33mcommit b07fccf41bb0561ef3281a97011f71385ecfb40c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 27 15:21:23 2020 +0900
+
+    버튼 이름 변경
+
+[33mcommit 467dcbb1f426baef3072a46889dd639db66f193c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 27 15:17:57 2020 +0900
+
+    문서 오류 수정
+
+[33mcommit 688d4e53daa22877bba7b5f07f144efe861205f9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 27 14:46:10 2020 +0900
+
+    코딩 드론 사용자 설명서에 코딩카에서 있었으나 코딩 드론에는 빠져있었던 설명들 추가(버튼 사용, 동작 모드, 카드 등)
+
+[33mcommit e71e40b2dee7c77d3ef0bd7a31f931f23cd597a9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 20 06:42:54 2020 +0900
+
+    전체 제품 문서의 상단 링크 테이블 태그 배치 조정
+
+[33mcommit 6a5ba4bdc9c95eb6c919af08d2095126a711d57f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 20 06:28:08 2020 +0900
+
+    테이블 내 html 테그 위치 조정
+
+[33mcommit a298335cdd1a051347710d5c90325188d409951d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 20 06:23:18 2020 +0900
+
+    petrone 문서 링크 태그 위치 조정
+
+[33mcommit 85dee0691a094e7cbe4b6d4048df28e3a17a8003[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 14 14:10:48 2020 +0900
+
+    petrone 문서 html 태그 잘못된 부분 수정
+
+[33mcommit 582a6d0f9a930439e83a626ee9c397b95dca5b84[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 14 10:51:40 2020 +0900
+
+    모드 구분 팀 글자에 색을 넣음
+
+[33mcommit 5cfc57ed49c0ef59f3b6d5a438efe643fc72ce06[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 14 10:47:50 2020 +0900
+
+    규칙 설명 순서 변경
+
+[33mcommit 805566116506dee32ec47a554b98b6e060b25336[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 14 10:34:24 2020 +0900
+
+    장전 시간 및 피격 시간 조정
+
+[33mcommit 7189c7e36e3203a5dc592dd773ea5e7b07951ea3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 13:32:21 2020 +0900
+
+    페어링 설명을 줄 단위로 구분
+
+[33mcommit 4b51cb08d731e3fdc04eff0473a18f8fa6a4d425[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 12:31:52 2020 +0900
+
+    span left, right에 문제가 있는 것으로 보여 이름을 변경
+
+[33mcommit 2f57e9de628e97e80f382a9f52303c79df957e29[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 12:25:27 2020 +0900
+
+    미리보기 화면에서 정상으로 보이는데 github page에서는 글자 위치가 바뀌어서 나오고 있음. 그래서 일단 잘못된 부분만 먼저 수정
+
+[33mcommit 8342cf9f59d674f630a45e8a8505b94a5f1c0746[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 12:19:39 2020 +0900
+
+    특수 무기 설명에 단어 단위로 색을 넣음
+
+[33mcommit ca6635f9c776a360be941387a64da32935e7d133[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 12:09:39 2020 +0900
+
+    배틀 룰을 일부 변경하였습니다.
+
+[33mcommit 3c7d89f327c8908044448b63afce08f99ff47266[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 10:34:00 2020 +0900
+
+    비행기->드론으로 수정
+
+[33mcommit 21954446a4f91ce32a534bad972138c6c9726bdf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 10:32:32 2020 +0900
+
+    표 배경색 수정
+
+[33mcommit 3adf054b7fffde6d0ceb0cfc53f48cbea8bd0a33[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 10:20:26 2020 +0900
+
+    표 오류 수정
+
+[33mcommit d5de26daa65fd1c3e2862a5028d582612c7b6cc1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 10:17:28 2020 +0900
+
+    배틀 드론 사용자 설명서 배틀부분 상세 설명 수정
+
+[33mcommit 9980dca274f9d3ce1495dde42e6ace9baf0542ec[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 13 10:11:28 2020 +0900
+
+    배틀 드론 사용자 설명서 배틀부분 상세 설명 추가
+
+[33mcommit 08602f0f151edfa4b706cf94de515ea6fb985a53[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 10 10:50:22 2020 +0900
+
+    coding drone 스펙 표 색상 배치 잘못된 것 수정
+
+[33mcommit 886c377243aadad97e148bbd4371fa7ff93967c0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 10 06:43:53 2020 +0900
+
+    코딩 드론 스펙 수정
+
+[33mcommit b3f44808d95772ceefe1979bafcd03a1a42835d9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 10 06:32:22 2020 +0900
+
+    mode 표 모양에 문제가 있어 class 이름을 변경해봄
+
+[33mcommit 285c30d3a83cae955b57ee2ef37b6191f5fc74cf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 10 06:27:38 2020 +0900
+
+    e_drone, coding_drone MODE의 방향 표시에 색을 부여함
+
+[33mcommit a502b40d6e112aec8c792a3c3ebdf8ea5b802a63[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 10 06:03:32 2020 +0900
+
+    coding_drone 문서 링크 오류 수정
+
+[33mcommit e17099b89a4cad78cd00b05fe505febdfdd476d2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 9 07:11:28 2020 +0900
+
+    코딩카, 페트론, 페트론 V2 제품 이미지를 png로 변경
+
+[33mcommit ab61320753d660126ee9f52e95ce13aa464d1bb6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 14:07:37 2020 +0900
+
+    drone fighter, petrone v2 페이지에 엔트리 링크 추가
+
+[33mcommit e4034534e9489e4feb5d35e3ea83b2a13ec1d7dc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 13:48:13 2020 +0900
+
+    software 페이지 제거, 모든 제품 페이지에 style 적용, product 페이지에 배틀 드론, 코딩 드론 노출
+
+[33mcommit 400521ce27ffe835b3e9f5b26ef15855e298c43d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 11:01:48 2020 +0900
+
+    설명을 인용 대신 표에 넣음
+
+[33mcommit 3f64ac4a5b3edcc7fc6f938fa48bf3bb3a15bdab[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 10:16:49 2020 +0900
+
+    배틀 드론 사용자 설명서의 이미지 크기를 줄임
+
+[33mcommit d991d623a46733e2ecc01e6aff64f2fb65e3a28a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 10:15:23 2020 +0900
+
+    배틀 설명 추가
+
+[33mcommit efb171366facfa4ec1b9da43229dcf480490cb76[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 10:10:48 2020 +0900
+
+    배틀 드론 사용자 설명서 페어링, 배틀 모드에 대한 설명 추가
+
+[33mcommit ccb2c11ef50d1874ed759efc9cdd4ac5317c6fab[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 09:36:48 2020 +0900
+
+    배틀 드론 사용자 설명서 이미지의 상하단 여백을 제거
+
+[33mcommit dd492efe6ac475f59409aeac608503efc02f9eca[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 09:33:18 2020 +0900
+
+    배틀 드론 이미지 파일 잘못 변경된 것을 수정
+
+[33mcommit cb9e060c75664adf304d9b2cf2289b53df92d4b7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 09:30:42 2020 +0900
+
+    product 페이지 홀수 짝수 위치의 hovering 색 다르게 함
+
+[33mcommit 00128f0dad7a82978ed4c4294969cb0600470cef[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 09:18:06 2020 +0900
+
+    petrone_v2 펌웨어 업데이트 문서의 이미지 수정
+
+[33mcommit 598ccb60070d39aeea13a063cde3ab787e82ebb5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 09:14:53 2020 +0900
+
+    코딩카 업데이트 메뉴얼 이미지 수정
+
+[33mcommit da57eccf3c1c5d3813d3c02ec5ac8515ae9a85fc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 08:55:55 2020 +0900
+
+    td:hover 이벤트 때문에 jpg 파일들을 png로 변경 중
+
+[33mcommit 8d3893cd937cf7998c745a52e3e6f446ce0f3120[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 08:42:04 2020 +0900
+
+    펌웨어 업데이트 로그 파일 제거
+
+[33mcommit 4a344e8551394c27590343550cdbbbc790f135aa[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 08:39:58 2020 +0900
+
+    coding drone 프로토콜 문서 삭제(e_drone 문서를 참조하도록 할 예정)
+
+[33mcommit 77e0bfc1dd4818e78ec063e85b30a375410a88ef[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 8 08:20:49 2020 +0900
+
+    코딩 드론 오토 업데이트 페이지 제거
+
+[33mcommit 6ef235afe9eeac28c87704c84c60a7ad69420d20[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 15:08:11 2020 +0900
+
+    e_drone 사용자 설명서 모드에 대한 설명중 충에 대한 부분을 열로 각각 분리함
+
+[33mcommit 3ed528e98b5439cbc1d22ea3257a7417b881f974[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 14:43:03 2020 +0900
+
+    E-Drone 사용자 설명서 수정(표에 스타일 적용)
+
+[33mcommit 8e1cf4c735bef58f9c0f49ae70314b9bcd833758[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 14:23:44 2020 +0900
+
+    e_drone 펌웨어 업데이트 문서 수정, drone4autoupdater 에 대한 문서 삭제
+
+[33mcommit 8a3b382c1b0196a8714b60354975fe90d7e170a1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 13:58:16 2020 +0900
+
+    용량이 큰 png 파일 일부를 jpg로 변경함
+
+[33mcommit ad88f6abe04906ee259852d4037197ade978d41e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 13:46:24 2020 +0900
+
+    배틀 드론 이미지 추가
+
+[33mcommit 6264a54120bfc9d38bb4bea4229ab3ef01af5c6b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 12:34:45 2020 +0900
+
+    battle drone 사용자 설명서 추가
+
+[33mcommit c8700ba1880382b342e150018b17cd37ebcd1612[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 7 10:45:41 2020 +0900
+
+    dronefighter2017을 drone_fighter로 변경, nightly 페이지에 battle_dorne 추가
+
+[33mcommit 022d608507f35c6f36a931f91bb181149eda82d7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 2 09:20:58 2020 +0900
+
+    product의 nightly 페이지 추가
+
+[33mcommit 5adad1f08d112e3090aa274632db55d9d6b68679[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 2 08:36:48 2020 +0900
+
+    nightly.md 문서 작업에 대한 설명을 추가함
+
+[33mcommit 124a998244153acff96dff5a8aa7ca9e708cb7b5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 2 08:05:45 2020 +0900
+
+    E-Drone 제품 페이지 업데이트
+
+[33mcommit 74d3a4276747069eda5b005991f24be90ffb436e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 1 15:59:00 2020 +0900
+
+    엔트리 부분 수정
+
+[33mcommit 30d43a7ab9b51a7f502eda0d4493a3ebba0e5dbc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 1 15:53:45 2020 +0900
+
+    세미콜론 위치 변경
+
+[33mcommit 81de1af518b55afd79ba1ba81acb14f4744640b6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 1 15:50:15 2020 +0900
+
+    css 우선 순위 강제
+
+[33mcommit d43914e862d328ae7851b0dc235f6b27b38e0029[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 1 15:47:48 2020 +0900
+
+    오타 수정
+
+[33mcommit f26d176c28c3b22b982f1a98d07849d23991c5ad[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 1 15:35:19 2020 +0900
+
+    제품 페이지 정식 업데이트 전 화면 확인을 위한 nightly 페이지 추가(다른 index에도 적용할 예정)
+
+[33mcommit 2b0dfaa392edaaa2617e88609abe567c4fe33d5b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 31 14:44:15 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit fde7f8e333ba9c7c8bd07fee0119b85a55676542[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Mar 26 15:41:48 2020 +0900
+
+    e_drone, e_drive 파이썬 프로젝트 경로 변경된 것을 확인하여 수정함
+
+[33mcommit 64fd88b8bedf527939df3c80f6e9373ac44eae08[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Feb 27 13:44:28 2020 +0900
+
+    맞춤법 검사 적용
+
+[33mcommit a653b5702c24c50403ab1d0f82b52725d6d572a9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Feb 27 10:30:03 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 92b694037b530311b7e0bbc6c4699c9f86a1ddc7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Feb 24 10:22:56 2020 +0900
+
+    펌웨어 링크 변경 빠진 부분 수정
+
+[33mcommit a8cde8b912ac335602db03d37a20af599a7140bf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Feb 24 10:01:45 2020 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit bfc59daf3958229eea2c0d1a4275aa646e3c442b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Feb 14 16:10:03 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit b8ca4f69717a23f3a9500067116ee5cbc1a82436[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Feb 13 15:20:21 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit ebfc9b05b0a46f9dd3b1fa9768e847996fb81234[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 4 15:58:57 2020 +0900
+
+    E-Drone의 BodyNone을 0x10에서 0x20으로 변경
+
+[33mcommit 753bb83bfeefa868d4f7689ac6b4f4da36d989b6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 31 16:20:08 2020 +0900
+
+    e_drone 파이썬 라이브러리에 대한 업데이트 로그 문서 추가
+
+[33mcommit d7736981a34bcea1b83eb885ae1764cc9d84ff2b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 31 16:04:34 2020 +0900
+
+    'E-DRONE'을 'CODING DRONE'으로 변경, 'E-Drone*'을 'Coding Drone*'으로 변경
+
+[33mcommit b0b3036484a51fe85eba6e77afb6a45c0e479a78[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 31 15:49:16 2020 +0900
+
+    링크 경로를 상대 경로로 변경 테스트
+
+[33mcommit d0c06f1b5ef75dffda02d5a93201f97b362f09e9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 31 15:46:23 2020 +0900
+
+    'E-Drone' 을 'Coding Drone'으로 변경
+
+[33mcommit 926a165112bd8aabdc8b1d83d4bd62d5e9e62b5b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 31 15:44:01 2020 +0900
+
+    e_drone 문서를 가져와서 coding_drone 문서 작성 시작
+
+[33mcommit 66f4cae520a557fdf535303db6c9a3ac37d47bda[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 29 15:52:55 2020 +0900
+
+    python e_drone 라이브러리 예제 모두 목록을 넣음
+
+[33mcommit 312c3afbe011d61c5199bcd3978454830efb21c9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 29 15:41:29 2020 +0900
+
+    예제에 목록을 테스트로 넣어봄
+
+[33mcommit fc06b47a86d5af77c8df23ed2eae32ef729d7041[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 29 15:07:09 2020 +0900
+
+    e_drone 파이썬 라이브러리 메뉴얼 LED 함수 목록에 sendLightDefaultColor 추가
+
+[33mcommit 7a766c22a9ff31188754767cea5692c41c3c6bb9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 29 14:26:07 2020 +0900
+
+    e_drone 파이썬 라이브러리 업데이트
+
+[33mcommit fdcd4627bf97c0020e750c81a50f422ef7146cad[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 22 11:01:50 2020 +0900
+
+    GO CAR 사용자 설명서 목차 번호 수정
+
+[33mcommit 177771afeaadd198310604c239f9bfa25e9940c7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 21 11:47:48 2020 +0900
+
+    E-Drone 파이썬 라이브러리 업데이트
+    
+    1. time.clock() 함수가 파이썬 3.8부터 제거됨. perf_counter()로 대체
+
+[33mcommit 4b7e2c8e9e5aa7ea0d0d1b4faa47ae4f2d0ae285[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 14:42:03 2020 +0900
+
+    업데이트 빠진 내용 추가 작성
+
+[33mcommit 95bf7646e3037a8445b6724589fd4f9d5bdc474c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 14:24:13 2020 +0900
+
+    Drone4AutoSetup 프로그램에 대한 설명 추가
+
+[33mcommit 6c52acbfaa5cdffad7c00769e2c14705a8999fe1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 13:41:48 2020 +0900
+
+    e_drone 펌웨어 업데이트에 대한 링크
+
+[33mcommit 0a0488dc2310c287eed4d4463cde5306adfaef38[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 13:38:16 2020 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit f41deb289bfd7f7993f48a99281aaf0fff3b58a7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 08:41:11 2020 +0900
+
+    _config.yml 파일까지 원래 상태로 돌림
+
+[33mcommit babf22fcbd5d1807fe0d45561b6a810c0ce4f60c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 08:36:08 2020 +0900
+
+    config.yml 수정
+
+[33mcommit 943c0f2f547c992ca38e9aa2582b33a19031b239[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 08:33:42 2020 +0900
+
+    home.scss 파일 제거
+
+[33mcommit 8c26b4dd234ea5494cc27e93393eae8790a1ae54[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 08:29:39 2020 +0900
+
+    테마 원본의 home이 다시 나타나는 것을 확인하여 제거함
+
+[33mcommit ee52b2f99134017ccf4039b6b2e866d9de074edc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 16 08:08:49 2020 +0900
+
+    시작 페이지에 테마가 적용되지 않는 문제를 수정하고자 다른 프로젝트의 파일을 복사해봄
+
+[33mcommit 16cc540701f3f83456f26cd6af6acd9d4f8fb86f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jan 14 08:22:32 2020 +0900
+
+    사용자 문서 수정
+
+[33mcommit 3d55febb093168b5502232cf8ec35b7a59e44428[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 13 14:54:05 2020 +0900
+
+    e_drive 파이썬 라이브러리 버전 정보 수정
+
+[33mcommit cd79f5ab091f062957d46c0a0ac581254631ab7c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 13 14:26:17 2020 +0900
+
+    카드 코딩 표에 줄넘김 추가
+
+[33mcommit a8c8de9fcd312e825e947b40ac5f33c06560508a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 13 14:18:53 2020 +0900
+
+    카드 설명 문서에 줄넘김 추가
+
+[33mcommit 98196ebfaebdda39dc5cf9c03c6a802c4b915f0c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 13 13:36:21 2020 +0900
+
+    card 페이지 링크 오류 수정
+
+[33mcommit 85f9cf2a028bacaf13e69720900bc3cb1343734b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 13 11:58:38 2020 +0900
+
+    e_drive, e_drone 프로토콜 문서 업데이트
+
+[33mcommit 73dd3ec2e118a76ec6b4f335af5f38917579e620[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 13 10:01:26 2020 +0900
+
+    E-Drone 카드 구조체 업데이트
+
+[33mcommit da09247fc07c2bc7bfb17b16c5f1dac00ff0df40[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 10 16:28:40 2020 +0900
+
+    e_drone 프로토콜 문서 업데이트 중
+
+[33mcommit 6403dd8e613035b0fa8f32d026881ff80fe71362[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 10 08:27:43 2020 +0900
+
+    drone fighter 항목 링크 부분 글자색 배치 변경
+
+[33mcommit c7c11c55dbda382ef195ca77fb428cf92ec692d8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 10 08:16:02 2020 +0900
+
+    dronefighter, petrone 문서 디자인 수정
+
+[33mcommit 1ce20e18f6de4ca13aadd9f2c6c75f089a5a8618[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 10 07:44:44 2020 +0900
+
+    petrone_v2 페이지 디자인 변경
+
+[33mcommit 5ebd1cabf3a5545b12e7e589311bc5eea2ca9f57[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 16:19:10 2020 +0900
+
+    빈 공간에 a 테그를 넣었더니 &nbsp;를 넣은 것처럼 공간이 넓어져서 다시 원위치로 돌림
+
+[33mcommit 6dc31e3d68136ff33b2062ca53dcd991f69fd4b5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 16:14:02 2020 +0900
+
+    a 태그 위치 수정
+
+[33mcommit 1794e1a70ec182c8605de1d2f10aa58f120a5354[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 16:06:51 2020 +0900
+
+    e_drone 테이블도 변경
+
+[33mcommit 44fd23e150914dd1c48c1caff80c96a82372615d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 16:03:20 2020 +0900
+
+    항목 선택 테이블을 2열로 변경
+
+[33mcommit ed83da50202a5fa48843243da4fe6c42f4aa3d16[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 15:50:26 2020 +0900
+
+    e_drone 페이지도 e_drive와 동일한 구조로 변경
+
+[33mcommit fccbb2fafe65c5d8714a151c6892910039cedfaf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 15:38:30 2020 +0900
+
+    표와 이미지를 분리
+
+[33mcommit aad19f1d38ba2eb32cc56c69c6f5c98e32c4c33f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 15:30:41 2020 +0900
+
+    배경색 변경이 미리보기와 다르게 나와서 다시 수정함(tr에 정의한 속성을 td로 옮김)
+
+[33mcommit 7d218ac0ec1dcf61f4a474244f938f5c1c4e2cff[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 15:24:25 2020 +0900
+
+    표 배경색 수정
+
+[33mcommit 38bf59417cce7321de00186a61ecf88199fe9518[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 12:27:41 2020 +0900
+
+    표배경색을 임의로 지정해봄
+
+[33mcommit 7e893a202271bef0d694aeebf6ac7a59b6dd5023[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 8 12:01:14 2020 +0900
+
+    e_drive, e_drone 페이지에서 document 페이지를 최상단으로 끌어올림
+
+[33mcommit c0b65b3092366a3a908305f4d74cbfa6dae8c321[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 15:18:23 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit ba6f1ac7270973567487568062ef606e010f466b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 10:52:39 2020 +0900
+
+    news 링크 추가, e_drive 버튼 입력 횟수에 따른 동작 변경 바뀐 것 적용
+
+[33mcommit a4de5b62318d3ddb1e8130d144ef03e81db9b6d4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 10:38:30 2020 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit c3f456796c7080a11f7d7663f4e75629512051d6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 09:48:38 2020 +0900
+
+    표 오류 수정
+
+[33mcommit 956988661e8c59039adbb6988d494df5d2683dbd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 09:43:28 2020 +0900
+
+    사용자 설명서 문서에 동일한 내용이 반복되어 있던 것을 수정
+
+[33mcommit 6ee41266320bf358c3108862aeb4982acd36c1f6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 09:35:38 2020 +0900
+
+    피아노모드 세로 배치 제거, 가로보기를 1옥타브 단위로 변경
+
+[33mcommit 91d1857ceb5def3fe41058c947607f70ff1493da[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 2 09:16:40 2020 +0900
+
+    피아노모드 가로 보기를 넣었으나 3개 옥타브를 나란히 놓으면 공간을 크게 차지하여 1옥타브 단위로 넣기로 함
+
+[33mcommit 3aaad3d0b10943f38962f70dd44030c74c03d344[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 12:39:44 2019 +0900
+
+    표 설명 잘못된 것 수정
+
+[33mcommit 145f36986e0dc707bd79b3382883ef293cd551d5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:34:47 2019 +0900
+
+    노란색 설정이 빠진것을 확인하여 수정함
+
+[33mcommit 70a8f2de11f52dc354ae2518eaee810fa209adf8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:32:40 2019 +0900
+
+    style="background-color:#000000" 는 정상 작동하는 것을 확인하여 모든 색을 이 명령어를 사용하는 것으로 변경
+
+[33mcommit 501e879f09c5a16fec30df701746af61a9846436[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:29:12 2019 +0900
+
+    td 에 직접 스타일을 적용하는 방법 사용
+
+[33mcommit 12faee28caca87bda3d8a4f59bf781a79611f903[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:26:32 2019 +0900
+
+    search.json 파일이 빠진 것을 확인하여 다른 곳에서 복사해옴
+
+[33mcommit 6812223654fb5c71822aac454fca164e4b898ead[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:22:32 2019 +0900
+
+    배경색에 style class를 사용하는 것으로 변경해봄
+
+[33mcommit 0789f26d325f1f2ab9f543ab4d35a46cdbe99785[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:11:22 2019 +0900
+
+    text로 색상을 설정했을 때 white, yellow, cyan, magenta가 회색으로 표시되는 문제 확인함
+    
+    1. #FFFFFFFF 은 정상 동작하는지 확인차 테스트 코드를 넣어봄
+
+[33mcommit 54497e25fdbbf4456f70cdc99b65e0cdf4545449[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 11:06:29 2019 +0900
+
+    e_drive 사용사 설명서 작업
+
+[33mcommit 22f1753a36e82670792e265afc1696072f90e517[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 31 10:10:17 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 4870555077cf390a154465b3c4daba2c308d5a75[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 24 15:35:52 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit ca5e738e53f299c9bcc0a149e072bc661f166b5f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 24 10:01:12 2019 +0900
+
+    펌웨어 업데이트 설명 수정
+
+[33mcommit fbfc123b0a5b080d1fb9b2057906aa88f5be0ff4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 24 09:57:25 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 360f105ade78df1ec41f30be9eae48976dc282c6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 19 07:50:49 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 7a9c2ce915a80d44eab0f9215d2b833359d1921a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 18 13:57:09 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 83f44898e608454305d7079b94a6811d08f238e7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 18 13:18:44 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 4de20a3f6285a6247a49c1538a8f6c1ab9f8d5ce[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 18 10:56:33 2019 +0900
+
+    e_drive 펌웨어 버전 수정
+
+[33mcommit f73f879b25afe4963bff49d11eec40965ee0b4fb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 18 10:55:34 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 40c7bfc812d511cf03f76a6d0f95dcea00963dcb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 18 09:39:22 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit f480c58c9eeec4bb5715dbbce25f47a8d3087e0e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 16 07:32:27 2019 +0900
+
+    텍스트 크기 조정
+
+[33mcommit fe65f9522ee95ba3ac6246b7d2b473f7a72ba418[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 16 07:30:20 2019 +0900
+
+    로고를 텍스트에서 이미지로 변경
+
+[33mcommit 9325e010bd8f37c69e2154ee8afa16fa307b1fd5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 13 15:49:18 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit d3bd8d2f872ba02c0c6008e12c7c910fb6f7489c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 10 09:56:30 2019 +0900
+
+    만들었던 코드가 의도대로 출력되지 않음;
+
+[33mcommit 41c2736009bc60614c3035f9799ce49777af7cac[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 10 09:53:02 2019 +0900
+
+    시작 페이지 수정
+
+[33mcommit c077a9f548c56ce5cb1dddcf3d507a4364e7f531[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 6 15:36:30 2019 +0900
+
+    제품 페이지 버전 수정
+
+[33mcommit ebb114f7f4713fbf4bfae314148393acb10731de[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 6 15:33:02 2019 +0900
+
+    e_drive 펌웨어 업데이트 내역을 항목별로 분리
+
+[33mcommit 2e176849c2d835c82ebcf81ab0c714647dc4fed8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 6 15:28:02 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 87860a70d56e3e24a184e828d1b2393e0923f3ab[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Dec 6 08:13:52 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 2f2d7f2f54d00c69a5ae2f068bd8c8998d2bc3bc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 10:09:08 2019 +0900
+
+    products 페이지 다시 수정
+
+[33mcommit 3b1268812b294213c4e665561b0f9cb139a325ec[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 10:06:33 2019 +0900
+
+    products 폴더 위치 변경
+
+[33mcommit fcc46e37b8429c861e0eaa8ba0e3101bc6128cd3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 10:04:07 2019 +0900
+
+    처음 화면 테마 적용이 안되는 문제로 페이지 구조 변경
+
+[33mcommit 0a02de95320b3cb58ca9765afeb0f5318f50d8b8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 09:53:03 2019 +0900
+
+    시작 화면 템플릿 적용이 안되는 문제로 시작 화면을 정상 동작하던 때로 복원해봄
+
+[33mcommit 91ca013bbe66a882ccec14874404938acb8e8188[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 09:40:55 2019 +0900
+
+    화면 문제 발생. 마지막 라인에 공백을 넣은 것이 문제인가하여 삭제해봄
+
+[33mcommit 75e5c2d36475ebeb0216c43a641b39bd658317a3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 09:23:45 2019 +0900
+
+    Drone -> Car 로 변경
+
+[33mcommit 8345984a9eead789670b89cccef79ac96ee2580f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 5 09:22:52 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 1bf5c1aadc800ad3582405eccdf0b12eca240697[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 27 15:04:15 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 4ecbced4fe56a46374ae9ba265d3be1b0de42cdc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 25 09:17:49 2019 +0900
+
+    버젼 -> 버전 으로 변경, e_drive 펌웨어 업데이트 설명 수정
+
+[33mcommit 4c7db093cf3862822d4993e61ea88c93b5ab6d4d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Nov 21 15:09:29 2019 +0900
+
+    업데이트 내용 중 빠진 것 추가
+
+[33mcommit 8b16566b47205bb005ae57787eabaf6b48761ef0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Nov 21 15:04:33 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit a0cd2569ac428acf2b307e76ff155b35bd7f01ba[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 19 10:52:49 2019 +0900
+
+    e_drive 업데이트 설명 추가
+
+[33mcommit 20f2bd57441c8699ac4b4bf2d7eb70bf532c7016[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 19 10:22:59 2019 +0900
+
+    e_drive 업데이트 내용 세부 설명 추가
+
+[33mcommit 3523cb42b5c8051fe3e3b24b70f35e7239ce864e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 19 10:13:58 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit b129250cb3fb627c1696da8753875a1a7b67c9d4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 19 08:02:33 2019 +0900
+
+    news 오류 수정
+
+[33mcommit a3d0208868f496b317af61b57d85154e3d8426d6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 18 16:16:49 2019 +0900
+
+    링크 오타 수정
+
+[33mcommit 21ee6ad948bb1bd1974a319d3042493e82996887[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 18 16:14:35 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 2f1e088d372d28a4f378ef46f75f8035cb0c94b8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 13 12:23:51 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit a825905bfc8c78e2061c577b4769f84e1b55db66[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 12 12:31:15 2019 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit 604c05458e5361d2a1111169828713f4d4690d81[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 12 09:55:03 2019 +0900
+
+    Drone4 프로토콜 문서 업데이트 - 조종기 모드 변경
+
+[33mcommit cd3bba3d2b2695b0746c35c46da1202ef52b324e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Nov 8 10:22:10 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit af2ffce8b70e4568ff2c670e48b09ac79f31b250[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Nov 8 09:46:40 2019 +0900
+
+    e_drive 펌웨어 업데이트 설명 수정
+
+[33mcommit 29fe6d3c13d75764611391f5add5791decef3a9a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Nov 8 09:44:18 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit ccff0949e15e4ce5117a701835f1c889070f74f6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Nov 7 15:15:31 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit f7ebc10153ea24829a1dcb1272b1810bf2599023[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 6 10:07:33 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 128238953d4432da3ef3052268c9b1ee4d87ae51[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 5 10:42:44 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 6c231ea5705d8a8b8a13d1ec0bacf0d2f417f102[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 5 10:02:01 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit adf5c3fc5c987d1024def807419dc6d0649b5032[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 23 15:04:02 2019 +0900
+
+    GOCAR 펌웨어 업데이트
+
+[33mcommit 71c0c9e6fd9b447159004ec24c7f530f8879cdda[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 23 11:04:50 2019 +0900
+
+    GOCAR 펌웨어 업데이트
+
+[33mcommit 45ade308fe953a47cd6eacdf2226d8e0389af507[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 21 09:11:34 2019 +0900
+
+    업데이트 내용 설명 수정
+
+[33mcommit 86f84a9231d0791d34ce22df9947a27f2e4ae56c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 21 08:43:11 2019 +0900
+
+    오타 수정
+
+[33mcommit b2b70a174f64eeaea5292402f43c9f9f05b70cfe[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 21 08:42:07 2019 +0900
+
+    e_drive 업데이트
+
+[33mcommit 9873306a59eddd4f01957ec38d74db09f6139d3b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 21 08:23:08 2019 +0900
+
+    e_drive 핸드팔로잉과 모션 코딩 사용 방법에 대한 세부 설명 추가, 10.18 업데이트 내역에 대한 설명 수정
+
+[33mcommit ff2f4f88a550c8a0fbfee41f5d41bb1119a2849a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 15:48:39 2019 +0900
+
+    코딩카 이미지 변경
+
+[33mcommit ef688a9635ad6746b115c3263f7f5a477e83e1e4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 15:41:25 2019 +0900
+
+    products 페이지 제품 사이에 공백 셀 1행 추가(표 배경색 때문)
+
+[33mcommit 37b8b585a4afef72adf505a50535eeee5b2de64e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 15:38:42 2019 +0900
+
+    products에 GO CAR 페이지 링크 추가
+
+[33mcommit 8df70b773657da54f2eacc64506f4493f9e759bd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 15:27:27 2019 +0900
+
+    new에 페트론 v2 펌웨어 업데이트 기록
+
+[33mcommit 438c567100477e0526d6f7e9166494f2ddeb9d4d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 15:24:18 2019 +0900
+
+    페트론 V2 펌웨어 업데이트
+
+[33mcommit 47d3c24c4e2bb88a0023e7078536646b62828fc2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 12:28:52 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 78041ce041bfc20a538aa6de640034fb71d957f0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 18 10:34:34 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 5a8f159d58cb27ff2c2e8f696ce31d379cdd9abb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Oct 17 15:57:21 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 362d5b1e3a9d8c44dc04ceee54c1433572adeaec[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Oct 17 12:23:12 2019 +0900
+
+    e_drive 펌웨어 업데이트(핸드팔로잉)
+
+[33mcommit 7c037329db3dc2c7f273521a34ff8ff6c48ce934[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 16 15:34:09 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 025c5535ce56146783da172ed6c1ebb1afcb56bc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 15 16:27:23 2019 +0900
+
+    링크 주소 수정
+
+[33mcommit 128b174a573e5fbcc25386666dcf38fbabf04fe5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 15 16:19:24 2019 +0900
+
+    다운로드 링크 수정
+
+[33mcommit ffd0d40b8367311d80fa370b177e3796a101e574[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 15 16:11:24 2019 +0900
+
+    e_drive 펌웨어 업데이트(카드 배치 순서 변경)
+
+[33mcommit 02303e9af259bd2085b8432eb1e108433297d37e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 11 12:17:46 2019 +0900
+
+    표 모양 잘못된 부분 수정
+
+[33mcommit 675a3d33e6f5ec2202dcdbba1ad6e280689a9046[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 11 11:58:15 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit c5afc8f039f26764d2b033540ba65ae10818da78[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 23 16:00:33 2019 +0900
+
+    Issues 링크 오류 수정
+
+[33mcommit 5cd7ebb005ac43a8f9e2301aa2f07b9c00bd7c9a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 23 15:46:15 2019 +0900
+
+    각 제품 페이지에 Issues 링크를 추가함
+
+[33mcommit 18a38f875687b4ad08498d7b28b356e7c73f6ea5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 2 16:09:52 2019 +0900
+
+    표 공백 정리 등
+
+[33mcommit 5b4e9ef2cb70dba8b5de29050ef67149b074d5cc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 2 15:59:21 2019 +0900
+
+    e_drone 문서 업데이트, e_drive 문서 카드 관련 중복 항목 제거
+
+[33mcommit 165860b2465e10b9973257fc479ad934610128dd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Aug 30 16:20:53 2019 +0900
+
+    E-Drive 프로토콜 문서 업데이트
+
+[33mcommit ae7b26c4348ca90d16f7b8ad249b69ecd3ea7082[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Aug 30 16:00:11 2019 +0900
+
+    코드 공백 줄임
+
+[33mcommit a80d8b5f9b2348dbafdef4b68e64307468cb86e5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Aug 30 15:53:34 2019 +0900
+
+    오타 및 설명 수정
+
+[33mcommit 5bad5fc4ccfed99d2baf4ea55e2aab726449706d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Aug 30 15:48:31 2019 +0900
+
+    E-Drone 프로토콜 문서 업데이트
+
+[33mcommit 934f0f28e25a6f53c2cd91fcb02185b7225c81bc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Aug 28 09:36:23 2019 +0900
+
+    E-Drive 펌웨어 업데이트(카드코딩 DataType 위치 조정, class 구조 변경)
+
+[33mcommit 19ad39b5bf037106e5d68467f3067209dcd54b51[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Aug 23 14:17:06 2019 +0900
+
+    E-Drive 펌웨어 업데이트
+
+[33mcommit 8503d09579042767980f4ce50eb4f73ed7b40ac5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Aug 8 10:35:12 2019 +0900
+
+    E-Drive 펌웨어 업데이트
+
+[33mcommit 46c26bf997932a5296e08b23f224f098907c78af[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 26 16:19:27 2019 +0900
+
+    E-Drive 프로토콜 변경 사항 업데이트
+
+[33mcommit 63519f8cb90ad2758b8bd07644c710d76637da64[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 26 10:26:11 2019 +0900
+
+    E-Drive 펌웨어 업데이트
+
+[33mcommit b193c82307f69b046cee8670391b6f8126a0f6ad[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 26 07:56:41 2019 +0900
+
+    E-Drive 업데이트 로그 설명 수정
+
+[33mcommit 55181048b7631bcc293abfadc57b132979e63a09[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jul 25 16:22:58 2019 +0900
+
+    E-Drive 펌웨어 업데이트
+
+[33mcommit fb823836b1aabd8589ddd4c1bc3f82e780c164f7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jul 25 14:50:08 2019 +0900
+
+    E-Drive 펌웨어 업데이트
+
+[33mcommit d7dd04b63f15c9581c7fed4ce95e8010809c48cf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jul 24 15:13:11 2019 +0900
+
+    E-Drive 펌웨어 업데이트
+
+[33mcommit 6f9fb85108fabb754e13d9911243a75581d535c2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 23 16:10:37 2019 +0900
+
+    이미지 사이 줄바꿈 추가
+
+[33mcommit a404f084ff939399d7ac73843078175045501dd0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 23 16:07:59 2019 +0900
+
+    E-Drive 업데이트 화면 하나 더 추가
+
+[33mcommit fc1a56e58be5807ba14979c1110efb97099610b9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 23 15:59:18 2019 +0900
+
+    E-Drive 펌웨어 업데이트 설명 수정
+
+[33mcommit 753a1db75fcdffea9d73f7a336f57cc3038e67e6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 23 15:55:04 2019 +0900
+
+    E-Drive  자동차 펌웨어 업데이트 문서 작성
+
+[33mcommit c9515fd9e27bc1549aa87cf18f775106bf87c51b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 23 13:58:11 2019 +0900
+
+    e_drive 펌웨어 업데이트
+
+[33mcommit 3acf9ff41820e82743768f744d20cfc0bf77d421[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jul 22 14:30:33 2019 +0900
+
+    E-Drive 자동차 및 테스터 업데이트용 펌웨어 업로드
+
+[33mcommit 38f7479634a9739220f5f99fa0a3444340be3e62[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 11:12:46 2019 +0900
+
+    '부트로더'라는 단어 대신 '업데이트 모드'를 사용, 필요없는 설명들 제거
+
+[33mcommit 9af58081c94016e4bb84a41c108edc8660554335[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 11:03:23 2019 +0900
+
+    Petrone V2 펌웨어 업데이트 메뉴얼 수정
+
+[33mcommit 5cfa67ff48708fe6a2b4c26102273e56186c71b0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 10:29:18 2019 +0900
+
+    드론 이미지 크기 변경
+
+[33mcommit 9c049d90354e93d5169e2eaa5a24f2a635204393[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 10:27:16 2019 +0900
+
+    v2 펌웨어 업데이트 메뉴얼 이미지 수정
+
+[33mcommit b2204dd419fabc1018d08f4058a5d5e6ef96f5b9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 10:23:41 2019 +0900
+
+    v2 업데이트 메뉴얼 드론 이미지 사이즈 조절, 설명 수정
+
+[33mcommit 466b9bb1b068e14b1ede8d0d207d640e60a0eb05[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 10:04:29 2019 +0900
+
+    v2 업데이트 메뉴얼 조종기 이미지 변경
+
+[33mcommit 8b5ffceff63f895a0811557c6d7ecb3792cdd2c3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 09:52:46 2019 +0900
+
+    문서 경로 오류 수정
+
+[33mcommit 8bf834242a09d67731177cfd7a1f99e4b389fe1c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 09:50:25 2019 +0900
+
+    확장자 수정
+
+[33mcommit 8adf477a4aea8b5e752fe138c588605fc7cc7d12[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 09:45:28 2019 +0900
+
+    파일 이름 수정
+
+[33mcommit 82b2606cdb7362440aa913523e04a364d40c2274[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jun 19 09:42:49 2019 +0900
+
+    페트론 V2 자동 업데이트 프로그램과 메뉴얼 추가
+
+[33mcommit 0b551002966adf6bed54d2a7206371e3434b7814[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jun 4 14:54:26 2019 +0900
+
+    드론파이터 펌웨어 업데이트
+
+[33mcommit 8f94ebec2a50e28843af6c4c48bb3567b1980bcb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 31 09:20:41 2019 +0900
+
+    버저 멜로디와 관련된 내용 추가
+
+[33mcommit f390a7c50faafdce4bf1630b92f780115dc95182[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 24 09:40:18 2019 +0900
+
+    e_drive DriveEvent 변경사항 반영
+
+[33mcommit aa3452aa59a19009fed7606d004c8adffe9c6c7b[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Mon May 13 12:19:12 2019 +0900
+
+    Update index.md
+    
+    byblocks for e-drone 1.0.20  update log
+
+[33mcommit 7858785381701569fe88238598fdd4bcbe15f005[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue May 7 11:06:17 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit a69070b3329fc5aca382f3866a5754c6193f56b4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 25 09:08:07 2019 +0900
+
+    command line 명령어에 조종 명령을 추가
+
+[33mcommit 061a818155e651d1a1d51b904da1eefff1fc3a34[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 24 09:52:44 2019 +0900
+
+    Control::PositionDriveMove, Control::PositionDriveHeading 추가
+
+[33mcommit 074512fbc381413568dead6885aa96fb1009dbdc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 24 09:24:42 2019 +0900
+
+    컬러 배치 변경 적용(Hue 순서)
+
+[33mcommit f7301e9a13ca83393edeb5c04a3f844ebfd9a97a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 22 10:18:30 2019 +0900
+
+    State 정의 수정
+
+[33mcommit 6b51311d26962a0aa7434f6681bb81455349bee0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 18 16:27:41 2019 +0900
+
+    state에 rssi 추가
+
+[33mcommit a518da8aecaf982ad042e8ae4e439bcca922c9b8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 17 10:06:49 2019 +0900
+
+    commandline 명령어 문서 내부 목록에 번호 부여
+
+[33mcommit 22d28dc72bfe62b865adb41aa158439d63b0cdbc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Apr 17 09:53:07 2019 +0900
+
+    e_drive에서 커맨드라인 명령으로 모든 LED를 제어할 수 있도록 수정함(모드만, 이벤트는 아직 넣지 않음)
+
+[33mcommit 035dc1aaa9e3617ec71167c32d8a4c20c6b3bc49[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Apr 16 16:07:10 2019 +0900
+
+    e_drive 커맨드라인 명령 리스트 캡쳐 화면 추가
+
+[33mcommit e1ab54a54baa12106435de3ea69aa681034f9324[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 15 09:15:31 2019 +0900
+
+    e_drive 문서 경로 수정
+
+[33mcommit fd3a4fb5cab44027dddf6379c5eddaf98566ec16[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 12 16:29:44 2019 +0900
+
+    e_drive 파이썬 라이브러리 문서 중 사용하지 않는 기능들과 관련된 문서 제거 및 링크 정리 중
+
+[33mcommit 2edc21d7f270ee7b720dd723a290fbc625d54993[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 12 12:11:19 2019 +0900
+
+    dev에 표시되는 형태 확인하면서 수정 중
+
+[33mcommit 7b07820c5dfc019cc5fed510fc64d839c67ab429[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 12 09:50:29 2019 +0900
+
+    e_drive에서 display 제거, card 및 조종과 관련된 정의 추가
+
+[33mcommit ca2136053ad323e4a58591594f453ab804f65178[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 11 16:10:20 2019 +0900
+
+    E-Drive 프로토콜 문서 수정
+
+[33mcommit 4cd70f5568b2ecbf5543498969208db6991fadb1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 1 15:38:50 2019 +0900
+
+    카드리스트 프로그램에 카드 번호 표시
+
+[33mcommit 634adf5a280926da043bf0d080af0c22c9a233d5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 1 14:29:01 2019 +0900
+
+    카드 목록 읽기 추가함
+
+[33mcommit f85a9cac172f0776c5967f51d90953d5fe36579b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 25 16:51:00 2019 +0900
+
+    kivy 라이브러리를 사용한 GUI 카드 리더 프로그램을 라이브러리에 추가
+
+[33mcommit 55e754224493cb5db8eb75c4a40aca9afc1a6291[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 25 15:04:54 2019 +0900
+
+    스펙 설명 수정
+
+[33mcommit 6c7eedb9f6d28c2c9c8c904bd973d0e43b06a764[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 25 14:56:05 2019 +0900
+
+    테이블 형태 수정
+
+[33mcommit fa99b2cc60a25008caf153d0e8b63183ad949109[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 25 14:50:10 2019 +0900
+
+    E-Drone 사양을 사용자 메뉴얼에 추가함
+
+[33mcommit bfac30adf807b5c0da60e3296157c5b9d583308e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 25 14:13:07 2019 +0900
+
+    e_drone 프로토콜 페이지 링크 깨진 것 수정
+
+[33mcommit 8c9becbbf53d6be9fe9fbd6c7dbe75602c37a86c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 16:10:58 2019 +0900
+
+    RawLineTracer 데이터 요청 처리 및 결과 화면 추가
+
+[33mcommit 5faa361f36e5252f511ec3231b7ea02434057349[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 15:14:08 2019 +0900
+
+    Motion 데이터 요청에 대한 명령과 설명 추가
+
+[33mcommit be8e685c9bcc63b7b657342bb06512271c00175b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 14:53:17 2019 +0900
+
+    버저 테스트 명령과 실행 화면 추가
+
+[33mcommit 333ff407cf5994c4f5ccada4440ef65729419ed4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 14:08:57 2019 +0900
+
+    이미지 경로 수정
+
+[33mcommit 319f82bf111e5527c94ae58a3d733696f60de83b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 14:06:15 2019 +0900
+
+    커맨드라인 실행 명령의 결과 이미지 추가
+
+[33mcommit 1295e0ad900f4fb6b66af72acd760b3b0bea2d03[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 12:02:32 2019 +0900
+
+    command line 메뉴얼 중간중간에 공백 삽입
+
+[33mcommit e7b0fec6bf15abad3a0cf0132d7a65f0100ed3e1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 11:59:49 2019 +0900
+
+    command line 명령어 설명 수정
+
+[33mcommit a9a73e0746ab29996a4d98b77833546a44945daa[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 11:55:44 2019 +0900
+
+    e_drive 파이썬 라이브러리 인덱스 페이지 수정
+
+[33mcommit 9719e1cffaa0dd2d0c176a3ae166b2832228632c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 11:51:48 2019 +0900
+
+    e_drive 파이썬 라이브러리 문서에 command line 명령어 설명 문서 추가
+
+[33mcommit 9279a17c032cf39684f45a1f661dbde3283c6fb3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 22 11:18:31 2019 +0900
+
+    e_drive 페이지 생성(e_drone에서 가져와서 수정 중)
+
+[33mcommit 6c4e5a07f43913b515b1f3397058e1278515ae3a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 15 09:12:06 2019 +0900
+
+    펌웨어 업데이트 완료 이미지 위 공백 삽입
+
+[33mcommit 568e0cc4dfba139e897c9b552bccc1a0daf2ab46[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 15 09:09:07 2019 +0900
+
+    e_drone 파이썬 라이브러리를 사용한 드론, 조종기 펌웨어 업데이트 완료 화면 추가
+
+[33mcommit 59fcd7737aa37b7cf7624806459a46a431946600[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Mar 14 15:36:01 2019 +0900
+
+    페트론 파이썬 펌웨어 업데이트
+    
+    1. 페트론 카메라, Range 센서 동작 상태 확인 요청이 들어와서 파이썬으로 테스트 할 수 있는 간단한 프로그램을 만드는 중에 라이브러리를 수정함
+
+[33mcommit 3bd20a0c8c2b851aff741ef820641b48b4609854[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 13 08:40:22 2019 +0900
+
+    e_drone 파이썬 라이브러리 펌웨어 업그레이드 명령 변경으로 관련 문서 수정
+
+[33mcommit beb5b68de823aa5cf98b1d281c2025bfd15bbc17[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 12 14:07:21 2019 +0900
+
+    e_drone 파이썬 라이브러리 버전 수정
+
+[33mcommit 162dc2103addb72d41cfd1989241f99e9c312b10[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 12 10:54:45 2019 +0900
+
+    News에 e_drone 파이썬 라이브러리를 사용한 펌웨어 업데이트 설명
+
+[33mcommit ec9fa4e18eff47ecef9a02eb33b2112ea317f5bf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 12 10:46:59 2019 +0900
+
+    e_drone 파이썬 라이브러리를 사용하여 드론 펌웨어 업데이트하는 방법 설명
+
+[33mcommit 7ace44c19efa8d8fd1451768065da04017efc77a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 11 11:59:00 2019 +0900
+
+    이미지를 크게 볼 수 있도록 링크 추가
+
+[33mcommit 044619632a553d2458ad5e440a0493c358684e5c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 11 11:02:48 2019 +0900
+
+    E-Drone 화면 설명에 대한 업데이트 사항을 News에 기록
+
+[33mcommit bbbcdd391bb6a756fa2521bf983bff4f6b460292[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 11 10:55:05 2019 +0900
+
+    모든 이미지를 원본과 설명이 붙은 것으로 들어가게 함
+
+[33mcommit 59fa9f69daf140961d79f180db6325c0fa9665e6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 11 10:46:13 2019 +0900
+
+    이미지 파일 확장자 수정
+
+[33mcommit 76f5810345018fbc442811b0cda54b02337d7bde[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 11 10:43:49 2019 +0900
+
+    e_drone 사용자 설명서에 각 조종 화면 이미지 삽입
+
+[33mcommit 7078e84fd43a4f24927f40add7a52184124b4c71[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 8 14:08:56 2019 +0900
+
+    파이썬 라이브러리 업그레이드 설명 추가
+
+[33mcommit 4dd8f8d282b9adc23e57cce0e2a0e0d2975de6b2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 5 07:42:45 2019 +0900
+
+    바이블럭 업데이트 내역 추가
+
+[33mcommit 9c613ff1623c4c28797fa8c88916d5b482a57dab[m
+Merge: 71c746e 742a169
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 5 07:36:26 2019 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 71c746ea96d4b303ade4bd446cafaa3b4c9540e0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 5 07:34:44 2019 +0900
+
+    업데이트 로그 수정
+
+[33mcommit 742a169c38cae5514789ed5b1569b73df4f9869c[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Mon Mar 4 09:22:24 2019 +0900
+
+    English localize
+    
+    English localize
+
+[33mcommit ee1d60e5c07d8a6cd2fca61afb71f8772c74b869[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 27 11:47:36 2019 +0900
+
+    펌웨어 링크 주소 오류 수정
+
+[33mcommit c0f2156fa4cf217c02312eb629f9ef18d402fe28[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 27 11:35:24 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit d632fa25099126a28d0cc543df1eb6b48d215813[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 27 10:47:23 2019 +0900
+
+    news 링크 수정
+
+[33mcommit cc916321d17a9646ac4bafd53b4cb10aed437916[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 27 10:45:26 2019 +0900
+
+    PETRONE 펌웨어 업데이트
+
+[33mcommit f1d324fa08a03658c791312f49a4a2c8b5d431d2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 26 09:43:23 2019 +0900
+
+    변경된 구조체에 대한 링크 추가
+
+[33mcommit 862227cd5a89f68004d55ddbb100d8dc1a8cd876[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 26 08:25:35 2019 +0900
+
+    E-Drone 업데이트
+
+[33mcommit 1f1e68eb5cf1e9b2acf0afbd0c8a50c4dcf280eb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 20 16:14:57 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 1629dc8360190c99f04933716593f3ec0cc04b90[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 13 11:39:55 2019 +0900
+
+    product, news 수정, 바이블럭 문서 위치 수정
+
+[33mcommit f55536eae4c1bf869ca632d5b0caaf1d329b03d5[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Wed Feb 13 10:50:54 2019 +0900
+
+    byBlocks for E-Drone 1.0.18
+    
+    - 초당 패킷 지연 및 전송 실패시 카운트를 표시 : Retry / sec
+    - 패킷 응답을 받지 못한 숫자를 표시 : Drop pack
+
+[33mcommit de396e2ff8b8362c0c357411323af79d97e1014e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Feb 13 09:51:37 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 1c88e1efe2354da0caaf6e853909a5ce13fe2bcb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 12 15:48:00 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 579efe431634b7a9e40baf520acc11a38a778e65[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Feb 12 09:12:16 2019 +0900
+
+    Protocol::State 변경사항 기록
+
+[33mcommit f4867c49cae0b51c3a5e2c3f9bb530504ce9cce8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Feb 11 13:53:21 2019 +0900
+
+    news에 바이블럭용 구조체 추가 안내
+
+[33mcommit b4cfe8d38f1298197af21c3e70080d4f44fd95dc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Feb 11 13:50:29 2019 +0900
+
+    InformationAssembledForByBlocks 추가
+
+[33mcommit d89e704110f972e1d148f5c8b5044f92cf053209[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 31 14:23:30 2019 +0900
+
+    릴리즈 날짜 수정
+
+[33mcommit 2d85de761ac60113a4a15a266e17fb768075cd83[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 31 14:21:20 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 97a5e39a80b34b209b03d2fa7a9f1e72807bcd75[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 30 15:58:47 2019 +0900
+
+    사용자 메뉴얼 수정, 프로토콜 변경 사항 수정
+
+[33mcommit edff08ab4f2bdc150f6b1cf81559327ea7c82679[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 30 15:28:03 2019 +0900
+
+    오타 수정
+
+[33mcommit 86496d8b3683f8c27ebf48e4cb34d6739da83130[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 30 15:22:28 2019 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 167ec87cf15d5dc6b36ce9166e6730bcfe142854[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 23 08:31:12 2019 +0900
+
+    discord 아이콘 색상 변경
+
+[33mcommit 88739e4bca33dd0e0e73bc6470683218dbb160f8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 23 08:25:18 2019 +0900
+
+    discord 아이콘 설정 추가
+
+[33mcommit 6b0a702f8da64ea9a1692ab35687e7e34ca2e659[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 23 08:19:34 2019 +0900
+
+    하단 링크에 discord 추가
+
+[33mcommit 0e2c32808e9e31e620d0cb4df42238d3b4dfc9fc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 14 13:40:07 2019 +0900
+
+    News 앞부분에 구분 기호 추가
+
+[33mcommit 916d2c48b55fa15bfd380890b9e050ddb5dd4b95[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 14 12:12:09 2019 +0900
+
+    news 문서 표시 형태를 메인 표시와 동일하게 함(정렬만 좌측 정렬)
+
+[33mcommit a7ae103f045ede5cfcacb950020f8f2612d11cbd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 14 08:18:08 2019 +0900
+
+    news를 별도의 파일로도 만듦
+
+[33mcommit ffe8047efb5f61ffc4ee207e17239bb42a90f01e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 15:56:16 2019 +0900
+
+    Products 페이지 News 줄바꿈 수정
+
+[33mcommit edd306700de7b005369c1b095fdb19bcb8d75fe8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 15:54:14 2019 +0900
+
+    Products 페이지 News 수정(E-Drone 파이썬 라이브러리 및 문서 업데이트 공지)
+
+[33mcommit 72f9ecbb0729c195f92fc6cc3b86b735cb862f83[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 15:51:50 2019 +0900
+
+    파이썬 라이브러리 업데이트 기록
+
+[33mcommit 956d51c89d1a79da547b3c48dcee3f3b3ea4cfa2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 15:48:35 2019 +0900
+
+    E-Drone 파이썬 예제 테스트 및 수정 중
+    
+    1. Motor 제어는 명령 직후 모터가 바로 정지하는 문제 확인함
+    2. TrimIncDec 명령은 정상 작동하지 않음(코드 확인해볼 것)
+    3. IMU 캘리브레이션 시 오류 상태 표시하는 예제는 현재 정상 작동하는 것을 확인함
+
+[33mcommit 8c29fa76a83a2d6deec17af6c0d3dd0f8d8d0732[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 14:57:49 2019 +0900
+
+    E-Drone 파이썬 라이브러리 이동 예제 및 프로토콜 문서 수정(Position16, Position 변경 사항 반영)
+    
+    1. E-Drone 파이썬 라이브러리 이동 예제에서 sendControlPosition16 을 sendControlPosition 으로 변경하면서 sendControlPosition이 동작하지 않는 것을 확인하여 라이브러리 수정함.
+    2. 문서에서도 아직 변경되지 않은 것을 확인하여 문서도 수정
+
+[33mcommit dce581a85d170de0a788836c62bb97a77603c11e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 13:56:35 2019 +0900
+
+    E-Drone 파이썬 라이브러리 이동 예제 수정(Position 변경 사항 반영)
+
+[33mcommit a6fbaca523f66c6fe023b456c358e8ec71125968[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jan 11 11:30:11 2019 +0900
+
+    E-Drone 파이썬 예제 수정
+
+[33mcommit f904fb8263e4248325e3d05876c4bc1c107147ea[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jan 10 12:00:49 2019 +0900
+
+    Products 페이지의 News 중 업데이트 링크를 해당 업데이트 로그에 연결
+
+[33mcommit ae4b23525975a5a0ae0a0fad467bbda4da94a02e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 09:21:17 2019 +0900
+
+    Products 문서 중간 띄움 제거
+
+[33mcommit bd06adebfca4c336ad27c7dcf36a4c91a8ee6ab7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 09:19:17 2019 +0900
+
+    Products 문서의 구분선 제거
+
+[33mcommit ab229da24036cf6bb37f76a03db729721e28d8f3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 09:14:44 2019 +0900
+
+    Products 화면 배치 수정
+
+[33mcommit 6aa835cb0186b506f356150ecd0c30e529d8a8d5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 09:02:34 2019 +0900
+
+    Products 문서 내부 링크 수정
+
+[33mcommit ee88f43e7f37244bc10c6b669e08d5769e9a8211[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 08:58:38 2019 +0900
+
+    Products  문서 하단에 뉴스 추가
+    
+    - Drone4AutoUpdater, Drone4AutoUpdaterLight 문서에 상호간의 링크 추가
+
+[33mcommit a412b54d05d44cc19491153ade22485dfc4784a3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 08:04:37 2019 +0900
+
+    드론파이터 펌웨어 업데이트, 로그에 4.2 버전에 대한 링크도 남겨 둠
+
+[33mcommit de5645e171e7ad3351c068c89adf7aa62fdea856[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Jan 9 07:56:30 2019 +0900
+
+    E-Drone "1.1.1" 업데이트 내역을 일시 제거
+
+[33mcommit 29f1790c7ec897d6fd8a8524ff775e31d8a3766a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jan 7 15:11:17 2019 +0900
+
+    펌웨어 업데이트 메뉴얼 작성(drone4autoupdaterlight), E-Drone 펌웨어 업데이트
+
+[33mcommit 2e008bae5540963429b16b268a677ce2f9627ac7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 18 13:52:47 2018 +0900
+
+    ESBurner-ES10M 프로그램의 메뉴 번역 추가
+
+[33mcommit 44a4a9aa9a7d10ad5cbcb761e38f32e9187e4bb2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 12 15:17:01 2018 +0900
+
+    업데이트 내역 중 빠진 사항 추가
+
+[33mcommit 1d46b9ba1af5dcf885ba4b613ed364f7452580ec[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 12 15:06:53 2018 +0900
+
+    보안 경고로 jekyll 버젼 수정
+
+[33mcommit 9e885763c0e96268238f461d7d355bde1e0d9dec[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 12 14:54:34 2018 +0900
+
+    설명 수정
+
+[33mcommit b2143dba042977e49a2e13f7b33ebfd1da56e2bc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 12 14:53:59 2018 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 377b0bd1946ad6b8bfde8833d44df25dab566ca1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 12 14:12:59 2018 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit ead53052c3a4342fb1f983331a4a56cfeac35a9b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 11 15:22:10 2018 +0900
+
+    링크 중복 제거
+
+[33mcommit 4aa18e5455b0d9bad318ada0e506fa21edc92463[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 11 15:18:39 2018 +0900
+
+    각 제품 페이지에서 파이썬 라이브러리 항목을 분리
+
+[33mcommit 25bd6550e6c469cfac40ae20118790a2b780b7ca[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 11 14:36:17 2018 +0900
+
+    조종기 수정 사항 추가
+
+[33mcommit 2bd12f43b21aecaaf337a85ecf007fdd31622686[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 11 14:27:32 2018 +0900
+
+    E-Drone 업데이트
+    1. E-Drone 파이썬 라이브러리 항목 분리
+
+[33mcommit f0014e2ab3a3de51c4a0f634e2b1d2a73766e00d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 10 14:44:16 2018 +0900
+
+    오류 수정
+
+[33mcommit 7d5be80d2a7d1a95aa1e3f16750be493a548ee86[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 10 14:26:35 2018 +0900
+
+    hex 다운로드 화면
+
+[33mcommit cc5e12a61ac34a7855c870a3926915afd3944786[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Dec 10 13:43:19 2018 +0900
+
+    eastsoft IDE 메뉴 설명
+
+[33mcommit d23c24a5f56f10dbc5cd51493abd3acbe6f3afdf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:57:46 2018 +0900
+
+    링크 수정
+
+[33mcommit a25c74dfb267ad6b4d6d16d89ac41d6bc361dd16[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:54:43 2018 +0900
+
+    모든 제품 문서에 링크 삽입
+
+[33mcommit 94e51b91485cb7c0bb67f9f193ba9020b083f48e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:47:54 2018 +0900
+
+    폰트 색상 변경
+
+[33mcommit 64684cf9a2fcec90f11f33294913da08a2f23e88[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:44:39 2018 +0900
+
+    폰트 색상 변경
+
+[33mcommit 15d5da8dae51818e6fe8e23974dae7396fb6199d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:42:22 2018 +0900
+
+    petrone_v2 문서 상단에도 링크 추가
+
+[33mcommit 36b14c3d4340095d2c2d19c5a948a6dff0069013[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:37:02 2018 +0900
+
+    폰트 색상 변경
+
+[33mcommit 38537d99ed0fa3bc9baabd0a872fe26da81fdd8c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:31:06 2018 +0900
+
+    셀 색상 변경, 폰트 색상 변경
+
+[33mcommit 422aafa789509c4621e1b9016bb2649e2ffcab24[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:28:20 2018 +0900
+
+    링크 상하단 여백 제거
+
+[33mcommit 7498a0a126c79a65d77bc43ce8d51f2d02fd8bff[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:24:26 2018 +0900
+
+    링크에 색상 추가
+
+[33mcommit 511ef3b69a72ab10d3c429f4275df6a43cb644a8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Dec 6 09:19:40 2018 +0900
+
+    상단 키워드 링크 테스트
+
+[33mcommit 337ee6f907aa2ebac9e4d6a201dd3a217b6625fd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 5 14:45:48 2018 +0900
+
+    바이블럭 릴리즈 날짜 추가
+
+[33mcommit ff09f0b61852d17caf2c3aaa451a868919d1563a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 5 14:43:19 2018 +0900
+
+    바이블럭 버전 정보 추가
+
+[33mcommit e6ff1b6d4e97d125b3718e367546b73a366a918c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Dec 5 14:36:49 2018 +0900
+
+    바이블럭 링크 추가
+
+[33mcommit cf0000f925009202c4dbb9826e7b44f7b473c61b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Dec 4 07:46:53 2018 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit f74677761f899952bc8212b832e992f0efef38aa[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Nov 29 12:12:17 2018 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit fddee3e465c4822e9d5e1c08fbaae4e6db751147[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Nov 28 10:30:59 2018 +0900
+
+    E-Drone 업데이트
+
+[33mcommit 806a5ce6d200b004f2109c10685690ec53fab84d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Nov 27 10:02:53 2018 +0900
+
+    E-Drone 펌웨어 업데이트
+
+[33mcommit 41ce6d6398152c67e292656bdb09da249250446c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 26 13:24:39 2018 +0900
+
+    E-Drone 문서의 Light 모드에 sunrise, sunset 추가
+
+[33mcommit 3790b76d9b3a3fc39fe1d0686870c5b5245940e4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 26 12:09:15 2018 +0900
+
+    자동 업데이트 프로그램이 새로운 드론과 조종기를 업데이트 하지 못하는 문제 수정
+
+[33mcommit f36d2756ed9ee589e89c03422b6c2f3e74deb9b4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 26 11:22:58 2018 +0900
+
+    E-Drone 사용자 설명서 조종, 설정 화면 이미지 변경
+
+[33mcommit 1ee5887bcebf4872bbb366b29fd126df31568549[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 26 11:16:14 2018 +0900
+
+    Control::Position16, Control::Position 명령에 대한 설명 수정
+
+[33mcommit 14d0a1bbf3e5857dd87a05f05e0e47451aa325be[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Nov 26 11:02:35 2018 +0900
+
+    E-Drone 펌웨어 업데이트, Petrone 파이썬 라이브러리 Light 예제 추가
+
+[33mcommit e7db10d0d9c7c588a0cea1777cc08f0180122c38[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 31 11:48:03 2018 +0900
+
+    -2 붙임
+
+[33mcommit 4c96ea0f79f69f3fb6cf59dd7c49eab56a545ca3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 31 11:46:54 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit 6847a54c7831870732725fdc9fa0ab2ec89f37cf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Oct 31 10:15:10 2018 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit b8d6be0aae5fb54b0176ed1940f974906ecfefb6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 26 14:53:40 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit 70946bfc3302d5907247f8c48a72b8ec133ca704[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 26 14:25:51 2018 +0900
+
+    Position16 구조체 수정, Control::Quad8 입력에서 Yaw 회전 방향 변경
+
+[33mcommit c223b864b228fcae803b95afcdc960fc5efba958[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Oct 25 14:34:38 2018 +0900
+
+    e_drone 버튼 플래그 정의 추가
+
+[33mcommit 26aecc9a51c7088186adb866f9427e5c543c5bef[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 22 14:39:28 2018 +0900
+
+    e_drone 프로토콜 문서 중 structs 문서의 객체 배열 순서를 DataType에 맞추어 재배열
+
+[33mcommit cd4c5bb82f2cbf51182b911e7c4bd92fcbab4f5f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 22 14:20:13 2018 +0900
+
+    Range 센서와 관련된 정의 추가
+
+[33mcommit 2479c0bc2e40b9590344b35ed765f5124e3477d0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 13:24:39 2018 +0900
+
+    e_drone 펌웨어 업데이트
+
+[33mcommit c6d0d38c23adfbd9f09626796e86e6f71fab32c8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 11:34:53 2018 +0900
+
+    e_drone 조종기 버튼의 기능을 그림에 직접 표시
+
+[33mcommit 6e2c3f238409a4dd97e4f673aa3e8fb20c2df93b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 10:40:20 2018 +0900
+
+    MODE 설명을 위한 조종기 이미지 추가
+
+[33mcommit 0cc7a91653345e8ad3529cb563a0c6ca242665ac[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 09:49:42 2018 +0900
+
+    e_drone 사용자 설명서 수정
+
+[33mcommit b514960c33638349d09c7f9d15f79fdd6bc6b118[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 09:38:08 2018 +0900
+
+    e_drone 업데이트 내용이 중복된 것을 확인하여 수정
+
+[33mcommit 4fc75bbddac542e90f5bff6436d15bdf91a68196[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 09:02:20 2018 +0900
+
+    e_drone 조종기 업데이트 이미지 추가
+
+[33mcommit 60ccf2c1b343a91822f2bcdb9f1bbe9913f5e692[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 08:39:43 2018 +0900
+
+    펌웨어 다운로드 링크 위치 이미지 추가
+
+[33mcommit c968a55414ce5b71e4f5917946e1064203b39007[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 16 08:31:31 2018 +0900
+
+    e_drone 펌웨어 업데이트 설명에 이미지 추가
+
+[33mcommit b0beb742ad868a2ae98eeb8541b4e6adfc41af7e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 15 16:58:29 2018 +0900
+
+    e_drone 펍웨어 업데이트
+
+[33mcommit db826c18bfa8fff6188fbf80607ffa660e28b627[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 16:45:54 2018 +0900
+
+    부트로더 진입 버튼이 잘못된 것을 수정
+
+[33mcommit 28a2941cd992199395bbbc5f6f20f3b8f91c1d86[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 16:41:12 2018 +0900
+
+    bold 처리 제거
+
+[33mcommit 032af160cd6978be505c2f921708025c7b428e54[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 16:37:41 2018 +0900
+
+    e_drone 업데이트 메뉴얼 이미지 경로 수정
+
+[33mcommit 144da63fdf7a2ffaa38a5d37eba5bc427010cf01[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 16:35:14 2018 +0900
+
+    e_drone 펌웨어 업데이트 메뉴얼 작성
+
+[33mcommit ab2a542f0b869bd01195afbd1ac81a88f15227e6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 15:21:52 2018 +0900
+
+    e_drone 사용자 메뉴얼 전면 이미지의 버튼 번호 순서 변경
+
+[33mcommit 45b13c189da8966efe80c258b9fc8e3cda028706[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 15:02:10 2018 +0900
+
+    e_drone 사용자메뉴얼 이미지를 렌더링 한 것으로 교체
+
+[33mcommit fd8be34e272a10db9303bd942c33269a10ccdf6b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 12:09:32 2018 +0900
+
+    e_drone 사용자 메뉴얼 수정
+
+[33mcommit c403efeaa826f3095cc16240d19d64c2337163c5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 12 11:59:00 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit 741920df0ca41ed8ce39fbc5402b5a7854c91918[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Oct 11 16:36:56 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit 66b3c9fc90a020382e5c8fbd98b92c37110446f0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 8 16:54:18 2018 +0900
+
+    ErrorFlags 이름 수정 및 TakeoffFailure_CheckPropellerAndMotor 정의 추가
+
+[33mcommit 90f353c1da16aaabc09775279ed93957c1542f37[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 8 16:40:24 2018 +0900
+
+    e_drone 파이썬 라이브러리 "e-drone-0.1.9" 릴리즈 및 관련 문서 업데이트
+
+[33mcommit 2d60b324733c50d881217b521e80321332da7721[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 8 14:43:29 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit 844ff8e7c5893b3144761fa04b472901337b44b5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 5 15:29:29 2018 +0900
+
+    테이블 줄 병합 오류 수정
+
+[33mcommit 67a9544a962ad0f04b37d783cdcc827221fa17f7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 5 15:18:41 2018 +0900
+
+    e_drone 펌웨어 업데이트
+    
+    1. 각 제품 펌웨어의 릴리즈 날짜를 표시
+
+[33mcommit 91ea16493ae506afeed34cd176f66a7b7ff0d360[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Oct 5 11:10:13 2018 +0900
+
+    e_drone 이미지 변경, 'update log'와 'update manual'의 링크 설명을 '한국어'로 변경. 추후 영어 또는 타국어 버젼의 문서도 작성할 계획임
+
+[33mcommit 83fa76281912132f4d90c56b39694d44344b2775[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Oct 2 16:44:47 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit d293be485cb2441adc56d89d476238d4613ec45e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 15:03:05 2018 +0900
+
+    Release Date 위치를 아래로 내림
+
+[33mcommit b7de607d3d612696f449fa349fdc4b0d084f04c3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 14:59:18 2018 +0900
+
+    e_drone 업데이트
+
+[33mcommit be786f09207ecdd2b2a56a67b026d755eddb28c2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 09:56:03 2018 +0900
+
+    빠진 파일들을 다시 추가
+
+[33mcommit e8d9504b40005dcca008f7a8efee4e42c81aaf47[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 09:52:25 2018 +0900
+
+    각 설명 문서의 이미지를 별도의 파일로 분리함
+
+[33mcommit 4e953fbb74a9101b04cdbada4514729e85295f22[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 09:44:07 2018 +0900
+
+    펌웨어 업데이트 메뉴얼 페이지의 다운로드 링크 수정
+
+[33mcommit d6ccf4f17a56fe079d68592ff8c7011b46760b9b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 09:18:14 2018 +0900
+
+    문서 배치 순서를 한국어, 영어 순으로 변경
+
+[33mcommit 9f258096e9b3a38ec17f6cacdca27d25083b21e6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 09:07:26 2018 +0900
+
+    테이블 오류 수정
+
+[33mcommit 521e302e6346a2b0801f6671fc27a8821596299b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 09:00:10 2018 +0900
+
+    각 제품 테이블 구조 수정
+
+[33mcommit 0c515e6b4413b2a797b57da476c59257061e9ec4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 08:46:10 2018 +0900
+
+    테이블 오류 수정
+
+[33mcommit fb30060fe7445a84ac2af26ac45d35697199424b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 08:44:30 2018 +0900
+
+    테이블 오류 수정
+
+[33mcommit 0f71fdeb7a31c3b8367ff393f913f7f6589da268[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 08:41:48 2018 +0900
+
+    dronefighter 페이지 테이블 구조 수정
+
+[33mcommit a01f868d17bf53116aa17cc0c2c1ecd11948d369[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 08:31:33 2018 +0900
+
+    e_drone 페이지 내부 테이블 제거
+
+[33mcommit 4f4d726eaf149fba8794a99aa4cf4fb02348ea08[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Oct 1 08:26:04 2018 +0900
+
+    e_drone 버젼 부분 테이블 삽입 테스트
+
+[33mcommit 9627fdd0d8722147c764890675696cf47de394af[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 28 16:12:33 2018 +0900
+
+    e_drone 펌웨어 업데이트 (D:0.2.8, C:0.2.7)
+
+[33mcommit 93719fbcd3803cce7a7bd40eac32a659aa3a849d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 28 15:57:30 2018 +0900
+
+    각 테이블 소제목 상하단 공백 추가
+
+[33mcommit 17676fbce93fd571bebed26ef99c8df4ec6ebbe2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 28 15:51:10 2018 +0900
+
+    테이블 소제목 위아래에 빈줄 추가
+
+[33mcommit 800abfe7c96a48e0836590dfd899b04d083c5dca[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 28 15:44:52 2018 +0900
+
+    각 제품 페이지 구성 변경
+
+[33mcommit b09511d922211e73bf2caa3d25a8d4299c2d1c0b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 28 12:06:40 2018 +0900
+
+    Protocol::ReactionForConnectionStatus 에 대한 정의 추가
+
+[33mcommit 2071b21a86ba9aa2193357e7a0b72220336294d9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 16:20:36 2018 +0900
+
+    e_drone 펌웨어 업데이트 프로그램에 자동 업데이트 프로그램을 추가함
+
+[33mcommit 65e8a8838022d62986cae7f6289763e651855de7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 14:12:42 2018 +0900
+
+    e_drone 드론 "0.2.7" 릴리즈
+
+[33mcommit 6b263fc17a71bfebaaa88a2b072c65b30e61e56c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 13:36:37 2018 +0900
+
+    e_drone 사용자 메뉴얼 모드 설명 부분 한글 설명 추가
+
+[33mcommit a77d18cec7d6c93f5fd3e4a95e9d23996fd58409[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 13:32:42 2018 +0900
+
+    e_drone 사용자 설명서 메뉴 설명 테이블 정렬 수정
+
+[33mcommit 2afb725624920e66908d24a5a3f50e367bd9b879[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 13:29:45 2018 +0900
+
+    e_drone 사용자 메뉴얼 설정 모드 설정값 초기화 설명 추가
+
+[33mcommit 8c8c477426fbcc9b4f7964ee636c3a02a90bddac[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 12:40:20 2018 +0900
+
+    e_drone 사용자 메뉴얼 수정
+
+[33mcommit 021601615e88fd56a0d3aef6aca2d6ec9f741610[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 09:41:14 2018 +0900
+
+    e_drone 조종기 업데이트(0.2.6)
+
+[33mcommit b52e9a0ad0346342b00bc36846335e87633ae788[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 21 09:12:53 2018 +0900
+
+    e_drone 펌웨어 릴리즈(Drone:0.2.6, Controller:0.2.5)
+
+[33mcommit 9482669f1c67bd1d6daa5701a42bb46aeed4c902[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 20 16:48:18 2018 +0900
+
+    e_drone 파이썬 라이브러리 "0.1.8" 업데이트 내용 반영
+
+[33mcommit 9addd663559f442906b6db5dcc27e1034087ccba[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 20 12:32:27 2018 +0900
+
+    e_drone 파이썬 라이브러리 문서 상단에 kramdown 테이블 추가
+
+[33mcommit 8bba7a2322460867c22845eff88154030a96618f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Sep 20 12:20:40 2018 +0900
+
+    변수 설명 표에서 단위를 형식 다음에 나오도록 변경함. Motion의 범위와 단위에 대한 설명 추가
+
+[33mcommit 1f0d838fbb59453043456f4458da672311b0ebbd[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 19 11:54:46 2018 +0900
+
+    e_drone 사용자 설명서 목차 이름 수정
+
+[33mcommit 722509402c690016dfc5bdeeee6b67a49833402f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 19 11:50:37 2018 +0900
+
+    예제 링크 수정
+
+[33mcommit d4b225c5ccb360b5878bef02eb376bdf5d1b0165[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 19 11:45:43 2018 +0900
+
+    테이블 첫 번째 줄이 표시가 안되어서 텍스트 추가함
+
+[33mcommit 25aa5591e851d533bf7c6e788ec65d7c5856eb10[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 19 11:43:14 2018 +0900
+
+    e_drone 파이썬 라이브러리에 RawMotion, RawFlow, ControlPositon16, ControlPositon 정의 추가
+
+[33mcommit 775e2ff14ea8cc7ea1cce1ddb42cb818102cfaf8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 18 17:30:07 2018 +0900
+
+    "0.2.4" 릴리즈
+
+[33mcommit fbaa30c3864b14016849b8c34abf3d2d12f659f4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 18 14:07:57 2018 +0900
+
+    e_drone 릴리즈 및 업데이트 내용 작성
+
+[33mcommit fba60bac58217d4efdee1bbd29cabdb966dd6d08[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 18 10:47:52 2018 +0900
+
+    DataType 모든 링크를 줄넘김 처리
+
+[33mcommit 482f7fe87f871d7aba912ef8160145ec80da9070[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 18 10:45:31 2018 +0900
+
+    DataType 링크에 줄넘김 삽입 테스트
+
+[33mcommit 88bd025f29daee0b7babd3244f38a9d5f1e96132[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Sep 18 10:36:04 2018 +0900
+
+    e_drone protocol 문서에 RawMotion, RawFlow에 대한 정의 추가
+
+[33mcommit 09d98ea652dd19271174346f0ee706710930983a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 17:12:29 2018 +0900
+
+    Control::Position의 범위 및 설명 수정
+
+[33mcommit 5460ee1b99f44aa2f6d0dd59a751d8ec3bbf3f84[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 15:27:21 2018 +0900
+
+    e_drone 제품 설명 중 메뉴 설명 테이블 수정(rowspan 사용)
+
+[33mcommit e04010f597cc30a5b510bd7e0c698ef4a07fcf63[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 14:59:53 2018 +0900
+
+    Control::Position16, Control::Position 추가함(드론 펌웨어 0.2.3 이상부터 지원 예정)
+
+[33mcommit 5f7acdaf614faa8dabca4adcbee69819fac19bf7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 12:14:56 2018 +0900
+
+    product 페이지의 좌측 여백 제거
+
+[33mcommit bdef854e1a13a34c25daf1a20e231167c5df2233[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 10:00:26 2018 +0900
+
+    각 테이블 상하단 여백 제거
+
+[33mcommit a6725cfe9025a82e43ca18457900c673ecff9ae5[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:57:29 2018 +0900
+
+    support 부분의 배경 문제 때문에 각 소프트웨어 부분의 제목을 다시 넣음
+
+[33mcommit f5902143c60a39aca266dc844051a72e8c6abf14[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:54:34 2018 +0900
+
+    각 소프트웨어 테이블에 있는 제목은 제거
+
+[33mcommit 8d21c0cd7be8a1a5cd97a8defc7ee17035b1e0a4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:50:58 2018 +0900
+
+    링크 수정
+
+[33mcommit d707b31d04cc48ed1f770e1c0b461cb2c6c04fce[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:49:12 2018 +0900
+
+    e_drone png 이미지를 jpg로 변경
+
+[33mcommit 03f67e258911c19038d720083bb44caafb72c9e9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:30:18 2018 +0900
+
+    테그 오류 수정
+
+[33mcommit bd909d03e96d3f33b30d0a39c147ce16fba219c9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:24:38 2018 +0900
+
+    페이지 링크 수정
+
+[33mcommit 1a66859671eddab59972243cd02b1325830f88b6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 17 09:19:23 2018 +0900
+
+    페이지 구성 변경
+    
+    1. download를 software로 변경
+    2. documents를 products로 변경
+    3. repository 삭제
+    4. 각 제품별 페이지를 구분하여 만듦
+    5. 소프트웨어의 페이지를 구분하여 만듦
+
+[33mcommit 155b28c0f966eee1f3f6ab44d9a20b537df5739c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 14 15:32:04 2018 +0900
+
+    E-Drone 0.2.2 릴리즈
+
+[33mcommit 310cd5f1404e74f91f0302b914eeb531eb1b1b18[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 14 11:40:43 2018 +0900
+
+    e_drone 파이썬 라이브러리 예제 수정하여 동작 확인함.
+    
+    - Error 예제는 동작하지 않는 상태
+
+[33mcommit 1b017011b0c6620f24864935348979e9f11e062a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 12 12:08:41 2018 +0900
+
+    파이썬 라이브러리 문서 수정
+    
+    1. 파이썬 라이브러리에 LightMode, LightEvent 함수를 추가해야 함
+    2. 예제들은 아직 테스트하지 않은 상태
+
+[33mcommit d155a81b6a66157feef9cbe5c10173cd8bd18e8f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 15:40:12 2018 +0900
+
+    화면 크기 변경
+
+[33mcommit a692abbf01787e8d7ea53587274fe3c71de6e671[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:52:19 2018 +0900
+
+    e_drone 시작 페이지로 이동하는 링크 추가
+
+[33mcommit 12c78759f3dc9d929ace2dd37e172c37355aedf7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:49:02 2018 +0900
+
+    연도 표기가 잘못된 것을 수정
+
+[33mcommit 9ddfc0bba4c9c38c527fe77125a5b01b75f6b75e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:45:04 2018 +0900
+
+    사소한 수정
+
+[33mcommit 03026da9ac2e423b1f09d3e3a66da1b164150fc8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:38:14 2018 +0900
+
+    사용자 문서의 경로 수정
+
+[33mcommit 819732873f31068a124d1425df4cd22c0d2ddeeb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:36:14 2018 +0900
+
+    사용자 메뉴얼에 대한 링크를 e_drone 시작 페이지에 등록, 새로운 펌웨어 "0.2.1"의 링크 등록 및 변경 사항을 로그 문서에 작성
+
+[33mcommit ad419bd0504ee08690493800639918040afa0cd1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:25:31 2018 +0900
+
+    필요없는 부분 삭제
+
+[33mcommit 8ab51ed66ab82b3ed7eb4f88d33d9487e1c00332[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 14:20:17 2018 +0900
+
+    설정 화면 메뉴 구성 표 작성
+
+[33mcommit 7611435dc22bf43fcee0d8d1ce59e2de23962d5e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 13:50:03 2018 +0900
+
+    조종, 설정 화면 이미지 추가
+
+[33mcommit 63d88413f5487a0260d250e892c1a8aca1661b1e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 12:29:48 2018 +0900
+
+    사용자 메뉴얼 버튼 조작에 대한 설명 추가
+
+[33mcommit bb1beb2ac193ea369da397c43f45763fc8cf0f0f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 12:14:46 2018 +0900
+
+    이미지 경로 수정
+
+[33mcommit 558a15168922167f001a1a38c6c70790569726f4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Sep 10 12:10:07 2018 +0900
+
+    e_drone 사용자 메뉴얼 작업 시작
+
+[33mcommit e490b1a398ee42d287b845d9b77526c5740f6b65[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Sep 7 14:12:24 2018 +0900
+
+    4096을 4095로 수정함(0x1000 -> 0x0FFF)
+
+[33mcommit aed37fa77f9b55ad2fced1ec3b59a7168ea5b042[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 5 15:39:28 2018 +0900
+
+    문서 링크 오류 수정
+
+[33mcommit 37f2de7129e2fdf53cfd8fadc42e1a768897151f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 5 15:26:46 2018 +0900
+
+    e_drone 프로토콜 05, 06, 07 페이지에 최근 변경 사항 반영
+    
+    1. 빠진 내용은 추후 문서와 코드를 확인하여 추가할 예정
+
+[33mcommit 7da8a4617b14789247d2515464dd08d3db5937ac[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Sep 5 12:14:44 2018 +0900
+
+    e_drone 프로토콜 문서 03, 04 수정. 빠진 내용은 추후 확인해가면서 추가할 예정
+
+[33mcommit 7a2a815510119eebadd2ab83a4c1563eb70f1aa6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Aug 23 16:29:36 2018 +0900
+
+    title을 BYROBOT.DEV로 변경
+
+[33mcommit 19dd32e1226dcbe7b5be4e606593cee9bc8490f9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Aug 23 16:28:05 2018 +0900
+
+    About 제거, 페이스북 링크 수정
+
+[33mcommit a8cfe8d0b8b7b6e4bffd2c525743d75c9b85ff46[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Aug 10 09:03:16 2018 +0900
+
+    Petrone V2 파이썬 예제의 주석 수정
+
+[33mcommit 409626f4256dfad374b088dfe272beb4a8c0717c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Aug 9 17:27:03 2018 +0900
+
+    드론파이터, 페트론 Link, 페트론 V2에 대한 드라이버 링크 추가
+
+[33mcommit b5b11743a15a679106c8129db02fbbba11c544f4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Aug 8 16:20:01 2018 +0900
+
+    e_drone에 rust 라이브러리를 추가할 예정으로 python 라이브러리의 문서를 복사하여 수정 중
+
+[33mcommit 7571a4e1b14a2dcb505fcc9f39766fedbe4bb6ea[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Aug 2 10:40:21 2018 +0900
+
+    페트론 V2 파이썬 문서 상단에 Kramdown 테이블 추가
+
+[33mcommit 1d7455f1053aacbbf2626ca47d08eecb4aff74fa[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Aug 2 10:15:37 2018 +0900
+
+    Start와 Ready 순서가 바뀐 것을 수정함
+
+[33mcommit 7396f43317e3420e7dd36f14f9c1168085e3cc5b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jul 30 17:17:03 2018 +0900
+
+    Petrone V2 비행 제어기 동작 모드 상태 중 Start를 TakeOff 앞에 추가
+
+[33mcommit 5c8bf8182e7b1f36c22ffedec5a6bb502c606f6b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 24 16:33:19 2018 +0900
+
+    페트론 V2 파이썬 비행 예제 수정
+
+[33mcommit 9c7da6ac66ab025f4a23bbba26e8fa606514fcf8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jul 23 10:11:24 2018 +0900
+
+    페트론 v2 업데이트
+
+[33mcommit 6d66d97c0d3daeb19a92f0aab34c7a9c927c8be9[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jul 19 09:06:45 2018 +0900
+
+    설명 수정
+
+[33mcommit 9ef89d9a690900a654bd4de4dbc28b02daf6f534[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 17 16:20:28 2018 +0900
+
+    페트론 V2 펌웨어 업데이트
+
+[33mcommit 7ae459b417f2128bab15818f8a50452a6c6870f7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 13 13:08:01 2018 +0900
+
+    Petrone V2 펌웨어 업데이트 설명에서 빠진 부분 추가
+
+[33mcommit d9a5a37ce8c02b3e86d7794c5878ba3adc228b70[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 13 13:02:07 2018 +0900
+
+    이미지에도 링크 추가
+
+[33mcommit d3cf1e55da36d3322a7fe5bdf50d9d7954af2287[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 13 12:53:41 2018 +0900
+
+    이미지 크기 지정 제거
+
+[33mcommit 2016c1427d64191646730d5003c29e58560a7e54[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 13 12:27:18 2018 +0900
+
+    그림 표시 수정
+
+[33mcommit 7a53dc46402262d75cd5d00518820d6c24d20c68[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 13 12:22:41 2018 +0900
+
+    페트론 V2 1.3 버젼 릴리즈
+
+[33mcommit 6a49a810f36ac3a2e8ca5d8315101e96403ca2da[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jul 10 10:06:41 2018 +0900
+
+    e-drone 조종기 펌웨어 업데이트 0.1.3
+
+[33mcommit 89cef739ef82fde6dc0bce77c90da0ed69e7d161[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jul 9 15:21:39 2018 +0900
+
+    e_drone 이미지 교체
+
+[33mcommit 62c353bd66e95b2f99b11cfec884e7686d141060[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jul 9 14:14:07 2018 +0900
+
+    오류 수정
+
+[33mcommit 81e67ba79101c920cf4746ce594795aea4683822[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jul 9 14:06:15 2018 +0900
+
+    e-drone 인덱스 페이지 제작, e-drone 0.1.2 릴리즈 링크 추가
+
+[33mcommit d8d2644df0e5cbb4845a4d00eaa02981fdb16f58[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Jul 6 15:47:06 2018 +0900
+
+    E-Drone Python library 문서 작업 1차 완료
+
+[33mcommit a0f3e69fb34afbdb3411ed5147ff3a9ce759f2ad[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jul 5 14:51:41 2018 +0900
+
+    E-Drone 문서 작업 1차 완료
+
+[33mcommit d105898fa844fd66298936010d3c993438c5e6d4[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Jul 5 13:59:59 2018 +0900
+
+    structs의 altitude까지 작업
+
+[33mcommit 61bdc216ff5892430327a16f710b67b51290648d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Jun 12 11:31:56 2018 +0900
+
+    펌웨어 자동 업데이트 프로그램에 대한 메뉴얼 추가
+
+[33mcommit 569757461052bb168e0032de9918c2c520210910[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Jun 4 14:26:26 2018 +0900
+
+    petrone v2 문서를 복사하여 e-drone 문서 작업 시작
+
+[33mcommit e69f557a86753e63c0934e76aa11529cd0a69426[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu May 31 09:46:02 2018 +0900
+
+    페트론 메인 펌웨어 업데이트(v50)에 대한 기록 추가
+
+[33mcommit a3026c968e16934b66e30c7764cd6f9bc198c305[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 18 11:21:14 2018 +0900
+
+    파이썬 페트론 테스트 비행 예제 수정
+
+[33mcommit 781d7b7ada07d0263a63457349c2e27a0a9272a8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 18 11:16:52 2018 +0900
+
+    페트론 테스트 비행 파이썬 예제 추가
+
+[33mcommit d8a21cfab09381cb1b0f74621308aa3cef2f1f94[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri May 4 13:06:41 2018 +0900
+
+    드론파이터 일반 버젼 펌웨어 업데이트(4.2)
+
+[33mcommit 5b139bc0e56a99e0bc66c420b911f83ebc15d156[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 30 16:18:13 2018 +0900
+
+    레이싱 페트론은 드론파이터 에듀 버젼에서 구동됨
+
+[33mcommit 5e59a3edcc0b0cc88375478d595afd177a2c76b8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 26 15:20:07 2018 +0900
+
+    페트론 파이썬 문서 오류 수정
+
+[33mcommit cc9517ab867d2e56677ae5847fbf8b068f5d8b95[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Apr 26 15:13:33 2018 +0900
+
+    페트론에 테스트 비행에 대한 명령 타입 추가(0x53)
+
+[33mcommit 600995b1733f029646b750161d98a935db205ab7[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 23 16:36:08 2018 +0900
+
+    드론파이터 펌웨어 수정한 것 올림
+
+[33mcommit 92d317470765912d792c0dc9891f08ff3b6793a2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 16 09:13:15 2018 +0900
+
+    페트론 V2 업데이트 메뉴얼 오타 수정
+
+[33mcommit 674400fdcf65c10f2174c6e7ebe6a165cab95558[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Apr 16 09:10:08 2018 +0900
+
+    V2 펌웨어 버젼 수정
+
+[33mcommit 3e810bb9a05fe2dc64c96412e231e9cfac1b2ac2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 13 09:56:48 2018 +0900
+
+    줄간격 수정
+
+[33mcommit 1458550bd41e6fde31812e6fb0c4704bd2e459a0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 13 09:55:09 2018 +0900
+
+    가로선 위치 수정
+
+[33mcommit d6c841036b68d06509c4785603530da7555afcdb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 13 09:53:38 2018 +0900
+
+    줄간격 수정
+
+[33mcommit 455b620b09da671df90b162155020d70142551f6[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 13 09:51:16 2018 +0900
+
+    줄간격 수정
+
+[33mcommit 80ca1867f40942888911ba6039caa6a45c7b1182[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Apr 13 09:47:25 2018 +0900
+
+    페트론 V2 드론 펌웨어 업데이트
+
+[33mcommit 1e3a0e02b738e20d5b39359d707f7f9656d66f25[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Mar 29 09:16:56 2018 +0900
+
+    업데이트 메뉴얼 줄간격 잘못된 부분 수정
+
+[33mcommit 02a46f48024c22a7fa728347df925615e5d4ce0e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 26 14:05:02 2018 +0900
+
+    바이스크래치 버젼 수정
+
+[33mcommit bf42289dc95af7f972bbb0aed7569a3d2edb17bf[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 26 14:03:52 2018 +0900
+
+    1. 바이스크래치 링크 수정
+
+[33mcommit d7313ed652fe53d1750aad03e52f0834a24c314d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:27:40 2018 +0900
+
+    Target을 Support로 변경
+
+[33mcommit a2f1d3456d02ea266a58eb14be64e31d1ca853f1[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:24:19 2018 +0900
+
+    펌웨어 이미지와 텍스트 배치 순서 변경
+
+[33mcommit 6c117d53fc548aba619aca9edfe08c0a7dea887f[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:21:44 2018 +0900
+
+    br 태그 삭제
+
+[33mcommit 0d351fab47bb35dc1484c1c696095df0f997d7fc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:19:40 2018 +0900
+
+    펌웨어 테이블 수정
+
+[33mcommit e3c7b7827c6947bb65403e9a6350c78a2ab20c82[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:12:45 2018 +0900
+
+    링크 테이블도 중앙 정렬에 포함시킴
+
+[33mcommit 39f0c61df7b7c67b185529aadb04503479c67997[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:12:04 2018 +0900
+
+    다운로드 페이지에 kramdown 테이블 대신 직접 html 태그와 하이퍼링크 앵커 사용
+
+[33mcommit 77123587762220435afdbb7a6df72634d953786e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 09:04:05 2018 +0900
+
+    다운로드 페이지에 kramdown 테이블 추가
+
+[33mcommit 2df9c90708e94cf8efed803a125aebdff9d1243e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 08:57:54 2018 +0900
+
+    레이싱 페트론 이미지 크기 조절
+
+[33mcommit fc72d3f77bbd42f382a1690fd1633184b5cd885d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 08:54:44 2018 +0900
+
+    엔트리, 드론파이터 시뮬레이터, 레이싱 페트론 링크 추가
+
+[33mcommit 7020881f7ab3e3dc2322bc7602ec4d75bc413ff0[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 08:40:59 2018 +0900
+
+    바이스크래치 표 수정
+
+[33mcommit 43d3a59a8f83fbe2fb68fd1eef58c7fc0cc0a61a[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Fri Mar 23 08:35:57 2018 +0900
+
+    download에 byscratch 링크 추가
+
+[33mcommit 6b54661261deb4fba26d80153b9917293d0e2a6c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 21 10:40:59 2018 +0900
+
+    버젼 수정 빠진 것 고침
+
+[33mcommit f34fa0baf4396dfa8ce54873e3fdb80e9f17d725[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 21 10:39:59 2018 +0900
+
+    줄바꿈 추가
+
+[33mcommit 4053719a18641f9a72cd54aeb35df42f60164d4c[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 21 10:38:07 2018 +0900
+
+    V2 펌웨어 업데이트
+
+[33mcommit a6fc11694cc3fbebf154461810444c2f53da39ee[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Wed Mar 7 14:10:56 2018 +0900
+
+    petrone imu 데이터 요청 예제 추가
+
+[33mcommit c1f3ce87f1f4c37bf0896d1342207aa8fc10e4a3[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 14:53:46 2018 +0900
+
+    페트론 프로토콜 인덱스 페이지 수정
+
+[33mcommit 5b9883c02a9eee0bbedfc159b5f475c43e8b2e3b[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 14:34:09 2018 +0900
+
+    페트론 v2 프로토콜 문서에 'Kramdown table'을 사용하기 위해 anchor를 모두 수정
+
+[33mcommit cce5c308f533b7155d7cbe35739f647572e40f1d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 14:02:31 2018 +0900
+
+    페트론 프로토콜 문서 링크 오류 수정
+
+[33mcommit 1741a4a361e5a292e1046efe7a46a2886e74adbc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 13:49:10 2018 +0900
+
+    페트론 프로토콜 문서 링크 구조 변경
+
+[33mcommit 529c5fea8b9c28daa48ddf114f4c67f082769c8e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 11:55:25 2018 +0900
+
+    페트론 프로토콜 문서 링크 수정 테스트
+
+[33mcommit 1b6484fd8d3fe49d997a03eed9ee83dc0b08f7f8[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 11:51:12 2018 +0900
+
+    페트론 프로토콜 문서 업데이트
+
+[33mcommit 822964f07d4c95da2f42b383d3e245c780f175cb[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 10:00:27 2018 +0900
+
+    줄넘김 추가
+
+[33mcommit c1a0e810005841e82983bb8687211422b878bb97[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 09:57:43 2018 +0900
+
+    Petrone Link 펌웨어 업데이트 설명 작성
+
+[33mcommit 70090da7c46e222628bfaa516765f345ad3ecf2e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 09:24:07 2018 +0900
+
+    모바일 페이지에서 download 링크가 나오지 않는 문제 수정
+
+[33mcommit f1669703929aa02ffc7f861bc3a63706cee43478[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 08:47:34 2018 +0900
+
+    드론파이터 펌웨어 업데이트 설명 중 이미지 파일 이름이 잘못된 것이 있어서 수정
+
+[33mcommit 5e62f30c6aa27ed3ef68a7107cdc464de3ce56df[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Tue Mar 6 08:42:42 2018 +0900
+
+    드론파이터 펌웨어 업데이트 메뉴얼 작성
+
+[33mcommit 10d05b8406d0b41b5c5c68776df5ed0108b8fb37[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 15:47:58 2018 +0900
+
+    aws 펌웨어 다운로드 경로 수정
+
+[33mcommit b856d7db7a485dfc9c756a6c1c86e92c5c175b7e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 15:34:02 2018 +0900
+
+    펌웨어 업데이트 메뉴얼 이미지 링크와 설명 일부 수정
+
+[33mcommit 45f3f8eb2439624293ab150dfad9a8304b49205e[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 15:12:19 2018 +0900
+
+    petrone v2 드론 업데이트 메뉴얼 작성
+
+[33mcommit c467d022002c01cdaa32a9cd6d7d91236c7efd3d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 13:59:40 2018 +0900
+
+    펌웨어 업데이트 설명 수정
+
+[33mcommit 01879ff79a7a99ca64836a625ef024465021e3df[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 13:51:13 2018 +0900
+
+    이미지 크기 조절
+
+[33mcommit 4dc93248d44e2db0a6088a21ce90c5d1f5360f44[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 12:24:23 2018 +0900
+
+    페트론 v2 조종기 업데이트 설명 추가
+
+[33mcommit 958c27b7d72ab20449de99e44b6404bd7d6f352d[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 11:23:18 2018 +0900
+
+    intro 오류 부분 수정
+
+[33mcommit e02bdd94e9378af40f1f1ff4627d3f2b09391652[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 11:18:43 2018 +0900
+
+    이미지 링크 경로 수정
+
+[33mcommit e0a34096aca13cd2f8cd06049c667d04c40500cc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Mon Mar 5 11:11:05 2018 +0900
+
+    문서 구조 변경, 파이썬 설치 메뉴얼 분리
+    1. 파이썬 설치는 각 장치에 모두 공통사항이므로 별도의 문서로 분리하여 파이썬 라이브러리 문서에서 해당 문서를 참조하도록 했다
+    2. 파이썬 설치와 관련없는 petrone v2 예제 실행 부분은 intro 문서 하단으로 이동함
+    3. 관련된 링크 수정
+    4. 펌웨어 업데이트 메뉴얼을 md 파일로 다시 작성할 예정
+
+[33mcommit 5185d5a9b605f26c5535dba0802454bc12bc38ee[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Mon Feb 19 08:55:52 2018 +0900
+
+    title change
+
+[33mcommit 928d512817fa4f73b6b1bebbb0cd57b8eeb7fd36[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Mon Feb 19 08:49:59 2018 +0900
+
+    English translate
+
+[33mcommit 7985fd672fbdc90e0e6dd768de10cd23d8577dfc[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Feb 1 12:24:43 2018 +0900
+
+    1. 태그 오류 수정
+
+[33mcommit 4b56c2fbd0193426de3e62ed9c573ef7ed64dfa2[m
+Author: Sanghyo Lee <realwolf@naver.com>
+Date:   Thu Feb 1 12:22:02 2018 +0900
+
+    1. 다운로드 경로 추가
+
+[33mcommit a7b33f70f6684e94700c8b4f93e70ab21cbd0370[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Jan 19 12:01:04 2018 +0900
+
+    1. scratch용 crossdomain.xml 파일 추가
+
+[33mcommit bbdd055e85b136fa46d37be3368503a4264647ad[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Jan 9 09:52:34 2018 +0900
+
+    1. 오류 수정
+
+[33mcommit c0d6404002a2909171037ea1b80c1e6f926e8ac9[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 28 12:23:59 2017 +0900
+
+    1. 각 페이지 상단 표시를 해당 페이지에 대한 이름으로 변경
+
+[33mcommit b1cf299346ff487b7217e984b6553ab70d9550ea[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 28 12:19:57 2017 +0900
+
+    1. Documents를 Documents, Repository, Download로 분리함
+
+[33mcommit 5485c9f64a06036028f08e84c075fa91c73b9b6d[m
+Merge: eb616dc e7089b4
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Dec 22 12:27:44 2017 +0900
+
+    Merge pull request #57 from realwolf/master
+    
+    1. Petrone Link 업데이트 프로그램에 README.txt 파일 추가
+
+[33mcommit e7089b420c8b96401acd76e1961f5efec7f0b307[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Dec 22 12:27:04 2017 +0900
+
+    1. Petrone Link 업데이트 프로그램에 README.txt 파일 추가
+
+[33mcommit eb616dc702edbbe1ba5b8d8fd3fbd6ad7ce00250[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Thu Dec 21 20:20:14 2017 +0900
+
+    Create CNAME
+
+[33mcommit 44024ec57eeeecd6dd942fb113584e257aabc01d[m
+Merge: 75216a9 7f384df
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Dec 21 16:00:12 2017 +0900
+
+    Merge pull request #56 from realwolf/master
+    
+    1. CNAME 제거
+
+[33mcommit 7f384df26b6c3db5b78539dac8eab74a83037f4e[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 21 15:59:44 2017 +0900
+
+    1. CNAME 제거
+
+[33mcommit 75216a9b54deaef135e93788c77db9e0285c7a8c[m
+Merge: 21e3386 a12db0e
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Dec 21 15:38:47 2017 +0900
+
+    Merge pull request #55 from realwolf/master
+    
+    1. Petrone과 Petrone V2 펌웨어 업데이트 프로그램을 수정
+
+[33mcommit a12db0e19be0212549e0d44c7df381e345366ae8[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 21 15:38:01 2017 +0900
+
+    1. Petrone과 Petrone V2 펌웨어 업데이트 프로그램을 수정
+
+[33mcommit 21e3386fa53027042c7f33f1d853741a0b5f0af4[m
+Merge: d5fc752 ba4b29c
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Dec 21 14:25:59 2017 +0900
+
+    Merge pull request #54 from realwolf/master
+    
+    1. 펌웨어 다운로드를 별도의 칸으로 분리
+
+[33mcommit ba4b29c8251cf72845b01342c4c89d598ce2b992[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 21 14:25:28 2017 +0900
+
+    1. 펌웨어 다운로드를 별도의 칸으로 분리
+    2. 새로운 페트론 펌웨어 업데이트 프로그램으로 변경
+
+[33mcommit d5fc752c84935164eb08a1a738a485e533884f40[m
+Merge: 816d59b 1c52f50
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Dec 21 12:26:07 2017 +0900
+
+    Merge pull request #53 from realwolf/master
+    
+    1. petrone link 펌웨어 업데이트 프로그램 링크 추가
+
+[33mcommit 1c52f508882560d8dbff3d9217118e1b998aee81[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 21 12:25:33 2017 +0900
+
+    1. petrone link 펌웨어 업데이트 프로그램 링크 추가
+
+[33mcommit 816d59b9b7c06550b7bc7fcdbeb3ef6065e07764[m
+Merge: b70c2e3 f9b2ac2
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Dec 21 11:49:34 2017 +0900
+
+    Merge pull request #52 from realwolf/master
+    
+    1. CNAME 파일 추가
+
+[33mcommit f9b2ac24f19a6f3d4e9d58daa781d5fb649445bd[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Dec 21 11:48:43 2017 +0900
+
+    1. CNAME 파일 추가
+
+[33mcommit b70c2e3d5eca430966e0988bccfe429392e005c1[m
+Merge: e0d1f8e 9ea5c2e
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Dec 15 13:39:53 2017 +0900
+
+    Merge pull request #51 from realwolf/master
+    
+    1. 페트론 V2 업데이트 메뉴얼 추가
+
+[33mcommit 9ea5c2e8e998b077aab67eb1aa2445731835cf40[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Dec 15 13:39:21 2017 +0900
+
+    1. 페트론 V2 업데이트 메뉴얼 추가
+
+[33mcommit e0d1f8e66501a483edf488dae115c6f708543687[m
+Merge: 62e8b93 eb72339
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Nov 21 11:37:02 2017 +0900
+
+    Merge pull request #50 from realwolf/master
+    
+    1. 드론파이터 일반 버젼 표시
+
+[33mcommit eb72339ade5bb553c0e53ee9b3eb38caa57059d0[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Nov 21 11:36:37 2017 +0900
+
+    1. 드론파이터 일반 버젼 표시
+
+[33mcommit 62e8b93cabd5bfbd18489a9950e9fdc78e8fcd5a[m
+Merge: 081b16a d34e2d6
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Nov 21 11:33:49 2017 +0900
+
+    Merge pull request #49 from realwolf/master
+    
+    1. 드론파이터 펌웨어 다운로드 링크 추가
+
+[33mcommit d34e2d6279d6ec4c11a486f72b6c5e3acdca4ca1[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Nov 21 11:33:24 2017 +0900
+
+    1. 드론파이터 펌웨어 다운로드 링크 추가
+
+[33mcommit 081b16a7188aad9e5b2d5da1a731dd482ebb4aea[m
+Merge: fc92f42 19935ed
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 11:06:12 2017 +0900
+
+    Merge pull request #48 from realwolf/master
+    
+    1. Petrone2017Monitor 프로그램의 로그 파일 저장과 관련된 버그를 수정하여 펌웨어를 다시 올림.(펌웨어 링크…
+
+[33mcommit 19935ed31c54cfc987a10111e98f5d5cfa7dab85[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 11:05:43 2017 +0900
+
+    1. Petrone2017Monitor 프로그램의 로그 파일 저장과 관련된 버그를 수정하여 펌웨어를 다시 올림.(펌웨어 링크 변경)
+
+[33mcommit fc92f422f16a8da103d03885083fd3b48fc65754[m
+Merge: 8661ad7 0b62b29
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 10:57:52 2017 +0900
+
+    Merge pull request #47 from realwolf/master
+    
+    1. 펌웨어 정보 표시 위치를 위로 올림
+
+[33mcommit 0b62b29fb853e8daaee0c4fa2bbb32f01eb64191[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 10:57:24 2017 +0900
+
+    1. 펌웨어 정보 표시 위치를 위로 올림
+
+[33mcommit 8661ad76ca0d67bdf70da0385ab10fa01e46ad46[m
+Merge: 2310397 e342243
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 09:58:48 2017 +0900
+
+    Merge pull request #46 from realwolf/master
+    
+    1. 표 수정
+
+[33mcommit e3422439c4bdad17243c3b5fb58bd06196d65806[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 09:58:14 2017 +0900
+
+    1. 표 수정
+
+[33mcommit 2310397852a189f5f0cae2cb2339982ff44bbb12[m
+Merge: 28f0927 8fe2753
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 09:49:23 2017 +0900
+
+    Merge pull request #45 from realwolf/master
+    
+    1. 다운로드와 업데이트 로그를 분리
+
+[33mcommit 8fe275307205fb2562902214cd7fa41c78585c3d[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 09:48:58 2017 +0900
+
+    1. 다운로드와 업데이트 로그를 분리
+
+[33mcommit 28f09277153be158515a7b79e7c4c5666babf0f5[m
+Merge: 0c69aa7 2ad9f29
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 09:43:58 2017 +0900
+
+    Merge pull request #44 from realwolf/master
+    
+    1. 문서 메인 페이지에 다운로드 링크 추가
+
+[33mcommit 2ad9f29d017be51fb6c239364644858240247250[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 09:43:30 2017 +0900
+
+    1. 문서 메인 페이지에 다운로드 링크 추가
+
+[33mcommit 0c69aa75494482f2d3de5fd7e5ef97a1b73f19c5[m
+Merge: 19361d5 73f54a0
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 09:14:49 2017 +0900
+
+    Merge pull request #43 from realwolf/master
+    
+    1. 다운로드 위치 변경
+
+[33mcommit 73f54a0e09aa03f5bee23aee60f4bb13d07b855c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 09:14:26 2017 +0900
+
+    1. 다운로드 위치 변경
+
+[33mcommit 19361d5b9d6721125c0732e927e1fb440af8b671[m
+Merge: a4f08d7 5bafabe
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 09:12:36 2017 +0900
+
+    Merge pull request #42 from realwolf/master
+    
+    1. 다운로드 위치 변경
+
+[33mcommit 5bafabe6d6461de9171a60077851439e7f7225ef[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 09:11:56 2017 +0900
+
+    1. 다운로드 위치 변경
+
+[33mcommit a4f08d7a2b060f0018e92781bebf7e189b8603e8[m
+Merge: 8689eda c0f3b55
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Nov 16 09:00:03 2017 +0900
+
+    Merge pull request #41 from realwolf/master
+    
+    1. petrone_v2 펌웨어 업데이트 내역 추가(2017.11.13)
+
+[33mcommit c0f3b5559402af3cf88bb896f06292e1b0920a6c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Nov 16 08:58:52 2017 +0900
+
+    1. petrone_v2 펌웨어 업데이트 내역 추가(2017.11.13)
+
+[33mcommit 8689eda7b1aae68a54740363fabea0a10da79a7d[m
+Merge: a3b5533 490e844
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 31 14:18:52 2017 +0900
+
+    Merge pull request #40 from realwolf/master
+    
+    1. 페트론 링크 모듈 펌웨어 버젼 확인 예제 추가
+
+[33mcommit 490e8441dd4255e36e3edb7b87e69cf415fdb3b8[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 31 14:18:19 2017 +0900
+
+    1. 페트론 링크 모듈 펌웨어 버젼 확인 예제 추가
+
+[33mcommit a3b5533047458e0f3190bd0ca1478f0383375369[m
+Merge: 52b96f8 c25f315
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Mon Oct 30 18:16:14 2017 +0900
+
+    Merge pull request #39 from catHolic85/master
+    
+    Yaw 회전(한국어) 페이지 완성
+
+[33mcommit c25f3156e94aa57eb970b40eea58b77d0c0a19c7[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Mon Oct 30 18:13:52 2017 +0900
+
+    Yaw 회전(한국어) 페이지 완성
+
+[33mcommit 52b96f81b64b915231d6a0737bc5ee7717a52b1e[m
+Merge: a56f2eb 908e148
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Mon Oct 30 16:02:10 2017 +0900
+
+    Merge pull request #38 from catHolic85/master
+    
+    Yaw 회전 함수 예제(한국어) 추가
+
+[33mcommit 908e1487cd051d3ae5ef75e427cbaf0882b693d7[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Mon Oct 30 15:59:39 2017 +0900
+
+    Yaw 회전 함수 예제(한국어) 추가
+
+[33mcommit a56f2eb866c9803545b3c1526254b8716fd07ec5[m
+Merge: e972738 f1b575e
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Mon Oct 30 08:11:13 2017 +0900
+
+    Merge pull request #37 from realwolf/master
+    
+    index 페이지 경로 수정
+
+[33mcommit f1b575eb80e8da464acb20c5e2517a0fe23cc9e4[m
+Merge: bb4f815 e972738
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Mon Oct 30 08:10:19 2017 +0900
+
+    Merge remote-tracking branch 'remotes/upstream/master'
+
+[33mcommit bb4f815ec9859d3c83df3f4b66be57b3772284fb[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Mon Oct 30 08:09:52 2017 +0900
+
+    1. index 페이지의 경로 수정
+
+[33mcommit e9727382670f3036a60e755b2d2c2356c959f611[m
+Merge: 6be793a 8f4d051
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 18:42:05 2017 +0900
+
+    Merge pull request #36 from catHolic85/master
+    
+    english 추가
+
+[33mcommit 8f4d05119443f37dc5614435397bee85b8dec4b7[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 18:41:05 2017 +0900
+
+    english 추가
+
+[33mcommit 6be793acb4d4be6f7262f4d8fd7a1c07dbf232a9[m
+Merge: f43e4de 5b1c57f
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 18:01:06 2017 +0900
+
+    Merge pull request #35 from catHolic85/master
+    
+    링크 연결 수정
+
+[33mcommit 5b1c57fb1c147d452fac84fa17408b0546e4745d[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 17:59:27 2017 +0900
+
+    링크 연결 수정
+
+[33mcommit f43e4ded1ba56ec3f3c42b392eef0625c2175bd3[m
+Merge: cf3182c 69d35d7
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 17:10:15 2017 +0900
+
+    Merge pull request #34 from catHolic85/master
+    
+    page 수정
+
+[33mcommit 69d35d7c5c5d9484fe54273ac783629ea1dbe803[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 17:07:56 2017 +0900
+
+    page 수정
+
+[33mcommit 6a09533296ea3bc469762315932d407310b9f826[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 16:36:41 2017 +0900
+
+    이미지 파일 변경
+
+[33mcommit cf3182c5ae9846b142d867c71c598d2da24530c3[m
+Merge: 2b893b0 ef73fa2
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 15:30:29 2017 +0900
+
+    Merge pull request #33 from realwolf/master
+    
+    1. 엔트리 예제를 메인 페이지에 추가
+
+[33mcommit ef73fa21312ccae0d5d64e28ad8200ec9ed850f5[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 27 15:29:58 2017 +0900
+
+    1. 엔트리 예제를 메인 페이지에 추가
+
+[33mcommit 2b893b0baea6c24bd263de4bd169865c7a624996[m
+Merge: 9efef53 f0ff00b
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 15:26:51 2017 +0900
+
+    Merge pull request #32 from realwolf/master
+    
+    1. 파일 이름 변경, 위치 조정
+
+[33mcommit f0ff00b9a2bea21faa0cc83123887b3fd3215f8c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 27 15:26:15 2017 +0900
+
+    1. 파일 이름 변경, 위치 조정
+
+[33mcommit 9efef534b55c624f79ec9e2ef71d71719b93cef0[m
+Merge: 4e39d85 fff4dea
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 15:14:53 2017 +0900
+
+    Merge pull request #31 from catHolic85/master
+    
+    test
+
+[33mcommit fff4dea9108a0b8ab9db0f824181b879843e1e94[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 15:06:08 2017 +0900
+
+    img 추가
+
+[33mcommit b1ed4c4aa5ea721db7034544eef4012653caddbf[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 14:49:00 2017 +0900
+
+    test
+
+[33mcommit 4e39d85bbd755bda08bbd05619c70d8660daf770[m
+Author: Sejong Lee <sejong.lee805@gmail.com>
+Date:   Fri Oct 27 14:13:22 2017 +0900
+
+    Entry examples 폴더 및 파일 생성
+
+[33mcommit 104796079d4ddd49c70ee0def8dd6336cc7b2d01[m
+Merge: e6c5f0e ebc4cad
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 09:16:16 2017 +0900
+
+    Merge pull request #30 from realwolf/master
+    
+    1. 설명 수정, 줄간격 수정
+
+[33mcommit ebc4cad168a3104cd501dabf08a6fdafbc76b815[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 27 09:15:43 2017 +0900
+
+    1. 설명 수정, 줄간격 수정
+
+[33mcommit e6c5f0e3671b0f69a9ba9f047c2f42cecf62716f[m
+Merge: dc4da0b f7b7aa5
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 09:07:19 2017 +0900
+
+    Merge pull request #29 from realwolf/master
+    
+    1. 링크 이름 수정
+
+[33mcommit f7b7aa52dcf7997157fa01a9a385fa56a323f0f6[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 27 09:06:53 2017 +0900
+
+    1. 링크 이름 수정
+
+[33mcommit dc4da0bbff2faff5ac91fbf0b9f3f062a68eee56[m
+Merge: ba2fcc0 e9a11a0
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 09:00:21 2017 +0900
+
+    Merge pull request #28 from realwolf/master
+    
+    1. 줄간격, 줄바꿈 조정
+
+[33mcommit e9a11a0a81e4a4e3b8082c47489f768df6d8000c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 27 08:59:49 2017 +0900
+
+    1. 줄간격, 줄바꿈 조정
+
+[33mcommit ba2fcc0d3c9240e6b25a20fddbbe89d6e745a582[m
+Merge: 6adf652 5e1c439
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 27 08:51:28 2017 +0900
+
+    Merge pull request #27 from realwolf/master
+    
+    1. 이미지에서 선택해야 할 영역을 빨간색 박스로 표시
+
+[33mcommit 5e1c439e6e8d6007c66f38cf5eb3ab17e88d556a[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 27 08:50:52 2017 +0900
+
+    1. 이미지에서 선택해야 할 영역을 빨간색 박스로 표시
+    2. 이미지 테두리 정리
+    3. 튜토리얼 문서 수정
+
+[33mcommit 6adf652b318852aca5be319565fa7e558e25d9e6[m
+Merge: 8a45efb 045997e
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Oct 26 16:08:14 2017 +0900
+
+    Merge pull request #26 from realwolf/master
+    
+    1. 튜토리얼 페이지의 링크 경로 수정
+
+[33mcommit 045997edee7e50b0ff102b1f50bdde070f6f1d5b[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Oct 26 16:07:42 2017 +0900
+
+    1. 튜토리얼 페이지의 링크 경로 수정
+
+[33mcommit 8a45efb6d1442866ea961270c6c9e48dbd2a63a0[m
+Merge: ccd38f9 624d5cc
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Oct 26 16:05:09 2017 +0900
+
+    Merge pull request #25 from realwolf/master
+    
+    1. 튜토리얼의 이미지 경로 수정
+
+[33mcommit 624d5ccf97a126a6adfdc8d9099fd5587db147a8[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Oct 26 16:04:40 2017 +0900
+
+    1. 튜토리얼의 이미지 경로 수정
+
+[33mcommit ccd38f96d7f038029d558a7263b4b4208035ec13[m
+Merge: 6942029 027bf41
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Oct 26 16:02:05 2017 +0900
+
+    Merge pull request #24 from realwolf/master
+    
+    1. petrone_v2 맥 튜토리얼 추가
+
+[33mcommit 027bf41c6d9b8cb9760eb7af81e3d8e7aaef52c3[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Oct 26 16:01:28 2017 +0900
+
+    1. petrone_v2 맥 튜토리얼 추가
+
+[33mcommit 694202949b7a08475153fef7f10282bfeedf881a[m
+Merge: 72a5c4e 009c320
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 14:54:00 2017 +0900
+
+    Merge pull request #23 from realwolf/master
+    
+    아이콘 배치 순서 변경, 텍스트 링크 삭제
+
+[33mcommit 009c320ec462e7937ebdb4fad1153c033f41fb43[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:53:24 2017 +0900
+
+    1. 텍스트 링크 제거
+
+[33mcommit 4ffab3ed230b239e1d9ce446d53528f472ea27ff[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:52:23 2017 +0900
+
+    1. 아이콘 배치 순서 변경
+    2. 바이로봇 아이콘 수정
+
+[33mcommit 72a5c4e2d019a40000dedeeabac0c9c0c34ad28e[m
+Merge: 09270d0 37794ef
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 14:37:21 2017 +0900
+
+    Merge pull request #22 from realwolf/master
+    
+    1. 홈페이지와 youtube 아이콘 추가
+
+[33mcommit 37794efa1ea1ded7fe4f01f9f239f30f72a77865[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:36:45 2017 +0900
+
+    1. 홈페이지와 youtube 아이콘 추가
+
+[33mcommit 09270d09be5eae1af2173964a74f5536e8f9439f[m
+Merge: bd2326e 30c1380
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 14:13:07 2017 +0900
+
+    Merge pull request #21 from realwolf/master
+    
+    1. 줄간격 수정
+
+[33mcommit 30c13807051645c28395b0c7c37a5b64b8f7837e[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:12:43 2017 +0900
+
+    1. 줄간격 수정
+
+[33mcommit bd2326e53ecddcace1d8c806cc604851740ae0e0[m
+Merge: c9bad58 d8fa6be
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 14:11:28 2017 +0900
+
+    Merge pull request #20 from realwolf/master
+    
+    1. 줄간격 수정
+
+[33mcommit d8fa6be69fa84511cb237e3696b6975cabe7761c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:11:00 2017 +0900
+
+    1. 줄간격 수정
+
+[33mcommit c9bad588dbf505a425ef299c0422c3bc1d9f0e30[m
+Merge: dac88ac 27b6a6c
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 14:09:05 2017 +0900
+
+    Merge pull request #19 from realwolf/master
+    
+    1. 줄간격 변경
+
+[33mcommit 27b6a6cacfaa59531657dc9b8e1c419aefa2be7b[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:08:43 2017 +0900
+
+    1. 줄간격 변경
+
+[33mcommit dac88ac6a820caf4e49c45a6ae5d1f7cd9369daf[m
+Merge: e9ec159 cf923ea
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 14:06:12 2017 +0900
+
+    Merge pull request #18 from realwolf/master
+    
+    1. 줄간격 변경
+
+[33mcommit cf923ea5c9c0c4052c80ca63de2edcd6dbd835a3[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 14:05:35 2017 +0900
+
+    1. 줄간격 변경
+
+[33mcommit e9ec1595dcea9f4a67b9982bde07d2787335d277[m
+Merge: 228c522 0103416
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 13:46:33 2017 +0900
+
+    Merge pull request #17 from realwolf/master
+    
+    줄간격 변경
+
+[33mcommit 01034160931288f00f2302a00bcbbbbc6335dab9[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 13:45:10 2017 +0900
+
+    1. 링크를 새로운 창에서 열리도록 변경
+
+[33mcommit 19ba892097d19ea53f7d82304e5313e7ed45f90b[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 13:44:25 2017 +0900
+
+    1. 줄간격 수정
+
+[33mcommit 228c52267de744f3d8ce15f499b8d57539456b44[m
+Merge: 3acade0 a3b85cb
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 13:41:14 2017 +0900
+
+    Merge pull request #16 from realwolf/master
+    
+    1. 링크 추가
+
+[33mcommit a3b85cb22b87bcb9c77251c0bfbf665f98b50e07[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 13:40:35 2017 +0900
+
+    1. 링크 추가
+
+[33mcommit 3acade0ea0c7ca5531574ba603b2d090c875f6d9[m
+Merge: 4fe961f fb0d975
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 09:49:48 2017 +0900
+
+    Merge pull request #15 from realwolf/master
+    
+    1. 업데이트 내역 설명 수정
+
+[33mcommit fb0d975b4752df39880f0b1ed8f82ab7ea57a3ae[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 09:49:22 2017 +0900
+
+    1. 업데이트 내역 설명 수정
+
+[33mcommit 4fe961ffed00d61f0fe96fb92d94fd977bcf8b63[m
+Merge: 44192f9 26caa03
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Tue Oct 24 09:46:05 2017 +0900
+
+    Merge pull request #14 from realwolf/master
+    
+    1. 페트론 펌웨어 업데이트 로그에 48버젼 설명 추가
+
+[33mcommit 26caa03353837ba2875b67661c5b9bfd93bb8867[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Tue Oct 24 09:45:07 2017 +0900
+
+    1. 페트론 펌웨어 업데이트 로그에 48버젼 설명 추가
+
+[33mcommit 44192f9a44ad51dad560e9d24aec3e91aa558754[m
+Merge: 619a5df 045305d
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Thu Oct 19 11:35:47 2017 +0900
+
+    Merge pull request #13 from realwolf/master
+    
+    1. Petrone V2 윈도우 예제 링크 추가
+
+[33mcommit 045305dbeaccec8369071437a044d20883dee410[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Thu Oct 19 11:35:25 2017 +0900
+
+    1. Petrone V2 윈도우 예제 링크 추가
+
+[33mcommit 619a5df2809eafae372c9e568a995d438d76b828[m
+Merge: 5f16c1f 2a66ae4
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 14:43:22 2017 +0900
+
+    Merge pull request #12 from realwolf/master
+    
+    1. 문서 내부 파일 이름을 수정하지 않은 것을 확인하여 수정함
+
+[33mcommit 2a66ae4d67e190da38d5b65e25080ef8576b7c23[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 14:42:37 2017 +0900
+
+    1. 문서 내부 파일 이름을 수정하지 않은 것을 확인하여 수정함
+
+[33mcommit 5f16c1f88e645273fdc433bcc93810238867279b[m
+Merge: cd6b181 88aedc5
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 11:01:49 2017 +0900
+
+    Merge pull request #11 from realwolf/master
+    
+    1. petrone link 페이지의 링크 수정
+
+[33mcommit 88aedc56fe510056cdab2bce7c13e2efa7ab9a4e[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 11:01:20 2017 +0900
+
+    1. petrone link 페이지의 링크 수정
+
+[33mcommit cd6b181b2c1c132aba25b93c9e45174354fd5911[m
+Merge: 79de78f 8b6822d
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 10:56:53 2017 +0900
+
+    Merge pull request #10 from realwolf/master
+    
+    1. 프로토콜 문서에 번호 부여(문서 수정 시 순서를 헷갈리지 않게 하기 위함)
+
+[33mcommit 8b6822db56485eb9ddf7d3d607629fd5639532ba[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 10:56:08 2017 +0900
+
+    1. 프로토콜 문서에 번호 부여(문서 수정 시 순서를 헷갈리지 않게 하기 위함)
+
+[33mcommit 79de78fe9e65bb8b9bf0c5e5b890ef76ae5870e8[m
+Merge: 0bb7e0c 8ba34d4
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 10:28:15 2017 +0900
+
+    Merge pull request #9 from realwolf/master
+    
+    1. 드론파이터에 대한 업데이트 로그 수정
+
+[33mcommit 8ba34d4a2aa7cdf2a1df7e73dbf385a91c6fea30[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 10:27:34 2017 +0900
+
+    1. 드론파이터에 대한 업데이트 로그 수정
+
+[33mcommit 0bb7e0cb321c7400c65f01f4dd980d055618cba0[m
+Merge: 33021c7 848ecef
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 10:15:53 2017 +0900
+
+    Merge pull request #8 from realwolf/master
+    
+    1. 줄바꿈 수정
+
+[33mcommit 848ecef4a2405c1bfc51cf73f556571445351170[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 10:15:13 2017 +0900
+
+    1. 줄바꿈 수정
+
+[33mcommit 33021c7c4cf56aac0a442dc1316933307ba66671[m
+Merge: 9136b4e 3da3fcb
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 10:12:45 2017 +0900
+
+    Merge pull request #7 from realwolf/master
+    
+    1. 펌웨어 업데이트 내역 수정
+
+[33mcommit 3da3fcb8af91319fe2cd7d519bcddde78df91488[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 10:12:07 2017 +0900
+
+    1. 펌웨어 업데이트 내역 수정
+
+[33mcommit 9136b4efd540ce1a49c2c042e4517f5c67db2c1b[m
+Merge: 77a55b7 8a9d871
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 10:01:15 2017 +0900
+
+    Merge pull request #6 from realwolf/master
+    
+    1. 업데이트 로그 수정
+
+[33mcommit 8a9d871ec64b06d03a50e03888651c84bc7be12b[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 09:57:34 2017 +0900
+
+    1. 업데이트 로그 수정
+
+[33mcommit 77a55b7cc0c4bbf6d64151b2fc2e14ceba27becb[m
+Merge: 67750b4 835dfc4
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Wed Oct 18 09:49:30 2017 +0900
+
+    Merge pull request #5 from realwolf/master
+    
+    펌웨어 업데이트 로그 파일 작성
+
+[33mcommit 835dfc4353770ed6cf7a594240bd228db0f0ea8a[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Wed Oct 18 09:46:48 2017 +0900
+
+    1. documents 의 index.md 파일 삭제(혼동을 막기 위함)
+    2. 펌웨어 업데이트 로그 파일 작성
+
+[33mcommit 67750b433ebd316c85d5836fc3201fefa77d5b56[m
+Merge: 92f6895 d83cce0
+Author: Sanghyo Lee <realwolf@users.noreply.github.com>
+Date:   Fri Oct 13 15:57:18 2017 +0900
+
+    Merge pull request #4 from realwolf/master
+    
+    이름 수정
+
+[33mcommit d83cce0baf16a979524046f35dbfdcbf3e4eec0c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 15:56:26 2017 +0900
+
+    1. 이름 수정
+
+[33mcommit c5cfa28f8d5ddf785e93706422f3ce37fd06ef71[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 15:43:28 2017 +0900
+
+    1. 버젼 정보는 주석처리함
+
+[33mcommit 7efa1f001a72b808e2e570673e33f649fa7cbef6[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 15:41:12 2017 +0900
+
+    1. 버젼 정보 추가
+
+[33mcommit 92f68958700d7aa77d5cd3428fe08742a349fadb[m
+Merge: d372a30 6537ab9
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Fri Oct 13 15:32:28 2017 +0900
+
+    Merge pull request #3 from realwolf/master
+    
+    1. 이미지 크기 조절
+
+[33mcommit 6537ab908bd474fcf1d0489a8c61865da9073ef0[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 15:28:09 2017 +0900
+
+    1. 이미지 크기 조절
+
+[33mcommit d372a301b8dbfd44e6e1c166d94ad2891e3a9be6[m
+Merge: 9759c9f 416df47
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Fri Oct 13 15:25:35 2017 +0900
+
+    Merge pull request #2 from realwolf/master
+    
+    1. 이미지 추가
+
+[33mcommit 416df4745a1c0652afb80c272c1f895377e67355[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 15:23:44 2017 +0900
+
+    1. 이미지 추가
+
+[33mcommit 9759c9f8eb4ee513320441115c4df9c994790206[m
+Merge: 2bc5d59 43da43c
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Fri Oct 13 13:59:25 2017 +0900
+
+    Merge pull request #1 from realwolf/master
+    
+    blog와 관련된 항목 제거
+
+[33mcommit 43da43cdc6d15c06a2dc56469a1b97ad80c72372[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 13:55:58 2017 +0900
+
+    1. index 수정
+
+[33mcommit 0fa3fb7d69efb9d417a9fb4ec2a2c888f0164526[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 13:53:50 2017 +0900
+
+    1. index 수정
+
+[33mcommit faa7ab4bcb6924847a2f601e2371e19a58ddbe4c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 13:49:06 2017 +0900
+
+    1. 사용하지 않는 항목들 제거 중
+
+[33mcommit 2bc5d59a2480fccc72d0f6617b4ac916bcd43e75[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 12:32:24 2017 +0900
+
+    1. index를 표로 변경
+
+[33mcommit deb57e449265d05b216c729a94011dec158c55d6[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 12:22:57 2017 +0900
+
+    1. index 수정
+
+[33mcommit 1ad793849a7cde492afb66947718731e1c0d3b46[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 12:21:05 2017 +0900
+
+    1. index 수정
+
+[33mcommit d5b39547a44945428ca69d784aff6207ffe68cb6[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 12:18:48 2017 +0900
+
+    1. kramdown 사용
+
+[33mcommit 8b52c62aac28c34e865affd372b1b4a7beeebaa7[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 12:15:59 2017 +0900
+
+    1. PyPI 링크 제거
+
+[33mcommit f97ce0c9579aa128bdb0a6fa047af03da486b15c[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 12:13:52 2017 +0900
+
+    1. index 페이지 수정
+
+[33mcommit faa826d057801628fffd4f008f384373d9dbcd16[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 11:44:47 2017 +0900
+
+    1. 포럼 크기 조절
+
+[33mcommit bea7d252f98e78e0f7c5bc4ff6e887e04f1330bb[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 11:42:55 2017 +0900
+
+    1. 메인 페이지를 변경
+
+[33mcommit 3c7ac1e8158eec256c82dab0bcb5ae3eeedec268[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 11:37:43 2017 +0900
+
+    1. CNAME 파일 제거(cafe24에서 CNAME 설정이 안된다고 하여 제거함)
+
+[33mcommit 1efe8b4276d47803ba471f2e09de45607a2bb262[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 11:14:57 2017 +0900
+
+    1. 사용하지 않는 파일 제거
+    2. document에 문서 속성 추가 테스트
+
+[33mcommit 0c7a465e5475287185b694ce2395a5b22df8652a[m
+Author: Sanghyo Lee <shlee@byrobot.co.kr>
+Date:   Fri Oct 13 10:18:50 2017 +0900
+
+    1. dronefighters.github.io 의 게시물을 복사
+
+[33mcommit f5dd75bffb9c117565f2499ab690bea9d96d4d55[m
+Author: BYROBOT <dev@byrobot.co.kr>
+Date:   Fri Oct 13 10:15:59 2017 +0900
+
+    Initial commit
