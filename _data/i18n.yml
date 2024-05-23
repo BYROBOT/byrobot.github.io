@@ -1,0 +1,47 @@
+en: &en
+  about: 'About'
+  articles: 'Articles'
+  back_to_top: 'Back to Top'
+  categories: 'Categories'
+  close: 'Close'
+  copyright: '<p><small>Theme <a href="https://github.com/yizeng/jekyll-theme-simple-texture" target="_blank">Simple Texture</a> developed by <a href="http://yizeng.me" target="_blank">Yi Zeng</a>, powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</small></p>'
+  last_updated: 'Last updated'
+  menu: 'Menu'
+  more: 'More'
+  next_post: 'Next Post'
+  notice_no_js: 'This site requires JavaScript. Here are the instructions <a href="http://www.enable-javascript.com/" target="_blank">how to enable JavaScript in your web browser</a>.'
+  notice_old_ie: 'You are using an outdated browser.'
+  page_404_content: 'You will be redirected to <a href="/">homepage</a> in few seconds.'
+  page_404_heading: 'Sorry, the page is not found.'
+  published: 'Published'
+  redirecting: 'Redirecting...'
+  search: 'Search'
+  search_not_found: '<small>Nothing found :(</small>'
+  search_placeholder: 'Search...'
+  search_results: 'Search results'
+  share_post: 'Share Post:'
+  show: 'Show'
+  show_author: 'Show Author'
+  show_comments: 'Show Comments'
+  show_license: 'Show License'
+  products: 'Products'
+  tags: 'Tags'
+  view: 'View'
+en-us:
+  <<: *en
+en-gb:
+  <<: *en
+en-au:
+  <<: *en
+en-ca:
+  <<: *en
+en-nz:
+  <<: *en
+zh:
+  <<: *en
+zh-cn:
+  <<: *en
+zh-hk:
+  <<: *en
+zh-tw:
+  <<: *en

@@ -1,0 +1,22 @@
+<footer class="the-footer">
+    <div class="unit-foot">
+        <div class="unit-inner unit-foot-inner">
+            <div class="misc vcard">
+                <div class="about">
+                    {% if site.blog.footer_content %}
+                        <p>{{ site.blog.footer_content }}</p>
+                    {% endif %}
+                    {{ site.data.i18n[site.lang].copyright }}
+                </div>
+                <div class="social-links">
+                    {% for link in site.author.social_links %}
+                        {% if link.url %}
+                            <a class="ico-{{ link.name }}" href="{{ link.url }}" rel="me" target="_blank" title="{{ link.name }}"></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="internal back-to-top">{{ site.data.i18n[site.lang].back_to_top }}</a>
+</footer>
