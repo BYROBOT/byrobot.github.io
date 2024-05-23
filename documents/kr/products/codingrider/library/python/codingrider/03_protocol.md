@@ -255,19 +255,7 @@ class Request(ISerializable):
 <br>
 
 
-<a name="RequestOption"></a>
-## RequestOption
 
-```py
-class Request(ISerializable):
-
-    def __init__(self):
-        self.dataType   = DataType.None_
-        self.option     = 0
-```
-
-<br>
-<br>
 
 <a name="Message"></a>
 ## Message
@@ -537,7 +525,7 @@ class CommandLightEvent(ISerializable):
 | 변수 이름   | 형식                                                               | 크기     | 범위  | 설명           |
 |:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:---------------|
 | command     | [Command](#Command)                                                | 2 Byte   | -     | 명령           |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
+| event       | [Protocol::Light::Event](../../../protocol/06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
 
 
 <br>
@@ -563,8 +551,8 @@ class CommandLightEventColor(ISerializable):
 | 변수 이름   | 형식                                                               | 크기     | 범위  | 설명           |
 |:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:---------------|
 | command     | [Command](#Command)                                                | 2 Byte   | -     | 명령           |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
-| color       | [Light::Color](06_structs_light.md##Light_Color)                   | 3 Byte   | -     | LED RGB 색상   |
+| event       | [Protocol::Light::Event](../../../protocol/06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트     |
+| color       | [Light::Color](../../../protocol/06_structs_light.md##Light_Color)                   | 3 Byte   | -     | LED RGB 색상   |
 
 
 <br>
@@ -590,8 +578,8 @@ class CommandLightEventColors(ISerializable):
 | 변수 이름   | 형식                                                               | 크기     | 범위  | 설명              |
 |:-----------:|:------------------------------------------------------------------:|:--------:|:-----:|:------------------|
 | command     | [Command](#Command)                                                | 2 Byte   | -     | 명령              |
-| event       | [Protocol::Light::Event](06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트        |
-| colors      | [Light::Colors::Type](06_structs_light.md#Light_Colors)            | 1 Byte   | -     | LED 팔레트 인덱스 |
+| event       | [Protocol::Light::Event](../../../protocol/06_structs_light.md#Protocol_Light_Event) | 4 Byte   | -     | LED 이벤트        |
+| colors      | [Light::Colors::Type](../../../protocol/06_structs_light.md#Light_Colors)            | 1 Byte   | -     | LED 팔레트 인덱스 |
 
 
 <br>
