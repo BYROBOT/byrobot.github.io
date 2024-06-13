@@ -21,8 +21,8 @@
     td.driver    { background: #F7FFF7 !important; }
     td.entry     { background: #FEF3FE !important; }
     td.python    { background: #FFFEF5 !important; }
-    td.rust      { background: #E1F7EE !important; }
-    td.issues    { background: #FEF8EA !important; }
+    td.rust      { background: #FEF8EA !important; }
+    td.issues    { background: #FAFEFE !important; }
     td.byrobot   { background: #FAFEFE !important; }
     td.white     { background: #FFFFFF !important; }
     td.space     { background: #FFFFFF !important; }
@@ -44,11 +44,10 @@
         <tr>
             <td width="110" class="entry"><div align="center">&nbsp;<br><a href="#Entry"><span class="even">Entry</span></a><br>&nbsp;</div></td>
             <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
-            <td width="110" class="rust"><div align="center">&nbsp;<br><a href="#Rust"><span class="odd">Rust</span></a><br>&nbsp;</div></td>
+            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone8/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone8/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
-            <td width="110" class="byrobot" colspan="2"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
+            <td width="110" class="byrobot" colspan="3"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
@@ -84,9 +83,6 @@
             <td colspan="2" class="white"><div align="center">
                 <a href="https://drive.byrobot.co.kr/d/s/v4sPNw5EblETyYVmiwdcFT51cP2rZjx8/OLRBCCvnkkJEsZ-M2IvpTdudzGrr863R-RLRAh2AbuQo" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1jAjTFP5vV-TTkje84rUCLWgV5X48szv3/view?usp=sharing" target="_blank">Windows</a><br>-->
-                <a href="https://drive.google.com/file/d/1rTgmDCANkKpIsb5kpfSQUO56dsmf2Qlq/view?usp=sharing" target="_blank">macOS</a><br>
-                <a href="https://drive.google.com/file/d/17R1ugKODlnYxwrqkuQ6U-YIB-K1eZ6cI/view?usp=sharing" target="_blank">Linux</a><br>
-                <a href="https://drive.google.com/file/d/1gbz0hz9xGy2AHwLa_2WLm985WnngUsFt/view?usp=sharing" target="_blank">Raspberry PI</a>
             </div></td>
         </tr>
         <tr>
@@ -99,9 +95,6 @@
                 <div align="center">
                     <a href="/documents/kr/products/coding_drone/manual/update/drone4autoupdaterlight/">Windows (.NET)</a><br>
                     <!--<a href="/documents/kr/products/coding_drone/manual/update/drone_4_updater_windows/">Windows</a><br>-->
-                    <a href="/documents/kr/products/coding_drone/manual/update/drone_4_updater_mac/">macOS</a><br>
-                    <a href="/documents/kr/products/coding_drone/manual/update/drone_4_updater_linux/">Linux</a><br>
-                    <a href="/documents/kr/products/coding_drone/manual/update/drone_4_updater_raspberry_pi/">Raspberry PI</a>
                 </div>
             </td>
         </tr>
@@ -115,9 +108,6 @@
                 <div align="center">Download</div>
             </td>
             <td colspan="2" class="white">
-                <div align="center"><a href="https://drive.google.com/open?id=1HisAPi3nipnnyuFklNXiKn46cV_5P0iy" target="_blank">Win7, Win8 (32bit)</a></div>
-                <div align="center"><a href="https://drive.google.com/open?id=1Cm7fIt9XAi-dUNnqxVblNriL8oVfqekg" target="_blank">Win7, Win8 (64bit)</a></div>
-                <div align="center"><a href="https://drive.google.com/open?id=1G6ma1HbzNSPqTcU9ir1I4lyYLobLM4K-" target="_blank">Win7, Win8 (new)</a></div>
                 <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
@@ -141,76 +131,32 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Library</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/e-drone/" target="_blank">e_drone</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/CodingDrone/" target="_blank">CodingDrone</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Repository</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="https://github.com/byrobot-python/e_drone" target="_blank">e_drone (github)</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="https://github.com/AluxDrone/CodingDrone" target="_blank">CodingDrone (github)</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Examples</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://github.com/byrobot-python/e_drone_examples" target="_blank">e_drone_examples (github)</a></div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://github.com/AluxDrone/CodingDrone_example" target="_blank">CodingDrone_examples (github)</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Version</div></td>
-            <td colspan="2" class="python"><div align="center">22.1.17</div></td>
+            <td colspan="2" class="python"><div align="center">1.0</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2022.1.4</div></td>
+            <td colspan="2" class="white"><div align="center">2024.6.12</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/e_drone/library/python/e_drone/">한국어</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/coding_drone/library/coding_drone/">한국어</a></div></td>
         </tr>
-        <tr>
-            <td class="python"><div align="center">Update Log</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="/documents/kr/products/e_drone/log/updates/python/">한국어</a></div></td>
-        </tr>
-        <tr><td colspan="3" class="space"></td></tr>
-        <!-- Rust -->
-        <tr>
-            <td colspan="3" class="rust"><div align="center"><a name="Rust"></a>&nbsp;<br>Rust<br>&nbsp;</div></td>
-        </tr>
-        <tr>
-            <td rowspan="3" class="rust"><div align="center">Library</div></td>
-            <td class="white"><div align="center">Core</div></td>
-            <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone" target="_blank">e_drone</a></div></td>
-        </tr>
-        <tr>
-            <td class="rust"><div align="center">
-                Windows 10<br>
-                macOS<br>
-                Linux<br>
-                Raspberry Pi OS
-            </div></td>
-            <td class="rust"><div align="center"><a href="https://crates.io/crates/e_drone_sp" target="_blank">e_drone_sp</a></div></td>
-        </tr>
-        <tr>
-            <td class="white"><div align="center">Raspberry PI OS</div></td>
-            <td class="white"><div align="center"><a href="https://crates.io/crates/e_drone_rpi" target="_blank">e_drone_rpi</a></div></td>
-        </tr>
-        <tr>
-            <td class="rust"><div align="center">Version</div></td>
-            <td colspan="2" class="rust"><div align="center">21.9.2</div></td>
-        </tr>
-        <tr>
-            <td class="rust"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2021.9.15</div></td>
-        </tr>
-        <tr>
-            <td class="rust"><div align="center">Manual</div></td>
-            <td colspan="2" class="rust"><div align="center"><a href="https://docs.rs/e_drone/" target="_blank">한국어</a></div></td>
-        </tr>
-        <tr>
-            <td class="rust"><div align="center">Repository</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://github.com/byrobot-rust/e_drone" target="_blank">github</a></div></td>
-        </tr>
-        <!-- End -->
         <tr><td colspan="3" class="space"></td></tr>
     </table>
 </div>
 
 ---
 
-Modified : 2023.8.24
+Modified : 2024.6.12
