@@ -63,7 +63,7 @@
         </tr>
         <tr>
             <td class="documents"><div align="center">Protocol</div></td>
-            <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/e_drone/protocol/" target="_blank">한국어(E-Drone)</a></div></td>
+            <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/e_drone/protocol/" target="_blank">한국어</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr><td colspan="3" class="space"></td></tr>
