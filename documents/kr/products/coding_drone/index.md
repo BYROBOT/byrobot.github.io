@@ -151,7 +151,7 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
-            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/coding_drone/library/coding_drone/">한국어</a></div></td>
+            <td colspan="2" class="python"><div align="center"><a href="/documents/kr/products/coding_drone/library/python/coding_drone/">한국어</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
     </table>
