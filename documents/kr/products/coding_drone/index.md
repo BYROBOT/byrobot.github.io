@@ -37,14 +37,14 @@
     <img src="/assets/images/products/byrobot_drone_8.png" alt="coding_drone">
     <table style="padding: 0px 0px 0px 0px;">
         <tr>
-            <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
-            <td width="110" class="firmware"><div align="center">&nbsp;<br><a href="#Firmware"><span class="even">Firmware</span></a><br>&nbsp;</div></td>
+            <td width="140" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
+            <td width="140" class="firmware"><div align="center">&nbsp;<br><a href="#Firmware"><span class="even">Firmware</span></a><br>&nbsp;</div></td>
         <tr>
-            <td width="110" class="entry"><div align="center">&nbsp;<br><a href="#Entry"><span class="even">Entry</span></a><br>&nbsp;</div></td>
-            <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
+            <td width="140" class="entry"><div align="center">&nbsp;<br><a href="#Entry"><span class="even">Entry</span></a><br>&nbsp;</div></td>
+            <td width="140" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
-            <td width="110" class="byrobot" colspan="3"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
+            <td width="140" class="byrobot" colspan="3"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
         </tr>
     </table>
     <br>
