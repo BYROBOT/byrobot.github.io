@@ -39,12 +39,9 @@
         <tr>
             <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
             <td width="110" class="firmware"><div align="center">&nbsp;<br><a href="#Firmware"><span class="even">Firmware</span></a><br>&nbsp;</div></td>
-            <td width="110" class="driver"><div align="center">&nbsp;<br><a href="#Driver"><span class="odd">Driver</span></a><br>&nbsp;</div></td>
-        </tr>
         <tr>
             <td width="110" class="entry"><div align="center">&nbsp;<br><a href="#Entry"><span class="even">Entry</span></a><br>&nbsp;</div></td>
             <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="odd">Python</span></a><br>&nbsp;</div></td>
-            <td width="110" class="issues"><div align="center">&nbsp;<br><a href="https://github.com/BYROBOT/drone8/issues/" target="_blank"><span class="even">Issues</span></a><br>&nbsp;</div></td>
         </tr>
         <tr>
             <td width="110" class="byrobot" colspan="3"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td>
@@ -63,7 +60,7 @@
         </tr>
         <tr>
             <td class="documents"><div align="center">Protocol</div></td>
-            <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/e_drone/protocol/" target="_blank">한국어</a></div></td>
+            <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/coding_drone/protocol/" target="_blank">한국어</a></div></td>
         </tr>
         <!-- Firmware -->
         <tr><td colspan="3" class="space"></td></tr>
@@ -96,19 +93,6 @@
                     <a href="/documents/kr/products/coding_drone/manual/update/drone4autoupdaterlight/">Windows (.NET)</a><br>
                     <!--<a href="/documents/kr/products/coding_drone/manual/update/drone_4_updater_windows/">Windows</a><br>-->
                 </div>
-            </td>
-        </tr>
-        <!-- Driver -->
-        <tr><td colspan="3" class="space"></td></tr>
-        <tr>
-            <td colspan="3" class="driver"><div align="center"><a name="Driver"></a>&nbsp;<br>Driver<br>&nbsp;</div></td>
-        </tr>
-        <tr>
-            <td class="driver">
-                <div align="center">Download</div>
-            </td>
-            <td colspan="2" class="white">
-                <div align="center">Win 10은 자동 인식</div>
             </td>
         </tr>
         <!-- Entry -->
