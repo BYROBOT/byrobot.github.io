@@ -48,8 +48,6 @@ namespace Protocol
                 Configuration               = 0x16,      // 설정
                 Echo                        = 0x17,      // 반향(정상적으로 송수신 되는 데이터 길이 확인용, 받은 데이터를 그대로 반환, RF로 송수신 가능한 데이터 길이를 확인할 목적으로 추가)
 
-                Battle                      = 0x1F,      // 전투
-
                 // Light
                 LightManual                 = 0x20,      // LED 수동 제어
                 LightMode                   = 0x21,      // LED 모드

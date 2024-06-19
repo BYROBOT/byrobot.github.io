@@ -49,7 +49,6 @@ namespace Protocol
                 // 관리자
                 ClearCounter            = 0xA0,      // 카운터 클리어(관리자 권한을 획득했을 경우에만 동작)
 
-
                 EndOfType               = 0xEC,
         };
     }
