@@ -16,7 +16,7 @@ Modified : 2023.8.24
 > - 코딩시 스킵되는 문제 수정
 > - usb연결시 조종기 화면 깨짐 문제 수정
 
-[Download](https://drive.byrobot.co.kr/d/s/v4sPNw5EblETyYVmiwdcFT51cP2rZjx8/OLRBCCvnkkJEsZ-M2IvpTdudzGrr863R-RLRAh2AbuQo)
+[Download](https://alux1004-my.sharepoint.com/:u:/g/personal/skji_aluxonline_com/EZ8d-QwzlKVBtv6HYol_nMcBxqO0VT5JuVrBDzMMr_EnXw?e=IqLwin)
 
 <br>
 
