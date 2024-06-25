@@ -91,7 +91,7 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">24.5.23</div></td>
+            <td colspan="2" class="white"><div align="center">24.6.25</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
