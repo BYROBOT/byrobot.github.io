@@ -75,23 +75,23 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Library</div></td>
-            <td colspan="2" class="white"><div align="center">-</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/CodingRider/">CodingRider</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Repository</div></td>
-            <td colspan="2" class="python"><div align="center">-</div></td>
+            <td colspan="2" class="python"><div align="center"><a href="https://github.com/AluxDrone/CodingRider">CodingRider (github)</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Examples</div></td>
-            <td colspan="2" class="white"><div align="center">-</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://github.com/AluxDrone/CodingRider_example">CodingRider_examples (github)</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Version</div></td>
-            <td colspan="2" class="python"><div align="center">-</div></td>
+            <td colspan="2" class="python"><div align="center">2.9</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">-</div></td>
+            <td colspan="2" class="white"><div align="center">24.5.23</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>
@@ -107,4 +107,4 @@
 
 ---
 
-Modified : 2024.5.23
+Modified : 2024.6.25
