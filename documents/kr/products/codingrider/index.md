@@ -75,7 +75,7 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Library</div></td>
-            <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/CodingRider/">CodingRider</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://pypi.org/project/CodingRider/">CodingRider</a></div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Repository</div></td>
