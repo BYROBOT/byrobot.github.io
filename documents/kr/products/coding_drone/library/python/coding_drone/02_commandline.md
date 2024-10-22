@@ -24,7 +24,7 @@ CodingDrone 라이브러리는 소스 코드 작성없이 원하는 명령을 �
 ```
 
 <div align="center">
-    <img src="images/02_commandline_commandlist.png">
+    <img src="../images/02_commandline_commandlist.png">
     <p>실행 가능한 명령 리스트</p>
 </div>
 
@@ -64,7 +64,7 @@ State 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ```
 
 <div align="center">
-    <img src="images/02_commandline_request_state.png">
+    <img src="../images/02_commandline_request_state.png">
     <p>State 요청 실행 결과</p>
 </div>
 
@@ -80,7 +80,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ```
 
 <div align="center">
-    <img src="images/02_commandline_request_motion.png">
+    <img src="../images/02_commandline_request_motion.png">
     <p>Motion 요청 실행 결과</p>
 </div>
 
@@ -140,7 +140,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 3.1. 조종 명령
 
 <div align="center">
-    <img src="images/03_01_control.png">
+    <img src="../images/03_01_control.png">
     <p>조종 명령 예시 - Roll, Pitch, Yaw, Throttle</p>
 </div>
 
@@ -155,7 +155,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 3.2. 조종 명령(위치, 방향)
 
 <div align="center">
-    <img src="images/03_02_control_position_heading.png">
+    <img src="../images/03_02_control_position_heading.png">
     <p>조종 명령 예시 - 위치, 방향</p>
 </div>
 
@@ -169,7 +169,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 3.3. 조종 명령(위치)
 
 <div align="center">
-    <img src="images/03_03_control_position.png">
+    <img src="../images/03_03_control_position.png">
     <p>조종 명령 예시 - 위치</p>
 </div>
 
@@ -183,7 +183,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 3.4. 조종 명령(방향)
 
 <div align="center">
-    <img src="images/03_04_control_heading.png">
+    <img src="../images/03_04_control_heading.png">
     <p>조종 명령 예시 - 방향</p>
 </div>
 
@@ -207,7 +207,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 4.1. 버저 작동
 
 <div align="center">
-    <img src="images/04_01_buzzer.png">
+    <img src="../images/04_01_buzzer.png">
     <p>버저 작동 예시</p>
 </div>
 
@@ -233,7 +233,7 @@ Motion 데이터를 10회 0.2초 주기로 요청하는 명령은 다음과 같�
 ## 5.1. 진동 작동
 
 <div align="center">
-    <img src="images/05_01_vibrator.png">
+    <img src="../images/05_01_vibrator.png">
     <p>진동 작동 예시</p>
 </div>
 
@@ -267,7 +267,7 @@ python -m CodingDrone light [rear, a, b] [hold, flicker, flickerdouble, dimming,
 hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 255입니다.
 
 <div align="center">
-    <img src="images/06_01_light_single.png">
+    <img src="../images/06_01_light_single.png">
     <p>단색 LED 작동 예시</p>
 </div>
 
@@ -291,7 +291,7 @@ hold 상태일 때 interval은 밝기를 의미합니다. 값의 범위는 0 ~ 2
 R, G, B 모두 값의 범위는 0 ~ 255입니다.
 
 <div align="center">
-    <img src="images/06_02_light_rgb.png">
+    <img src="../images/06_02_light_rgb.png">
     <p>RGB LED 작동 예시</p>
 </div>
 
