@@ -128,11 +128,11 @@
         </tr>
         <tr>
             <td class="python"><div align="center">Version</div></td>
-            <td colspan="2" class="python"><div align="center">1.0.3</div></td>
+            <td colspan="2" class="python"><div align="center">1.0.4</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Release Date</div></td>
-            <td colspan="2" class="white"><div align="center">2024.6.19</div></td>
+            <td colspan="2" class="white"><div align="center">2024.10.22</div></td>
         </tr>
         <tr>
             <td class="python"><div align="center">Manual</div></td>

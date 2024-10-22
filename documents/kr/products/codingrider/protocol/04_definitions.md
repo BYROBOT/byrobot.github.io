@@ -101,7 +101,7 @@ namespace ModelNumber
         // Drone_12  chip
         Drone_12_Drone_P0		= 0x000C1000,	// coding drone stm32f401rc + xn297
         Drone_12_Drone_P1		= 0x000C1001,	// coding drone STM32F407VE + nrf24l01
-        Drone_12_Drone_P2		= 0x000C1002,	// reserve
+        _Drone_P2		= 0x000C1002,	// reserve
         
         Drone_12_Controller_P0	= 0x000C2000,	// coding drone stm32f401rc + xn297
         Drone_12_Controller_P1	= 0x000C2001,	// coding drone STM32F407VE + nrf24l01
