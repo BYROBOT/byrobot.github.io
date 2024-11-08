@@ -91,7 +91,7 @@
             <td class="firmware"><div align="center">Update Manual</div></td>
             <td colspan="2" class="white">
                 <div align="center">
-                    <a href="/documents/kr/products/coding_drone/manual/update/drone4autoupdaterlight/">Windows (.NET)</a><br>
+                    <a href="/documents/kr/products/coding_drone/manual/update/Firmware_update/">Windows (.NET)</a><br>
                     <!--<a href="/documents/kr/products/coding_drone/manual/update/drone_4_updater_windows/">Windows</a><br>-->
                 </div>
             </td>
