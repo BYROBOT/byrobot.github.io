@@ -1,6 +1,6 @@
 **[CODING DRONE](/documents/kr/products/coding_drone/) update log**
 
-Modified : 2023.8.24
+Modified : 2024.11.8
 
 ---
 
@@ -13,7 +13,7 @@ Modified : 2023.8.24
 
 # 2024.11.8
 
-- **Drone : 24.11.2**
+- **Drone & Controller : 24.11.3**
 
 > - 카드코딩 인식 문제 개선.
 
