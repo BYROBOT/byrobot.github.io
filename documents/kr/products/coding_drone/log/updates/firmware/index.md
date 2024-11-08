@@ -17,7 +17,7 @@ Modified : 2024.11.8
 
 > - 카드코딩 인식 문제 개선.
 
-[Download](https://alux1004-my.sharepoint.com/:u:/g/personal/skji_aluxonline_com/EZ8d-QwzlKVBtv6HYol_nMcBxqO0VT5JuVrBDzMMr_EnXw?e=IqLwin)
+[Download](https://alux1004-my.sharepoint.com/:u:/g/personal/makyung_aluxonline_com/EYxJMJqkXOBEqdjxq5gsK1MBesmcS3lGRr2oYMSXjoXjuw?e=FZ5C8D)
 
 <br>
 
