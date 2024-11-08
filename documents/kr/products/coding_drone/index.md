@@ -70,16 +70,16 @@
         </tr>
         <tr>
             <td class="firmware"><div align="center">Version</div></td>
-            <td colspan="2" class="white"><div align="center">23.4.2</div></td>
+            <td colspan="2" class="white"><div align="center">24.11.2</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Release Date</div></td>
-            <td colspan="2" class="firmware"><div align="center">2023.8.24</div></td>
+            <td colspan="2" class="firmware"><div align="center">2024.11.8</div></td>
         </tr>
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://drive.byrobot.co.kr/d/s/v4sPNw5EblETyYVmiwdcFT51cP2rZjx8/OLRBCCvnkkJEsZ-M2IvpTdudzGrr863R-RLRAh2AbuQo" target="_blank">Windows (.NET)</a><br>
+                <a href="https://alux1004-my.sharepoint.com/:u:/g/personal/makyung_aluxonline_com/EYxJMJqkXOBEqdjxq5gsK1MBesmcS3lGRr2oYMSXjoXjuw?e=FZ5C8D" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1jAjTFP5vV-TTkje84rUCLWgV5X48szv3/view?usp=sharing" target="_blank">Windows</a><br>-->
             </div></td>
         </tr>

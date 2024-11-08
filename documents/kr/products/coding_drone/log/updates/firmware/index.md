@@ -8,7 +8,18 @@ Modified : 2023.8.24
   {:toc .toc}
 
 <br>
+# 2023.8.24
 
+- **Drone & Controller : 23.4.2**
+
+> - 코딩시 스킵되는 문제 수정
+> - usb연결시 조종기 화면 깨짐 문제 수정
+
+[Download](https://alux1004-my.sharepoint.com/:u:/g/personal/skji_aluxonline_com/EZ8d-QwzlKVBtv6HYol_nMcBxqO0VT5JuVrBDzMMr_EnXw?e=IqLwin)
+
+<br>
+
+---
 # 2023.8.24
 
 - **Drone & Controller : 23.4.2**
