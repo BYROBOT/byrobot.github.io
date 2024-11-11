@@ -42,19 +42,19 @@ if __name__ == '__main__':
     sleep(0.01)
 
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 300)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 500)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 3000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 600)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 2000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 500)
     sleep(2)
 
-    drone.sendMotorSingle(1, Rotation.Clockwise, 1000)
+    drone.sendMotorSingle(1, Rotation.Clockwise, 300)
     sleep(2)
 
     drone.sendStop()
