@@ -39,7 +39,7 @@
         <tr>
             <td width="110" class="documents"><div align="center">&nbsp;<br><a href="#Documents"><span class="odd">Documents</span></a><br>&nbsp;</div></td>
             <td width="110" class="python"><div align="center">&nbsp;<br><a href="#Python"><span class="even">Python</span></a><br>&nbsp;</div></td>
-            <td width="110" class="byrobot"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td> 
+            <td width="110" class="entry"><a href="#Entry"><span class="entry"><div align="center">Entry</div></span></a></td>
         </tr>
         <tr>
             <td width="110" class="byrobot"><div align="center">&nbsp;<br><span class="byrobot">BYROBOT</span><br>&nbsp;</div></td> 
@@ -68,6 +68,19 @@
             <td colspan="2" class="documents"><div align="center"><a href="/documents/kr/products/codingrider/protocol/">한국어</a></div></td>
         </tr>
         <tr><td colspan="3" class="space"></td></tr>
+                <!-- Entry -->
+        <tr><td colspan="3" class="space"></td></tr>
+        <tr>
+            <td colspan="3" class="entry"><div align="center"><a name="Entry"></a>&nbsp;<br>Entry<br>&nbsp;</div></td>
+        </tr>
+        <tr>
+            <td class="entry"><div align="center">Homepage</div></td>
+            <td colspan="2" class="white"><div align="center"><a href="https://playentry.org/" target="_blank">Entry</a></div></td>
+        </tr>
+        <tr>
+            <td class="entry"><div align="center">Download</div></td>
+            <td colspan="2" class="entry"><div align="center"><a href="https://playentry.org/#!/offlineEditor" target="_blank">Entry Offline</a></div></td>
+        </tr>
                 <!-- Python -->
         <tr><td colspan="3" class="space"></td></tr>
         <tr>
