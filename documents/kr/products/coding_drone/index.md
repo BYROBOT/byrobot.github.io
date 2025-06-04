@@ -79,7 +79,7 @@
         <tr>
             <td class="firmware"><div align="center">Download</div></td>
             <td colspan="2" class="white"><div align="center">
-                <a href="https://alux1004-my.sharepoint.com/:u:/g/personal/makyung_aluxonline_com/EYxJMJqkXOBEqdjxq5gsK1MBesmcS3lGRr2oYMSXjoXjuw?e=FZ5C8D" target="_blank">Windows (.NET)</a><br>
+                <a href="https://imssam.imweb.me/38/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=148074886&t=board" target="_blank">Windows (.NET)</a><br>
                 <!--<a href="https://drive.google.com/file/d/1jAjTFP5vV-TTkje84rUCLWgV5X48szv3/view?usp=sharing" target="_blank">Windows</a><br>-->
             </div></td>
         </tr>
