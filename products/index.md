@@ -133,6 +133,20 @@
                 </div>
             </td>
         </tr>
+        <tr>
+            <td class="white_even">
+                <div align="center">
+                    <a href="/documents/kr/products/coding_drone_plus/">
+                        <span class="even">
+                            <img src="/assets/images/products/Coding_Drone_Plus.png" alt="coding_drone_plus" height="240" width="240"><br>
+                            CODING DRONE PLUS
+                        </span>
+                    </a>
+                </div>
+            </td>
+            <td class="white_odd"><div align="center">&nbsp;</div></td>
+            <td class="white_even"><div align="center">&nbsp;</div></td>
+        </tr>
     </table>
 </div>
 
